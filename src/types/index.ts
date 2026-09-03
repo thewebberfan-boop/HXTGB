@@ -1,0 +1,72 @@
+export type UnitLevel = 
+  | '正部级' 
+  | '副部级' 
+  | '正厅局级' 
+  | '副厅局级' 
+  | '正处级' 
+  | '副处级';
+
+export type UnitCategory = 
+  | '会机关内设部门' 
+  | '派出机构' 
+  | '会管单位/交易所' 
+  | '直属事业单位' 
+  | '行业自律组织';
+
+export interface CareerRecord {
+  id: string;
+  unitId: string;
+  unitName: string;
+  department?: string;
+  position: string;
+  rank?: UnitLevel;
+  startYear: number;
+  startMonth?: number;
+  endYear: number | null; // null 表示至今
+  endMonth?: number | null;
+  isCurrent?: boolean;
+  notes?: string;
+}
+
+export interface EducationInfo {
+  degree: '学士' | '硕士' | '博士' | '大专' | '其他';
+  school: string;
+  major?: string;
+  graduationYear?: number;
+}
+
+export interface Official {
+  id: string;
+  name: string;
+  avatarUrl?: string;
+  gender: '男' | '女';
+  birthYear: number;
+  birthMonth?: number;
+  nativePlace?: string; // 籍贯
+  currentUnitId: string;
+  currentPosition: string;
+  currentRank: UnitLevel;
+  education: EducationInfo[];
+  careerHistory: CareerRecord[];
+  bioSummary?: string;
+}
+
+export interface Unit {
+  id: string;
+  name: string;
+  shortName: string;
+  tinyName?: string;
+  category: UnitCategory;
+  level: UnitLevel;
+  establishedYear: number;
+  establishedDate?: string;
+  description: string;
+  mainDuties: string[];
+  websiteUrl?: string;
+  address?: string;
+  contactPhone?: string;
+  currentLeaderIds?: string[];
+  tagColor?: string;
+}
+
+export type ViewMode = 'units' | 'officials' | 'swimlanes';
