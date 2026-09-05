@@ -38,6 +38,347 @@ interface UnitsViewProps {
   onSelectUnit?: (unitId: string | null) => void;
 }
 
+
+interface PositionGroup {
+  order: number;
+  title: string;
+  officials: Official[];
+}
+
+export function getOfficialPositionAndTenure(official: Official, unit: Unit, isServing: boolean) {
+  const hist = official.careerHistory || [];
+  const uid = unit.id;
+
+  let matchedRecord = hist.find((r) => r.unitId === uid);
+  if (!matchedRecord && uid.startsWith('gov-')) {
+    matchedRecord = hist.find(
+      (r) =>
+        r.unitId.startsWith('gov-') ||
+        (r.unitName && (r.unitName.includes('政府') || r.unitName.includes('市委') || r.unitName.includes('区委') || r.unitName.includes('金融办')))
+    );
+  }
+  if (!matchedRecord && uid === 'csrc-main') {
+    matchedRecord = hist.find((r) => r.unitId === 'csrc-main' || r.unitId.startsWith('csrc-'));
+  }
+
+  const pos = isServing
+    ? matchedRecord?.position || official.currentPosition || '主要负责人'
+    : matchedRecord?.position || official.currentPosition || '曾任职务';
+
+  const startYear = matchedRecord?.startYear;
+  const startMonth = matchedRecord?.startMonth;
+  const endYear = matchedRecord?.endYear;
+  const endMonth = matchedRecord?.endMonth;
+
+  let tenureStr = '';
+  let durationStr = '';
+
+  if (isServing) {
+    if (startYear) {
+      tenureStr = `${startYear}.${startMonth ? (startMonth < 10 ? '0' + startMonth : startMonth) : '01'} - 至今`;
+      const curYear = new Date().getFullYear();
+      const yrs = Math.max(1, curYear - startYear);
+      durationStr = `已履任约 ${yrs} 年`;
+    } else {
+      tenureStr = '现任在职';
+    }
+  } else {
+    if (startYear) {
+      const endPart = endYear ? `${endYear}.${endMonth ? (endMonth < 10 ? '0' + endMonth : endMonth) : '12'}` : '离任';
+      tenureStr = `${startYear}.${startMonth ? (startMonth < 10 ? '0' + startMonth : startMonth) : '01'} - ${endPart}`;
+      if (endYear) {
+        const yrs = Math.max(1, endYear - startYear);
+        durationStr = `任期约 ${yrs} 年`;
+      }
+    } else {
+      tenureStr = '历史曾任';
+    }
+  }
+
+  return {
+    position: pos,
+    tenureStr,
+    durationStr,
+    matchedRecord,
+  };
+}
+
+export function groupOfficialsByPosition(
+  officialsList: Official[],
+  unit: Unit,
+  isServing: boolean
+): PositionGroup[] {
+  const groupsMap = new Map<string, { order: number; title: string; officials: Official[] }>();
+
+  const getSubgroupMeta = (pos: string): { order: number; title: string } => {
+    const p = pos.trim();
+    const uid = unit.id;
+    const cat = unit.category;
+    const sub = unit.subCategory || '';
+    const prefix = isServing ? '' : '原';
+
+    // 1. 地方党政机关
+    if (uid.startsWith('gov-') || sub.includes('地方') || cat.includes('地方')) {
+      if (p.includes('省长') || p.includes('省委') || p.includes('常务副市长') || p.includes('市委副书记')) {
+        return { order: 1, title: `${prefix}省级 / 直辖市级党政主要领导` };
+      }
+      if (p.includes('副市长') || p.includes('市长')) {
+        return { order: 2, title: `${prefix}副省级市 / 省辖市政府领导班子` };
+      }
+      if (p.includes('区委') || p.includes('区长')) {
+        return { order: 3, title: `${prefix}市辖区党政主要领导（书记 / 区长）` };
+      }
+      if (p.includes('金融办') || p.includes('金融工委') || p.includes('主任') || p.includes('局长')) {
+        return { order: 4, title: `${prefix}地方金融监管机构主要负责人` };
+      }
+      return { order: 5, title: `${prefix}地方党政其他领导职务` };
+    }
+
+    // 2. 证监会机关领导班子
+    if (uid === 'csrc-main') {
+      if ((p.includes('主席') || p.includes('书记')) && !p.includes('副') && !p.includes('助理')) {
+        return { order: 1, title: `${prefix}主席、党委书记` };
+      }
+      if (p.includes('副主席')) {
+        return { order: 2, title: `${prefix}党委委员、副主席` };
+      }
+      if (p.includes('纪检') || p.includes('纪委')) {
+        return { order: 3, title: `${prefix}中央纪委驻会纪检监察组组长` };
+      }
+      if (p.includes('助理')) {
+        return { order: 4, title: `${prefix}主席助理、党委委员` };
+      }
+      return { order: 5, title: `${prefix}其他会领导班子成员` };
+    }
+
+    // 3. 证监会机关内设部门/司局
+    if (cat === '会机关内设部门' || sub.includes('司局')) {
+      if ((p.includes('司长') || p.includes('局长') || p.includes('主任') || p.includes('主要负责')) && !p.includes('副')) {
+        return { order: 1, title: `${prefix}司长 / 局长 / 主任（主要负责人）` };
+      }
+      if (p.includes('副司长') || p.includes('副局长') || p.includes('副主任')) {
+        return { order: 2, title: `${prefix}副司长 / 副局长 / 副主任` };
+      }
+      if (p.includes('处长') || p.includes('调研员') || p.includes('处')) {
+        return { order: 3, title: `${prefix}处级干部与业务骨干` };
+      }
+      return { order: 4, title: `${prefix}部门其他职务` };
+    }
+
+    // 4. 证券与期货交易所
+    if (sub.includes('交易所') || uid.includes('sse') || uid.includes('szse') || uid.includes('bse') || uid.includes('shfe') || uid.includes('dce') || uid.includes('czce') || uid.includes('cffex') || uid.includes('gfex')) {
+      if ((p.includes('理事长') || p.includes('董事长') || p.includes('书记')) && !p.includes('副')) {
+        return { order: 1, title: `${prefix}党委书记、理事长 / 董事长` };
+      }
+      if (p.includes('总经理') && !p.includes('副总经理')) {
+        return { order: 2, title: `${prefix}党委副书记、总经理` };
+      }
+      if (p.includes('副总经理') || p.includes('副理事长')) {
+        return { order: 3, title: `${prefix}党委委员、副总经理 / 副理事长` };
+      }
+      if (p.includes('监事长') || p.includes('纪委') || p.includes('监事会')) {
+        return { order: 4, title: `${prefix}监事长 / 纪委书记` };
+      }
+      return { order: 5, title: `${prefix}其他高管及部门总监` };
+    }
+
+    // 5. 地方证监局派出机构
+    if (cat === '派出机构' || sub.includes('证监局')) {
+      if ((p.includes('局长') || p.includes('书记')) && !p.includes('副')) {
+        return { order: 1, title: `${prefix}党委书记、局长（正局级）` };
+      }
+      if (p.includes('副局长') || p.includes('纪检') || p.includes('纪委')) {
+        return { order: 2, title: `${prefix}党委委员、副局长 / 纪检组长` };
+      }
+      if (p.includes('处长') || p.includes('调研员')) {
+        return { order: 3, title: `${prefix}处级干部与稽查骨干` };
+      }
+      return { order: 4, title: `${prefix}监管局其他职务` };
+    }
+
+    // 6. 会管企事业单位与行业协会
+    if ((p.includes('董事长') || p.includes('会长') || p.includes('理事长') || p.includes('党委书记')) && !p.includes('副')) {
+      return { order: 1, title: `${prefix}党委书记、董事长 / 会长 / 理事长` };
+    }
+    if ((p.includes('总经理') || p.includes('副会长') || p.includes('秘书长')) && !p.includes('副总经理')) {
+      return { order: 2, title: `${prefix}党委副书记、总经理 / 副会长 / 秘书长` };
+    }
+    if (p.includes('副总经理') || p.includes('副理事长')) {
+      return { order: 3, title: `${prefix}党委委员、副总经理 / 副理事长` };
+    }
+    if (p.includes('监事长') || p.includes('纪委')) {
+      return { order: 4, title: `${prefix}监事长 / 纪委书记` };
+    }
+    if (p.includes('副')) {
+      return { order: 6, title: `${prefix}副职领导班子成员` };
+    }
+    return { order: 7, title: `${prefix}其他领导干部与高管` };
+  };
+
+  officialsList.forEach((o) => {
+    const { position } = getOfficialPositionAndTenure(o, unit, isServing);
+    const meta = getSubgroupMeta(position);
+    if (!groupsMap.has(meta.title)) {
+      groupsMap.set(meta.title, { order: meta.order, title: meta.title, officials: [] });
+    }
+    groupsMap.get(meta.title)!.officials.push(o);
+  });
+
+  return Array.from(groupsMap.values()).sort((a, b) => a.order - b.order);
+}
+
+interface LeaderCardProps {
+  leader: Official;
+  activeUnit: Unit;
+  isServing: boolean;
+  isFocused: boolean;
+  onSelectOfficial: (leader: Official) => void;
+  onNavigateToSwimlane: (unitId?: string) => void;
+  onFocus: (id: string) => void;
+}
+
+const LeaderCard: React.FC<LeaderCardProps> = ({
+  leader,
+  activeUnit,
+  isServing,
+  isFocused,
+  onSelectOfficial,
+  onNavigateToSwimlane,
+  onFocus,
+}) => {
+  const { position, tenureStr, durationStr } = getOfficialPositionAndTenure(
+    leader,
+    activeUnit,
+    isServing
+  );
+
+  return (
+    <div
+      onClick={() => onFocus(leader.id)}
+      className={`p-4 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between group relative overflow-hidden shadow-2xs ${
+        isFocused
+          ? 'ring-2 ring-blue-500 border-blue-500 bg-blue-50/40 shadow-xs'
+          : isServing
+          ? 'border-emerald-200/80 bg-white hover:border-blue-400/80 hover:bg-blue-50/20'
+          : 'border-black/[0.06] bg-gray-50/60 hover:border-gray-300 hover:bg-gray-100/60'
+      }`}
+    >
+      <div>
+        {/* 状态徽标行 */}
+        <div className="flex items-center justify-between gap-1 mb-2.5">
+          {isServing ? (
+            <span className="text-[10px] font-bold text-emerald-800 bg-emerald-100/90 border border-emerald-300 px-2 py-0.5 rounded-md flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              <span>现任在职</span>
+            </span>
+          ) : (
+            <span
+              className={`text-[10px] font-bold px-2 py-0.5 rounded-md border truncate max-w-[170px] ${
+                leader.servingStatus === 'investigated'
+                  ? 'text-rose-900 bg-rose-100/90 border-rose-300'
+                  : leader.servingStatus === 'retired'
+                  ? 'text-slate-800 bg-slate-100 border-slate-300'
+                  : leader.servingStatus === 'transferred'
+                  ? 'text-indigo-900 bg-indigo-100/90 border-indigo-300'
+                  : 'text-amber-900 bg-amber-100/80 border-amber-300/80'
+              }`}
+              title={leader.servingStatusNote || leader.servingStatusLabel || '曾在此任职 / 历任'}
+            >
+              {leader.servingStatusLabel || '曾在此任职 / 历任'}
+            </span>
+          )}
+
+          {isFocused && (
+            <span className="text-[9.5px] bg-blue-600 text-white font-bold px-1.5 py-0.5 rounded shadow-2xs shrink-0">
+              当前定位
+            </span>
+          )}
+        </div>
+
+        <div className="flex items-start gap-3">
+          {/* 干部免冠证件照 */}
+          <OfficialIdPhoto official={leader} size="sm" />
+
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className="font-bold text-base text-gray-900 group-hover:text-blue-600 transition-colors">
+                {leader.name}
+              </span>
+              <PositionRankBadge rank={leader.currentRank} />
+            </div>
+
+            {/* 在此机构的职务展示 */}
+            <p
+              className={`text-xs mt-1 font-semibold leading-snug line-clamp-2 ${
+                isServing ? 'text-gray-900' : 'text-amber-950'
+              }`}
+            >
+              {isServing ? position : `曾任：${position}`}
+            </p>
+
+            {/* 任职起止时间（核心需求2：在卡片显著展示任职起始） */}
+            <div className="mt-2 pt-1.5 border-t border-black/[0.04] flex items-center gap-1.5 flex-wrap">
+              <div
+                className={`px-1.5 py-0.5 rounded flex items-center gap-1 font-mono text-[10.5px] font-medium ${
+                  isServing
+                    ? 'bg-emerald-50 text-emerald-800 border border-emerald-200/70'
+                    : 'bg-amber-50/80 text-amber-900 border border-amber-200/70'
+                }`}
+                title={`任职起止：${tenureStr}`}
+              >
+                <Calendar className="w-3 h-3 shrink-0" />
+                <span>{tenureStr}</span>
+              </div>
+              {durationStr && (
+                <span className="text-[10px] text-gray-400 font-normal">
+                  ({durationStr})
+                </span>
+              )}
+            </div>
+
+            {!isServing && (
+              <p
+                className="text-[10.5px] text-gray-500 truncate mt-1"
+                title={leader.servingStatusNote || leader.currentPosition}
+              >
+                当前任职：{leader.currentPosition}
+              </p>
+            )}
+
+            <p className="text-[10.5px] text-gray-400 mt-1 font-mono">
+              {leader.birthYear}年生（约{new Date().getFullYear() - leader.birthYear}岁）
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* 底部交互按钮栏 */}
+      <div className="mt-3 pt-2 border-t border-black/[0.05] flex items-center justify-between text-xs font-medium">
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onSelectOfficial(leader);
+          }}
+          className="text-blue-600 hover:text-blue-800 flex items-center gap-0.5 group-hover:translate-x-0.5 transition-transform"
+        >
+          <span>查看个人档案</span>
+          <span>→</span>
+        </button>
+
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            onNavigateToSwimlane(activeUnit.id);
+          }}
+          className="text-[11px] text-gray-400 hover:text-blue-600 transition-colors"
+        >
+          在泳道中分析
+        </button>
+      </div>
+    </div>
+  );
+};
+
 export const UnitsView: React.FC<UnitsViewProps> = ({
   units,
   officials,
@@ -117,6 +458,17 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
     if (officialTab === 'past') return pastLeaders;
     return [...servingLeaders, ...pastLeaders];
   }, [officialTab, servingLeaders, pastLeaders]);
+
+  // 职务二级板块分组：分别对在任与历任干部按职务分类
+  const servingGroups = useMemo(() => {
+    if (!activeUnit) return [];
+    return groupOfficialsByPosition(servingLeaders, activeUnit, true);
+  }, [servingLeaders, activeUnit]);
+
+  const pastGroups = useMemo(() => {
+    if (!activeUnit) return [];
+    return groupOfficialsByPosition(pastLeaders, activeUnit, false);
+  }, [pastLeaders, activeUnit]);
 
   const getLevelBadgeClass = (level: UnitLevel) => {
     switch (level) {

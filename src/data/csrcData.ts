@@ -941,32 +941,6 @@ export const UNITS_DATA: Unit[] = [
     "subCategory": "地方证监局派出机构"
   },
   {
-    "id": "gov-local",
-    "name": "各级地方人民政府及党政机关",
-    "shortName": "地方政府",
-    "tinyName": "地方政务",
-    "category": "会管单位/交易所",
-    "level": "正部级",
-    "establishedYear": 1949,
-    "description": "涵盖各省、自治区、直辖市及重点城市各级人民政府与党政机构，集中展示证券监管干部在地方挂职、主政锻炼及属地金融治理的横向流动演进轨迹。",
-    "mainDuties": [
-      "统筹推动地方经济社会发展与实体产业高质量转型",
-      "优化属地金融营商环境，培育扶持科技创新企业上市挂牌",
-      "防范化解地方中小金融机构、地方债务及非法金融活动风险"
-    ],
-    "websiteUrl": "http://www.gov.cn",
-    "currentLeaderIds": [
-      "wu-qing",
-      "ran-hua",
-      "zhuang-xinyi",
-      "yan-qingmin",
-      "guo-shuqing"
-    ],
-    "tagColor": "amber",
-    "topCategory": "other",
-    "subCategory": "各级地方政府"
-  },
-  {
     "id": "csrc-df",
     "name": "中国证券监督管理委员会各省市监管局（派出机构统合）",
     "shortName": "地方证监局",
@@ -1039,6 +1013,300 @@ export const UNITS_DATA: Unit[] = [
     "websiteUrl": "http://www.sasac.gov.cn",
     "address": "北京市宣武门西大街26号",
     "contactPhone": "010-63191000",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-sh",
+    "name": "上海市各级党政机关（市委市政府与虹口区）",
+    "shortName": "上海市政府/虹口区",
+    "tinyName": "上海市",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正部级",
+    "establishedYear": 1949,
+    "description": "上海市人民政府系直辖市国家行政机关。机构涵盖直辖市委、市政府领导班子、市金融工委/金融办，以及下辖虹口区等区县各级党政领导班子。",
+    "mainDuties": [
+      "统筹领导直辖市经济社会综合发展与“五个中心”建设",
+      "强化现代金融产业集聚与高水平制度型金融开放",
+      "统筹推进区县基层治理创新与区域经济转型升级"
+    ],
+    "websiteUrl": "https://www.shanghai.gov.cn",
+    "address": "上海市黄浦区人民大道200号",
+    "contactPhone": "021-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-js",
+    "name": "江苏省人民政府与省辖南京市人民政府",
+    "shortName": "江苏省/南京市政府",
+    "tinyName": "江苏省",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正部级",
+    "establishedYear": 1952,
+    "description": "江苏省人民政府为省级国家行政机关；南京市为江苏省省会、副省级市，南京市人民政府直接领导全市经济社会建设与现代金融产业发展。",
+    "mainDuties": [
+      "统筹领导全省经济高质量发展与制造强省建设",
+      "行使省会副省级城市政府领导职能与城市综合治理",
+      "推动省市协同与长三角一体化金融创新示范"
+    ],
+    "websiteUrl": "https://www.jiangsu.gov.cn",
+    "address": "江苏省南京市鼓楼区北京西路68号",
+    "contactPhone": "025-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-gd",
+    "name": "广东省人民政府与副省级深圳市人民政府",
+    "shortName": "广东省/深圳市政府",
+    "tinyName": "广东省",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正部级",
+    "establishedYear": 1949,
+    "description": "广东省人民政府为省级国家行政机关；深圳市为副省级计划单列市、经济特区，深圳市人民政府主导先行示范区与特区资本市场创新发展。",
+    "mainDuties": [
+      "统筹推进全省经济大省挑大梁与粤港澳大湾区建设",
+      "行使副省级计划单列市与经济特区政府领导职能",
+      "深化深港金融市场互联互通与特区制度创新"
+    ],
+    "websiteUrl": "https://www.gd.gov.cn",
+    "address": "广东省广州市越秀区东风中路305号",
+    "contactPhone": "020-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-sd",
+    "name": "山东省人民政府",
+    "shortName": "山东省政府",
+    "tinyName": "山东省",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正部级",
+    "establishedYear": 1949,
+    "description": "山东省人民政府为省级国家行政机关，领导全省经济文化强省建设与新旧动能转换。",
+    "mainDuties": [
+      "全面领导全省行政工作与重大经济金融决策",
+      "统筹推进新旧动能转换综合试验区建设",
+      "深化地方金融体制改革与金融风险防控"
+    ],
+    "websiteUrl": "http://www.shandong.gov.cn",
+    "address": "山东省济南市省府前街1号",
+    "contactPhone": "0531-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-tj",
+    "name": "天津市人民政府",
+    "shortName": "天津市政府",
+    "tinyName": "天津市",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正部级",
+    "establishedYear": 1949,
+    "description": "天津市人民政府为直辖市国家行政机关，领导全市推进京津冀协同发展与北方国际航运核心区建设。",
+    "mainDuties": [
+      "全面领导直辖市各级行政机关与经济金融规划",
+      "深入推进京津冀协同发展国家战略落地",
+      "深化国家租赁创新示范区与金融创新运营示范区建设"
+    ],
+    "websiteUrl": "https://www.tj.gov.cn",
+    "address": "天津市河西区友谊路30号",
+    "contactPhone": "022-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-sh-prov",
+    "name": "上海市委 / 上海市人民政府及市金融办",
+    "shortName": "上海市委/市政府",
+    "tinyName": "上海市委/市政府",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正部级",
+    "establishedYear": 1949,
+    "description": "上海市委与市人民政府系直辖市最高国家行政机关。机构涵盖直辖市委、市政府领导班子、市委金融办及原市金融服务办，主导上海国际金融中心高水平制度型开放。",
+    "mainDuties": [
+      "统筹领导直辖市经济社会综合发展与“五个中心”核心功能建设",
+      "强化现代金融产业集聚、资本要素流动与涉外金融制度创新",
+      "统筹推进直辖市各区县基层综合治理与区域高质量发展"
+    ],
+    "websiteUrl": "https://www.shanghai.gov.cn",
+    "address": "上海市黄浦区人民大道200号",
+    "contactPhone": "021-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-sh-dist",
+    "name": "上海市虹口区委 / 区人民政府",
+    "shortName": "上海虹口区委/区政府",
+    "tinyName": "虹口区",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正厅局级",
+    "establishedYear": 1949,
+    "description": "上海市虹口区委与区人民政府系上海市中心城区党政领导机关，为北外滩新时代现代服务业与航运金融创新高地。",
+    "mainDuties": [
+      "统筹领导虹口区全域经济发展、产业引育与城市更新治理",
+      "重点打造北外滩金融与财富管理总部集聚区",
+      "优化区域营商环境与基层党建治理创新"
+    ],
+    "websiteUrl": "https://www.shhk.gov.cn",
+    "address": "上海市虹口区飞虹路518号",
+    "contactPhone": "021-25658888",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-js-prov",
+    "name": "江苏省人民政府",
+    "shortName": "江苏省政府",
+    "tinyName": "江苏省政府",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正部级",
+    "establishedYear": 1952,
+    "description": "江苏省人民政府为省级国家行政机关，领导全省经济高质量发展与实体制造强省建设。",
+    "mainDuties": [
+      "统筹推进全省经济稳增长与先进制造业集群发展",
+      "推进长三角一体化战略落地与区域金融协同改革",
+      "防范化解地方债务风险与构建现代金融治理体系"
+    ],
+    "websiteUrl": "https://www.jiangsu.gov.cn",
+    "address": "江苏省南京市鼓楼区北京西路68号",
+    "contactPhone": "025-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-js-city",
+    "name": "南京市人民政府（副省级省会城市）",
+    "shortName": "南京市政府",
+    "tinyName": "南京市政府",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "副部级",
+    "establishedYear": 1949,
+    "description": "南京市为江苏省省会、副省级城市，南京市人民政府直接领导全市经济社会建设与区域科创金融改革试验。",
+    "mainDuties": [
+      "行使省会副省级城市政府经济社会与行政管理法定职责",
+      "统筹推进重要金融中心建设与战略新兴产业投融资",
+      "完善区域资本市场服务体系与培育拟上市企业梯队"
+    ],
+    "websiteUrl": "https://www.nanjing.gov.cn",
+    "address": "江苏省南京市玄武区北京东路41号",
+    "contactPhone": "025-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-gd-prov",
+    "name": "广东省人民政府",
+    "shortName": "广东省政府",
+    "tinyName": "广东省政府",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正部级",
+    "establishedYear": 1949,
+    "description": "广东省人民政府为省级国家行政机关，统筹推进全省经济大省挑大梁与粤港澳大湾区战略实体建设。",
+    "mainDuties": [
+      "统筹推进全省现代产业体系构建与科技创新自立自强",
+      "深化粤港澳大湾区金融规则衔接与金融要素双向流动",
+      "保障全省金融安全稳定与实体经济高质量投融资"
+    ],
+    "websiteUrl": "https://www.gd.gov.cn",
+    "address": "广东省广州市越秀区东风中路305号",
+    "contactPhone": "020-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-gd-city",
+    "name": "深圳市人民政府（副省级计划单列市）",
+    "shortName": "深圳市政府",
+    "tinyName": "深圳市政府",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "副部级",
+    "establishedYear": 1979,
+    "description": "深圳市为副省级计划单列市、经济特区，深圳市人民政府主导中国特色社会主义先行示范区综合改革与特区金融创新。",
+    "mainDuties": [
+      "行使计划单列市与经济特区政府管理职能与立法创新探索",
+      "推进深圳证券交易所高水平建设与资本市场综合改革",
+      "深化深港金融市场互联互通与财富管理中心集聚"
+    ],
+    "websiteUrl": "https://www.sz.gov.cn",
+    "address": "广东省深圳市福田区福中三路市民中心",
+    "contactPhone": "0755-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-sd-prov",
+    "name": "山东省人民政府",
+    "shortName": "山东省政府",
+    "tinyName": "山东省政府",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正部级",
+    "establishedYear": 1949,
+    "description": "山东省人民政府为省级国家行政机关，全面领导全省行政工作与重大经济金融决策，推进新旧动能转换综合试验区建设。",
+    "mainDuties": [
+      "全面领导全省经济社会发展与重大基础设施战略投资",
+      "深入推进新旧动能转换与传统优势产业数字化转型",
+      "深化地方金融管理体制改革与防控化解金融风险"
+    ],
+    "websiteUrl": "http://www.shandong.gov.cn",
+    "address": "山东省济南市省府前街1号",
+    "contactPhone": "0531-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-tj-prov",
+    "name": "天津市人民政府",
+    "shortName": "天津市政府",
+    "tinyName": "天津市政府",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正部级",
+    "establishedYear": 1949,
+    "description": "天津市人民政府为直辖市国家行政机关，领导全市落实京津冀协同发展战略，打造北方国际航运核心区与金融创新运营示范区。",
+    "mainDuties": [
+      "统筹领导直辖市经济建设与重大行政体制综合治理",
+      "推进天津自贸试验区与北方金融创新运营示范区建设",
+      "提升直接融资比重与深化国资国企现代金融治理"
+    ],
+    "websiteUrl": "https://www.tj.gov.cn",
+    "address": "天津市河西区友谊路30号",
+    "contactPhone": "022-12345",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "gov-local",
+    "name": "各级地方人民政府及党政机关（统合）",
+    "shortName": "地方政府统合",
+    "tinyName": "地方政府统合",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "各级地方人民政府",
+    "level": "正部级",
+    "establishedYear": 1949,
+    "description": "统合记录中国证监会干部交流派驻、转任或升迁至各省、自治区、直辖市及下辖市县各级党政机关的跨界从政任职全貌。",
+    "mainDuties": [
+      "行使各级地方政府行政经济管理与属地社会综合治理职权",
+      "搭建金融监管部门与地方经济发展实体互通互联纽带",
+      "推动跨部门跨层级年轻高素质专业干部的双向交流任职"
+    ],
+    "websiteUrl": "http://www.gov.cn",
+    "address": "全国各省市自治区党政机关",
+    "contactPhone": "12345",
     "currentLeaderIds": []
   }
 ];
@@ -1177,9 +1445,9 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "wq-5",
-        "unitId": "gov-local",
-        "unitName": "地方各级政府与党政机关",
-        "department": "虹口区委 / 区政府",
+        "unitId": "gov-sh-dist",
+        "unitName": "上海市虹口区委 / 区人民政府",
+        "department": "区委、区政府班子",
         "position": "区委副书记、区长、区委书记",
         "rank": "正厅局级",
         "startYear": 2010,
@@ -1217,9 +1485,9 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "wq-7",
-        "unitId": "gov-local",
-        "unitName": "地方各级政府与党政机关",
-        "department": "市委 / 市政府领导班子",
+        "unitId": "gov-sh-prov",
+        "unitName": "上海市人民政府 / 上海市委",
+        "department": "直辖市党政领导班子",
         "position": "副市长、市委常委、常务副市长、市委副书记、政法委书记",
         "rank": "副部级",
         "startYear": 2017,
@@ -1801,14 +2069,14 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "gsq-5",
-        "unitId": "cbirc",
-        "unitName": "山东省政府 / 银保监会",
-        "department": "山东省委 / 银保监会党委",
-        "position": "山东省省长、中国银监会主席、中国银保监会主席兼央行党委书记",
+        "unitId": "gov-sd-prov",
+        "unitName": "山东省人民政府 / 省委",
+        "department": "省级党政领导班子",
+        "position": "省委副书记、省长",
         "rank": "正部级",
         "startYear": 2013,
         "startMonth": 3,
-        "endYear": 2023,
+        "endYear": 2017,
         "endMonth": 5,
         "isDerived": false,
         "notes": "主政山东推进“山东金改22条”；后重返金融监管主导银监会保监会机构合并，化解影子银行重大系统性风险",
@@ -3643,9 +3911,9 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "fxh-4",
-        "unitId": "gov-local",
-        "unitName": "地方各级政府与党政机关",
-        "department": "领导班子",
+        "unitId": "gov-sh-prov",
+        "unitName": "上海市人民政府 / 上海市委金融工委",
+        "department": "上海市金融服务办公室",
         "position": "上海市金融工委副书记、金融服务办公室主任",
         "rank": "正厅局级",
         "startYear": 2005,
@@ -3960,9 +4228,9 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "yqm-3",
-        "unitId": "csrc-main",
+        "unitId": "gov-tj-prov",
         "unitName": "天津市人民政府",
-        "department": "市领导班子",
+        "department": "直辖市政府领导班子",
         "position": "副市长、党组成员",
         "rank": "副部级",
         "startYear": 2014,
@@ -4206,7 +4474,7 @@ export const OFFICIALS_DATA: Official[] = [
         "id": "zxy-2",
         "unitId": "csrc-szse",
         "unitName": "深圳证券交易所",
-        "department": "高管层",
+        "department": "党委 / 高管层",
         "position": "党委副书记、总经理",
         "rank": "正厅局级",
         "startYear": 1995,
@@ -4224,9 +4492,9 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "zxy-3",
-        "unitId": "gov-local",
-        "unitName": "地方各级政府与党政机关",
-        "department": "市政府领导班子",
+        "unitId": "gov-gd-city",
+        "unitName": "广东省深圳市人民政府",
+        "department": "副省级计划单列市政府班子",
         "position": "副市长、党组成员",
         "rank": "正厅局级",
         "startYear": 1997,
@@ -6756,9 +7024,9 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "rh-4",
-        "unitId": "gov-local",
-        "unitName": "南京市人民政府",
-        "department": "市政府领导班子",
+        "unitId": "gov-js-city",
+        "unitName": "江苏省南京市人民政府",
+        "department": "副省级省会城市政府班子",
         "position": "副市长、党组成员",
         "rank": "正厅局级",
         "startYear": 2017,
@@ -11376,10 +11644,94 @@ export function isOfficialPastInUnit(official: Official, unitId: string): boolea
     return official.careerHistory.some((r) => REGIONAL_BUREAU_IDS.includes(r.unitId));
   }
   if (unitId === 'gov-local') {
-    return (
-      official.careerHistory.some(
-        (r) => r.unitId === 'gov-local' || r.unitId === 'gov-sh' || r.unitName.includes('政府')
-      )
+    return official.careerHistory.some(
+      (r) =>
+        r.unitId === 'gov-local' ||
+        r.unitId.startsWith('gov-') ||
+        (r.unitName && r.unitName.includes('政府') && !r.unitName.includes('证监')) ||
+        r.unitName.includes('区委') ||
+        (r.unitName.includes('市委') && !r.unitName.includes('金融')) ||
+        r.position.includes('省长') ||
+        r.position.includes('市长') ||
+        r.position.includes('区长') ||
+        r.unitName.includes('金融办')
+    );
+  }
+  if (unitId === 'gov-sh' || unitId === 'gov-sh-prov') {
+    return official.careerHistory.some(
+      (r) =>
+        r.unitId === 'gov-sh-prov' ||
+        r.unitId === 'gov-sh' ||
+        (((r.unitName && r.unitName.includes('上海')) || (r.department && r.department.includes('上海'))) &&
+          (r.unitName.includes('政府') ||
+            r.position.includes('市长') ||
+            r.unitName.includes('金融办') ||
+            r.unitName.includes('金融工委') ||
+            r.unitName.includes('市委')) &&
+          !r.unitName.includes('虹口') &&
+          !r.position.includes('虹口'))
+    );
+  }
+  if (unitId === 'gov-sh-dist') {
+    return official.careerHistory.some(
+      (r) =>
+        r.unitId === 'gov-sh-dist' ||
+        r.unitName.includes('虹口') ||
+        r.position.includes('虹口') ||
+        (r.department && r.department.includes('虹口'))
+    );
+  }
+  if (unitId === 'gov-js' || unitId === 'gov-js-prov') {
+    return official.careerHistory.some(
+      (r) =>
+        (r.unitId === 'gov-js-prov' ||
+          (r.unitName.includes('江苏') && r.unitName.includes('政府'))) &&
+        !r.unitName.includes('南京')
+    );
+  }
+  if (unitId === 'gov-js-city') {
+    return official.careerHistory.some(
+      (r) =>
+        r.unitId === 'gov-js-city' ||
+        r.unitId === 'gov-js' ||
+        r.unitName.includes('南京') ||
+        r.position.includes('南京')
+    );
+  }
+  if (unitId === 'gov-gd' || unitId === 'gov-gd-prov') {
+    return official.careerHistory.some(
+      (r) =>
+        (r.unitId === 'gov-gd-prov' ||
+          (r.unitName.includes('广东') && r.unitName.includes('政府'))) &&
+        !r.unitName.includes('深圳')
+    );
+  }
+  if (unitId === 'gov-gd-city') {
+    return official.careerHistory.some(
+      (r) =>
+        (r.unitId === 'gov-gd-city' ||
+          r.unitId === 'gov-gd' ||
+          r.unitName.includes('深圳') ||
+          r.position.includes('深圳')) &&
+        (r.unitName.includes('政府') || r.position.includes('市长'))
+    );
+  }
+  if (unitId === 'gov-sd' || unitId === 'gov-sd-prov') {
+    return official.careerHistory.some(
+      (r) =>
+        r.unitId === 'gov-sd-prov' ||
+        r.unitId === 'gov-sd' ||
+        (r.unitName.includes('山东') &&
+          (r.unitName.includes('政府') || r.position.includes('省长')))
+    );
+  }
+  if (unitId === 'gov-tj' || unitId === 'gov-tj-prov') {
+    return official.careerHistory.some(
+      (r) =>
+        r.unitId === 'gov-tj-prov' ||
+        r.unitId === 'gov-tj' ||
+        (r.unitName.includes('天津') &&
+          (r.unitName.includes('政府') || r.position.includes('市长')))
     );
   }
   if (unitId === 'cbirc') {
