@@ -154,102 +154,6 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
 
   return (
     <div className="space-y-6">
-      <div className="mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.06] bg-white/95 shadow-xs">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-          <div className="flex items-center gap-3 flex-1 min-w-0">
-            {onBackToSwimlane && (
-              <button
-                onClick={onBackToSwimlane}
-                className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 hover:text-blue-800 rounded-xl text-xs font-semibold border border-blue-200/60 shadow-2xs transition-all hover:scale-[1.02] active:scale-95 shrink-0"
-                title="返回跳转前的时空演进泳道图谱"
-              >
-                <ArrowLeft className="w-3.5 h-3.5 text-blue-600" />
-                <span>返回泳道</span>
-              </button>
-            )}
-
-            <div className="flex items-center gap-2 flex-1 max-w-md">
-              <select
-                value={activeOfficial?.id || ''}
-                onChange={(e) => {
-                  const targetId = e.target.value;
-                  const found = officials.find((o) => o.id === targetId);
-                  if (found) setActiveOfficial(found);
-                }}
-                className="w-full px-3 py-2 bg-black/[0.03] hover:bg-black/[0.05] focus:bg-white text-xs sm:text-sm font-medium text-gray-800 rounded-xl border border-black/[0.06] focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/10 transition-all outline-none cursor-pointer truncate"
-              >
-                {candidateOfficials.map((off) => {
-                  const isServingInSel =
-                    selectedUnitId && selectedUnitId !== 'all'
-                      ? isOfficialActiveInUnit(off, selectedUnitId)
-                      : off.isCurrentServing !== false;
-                  const offUnit = unitMap.get(off.currentUnitId);
-                  const unitName = offUnit ? offUnit.tinyName || offUnit.shortName : '系统';
-                  return (
-                    <option key={off.id} value={off.id}>
-                      {selectedUnitId && selectedUnitId !== 'all'
-                        ? isServingInSel
-                          ? '[在任] '
-                          : '[曾任] '
-                        : ''}
-                      [{off.currentRank.replace('局级', '')}] {off.name} · {unitName} ({off.currentPosition})
-                    </option>
-                  );
-                })}
-              </select>
-            </div>
-
-            <div className="flex items-center gap-1 shrink-0">
-              <button
-                onClick={handlePrevOfficial}
-                className="p-2 rounded-xl bg-black/[0.03] hover:bg-black/[0.07] text-gray-700 transition-colors flex items-center justify-center"
-                title="上一位干部"
-              >
-                <ChevronLeft className="w-4 h-4" />
-              </button>
-              <button
-                onClick={handleNextOfficial}
-                className="p-2 rounded-xl bg-black/[0.03] hover:bg-black/[0.07] text-gray-700 transition-colors flex items-center justify-center"
-                title="下一位干部"
-              >
-                <ChevronRight className="w-4 h-4" />
-              </button>
-            </div>
-          </div>
-
-          {/* 右侧核心动作 */}
-          <div className="flex items-center gap-3 shrink-0">
-            {activeOfficial && (
-              <>
-                <button
-                  onClick={() => onToggleOfficialSelection(activeOfficial.id)}
-                  className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold transition-all ${
-                    isSelectedInSwimlane
-                      ? 'bg-blue-600 text-white shadow-xs'
-                      : 'bg-black/[0.04] hover:bg-black/[0.08] text-gray-700'
-                  }`}
-                  title="将该干部加入泳道多选对比名单"
-                >
-                  <GitCommitVertical className="w-3.5 h-3.5" />
-                  <span>{isSelectedInSwimlane ? '已加入泳道对比' : '+ 泳道对比'}</span>
-                  {isSelectedInSwimlane && <Check className="w-3.5 h-3.5" />}
-                </button>
-
-                <button
-                  onClick={() => onNavigateToSwimlaneWithOfficial(activeOfficial.id)}
-                  className="flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold shadow-xs transition-all hover:scale-[1.02] active:scale-95"
-                  title="单独在时空泳道中展开此干部完整履历演进"
-                >
-                  <GitCommitVertical className="w-3.5 h-3.5" />
-                  <span>在泳道中分析</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
-              </>
-            )}
-          </div>
-        </div>
-      </div>
-
       {/* 若从侧边栏或筛选中选中了具体机构，呈现机构班子快捷选择栏 */}
       {currentSelectedUnit && currentUnitOfficials && (
         <div className="mac-card rounded-2xl p-4 bg-white/95 border border-black/[0.06] shadow-xs space-y-3">
@@ -348,11 +252,56 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                     <span className="text-xs text-gray-500 bg-gray-100 px-2.5 py-0.5 rounded-lg font-mono">
                       {calculateAge(activeOfficial.birthYear)}岁
                     </span>
+
+                    {/* 履职在任/离任/退休/处分状态徽标 */}
+                    {activeOfficial.servingStatus === 'investigated' ? (
+                      <span className="text-xs font-bold text-rose-800 bg-rose-50 border border-rose-200 px-2.5 py-0.5 rounded-lg flex items-center gap-1.5 shadow-2xs">
+                        <span className="w-2 h-2 rounded-full bg-rose-600 animate-pulse" />
+                        <span>{activeOfficial.servingStatusLabel || '审查调查 / 撤职处分'}</span>
+                      </span>
+                    ) : activeOfficial.servingStatus === 'retired' ? (
+                      <span className="text-xs font-bold text-slate-700 bg-slate-100 border border-slate-200 px-2.5 py-0.5 rounded-lg flex items-center gap-1.5 shadow-2xs">
+                        <span>🏛️</span>
+                        <span>{activeOfficial.servingStatusLabel || '正常退休'}</span>
+                      </span>
+                    ) : activeOfficial.servingStatus === 'transferred' ? (
+                      <span className="text-xs font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 px-2.5 py-0.5 rounded-lg flex items-center gap-1.5 shadow-2xs">
+                        <span>🔄</span>
+                        <span>{activeOfficial.servingStatusLabel || '调离系统'}</span>
+                      </span>
+                    ) : (
+                      <span className="text-xs font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-lg flex items-center gap-1.5 shadow-2xs">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                        <span>现任在职</span>
+                      </span>
+                    )}
                   </div>
 
                   <p className="text-base sm:text-lg font-semibold text-gray-800">
                     {activeOfficial.currentPosition}
                   </p>
+
+                  {/* 离任、退休或审查处分事实说明卡 */}
+                  {activeOfficial.servingStatusNote && activeOfficial.servingStatus !== 'serving' && (
+                    <div
+                      className={`p-3 rounded-xl text-xs leading-relaxed border my-1.5 ${
+                        activeOfficial.servingStatus === 'investigated'
+                          ? 'bg-rose-50/90 border-rose-200/90 text-rose-900 shadow-2xs'
+                          : activeOfficial.servingStatus === 'retired'
+                          ? 'bg-slate-50 border-slate-200 text-slate-700'
+                          : 'bg-blue-50/80 border-blue-200 text-blue-900'
+                      }`}
+                    >
+                      <span className="font-bold mr-1.5">
+                        {activeOfficial.servingStatus === 'investigated'
+                          ? '⚠️ 纪检监察审查/处分官方通报：'
+                          : activeOfficial.servingStatus === 'retired'
+                          ? '🏛️ 离任/退休事实：'
+                          : 'ℹ️ 职务调动/变动情况：'}
+                      </span>
+                      <span>{activeOfficial.servingStatusNote}</span>
+                    </div>
+                  )}
 
                   <div className="flex flex-wrap items-center gap-4 text-xs text-gray-500 pt-1">
                     <span className="flex items-center gap-1">

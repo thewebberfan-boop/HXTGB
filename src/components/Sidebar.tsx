@@ -49,62 +49,124 @@ interface SidebarProps {
   onSelectUnitForUnits?: (unitId: string | null) => void;
 }
 
-export const ORG_CATEGORIES = [
+export interface OrgSubCategory {
+  id: string;
+  title: string;
+  icon: string;
+  unitIds: string[];
+}
+
+export interface OrgTopCategory {
+  id: string;
+  title: string;
+  icon: string;
+  badge?: string;
+  subCategories: OrgSubCategory[];
+}
+
+export const TOP_ORG_CATEGORIES: OrgTopCategory[] = [
   {
-    id: 'cat-gov',
-    title: '证监会机关部门 / 司局',
+    id: 'top-csrc',
+    title: '证监会系统',
     icon: '🏛️',
-    unitIds: [
-      'csrc-main',
-      'csrc-bgt',
-      'csrc-fx',
-      'csrc-ss',
-      'csrc-jg',
-      'csrc-sc1',
-      'csrc-sc2',
-      'csrc-qh',
-      'csrc-jc',
-      'csrc-fl',
-      'csrc-gj',
-      'csrc-kj',
+    badge: '监管核心',
+    subCategories: [
+      {
+        id: 'cat-csrc-main',
+        title: '证监会机关部门 / 司局',
+        icon: '🏛️',
+        unitIds: [
+          'csrc-main',
+          'csrc-bgt',
+          'csrc-fx',
+          'csrc-ss',
+          'csrc-jg',
+          'csrc-sc1',
+          'csrc-sc2',
+          'csrc-qh',
+          'csrc-jc',
+          'csrc-fl',
+          'csrc-gj',
+          'csrc-kj',
+        ],
+      },
+      {
+        id: 'cat-sec',
+        title: '证券交易所',
+        icon: '📈',
+        unitIds: ['csrc-sse', 'csrc-szse', 'csrc-bse'],
+      },
+      {
+        id: 'cat-fut',
+        title: '期货交易所',
+        icon: '🌾',
+        unitIds: ['csrc-shfe', 'csrc-czce', 'csrc-dce', 'csrc-cffex', 'csrc-gfex'],
+      },
+      {
+        id: 'cat-infra',
+        title: '会管企事业单位 / 行业协会',
+        icon: '🏢',
+        unitIds: [
+          'csrc-csdc',
+          'csrc-csf',
+          'csrc-csdata',
+          'csrc-sipf',
+          'csrc-cfmmc',
+          'csrc-cfr',
+          'csrc-isc',
+          'csrc-amac',
+          'csrc-sac',
+        ],
+      },
+      {
+        id: 'cat-bureau',
+        title: '地方证监局派出机构',
+        icon: '🌐',
+        unitIds: [
+          'csrc-df',
+          'csrc-bj',
+          'csrc-sh',
+          'csrc-gd',
+          'csrc-sz',
+          'csrc-js',
+          'csrc-zj',
+          'csrc-sc',
+          'csrc-yn',
+          'csrc-fj',
+          'csrc-ah',
+        ],
+      },
     ],
   },
   {
-    id: 'cat-sec',
-    title: '证券交易所',
-    icon: '📈',
-    unitIds: ['csrc-sse', 'csrc-szse', 'csrc-bse'],
-  },
-  {
-    id: 'cat-fut',
-    title: '期货交易所',
-    icon: '🌾',
-    unitIds: ['csrc-shfe', 'csrc-czce', 'csrc-dce', 'csrc-cffex', 'csrc-gfex'],
-  },
-  {
-    id: 'cat-infra',
-    title: '会管企事业单位 / 基础设施',
-    icon: '🏢',
-    unitIds: ['csrc-csdc', 'csrc-csf', 'csrc-csdata', 'csrc-sipf', 'csrc-cfmmc', 'csrc-cfr', 'csrc-isc'],
-  },
-  {
-    id: 'cat-local',
-    title: '地方派出机构与行业协会',
+    id: 'top-other',
+    title: '其他系统与部委机关',
     icon: '🌐',
-    unitIds: [
-      'csrc-amac',
-      'csrc-sac',
-      'csrc-bj',
-      'csrc-sh',
-      'csrc-gd',
-      'csrc-sz',
-      'csrc-js',
-      'csrc-zj',
-      'csrc-sc',
-      'csrc-yn',
+    badge: '跨界关联',
+    subCategories: [
+      {
+        id: 'cat-gov-local',
+        title: '各级地方人民政府',
+        icon: '🏙️',
+        unitIds: ['gov-local'],
+      },
+      {
+        id: 'cat-pbc-cbirc',
+        title: '央行系与金融监管总局',
+        icon: '🏦',
+        unitIds: ['pbc', 'cbirc'],
+      },
+      {
+        id: 'cat-sasac-cic',
+        title: '国资委与大型国有金融机构',
+        icon: '🏭',
+        unitIds: ['sasac-cic'],
+      },
     ],
   },
 ];
+
+export const ORG_CATEGORIES = TOP_ORG_CATEGORIES.flatMap((top) => top.subCategories);
 
 export const Sidebar: React.FC<SidebarProps> = ({
   currentView,
@@ -607,127 +669,154 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </button>
           </div>
 
-          {/* 五大组织层级分类树 (证监会机关部门/司局在证券交易所上方) */}
-          <div className="space-y-2 pr-0.5">
-            {ORG_CATEGORIES.map((cat) => {
-              const isCollapsedCat = !!collapsedOrgCats[cat.id];
-              const matchingUnits = units.filter(
-                (u) =>
-                  cat.unitIds.includes(u.id) &&
-                  (!filterOrgKeyword ||
-                    u.name.toLowerCase().includes(filterOrgKeyword.toLowerCase()) ||
-                    u.shortName.toLowerCase().includes(filterOrgKeyword.toLowerCase()) ||
-                    (u.tinyName && u.tinyName.toLowerCase().includes(filterOrgKeyword.toLowerCase())))
+          {/* 顶级组织架构分类树：1. 证监会系统 (主系统)  2. 其他系统与部委机关 (跨界关联) */}
+          <div className="space-y-4 pr-0.5">
+            {TOP_ORG_CATEGORIES.map((topCat) => {
+              const matchingInTop = topCat.subCategories.flatMap((sub) =>
+                units.filter((u) => sub.unitIds.includes(u.id))
               );
-
-              if (matchingUnits.length === 0) return null;
+              if (matchingInTop.length === 0) return null;
 
               return (
-                <div key={cat.id} className="bg-gray-50/60 rounded-xl border border-black/[0.04] p-1.5 space-y-1">
-                  <div
-                    onClick={() => toggleOrgCat(cat.id)}
-                    className="flex items-center justify-between px-1.5 py-1 text-[11px] font-bold text-gray-700 cursor-pointer hover:text-blue-600 select-none"
-                  >
-                    <div className="flex items-center gap-1">
-                      <span>{cat.icon}</span>
-                      <span>{cat.title}</span>
-                      <span className="text-[10px] text-gray-400 font-normal">({matchingUnits.length})</span>
+                <div key={topCat.id} className="space-y-2">
+                  {/* 顶级栏目标头 */}
+                  <div className="flex items-center justify-between px-1.5 pt-1 text-xs font-black text-gray-800 tracking-tight">
+                    <div className="flex items-center gap-1.5">
+                      <span>{topCat.icon}</span>
+                      <span>{topCat.title}</span>
                     </div>
-                    {isCollapsedCat ? (
-                      <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
-                    ) : (
-                      <ChevronDown className="w-3.5 h-3.5 text-gray-400" />
+                    {topCat.badge && (
+                      <span className="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-200/60">
+                        {topCat.badge}
+                      </span>
                     )}
                   </div>
 
-                  {!isCollapsedCat && (
-                    <div className="space-y-1 pt-0.5">
-                      {matchingUnits.map((unit) => {
-                        const isUnits = currentView === 'units';
-                        const isSelected = isUnits
-                          ? selectedUnitIdForUnits === unit.id
-                          : selectedUnitIdForOfficials === unit.id;
-                        const stats = unitStatsMap.get(unit.id) || { current: 0, past: 0, total: 0 };
-                        const displayName = unit.tinyName || unit.shortName;
+                  {/* 二级分类分组 */}
+                  <div className="space-y-2">
+                    {topCat.subCategories.map((cat) => {
+                      const isCollapsedCat = !!collapsedOrgCats[cat.id];
+                      const matchingUnits = units.filter(
+                        (u) =>
+                          cat.unitIds.includes(u.id) &&
+                          (!filterOrgKeyword ||
+                            u.name.toLowerCase().includes(filterOrgKeyword.toLowerCase()) ||
+                            u.shortName.toLowerCase().includes(filterOrgKeyword.toLowerCase()) ||
+                            (u.tinyName && u.tinyName.toLowerCase().includes(filterOrgKeyword.toLowerCase())))
+                      );
 
-                        return (
+                      if (matchingUnits.length === 0) return null;
+
+                      return (
+                        <div key={cat.id} className="bg-gray-50/60 rounded-xl border border-black/[0.04] p-1.5 space-y-1">
                           <div
-                            key={unit.id}
-                            onClick={() => {
-                              if (isUnits) {
-                                onSelectUnitForUnits?.(isSelected ? null : unit.id);
-                              } else {
-                                onSelectUnitForOfficials?.(isSelected ? null : unit.id);
-                              }
-                            }}
-                            className={`px-2 py-1.5 rounded-lg cursor-pointer transition-all flex items-center justify-between border ${
-                              isSelected
-                                ? 'bg-blue-50 border-blue-500/60 ring-1 ring-blue-500/20 shadow-2xs'
-                                : 'bg-white hover:bg-gray-50/80 border-black/[0.03]'
-                            }`}
+                            onClick={() => toggleOrgCat(cat.id)}
+                            className="flex items-center justify-between px-1.5 py-1 text-[11px] font-bold text-gray-700 cursor-pointer hover:text-blue-600 select-none"
                           >
-                            <div className="truncate flex items-center gap-1.5">
-                              <span
-                                className={`w-1.5 h-1.5 rounded-full shrink-0 ${
-                                  isSelected ? 'bg-blue-600' : 'bg-gray-300'
-                                }`}
-                              />
-                              <span
-                                className={`text-xs truncate ${
-                                  isSelected ? 'font-bold text-blue-700' : 'font-medium text-gray-800'
-                                }`}
-                              >
-                                {displayName}
-                              </span>
-                              <span className="text-[9px] text-gray-400 bg-gray-100 px-1 py-0.2 rounded shrink-0">
-                                {unit.level.replace('局级', '').replace('级', '')}
-                              </span>
+                            <div className="flex items-center gap-1">
+                              <span>{cat.icon}</span>
+                              <span>{cat.title}</span>
+                              <span className="text-[10px] text-gray-400 font-normal">({matchingUnits.length})</span>
                             </div>
-
-                            {/* 人数与编制统计 */}
-                            <div className="flex items-center gap-1 shrink-0 text-[9.5px]">
-                              {isUnits ? (
-                                stats.current > 0 ? (
-                                  <span
-                                    className="text-blue-700 bg-blue-50 border border-blue-200/60 px-1.5 py-0.2 rounded font-medium"
-                                    title={`现任主要负责人 ${stats.current} 位`}
-                                  >
-                                    班子 {stats.current}
-                                  </span>
-                                ) : (
-                                  <span className="text-gray-400 bg-gray-100 px-1 py-0.2 rounded text-[9px]">
-                                    直属
-                                  </span>
-                                )
-                              ) : (
-                                <>
-                                  {stats.current > 0 && (
-                                    <span
-                                      className="text-emerald-700 bg-emerald-50 border border-emerald-200/60 px-1 py-0.2 rounded font-medium"
-                                      title={`当前在该机构在职干部 ${stats.current} 位`}
-                                    >
-                                      在职 {stats.current}
-                                    </span>
-                                  )}
-                                  {stats.past > 0 && (
-                                    <span
-                                      className="text-gray-500 bg-gray-100 px-1 py-0.2 rounded"
-                                      title={`曾在该机构任职干部 ${stats.past} 位`}
-                                    >
-                                      曾任 {stats.past}
-                                    </span>
-                                  )}
-                                  {stats.total === 0 && (
-                                    <span className="text-gray-300 text-[9px]">-</span>
-                                  )}
-                                </>
-                              )}
-                            </div>
+                            {isCollapsedCat ? (
+                              <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
+                            ) : (
+                              <ChevronDown className="w-3.5 h-3.5 text-gray-400" />
+                            )}
                           </div>
-                        );
-                      })}
-                    </div>
-                  )}
+
+                          {!isCollapsedCat && (
+                            <div className="space-y-1 pt-0.5">
+                              {matchingUnits.map((unit) => {
+                                const isUnits = currentView === 'units';
+                                const isSelected = isUnits
+                                  ? selectedUnitIdForUnits === unit.id
+                                  : selectedUnitIdForOfficials === unit.id;
+                                const stats = unitStatsMap.get(unit.id) || { current: 0, past: 0, total: 0 };
+                                const displayName = unit.tinyName || unit.shortName;
+
+                                return (
+                                  <div
+                                    key={unit.id}
+                                    onClick={() => {
+                                      if (isUnits) {
+                                        onSelectUnitForUnits?.(isSelected ? null : unit.id);
+                                      } else {
+                                        onSelectUnitForOfficials?.(isSelected ? null : unit.id);
+                                      }
+                                    }}
+                                    className={`px-2 py-1.5 rounded-lg cursor-pointer transition-all flex items-center justify-between border ${
+                                      isSelected
+                                        ? 'bg-blue-50 border-blue-500/60 ring-1 ring-blue-500/20 shadow-2xs'
+                                        : 'bg-white hover:bg-gray-50/80 border-black/[0.03]'
+                                    }`}
+                                  >
+                                    <div className="truncate flex items-center gap-1.5">
+                                      <span
+                                        className={`w-1.5 h-1.5 rounded-full shrink-0 ${
+                                          isSelected ? 'bg-blue-600' : 'bg-gray-300'
+                                        }`}
+                                      />
+                                      <span
+                                        className={`text-xs truncate ${
+                                          isSelected ? 'font-bold text-blue-700' : 'font-medium text-gray-800'
+                                        }`}
+                                      >
+                                        {displayName}
+                                      </span>
+                                      <span className="text-[9px] text-gray-400 bg-gray-100 px-1 py-0.2 rounded shrink-0">
+                                        {unit.level.replace('局级', '').replace('级', '')}
+                                      </span>
+                                    </div>
+
+                                    {/* 人数与编制统计 */}
+                                    <div className="flex items-center gap-1 shrink-0 text-[9.5px]">
+                                      {isUnits ? (
+                                        stats.current > 0 ? (
+                                          <span
+                                            className="text-blue-700 bg-blue-50 border border-blue-200/60 px-1.5 py-0.2 rounded font-medium"
+                                            title={`现任主要负责人 ${stats.current} 位`}
+                                          >
+                                            班子 {stats.current}
+                                          </span>
+                                        ) : (
+                                          <span className="text-gray-400 bg-gray-100 px-1 py-0.2 rounded text-[9px]">
+                                            直属
+                                          </span>
+                                        )
+                                      ) : (
+                                        <>
+                                          {stats.current > 0 && (
+                                            <span
+                                              className="text-emerald-700 bg-emerald-50 border border-emerald-200/60 px-1 py-0.2 rounded font-medium"
+                                              title={`当前在该机构在职干部 ${stats.current} 位`}
+                                            >
+                                              在职 {stats.current}
+                                            </span>
+                                          )}
+                                          {stats.past > 0 && (
+                                            <span
+                                              className="text-gray-500 bg-gray-100 px-1 py-0.2 rounded"
+                                              title={`曾在该机构任职干部 ${stats.past} 位`}
+                                            >
+                                              曾任 {stats.past}
+                                            </span>
+                                          )}
+                                          {stats.total === 0 && (
+                                            <span className="text-gray-300 text-[9px]">-</span>
+                                          )}
+                                        </>
+                                      )}
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               );
             })}

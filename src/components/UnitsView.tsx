@@ -135,76 +135,7 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
 
   return (
     <div className="space-y-6">
-      {/* 顶部快捷机构导航与工具栏 (macOS Toolbar style) */}
-      <div className="mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.06] bg-white/95 shadow-xs">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div className="flex items-center gap-3 flex-1 min-w-0">
-            {/* 返回时空泳道按钮 */}
-            {onBackToSwimlane && (
-              <button
-                onClick={onBackToSwimlane}
-                className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 hover:text-blue-800 rounded-xl text-xs font-semibold border border-blue-200/60 shadow-2xs transition-all hover:scale-[1.02] active:scale-95 shrink-0"
-                title="返回跳转前的时空演进泳道图谱"
-              >
-                <ArrowLeft className="w-3.5 h-3.5 text-blue-600" />
-                <span>返回泳道</span>
-              </button>
-            )}
-
-            {/* 快速机构切换选择器 */}
-            <div className="flex items-center gap-2 flex-1 max-w-md">
-              <Building className="w-4 h-4 text-gray-400 shrink-0" />
-              <select
-                value={activeUnit?.id || ''}
-                onChange={(e) => {
-                  const targetId = e.target.value;
-                  const found = units.find((u) => u.id === targetId);
-                  if (found) {
-                    setActiveUnit(found);
-                    onSelectUnit?.(found.id);
-                  }
-                }}
-                className="w-full px-3 py-2 bg-black/[0.03] hover:bg-black/[0.05] focus:bg-white text-xs sm:text-sm font-medium text-gray-800 rounded-xl border border-black/[0.06] focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/10 transition-all outline-none cursor-pointer"
-              >
-                {units.map((u) => (
-                  <option key={u.id} value={u.id}>
-                    [{u.category.replace('内设部门', '司局')}] {u.name} ({u.level})
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-
-          {/* 右侧核心动作 */}
-          <div className="flex items-center gap-3 shrink-0">
-            {activeUnit && (
-              <button
-                onClick={() => onNavigateToSwimlane(activeUnit.id)}
-                className="flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold shadow-xs transition-all hover:scale-[1.02] active:scale-95"
-                title="在时空演进泳道图谱中展开该单位"
-              >
-                <GitCommitVertical className="w-3.5 h-3.5" />
-                <span>在时空泳道中展开</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
-            )}
-
-            {activeUnit?.websiteUrl && (
-              <a
-                href={activeUnit.websiteUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="hidden md:flex items-center gap-1 px-3 py-2 bg-gray-50 hover:bg-gray-100 text-gray-700 hover:text-blue-600 rounded-xl border border-black/[0.06] text-xs font-medium transition-colors"
-              >
-                <span>官方网站</span>
-                <ExternalLink className="w-3.5 h-3.5 text-gray-400" />
-              </a>
-            )}
-          </div>
-        </div>
-      </div>
-
-      {/* 核心改动：全屏宽幅全息单位档案看板（删除了冗余的左侧卡片列表，空间完全留给详细信息） */}
+      {/* 全屏宽幅全息单位档案看板 */}
       {activeUnit ? (
         <div className="space-y-6">
           {/* 1. 单位概貌首长卡 (Hero Dossier Banner) */}
@@ -427,13 +358,24 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                               <span>现任在职</span>
                             </span>
                           ) : (
-                            <span className="text-[10px] font-bold text-amber-900 bg-amber-100/80 border border-amber-300/80 px-2 py-0.5 rounded-md">
-                              曾在此任职 / 历任
+                            <span
+                              className={`text-[10px] font-bold px-2 py-0.5 rounded-md border truncate max-w-[170px] ${
+                                leader.servingStatus === 'investigated'
+                                  ? 'text-rose-900 bg-rose-100/90 border-rose-300'
+                                  : leader.servingStatus === 'retired'
+                                  ? 'text-slate-800 bg-slate-100 border-slate-300'
+                                  : leader.servingStatus === 'transferred'
+                                  ? 'text-indigo-900 bg-indigo-100/90 border-indigo-300'
+                                  : 'text-amber-900 bg-amber-100/80 border-amber-300/80'
+                              }`}
+                              title={leader.servingStatusNote || leader.servingStatusLabel || '曾在此任职 / 历任'}
+                            >
+                              {leader.servingStatusLabel || '曾在此任职 / 历任'}
                             </span>
                           )}
 
                           {isFocused && (
-                            <span className="text-[9.5px] bg-blue-600 text-white font-bold px-1.5 py-0.5 rounded shadow-2xs">
+                            <span className="text-[9.5px] bg-blue-600 text-white font-bold px-1.5 py-0.5 rounded shadow-2xs shrink-0">
                               当前定位
                             </span>
                           )}
@@ -466,8 +408,8 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                                     </span>
                                   )}
                                 </p>
-                                <p className="text-[11px] text-gray-500 truncate" title={leader.currentPosition}>
-                                  状态：{leader.currentPosition}
+                                <p className="text-[11px] text-gray-500 truncate" title={leader.servingStatusNote || leader.currentPosition}>
+                                  履职状态：{leader.servingStatusLabel || leader.currentPosition}
                                 </p>
                               </div>
                             )}

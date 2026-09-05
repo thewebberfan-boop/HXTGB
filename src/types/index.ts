@@ -50,6 +50,12 @@ export interface EducationInfo {
   confidence?: ConfidenceInfo; // 学历置信度评价
 }
 
+export type OfficialServingStatus = 
+  | 'serving'       // 现任在职
+  | 'retired'       // 正常退休/到龄离休
+  | 'investigated'  // 违纪审查/撤职处分/立案调查
+  | 'transferred';  // 调离系统/免职转任
+
 export interface Official {
   id: string;
   name: string;
@@ -66,6 +72,10 @@ export interface Official {
   bioSummary?: string;
   basicInfoConfidence?: ConfidenceInfo; // 年龄、籍贯等基础信息置信度
   isCurrentServing?: boolean; // 是否在任在职（退休、离任、曾任为 false）
+  servingStatus?: OfficialServingStatus; // 履职状态
+  servingStatusLabel?: string; // 履职状态中文标签（如“现任在职”、“正常退休”、“开除党籍公职”、“留党察看/政务撤职”）
+  servingStatusNote?: string; // 状态详细说明或官方通报纪实
+  statusBadgeColor?: 'emerald' | 'slate' | 'rose' | 'amber' | 'blue';
 }
 
 export interface Unit {
@@ -74,6 +84,8 @@ export interface Unit {
   shortName: string;
   tinyName?: string;
   category: UnitCategory;
+  topCategory?: 'csrc' | 'other'; // 顶级栏目：证监会系统 | 其他
+  subCategory?: string; // 二级栏目
   level: UnitLevel;
   establishedYear: number;
   establishedDate?: string;

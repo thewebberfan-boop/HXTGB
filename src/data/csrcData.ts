@@ -1,11 +1,11 @@
-import { Unit, Official } from '../types';
+import { Official, Unit } from '../types';
 
 export const UNITS_DATA: Unit[] = [
   {
     "id": "csrc-main",
-    "tinyName": "证监会机关",
-    "name": "中国证券监督管理委员会机关本部",
-    "shortName": "证监会本部",
+    "tinyName": "会领导",
+    "name": "中国证券监督管理委员会领导班子（会机关）",
+    "shortName": "证监会会领导班子",
     "category": "会机关内设部门",
     "level": "正部级",
     "establishedYear": 1992,
@@ -25,10 +25,12 @@ export const UNITS_DATA: Unit[] = [
       "li-chao",
       "fan-dazhi",
       "chen-huaping",
-      "liu-haoling",
-      "li-ming"
+      "li-ming",
+      "liu-haoling"
     ],
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-fx",
@@ -48,7 +50,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "yan-bojin"
     ],
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-ss",
@@ -68,7 +72,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "guo-ruiming"
     ],
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-jg",
@@ -88,7 +94,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "zhao-shanzhong"
     ],
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-sc1",
@@ -108,7 +116,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "zhang-wangjun"
     ],
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-sc2",
@@ -128,7 +138,9 @@ export const UNITS_DATA: Unit[] = [
     "tagColor": "blue",
     "currentLeaderIds": [
       "wang-guangxue"
-    ]
+    ],
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-qh",
@@ -148,7 +160,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "li-zhibin"
     ],
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-jc",
@@ -168,7 +182,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "bi-xiaoying"
     ],
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-fl",
@@ -188,7 +204,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "cheng-hehong"
     ],
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-bgt",
@@ -208,7 +226,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "zhang-wangjun"
     ],
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-gj",
@@ -228,7 +248,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "shen-bing"
     ],
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-kj",
@@ -248,7 +270,9 @@ export const UNITS_DATA: Unit[] = [
     "tagColor": "blue",
     "currentLeaderIds": [
       "zhang-zhongning"
-    ]
+    ],
+    "topCategory": "csrc",
+    "subCategory": "证监会机关与内设司局"
   },
   {
     "id": "csrc-sse",
@@ -273,7 +297,9 @@ export const UNITS_DATA: Unit[] = [
       "cai-jianchun",
       "huo-ruirong"
     ],
-    "tagColor": "red"
+    "tagColor": "red",
+    "topCategory": "csrc",
+    "subCategory": "证券交易所"
   },
   {
     "id": "csrc-szse",
@@ -297,7 +323,9 @@ export const UNITS_DATA: Unit[] = [
       "sha-yan",
       "li-jizun"
     ],
-    "tagColor": "indigo"
+    "tagColor": "indigo",
+    "topCategory": "csrc",
+    "subCategory": "证券交易所"
   },
   {
     "id": "csrc-bse",
@@ -321,7 +349,9 @@ export const UNITS_DATA: Unit[] = [
       "zhou-guihua",
       "sui-qiang"
     ],
-    "tagColor": "emerald"
+    "tagColor": "emerald",
+    "topCategory": "csrc",
+    "subCategory": "证券交易所"
   },
   {
     "id": "csrc-shfe",
@@ -345,7 +375,9 @@ export const UNITS_DATA: Unit[] = [
       "tian-xiangyang",
       "lu-dongsheng"
     ],
-    "tagColor": "amber"
+    "tagColor": "amber",
+    "topCategory": "csrc",
+    "subCategory": "期货交易所"
   },
   {
     "id": "csrc-dce",
@@ -368,7 +400,9 @@ export const UNITS_DATA: Unit[] = [
       "xiong-jun",
       "yan-shaoming"
     ],
-    "tagColor": "amber"
+    "tagColor": "amber",
+    "topCategory": "csrc",
+    "subCategory": "期货交易所"
   },
   {
     "id": "csrc-czce",
@@ -390,7 +424,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "zhu-lihong"
     ],
-    "tagColor": "amber"
+    "tagColor": "amber",
+    "topCategory": "csrc",
+    "subCategory": "期货交易所"
   },
   {
     "id": "csrc-cffex",
@@ -413,7 +449,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "he-qingwen"
     ],
-    "tagColor": "amber"
+    "tagColor": "amber",
+    "topCategory": "csrc",
+    "subCategory": "期货交易所"
   },
   {
     "id": "csrc-gfex",
@@ -436,7 +474,9 @@ export const UNITS_DATA: Unit[] = [
       "gao-weibing",
       "xing-xiangfei"
     ],
-    "tagColor": "amber"
+    "tagColor": "amber",
+    "topCategory": "csrc",
+    "subCategory": "期货交易所"
   },
   {
     "id": "csrc-csdc",
@@ -460,7 +500,9 @@ export const UNITS_DATA: Unit[] = [
       "yu-wenqiang",
       "kong-qingwen"
     ],
-    "tagColor": "purple"
+    "tagColor": "purple",
+    "topCategory": "csrc",
+    "subCategory": "会管企事业单位与行业协会"
   },
   {
     "id": "csrc-csf",
@@ -484,7 +526,9 @@ export const UNITS_DATA: Unit[] = [
       "chen-fei",
       "wu-xiaoyong"
     ],
-    "tagColor": "purple"
+    "tagColor": "purple",
+    "topCategory": "csrc",
+    "subCategory": "会管企事业单位与行业协会"
   },
   {
     "id": "csrc-csdata",
@@ -507,7 +551,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "lu-dabiao"
     ],
-    "tagColor": "purple"
+    "tagColor": "purple",
+    "topCategory": "csrc",
+    "subCategory": "会管企事业单位与行业协会"
   },
   {
     "id": "csrc-sipf",
@@ -530,7 +576,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "yin-rongyan"
     ],
-    "tagColor": "purple"
+    "tagColor": "purple",
+    "topCategory": "csrc",
+    "subCategory": "会管企事业单位与行业协会"
   },
   {
     "id": "csrc-cfmmc",
@@ -552,7 +600,9 @@ export const UNITS_DATA: Unit[] = [
     "tagColor": "purple",
     "currentLeaderIds": [
       "jiang-feng"
-    ]
+    ],
+    "topCategory": "csrc",
+    "subCategory": "会管企事业单位与行业协会"
   },
   {
     "id": "csrc-cfr",
@@ -574,7 +624,9 @@ export const UNITS_DATA: Unit[] = [
     "tagColor": "orange",
     "currentLeaderIds": [
       "mao-hansong"
-    ]
+    ],
+    "topCategory": "csrc",
+    "subCategory": "会管企事业单位与行业协会"
   },
   {
     "id": "csrc-isc",
@@ -594,7 +646,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "lu-wendao"
     ],
-    "tagColor": "orange"
+    "tagColor": "orange",
+    "topCategory": "csrc",
+    "subCategory": "会管企事业单位与行业协会"
   },
   {
     "id": "csrc-amac",
@@ -616,7 +670,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "he-yanchun"
     ],
-    "tagColor": "emerald"
+    "tagColor": "emerald",
+    "topCategory": "csrc",
+    "subCategory": "会管企事业单位与行业协会"
   },
   {
     "id": "csrc-sac",
@@ -639,7 +695,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "wu-yunhao",
       "zhu-jian"
-    ]
+    ],
+    "topCategory": "csrc",
+    "subCategory": "会管企事业单位与行业协会"
   },
   {
     "id": "csrc-bj",
@@ -661,7 +719,9 @@ export const UNITS_DATA: Unit[] = [
       "peng-jing",
       "hu-jingsheng"
     ],
-    "tagColor": "teal"
+    "tagColor": "teal",
+    "topCategory": "csrc",
+    "subCategory": "地方证监局派出机构"
   },
   {
     "id": "csrc-sh",
@@ -683,7 +743,9 @@ export const UNITS_DATA: Unit[] = [
       "lin-lin",
       "wang-dengyong",
       "yang-yong"
-    ]
+    ],
+    "topCategory": "csrc",
+    "subCategory": "地方证监局派出机构"
   },
   {
     "id": "csrc-gd",
@@ -703,7 +765,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "yang-zongru"
     ],
-    "tagColor": "teal"
+    "tagColor": "teal",
+    "topCategory": "csrc",
+    "subCategory": "地方证监局派出机构"
   },
   {
     "id": "csrc-sz",
@@ -723,7 +787,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "peng-ming"
     ],
-    "tagColor": "teal"
+    "tagColor": "teal",
+    "topCategory": "csrc",
+    "subCategory": "地方证监局派出机构"
   },
   {
     "id": "csrc-js",
@@ -742,7 +808,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "tang-libin"
     ],
-    "tagColor": "teal"
+    "tagColor": "teal",
+    "topCategory": "csrc",
+    "subCategory": "地方证监局派出机构"
   },
   {
     "id": "csrc-zj",
@@ -761,7 +829,9 @@ export const UNITS_DATA: Unit[] = [
     "tagColor": "teal",
     "currentLeaderIds": [
       "kuang-xiaofeng"
-    ]
+    ],
+    "topCategory": "csrc",
+    "subCategory": "地方证监局派出机构"
   },
   {
     "id": "csrc-sc",
@@ -780,7 +850,9 @@ export const UNITS_DATA: Unit[] = [
     "tagColor": "teal",
     "currentLeaderIds": [
       "qian-zongbao"
-    ]
+    ],
+    "topCategory": "csrc",
+    "subCategory": "地方证监局派出机构"
   },
   {
     "id": "csrc-yn",
@@ -799,7 +871,9 @@ export const UNITS_DATA: Unit[] = [
     "tagColor": "teal",
     "currentLeaderIds": [
       "tu-chubin"
-    ]
+    ],
+    "topCategory": "csrc",
+    "subCategory": "地方证监局派出机构"
   },
   {
     "id": "pbc",
@@ -818,7 +892,9 @@ export const UNITS_DATA: Unit[] = [
     "tagColor": "slate",
     "currentLeaderIds": [
       "pan-gongsheng"
-    ]
+    ],
+    "topCategory": "other",
+    "subCategory": "央行系统与金融监管机构"
   },
   {
     "id": "csrc-fj",
@@ -838,7 +914,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "li-yongchun"
     ],
-    "tagColor": "teal"
+    "tagColor": "teal",
+    "topCategory": "csrc",
+    "subCategory": "地方证监局派出机构"
   },
   {
     "id": "csrc-ah",
@@ -858,7 +936,9 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "lai-zhaohui"
     ],
-    "tagColor": "teal"
+    "tagColor": "teal",
+    "topCategory": "csrc",
+    "subCategory": "地方证监局派出机构"
   },
   {
     "id": "gov-local",
@@ -882,7 +962,9 @@ export const UNITS_DATA: Unit[] = [
       "yan-qingmin",
       "guo-shuqing"
     ],
-    "tagColor": "amber"
+    "tagColor": "amber",
+    "topCategory": "other",
+    "subCategory": "各级地方政府"
   },
   {
     "id": "csrc-df",
@@ -911,7 +993,53 @@ export const UNITS_DATA: Unit[] = [
       "li-yongchun",
       "lai-zhaohui"
     ],
-    "tagColor": "teal"
+    "tagColor": "teal",
+    "topCategory": "csrc",
+    "subCategory": "地方证监局派出机构"
+  },
+  {
+    "id": "cbirc",
+    "name": "国家金融监督管理总局（原中国银保监会/银监会）",
+    "shortName": "金融监管总局/银保监会",
+    "tinyName": "金融总局",
+    "category": "行业自律组织",
+    "topCategory": "other",
+    "subCategory": "央行系统与金融监管机构",
+    "level": "正部级",
+    "establishedYear": 2023,
+    "establishedDate": "2023-05-18",
+    "description": "国家金融监督管理总局统一负责除证券业之外的金融业监管，强化机构监管、行为监管、功能监管、穿透式监管、持续监管，统筹负责金融消费者权益保护。",
+    "mainDuties": [
+      "依法对除证券业之外的金融业实行统一监督管理",
+      "强化机构监管、行为监管、功能监管、穿透式监管、持续监管",
+      "统筹负责金融消费者权益保护与处置非法集资防线"
+    ],
+    "websiteUrl": "https://www.cbirc.gov.cn",
+    "address": "北京市西城区金融大街甲15号",
+    "contactPhone": "010-66279113",
+    "currentLeaderIds": []
+  },
+  {
+    "id": "sasac-cic",
+    "name": "国务院国资委与中央汇金/中投系统",
+    "shortName": "国资委/中投汇金",
+    "tinyName": "国资中投",
+    "category": "会管单位/交易所",
+    "topCategory": "other",
+    "subCategory": "国资委与大型国有金融机构",
+    "level": "正部级",
+    "establishedYear": 2003,
+    "establishedDate": "2003-03-24",
+    "description": "国务院国有资产监督管理委员会代表国家履行国有资产出资人职责；中投公司与中央汇金代表国家依法对国有重点金融企业行使出资人权利和义务。",
+    "mainDuties": [
+      "依法对国有重要骨干企业与金融资产履行出资人职责",
+      "指导推进国有企业改革重组与国有资本保值增值",
+      "优化国有金融资本布局，维护国家金融稳定与主权安全"
+    ],
+    "websiteUrl": "http://www.sasac.gov.cn",
+    "address": "北京市宣武门西大街26号",
+    "contactPhone": "010-63191000",
+    "currentLeaderIds": []
   }
 ];
 
@@ -1135,7 +1263,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "yi-huiman",
@@ -1255,7 +1387,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "transferred",
+    "servingStatusLabel": "免职转任 / 全国政协驻会副主任",
+    "servingStatusNote": "2024年2月免去中国证监会党委书记、主席职务，后出任第十四届全国政协经济委员会驻会副主任。",
+    "statusBadgeColor": "blue"
   },
   {
     "id": "liu-shiyu",
@@ -1395,7 +1531,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "investigated",
+    "servingStatusLabel": "留党察看二年 / 政务撤职处分",
+    "servingStatusNote": "2019年5月主动投案配合中央纪委国家监委审查调查；同年10月通报给予留党察看二年处分、政务撤职处分，降为一级调研员。",
+    "statusBadgeColor": "rose"
   },
   {
     "id": "xiao-gang",
@@ -1523,7 +1663,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "曾任中国证监会党委书记、主席，全国政协经济委员会委员，现已正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "guo-shuqing",
@@ -1657,7 +1801,7 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "gsq-5",
-        "unitId": "csrc-main",
+        "unitId": "cbirc",
         "unitName": "山东省政府 / 银保监会",
         "department": "山东省委 / 银保监会党委",
         "position": "山东省省长、中国银监会主席、中国银保监会主席兼央行党委书记",
@@ -1683,7 +1827,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "transferred",
+    "servingStatusLabel": "全国人大财经委副主任委员",
+    "servingStatusNote": "曾任中国证监会主席、山东省省长、中国银保监会主席兼央行党委书记，现任第十四届全国人大财政经济委员会副主任委员。",
+    "statusBadgeColor": "blue"
   },
   {
     "id": "shang-fulin",
@@ -1785,7 +1933,7 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "sfl-4",
-        "unitId": "csrc-main",
+        "unitId": "cbirc",
         "unitName": "中国银监会",
         "department": "党委 / 会领导",
         "position": "党委书记、主席",
@@ -1811,7 +1959,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "曾任证监会主席、银监会主席、全国政协经济委员会主任，现已正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "zhou-zhengqing",
@@ -1887,7 +2039,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "已故 / 原主席",
+    "servingStatusNote": "曾任国务院证券委主任、中国证监会第二任主席、全国人大财经委副主任委员，2018年7月在北京逝世。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "liu-hongru",
@@ -1975,7 +2131,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "离休 / 首任主席",
+    "servingStatusNote": "中国证券监督管理委员会首任主席（1992-1995），我国资本市场奠基人之一，现已离休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "li-jizun",
@@ -2119,7 +2279,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "sha-yan",
@@ -2263,7 +2427,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "liu-haoling",
@@ -2370,7 +2538,7 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "lhl-3",
-        "unitId": "csrc-main",
+        "unitId": "sasac-cic",
         "unitName": "中国投资有限责任公司 / 中央汇金",
         "department": "法律合规部 / 银行机构管理二部",
         "position": "业务主管、高级经理、股权管理二部主任",
@@ -2390,7 +2558,7 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "lhl-4",
-        "unitId": "csrc-main",
+        "unitId": "sasac-cic",
         "unitName": "中央汇金公司 / 新华保险",
         "department": "高管层",
         "position": "中央汇金副总经理兼新华保险董事长、申万宏源证券董事",
@@ -2456,7 +2624,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "cai-jianchun",
@@ -2562,7 +2734,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "li-ming",
@@ -2742,7 +2918,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "wang-jianjun",
@@ -2870,7 +3050,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "transferred",
+    "servingStatusLabel": "免去副主席职务 / 离任",
+    "servingStatusNote": "2024年7月国务院免去其中国证监会副主席职务。",
+    "statusBadgeColor": "blue"
   },
   {
     "id": "chen-huaping",
@@ -3047,7 +3231,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "qiu-yong",
@@ -3173,7 +3361,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "li-chao",
@@ -3333,7 +3525,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "fang-xinghai",
@@ -3513,7 +3709,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "到龄免职退休",
+    "servingStatusNote": "2024年7月因年满60周岁到龄，国务院免去其中国证监会副主席职务，正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "fan-dazhi",
@@ -3662,7 +3862,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "yan-qingmin",
@@ -3736,7 +3940,7 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "yqm-2",
-        "unitId": "csrc-main",
+        "unitId": "cbirc",
         "unitName": "中国银监会",
         "department": "银行监管一部 / 党委班子",
         "position": "主任、主席助理、党委委员、副主席",
@@ -3802,7 +4006,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "到龄退休",
+    "servingStatusNote": "2021年12月因年满60周岁到龄，免去中国证监会副主席职务，正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "jiang-yang",
@@ -3930,7 +4138,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "曾任证监会党委委员、副主席，2018年到龄退休，曾任第十三届全国政协经济委员会委员。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "zhuang-xinyi",
@@ -4078,7 +4290,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "曾任证监会副主席、中国建投监事长，2015年到龄正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "gui-minjie",
@@ -4194,7 +4410,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "曾任证监会党委副书记、副主席、上交所理事长，2016年到龄正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "gao-xiqing",
@@ -4334,7 +4554,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "曾任证监会副主席、中投公司副董事长兼总经理，现已退休，任清华大学法学院教授。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "zhou-xiaochuan",
@@ -4442,7 +4666,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "曾任证监会主席、中国人民银行行长、全国政协副主席，现已正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "lu-dabiao",
@@ -4552,7 +4780,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "peng-ming",
@@ -4658,7 +4890,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "zhang-wangjun",
@@ -4783,7 +5019,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "zhou-xiaozhou",
@@ -4891,7 +5131,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "sui-qiang",
@@ -5009,7 +5253,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "xing-xiangfei",
@@ -5115,7 +5363,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "guo-ruiming",
@@ -5202,7 +5454,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "wu-xiaoyong",
@@ -5313,7 +5569,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "zhou-guihua",
@@ -5419,7 +5679,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "tang-libin",
@@ -5544,7 +5808,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "yao-qian",
@@ -5672,7 +5940,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "investigated",
+    "servingStatusLabel": "开除党籍公职 / 涉嫌受贿犯罪",
+    "servingStatusNote": "2024年11月中央纪委国家监委驻中国证监会纪检监察组通报：构成严重职务违法并涉嫌受贿犯罪，给予开除党籍、开除公职处分，收缴违纪违法所得，移送检察机关依法审查起诉。",
+    "statusBadgeColor": "rose"
   },
   {
     "id": "xiong-jun",
@@ -5829,7 +6101,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "shen-bing",
@@ -5935,7 +6211,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "gao-weibing",
@@ -6025,7 +6305,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "yan-bojin",
@@ -6153,7 +6437,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "he-qingwen",
@@ -6264,7 +6552,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "he-yanchun",
@@ -6358,7 +6650,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "ran-hua",
@@ -6460,7 +6756,7 @@ export const OFFICIALS_DATA: Official[] = [
       },
       {
         "id": "rh-4",
-        "unitId": "csrc-main",
+        "unitId": "gov-local",
         "unitName": "南京市人民政府",
         "department": "市政府领导班子",
         "position": "副市长、党组成员",
@@ -6526,7 +6822,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "kong-qingwen",
@@ -6656,7 +6956,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "zhu-lihong",
@@ -6762,7 +7066,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "li-zhibin",
@@ -6868,7 +7176,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "huo-ruirong",
@@ -7031,7 +7343,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "lu-dongsheng",
@@ -7156,7 +7472,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "yan-shaoming",
@@ -7243,7 +7563,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "yu-wenqiang",
@@ -7412,7 +7736,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "lu-wendao",
@@ -7499,7 +7827,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "lin-lin",
@@ -7647,7 +7979,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "tian-xiangyang",
@@ -7757,7 +8093,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "cheng-hehong",
@@ -7877,7 +8217,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "lu-wenshan",
@@ -7986,7 +8330,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "离任退休",
+    "servingStatusNote": "曾任中国证监会法律部主任、上海期货交易所监事会主席，现已离任退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "chen-fei",
@@ -8076,7 +8424,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "yang-zongru",
@@ -8163,7 +8515,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "yin-rongyan",
@@ -8273,7 +8629,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "wang-fenghai",
@@ -8379,7 +8739,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "2023年自上海期货交易所党委副书记、总经理职务正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "jia-wenqin",
@@ -8507,7 +8871,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "transferred",
+    "servingStatusLabel": "转任资本市场学院院长",
+    "servingStatusNote": "曾任北京证监局党委书记、局长，现任资本市场学院党委副书记、院长。",
+    "statusBadgeColor": "blue"
   },
   {
     "id": "jiao-jinhong",
@@ -8625,7 +8993,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "到龄退休",
+    "servingStatusNote": "2024年自中国证监会首席律师、法治司司长岗位到龄正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "wang-jianping",
@@ -8733,7 +9105,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "自中国证监会市场监管二部主任、北京证监局局长岗位正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "zhang-sining",
@@ -8861,7 +9237,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "自证通股份有限公司党委书记、董事长岗位正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "han-kang",
@@ -8957,7 +9337,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "自上海证监局副局长、正局级巡视员岗位正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "zhang-ning",
@@ -9065,7 +9449,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": false
+    "isCurrentServing": false,
+    "servingStatus": "retired",
+    "servingStatusLabel": "正常退休",
+    "servingStatusNote": "自上海证监局首任局长、党委书记岗位正常退休。",
+    "statusBadgeColor": "slate"
   },
   {
     "id": "yang-yong",
@@ -9142,7 +9530,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "peng-jing",
@@ -9219,7 +9611,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "wang-dengyong",
@@ -9308,7 +9704,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "hu-jingsheng",
@@ -9397,7 +9797,11 @@ export const OFFICIALS_DATA: Official[] = [
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
     },
-    "isCurrentServing": true
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "zhao-shanzhong",
@@ -9496,7 +9900,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 96,
       "label": "官方政务公开核验",
       "source": "证监会政务公开与中证协法定代表公示档案"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "wang-guangxue",
@@ -9578,7 +9986,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "官方政务公开核验",
       "source": "证监会政务公开资料"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "bi-xiaoying",
@@ -9660,7 +10072,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 96,
       "label": "官方政务公开核验",
       "source": "证监会稽查执法公示档案"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "zhang-zhongning",
@@ -9725,7 +10141,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "官方政务公开核验",
       "source": "证监会政务公开档案"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "wu-yunhao",
@@ -9824,7 +10244,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "中证协官方公报核验",
       "source": "中国证券业协会官方通报与法定公示"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "zhu-jian",
@@ -9906,7 +10330,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "中证协官方公示核验",
       "source": "中国证券业协会第八届理事会法定履历公示"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "jiang-feng",
@@ -9988,7 +10416,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方工商公示核验",
       "source": "中国期货市场监控中心法定代表人登记公示"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "mao-hansong",
@@ -10058,7 +10490,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方事业单位法定公示核验",
       "source": "中证金融研究院法定代表人登记公告"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "kuang-xiaofeng",
@@ -10140,7 +10576,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "浙江证监局官方政务核验",
       "source": "浙江证监局政务公开与全国人大代表名册"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "qian-zongbao",
@@ -10193,7 +10633,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方政务公开核验",
       "source": "四川证监局政务公开档案"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "tu-chubin",
@@ -10263,7 +10707,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方政务公开核验",
       "source": "云南证监局政务公开档案"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "li-yongchun",
@@ -10345,7 +10793,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方政务公开核验",
       "source": "福建证监局政务公开档案"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "lai-zhaohui",
@@ -10398,7 +10850,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方政务公开核验",
       "source": "安徽证监局政务公开档案"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   },
   {
     "id": "pan-gongsheng",
@@ -10463,7 +10919,11 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 99,
       "label": "国家法定人事公报确证",
       "source": "国务院公报与全国两会法定代表公示"
-    }
+    },
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在相应岗位正常履行领导职务。",
+    "statusBadgeColor": "emerald"
   }
 ];
 
@@ -10871,11 +11331,22 @@ export const RANK_ORDER: Record<string, number> = {
   '副处级': 6,
 };
 
+export const CSRC_LEADERSHIP_IDS = new Set([
+  'wu-qing', 'li-chao', 'fan-dazhi', 'chen-huaping', 'li-ming', 'liu-haoling',
+  'liu-hongru', 'zhou-zhengqing', 'zhou-xiaochuan', 'shang-fulin', 'guo-shuqing',
+  'xiao-gang', 'liu-shiyu', 'yi-huiman', 'gao-xiqing', 'gui-minjie', 'zhuang-xinyi',
+  'jiang-yang', 'yan-qingmin', 'fang-xinghai', 'wang-jianjun'
+]);
+
 export function isOfficialActiveInUnit(official: Official, unitId: string): boolean {
   if (official.isCurrentServing === false) return false;
   const pos = official.currentPosition || '';
   if (pos.includes('原') || pos.includes('首任') || pos.includes('退休')) {
     return false;
+  }
+  if (unitId === 'csrc-main') {
+    const unit = UNITS_DATA.find((u) => u.id === 'csrc-main');
+    return (unit?.currentLeaderIds || []).includes(official.id);
   }
   if (unitId === 'csrc-df') {
     const REGIONAL_BUREAU_IDS = [
@@ -10893,6 +11364,10 @@ export function isOfficialActiveInUnit(official: Official, unitId: string): bool
 
 export function isOfficialPastInUnit(official: Official, unitId: string): boolean {
   if (isOfficialActiveInUnit(official, unitId)) return false;
+  if (unitId === 'csrc-main') {
+    // 证监会机关（领导班子）严格仅匹配证监会历任会领导班子成员
+    return CSRC_LEADERSHIP_IDS.has(official.id);
+  }
   if (unitId === 'csrc-df') {
     const REGIONAL_BUREAU_IDS = [
       'csrc-bj', 'csrc-sh', 'csrc-gd', 'csrc-sz', 'csrc-js', 
@@ -10907,10 +11382,19 @@ export function isOfficialPastInUnit(official: Official, unitId: string): boolea
       )
     );
   }
-  return official.careerHistory.some(
-    (r) => r.unitId === unitId || (unitId === 'csrc-main' && r.unitId.startsWith('csrc-'))
-  );
+  if (unitId === 'cbirc') {
+    return official.careerHistory.some(
+      (r) => r.unitId === 'cbirc' || r.unitName.includes('银监') || r.unitName.includes('银保监')
+    );
+  }
+  if (unitId === 'sasac-cic') {
+    return official.careerHistory.some(
+      (r) => r.unitId === 'sasac-cic' || r.unitName.includes('中投') || r.unitName.includes('汇金') || r.unitName.includes('国资委')
+    );
+  }
+  return official.careerHistory.some((r) => r.unitId === unitId);
 }
+
 
 export function sortOfficialsByRankAndSeniority(a: Official, b: Official): number {
   const rankA = RANK_ORDER[a.currentRank] || 99;
