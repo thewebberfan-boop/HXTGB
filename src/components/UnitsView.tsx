@@ -12,10 +12,19 @@ import {
   ArrowRight,
   ArrowLeft,
   GitCommitVertical,
-  Building
+  Building,
+  Users,
+  History,
+  ShieldCheck,
+  Check
 } from 'lucide-react';
 import { PositionRankBadge } from './PositionRankBadge';
 import { OfficialIdPhoto } from './OfficialIdPhoto';
+import {
+  isOfficialActiveInUnit,
+  isOfficialPastInUnit,
+  sortOfficialsByRankAndSeniority
+} from '../data/csrcData';
 
 interface UnitsViewProps {
   units: Unit[];
@@ -24,6 +33,7 @@ interface UnitsViewProps {
   onNavigateToSwimlane: (unitId?: string) => void;
   onBackToSwimlane?: () => void;
   initialUnitId?: string | null;
+  initialOfficialId?: string | null;
   selectedUnitId?: string | null;
   onSelectUnit?: (unitId: string | null) => void;
 }
@@ -35,6 +45,7 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
   onNavigateToSwimlane,
   onBackToSwimlane,
   initialUnitId,
+  initialOfficialId,
   selectedUnitId,
   onSelectUnit,
 }) => {
@@ -64,10 +75,48 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
     }
   }, [initialUnitId, units]);
 
-  // 根据 unitId 获取关联主要领导
-  const getLeadersForUnit = (unit: Unit) => {
-    return officials.filter((off) => off.currentUnitId === unit.id);
-  };
+  // 1. 获取当前单位所有在职领导干部（严格区分：现任在任班子）
+  const servingLeaders = useMemo(() => {
+    if (!activeUnit) return [];
+    return officials
+      .filter((off) => isOfficialActiveInUnit(off, activeUnit.id))
+      .sort(sortOfficialsByRankAndSeniority);
+  }, [activeUnit, officials]);
+
+  // 2. 获取当前单位所有曾任/历任领导干部（历史曾在此任职）
+  const pastLeaders = useMemo(() => {
+    if (!activeUnit) return [];
+    return officials
+      .filter((off) => isOfficialPastInUnit(off, activeUnit.id))
+      .sort(sortOfficialsByRankAndSeniority);
+  }, [activeUnit, officials]);
+
+  // 3. 标签切换状态：'all' | 'serving' | 'past'
+  const [officialTab, setOfficialTab] = useState<'all' | 'serving' | 'past'>('all');
+
+  // 4. 核心需求二：默认官员定位（如果不是跳转进来，请默认定位在“在职”的官员）
+  const [focusedOfficialId, setFocusedOfficialId] = useState<string | null>(() => {
+    if (initialOfficialId) return initialOfficialId;
+    return servingLeaders[0]?.id || pastLeaders[0]?.id || null;
+  });
+
+  useEffect(() => {
+    if (initialOfficialId) {
+      const exists = [...servingLeaders, ...pastLeaders].some((o) => o.id === initialOfficialId);
+      if (exists) {
+        setFocusedOfficialId(initialOfficialId);
+        return;
+      }
+    }
+    // 不是跳转进来或该干部不属于当前单位，默认定位在“在职”第一位官员
+    setFocusedOfficialId(servingLeaders[0]?.id || pastLeaders[0]?.id || null);
+  }, [activeUnit?.id, initialOfficialId, servingLeaders, pastLeaders]);
+
+  const displayedLeaders = useMemo(() => {
+    if (officialTab === 'serving') return servingLeaders;
+    if (officialTab === 'past') return pastLeaders;
+    return [...servingLeaders, ...pastLeaders];
+  }, [officialTab, servingLeaders, pastLeaders]);
 
   const getLevelBadgeClass = (level: UnitLevel) => {
     switch (level) {
@@ -83,9 +132,6 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
         return 'bg-gray-100 text-gray-700 border-gray-200';
     }
   };
-
-  // 当前活跃单位的领导班子
-  const activeLeaders = activeUnit ? getLeadersForUnit(activeUnit) : [];
 
   return (
     <div className="space-y-6">
@@ -292,76 +338,184 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
             </div>
           </div>
 
-          {/* 3. 现任主要领导干部班子 (宽幅全景网格卡片) */}
-          <div className="mac-card rounded-2xl p-6 sm:p-7 border border-black/[0.08] bg-white shadow-xs space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-black/[0.06] gap-2">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shadow-2xs">
-                  <UserCheck className="w-4 h-4" />
+          {/* 3. 单位领导干部档案看板：严格区分「在任领导班子」与「历任/曾任干部」 */}
+          <div className="mac-card rounded-2xl p-6 sm:p-7 border border-black/[0.08] bg-white shadow-xs space-y-5">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between pb-4 border-b border-black/[0.06] gap-4">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center shadow-2xs">
+                  <UserCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-gray-900 tracking-tight">
-                    现任主要领导干部班子 ({activeLeaders.length}人)
+                  <h3 className="text-lg font-bold text-gray-900 tracking-tight flex items-center gap-2">
+                    <span>机构干部任职档案</span>
+                    <span className="text-xs text-gray-500 font-normal">
+                      (在职班子 {servingLeaders.length} 人 · 历任曾任 {pastLeaders.length} 人)
+                    </span>
                   </h3>
-                  <p className="text-xs text-gray-500">
-                    收录该单位在任的主要领导干部，点击干部卡片可直接查看其个人全息履历档案
+                  <p className="text-xs text-gray-500 mt-0.5">
+                    严格区分当前在任的领导班子与历史曾任干部，支持快速筛选与全息履历穿梭
                   </p>
                 </div>
               </div>
-              <span className="text-xs text-blue-600 font-medium">
-                共关联 {activeLeaders.length} 位在职领导
-              </span>
+
+              {/* 分组筛选 Pills */}
+              <div className="flex items-center gap-1.5 p-1 bg-black/[0.03] rounded-xl border border-black/[0.04] shrink-0 text-xs">
+                <button
+                  onClick={() => setOfficialTab('all')}
+                  className={`px-3 py-1 rounded-lg font-semibold transition-all ${
+                    officialTab === 'all'
+                      ? 'bg-white text-gray-900 shadow-2xs'
+                      : 'text-gray-500 hover:text-gray-800'
+                  }`}
+                >
+                  全部干部 ({servingLeaders.length + pastLeaders.length})
+                </button>
+                <button
+                  onClick={() => setOfficialTab('serving')}
+                  className={`px-3 py-1 rounded-lg font-semibold transition-all flex items-center gap-1 ${
+                    officialTab === 'serving'
+                      ? 'bg-emerald-600 text-white shadow-2xs'
+                      : 'text-emerald-700 hover:text-emerald-800'
+                  }`}
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-300" />
+                  <span>在任班子 ({servingLeaders.length})</span>
+                </button>
+                <button
+                  onClick={() => setOfficialTab('past')}
+                  className={`px-3 py-1 rounded-lg font-semibold transition-all flex items-center gap-1 ${
+                    officialTab === 'past'
+                      ? 'bg-gray-700 text-white shadow-2xs'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  <span>历任/曾任 ({pastLeaders.length})</span>
+                </button>
+              </div>
             </div>
 
-            {activeLeaders.length > 0 ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 pt-2">
-                {activeLeaders.map((leader) => (
-                  <div
-                    key={leader.id}
-                    onClick={() => onSelectOfficial(leader)}
-                    className="p-4 rounded-2xl border border-black/[0.06] hover:border-blue-400/80 bg-gray-50/60 hover:bg-blue-50/20 transition-all cursor-pointer flex flex-col justify-between group relative overflow-hidden shadow-2xs hover:shadow-xs"
-                  >
-                    <div className="flex items-start gap-3">
-                      {/* 干部 1 寸标准免冠证件照 */}
-                      <OfficialIdPhoto official={leader} size="sm" />
+            {/* 干部卡片网格 */}
+            {displayedLeaders.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 pt-1">
+                {displayedLeaders.map((leader) => {
+                  const isServing = isOfficialActiveInUnit(leader, activeUnit.id);
+                  const isFocused = leader.id === focusedOfficialId;
+                  const histRecord = leader.careerHistory.find(
+                    (r) =>
+                      r.unitId === activeUnit.id ||
+                      (activeUnit.id === 'csrc-main' && r.unitId.startsWith('csrc-'))
+                  );
 
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-1.5 flex-wrap">
-                          <span className="font-bold text-base text-gray-900 group-hover:text-blue-600 transition-colors">
-                            {leader.name}
-                          </span>
-                          <PositionRankBadge rank={leader.currentRank} />
+                  return (
+                    <div
+                      key={leader.id}
+                      onClick={() => setFocusedOfficialId(leader.id)}
+                      className={`p-4 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between group relative overflow-hidden shadow-2xs ${
+                        isFocused
+                          ? 'ring-2 ring-blue-500 border-blue-500 bg-blue-50/40 shadow-xs'
+                          : isServing
+                          ? 'border-emerald-200/80 bg-white hover:border-blue-400/80 hover:bg-blue-50/20'
+                          : 'border-black/[0.06] bg-gray-50/60 hover:border-gray-300 hover:bg-gray-100/60'
+                      }`}
+                    >
+                      <div>
+                        {/* 状态徽标行 */}
+                        <div className="flex items-center justify-between gap-1 mb-2.5">
+                          {isServing ? (
+                            <span className="text-[10px] font-bold text-emerald-800 bg-emerald-100/90 border border-emerald-300 px-2 py-0.5 rounded-md flex items-center gap-1">
+                              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                              <span>现任在职</span>
+                            </span>
+                          ) : (
+                            <span className="text-[10px] font-bold text-amber-900 bg-amber-100/80 border border-amber-300/80 px-2 py-0.5 rounded-md">
+                              曾在此任职 / 历任
+                            </span>
+                          )}
+
+                          {isFocused && (
+                            <span className="text-[9.5px] bg-blue-600 text-white font-bold px-1.5 py-0.5 rounded shadow-2xs">
+                              当前定位
+                            </span>
+                          )}
                         </div>
-                        <p className="text-xs text-gray-700 mt-1 font-medium leading-snug line-clamp-2">
-                          {leader.currentPosition}
-                        </p>
-                        <p className="text-[11px] text-gray-400 mt-1">
-                          {leader.birthYear}年生（约{new Date().getFullYear() - leader.birthYear}岁）
-                        </p>
+
+                        <div className="flex items-start gap-3">
+                          {/* 干部免冠证件照 */}
+                          <OfficialIdPhoto official={leader} size="sm" />
+
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-1.5 flex-wrap">
+                              <span className="font-bold text-base text-gray-900 group-hover:text-blue-600 transition-colors">
+                                {leader.name}
+                              </span>
+                              <PositionRankBadge rank={leader.currentRank} />
+                            </div>
+
+                            {/* 职务展示 */}
+                            {isServing ? (
+                              <p className="text-xs text-gray-800 mt-1 font-semibold leading-snug line-clamp-2">
+                                {leader.currentPosition}
+                              </p>
+                            ) : (
+                              <div className="mt-1 space-y-0.5">
+                                <p className="text-xs text-amber-900 font-semibold leading-snug line-clamp-2">
+                                  曾任：{histRecord?.position || leader.currentPosition}
+                                  {histRecord && (
+                                    <span className="text-[10px] text-gray-500 font-mono font-normal ml-1">
+                                      ({histRecord.startYear}-{histRecord.endYear || '离任'})
+                                    </span>
+                                  )}
+                                </p>
+                                <p className="text-[11px] text-gray-500 truncate" title={leader.currentPosition}>
+                                  状态：{leader.currentPosition}
+                                </p>
+                              </div>
+                            )}
+
+                            <p className="text-[11px] text-gray-400 mt-1 font-mono">
+                              {leader.birthYear}年生（约{new Date().getFullYear() - leader.birthYear}岁）
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* 底部交互按钮栏 */}
+                      <div className="mt-4 pt-2.5 border-t border-black/[0.05] flex items-center justify-between text-xs font-medium">
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onSelectOfficial(leader);
+                          }}
+                          className="text-blue-600 hover:text-blue-800 flex items-center gap-0.5 group-hover:translate-x-0.5 transition-transform"
+                        >
+                          <span>查看个人档案</span>
+                          <span>→</span>
+                        </button>
+
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onNavigateToSwimlane(activeUnit.id);
+                          }}
+                          className="text-[11px] text-gray-400 hover:text-blue-600 transition-colors"
+                        >
+                          在泳道中分析
+                        </button>
                       </div>
                     </div>
-
-                    <div className="mt-4 pt-2.5 border-t border-black/[0.05] flex items-center justify-between text-xs text-blue-600 font-medium">
-                      <span className="group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
-                        <span>查看个人档案</span>
-                        <span>→</span>
-                      </span>
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          onNavigateToSwimlane(activeUnit.id);
-                        }}
-                        className="text-[11px] text-gray-400 hover:text-blue-600 transition-colors"
-                      >
-                        在泳道中分析
-                      </button>
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             ) : (
-              <div className="p-8 bg-gray-50 rounded-2xl border border-black/[0.04] text-xs text-gray-400 text-center">
-                暂未收录该单位现任主要领导班子个人档案
+              <div className="p-10 bg-gray-50 rounded-2xl border border-black/[0.04] text-xs text-gray-500 text-center space-y-2">
+                <Users className="w-8 h-8 text-gray-300 mx-auto" />
+                <p className="font-semibold text-gray-600">
+                  {officialTab === 'serving'
+                    ? `该机构当前暂未收录现任在职领导班子档案`
+                    : officialTab === 'past'
+                    ? `该机构暂无历史曾任干部档案`
+                    : `暂未收录该单位干部任职档案`}
+                </p>
               </div>
             )}
           </div>

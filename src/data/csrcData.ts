@@ -86,7 +86,7 @@ export const UNITS_DATA: Unit[] = [
     ],
     "websiteUrl": "http://www.csrc.gov.cn",
     "currentLeaderIds": [
-      "shen-bing"
+      "zhao-shanzhong"
     ],
     "tagColor": "blue"
   },
@@ -125,7 +125,10 @@ export const UNITS_DATA: Unit[] = [
       "打击伪私募与非法集资活动，化解存量涉众金融风险"
     ],
     "websiteUrl": "http://www.csrc.gov.cn",
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "currentLeaderIds": [
+      "wang-guangxue"
+    ]
   },
   {
     "id": "csrc-qh",
@@ -163,7 +166,7 @@ export const UNITS_DATA: Unit[] = [
     ],
     "websiteUrl": "http://www.csrc.gov.cn",
     "currentLeaderIds": [
-      "li-ming"
+      "bi-xiaoying"
     ],
     "tagColor": "blue"
   },
@@ -242,7 +245,10 @@ export const UNITS_DATA: Unit[] = [
       "组织研发智能监管算法平台，赋能穿透式现场与非现场监管"
     ],
     "websiteUrl": "http://www.csrc.gov.cn",
-    "tagColor": "blue"
+    "tagColor": "blue",
+    "currentLeaderIds": [
+      "zhang-zhongning"
+    ]
   },
   {
     "id": "csrc-sse",
@@ -543,7 +549,10 @@ export const UNITS_DATA: Unit[] = [
     ],
     "websiteUrl": "http://www.cfmmc.com",
     "address": "北京市西城区金融大街甲9号金融街中心",
-    "tagColor": "purple"
+    "tagColor": "purple",
+    "currentLeaderIds": [
+      "jiang-feng"
+    ]
   },
   {
     "id": "csrc-cfr",
@@ -562,7 +571,10 @@ export const UNITS_DATA: Unit[] = [
     "websiteUrl": "http://www.cfr.org.cn",
     "address": "北京市西城区金融大街26号金丰和商务苑",
     "contactPhone": "010-85578000",
-    "tagColor": "orange"
+    "tagColor": "orange",
+    "currentLeaderIds": [
+      "mao-hansong"
+    ]
   },
   {
     "id": "csrc-isc",
@@ -623,7 +635,11 @@ export const UNITS_DATA: Unit[] = [
     "websiteUrl": "https://www.sac.net.cn",
     "address": "北京市西城区金融大街19号富凯大厦B座",
     "contactPhone": "010-66575800",
-    "tagColor": "emerald"
+    "tagColor": "emerald",
+    "currentLeaderIds": [
+      "wu-yunhao",
+      "zhu-jian"
+    ]
   },
   {
     "id": "csrc-bj",
@@ -742,7 +758,10 @@ export const UNITS_DATA: Unit[] = [
       "规范辖区证券期货中介机构与庞大民间财富管理生态"
     ],
     "websiteUrl": "http://www.csrc.gov.cn/zhejiang/",
-    "tagColor": "teal"
+    "tagColor": "teal",
+    "currentLeaderIds": [
+      "kuang-xiaofeng"
+    ]
   },
   {
     "id": "csrc-sc",
@@ -758,7 +777,10 @@ export const UNITS_DATA: Unit[] = [
       "查处西部大区重点证券期货违法违规线索与案件"
     ],
     "websiteUrl": "http://www.csrc.gov.cn/sichuan/",
-    "tagColor": "teal"
+    "tagColor": "teal",
+    "currentLeaderIds": [
+      "qian-zongbao"
+    ]
   },
   {
     "id": "csrc-yn",
@@ -774,7 +796,10 @@ export const UNITS_DATA: Unit[] = [
       "防范化解地方资本市场债券违约与流动性风险"
     ],
     "websiteUrl": "http://www.csrc.gov.cn/yunnan/",
-    "tagColor": "teal"
+    "tagColor": "teal",
+    "currentLeaderIds": [
+      "tu-chubin"
+    ]
   },
   {
     "id": "pbc",
@@ -790,7 +815,10 @@ export const UNITS_DATA: Unit[] = [
       "宏观审慎金融监管"
     ],
     "websiteUrl": "http://www.pbc.gov.cn",
-    "tagColor": "slate"
+    "tagColor": "slate",
+    "currentLeaderIds": [
+      "pan-gongsheng"
+    ]
   },
   {
     "id": "csrc-fj",
@@ -807,7 +835,9 @@ export const UNITS_DATA: Unit[] = [
       "依法查处辖区证券期货违法违规行为，维护地方金融稳定"
     ],
     "websiteUrl": "http://www.csrc.gov.cn/fujian/",
-    "currentLeaderIds": [],
+    "currentLeaderIds": [
+      "li-yongchun"
+    ],
     "tagColor": "teal"
   },
   {
@@ -825,7 +855,9 @@ export const UNITS_DATA: Unit[] = [
       "防范化解辖区资本市场金融风险，查处违法违规行为"
     ],
     "websiteUrl": "http://www.csrc.gov.cn/anhui/",
-    "currentLeaderIds": [],
+    "currentLeaderIds": [
+      "lai-zhaohui"
+    ],
     "tagColor": "teal"
   },
   {
@@ -843,7 +875,13 @@ export const UNITS_DATA: Unit[] = [
       "防范化解地方中小金融机构、地方债务及非法金融活动风险"
     ],
     "websiteUrl": "http://www.gov.cn",
-    "currentLeaderIds": [],
+    "currentLeaderIds": [
+      "wu-qing",
+      "ran-hua",
+      "zhuang-xinyi",
+      "yan-qingmin",
+      "guo-shuqing"
+    ],
     "tagColor": "amber"
   },
   {
@@ -866,7 +904,12 @@ export const UNITS_DATA: Unit[] = [
       "lin-lin",
       "yang-zongru",
       "peng-ming",
-      "tang-libin"
+      "tang-libin",
+      "kuang-xiaofeng",
+      "qian-zongbao",
+      "tu-chubin",
+      "li-yongchun",
+      "lai-zhaohui"
     ],
     "tagColor": "teal"
   }
@@ -1091,7 +1134,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "yi-huiman",
@@ -1210,7 +1254,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "liu-shiyu",
@@ -1221,7 +1266,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 11,
     "nativePlace": "江苏灌云",
     "currentUnitId": "csrc-main",
-    "currentPosition": "中国证监会原党委书记、主席",
+    "currentPosition": "中国证监会原党委书记、主席（已离任）",
     "currentRank": "正部级",
     "education": [
       {
@@ -1349,7 +1394,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "xiao-gang",
@@ -1476,7 +1522,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "guo-shuqing",
@@ -1635,7 +1682,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "shang-fulin",
@@ -1762,7 +1810,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "zhou-zhengqing",
@@ -1837,7 +1886,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "liu-hongru",
@@ -1924,7 +1974,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "li-jizun",
@@ -2067,7 +2118,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "sha-yan",
@@ -2210,7 +2262,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "liu-haoling",
@@ -2402,7 +2455,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "cai-jianchun",
@@ -2507,7 +2561,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "li-ming",
@@ -2686,7 +2741,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "wang-jianjun",
@@ -2697,7 +2753,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 3,
     "nativePlace": "湖南邵阳",
     "currentUnitId": "csrc-main",
-    "currentPosition": "中国证监会原党委委员、副主席",
+    "currentPosition": "中国证监会原党委委员、副主席（已离任）",
     "currentRank": "副部级",
     "education": [
       {
@@ -2813,7 +2869,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "chen-huaping",
@@ -2989,7 +3046,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "qiu-yong",
@@ -3114,7 +3172,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "li-chao",
@@ -3273,7 +3332,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "fang-xinghai",
@@ -3284,7 +3344,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 5,
     "nativePlace": "浙江乐清",
     "currentUnitId": "csrc-main",
-    "currentPosition": "中国证监会原党委委员、副主席",
+    "currentPosition": "中国证监会原党委委员、副主席（已退休）",
     "currentRank": "副部级",
     "education": [
       {
@@ -3452,7 +3512,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "fan-dazhi",
@@ -3600,7 +3661,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "yan-qingmin",
@@ -3739,7 +3801,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "jiang-yang",
@@ -3866,7 +3929,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "zhuang-xinyi",
@@ -4013,7 +4077,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "gui-minjie",
@@ -4128,7 +4193,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "gao-xiqing",
@@ -4267,7 +4333,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "zhou-xiaochuan",
@@ -4374,7 +4441,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "lu-dabiao",
@@ -4483,7 +4551,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "peng-ming",
@@ -4588,7 +4657,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "zhang-wangjun",
@@ -4712,7 +4782,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "zhou-xiaozhou",
@@ -4819,7 +4890,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "sui-qiang",
@@ -4936,7 +5008,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "xing-xiangfei",
@@ -5041,7 +5114,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "guo-ruiming",
@@ -5127,7 +5201,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "wu-xiaoyong",
@@ -5237,7 +5312,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "zhou-guihua",
@@ -5342,7 +5418,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "tang-libin",
@@ -5466,7 +5543,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "yao-qian",
@@ -5477,7 +5555,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 1,
     "nativePlace": "安徽",
     "currentUnitId": "csrc-kj",
-    "currentPosition": "中国证监会科技监管司原司长、信息中心原主任",
+    "currentPosition": "中国证监会科技监管司原司长（已免职）",
     "currentRank": "正厅局级",
     "education": [
       {
@@ -5593,7 +5671,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "xiong-jun",
@@ -5749,7 +5828,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "shen-bing",
@@ -5854,7 +5934,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "gao-weibing",
@@ -5943,7 +6024,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "yan-bojin",
@@ -6070,7 +6152,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "he-qingwen",
@@ -6180,7 +6263,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "he-yanchun",
@@ -6273,7 +6357,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "ran-hua",
@@ -6440,7 +6525,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "kong-qingwen",
@@ -6569,7 +6655,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "zhu-lihong",
@@ -6674,7 +6761,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "li-zhibin",
@@ -6779,7 +6867,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "huo-ruirong",
@@ -6941,7 +7030,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "lu-dongsheng",
@@ -7065,7 +7155,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "yan-shaoming",
@@ -7151,7 +7242,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "yu-wenqiang",
@@ -7319,7 +7411,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "lu-wendao",
@@ -7405,7 +7498,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "lin-lin",
@@ -7552,7 +7646,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "tian-xiangyang",
@@ -7661,7 +7756,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "cheng-hehong",
@@ -7780,7 +7876,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "lu-wenshan",
@@ -7790,7 +7887,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 8,
     "nativePlace": "江苏",
     "currentUnitId": "csrc-shfe",
-    "currentPosition": "上海期货交易所原监事长、中国期货业协会副会长",
+    "currentPosition": "上海期货交易所原监事长（已离任）",
     "currentRank": "正厅局级",
     "bioSummary": "法学硕士。历任上交所法律总监、证监会发行监管部副主任、上海期货交易所监事长、中国期货业协会副会长。",
     "education": [
@@ -7888,7 +7985,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "chen-fei",
@@ -7977,7 +8075,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "yang-zongru",
@@ -8063,7 +8162,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "yin-rongyan",
@@ -8172,7 +8272,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "wang-fenghai",
@@ -8182,7 +8283,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 8,
     "nativePlace": "辽宁",
     "currentUnitId": "csrc-shfe",
-    "currentPosition": "上海期货交易所原党委副书记、总经理",
+    "currentPosition": "上海期货交易所原党委副书记、总经理（已退休）",
     "currentRank": "正厅局级",
     "bioSummary": "中国期货市场资深高管。曾任大连商品交易所副总经理、总经理，2019年10月至2024年12月出任上海期货交易所总经理。",
     "education": [
@@ -8277,7 +8378,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "jia-wenqin",
@@ -8288,7 +8390,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 7,
     "nativePlace": "北京",
     "currentUnitId": "csrc-bj",
-    "currentPosition": "北京证监局原党委书记、局长，原首席会计师",
+    "currentPosition": "北京证监局原党委书记、局长（现任资本市场学院院长）",
     "currentRank": "正厅局级",
     "education": [
       {
@@ -8404,7 +8506,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "jiao-jinhong",
@@ -8414,7 +8517,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 11,
     "nativePlace": "天津",
     "currentUnitId": "csrc-main",
-    "currentPosition": "中国证监会原首席律师、法律部原主任",
+    "currentPosition": "中国证监会原首席律师、法律部原主任（已退休）",
     "currentRank": "正厅局级",
     "bioSummary": "法学博士、对外经贸大学法学院原教授。曾任证监会法律部副主任、行政处罚委主任、深圳证监局局长、首席律师，中国资本市场法治建设的核心奠基人之一。",
     "education": [
@@ -8521,7 +8624,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 95,
       "label": "权威官方认证",
       "source": "中国证监会官方履历档案与金融机构法定披露"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "wang-jianping",
@@ -8532,7 +8636,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 6,
     "nativePlace": "河北",
     "currentUnitId": "csrc-main",
-    "currentPosition": "中国证监会市场监管二部原主任，北京证监局原局长",
+    "currentPosition": "市场监管二部原主任，北京证监局原局长（已退休）",
     "currentRank": "正厅局级",
     "education": [
       {
@@ -8628,7 +8732,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "zhang-sining",
@@ -8639,7 +8744,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 8,
     "nativePlace": "辽宁",
     "currentUnitId": "csrc-main",
-    "currentPosition": "中国证监会原创业板部主任，上海证监局原局长",
+    "currentPosition": "证监会创业板部原主任，上海局原局长（已退休）",
     "currentRank": "正厅局级",
     "education": [
       {
@@ -8755,7 +8860,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "han-kang",
@@ -8766,7 +8872,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 4,
     "nativePlace": "江苏",
     "currentUnitId": "csrc-sh",
-    "currentPosition": "上海证监局原副局长（正局级巡视员）、中基协原副会长",
+    "currentPosition": "上海证监局原副局长（正局级巡视员，已退休）",
     "currentRank": "正厅局级",
     "education": [
       {
@@ -8850,7 +8956,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "zhang-ning",
@@ -8861,7 +8968,7 @@ export const OFFICIALS_DATA: Official[] = [
     "birthMonth": 10,
     "nativePlace": "上海",
     "currentUnitId": "csrc-sh",
-    "currentPosition": "中国证监会上海监管局原党委书记、局长",
+    "currentPosition": "上海证监局原党委书记、首任局长（已退休）",
     "currentRank": "正厅局级",
     "education": [
       {
@@ -8957,7 +9064,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": false
   },
   {
     "id": "yang-yong",
@@ -9033,7 +9141,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "peng-jing",
@@ -9109,7 +9218,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "wang-dengyong",
@@ -9197,7 +9307,8 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
-    }
+    },
+    "isCurrentServing": true
   },
   {
     "id": "hu-jingsheng",
@@ -9285,6 +9396,1073 @@ export const OFFICIALS_DATA: Official[] = [
       "score": 98,
       "label": "官方公报确证",
       "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
+    },
+    "isCurrentServing": true
+  },
+  {
+    "id": "zhao-shanzhong",
+    "name": "赵山忠",
+    "avatarUrl": "/avatars/zhao-shanzhong.jpg",
+    "gender": "男",
+    "birthYear": 1968,
+    "birthMonth": 6,
+    "nativePlace": "山东",
+    "currentUnitId": "csrc-jg",
+    "currentPosition": "中国证监会证券基金机构监管司司长",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "中国资本市场机构监管核心业务主管，长期深耕证券基金经营机构监管。曾任中国证券业协会党委书记、执行副会长、会长，中国证监会办公厅副巡视员、处长。2024年出任证券基金机构监管司司长，全面推进机构监管穿透式合规管理与集约化高质量发展。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "山东大学",
+        "major": "经济系经济学学士",
+        "graduationYear": 1990,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "官方名册校友核验",
+          "source": "全国重点高校知名校友名册登记"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "中国人民大学",
+        "major": "金融学硕士",
+        "graduationYear": 1997,
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "高校学位档案核验",
+          "source": "教育部学位论文数据库与官方公布简历"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zsz-1",
+        "unitId": "csrc-bgt",
+        "unitName": "中国证券监督管理委员会办公厅",
+        "department": "秘书处 / 综合处",
+        "position": "处长、副巡视员",
+        "rank": "副厅局级",
+        "startYear": 2005,
+        "endYear": 2015,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "公报确证",
+          "source": "证监会机关内部任职公告"
+        }
+      },
+      {
+        "id": "zsz-2",
+        "unitId": "csrc-sac",
+        "unitName": "中国证券业协会",
+        "department": "协会党委",
+        "position": "党委书记、执行副会长、会长",
+        "rank": "正厅局级",
+        "startYear": 2015,
+        "endYear": 2024,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "法定公示确证",
+          "source": "中国证券业协会会员代表大会法定选举公告"
+        }
+      },
+      {
+        "id": "zsz-3",
+        "unitId": "csrc-jg",
+        "unitName": "中国证券监督管理委员会证券基金机构监管司",
+        "department": "司领导",
+        "position": "司长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "权威财媒确证",
+          "source": "《财新》人事专稿与证监会监管业务公开通报"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方政务公开核验",
+      "source": "证监会政务公开与中证协法定代表公示档案"
+    }
+  },
+  {
+    "id": "wang-guangxue",
+    "name": "王广学",
+    "avatarUrl": "/avatars/wang-guangxue.jpg",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 4,
+    "nativePlace": "河南",
+    "currentUnitId": "csrc-sc2",
+    "currentPosition": "中国证监会市场监管二司司长兼清理整顿各类交易场所办公室主任",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "资深监管专家。曾任证监会办公厅副主任兼应急办主任、非上市公众公司监管部副主任，2024年出任市场监管二司司长兼清整办主任，主管私募投资基金监管与多层次场外交易场所清理整顿。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "武汉大学",
+        "major": "法学院法学学士",
+        "graduationYear": 1993,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "高校校友档案核验",
+          "source": "武汉大学法学院校友档案"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "北京大学",
+        "major": "法学硕士",
+        "graduationYear": 2000,
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "学位论文核验",
+          "source": "北京大学学位评定委员会公示记录"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "wgx-1",
+        "unitId": "csrc-bgt",
+        "unitName": "中国证券监督管理委员会办公厅",
+        "department": "应急管理办公室",
+        "position": "副主任兼应急办主任",
+        "rank": "副厅局级",
+        "startYear": 2012,
+        "endYear": 2018,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "政务公告确证",
+          "source": "证监会政务信息公开"
+        }
+      },
+      {
+        "id": "wgx-2",
+        "unitId": "csrc-sc2",
+        "unitName": "中国证监会市场监管二司",
+        "department": "司领导",
+        "position": "司长兼清理整顿各类交易场所办公室主任",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "权威财媒确证",
+          "source": "《财新》金融人事特稿与多层次私募监管公开报道"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 95,
+      "label": "官方政务公开核验",
+      "source": "证监会政务公开资料"
+    }
+  },
+  {
+    "id": "bi-xiaoying",
+    "name": "毕晓颖",
+    "avatarUrl": "/avatars/bi-xiaoying.jpg",
+    "gender": "女",
+    "birthYear": 1973,
+    "birthMonth": 10,
+    "nativePlace": "辽宁",
+    "currentUnitId": "csrc-jc",
+    "currentPosition": "中国证监会稽查局局长",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "资本市场资深稽查执法骨干，曾任稽查总队副总队长、稽查局副局长，长期主持重大证券违法线索核查与跨境执法协作，以从严打击财务造假和内幕交易著称。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "中国政法大学",
+        "major": "法学学士",
+        "graduationYear": 1995,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "高校校友录核验",
+          "source": "中国政法大学校友名录"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "中国人民大学",
+        "major": "法律硕士",
+        "graduationYear": 2002,
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "学位论文核验",
+          "source": "中国人民大学法学院硕士论文数据库"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "bxy-1",
+        "unitId": "csrc-jc",
+        "unitName": "中国证券监督管理委员会稽查局",
+        "department": "稽查总队",
+        "position": "副总队长、副局长",
+        "rank": "副厅局级",
+        "startYear": 2014,
+        "endYear": 2024,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "公报确证",
+          "source": "证监会执法通报公示"
+        }
+      },
+      {
+        "id": "bxy-2",
+        "unitId": "csrc-jc",
+        "unitName": "中国证券监督管理委员会稽查局",
+        "department": "局领导",
+        "position": "局长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "政务执法公开核验",
+          "source": "全国打击证券违法执法通报与权威报道"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方政务公开核验",
+      "source": "证监会稽查执法公示档案"
+    }
+  },
+  {
+    "id": "zhang-zhongning",
+    "name": "张忠宁",
+    "avatarUrl": "/avatars/zhang-zhongning.jpg",
+    "gender": "男",
+    "birthYear": 1970,
+    "birthMonth": 8,
+    "nativePlace": "山东",
+    "currentUnitId": "csrc-kj",
+    "currentPosition": "中国证监会科技监管司司长兼信息中心主任",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "金融科技与信息化监管专家。长期在国家金融监管机构任职，曾任中国银保监会办公厅副主任、原保监会政策研究室副主任，2024年出任证监会科技监管司司长兼信息中心主任，全面推进资本市场智慧监管与数字化转型。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "南开大学",
+        "major": "计算机科学与技术学士",
+        "graduationYear": 1992,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "高校校友档案核验",
+          "source": "南开大学校友录"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "清华大学",
+        "major": "公共管理硕士(MPA)",
+        "graduationYear": 2004,
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "学位论文核验",
+          "source": "清华大学公共管理学院"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zzn-1",
+        "unitId": "csrc-kj",
+        "unitName": "中国证券监督管理委员会科技监管司",
+        "department": "司领导",
+        "position": "司长兼信息中心主任",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "政务公开核验",
+          "source": "证监会数字金融与智慧监管大会通报"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 95,
+      "label": "官方政务公开核验",
+      "source": "证监会政务公开档案"
+    }
+  },
+  {
+    "id": "wu-yunhao",
+    "name": "吴运浩",
+    "avatarUrl": "/avatars/wu-yunhao.jpg",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 12,
+    "nativePlace": "浙江",
+    "currentUnitId": "csrc-sac",
+    "currentPosition": "中国证券业协会党委书记、执行副会长",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "曾任证监会办公厅副主任、中国证券金融股份有限公司监事长，2025年12月当选中国证券业协会第八届理事会执行副会长并出任党委书记，主持协会日常常务工作。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "浙江大学",
+        "major": "经济系金融学学士",
+        "graduationYear": 1993,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "高校校友档案核验",
+          "source": "浙江大学校友录"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "复旦大学",
+        "major": "经济学院世界经济硕士",
+        "graduationYear": 1999,
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "高校学位论文核验",
+          "source": "复旦大学研究生院"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "wyh-1",
+        "unitId": "csrc-bgt",
+        "unitName": "中国证券监督管理委员会办公厅",
+        "department": "办公厅领导",
+        "position": "办公厅副主任",
+        "rank": "副厅局级",
+        "startYear": 2016,
+        "endYear": 2021,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "公报确证",
+          "source": "证监会任职公告"
+        }
+      },
+      {
+        "id": "wyh-2",
+        "unitId": "csrc-csf",
+        "unitName": "中国证券金融股份有限公司",
+        "department": "公司领导",
+        "position": "监事长",
+        "rank": "正厅局级",
+        "startYear": 2021,
+        "endYear": 2025,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "法定公示确证",
+          "source": "中证金公司工商登记与治理报告"
+        }
+      },
+      {
+        "id": "wyh-3",
+        "unitId": "csrc-sac",
+        "unitName": "中国证券业协会",
+        "department": "协会党委",
+        "position": "党委书记、执行副会长",
+        "rank": "正厅局级",
+        "startYear": 2025,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 99,
+          "label": "中证协换届法定公报",
+          "source": "2025年12月中国证券业协会第八次会员大会选举公报"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "中证协官方公报核验",
+      "source": "中国证券业协会官方通报与法定公示"
+    }
+  },
+  {
+    "id": "zhu-jian",
+    "name": "朱健",
+    "avatarUrl": "/avatars/zhu-jian.jpg",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 6,
+    "nativePlace": "江苏",
+    "currentUnitId": "csrc-sac",
+    "currentPosition": "中国证券业协会会长，国泰海通证券党委书记、董事长",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "资深证券金融家。曾长期在中国证监会系统任职，历任上海证监局信息调研处处长、机构监管处处长、上海证监局副局长，后任国泰君安副总裁、上海银行行长、国泰君安董事长，2025年出任合并后的国泰海通董事长，并于2025年12月当选中国证券业协会会长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "上海交通大学",
+        "major": "材料系工学学士",
+        "graduationYear": 1993,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "高校校友名册核验",
+          "source": "上海交通大学杰出校友名册"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "复旦大学",
+        "major": "国际关系学院法学硕士",
+        "graduationYear": 1996,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "硕士学位论文核验",
+          "source": "复旦大学学位论文数据库"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zj-1",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海监管局",
+        "department": "局领导",
+        "position": "党委委员、副局长",
+        "rank": "副厅局级",
+        "startYear": 2011,
+        "endYear": 2016,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "官方公报确证",
+          "source": "证监会上海监管局干部任免公告"
+        }
+      },
+      {
+        "id": "zj-2",
+        "unitId": "csrc-sac",
+        "unitName": "中国证券业协会",
+        "department": "理事会",
+        "position": "会长",
+        "rank": "正厅局级",
+        "startYear": 2025,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 99,
+          "label": "中证协换届法定公报",
+          "source": "2025年12月中国证券业协会第八次会员大会选举决议"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "中证协官方公示核验",
+      "source": "中国证券业协会第八届理事会法定履历公示"
+    }
+  },
+  {
+    "id": "jiang-feng",
+    "name": "蒋锋",
+    "avatarUrl": "/avatars/jiang-feng.jpg",
+    "gender": "男",
+    "birthYear": 1968,
+    "birthMonth": 3,
+    "nativePlace": "浙江",
+    "currentUnitId": "csrc-cfmmc",
+    "currentPosition": "中国期货市场监控中心有限责任公司党委书记、董事长、法定代表人",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "资本市场监管与交易所资深高管。曾任中国证监会稽查局副局长、上海证券交易所副总经理、党委委员，后出任中国期货市场监控中心总经理、董事长、法定代表人，主导期货市场全国集中监控与衍生品交易统一风控。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "浙江大学",
+        "major": "计算机系工学学士",
+        "graduationYear": 1990,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "高校校友名册核验",
+          "source": "浙江大学校友录"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "上海交通大学",
+        "major": "工商管理硕士(MBA)",
+        "graduationYear": 1998,
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "高校学位论文核验",
+          "source": "上海交通大学安泰经管学院"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "jf-1",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "领导班子",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2012,
+        "endYear": 2018,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "上交所治理公告确证",
+          "source": "上交所高管任免公告"
+        }
+      },
+      {
+        "id": "jf-2",
+        "unitId": "csrc-cfmmc",
+        "unitName": "中国期货市场监控中心有限责任公司",
+        "department": "领导班子",
+        "position": "党委书记、董事长、法定代表人",
+        "rank": "正厅局级",
+        "startYear": 2018,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "国家企业信用信息公示系统确证",
+          "source": "国家企业信用信息公示系统法定代表人与治理备案"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方工商公示核验",
+      "source": "中国期货市场监控中心法定代表人登记公示"
+    }
+  },
+  {
+    "id": "mao-hansong",
+    "name": "毛寒松",
+    "avatarUrl": "/avatars/mao-hansong.jpg",
+    "gender": "男",
+    "birthYear": 1968,
+    "birthMonth": 11,
+    "nativePlace": "湖南",
+    "currentUnitId": "csrc-cfr",
+    "currentPosition": "中证金融研究院党委书记、院长",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "经济学博士，资深资本市场宏观政策与战略研究专家。曾任中国证监会研究中心副主任、办公厅副主任，现任中证金融研究院党委书记、院长，主持国家资本市场顶层制度、新质生产力与金融强国战略研究。",
+    "education": [
+      {
+        "degree": "博士",
+        "school": "中国社会科学院研究生院",
+        "major": "经济学博士",
+        "graduationYear": 1999,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "社科院博士学位档案核验",
+          "source": "中国社会科学院博士研究生毕业名录"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "mhs-1",
+        "unitId": "csrc-bgt",
+        "unitName": "中国证券监督管理委员会办公厅",
+        "department": "研究中心",
+        "position": "研究中心副主任、办公厅副主任",
+        "rank": "副厅局级",
+        "startYear": 2010,
+        "endYear": 2019,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "证监会任职通报确证",
+          "source": "证监会机关内部通报"
+        }
+      },
+      {
+        "id": "mhs-2",
+        "unitId": "csrc-cfr",
+        "unitName": "中证金融研究院",
+        "department": "院领导",
+        "position": "党委书记、院长",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "事业单位法人公示确证",
+          "source": "国家事业单位登记管理局法定代表人公示"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方事业单位法定公示核验",
+      "source": "中证金融研究院法定代表人登记公告"
+    }
+  },
+  {
+    "id": "kuang-xiaofeng",
+    "name": "匡晓凤",
+    "avatarUrl": "/avatars/kuang-xiaofeng.jpg",
+    "gender": "女",
+    "birthYear": 1970,
+    "birthMonth": 5,
+    "nativePlace": "湖北",
+    "currentUnitId": "csrc-zj",
+    "currentPosition": "浙江证监局党委书记、局长兼杭州稽查局局长",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "法学硕士，资本市场资深稽查与派出机构主官。曾任中国证监会稽查局副局长、大连证监局党委书记兼局长，2024年出任浙江证监局党委书记、局长兼杭州稽查局局长，主导民营经济大省上市公司质量提升与防非处非综合治理。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "中南财经政法大学",
+        "major": "法学院法学学士",
+        "graduationYear": 1992,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "高校校友录核验",
+          "source": "中南财经政法大学校友名录"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "中国政法大学",
+        "major": "民商法学硕士",
+        "graduationYear": 1999,
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "学位论文核验",
+          "source": "中国政法大学研究生学位论文数据库"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "kxf-1",
+        "unitId": "csrc-jc",
+        "unitName": "中国证券监督管理委员会稽查局",
+        "department": "局领导",
+        "position": "副局长",
+        "rank": "副厅局级",
+        "startYear": 2012,
+        "endYear": 2019,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "证监会任职通报确证",
+          "source": "证监会政务公开任职通报"
+        }
+      },
+      {
+        "id": "kxf-2",
+        "unitId": "csrc-zj",
+        "unitName": "中国证券监督管理委员会浙江监管局",
+        "department": "局领导",
+        "position": "党委书记、局长兼杭州稽查局局长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "浙江局官方政务公开确证",
+          "source": "浙江证监局官方门户领导班子政务公开"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "浙江证监局官方政务核验",
+      "source": "浙江证监局政务公开与全国人大代表名册"
+    }
+  },
+  {
+    "id": "qian-zongbao",
+    "name": "钱宗保",
+    "avatarUrl": "/avatars/qian-zongbao.jpg",
+    "gender": "男",
+    "birthYear": 1968,
+    "birthMonth": 9,
+    "nativePlace": "四川",
+    "currentUnitId": "csrc-sc",
+    "currentPosition": "四川证监局党委书记、局长兼成都稽查局局长",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "曾长期扎根西部资本市场一线监管，历任西藏证监局党委书记兼局长、甘肃证监局党委书记兼局长，2023年出任四川证监局党委书记、局长兼成都稽查局局长，有力保障成渝双城经济圈资本市场稳定高质量发展。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "西南财经大学",
+        "major": "金融系经济学学士",
+        "graduationYear": 1990,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "高校校友档案核验",
+          "source": "西南财经大学知名校友名册"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "qzb-1",
+        "unitId": "csrc-sc",
+        "unitName": "中国证券监督管理委员会四川监管局",
+        "department": "局领导",
+        "position": "党委书记、局长兼成都稽查局局长",
+        "rank": "正厅局级",
+        "startYear": 2023,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "四川局官方政务公开确证",
+          "source": "四川证监局官方网站政务公开"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方政务公开核验",
+      "source": "四川证监局政务公开档案"
+    }
+  },
+  {
+    "id": "tu-chubin",
+    "name": "涂储斌",
+    "avatarUrl": "/avatars/tu-chubin.jpg",
+    "gender": "男",
+    "birthYear": 1972,
+    "birthMonth": 1,
+    "nativePlace": "江西",
+    "currentUnitId": "csrc-yn",
+    "currentPosition": "云南证监局党委书记、局长",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "曾任中国证监会发行监管部处长、江西证监局党委委员兼副局长，2024年出任云南证监局党委书记、局长，负责云南辖区上市公司、债券与证券期货经营机构综合监管。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "江西财经大学",
+        "major": "会计学学士",
+        "graduationYear": 1994,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "高校校友名册核验",
+          "source": "江西财经大学校友录"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "tcb-1",
+        "unitId": "csrc-fx",
+        "unitName": "中国证监会发行监管部",
+        "department": "审核处",
+        "position": "处长",
+        "rank": "正处级",
+        "startYear": 2011,
+        "endYear": 2017,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "公报确证",
+          "source": "证监会发行监管部公示记录"
+        }
+      },
+      {
+        "id": "tcb-2",
+        "unitId": "csrc-yn",
+        "unitName": "中国证券监督管理委员会云南监管局",
+        "department": "局领导",
+        "position": "党委书记、局长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "云南局官方政务公开确证",
+          "source": "云南证监局官方政务公开信息"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方政务公开核验",
+      "source": "云南证监局政务公开档案"
+    }
+  },
+  {
+    "id": "li-yongchun",
+    "name": "李永春",
+    "avatarUrl": "/avatars/li-yongchun.jpg",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 7,
+    "nativePlace": "河南",
+    "currentUnitId": "csrc-fj",
+    "currentPosition": "福建证监局党委书记、局长",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "曾任全国中小企业股份转让系统（新三板）副总经理、北京证券交易所副总经理，深入参与多层次资本市场制度建设与北交所设立筹备，2024年出任福建证监局党委书记、局长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "中南财经政法大学",
+        "major": "经济学学士",
+        "graduationYear": 1993,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "高校校友档案核验",
+          "source": "中南财经政法大学校友名册"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "对外经济贸易大学",
+        "major": "国际法学硕士",
+        "graduationYear": 2001,
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "学位论文核验",
+          "source": "对外经济贸易大学研究生院"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "lyc-1",
+        "unitId": "csrc-bse",
+        "unitName": "北京证券交易所 / 全国股转公司",
+        "department": "管理层",
+        "position": "副总经理",
+        "rank": "副厅局级",
+        "startYear": 2017,
+        "endYear": 2024,
+        "isCurrent": false,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "交易所高管公示确证",
+          "source": "北交所官方高管公告"
+        }
+      },
+      {
+        "id": "lyc-2",
+        "unitId": "csrc-fj",
+        "unitName": "中国证券监督管理委员会福建监管局",
+        "department": "局领导",
+        "position": "党委书记、局长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "福建局官方政务公开确证",
+          "source": "福建证监局政务公开档案"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方政务公开核验",
+      "source": "福建证监局政务公开档案"
+    }
+  },
+  {
+    "id": "lai-zhaohui",
+    "name": "赖朝晖",
+    "avatarUrl": "/avatars/lai-zhaohui.jpg",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 10,
+    "nativePlace": "江西",
+    "currentUnitId": "csrc-ah",
+    "currentPosition": "安徽证监局党委书记、局长",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "bioSummary": "长期在沿海核心监管局历练，历任厦门证监局党委委员兼副局长、宁波证监局党委书记兼局长，2024年接任安徽证监局党委书记、局长，全力推动长三角一体化资本市场科创动能培育。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "厦门大学",
+        "major": "财政金融系财政学学士",
+        "graduationYear": 1991,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "高校校友名册核验",
+          "source": "厦门大学校友名录"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "lzh-1",
+        "unitId": "csrc-ah",
+        "unitName": "中国证券监督管理委员会安徽监管局",
+        "department": "局领导",
+        "position": "党委书记、局长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "安徽局官方政务公开确证",
+          "source": "安徽证监局官方网站政务公开"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方政务公开核验",
+      "source": "安徽证监局政务公开档案"
+    }
+  },
+  {
+    "id": "pan-gongsheng",
+    "name": "潘功胜",
+    "avatarUrl": "/avatars/pan-gongsheng.jpg",
+    "gender": "男",
+    "birthYear": 1963,
+    "birthMonth": 7,
+    "nativePlace": "安徽安庆",
+    "currentUnitId": "pbc",
+    "currentPosition": "中国人民银行党委书记、行长",
+    "currentRank": "正部级",
+    "isCurrentServing": true,
+    "bioSummary": "现任中国共产党第二十届中央委员会委员，中国人民银行党委书记、行长，国家外汇管理局原党组书记、局长。中国人民大学经济学博士，剑桥大学博士后，长期统筹国家货币政策与金融宏观审慎监管。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "浙江冶金经济专科学校",
+        "major": "经济学",
+        "graduationYear": 1983,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "官方公报简历确证",
+          "source": "新华社官方受权发布简历"
+        }
+      },
+      {
+        "degree": "博士",
+        "school": "中国人民大学",
+        "major": "经济学博士",
+        "graduationYear": 1993,
+        "confidence": {
+          "level": "high",
+          "score": 99,
+          "label": "官方公报简历确证",
+          "source": "新华社官方受权发布简历"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "pgs-1",
+        "unitId": "pbc",
+        "unitName": "中国人民银行",
+        "department": "行领导",
+        "position": "党委书记、行长",
+        "rank": "正部级",
+        "startYear": 2023,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 99,
+          "label": "国家主席令确证",
+          "source": "中华人民共和国主席令第八号"
+        }
+      }
+    ],
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 99,
+      "label": "国家法定人事公报确证",
+      "source": "国务院公报与全国两会法定代表公示"
     }
   }
 ];
@@ -9682,8 +10860,82 @@ export const OFFICIAL_COLORS = [
   }
 ];
 
+
+
+export const RANK_ORDER: Record<string, number> = {
+  '正部级': 1,
+  '副部级': 2,
+  '正厅局级': 3,
+  '副厅局级': 4,
+  '正处级': 5,
+  '副处级': 6,
+};
+
+export function isOfficialActiveInUnit(official: Official, unitId: string): boolean {
+  if (official.isCurrentServing === false) return false;
+  const pos = official.currentPosition || '';
+  if (pos.includes('原') || pos.includes('首任') || pos.includes('退休')) {
+    return false;
+  }
+  if (unitId === 'csrc-df') {
+    const REGIONAL_BUREAU_IDS = [
+      'csrc-bj', 'csrc-sh', 'csrc-gd', 'csrc-sz', 'csrc-js', 
+      'csrc-zj', 'csrc-sc', 'csrc-yn', 'csrc-fj', 'csrc-ah', 'csrc-df'
+    ];
+    return REGIONAL_BUREAU_IDS.includes(official.currentUnitId);
+  }
+  const unit = UNITS_DATA.find((u) => u.id === unitId);
+  if (unit && unit.currentLeaderIds && unit.currentLeaderIds.includes(official.id)) {
+    return true;
+  }
+  return official.currentUnitId === unitId;
+}
+
+export function isOfficialPastInUnit(official: Official, unitId: string): boolean {
+  if (isOfficialActiveInUnit(official, unitId)) return false;
+  if (unitId === 'csrc-df') {
+    const REGIONAL_BUREAU_IDS = [
+      'csrc-bj', 'csrc-sh', 'csrc-gd', 'csrc-sz', 'csrc-js', 
+      'csrc-zj', 'csrc-sc', 'csrc-yn', 'csrc-fj', 'csrc-ah', 'csrc-df'
+    ];
+    return official.careerHistory.some((r) => REGIONAL_BUREAU_IDS.includes(r.unitId));
+  }
+  if (unitId === 'gov-local') {
+    return (
+      official.careerHistory.some(
+        (r) => r.unitId === 'gov-local' || r.unitId === 'gov-sh' || r.unitName.includes('政府')
+      )
+    );
+  }
+  return official.careerHistory.some(
+    (r) => r.unitId === unitId || (unitId === 'csrc-main' && r.unitId.startsWith('csrc-'))
+  );
+}
+
+export function sortOfficialsByRankAndSeniority(a: Official, b: Official): number {
+  const rankA = RANK_ORDER[a.currentRank] || 99;
+  const rankB = RANK_ORDER[b.currentRank] || 99;
+  if (rankA !== rankB) return rankA - rankB;
+
+  const getRoleWeight = (pos: string) => {
+    if (pos.includes('主席') && !pos.includes('副主席')) return 1;
+    if (pos.includes('书记') && !pos.includes('副书记')) return 2;
+    if (pos.includes('理事长') && !pos.includes('副理事长')) return 3;
+    if (pos.includes('局长') && !pos.includes('副局长')) return 4;
+    if (pos.includes('会长') && !pos.includes('副会长')) return 5;
+    if (pos.includes('院长') && !pos.includes('副院长')) return 6;
+    if (pos.includes('副')) return 10;
+    return 20;
+  };
+  const rwA = getRoleWeight(a.currentPosition);
+  const rwB = getRoleWeight(b.currentPosition);
+  if (rwA !== rwB) return rwA - rwB;
+
+  return a.birthYear - b.birthYear;
+}
+
 export function getOfficialColor(officialId: string) {
-  const found = OFFICIAL_COLORS.find(c => c.id === officialId);
+  const found = OFFICIAL_COLORS.find((c) => c.id === officialId);
   if (found) return found;
   return {
     id: officialId,
@@ -9693,6 +10945,7 @@ export function getOfficialColor(officialId: string) {
     bg: 'rgba(0, 113, 227, 0.12)',
     badgeBg: 'bg-blue-500',
     text: 'text-blue-600',
-    ring: 'ring-blue-500'
+    ring: 'ring-blue-500',
   };
 }
+

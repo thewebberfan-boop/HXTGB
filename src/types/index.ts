@@ -65,6 +65,7 @@ export interface Official {
   careerHistory: CareerRecord[];
   bioSummary?: string;
   basicInfoConfidence?: ConfidenceInfo; // 年龄、籍贯等基础信息置信度
+  isCurrentServing?: boolean; // 是否在任在职（退休、离任、曾任为 false）
 }
 
 export interface Unit {

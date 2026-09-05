@@ -2,7 +2,12 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import { Official, Unit } from '../types';
-import { getOfficialColor } from '../data/csrcData';
+import {
+  getOfficialColor,
+  isOfficialActiveInUnit,
+  isOfficialPastInUnit,
+  sortOfficialsByRankAndSeniority,
+} from '../data/csrcData';
 import {
   GraduationCap,
   Briefcase,
@@ -60,26 +65,6 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
     }
   }, [activeOfficialId, officials]);
 
-  useEffect(() => {
-    if (selectedUnitId && selectedUnitId !== 'all') {
-      const isRelated =
-        activeOfficial &&
-        (activeOfficial.currentUnitId === selectedUnitId ||
-          activeOfficial.careerHistory.some((r) => r.unitId === selectedUnitId));
-
-      if (!isRelated) {
-        const related = officials.filter(
-          (o) =>
-            o.currentUnitId === selectedUnitId ||
-            o.careerHistory.some((r) => r.unitId === selectedUnitId)
-        );
-        if (related.length > 0) {
-          setActiveOfficial(related[0]);
-        }
-      }
-    }
-  }, [selectedUnitId, officials]);
-
   const unitMap = useMemo(() => {
     const map = new Map<string, Unit>();
     units.forEach((u) => map.set(u.id, u));
@@ -91,35 +76,70 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
     return unitMap.get(selectedUnitId) || null;
   }, [selectedUnitId, unitMap]);
 
+  // 获取当前选中机构的在职班子与曾任干部，严格按职级资历降序排序
   const currentUnitOfficials = useMemo(() => {
     if (!selectedUnitId || selectedUnitId === 'all') return null;
-    const related = officials.filter(
-      (off) =>
-        off.currentUnitId === selectedUnitId ||
-        off.careerHistory.some((r) => r.unitId === selectedUnitId)
-    );
-    const currentServing = related.filter((off) => off.currentUnitId === selectedUnitId);
-    const pastServing = related.filter(
-      (off) =>
-        off.currentUnitId !== selectedUnitId &&
-        off.careerHistory.some((r) => r.unitId === selectedUnitId)
-    );
-    return { currentServing, pastServing, all: related };
+    const currentServing = officials
+      .filter((off) => isOfficialActiveInUnit(off, selectedUnitId))
+      .sort(sortOfficialsByRankAndSeniority);
+    const pastServing = officials
+      .filter((off) => isOfficialPastInUnit(off, selectedUnitId))
+      .sort(sortOfficialsByRankAndSeniority);
+    return {
+      currentServing,
+      pastServing,
+      all: [...currentServing, ...pastServing],
+    };
   }, [selectedUnitId, officials]);
 
-  const currentIndex = officials.findIndex((o) => o.id === activeOfficial?.id);
+  // 当选中机构时，候选干部列表严格按照：在职干部(按职级资历降序) -> 曾任干部(按职级资历降序)
+  const candidateOfficials = useMemo(() => {
+    if (currentUnitOfficials) {
+      return currentUnitOfficials.all;
+    }
+    return officials;
+  }, [currentUnitOfficials, officials]);
+
+  useEffect(() => {
+    if (selectedUnitId && selectedUnitId !== 'all') {
+      const isServingInUnit = activeOfficial && isOfficialActiveInUnit(activeOfficial, selectedUnitId);
+      const isPastInUnit = activeOfficial && isOfficialPastInUnit(activeOfficial, selectedUnitId);
+
+      const serving = officials
+        .filter((off) => isOfficialActiveInUnit(off, selectedUnitId))
+        .sort(sortOfficialsByRankAndSeniority);
+      const past = officials
+        .filter((off) => isOfficialPastInUnit(off, selectedUnitId))
+        .sort(sortOfficialsByRankAndSeniority);
+
+      // 如果当前干部不属于该机构，或当前干部为曾任但机构有在任班子（且非外部指定干部跳转），默认定位到首位在职干部
+      if (!isServingInUnit && !isPastInUnit) {
+        if (serving.length > 0) {
+          setActiveOfficial(serving[0]);
+        } else if (past.length > 0) {
+          setActiveOfficial(past[0]);
+        }
+      } else if (!isServingInUnit && serving.length > 0 && !activeOfficialId) {
+        setActiveOfficial(serving[0]);
+      }
+    }
+  }, [selectedUnitId, officials, activeOfficialId]);
+
+  const currentIndex = candidateOfficials.findIndex((o) => o.id === activeOfficial?.id);
   const handlePrevOfficial = () => {
+    if (candidateOfficials.length === 0) return;
     if (currentIndex > 0) {
-      setActiveOfficial(officials[currentIndex - 1]);
+      setActiveOfficial(candidateOfficials[currentIndex - 1]);
     } else {
-      setActiveOfficial(officials[officials.length - 1]);
+      setActiveOfficial(candidateOfficials[candidateOfficials.length - 1]);
     }
   };
   const handleNextOfficial = () => {
-    if (currentIndex >= 0 && currentIndex < officials.length - 1) {
-      setActiveOfficial(officials[currentIndex + 1]);
+    if (candidateOfficials.length === 0) return;
+    if (currentIndex >= 0 && currentIndex < candidateOfficials.length - 1) {
+      setActiveOfficial(candidateOfficials[currentIndex + 1]);
     } else {
-      setActiveOfficial(officials[0]);
+      setActiveOfficial(candidateOfficials[0]);
     }
   };
 
@@ -158,11 +178,20 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                 }}
                 className="w-full px-3 py-2 bg-black/[0.03] hover:bg-black/[0.05] focus:bg-white text-xs sm:text-sm font-medium text-gray-800 rounded-xl border border-black/[0.06] focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/10 transition-all outline-none cursor-pointer truncate"
               >
-                {officials.map((off) => {
+                {candidateOfficials.map((off) => {
+                  const isServingInSel =
+                    selectedUnitId && selectedUnitId !== 'all'
+                      ? isOfficialActiveInUnit(off, selectedUnitId)
+                      : off.isCurrentServing !== false;
                   const offUnit = unitMap.get(off.currentUnitId);
                   const unitName = offUnit ? offUnit.tinyName || offUnit.shortName : '系统';
                   return (
                     <option key={off.id} value={off.id}>
+                      {selectedUnitId && selectedUnitId !== 'all'
+                        ? isServingInSel
+                          ? '[在任] '
+                          : '[曾任] '
+                        : ''}
                       [{off.currentRank.replace('局级', '')}] {off.name} · {unitName} ({off.currentPosition})
                     </option>
                   );

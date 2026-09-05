@@ -200,6 +200,7 @@ export function AppContainer() {
   const handleNavigateToUnitPage = (unitId: string) => {
     setFocusedUnitId(unitId);
     setUnitsSelectedUnitId(unitId);
+    setFocusedOfficialId(null);
     setCurrentView('units');
   };
 
@@ -289,6 +290,7 @@ export function AppContainer() {
                 onNavigateToSwimlane={handleNavigateToSwimlane}
                 onBackToSwimlane={handleBackToSwimlane}
                 initialUnitId={focusedUnitId}
+                initialOfficialId={focusedOfficialId}
                 selectedUnitId={unitsSelectedUnitId}
                 onSelectUnit={setUnitsSelectedUnitId}
               />

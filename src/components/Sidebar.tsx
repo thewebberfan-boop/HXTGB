@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { ViewMode, Official, Unit } from '../types';
-import { getOfficialColor } from '../data/csrcData';
+import { getOfficialColor, isOfficialActiveInUnit, isOfficialPastInUnit } from '../data/csrcData';
 import {
   Building2,
   Users,
@@ -139,20 +139,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
     setCollapsedOrgCats((prev) => ({ ...prev, [catId]: !prev[catId] }));
   };
 
-  // 统计每个机构的关联干部人数（在职与曾任）
+  // 统计每个机构的关联干部人数（严格区分：在职与曾任）
   const unitStatsMap = useMemo(() => {
     const map = new Map<string, { current: number; past: number; total: number }>();
     units.forEach((u) => map.set(u.id, { current: 0, past: 0, total: 0 }));
 
     officials.forEach((o) => {
-      const pastUnits = new Set<string>();
-      if (o.currentUnitId && map.has(o.currentUnitId)) {
-        map.get(o.currentUnitId)!.current += 1;
-      }
-      o.careerHistory.forEach((c) => {
-        if (c.unitId && map.has(c.unitId) && c.unitId !== o.currentUnitId && !pastUnits.has(c.unitId)) {
-          pastUnits.add(c.unitId);
-          map.get(c.unitId)!.past += 1;
+      units.forEach((u) => {
+        if (isOfficialActiveInUnit(o, u.id)) {
+          map.get(u.id)!.current += 1;
+        } else if (isOfficialPastInUnit(o, u.id)) {
+          map.get(u.id)!.past += 1;
         }
       });
     });
