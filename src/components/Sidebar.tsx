@@ -114,8 +114,25 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
           <div className="w-8 h-[1px] bg-black/[0.06] my-1" />
 
-          {/* 3 个视图图标切换 */}
+          {/* 3 个视图图标切换 (泳道 · 机构 · 官员) */}
           <nav className="flex flex-col items-center gap-2">
+            <button
+              onClick={() => onViewChange('swimlanes')}
+              className={`p-2.5 rounded-xl transition-all relative ${
+                currentView === 'swimlanes'
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'text-gray-500 hover:bg-black/[0.05] hover:text-gray-900'
+              }`}
+              title="时空泳道"
+            >
+              <GitCommitVertical className="w-4 h-4" />
+              {selectedOfficialIds.length > 0 && (
+                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-blue-600 text-white text-[9px] flex items-center justify-center font-bold ring-2 ring-white">
+                  {selectedOfficialIds.length}
+                </span>
+              )}
+            </button>
+
             <button
               onClick={() => onViewChange('units')}
               className={`p-2.5 rounded-xl transition-all relative ${
@@ -139,23 +156,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
             >
               <Users className="w-4 h-4" />
             </button>
-
-            <button
-              onClick={() => onViewChange('swimlanes')}
-              className={`p-2.5 rounded-xl transition-all relative ${
-                currentView === 'swimlanes'
-                  ? 'bg-blue-600 text-white shadow-xs'
-                  : 'text-gray-500 hover:bg-black/[0.05] hover:text-gray-900'
-              }`}
-              title="时空泳道"
-            >
-              <GitCommitVertical className="w-4 h-4" />
-              {selectedOfficialIds.length > 0 && (
-                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-blue-600 text-white text-[9px] flex items-center justify-center font-bold ring-2 ring-white">
-                  {selectedOfficialIds.length}
-                </span>
-              )}
-            </button>
           </nav>
         </div>
 
@@ -174,119 +174,83 @@ export const Sidebar: React.FC<SidebarProps> = ({
   // 展开状态：完整的 macOS 风格侧边栏
   return (
     <aside className="w-72 sm:w-80 shrink-0 bg-white/95 backdrop-blur-md border-r border-black/[0.08] shadow-sm flex flex-col h-screen sticky top-0 z-40 transition-all duration-200 select-none">
-      {/* 顶部标题与窗口按钮 */}
-      <div className="p-4 border-b border-black/[0.06] bg-gray-50/60">
-        <div className="flex items-center justify-between mb-3">
-          {/* macOS 窗口红黄绿三色圆点 */}
-          <div className="flex items-center gap-1.5">
-            <span className="w-3 h-3 rounded-full bg-[#ff5f56] border border-[#e0443e]/40 shadow-2xs" />
-            <span className="w-3 h-3 rounded-full bg-[#ffbd2e] border border-[#dea123]/40 shadow-2xs" />
-            <span className="w-3 h-3 rounded-full bg-[#27c93f] border border-[#1aab29]/40 shadow-2xs" />
+      {/* 顶部标题与整合导航栏（合并“泳道” “机构” “官员”三按钮） */}
+      <div className="p-3.5 border-b border-black/[0.06] bg-gray-50/70">
+        <div className="flex items-center justify-between mb-2">
+          {/* macOS 窗口红黄绿三色圆点 + 网站名称 */}
+          <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f56] border border-[#e0443e]/40 shadow-2xs" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] border border-[#dea123]/40 shadow-2xs" />
+              <span className="w-2.5 h-2.5 rounded-full bg-[#27c93f] border border-[#1aab29]/40 shadow-2xs" />
+            </div>
+            <h1 className="font-bold text-xs sm:text-sm text-gray-900 tracking-tight ml-0.5">
+              中国证监会系统 · 政务图谱
+            </h1>
           </div>
 
           {/* 收起侧边栏按钮 */}
           <button
             onClick={onToggleCollapse}
-            className="p-1.5 rounded-lg hover:bg-black/[0.06] text-gray-500 hover:text-gray-900 transition-colors flex items-center gap-1 text-xs"
+            className="p-1 rounded-md hover:bg-black/[0.06] text-gray-500 hover:text-gray-900 transition-colors flex items-center gap-1 text-xs"
             title="收起侧边栏，最大化泳道显示空间"
           >
-            <PanelLeftClose className="w-4 h-4" />
-            <span className="text-[11px]">收起</span>
+            <PanelLeftClose className="w-3.5 h-3.5" />
           </button>
         </div>
 
-        {/* 系统标题 */}
-        <div>
-          <div className="flex items-center gap-1.5">
-            <h1 className="font-bold text-sm sm:text-base text-gray-900 tracking-tight">
-              中国证监会系统
-            </h1>
-            <span className="text-[10px] font-semibold text-blue-600 bg-blue-50 px-1.5 py-0.2 rounded border border-blue-200/60">
-              政务图谱
-            </span>
-          </div>
-          <p className="text-[11px] text-gray-500 mt-0.5">
-            机构单位编制库 · 官员履历 · 时空演进泳道
-          </p>
-        </div>
-      </div>
+        {/* 核心需求三：精简合并为“泳道” “机构” “官员”三个紧凑按钮 */}
+        <div className="p-0.5 bg-black/[0.06] rounded-xl flex items-center gap-0.5 border border-black/[0.03]">
+          <button
+            onClick={() => onViewChange('swimlanes')}
+            className={`flex-1 py-1.5 text-xs font-semibold rounded-lg flex items-center justify-center gap-1 transition-all ${
+              currentView === 'swimlanes'
+                ? 'bg-white text-blue-600 shadow-xs'
+                : 'text-gray-600 hover:text-gray-900 hover:bg-white/40'
+            }`}
+            title="时空演进泳道图谱"
+          >
+            <GitCommitVertical className="w-3.5 h-3.5 shrink-0" />
+            <span>泳道</span>
+            {selectedOfficialIds.length > 0 && (
+              <span
+                className={`text-[9px] px-1 py-0.2 rounded-full font-bold leading-none ${
+                  currentView === 'swimlanes'
+                    ? 'bg-blue-100 text-blue-700'
+                    : 'bg-black/[0.08] text-gray-600'
+                }`}
+              >
+                {selectedOfficialIds.length}
+              </span>
+            )}
+          </button>
 
-      {/* 导航切换项 (3个核心页面) */}
-      <div className="p-3 border-b border-black/[0.06] bg-white">
-        <div className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider px-2 mb-1.5">
-          页面导航
-        </div>
-
-        <nav className="space-y-1">
           <button
             onClick={() => onViewChange('units')}
-            className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium transition-all ${
+            className={`flex-1 py-1.5 text-xs font-semibold rounded-lg flex items-center justify-center gap-1 transition-all ${
               currentView === 'units'
-                ? 'bg-blue-600 text-white shadow-xs font-semibold'
-                : 'text-gray-700 hover:bg-gray-100/80'
+                ? 'bg-white text-blue-600 shadow-xs'
+                : 'text-gray-600 hover:text-gray-900 hover:bg-white/40'
             }`}
+            title="系统单位编制档案"
           >
-            <div className="flex items-center gap-2">
-              <Building2 className="w-4 h-4" />
-              <span>系统单位档案</span>
-            </div>
-            <span
-              className={`text-[10px] px-1.5 py-0.2 rounded ${
-                currentView === 'units'
-                  ? 'bg-white/20 text-white'
-                  : 'bg-gray-100 text-gray-500'
-              }`}
-            >
-              {units.length} 单位
-            </span>
+            <Building2 className="w-3.5 h-3.5 shrink-0" />
+            <span>机构</span>
           </button>
 
           <button
             onClick={() => onViewChange('officials')}
-            className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium transition-all ${
+            className={`flex-1 py-1.5 text-xs font-semibold rounded-lg flex items-center justify-center gap-1 transition-all ${
               currentView === 'officials'
-                ? 'bg-blue-600 text-white shadow-xs font-semibold'
-                : 'text-gray-700 hover:bg-gray-100/80'
+                ? 'bg-white text-blue-600 shadow-xs'
+                : 'text-gray-600 hover:text-gray-900 hover:bg-white/40'
             }`}
+            title="主要领导干部履历档案"
           >
-            <div className="flex items-center gap-2">
-              <Users className="w-4 h-4" />
-              <span>官员简历档案</span>
-            </div>
-            <span
-              className={`text-[10px] px-1.5 py-0.2 rounded ${
-                currentView === 'officials'
-                  ? 'bg-white/20 text-white'
-                  : 'bg-gray-100 text-gray-500'
-              }`}
-            >
-              {officials.length} 领导
-            </span>
+            <Users className="w-3.5 h-3.5 shrink-0" />
+            <span>官员</span>
           </button>
-
-          <button
-            onClick={() => onViewChange('swimlanes')}
-            className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-medium transition-all ${
-              currentView === 'swimlanes'
-                ? 'bg-blue-600 text-white shadow-xs font-semibold'
-                : 'text-gray-700 hover:bg-gray-100/80'
-            }`}
-          >
-            <div className="flex items-center gap-2">
-              <GitCommitVertical className="w-4 h-4" />
-              <span>时空演进泳道</span>
-            </div>
-            <span
-              className={`text-[10px] px-1.5 py-0.2 rounded font-bold ${
-                currentView === 'swimlanes'
-                  ? 'bg-white text-blue-600'
-                  : 'bg-blue-100 text-blue-700'
-              }`}
-            >
-              {selectedOfficialIds.length} 选中
-            </span>
-          </button>
-        </nav>
+        </div>
       </div>
 
       {/* 泳道专属控制与官员多选区（在时空泳道视图时呈现） */}

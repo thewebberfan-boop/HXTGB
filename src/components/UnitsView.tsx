@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Unit, Official, UnitLevel, UnitCategory } from '../types';
 import {
   Search,
@@ -14,7 +14,8 @@ import {
   Phone,
   UserCheck,
   CheckCircle2,
-  ArrowRight
+  ArrowRight,
+  ArrowLeft
 } from 'lucide-react';
 
 interface UnitsViewProps {
@@ -22,6 +23,8 @@ interface UnitsViewProps {
   officials: Official[];
   onSelectOfficial: (official: Official) => void;
   onNavigateToSwimlane: (unitId?: string) => void;
+  onBackToSwimlane?: () => void;
+  initialUnitId?: string | null;
 }
 
 export const UnitsView: React.FC<UnitsViewProps> = ({
@@ -29,11 +32,25 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
   officials,
   onSelectOfficial,
   onNavigateToSwimlane,
+  onBackToSwimlane,
+  initialUnitId,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedLevel, setSelectedLevel] = useState<string>('all');
-  const [activeUnit, setActiveUnit] = useState<Unit | null>(null);
+  const [activeUnit, setActiveUnit] = useState<Unit | null>(() => {
+    if (initialUnitId) {
+      return units.find((u) => u.id === initialUnitId) || null;
+    }
+    return null;
+  });
+
+  useEffect(() => {
+    if (initialUnitId) {
+      const found = units.find((u) => u.id === initialUnitId);
+      if (found) setActiveUnit(found);
+    }
+  }, [initialUnitId, units]);
 
   // 类别选项
   const categories: { label: string; value: string }[] = [
@@ -97,16 +114,30 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
       {/* 顶部搜索与过滤工具栏 (macOS Toolbar style) */}
       <div className="mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.06] bg-white/95">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-          {/* 搜索框 */}
-          <div className="relative flex-1 max-w-md">
-            <Search className="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-            <input
-              type="text"
-              placeholder="搜索单位名称、简称、主要业务关键字..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-9 pr-4 py-2 bg-black/[0.03] hover:bg-black/[0.05] focus:bg-white text-sm rounded-xl border border-transparent focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/10 transition-all outline-none"
-            />
+          <div className="flex items-center gap-3 flex-1">
+            {/* 需求四：通用返回时空泳道按钮 */}
+            {onBackToSwimlane && (
+              <button
+                onClick={onBackToSwimlane}
+                className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 hover:text-blue-800 rounded-xl text-xs font-semibold border border-blue-200/60 shadow-2xs transition-all hover:scale-[1.02] active:scale-95 shrink-0"
+                title="返回跳转前的时空演进泳道图谱"
+              >
+                <ArrowLeft className="w-3.5 h-3.5 text-blue-600" />
+                <span>返回泳道</span>
+              </button>
+            )}
+
+            {/* 搜索框 */}
+            <div className="relative flex-1 max-w-md">
+              <Search className="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+              <input
+                type="text"
+                placeholder="搜索单位名称、简称、主要业务关键字..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-9 pr-4 py-2 bg-black/[0.03] hover:bg-black/[0.05] focus:bg-white text-sm rounded-xl border border-transparent focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/10 transition-all outline-none"
+              />
+            </div>
           </div>
 
           {/* 过滤筛选器 */}

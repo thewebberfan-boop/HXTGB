@@ -6,6 +6,8 @@ export type UnitLevel =
   | '正处级' 
   | '副处级';
 
+export type ConciseRank = '部' | '副部' | '厅' | '副厅' | '处' | '副处' | string;
+
 export type UnitCategory = 
   | '会机关内设部门' 
   | '派出机构' 

@@ -3,7 +3,8 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { Official, Unit, CareerRecord, UnitLevel } from '../types';
 import { getOfficialColor } from '../data/csrcData';
-import { GripVertical, X, UserPlus, Sparkles, Check } from 'lucide-react';
+import { GripVertical, X, UserPlus, Sparkles, Check, ExternalLink } from 'lucide-react';
+import { PositionRankBadge } from './PositionRankBadge';
 
 interface SwimlaneViewProps {
   units: Unit[];
@@ -13,6 +14,8 @@ interface SwimlaneViewProps {
   onReorderLanes: (newLaneIds: string[]) => void;
   onRemoveLane: (unitId: string) => void;
   onCompleteUnitOfficials: (unitId: string) => void;
+  onNavigateToUnit: (unitId: string) => void;
+  onNavigateToOfficial: (officialId: string) => void;
   isTimeReversed: boolean;
   hoveredOfficialId: string | null;
   onHoverOfficial: (id: string | null) => void;
@@ -26,6 +29,8 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
   onReorderLanes,
   onRemoveLane,
   onCompleteUnitOfficials,
+  onNavigateToUnit,
+  onNavigateToOfficial,
   isTimeReversed,
   hoveredOfficialId,
   onHoverOfficial,
@@ -41,8 +46,9 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const toastTimerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // 容器宽度测量
+  // 容器宽高测量（动态自适应宽度与列头高度）
   const [containerWidth, setContainerWidth] = useState<number>(1200);
+  const [containerHeight, setContainerHeight] = useState<number>(800);
 
   // 拖拽重排状态
   const [draggedLaneIndex, setDraggedLaneIndex] = useState<number | null>(null);
@@ -58,7 +64,10 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
   const TIME_RULER_WIDTH = 64; // 左侧年份固定标尺 64px
   const MIN_LANE_WIDTH = 58; // 最小宽度（保证至少可显示 3 个汉字）
 
-  // 监听容器尺寸，动态自适应
+  // 双位数规范化年份辅助函数（如 2004 显示为 '04'，2007 显示为 '07'）
+  const format2DigitYear = (year: number) => String(year % 100).padStart(2, '0');
+
+  // 监听容器尺寸，动态自适应宽度与高度
   useEffect(() => {
     const el = chartScrollContainerRef.current;
     if (!el) return;
@@ -66,6 +75,9 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
     const handleResize = () => {
       if (el.clientWidth > 0) {
         setContainerWidth(el.clientWidth);
+      }
+      if (el.clientHeight > 0) {
+        setContainerHeight(el.clientHeight);
       }
     };
 
@@ -386,6 +398,17 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
 
   const isWideMode = computedLaneWidth >= 110;
 
+  // 1. 核心需求一：泳道图列头高度根据容器高度和宽窄模式动态自适应
+  const computedHeaderHeight = useMemo(() => {
+    const base = Math.max(74, Math.min(106, Math.round(containerHeight * 0.11)));
+    if (isWideMode) {
+      // 宽屏模式：文字横排，高度适度压缩至 74px ~ 84px，释放宝贵的时间线纵向空间
+      return Math.min(base, 84);
+    }
+    // 窄屏模式：文字竖排，保证 3~5 汉字舒适排布
+    return Math.max(base, 84);
+  }, [containerHeight, isWideMode]);
+
   return (
     <div className="w-full h-full relative select-none">
       {/* 快捷操作反馈 Toast 浮层 */}
@@ -401,7 +424,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
         - 充满可视高度，双向自由滚动
         - 列头通过 sticky top-0 牢牢锁定在顶部，纵向上滑时永不移出视线！
         - 左侧年份标尺通过 sticky left-0 牢牢锁定在左侧！
-        - 泳道自适应屏幕宽度，平分剩余空间！
+        - 泳道自适应屏幕宽度平分，列头自适应屏幕高度！
       */}
       <div
         ref={chartScrollContainerRef}
@@ -412,8 +435,8 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
           <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-black/[0.08] flex items-stretch min-w-max shadow-2xs">
             {/* 左上角交叉区域 (Sticky Top + Left) */}
             <div
-              style={{ width: `${TIME_RULER_WIDTH}px` }}
-              className="sticky left-0 z-40 shrink-0 border-r border-black/[0.06] flex flex-col items-center justify-center bg-gray-100/95 text-gray-600 text-xs font-semibold py-2.5 shadow-xs"
+              style={{ width: `${TIME_RULER_WIDTH}px`, height: `${computedHeaderHeight}px` }}
+              className="sticky left-0 z-40 shrink-0 border-r border-black/[0.06] flex flex-col items-center justify-center bg-gray-100/95 text-gray-600 text-xs font-semibold py-1.5 shadow-xs"
             >
               <span className="text-[11px] font-bold">年份</span>
               <span className="text-[9px] text-gray-400 font-normal">
@@ -451,34 +474,48 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                       setHoveredLaneUnit(null);
                       setLaneTooltipPos(null);
                     }}
-                    style={{ width: `${computedLaneWidth}px` }}
-                    className={`shrink-0 border-r border-black/[0.06] flex flex-col justify-between py-2 px-1 cursor-move transition-all relative group h-32 ${
+                    style={{ width: `${computedLaneWidth}px`, height: `${computedHeaderHeight}px` }}
+                    className={`shrink-0 border-r border-black/[0.06] flex flex-col justify-between py-1.5 px-1 cursor-move transition-all relative group ${
                       isOver ? 'bg-blue-100 border-blue-500' : 'bg-white hover:bg-blue-50/40'
                     }`}
                     title="左右拖拽调换泳道排序"
                   >
-                    {/* Top: 抓手 & 级别小角标 & 移除按钮 */}
+                    {/* Top: 抓手 & 级别小角标 & 右上角机构主页跳转 & 移除按钮 */}
                     <div className="flex items-center justify-between w-full px-0.5">
-                      <GripVertical className="w-3 h-3 text-gray-300 group-hover:text-gray-600 transition-colors shrink-0" />
-                      <span
-                        className={`text-[8.5px] font-bold px-1 py-0.2 rounded leading-none ${microRank.bg}`}
-                      >
-                        {microRank.text}
-                      </span>
-                      {visibleLanes.length > 1 ? (
+                      <div className="flex items-center gap-1">
+                        <GripVertical className="w-3 h-3 text-gray-300 group-hover:text-gray-600 transition-colors shrink-0" />
+                        <span
+                          className={`text-[8.5px] font-bold px-1 py-0.2 rounded leading-none ${microRank.bg}`}
+                        >
+                          {microRank.text}
+                        </span>
+                      </div>
+
+                      <div className="flex items-center gap-0.5">
+                        {/* 需求四：右上角跳转到机构主页按钮 */}
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
-                            onRemoveLane(lane.id);
+                            onNavigateToUnit(lane.id);
                           }}
-                          className="opacity-0 group-hover:opacity-100 text-gray-400 hover:text-red-500 p-0.5 rounded transition-opacity"
-                          title="从泳道视图中移除"
+                          className="opacity-0 group-hover:opacity-100 text-gray-400 hover:text-blue-600 p-0.5 rounded hover:bg-blue-50 transition-all"
+                          title={`前往「${lane.name}」机构编制档案主页 ↗`}
                         >
-                          <X className="w-2.5 h-2.5" />
+                          <ExternalLink className="w-2.5 h-2.5" />
                         </button>
-                      ) : (
-                        <span className="w-2.5" />
-                      )}
+                        {visibleLanes.length > 1 && (
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              onRemoveLane(lane.id);
+                            }}
+                            className="opacity-0 group-hover:opacity-100 text-gray-400 hover:text-red-500 p-0.5 rounded hover:bg-red-50 transition-opacity"
+                            title="从泳道视图中移除"
+                          >
+                            <X className="w-2.5 h-2.5" />
+                          </button>
+                        )}
+                      </div>
                     </div>
 
                     {/* Middle: 机构名称（宽屏横排，窄屏竖排） */}
@@ -514,10 +551,10 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                               `已补全「${displayName}」的全部 ${totalOfficialsInUnit} 位干部并自动联动关联泳道！`
                             );
                           }}
-                          className="w-full py-1 px-1.5 bg-blue-50 hover:bg-blue-100 text-blue-600 rounded-lg text-[10px] font-medium flex items-center justify-center gap-1 border border-blue-200/50 shadow-2xs transition-all hover:scale-[1.02] active:scale-95"
+                          className="w-full py-0.5 px-1.5 bg-blue-50 hover:bg-blue-100 text-blue-600 rounded-lg text-[10px] font-medium flex items-center justify-center gap-1 border border-blue-200/50 shadow-2xs transition-all hover:scale-[1.02] active:scale-95"
                           title={`点击一键补全「${displayName}」全部 ${totalOfficialsInUnit} 位履历官员，并自动补充其流转单位泳道`}
                         >
-                          <UserPlus className="w-3 h-3 shrink-0 text-blue-600" />
+                          <UserPlus className="w-2.5 h-2.5 shrink-0 text-blue-600" />
                           <span className="truncate">补全干部 ({totalOfficialsInUnit})</span>
                         </button>
                       ) : (
@@ -529,10 +566,10 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                               `已补全「${displayName}」的 ${totalOfficialsInUnit} 位干部履历与关联泳道`
                             );
                           }}
-                          className="p-1 w-full bg-blue-50 hover:bg-blue-100 text-blue-600 rounded-md text-[9px] font-medium flex items-center justify-center gap-0.5 border border-blue-200/50 shadow-2xs transition-all hover:scale-105 active:scale-95"
+                          className="p-0.5 w-full bg-blue-50 hover:bg-blue-100 text-blue-600 rounded-md text-[9px] font-medium flex items-center justify-center gap-0.5 border border-blue-200/50 shadow-2xs transition-all hover:scale-105 active:scale-95"
                           title={`补全「${displayName}」全部 ${totalOfficialsInUnit} 位履历官员及关联泳道`}
                         >
-                          <UserPlus className="w-3 h-3 text-blue-600 shrink-0" />
+                          <UserPlus className="w-2.5 h-2.5 text-blue-600 shrink-0" />
                           <span className="text-[8.5px] font-bold">{totalOfficialsInUnit}</span>
                         </button>
                       )}
@@ -719,7 +756,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                         >
                           {/* 宽屏与窄屏自适应显示 */}
                           {isWideMode ? (
-                            <div className="w-full h-full flex flex-col justify-between py-0.5 leading-tight">
+                            <div className="w-full h-full flex flex-col justify-between py-0.5 leading-tight group/card">
                               <div className="flex items-center justify-between gap-1">
                                 <span
                                   className="font-bold text-xs text-gray-900 truncate"
@@ -729,14 +766,28 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                                 >
                                   {official.name}
                                 </span>
-                                <span className="text-[9px] text-gray-400 bg-gray-100 px-1 py-0.2 rounded font-mono shrink-0">
-                                  {record.startYear % 100}-{record.endYear ? record.endYear % 100 : '今'}
-                                </span>
+                                <div className="flex items-center gap-0.5 shrink-0">
+                                  <span className="text-[9px] text-gray-400 bg-gray-100 px-1 py-0.2 rounded font-mono shrink-0">
+                                    {format2DigitYear(record.startYear)}-{record.endYear ? format2DigitYear(record.endYear) : '今'}
+                                  </span>
+                                  {/* 需求四：卡片右上角跳转官员主页 */}
+                                  <button
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      onNavigateToOfficial(official.id);
+                                    }}
+                                    className="opacity-0 group-hover/card:opacity-100 text-gray-400 hover:text-blue-600 p-0.5 rounded hover:bg-blue-50 transition-all shrink-0"
+                                    title={`查看「${official.name}」官员档案主页 ↗`}
+                                  >
+                                    <ExternalLink className="w-2.5 h-2.5" />
+                                  </button>
+                                </div>
                               </div>
 
-                              {/* 职务 */}
-                              <div className="text-[10px] text-gray-600 truncate font-medium mt-0.5">
-                                {record.position}
+                              {/* 职务与需求六职位级别极简公用标签 */}
+                              <div className="flex items-center gap-1 truncate font-medium mt-0.5">
+                                <PositionRankBadge rank={record.rank} isMini />
+                                <span className="text-[10px] text-gray-600 truncate">{record.position}</span>
                               </div>
 
                               {/* 备注或部门 */}
@@ -747,27 +798,42 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                               )}
                             </div>
                           ) : (
-                            /* 窄屏紧凑模式（核心突出 3 汉字人名） */
-                            <div className="w-full flex flex-col items-center justify-center">
-                              <span
-                                className="font-bold text-[11px] sm:text-xs text-gray-900 tracking-tight leading-tight text-center truncate w-full block"
-                                style={{
-                                  color: isOfficialHighlighted ? color.primary : '#1f2937',
-                                }}
-                              >
-                                {official.name}
-                              </span>
+                            /* 窄屏紧凑模式（核心突出 3 汉字人名与简洁级别） */
+                            <div className="w-full flex flex-col items-center justify-center group/card relative">
+                              <div className="flex items-center justify-center gap-0.5 w-full">
+                                <span
+                                  className="font-bold text-[11px] sm:text-xs text-gray-900 tracking-tight leading-tight text-center truncate"
+                                  style={{
+                                    color: isOfficialHighlighted ? color.primary : '#1f2937',
+                                  }}
+                                >
+                                  {official.name}
+                                </span>
+                                <button
+                                  onClick={(e) => {
+                                    e.stopPropagation();
+                                    onNavigateToOfficial(official.id);
+                                  }}
+                                  className="opacity-0 group-hover/card:opacity-100 text-gray-400 hover:text-blue-600 p-0.5 rounded hover:bg-blue-50 transition-all shrink-0"
+                                  title={`查看「${official.name}」档案 ↗`}
+                                >
+                                  <ExternalLink className="w-2 h-2" />
+                                </button>
+                              </div>
 
-                              {height >= 50 && (
+                              {height >= 44 && (
                                 <span className="text-[9px] font-mono text-gray-400 leading-none mt-0.5 scale-90">
-                                  {record.startYear % 100}-{record.endYear ? record.endYear % 100 : '今'}
+                                  {format2DigitYear(record.startYear)}-{record.endYear ? format2DigitYear(record.endYear) : '今'}
                                 </span>
                               )}
 
-                              {height >= 75 && (
-                                <span className="text-[9px] text-gray-500 line-clamp-1 text-center scale-90 leading-none mt-0.5">
-                                  {record.position.slice(0, 3)}
-                                </span>
+                              {height >= 65 && (
+                                <div className="flex items-center justify-center gap-0.5 mt-0.5 scale-90">
+                                  <PositionRankBadge rank={record.rank} isMini />
+                                  <span className="text-[9px] text-gray-500 line-clamp-1 text-center leading-none">
+                                    {record.position.slice(0, 3)}
+                                  </span>
+                                </div>
                               )}
                             </div>
                           )}
@@ -785,7 +851,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
       {/* 泳道表头悬停详情 Tooltip */}
       {hoveredLaneUnit && laneTooltipPos && (
         <div
-          className="fixed z-50 pointer-events-none transform -translate-x-1/2 mt-2"
+          className="fixed z-50 pointer-events-auto transform -translate-x-1/2 mt-2"
           style={{
             left: `${laneTooltipPos.x}px`,
             top: `${laneTooltipPos.y + 12}px`,
@@ -796,9 +862,19 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
               <span className="font-bold text-gray-900 text-sm">
                 {hoveredLaneUnit.name}
               </span>
-              <span className="text-blue-600 bg-blue-50 px-1.5 py-0.2 rounded font-semibold text-[10px]">
-                {hoveredLaneUnit.level}
-              </span>
+              <div className="flex items-center gap-1.5">
+                <span className="text-blue-600 bg-blue-50 px-1.5 py-0.2 rounded font-semibold text-[10px]">
+                  {hoveredLaneUnit.level}
+                </span>
+                <button
+                  onClick={() => onNavigateToUnit(hoveredLaneUnit.id)}
+                  className="flex items-center gap-0.5 px-1.5 py-0.5 bg-blue-50 hover:bg-blue-100 text-blue-600 text-[10px] rounded font-medium border border-blue-200/60 shadow-2xs transition-all hover:scale-105"
+                  title="前往该机构编制档案主页 ↗"
+                >
+                  <span>机构主页</span>
+                  <ExternalLink className="w-2.5 h-2.5" />
+                </button>
+              </div>
             </div>
             <div className="text-gray-500 text-[11px]">
               建制年份：{hoveredLaneUnit.establishedYear}年 | 机构简称：{hoveredLaneUnit.shortName}
@@ -816,7 +892,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
       {/* 任职记录悬停 Tooltip */}
       {activeTooltip && (
         <div
-          className="fixed z-50 pointer-events-none transform -translate-x-1/2 -translate-y-full -mt-3"
+          className="fixed z-50 pointer-events-auto transform -translate-x-1/2 -translate-y-full -mt-3"
           style={{
             left: `${activeTooltip.x}px`,
             top: `${activeTooltip.y}px`,
@@ -834,16 +910,26 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                 <span className="font-bold text-gray-900 text-sm">
                   {activeTooltip.official.name}
                 </span>
-                <span className="text-gray-400">
+                <span className="text-gray-400 text-[11px]">
                   ({activeTooltip.official.currentRank})
                 </span>
               </div>
-              <span className="text-blue-600 font-mono font-medium text-[11px]">
-                {activeTooltip.record.startYear}.{activeTooltip.record.startMonth || 1} -{' '}
-                {activeTooltip.record.endYear
-                  ? `${activeTooltip.record.endYear}.${activeTooltip.record.endMonth || 12}`
-                  : '至今'}
-              </span>
+              <div className="flex items-center gap-1.5">
+                <span className="text-blue-600 font-mono font-medium text-[11px]">
+                  {format2DigitYear(activeTooltip.record.startYear)}.{activeTooltip.record.startMonth || 1} -{' '}
+                  {activeTooltip.record.endYear
+                    ? `${format2DigitYear(activeTooltip.record.endYear)}.${activeTooltip.record.endMonth || 12}`
+                    : '至今'}
+                </span>
+                <button
+                  onClick={() => onNavigateToOfficial(activeTooltip.official.id)}
+                  className="flex items-center gap-0.5 px-1.5 py-0.5 bg-blue-50 hover:bg-blue-100 text-blue-600 text-[10px] rounded font-medium border border-blue-200/60 shadow-2xs transition-all hover:scale-105"
+                  title="前往官员全息档案主页 ↗"
+                >
+                  <span>主页</span>
+                  <ExternalLink className="w-2.5 h-2.5" />
+                </button>
+              </div>
             </div>
 
             <div className="text-gray-800 font-semibold">
@@ -851,13 +937,10 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
               {activeTooltip.record.department ? ` · ${activeTooltip.record.department}` : ''}
             </div>
 
-            <div className="text-gray-700">
-              担任职务：<span className="font-medium">{activeTooltip.record.position}</span>
-              {activeTooltip.record.rank && (
-                <span className="ml-1.5 text-gray-500 bg-gray-100 px-1 py-0.2 rounded">
-                  {activeTooltip.record.rank}
-                </span>
-              )}
+            <div className="text-gray-700 flex items-center gap-1.5 flex-wrap">
+              <span>担任职务：</span>
+              <span className="font-medium">{activeTooltip.record.position}</span>
+              <PositionRankBadge rank={activeTooltip.record.rank} />
             </div>
 
             {activeTooltip.record.notes && (

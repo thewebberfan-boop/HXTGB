@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Official, Unit, CareerRecord } from '../types';
 import { getOfficialColor } from '../data/csrcData';
 import {
@@ -13,8 +13,10 @@ import {
   GitCommitVertical,
   Filter,
   ArrowUpRight,
-  UserCheck
+  UserCheck,
+  ArrowLeft
 } from 'lucide-react';
+import { PositionRankBadge } from './PositionRankBadge';
 
 interface OfficialsViewProps {
   officials: Official[];
@@ -22,6 +24,7 @@ interface OfficialsViewProps {
   selectedOfficialIds: string[];
   onToggleOfficialSelection: (officialId: string) => void;
   onNavigateToSwimlaneWithOfficial: (officialId: string) => void;
+  onBackToSwimlane?: () => void;
   activeOfficialId?: string | null;
 }
 
@@ -31,11 +34,25 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
   selectedOfficialIds,
   onToggleOfficialSelection,
   onNavigateToSwimlaneWithOfficial,
+  onBackToSwimlane,
+  activeOfficialId,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedUnitId, setSelectedUnitId] = useState<string>('all');
   const [selectedRank, setSelectedRank] = useState<string>('all');
-  const [activeOfficial, setActiveOfficial] = useState<Official | null>(officials[0] || null);
+  const [activeOfficial, setActiveOfficial] = useState<Official | null>(() => {
+    if (activeOfficialId) {
+      return officials.find((o) => o.id === activeOfficialId) || officials[0] || null;
+    }
+    return officials[0] || null;
+  });
+
+  useEffect(() => {
+    if (activeOfficialId) {
+      const found = officials.find((o) => o.id === activeOfficialId);
+      if (found) setActiveOfficial(found);
+    }
+  }, [activeOfficialId, officials]);
 
   // 单位映射表
   const unitMap = useMemo(() => {
@@ -76,15 +93,29 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
       {/* 顶部搜索与过滤栏 */}
       <div className="mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.06] bg-white/95">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-          <div className="relative flex-1 max-w-md">
-            <Search className="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-            <input
-              type="text"
-              placeholder="搜索官员姓名、现任职务、毕业院校、专业..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-9 pr-4 py-2 bg-black/[0.03] hover:bg-black/[0.05] focus:bg-white text-sm rounded-xl border border-transparent focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/10 transition-all outline-none"
-            />
+          <div className="flex items-center gap-3 flex-1">
+            {/* 需求四：通用返回时空泳道按钮 */}
+            {onBackToSwimlane && (
+              <button
+                onClick={onBackToSwimlane}
+                className="flex items-center gap-1.5 px-3 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 hover:text-blue-800 rounded-xl text-xs font-semibold border border-blue-200/60 shadow-2xs transition-all hover:scale-[1.02] active:scale-95 shrink-0"
+                title="返回跳转前的时空演进泳道图谱"
+              >
+                <ArrowLeft className="w-3.5 h-3.5 text-blue-600" />
+                <span>返回泳道</span>
+              </button>
+            )}
+
+            <div className="relative flex-1 max-w-md">
+              <Search className="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+              <input
+                type="text"
+                placeholder="搜索官员姓名、现任职务、毕业院校、专业..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-9 pr-4 py-2 bg-black/[0.03] hover:bg-black/[0.05] focus:bg-white text-sm rounded-xl border border-transparent focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/10 transition-all outline-none"
+              />
+            </div>
           </div>
 
           <div className="flex flex-wrap items-center gap-2.5">
@@ -250,9 +281,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                       <h2 className="text-2xl font-bold text-gray-900 tracking-tight">
                         {activeOfficial.name}
                       </h2>
-                      <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200/80">
-                        {activeOfficial.currentRank}
-                      </span>
+                      <PositionRankBadge rank={activeOfficial.currentRank} />
                     </div>
 
                     <p className="text-sm font-medium text-gray-700 mt-1">
@@ -358,15 +387,11 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                             </span>
                           </div>
 
-                          <div className="flex items-center gap-2 mt-1">
-                            <span className="text-xs font-medium text-gray-800">
+                          <div className="flex items-center gap-2 mt-1 flex-wrap">
+                            <span className="text-xs font-semibold text-gray-900">
                               {item.position}
                             </span>
-                            {item.rank && (
-                              <span className="text-[10px] text-gray-500 bg-gray-200/70 px-1.5 py-0.2 rounded">
-                                {item.rank}
-                              </span>
-                            )}
+                            <PositionRankBadge rank={item.rank} />
                           </div>
 
                           {item.notes && (

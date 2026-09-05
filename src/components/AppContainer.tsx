@@ -9,10 +9,15 @@ import { OfficialsView } from './OfficialsView';
 import { SwimlaneView } from './SwimlaneView';
 
 export function AppContainer() {
-  const [currentView, setCurrentView] = useState<ViewMode>('units');
+  // 核心需求二：默认将“时空泳道”作为网站首页
+  const [currentView, setCurrentView] = useState<ViewMode>('swimlanes');
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState<boolean>(false);
   const [isTimeReversed, setIsTimeReversed] = useState<boolean>(false);
   const [hoveredOfficialId, setHoveredOfficialId] = useState<string | null>(null);
+
+  // 跨页面跳转聚焦定位状态（从泳道跳转到机构或官员主页）
+  const [focusedUnitId, setFocusedUnitId] = useState<string | null>(null);
+  const [focusedOfficialId, setFocusedOfficialId] = useState<string | null>(null);
 
   // 默认精选核心领导班子
   const [selectedOfficialIds, setSelectedOfficialIds] = useState<string[]>([
@@ -160,6 +165,23 @@ export function AppContainer() {
     setCurrentView('swimlanes');
   };
 
+  // 从泳道跳转到机构主页
+  const handleNavigateToUnitPage = (unitId: string) => {
+    setFocusedUnitId(unitId);
+    setCurrentView('units');
+  };
+
+  // 从泳道跳转到官员主页
+  const handleNavigateToOfficialPage = (officialId: string) => {
+    setFocusedOfficialId(officialId);
+    setCurrentView('officials');
+  };
+
+  // 需求四：通用返回时空泳道（保持原有的所有官员和泳道筛选配置）
+  const handleBackToSwimlane = () => {
+    setCurrentView('swimlanes');
+  };
+
   return (
     <div className="flex h-screen w-screen overflow-hidden bg-[#f5f5f7] text-[#1d1d1f] selection:bg-blue-500 selection:text-white">
       {/* 统一的 macOS 风格左侧多功能侧边栏 */}
@@ -196,6 +218,8 @@ export function AppContainer() {
               onReorderLanes={handleReorderLanes}
               onRemoveLane={handleRemoveLane}
               onCompleteUnitOfficials={handleCompleteUnitOfficials}
+              onNavigateToUnit={handleNavigateToUnitPage}
+              onNavigateToOfficial={handleNavigateToOfficialPage}
               isTimeReversed={isTimeReversed}
               hoveredOfficialId={hoveredOfficialId}
               onHoverOfficial={setHoveredOfficialId}
@@ -215,12 +239,20 @@ export function AppContainer() {
                     收录证监会机关内设部门、地方证监局、三大证券交易所及会管核心事业单位
                   </p>
                 </div>
+                <button
+                  onClick={handleBackToSwimlane}
+                  className="flex items-center gap-1.5 px-3 py-1.5 bg-white hover:bg-gray-50 text-gray-700 hover:text-blue-600 rounded-xl border border-black/[0.08] shadow-2xs text-xs font-semibold transition-all hover:scale-105 active:scale-95"
+                >
+                  <span>← 返回时空泳道</span>
+                </button>
               </div>
               <UnitsView
                 units={UNITS_DATA}
                 officials={OFFICIALS_DATA}
                 onSelectOfficial={handleSelectOfficialFromUnit}
                 onNavigateToSwimlane={handleNavigateToSwimlane}
+                onBackToSwimlane={handleBackToSwimlane}
+                initialUnitId={focusedUnitId}
               />
             </div>
           </div>
@@ -238,6 +270,12 @@ export function AppContainer() {
                     汇集证监会系统核心领导班子的年龄、学历、任职经历与调任轨迹
                   </p>
                 </div>
+                <button
+                  onClick={handleBackToSwimlane}
+                  className="flex items-center gap-1.5 px-3 py-1.5 bg-white hover:bg-gray-50 text-gray-700 hover:text-blue-600 rounded-xl border border-black/[0.08] shadow-2xs text-xs font-semibold transition-all hover:scale-105 active:scale-95"
+                >
+                  <span>← 返回时空泳道</span>
+                </button>
               </div>
               <OfficialsView
                 officials={OFFICIALS_DATA}
@@ -245,6 +283,8 @@ export function AppContainer() {
                 selectedOfficialIds={selectedOfficialIds}
                 onToggleOfficialSelection={handleToggleOfficialSelection}
                 onNavigateToSwimlaneWithOfficial={handleNavigateToSwimlaneWithOfficial}
+                onBackToSwimlane={handleBackToSwimlane}
+                activeOfficialId={focusedOfficialId}
               />
             </div>
           </div>
