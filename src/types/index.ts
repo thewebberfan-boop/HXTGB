@@ -15,6 +15,15 @@ export type UnitCategory =
   | '直属事业单位' 
   | '行业自律组织';
 
+export type ConfidenceTier = 'high' | 'medium' | 'derived';
+
+export interface ConfidenceInfo {
+  level: ConfidenceTier;
+  score: number; // e.g. 98, 88, 72
+  label: string; // e.g. '官方确证', '权威财媒', '新闻推导'
+  source?: string; // 详实信源与证据链说明
+}
+
 export interface CareerRecord {
   id: string;
   unitId: string;
@@ -30,6 +39,7 @@ export interface CareerRecord {
   isDerived?: boolean; // 是否属于公开新闻/会议报道推导反推履历
   sourceNote?: string; // 推导来源或佐证说明
   notes?: string;
+  confidence?: ConfidenceInfo; // 该段履历置信度评价
 }
 
 export interface EducationInfo {
@@ -37,6 +47,7 @@ export interface EducationInfo {
   school: string;
   major?: string;
   graduationYear?: number;
+  confidence?: ConfidenceInfo; // 学历置信度评价
 }
 
 export interface Official {
@@ -53,6 +64,7 @@ export interface Official {
   education: EducationInfo[];
   careerHistory: CareerRecord[];
   bioSummary?: string;
+  basicInfoConfidence?: ConfidenceInfo; // 年龄、籍贯等基础信息置信度
 }
 
 export interface Unit {

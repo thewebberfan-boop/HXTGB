@@ -16,6 +16,7 @@ import {
   Check,
   Building,
   Sparkles,
+  ShieldCheck,
   X
 } from 'lucide-react';
 import { PositionRankBadge } from './PositionRankBadge';
@@ -341,6 +342,25 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                       <Building className="w-3.5 h-3.5 text-gray-400" />
                       编制归属：{currentUnit?.name || '中国证监会系统'}
                     </span>
+
+                    {activeOfficial.basicInfoConfidence && (
+                      <span className="flex items-center gap-1.5 pl-1 border-l border-black/[0.08]">
+                        <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                        <span className="text-gray-400">信息置信度：</span>
+                        <span
+                          className={`px-1.5 py-0.5 rounded text-[10.5px] font-semibold ${
+                            activeOfficial.basicInfoConfidence.level === 'high'
+                              ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
+                              : activeOfficial.basicInfoConfidence.level === 'medium'
+                              ? 'bg-blue-50 text-blue-700 border border-blue-200'
+                              : 'bg-amber-50 text-amber-700 border border-amber-200'
+                          }`}
+                          title={`信源依据：${activeOfficial.basicInfoConfidence.source || '官方档案'}`}
+                        >
+                          {activeOfficial.basicInfoConfidence.score}% · {activeOfficial.basicInfoConfidence.label}
+                        </span>
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>
@@ -411,6 +431,29 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                       毕业年份：{edu.graduationYear} 年
                     </div>
                   )}
+                  {edu.confidence && (
+                    <div className="pt-2 mt-2 border-t border-black/[0.04] space-y-1">
+                      <div className="flex items-center justify-between">
+                        <span className="text-[10px] text-gray-400 font-medium">考证置信度</span>
+                        <span
+                          className={`px-1.5 py-0.2 rounded text-[9.5px] font-semibold ${
+                            edu.confidence.level === 'high'
+                              ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
+                              : edu.confidence.level === 'medium'
+                              ? 'bg-blue-50 text-blue-700 border border-blue-200'
+                              : 'bg-amber-50 text-amber-700 border border-amber-200'
+                          }`}
+                        >
+                          {edu.confidence.score}% · {edu.confidence.label}
+                        </span>
+                      </div>
+                      {edu.confidence.source && (
+                        <div className="text-[10px] text-gray-500 truncate" title={edu.confidence.source}>
+                          信源：{edu.confidence.source}
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -426,6 +469,34 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
               <span className="text-xs text-gray-400">
                 按任职时间先后顺序完整展开
               </span>
+            </div>
+
+            {/* 置信度评价体系图例 */}
+            <div className="p-3 bg-gray-50/90 rounded-xl border border-black/[0.04] flex flex-wrap items-center justify-between gap-2 text-xs text-gray-600">
+              <div className="flex items-center gap-2 font-medium text-gray-700">
+                <ShieldCheck className="w-4 h-4 text-emerald-600" />
+                <span>履职考据置信度标准：</span>
+              </div>
+              <div className="flex flex-wrap items-center gap-3 text-[11px]">
+                <div className="flex items-center gap-1.5">
+                  <span className="px-1.5 py-0.2 rounded bg-emerald-100 text-emerald-800 font-semibold border border-emerald-300">
+                    95%+ · 官方确证
+                  </span>
+                  <span className="text-gray-400">国务院任免/法定公示/公报</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <span className="px-1.5 py-0.2 rounded bg-blue-100 text-blue-800 font-semibold border border-blue-300">
+                    85%+ · 权威财媒
+                  </span>
+                  <span className="text-gray-400">《财新》/证券时报头版要闻</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <span className="px-1.5 py-0.2 rounded bg-amber-100 text-amber-800 font-semibold border border-amber-300">
+                    70%+ · 新闻推导
+                  </span>
+                  <span className="text-gray-400">公开行业活动/通报反推</span>
+                </div>
+              </div>
             </div>
 
             <div className="relative pl-7 sm:pl-8 space-y-6 before:absolute before:left-3 before:top-3 before:bottom-3 before:w-0.5 before:bg-gray-200">
@@ -477,7 +548,36 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                         <PositionRankBadge rank={item.rank} />
                       </div>
 
-                      {item.sourceNote && (
+                      {/* 置信度评价与信源依据 */}
+                      {item.confidence && (
+                        <div className="mt-3 p-3 rounded-xl bg-white/95 border border-black/[0.05] space-y-1 text-xs shadow-2xs">
+                          <div className="flex items-center justify-between">
+                            <span className="font-semibold text-gray-600 text-[11px] flex items-center gap-1">
+                              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+                              履历考据置信度
+                            </span>
+                            <span
+                              className={`px-2 py-0.5 rounded-md font-bold text-[10.5px] ${
+                                item.confidence.level === 'high'
+                                  ? 'bg-emerald-100 text-emerald-800 border border-emerald-300'
+                                  : item.confidence.level === 'medium'
+                                  ? 'bg-blue-100 text-blue-800 border border-blue-300'
+                                  : 'bg-amber-100 text-amber-800 border border-amber-300'
+                              }`}
+                            >
+                              {item.confidence.score}% · {item.confidence.label}
+                            </span>
+                          </div>
+                          {item.confidence.source && (
+                            <div className="text-[11px] text-gray-600 leading-relaxed pt-0.5">
+                              <span className="font-medium text-gray-400">信源依据：</span>
+                              {item.confidence.source}
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {item.sourceNote && !item.confidence && (
                         <div className="text-xs text-amber-800 bg-amber-50/90 border border-amber-200/80 px-3 py-1.5 rounded-xl mt-3 leading-relaxed">
                           <span className="font-bold">推导佐证依据：</span>
                           {item.sourceNote}

@@ -3,7 +3,7 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { Official, Unit, CareerRecord, UnitLevel } from '../types';
 import { getOfficialColor } from '../data/csrcData';
-import { GripVertical, X, UserPlus, Sparkles, Check, ExternalLink } from 'lucide-react';
+import { GripVertical, X, UserPlus, UserMinus, Sparkles, Check, ExternalLink } from 'lucide-react';
 import { PositionRankBadge } from './PositionRankBadge';
 
 interface SwimlaneViewProps {
@@ -120,10 +120,39 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
     return officials.filter((o) => selectedOfficialIds.includes(o.id));
   }, [officials, selectedOfficialIds]);
 
-  // 1. 核心需求一：根据选中的官员，动态过滤掉“没有履职内容”的空单位泳道
+  // 全国各省市派出机构 ID 集合（在泳道图中统一汇聚为 csrc-df 单一泳道）
+  const REGIONAL_BUREAU_IDS = useMemo(
+    () => [
+      'csrc-bj', 'csrc-sh', 'csrc-gd', 'csrc-sz', 'csrc-js', 
+      'csrc-zj', 'csrc-sc', 'csrc-yn', 'csrc-fj', 'csrc-ah', 'csrc-df'
+    ],
+    []
+  );
+
+  // 1. 核心需求：根据选中的官员，动态过滤掉“没有履职内容”的空单位泳道
+  // 需求一：将各地政府统一为一个 gov-local 泳道；
+  // 需求二：将各地方证监局统一合并为 csrc-df 一个泳道；
   const visibleLanes = useMemo(() => {
-    // 转化为完整单位实体
-    const candidateLanes = activeLaneUnitIds
+    // 归一化候选泳道列表：各地方局统合为 csrc-df；地方政府统合为 gov-local
+    const normalizedLaneIds: string[] = [];
+
+    activeLaneUnitIds.forEach((id) => {
+      if (REGIONAL_BUREAU_IDS.includes(id)) {
+        if (!normalizedLaneIds.includes('csrc-df')) {
+          normalizedLaneIds.push('csrc-df');
+        }
+      } else if (id === 'gov-sh' || id === 'gov-local') {
+        if (!normalizedLaneIds.includes('gov-local')) {
+          normalizedLaneIds.push('gov-local');
+        }
+      } else {
+        if (!normalizedLaneIds.includes(id)) {
+          normalizedLaneIds.push(id);
+        }
+      }
+    });
+
+    const candidateLanes = normalizedLaneIds
       .map((id) => unitMap.get(id))
       .filter((u): u is Unit => Boolean(u));
 
@@ -135,17 +164,34 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
     // 动态过滤：仅保留当前选中官员有任职履历或现任的单位
     return candidateLanes.filter((lane) => {
       return selectedOfficials.some((official) => {
+        if (lane.id === 'csrc-df') {
+          return (
+            REGIONAL_BUREAU_IDS.includes(official.currentUnitId) ||
+            official.careerHistory.some((rec) => REGIONAL_BUREAU_IDS.includes(rec.unitId))
+          );
+        }
+        if (lane.id === 'gov-local') {
+          return (
+            official.currentUnitId === 'gov-local' ||
+            official.careerHistory.some(
+              (rec) => rec.unitId === 'gov-local' || rec.unitId === 'gov-sh' || rec.unitName.includes('政府')
+            )
+          );
+        }
         return (
           official.currentUnitId === lane.id ||
           official.careerHistory.some(
             (rec) =>
               rec.unitId === lane.id ||
-              (lane.id === 'csrc-main' && rec.unitId.startsWith('csrc-'))
+              (lane.id === 'csrc-main' &&
+                rec.unitId.startsWith('csrc-') &&
+                !REGIONAL_BUREAU_IDS.includes(rec.unitId) &&
+                !candidateLanes.some((cl) => cl.id === rec.unitId))
           )
         );
       });
     });
-  }, [activeLaneUnitIds, unitMap, selectedOfficials]);
+  }, [activeLaneUnitIds, unitMap, selectedOfficials, REGIONAL_BUREAU_IDS]);
 
   // 2. 核心需求一（下半部分）：按照屏幕宽度平均分配各单位的泳道宽度（保证 >= MIN_LANE_WIDTH）
   const computedLaneWidth = useMemo(() => {
@@ -156,19 +202,36 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
     return Math.max(MIN_LANE_WIDTH, allocated);
   }, [containerWidth, visibleLanes.length, TIME_RULER_WIDTH, MIN_LANE_WIDTH]);
 
-  // 3. 统计系统中各单位拥有的全部官员数量（供一键补全按钮使用）
-  const unitTotalOfficialsMap = useMemo(() => {
-    const map = new Map<string, number>();
+  // 3. 统计系统中各单位拥有的全部官员列表与数量（供一键补全/取消双向切换使用）
+  const laneOfficialsMap = useMemo(() => {
+    const map = new Map<string, Official[]>();
     units.forEach((u) => {
-      const matchCount = officials.filter(
-        (o) =>
+      const isRegionalLane = u.id === 'csrc-df';
+      const isLocalGovLane = u.id === 'gov-local';
+      const matched = officials.filter((o) => {
+        if (isRegionalLane) {
+          return (
+            REGIONAL_BUREAU_IDS.includes(o.currentUnitId) ||
+            o.careerHistory.some((r) => REGIONAL_BUREAU_IDS.includes(r.unitId))
+          );
+        }
+        if (isLocalGovLane) {
+          return (
+            o.currentUnitId === 'gov-local' ||
+            o.careerHistory.some((r) => r.unitId === 'gov-local' || r.unitId === 'gov-sh' || r.unitName.includes('政府'))
+          );
+        }
+        return (
           o.currentUnitId === u.id ||
-          o.careerHistory.some((r) => r.unitId === u.id)
-      ).length;
-      map.set(u.id, matchCount);
+          o.careerHistory.some(
+            (r) => r.unitId === u.id || (u.id === 'csrc-main' && r.unitId.startsWith('csrc-'))
+          )
+        );
+      });
+      map.set(u.id, matched);
     });
     return map;
-  }, [units, officials]);
+  }, [units, officials, REGIONAL_BUREAU_IDS]);
 
   // 拖拽排序
   const handleDragStart = (index: number) => {
@@ -271,11 +334,24 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
 
       selectedOfficials.forEach((official) => {
         official.careerHistory.forEach((rec) => {
-          const matches =
-            rec.unitId === lane.id ||
-            (lane.id === 'csrc-main' &&
-              rec.unitId.startsWith('csrc-') &&
-              !visibleLanes.some((l) => l.id === rec.unitId));
+          let matches = false;
+          if (lane.id === 'csrc-df') {
+            matches = rec.unitId === 'csrc-df' || REGIONAL_BUREAU_IDS.includes(rec.unitId);
+          } else if (lane.id === 'gov-local') {
+            matches =
+              rec.unitId === 'gov-local' ||
+              rec.unitId === 'gov-sh' ||
+              rec.unitName.includes('政府') ||
+              Boolean(rec.department && rec.department.includes('政府'));
+          } else if (lane.id === 'csrc-main') {
+            matches =
+              rec.unitId === 'csrc-main' ||
+              (rec.unitId.startsWith('csrc-') &&
+                !REGIONAL_BUREAU_IDS.includes(rec.unitId) &&
+                !visibleLanes.some((l) => l.id === rec.unitId));
+          } else {
+            matches = rec.unitId === lane.id;
+          }
 
           if (matches) {
             rawRecords.push({ official, record: rec });
@@ -453,7 +529,11 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                 const isOver = dragOverLaneIndex === index;
                 const microRank = getMicroRank(lane.level);
                 const displayName = lane.tinyName || lane.shortName;
-                const totalOfficialsInUnit = unitTotalOfficialsMap.get(lane.id) || 0;
+                const laneOfficials = laneOfficialsMap.get(lane.id) || [];
+                const totalOfficialsInUnit = laneOfficials.length;
+                const isAllSelected =
+                  totalOfficialsInUnit > 0 &&
+                  laneOfficials.every((o) => selectedOfficialIds.includes(o.id));
 
                 return (
                   <div
@@ -540,37 +620,79 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                       )}
                     </div>
 
-                    {/* Bottom: 核心需求二「补全该单位所有官员及关联泳道」操作按钮 */}
+                    {/* Bottom: 核心需求「补全/取消该单位所有官员及关联泳道」双向切换按钮 */}
                     <div className="w-full flex items-center justify-center pt-1 border-t border-black/[0.04]">
                       {isWideMode ? (
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             onCompleteUnitOfficials(lane.id);
-                            triggerToast(
-                              `已补全「${displayName}」的全部 ${totalOfficialsInUnit} 位干部并自动联动关联泳道！`
-                            );
+                            if (isAllSelected) {
+                              triggerToast(`已取消勾选「${displayName}」关联的全部 ${totalOfficialsInUnit} 位干部`);
+                            } else {
+                              triggerToast(
+                                `已补全「${displayName}」的全部 ${totalOfficialsInUnit} 位干部并自动联动关联泳道！`
+                              );
+                            }
                           }}
-                          className="w-full py-0.5 px-1.5 bg-blue-50 hover:bg-blue-100 text-blue-600 rounded-lg text-[10px] font-medium flex items-center justify-center gap-1 border border-blue-200/50 shadow-2xs transition-all hover:scale-[1.02] active:scale-95"
-                          title={`点击一键补全「${displayName}」全部 ${totalOfficialsInUnit} 位履历官员，并自动补充其流转单位泳道`}
+                          className={`w-full py-0.5 px-1.5 rounded-lg text-[10px] font-medium flex items-center justify-center gap-1 shadow-2xs transition-all hover:scale-[1.02] active:scale-95 border ${
+                            isAllSelected
+                              ? 'bg-amber-50 hover:bg-amber-100 text-amber-700 border-amber-300'
+                              : 'bg-blue-50 hover:bg-blue-100 text-blue-600 border-blue-200/50'
+                          }`}
+                          title={
+                            isAllSelected
+                              ? `点击取消勾选「${displayName}」关联的全部 ${totalOfficialsInUnit} 位干部`
+                              : `点击一键补全「${displayName}」全部 ${totalOfficialsInUnit} 位履历官员，并自动补充其流转单位泳道`
+                          }
                         >
-                          <UserPlus className="w-2.5 h-2.5 shrink-0 text-blue-600" />
-                          <span className="truncate">补全干部 ({totalOfficialsInUnit})</span>
+                          {isAllSelected ? (
+                            <>
+                              <UserMinus className="w-2.5 h-2.5 shrink-0 text-amber-600" />
+                              <span className="truncate">取消干部 ({totalOfficialsInUnit})</span>
+                            </>
+                          ) : (
+                            <>
+                              <UserPlus className="w-2.5 h-2.5 shrink-0 text-blue-600" />
+                              <span className="truncate">补全干部 ({totalOfficialsInUnit})</span>
+                            </>
+                          )}
                         </button>
                       ) : (
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             onCompleteUnitOfficials(lane.id);
-                            triggerToast(
-                              `已补全「${displayName}」的 ${totalOfficialsInUnit} 位干部履历与关联泳道`
-                            );
+                            if (isAllSelected) {
+                              triggerToast(`已取消勾选「${displayName}」关联干部`);
+                            } else {
+                              triggerToast(
+                                `已补全「${displayName}」的 ${totalOfficialsInUnit} 位干部履历与关联泳道`
+                              );
+                            }
                           }}
-                          className="p-0.5 w-full bg-blue-50 hover:bg-blue-100 text-blue-600 rounded-md text-[9px] font-medium flex items-center justify-center gap-0.5 border border-blue-200/50 shadow-2xs transition-all hover:scale-105 active:scale-95"
-                          title={`补全「${displayName}」全部 ${totalOfficialsInUnit} 位履历官员及关联泳道`}
+                          className={`p-0.5 w-full rounded-md text-[9px] font-medium flex items-center justify-center gap-0.5 shadow-2xs transition-all hover:scale-105 active:scale-95 border ${
+                            isAllSelected
+                              ? 'bg-amber-50 hover:bg-amber-100 text-amber-700 border-amber-300'
+                              : 'bg-blue-50 hover:bg-blue-100 text-blue-600 border-blue-200/50'
+                          }`}
+                          title={
+                            isAllSelected
+                              ? `取消勾选「${displayName}」关联的全部 ${totalOfficialsInUnit} 位干部`
+                              : `补全「${displayName}」全部 ${totalOfficialsInUnit} 位履历官员及关联泳道`
+                          }
                         >
-                          <UserPlus className="w-2.5 h-2.5 text-blue-600 shrink-0" />
-                          <span className="text-[8.5px] font-bold">{totalOfficialsInUnit}</span>
+                          {isAllSelected ? (
+                            <>
+                              <UserMinus className="w-2.5 h-2.5 text-amber-600 shrink-0" />
+                              <span className="text-[8.5px] font-bold text-amber-700">{totalOfficialsInUnit}</span>
+                            </>
+                          ) : (
+                            <>
+                              <UserPlus className="w-2.5 h-2.5 text-blue-600 shrink-0" />
+                              <span className="text-[8.5px] font-bold">{totalOfficialsInUnit}</span>
+                            </>
+                          )}
                         </button>
                       )}
                     </div>
@@ -904,7 +1026,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
               建制年份：{hoveredLaneUnit.establishedYear}年 | 机构简称：{hoveredLaneUnit.shortName}
             </div>
             <div className="text-blue-600 text-[11px] font-medium">
-              系统记录任职干部：{unitTotalOfficialsMap.get(hoveredLaneUnit.id) || 0} 位
+              系统记录任职干部：{(laneOfficialsMap.get(hoveredLaneUnit.id) || []).length} 位
             </div>
             <p className="text-gray-600 text-[11px] line-clamp-2 leading-relaxed">
               {hoveredLaneUnit.description}
@@ -967,7 +1089,33 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
               <PositionRankBadge rank={activeTooltip.record.rank} />
             </div>
 
-            {activeTooltip.record.isDerived && (
+            {/* 履历考据置信度与证据链 */}
+            {activeTooltip.record.confidence && (
+              <div className="p-2 rounded-lg bg-gray-50 border border-black/[0.04] space-y-1">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] text-gray-500 font-medium">考据置信度</span>
+                  <span
+                    className={`px-1.5 py-0.2 rounded font-semibold text-[10px] ${
+                      activeTooltip.record.confidence.level === 'high'
+                        ? 'bg-emerald-100 text-emerald-800 border border-emerald-300/60'
+                        : activeTooltip.record.confidence.level === 'medium'
+                        ? 'bg-blue-100 text-blue-800 border border-blue-300/60'
+                        : 'bg-amber-100 text-amber-800 border border-amber-300/60'
+                    }`}
+                  >
+                    {activeTooltip.record.confidence.score}% · {activeTooltip.record.confidence.label}
+                  </span>
+                </div>
+                {activeTooltip.record.confidence.source && (
+                  <div className="text-[10.5px] text-gray-600 leading-snug line-clamp-2">
+                    <span className="text-gray-400">信源依据：</span>
+                    {activeTooltip.record.confidence.source}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {activeTooltip.record.isDerived && !activeTooltip.record.confidence && (
               <div className="flex items-start gap-1.5 text-[11px] text-amber-900 bg-amber-50/90 border border-amber-200/80 p-2 rounded-lg leading-snug">
                 <span className="shrink-0 font-bold px-1 py-0.2 bg-amber-200/70 rounded text-[9px] text-amber-800">
                   新闻推导

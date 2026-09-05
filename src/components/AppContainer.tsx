@@ -98,37 +98,63 @@ export function AppContainer() {
     setActiveLaneUnitIds(newLaneIds);
   };
 
-  // 核心交互：列头点击「补全干部」，补全该单位在系统中的全部官员并在侧边栏选中，同时自动补充其历任单位泳道
+  // 核心交互：列头点击「补全干部」/「取消干部」，双向切换选中状态，并联动补充相关单位泳道
   const handleCompleteUnitOfficials = (unitId: string) => {
-    const matchingOfficials = OFFICIALS_DATA.filter(
-      (o) =>
+    const REGIONAL_BUREAU_IDS = [
+      'csrc-bj', 'csrc-sh', 'csrc-gd', 'csrc-sz', 'csrc-js', 
+      'csrc-zj', 'csrc-sc', 'csrc-yn', 'csrc-fj', 'csrc-ah', 'csrc-df'
+    ];
+    const isRegionalLane = unitId === 'csrc-df';
+    const isLocalGovLane = unitId === 'gov-local';
+
+    const matchingOfficials = OFFICIALS_DATA.filter((o) => {
+      if (isRegionalLane) {
+        return (
+          REGIONAL_BUREAU_IDS.includes(o.currentUnitId) ||
+          o.careerHistory.some((r) => REGIONAL_BUREAU_IDS.includes(r.unitId))
+        );
+      }
+      if (isLocalGovLane) {
+        return (
+          o.currentUnitId === 'gov-local' ||
+          o.careerHistory.some((r) => r.unitId === 'gov-local' || r.unitId === 'gov-sh' || r.unitName.includes('政府'))
+        );
+      }
+      return (
         o.currentUnitId === unitId ||
         o.careerHistory.some(
           (r) => r.unitId === unitId || (unitId === 'csrc-main' && r.unitId.startsWith('csrc-'))
         )
-    );
+      );
+    });
 
     if (matchingOfficials.length === 0) return;
-
-    // 1. 将该单位全部官员在左侧边栏自动选中
     const matchingIds = matchingOfficials.map((o) => o.id);
-    setSelectedOfficialIds((prev) => Array.from(new Set([...prev, ...matchingIds])));
 
-    // 2. 将这些官员历任的全部单位自动补充到泳道候选池，触发“单位”泳道自动补充展示
-    const unitIdsToAdd = new Set<string>();
-    unitIdsToAdd.add(unitId);
-    matchingOfficials.forEach((o) => {
-      if (o.currentUnitId) unitIdsToAdd.add(o.currentUnitId);
-      o.careerHistory.forEach((rec) => {
-        if (rec.unitId) unitIdsToAdd.add(rec.unitId);
+    // 检查是否已经全部选中：若是，则执行反选/取消勾选；若否，则补全勾选
+    const isAllSelected = matchingIds.every((id) => selectedOfficialIds.includes(id));
+
+    if (isAllSelected) {
+      setSelectedOfficialIds((prev) => prev.filter((id) => !matchingIds.includes(id)));
+    } else {
+      setSelectedOfficialIds((prev) => Array.from(new Set([...prev, ...matchingIds])));
+
+      // 将这些官员历任的全部单位自动补充到泳道候选池，触发“单位”泳道自动展示
+      const unitIdsToAdd = new Set<string>();
+      unitIdsToAdd.add(unitId);
+      matchingOfficials.forEach((o) => {
+        if (o.currentUnitId) unitIdsToAdd.add(o.currentUnitId);
+        o.careerHistory.forEach((rec) => {
+          if (rec.unitId) unitIdsToAdd.add(rec.unitId);
+        });
       });
-    });
 
-    setActiveLaneUnitIds((prev) => {
-      const combined = new Set(prev);
-      unitIdsToAdd.forEach((uid) => combined.add(uid));
-      return Array.from(combined);
-    });
+      setActiveLaneUnitIds((prev) => {
+        const combined = new Set(prev);
+        unitIdsToAdd.forEach((uid) => combined.add(uid));
+        return Array.from(combined);
+      });
+    }
   };
 
   // 一键匹配相关单位
