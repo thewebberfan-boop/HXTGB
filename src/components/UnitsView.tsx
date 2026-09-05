@@ -17,6 +17,7 @@ import {
   ArrowRight,
   ArrowLeft
 } from 'lucide-react';
+import { PositionRankBadge } from './PositionRankBadge';
 
 interface UnitsViewProps {
   units: Unit[];
@@ -380,9 +381,7 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                             <span className="font-semibold text-gray-900 text-sm">
                               {leader.name}
                             </span>
-                            <span className="text-[11px] text-blue-700 bg-blue-100/80 px-1.5 py-0.2 rounded font-medium">
-                              {leader.currentRank}
-                            </span>
+                            <PositionRankBadge rank={leader.currentRank} />
                           </div>
                           <p className="text-xs text-gray-500 mt-0.5">
                             {leader.currentPosition}

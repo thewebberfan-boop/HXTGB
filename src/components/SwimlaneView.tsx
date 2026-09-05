@@ -710,6 +710,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                       const isOfficialHighlighted =
                         hoveredOfficialId === null ||
                         hoveredOfficialId === official.id;
+                      const isDerived = !!record.isDerived;
 
                       return (
                         <div
@@ -737,7 +738,11 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                             onHoverOfficial(null);
                             setActiveTooltip(null);
                           }}
-                          className={`absolute rounded-lg cursor-pointer transition-all duration-150 border-l-[3.5px] border-t border-r border-b border-black/[0.08] flex flex-col justify-center p-1 select-none overflow-hidden ${
+                          className={`absolute rounded-lg cursor-pointer transition-all duration-150 flex flex-col justify-center p-1 select-none overflow-hidden ${
+                            isDerived
+                              ? 'border-l-[3.5px] border-t border-r border-b border-dashed border-amber-600/40'
+                              : 'border-l-[3.5px] border-t border-r border-b border-black/[0.08]'
+                          } ${
                             isOfficialHighlighted
                               ? 'opacity-100 shadow-xs hover:shadow-md hover:scale-105 hover:z-40'
                               : 'opacity-20 grayscale'
@@ -747,7 +752,8 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                             height: `${height}px`,
                             left: `${left}px`,
                             width: `${width}px`,
-                            backgroundColor: '#ffffff',
+                            // 推导履历使用略浅、带半透明质感的浅灰底色；确证履历使用纯白
+                            backgroundColor: isDerived ? '#f8fafc' : '#ffffff',
                             borderLeftColor: color.primary,
                             boxShadow: isOfficialHighlighted
                               ? `0 2px 8px ${color.primary}30`
@@ -758,14 +764,24 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                           {isWideMode ? (
                             <div className="w-full h-full flex flex-col justify-between py-0.5 leading-tight group/card">
                               <div className="flex items-center justify-between gap-1">
-                                <span
-                                  className="font-bold text-xs text-gray-900 truncate"
-                                  style={{
-                                    color: isOfficialHighlighted ? color.primary : '#111827',
-                                  }}
-                                >
-                                  {official.name}
-                                </span>
+                                <div className="flex items-center gap-1 truncate">
+                                  <span
+                                    className="font-bold text-xs text-gray-900 truncate"
+                                    style={{
+                                      color: isOfficialHighlighted ? color.primary : '#111827',
+                                    }}
+                                  >
+                                    {official.name}
+                                  </span>
+                                  {isDerived && (
+                                    <span
+                                      className="text-[8px] px-1 py-0.2 rounded bg-amber-50 text-amber-700 border border-amber-300/80 font-normal shrink-0 leading-none"
+                                      title={`新闻推导履历：${record.sourceNote || '由公开新闻报道与履职线索推导'}`}
+                                    >
+                                      推
+                                    </span>
+                                  )}
+                                </div>
                                 <div className="flex items-center gap-0.5 shrink-0">
                                   <span className="text-[9px] text-gray-400 bg-gray-100 px-1 py-0.2 rounded font-mono shrink-0">
                                     {format2DigitYear(record.startYear)}-{record.endYear ? format2DigitYear(record.endYear) : '今'}
@@ -809,6 +825,14 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                                 >
                                   {official.name}
                                 </span>
+                                {isDerived && (
+                                  <span
+                                    className="text-[7.5px] px-0.5 py-0.2 rounded bg-amber-50 text-amber-700 border border-amber-300 font-normal shrink-0 leading-none"
+                                    title="新闻推导履历"
+                                  >
+                                    推
+                                  </span>
+                                )}
                                 <button
                                   onClick={(e) => {
                                     e.stopPropagation();
@@ -943,6 +967,17 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
               <PositionRankBadge rank={activeTooltip.record.rank} />
             </div>
 
+            {activeTooltip.record.isDerived && (
+              <div className="flex items-start gap-1.5 text-[11px] text-amber-900 bg-amber-50/90 border border-amber-200/80 p-2 rounded-lg leading-snug">
+                <span className="shrink-0 font-bold px-1 py-0.2 bg-amber-200/70 rounded text-[9px] text-amber-800">
+                  新闻推导
+                </span>
+                <span className="text-gray-700 leading-tight">
+                  {activeTooltip.record.sourceNote || '根据公开新闻动态、干部大会报道或历史任职线索反推'}
+                </span>
+              </div>
+            )}
+
             {activeTooltip.record.notes && (
               <p className="text-gray-600 text-[11px] leading-relaxed bg-gray-50 p-2 rounded-lg border border-black/[0.03]">
                 {activeTooltip.record.notes}
@@ -951,6 +986,23 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
           </div>
         </div>
       )}
+
+      {/* 底部悬浮图例说明：清晰告知用户实线确证与虚线推导的视觉规范 */}
+      <div className="absolute bottom-3 right-4 z-40 bg-white/95 backdrop-blur-md border border-black/[0.08] rounded-xl px-3 py-1.5 shadow-md flex items-center gap-3 text-[11px] text-gray-600 pointer-events-auto select-none">
+        <div className="flex items-center gap-1.5">
+          <span className="w-3.5 h-2.5 bg-white border border-gray-400 rounded-xs shadow-2xs inline-block" />
+          <span className="font-medium text-gray-700">实线白底：确证履历</span>
+        </div>
+        <span className="text-gray-300">|</span>
+        <div className="flex items-center gap-1.5">
+          <span className="w-3.5 h-2.5 bg-slate-100 border border-dashed border-amber-500/80 rounded-xs inline-block" />
+          <span className="flex items-center gap-0.5">
+            <span className="font-medium text-gray-700">虚线浅色</span>
+            <span className="text-[8px] bg-amber-100 text-amber-800 border border-amber-300/70 px-0.5 rounded leading-none">推</span>
+            <span className="font-medium text-gray-700">：新闻推导</span>
+          </span>
+        </div>
+      </div>
     </div>
   );
 };

@@ -27,6 +27,8 @@ export interface CareerRecord {
   endYear: number | null; // null 表示至今
   endMonth?: number | null;
   isCurrent?: boolean;
+  isDerived?: boolean; // 是否属于公开新闻/会议报道推导反推履历
+  sourceNote?: string; // 推导来源或佐证说明
   notes?: string;
 }
 

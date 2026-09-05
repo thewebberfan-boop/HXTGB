@@ -473,7 +473,8 @@ export const UNITS_DATA: Unit[] = [
     "address": "北京市西城区金融大街9号金融街中心",
     "contactPhone": "010-63211555",
     "currentLeaderIds": [
-      "lu-wenshan"
+      "chen-fei",
+      "wu-xiaoyong"
     ],
     "tagColor": "purple"
   },
@@ -496,7 +497,7 @@ export const UNITS_DATA: Unit[] = [
     "address": "北京市西城区金融大街9号金融街中心",
     "contactPhone": "010-53856688",
     "currentLeaderIds": [
-      "ge-yiping"
+      "lu-dabiao"
     ],
     "tagColor": "purple"
   },
@@ -844,7 +845,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 5,
         "endYear": 2005,
         "endMonth": 3,
-        "notes": "参与起草证券公司合规管理和分类监管规章制度"
+        "notes": "参与起草证券公司合规管理和分类监管规章制度",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "wq-2",
@@ -857,7 +860,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2009,
         "endMonth": 3,
-        "notes": "雷厉风行处置数十家高风险违规证券公司，化解系统性金融风险，被称为资本市场“券商屠夫”"
+        "notes": "雷厉风行处置数十家高风险违规证券公司，化解系统性金融风险，被称为资本市场“券商屠夫”",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "wq-3",
@@ -870,7 +875,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2010,
         "endMonth": 11,
-        "notes": "严厉整饬公募基金“老鼠仓”和内幕交易，推动基金行业法治化规范运作"
+        "notes": "严厉整饬公募基金“老鼠仓”和内幕交易，推动基金行业法治化规范运作",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "wq-4",
@@ -883,7 +890,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 11,
         "endYear": 2016,
         "endMonth": 5,
-        "notes": "主导北外滩财富管理高地建设，推动航运金融聚集区崛起"
+        "notes": "主导北外滩财富管理高地建设，推动航运金融聚集区崛起",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "wq-5",
@@ -895,7 +904,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 5,
         "endYear": 2017,
         "endMonth": 12,
-        "notes": "主持上交所全面工作，深化一线穿透式监察与沪港通平稳扩容"
+        "notes": "主持上交所全面工作，深化一线穿透式监察与沪港通平稳扩容",
+        "isDerived": false
       },
       {
         "id": "wq-6",
@@ -908,7 +918,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 12,
         "endYear": 2024,
         "endMonth": 2,
-        "notes": "分管发展改革、财政、科技创新、金融与国有资产，全力推动科创板试点注册制落地"
+        "notes": "分管发展改革、财政、科技创新、金融与国有资产，全力推动科创板试点注册制落地",
+        "isDerived": false
       },
       {
         "id": "wq-7",
@@ -920,7 +931,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 2,
         "endYear": null,
         "isCurrent": true,
-        "notes": "全面主持中国证监会党组和会行政工作，出台新“国九条”，强化强监管、防风险、促高质量发展主线"
+        "notes": "全面主持中国证监会党组和会行政工作，出台新“国九条”，强化强监管、防风险、促高质量发展主线",
+        "isDerived": false
       }
     ]
   },
@@ -960,7 +972,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": 2011,
         "endMonth": 8,
-        "notes": "深入参与股票公开发行核准与审核规程规范化建设"
+        "notes": "深入参与股票公开发行核准与审核规程规范化建设",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "lm-2",
@@ -972,7 +986,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": 2018,
         "endMonth": 8,
-        "notes": "主持新三板分层制度改革与做市商交易制度推行"
+        "notes": "主持新三板分层制度改革与做市商交易制度推行",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "lm-3",
@@ -984,7 +1000,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": 2020,
         "endMonth": 6,
-        "notes": "全面主持制造业大省江苏资本市场发展与防范化解股票质押风险"
+        "notes": "全面主持制造业大省江苏资本市场发展与防范化解股票质押风险",
+        "isDerived": false
       },
       {
         "id": "lm-4",
@@ -996,7 +1013,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2021,
         "endMonth": 12,
-        "notes": "主导常态化退市制度落地与提高上市公司质量专项行动"
+        "notes": "主导常态化退市制度落地与提高上市公司质量专项行动",
+        "isDerived": false
       },
       {
         "id": "lm-5",
@@ -1008,7 +1026,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 12,
         "endYear": 2024,
         "endMonth": 7,
-        "notes": "统筹全系统稽查执法与跨部委协同，严肃查办恶性财务造假与操纵市场大案要案"
+        "notes": "统筹全系统稽查执法与跨部委协同，严肃查办恶性财务造假与操纵市场大案要案",
+        "isDerived": false
       },
       {
         "id": "lm-6",
@@ -1020,7 +1039,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 7,
         "endYear": null,
         "isCurrent": true,
-        "notes": "协助分管发行监管、上市公司监管与稽查执法等核心战线"
+        "notes": "协助分管发行监管、上市公司监管与稽查执法等核心战线",
+        "isDerived": false
       }
     ]
   },
@@ -1054,7 +1074,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2016,
         "endMonth": 6,
-        "notes": "主管证券经营机构日常合规与打击非法证券活动全国协调机制"
+        "notes": "主管证券经营机构日常合规与打击非法证券活动全国协调机制",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "chp-2",
@@ -1066,7 +1088,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2019,
         "endMonth": 10,
-        "notes": "主持郑商所全面工作，上市白糖期权、苹果期货等重大特色品种"
+        "notes": "主持郑商所全面工作，上市白糖期权、苹果期货等重大特色品种",
+        "isDerived": false
       },
       {
         "id": "chp-3",
@@ -1078,7 +1101,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 10,
         "endYear": 2021,
         "endMonth": 12,
-        "notes": "主持证监会办公厅综合运转与重大专项任务督办落实"
+        "notes": "主持证监会办公厅综合运转与重大专项任务督办落实",
+        "isDerived": false
       },
       {
         "id": "chp-4",
@@ -1090,7 +1114,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 12,
         "endYear": 2023,
         "endMonth": 9,
-        "notes": "领导深交所党委和理事会，推动创业板注册制深化及主板中小板顺利合并"
+        "notes": "领导深交所党委和理事会，推动创业板注册制深化及主板中小板顺利合并",
+        "isDerived": false
       },
       {
         "id": "chp-5",
@@ -1102,7 +1127,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 9,
         "endYear": null,
         "isCurrent": true,
-        "notes": "协助分管期货监管、市场监管一司及市场平稳运行保障工作"
+        "notes": "协助分管期货监管、市场监管一司及市场平稳运行保障工作",
+        "isDerived": false
       }
     ]
   },
@@ -1142,7 +1168,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": 2005,
         "endMonth": 3,
-        "notes": "长期在一线承担股票公开发行核准与材料审核"
+        "notes": "长期在一线承担股票公开发行核准与材料审核",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "wjj-2",
@@ -1154,7 +1182,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2007,
         "endMonth": 12,
-        "notes": "分管辖区上市公司与证券机构一线合规监管"
+        "notes": "分管辖区上市公司与证券机构一线合规监管",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "wjj-3",
@@ -1166,7 +1196,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": 2015,
         "endMonth": 3,
-        "notes": "主持全市场交易监测，兼任研究中心主任与北京证券期货研究院院长"
+        "notes": "主持全市场交易监测，兼任研究中心主任与北京证券期货研究院院长",
+        "isDerived": false
       },
       {
         "id": "wjj-4",
@@ -1178,7 +1209,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2016,
         "endMonth": 4,
-        "notes": "统揽会机关行政协调与重大政策起草发布"
+        "notes": "统揽会机关行政协调与重大政策起草发布",
+        "isDerived": false
       },
       {
         "id": "wjj-5",
@@ -1190,7 +1222,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": 2020,
         "endMonth": 3,
-        "notes": "主持深交所日常营运，力推深港通开通与深市多层次股权体系"
+        "notes": "主持深交所日常营运，力推深港通开通与深市多层次股权体系",
+        "isDerived": false
       },
       {
         "id": "wjj-6",
@@ -1202,7 +1235,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2021,
         "endMonth": 10,
-        "notes": "全面主导创业板改革并试点注册制成功落地"
+        "notes": "全面主导创业板改革并试点注册制成功落地",
+        "isDerived": false
       },
       {
         "id": "wjj-7",
@@ -1214,7 +1248,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 10,
         "endYear": 2024,
         "endMonth": 5,
-        "notes": "分管市场监管、国际交流等多项业务"
+        "notes": "分管市场监管、国际交流等多项业务",
+        "isDerived": false
       }
     ]
   },
@@ -1254,7 +1289,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2016,
         "endMonth": 11,
-        "notes": "主持华夏银行资产负债与全国网络布局日常经营"
+        "notes": "主持华夏银行资产负债与全国网络布局日常经营",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "fdz-2",
@@ -1266,7 +1303,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 12,
         "endYear": 2019,
         "endMonth": 4,
-        "notes": "负责大型国有商业银行纪律审查与金融反腐"
+        "notes": "负责大型国有商业银行纪律审查与金融反腐",
+        "isDerived": false
       },
       {
         "id": "fdz-3",
@@ -1278,7 +1316,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持驻证监会纪检监察组全面工作，强化资本市场正风肃纪反腐与政治监督"
+        "notes": "主持驻证监会纪检监察组全面工作，强化资本市场正风肃纪反腐与政治监督",
+        "isDerived": false
       }
     ]
   },
@@ -1324,7 +1363,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 11,
         "endYear": 2012,
         "endMonth": 8,
-        "notes": "主持行政处罚听证制度化建设，参与证券法、证券投资基金法重大修订"
+        "notes": "主持行政处罚听证制度化建设，参与证券法、证券投资基金法重大修订",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "jjh-2",
@@ -1336,7 +1377,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": 2018,
         "endMonth": 9,
-        "notes": "主管深圳辖区一线监管，严厉查处特区证券欺诈和违规质押"
+        "notes": "主管深圳辖区一线监管，严厉查处特区证券欺诈和违规质押",
+        "isDerived": false
       },
       {
         "id": "jjh-3",
@@ -1348,7 +1390,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 9,
         "endYear": 2023,
         "endMonth": 12,
-        "notes": "全面主导新证券法、期货和衍生品法落地与特别代表人诉讼首案构建"
+        "notes": "全面主导新证券法、期货和衍生品法落地与特别代表人诉讼首案构建",
+        "isDerived": false
       }
     ]
   },
@@ -1388,7 +1431,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2015,
         "endMonth": 2,
-        "notes": "长期主持资本市场法律法规体系建设与行政复议审查"
+        "notes": "长期主持资本市场法律法规体系建设与行政复议审查",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "chh-2",
@@ -1400,7 +1445,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 2,
         "endYear": 2020,
         "endMonth": 6,
-        "notes": "深入起草证券法修订草案，建立全国资本市场诚信档案大数据平台"
+        "notes": "深入起草证券法修订草案，建立全国资本市场诚信档案大数据平台",
+        "isDerived": false
       },
       {
         "id": "chh-3",
@@ -1412,7 +1458,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2024,
         "endMonth": 1,
-        "notes": "全面主持上海辖区上市公司、证券期货中介一线监管与大案稽查"
+        "notes": "全面主持上海辖区上市公司、证券期货中介一线监管与大案稽查",
+        "isDerived": false
       },
       {
         "id": "chh-4",
@@ -1424,7 +1471,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 1,
         "endYear": null,
         "isCurrent": true,
-        "notes": "统筹全系统法治建设、行政规章合法性审查及涉外法治保障"
+        "notes": "统筹全系统法治建设、行政规章合法性审查及涉外法治保障",
+        "isDerived": false
       }
     ]
   },
@@ -1464,7 +1512,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 2,
         "endYear": 2010,
         "endMonth": 6,
-        "notes": "负责广东辖区实体企业股份制改革辅导与上市公司监管"
+        "notes": "负责广东辖区实体企业股份制改革辅导与上市公司监管",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "qy-2",
@@ -1476,7 +1526,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2020,
         "endMonth": 6,
-        "notes": "全面主政湖南证券期货市场一线监督管理与风险防控"
+        "notes": "全面主政湖南证券期货市场一线监督管理与风险防控",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "qy-3",
@@ -1488,7 +1540,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2022,
         "endMonth": 9,
-        "notes": "重返广东执掌全国最大辖区一线监管，重拳打击财务造假"
+        "notes": "重返广东执掌全国最大辖区一线监管，重拳打击财务造假",
+        "isDerived": false
       },
       {
         "id": "qy-4",
@@ -1500,7 +1553,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 9,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持上交所党委和理事会，深化科创板“硬科技”定位与主板注册制走深走实"
+        "notes": "主持上交所党委和理事会，深化科创板“硬科技”定位与主板注册制走深走实",
+        "isDerived": false
       }
     ]
   },
@@ -1540,7 +1594,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 5,
         "endYear": 2015,
         "endMonth": 8,
-        "notes": "起草上市公司重大资产重组、收购管理办法等核心规则"
+        "notes": "起草上市公司重大资产重组、收购管理办法等核心规则",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "cjc-2",
@@ -1552,7 +1608,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": 2020,
         "endMonth": 6,
-        "notes": "统一公司债发行审核规则，推出创新创业债、绿色债等多元工具"
+        "notes": "统一公司债发行审核规则，推出创新创业债、绿色债等多元工具",
+        "isDerived": false
       },
       {
         "id": "cjc-3",
@@ -1564,7 +1621,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持上交所日常运营，主导基础设施公募REITs常态化发行与科创板做市交易机制"
+        "notes": "主持上交所日常运营，主导基础设施公募REITs常态化发行与科创板做市交易机制",
+        "isDerived": false
       }
     ]
   },
@@ -1604,7 +1662,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2015,
         "endMonth": 2,
-        "notes": "分管工业品期货研发、交割结算与市场交易拓展"
+        "notes": "分管工业品期货研发、交割结算与市场交易拓展",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "hrr-2",
@@ -1616,7 +1676,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 2,
         "endYear": 2018,
         "endMonth": 3,
-        "notes": "负责辖区期货机构与大宗商品衍生品市场监管"
+        "notes": "负责辖区期货机构与大宗商品衍生品市场监管",
+        "isDerived": false
       },
       {
         "id": "hrr-3",
@@ -1628,7 +1689,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2019,
         "endMonth": 10,
-        "notes": "主持全市场期货保证金安全存管动态监测系统"
+        "notes": "主持全市场期货保证金安全存管动态监测系统",
+        "isDerived": false
       },
       {
         "id": "hrr-4",
@@ -1640,7 +1702,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 10,
         "endYear": 2024,
         "endMonth": 3,
-        "notes": "主持中金所经营工作，上市30年期国债期货、中证1000股指期货等"
+        "notes": "主持中金所经营工作，上市30年期国债期货、中证1000股指期货等",
+        "isDerived": false
       },
       {
         "id": "hrr-5",
@@ -1652,7 +1715,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2025,
         "endMonth": 9,
-        "notes": "主持境内企业境外上市备案与跨境多边监管合作"
+        "notes": "主持境内企业境外上市备案与跨境多边监管合作",
+        "isDerived": false
       },
       {
         "id": "hrr-6",
@@ -1664,7 +1728,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 9,
         "endYear": null,
         "isCurrent": true,
-        "notes": "协助主持上交所理事会工作，主管国际合作与金融衍生品创新"
+        "notes": "协助主持上交所理事会工作，主管国际合作与金融衍生品创新",
+        "isDerived": false
       }
     ]
   },
@@ -1704,7 +1769,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 11,
         "endYear": 2013,
         "endMonth": 5,
-        "notes": "主持上市公司信息披露准则细化与财务核查"
+        "notes": "主持上市公司信息披露准则细化与财务核查",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "sy-2",
@@ -1716,7 +1783,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 5,
         "endYear": 2017,
         "endMonth": 4,
-        "notes": "分管上市公司并购重组与重大风险案件研判"
+        "notes": "分管上市公司并购重组与重大风险案件研判",
+        "isDerived": false
       },
       {
         "id": "sy-3",
@@ -1728,7 +1796,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": 2020,
         "endMonth": 6,
-        "notes": "统领全国券商基金法人机构监管，全面推行合规风控全覆盖体系"
+        "notes": "统领全国券商基金法人机构监管，全面推行合规风控全覆盖体系",
+        "isDerived": false
       },
       {
         "id": "sy-4",
@@ -1740,7 +1809,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2023,
         "endMonth": 12,
-        "notes": "主持深交所日常营运，稳步落地创业板注册制与两板合并重大改革"
+        "notes": "主持深交所日常营运，稳步落地创业板注册制与两板合并重大改革",
+        "isDerived": false
       },
       {
         "id": "sy-5",
@@ -1752,7 +1822,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 12,
         "endYear": null,
         "isCurrent": true,
-        "notes": "全面主持深交所党委与理事会工作，着力打造国际领先创新资本形成中心"
+        "notes": "全面主持深交所党委与理事会工作，着力打造国际领先创新资本形成中心",
+        "isDerived": false
       }
     ]
   },
@@ -1792,7 +1863,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": 2016,
         "endMonth": 12,
-        "notes": "参与中央经济政策草拟与资本市场战略前瞻性研究"
+        "notes": "参与中央经济政策草拟与资本市场战略前瞻性研究",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "ljz-2",
@@ -1804,7 +1877,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 12,
         "endYear": 2019,
         "endMonth": 3,
-        "notes": "统领证监会核心高端智库科研与金融宏观政策储备"
+        "notes": "统领证监会核心高端智库科研与金融宏观政策储备",
+        "isDerived": false
       },
       {
         "id": "ljz-3",
@@ -1816,7 +1890,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2022,
         "endMonth": 1,
-        "notes": "统筹协调全面深化资本市场改革12条任务实施与总体施工方案"
+        "notes": "统筹协调全面深化资本市场改革12条任务实施与总体施工方案",
+        "isDerived": false
       },
       {
         "id": "ljz-4",
@@ -1828,7 +1903,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 1,
         "endYear": 2024,
         "endMonth": 4,
-        "notes": "统揽全市场交易机制建设与异常交易穿透式监控防范"
+        "notes": "统揽全市场交易机制建设与异常交易穿透式监控防范",
+        "isDerived": false
       },
       {
         "id": "ljz-5",
@@ -1840,7 +1916,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持深交所日常经营，推动科技创新企业高水平直接融资与市场稳健运行"
+        "notes": "主持深交所日常经营，推动科技创新企业高水平直接融资与市场稳健运行",
+        "isDerived": false
       }
     ]
   },
@@ -1880,7 +1957,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 10,
         "endYear": 2017,
         "endMonth": 9,
-        "notes": "主持深市交易实时监控预警模型开发与跨市场联防联控"
+        "notes": "主持深市交易实时监控预警模型开发与跨市场联防联控",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "pm-2",
@@ -1892,7 +1971,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 9,
         "endYear": 2024,
         "endMonth": 1,
-        "notes": "分管债券市场、固定收益及金融科技数字化底座"
+        "notes": "分管债券市场、固定收益及金融科技数字化底座",
+        "isDerived": false
       },
       {
         "id": "pm-3",
@@ -1904,7 +1984,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 1,
         "endYear": null,
         "isCurrent": true,
-        "notes": "全面主持深圳特区上市公司与头部法人金融机构一线属地监管"
+        "notes": "全面主持深圳特区上市公司与头部法人金融机构一线属地监管",
+        "isDerived": false
       }
     ]
   },
@@ -1944,7 +2025,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2014,
         "endMonth": 6,
-        "notes": "协调会机关综合处务运转与新闻发布会组织"
+        "notes": "协调会机关综合处务运转与新闻发布会组织",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "zgh-2",
@@ -1956,7 +2039,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2022,
         "endMonth": 5,
-        "notes": "主导非上市公众公司监管制度框架起草，全程主导北京证券交易所设立方案制定"
+        "notes": "主导非上市公众公司监管制度框架起草，全程主导北京证券交易所设立方案制定",
+        "isDerived": false
       },
       {
         "id": "zgh-3",
@@ -1968,7 +2052,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 5,
         "endYear": null,
         "isCurrent": true,
-        "notes": "全面主导北交所高质量建设，推出“北证50”成份指数与做市交易机制"
+        "notes": "全面主导北交所高质量建设，推出“北证50”成份指数与做市交易机制",
+        "isDerived": false
       }
     ]
   },
@@ -2014,7 +2099,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": 2013,
         "endMonth": 1,
-        "notes": "参与起草非上市公众公司监管办法及多层次资本市场制度"
+        "notes": "参与起草非上市公众公司监管办法及多层次资本市场制度",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "sq-2",
@@ -2026,7 +2113,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 1,
         "endYear": 2020,
         "endMonth": 11,
-        "notes": "主导全国股转新三板精选层筹备与制度设计"
+        "notes": "主导全国股转新三板精选层筹备与制度设计",
+        "isDerived": false
       },
       {
         "id": "sq-3",
@@ -2038,7 +2126,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 11,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持北交所与全国股转公司日常运营，优化中小企业快速审核机制"
+        "notes": "主持北交所与全国股转公司日常运营，优化中小企业快速审核机制",
+        "isDerived": false
       }
     ]
   },
@@ -2052,7 +2141,7 @@ export const OFFICIALS_DATA: Official[] = [
     "currentUnitId": "csrc-shfe",
     "currentPosition": "上海期货交易所党委书记、理事长",
     "currentRank": "正厅局级",
-    "bioSummary": "工学硕士。曾任深圳证监局副局长、深交所副总经理、中国结算副总经理、监事长，2021年12月起出任上海期货交易所党委书记、理事长。",
+    "bioSummary": "曾任中国证监会研究中心从事宏观经济政策研究，后任宁波证监局等职。2019年任浙江证监局局长，2022年4月出任上海期货交易所党委书记、理事长。",
     "education": [
       {
         "degree": "学士",
@@ -2070,51 +2159,47 @@ export const OFFICIALS_DATA: Official[] = [
     "careerHistory": [
       {
         "id": "txy-1",
-        "unitId": "csrc-sz",
-        "unitName": "深圳证监局",
-        "position": "副处长、处长、副局长",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "研究中心 / 地方派出机构",
+        "position": "研究员、处长、宁波局副局长等",
         "rank": "副厅局级",
-        "startYear": 1999,
-        "startMonth": 8,
-        "endYear": 2010,
-        "endMonth": 6,
-        "notes": "主管辖区特区期货经纪机构合规风控现场检查"
+        "startYear": 2003,
+        "startMonth": 7,
+        "endYear": 2019,
+        "endMonth": 5,
+        "isDerived": true,
+        "sourceNote": "根据宏观经济与资本市场研究成果发表及派出机构新闻推导",
+        "notes": "深耕宏观经济与资本市场中长期改革理论研究"
       },
       {
         "id": "txy-2",
-        "unitId": "csrc-szse",
-        "unitName": "深圳证券交易所",
-        "position": "党委委员、副总经理",
-        "rank": "副厅局级",
-        "startYear": 2010,
-        "startMonth": 6,
-        "endYear": 2017,
-        "endMonth": 3,
-        "notes": "分管深交所信息技术与交易结算日常运营"
+        "unitId": "csrc-df",
+        "unitName": "地方证监局",
+        "department": "浙江监管局",
+        "position": "党委书记、局长兼杭州特派办主任",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "startMonth": 5,
+        "endYear": 2022,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "主持浙江证监局全面工作，推动'凤凰行动'升级与上市公司高质量发展"
       },
       {
         "id": "txy-3",
-        "unitId": "csrc-csdc",
-        "unitName": "中国证券登记结算公司",
-        "position": "党委副书记、监事长",
-        "rank": "正厅局级",
-        "startYear": 2017,
-        "startMonth": 3,
-        "endYear": 2021,
-        "endMonth": 12,
-        "notes": "统筹全国证券登记结算内控监察与账户实名制管理"
-      },
-      {
-        "id": "txy-4",
         "unitId": "csrc-shfe",
         "unitName": "上海期货交易所",
+        "department": "理事会",
         "position": "党委书记、理事长",
         "rank": "正厅局级",
-        "startYear": 2021,
-        "startMonth": 12,
+        "startYear": 2022,
+        "startMonth": 4,
         "endYear": null,
+        "endMonth": null,
         "isCurrent": true,
-        "notes": "全面主持上期所党委与理事会工作，推进原油期权、航运指数期货等国际化品种"
+        "isDerived": false,
+        "notes": "2022年4月出任上期所党委书记、理事长，推进大宗商品'全仓登'建设与高水平对外开放"
       }
     ]
   },
@@ -2154,7 +2239,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 9,
         "endYear": 2016,
         "endMonth": 4,
-        "notes": "主导股指期货跨市场监管与异常账户异常持仓监控"
+        "notes": "主导股指期货跨市场监管与异常账户异常持仓监控",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "lds-2",
@@ -2166,7 +2253,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": 2019,
         "endMonth": 12,
-        "notes": "指导全国商品与金融期货交易所规则统筹与风险防范"
+        "notes": "指导全国商品与金融期货交易所规则统筹与风险防范",
+        "isDerived": false
       },
       {
         "id": "lds-3",
@@ -2178,7 +2266,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 12,
         "endYear": 2024,
         "endMonth": 12,
-        "notes": "主持郑商所日常经营，推出纯碱、花生、短纤等特色产业期货"
+        "notes": "主持郑商所日常经营，推出纯碱、花生、短纤等特色产业期货",
+        "isDerived": false
       },
       {
         "id": "lds-4",
@@ -2190,7 +2279,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 12,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持上期所日常营运，稳步拓展商品期货期权国际化做市制度"
+        "notes": "主持上期所日常营运，稳步拓展商品期货期权国际化做市制度",
+        "isDerived": false
       }
     ]
   },
@@ -2230,7 +2320,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2016,
         "endMonth": 5,
-        "notes": "分管农产品交易与实物交割仓库标准化管理"
+        "notes": "分管农产品交易与实物交割仓库标准化管理",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "wfh-2",
@@ -2242,7 +2334,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 5,
         "endYear": 2019,
         "endMonth": 10,
-        "notes": "主持大商所日常营运，推出铁矿石期货国际化与豆粕期权"
+        "notes": "主持大商所日常营运，推出铁矿石期货国际化与豆粕期权",
+        "isDerived": false
       },
       {
         "id": "wfh-3",
@@ -2254,7 +2347,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 10,
         "endYear": 2024,
         "endMonth": 12,
-        "notes": "主持上期所日常营运，上市低硫燃料油、集运指数欧线期货"
+        "notes": "主持上期所日常营运，上市低硫燃料油、集运指数欧线期货",
+        "isDerived": false
       }
     ]
   },
@@ -2294,7 +2388,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": 2020,
         "endMonth": 11,
-        "notes": "主导“保险+期货”金融支农创新模式发源与全国推广"
+        "notes": "主导“保险+期货”金融支农创新模式发源与全国推广",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "zlh-2",
@@ -2306,7 +2402,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 11,
         "endYear": 2025,
         "endMonth": 11,
-        "notes": "主持广期所初创运营，成功开创工业硅与碳酸锂新能源绿色期货"
+        "notes": "主持广期所初创运营，成功开创工业硅与碳酸锂新能源绿色期货",
+        "isDerived": false
       },
       {
         "id": "zlh-3",
@@ -2318,7 +2415,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 11,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持郑商所全面工作，深化大宗粮棉原料期货功能发挥与服务国家粮食安全"
+        "notes": "主持郑商所全面工作，深化大宗粮棉原料期货功能发挥与服务国家粮食安全",
+        "isDerived": false
       }
     ]
   },
@@ -2364,7 +2462,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": 2011,
         "endMonth": 8,
-        "notes": "分管云南辖区期货机构与大宗金属企业一线合规监管"
+        "notes": "分管云南辖区期货机构与大宗金属企业一线合规监管",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "xj-2",
@@ -2376,7 +2476,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": 2016,
         "endMonth": 6,
-        "notes": "负责农产品商品期货监管、规则拟订与异常价格预警研判"
+        "notes": "负责农产品商品期货监管、规则拟订与异常价格预警研判",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "xj-3",
@@ -2388,7 +2490,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2019,
         "endMonth": 11,
-        "notes": "主持郑商所日常经营，推出苹果期货、PTA期货引入境外交易者"
+        "notes": "主持郑商所日常经营，推出苹果期货、PTA期货引入境外交易者",
+        "isDerived": false
       },
       {
         "id": "xj-4",
@@ -2400,7 +2503,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 11,
         "endYear": 2025,
         "endMonth": 11,
-        "notes": "领导郑商所党委与理事会，全面提升实体产业参与期货深度"
+        "notes": "领导郑商所党委与理事会，全面提升实体产业参与期货深度",
+        "isDerived": false
       },
       {
         "id": "xj-5",
@@ -2412,7 +2516,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 11,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持大商所全面工作，推动全球重要农产品与黑色衍生品定价枢纽建设"
+        "notes": "主持大商所全面工作，推动全球重要农产品与黑色衍生品定价枢纽建设",
+        "isDerived": false
       }
     ]
   },
@@ -2452,7 +2557,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2022,
         "endMonth": 2,
-        "notes": "起草期货交易管理条例及大宗商品市场运行监管规程"
+        "notes": "起草期货交易管理条例及大宗商品市场运行监管规程",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "ysm-2",
@@ -2464,7 +2571,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 2,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持大商所日常营运，推出生猪期权、集装箱运力期货研发"
+        "notes": "主持大商所日常营运，推出生猪期权、集装箱运力期货研发",
+        "isDerived": false
       }
     ]
   },
@@ -2478,7 +2586,7 @@ export const OFFICIALS_DATA: Official[] = [
     "currentUnitId": "csrc-cffex",
     "currentPosition": "中国金融期货交易所党委书记、董事长",
     "currentRank": "正厅局级",
-    "bioSummary": "经济学博士。中国金融衍生品监管与市场权威专家，历任证监会期货监管部处长、副主任、中金所监事会主席、大连商品交易所理事长，2020年10月起执掌中金所。",
+    "bioSummary": "长期在证券监管系统工作，历任河南证监局副局长兼纪委书记、湖北证监局纪委书记、江西证监局党委书记兼局长。2021年6月起任中国金融期货交易所党委书记、董事长。",
     "education": [
       {
         "degree": "学士",
@@ -2496,51 +2604,48 @@ export const OFFICIALS_DATA: Official[] = [
     "careerHistory": [
       {
         "id": "hqw-1",
-        "unitId": "csrc-qh",
-        "unitName": "证监会期货监管部",
-        "position": "处长、副主任",
+        "unitId": "csrc-df",
+        "unitName": "地方证监局",
+        "department": "河南监管局 / 湖北监管局",
+        "position": "党委委员、副局长兼纪委书记",
         "rank": "副厅局级",
-        "startYear": 2003,
+        "startYear": 2004,
         "startMonth": 5,
-        "endYear": 2012,
+        "endYear": 2016,
         "endMonth": 8,
-        "notes": "直接参与筹建中国金融期货交易所与股指期货制度设计"
+        "isDerived": true,
+        "sourceNote": "根据地方监管局公开工作动态与纪检监察报道推导任职跨度",
+        "notes": "长期在地方派出机构负责党风廉政建设与一线市场监管"
       },
       {
         "id": "hqw-2",
-        "unitId": "csrc-cffex",
-        "unitName": "中国金融期货交易所",
-        "position": "党委委员、监事会主席",
+        "unitId": "csrc-df",
+        "unitName": "地方证监局",
+        "department": "江西监管局",
+        "position": "党委书记、局长",
         "rank": "正厅局级",
-        "startYear": 2012,
+        "startYear": 2016,
         "startMonth": 8,
-        "endYear": 2016,
-        "endMonth": 9,
-        "notes": "分管市场监察与金融风险联防联控"
+        "endYear": 2021,
+        "endMonth": 6,
+        "isDerived": true,
+        "sourceNote": "根据江西证监局政务公开信息及地方调研新闻推导",
+        "notes": "主持江西证监局全面工作，推动辖区多层次资本市场发展与风险防控"
       },
       {
         "id": "hqw-3",
-        "unitId": "csrc-dce",
-        "unitName": "大连商品交易所",
-        "position": "党委书记、理事长",
-        "rank": "正厅局级",
-        "startYear": 2016,
-        "startMonth": 9,
-        "endYear": 2020,
-        "endMonth": 10,
-        "notes": "主持大商所全面工作，推出国内首个商品期权——豆粕期权"
-      },
-      {
-        "id": "hqw-4",
         "unitId": "csrc-cffex",
         "unitName": "中国金融期货交易所",
+        "department": "领导班子",
         "position": "党委书记、董事长",
         "rank": "正厅局级",
-        "startYear": 2020,
-        "startMonth": 10,
+        "startYear": 2021,
+        "startMonth": 6,
         "endYear": null,
+        "endMonth": null,
         "isCurrent": true,
-        "notes": "领导中金所党委与董事会，推出中证1000、上证50股指期权与30年期国债期货"
+        "isDerived": false,
+        "notes": "2021年6月起任中金所党委书记、董事长，推动30年期国债期货、上证50与中证1000股指期权平稳上市运行"
       }
     ]
   },
@@ -2554,7 +2659,7 @@ export const OFFICIALS_DATA: Official[] = [
     "currentUnitId": "csrc-gfex",
     "currentPosition": "广州期货交易所党委书记、董事长",
     "currentRank": "正厅局级",
-    "bioSummary": "经济学硕士。历任证监会期货部、稽查局处长、大商所副总经理、广期所筹备组组长，主导创建我国首家创新型混合所有制期货交易所。",
+    "bioSummary": "经济学硕士。长期担任中国证监会人事教育部主任、党委组织部部长、一级巡视员，多次代表证监会党委宣读系统重要任免。2023年11月出任广州期货交易所党委书记、董事长。",
     "education": [
       {
         "degree": "学士",
@@ -2572,39 +2677,33 @@ export const OFFICIALS_DATA: Official[] = [
     "careerHistory": [
       {
         "id": "gwb-1",
-        "unitId": "csrc-qh",
-        "unitName": "证监会期货监管部 / 稽查局",
-        "position": "副处长、处长",
-        "rank": "正处级",
-        "startYear": 2002,
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "人事教育部（党委组织部）",
+        "position": "处长、副主任、主任（党委组织部部长、一级巡视员）",
+        "rank": "正厅局级",
+        "startYear": 2012,
         "startMonth": 6,
-        "endYear": 2013,
-        "endMonth": 8,
-        "notes": "查处跨期现、跨交易所重大违法违规大案"
+        "endYear": 2023,
+        "endMonth": 11,
+        "isDerived": true,
+        "sourceNote": "根据2013-2023年系统重要干部大会宣读任免报道及组织任职动态推导",
+        "notes": "主持证监会干部人事与组织工作，多次代表证监会党委赴各大交易所和会管单位宣布干部任免决定"
       },
       {
         "id": "gwb-2",
-        "unitId": "csrc-dce",
-        "unitName": "大连商品交易所",
-        "position": "党委委员、副总经理",
-        "rank": "副厅局级",
-        "startYear": 2013,
-        "startMonth": 8,
-        "endYear": 2020,
-        "endMonth": 12,
-        "notes": "分管新品种研发、仓储交割风控与场外衍生品平台"
-      },
-      {
-        "id": "gwb-3",
         "unitId": "csrc-gfex",
         "unitName": "广州期货交易所",
-        "position": "筹备组组长、党委书记、董事长",
+        "department": "领导班子",
+        "position": "党委书记、董事长",
         "rank": "正厅局级",
-        "startYear": 2020,
-        "startMonth": 12,
+        "startYear": 2023,
+        "startMonth": 11,
         "endYear": null,
+        "endMonth": null,
         "isCurrent": true,
-        "notes": "主持广期所开业与平稳运行，聚焦硅、锂、碳排放权等新能源金属衍生品"
+        "isDerived": false,
+        "notes": "2023年11月接替胡政出任广期所第二任党委书记、董事长，主导推进新能源金属期货品种体系建设"
       }
     ]
   },
@@ -2644,7 +2743,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 5,
         "endYear": 2018,
         "endMonth": 10,
-        "notes": "负责郑商所交易组织与品种开发创新"
+        "notes": "负责郑商所交易组织与品种开发创新",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "xxf-2",
@@ -2656,7 +2757,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 10,
         "endYear": 2025,
         "endMonth": 11,
-        "notes": "主持监控中心工作，筑牢全国期货市场保证金安全防线"
+        "notes": "主持监控中心工作，筑牢全国期货市场保证金安全防线",
+        "isDerived": false
       },
       {
         "id": "xxf-3",
@@ -2668,7 +2770,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 11,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持广期所日常营运与新能源产业链风险管理生态建设"
+        "notes": "主持广期所日常营运与新能源产业链风险管理生态建设",
+        "isDerived": false
       }
     ]
   },
@@ -2682,7 +2785,7 @@ export const OFFICIALS_DATA: Official[] = [
     "currentUnitId": "csrc-csdc",
     "currentPosition": "中国证券登记结算有限责任公司党委书记、董事长",
     "currentRank": "正厅局级",
-    "bioSummary": "管理学硕士。历任证监会办公厅副主任、投保基金董事长、中国结算总经理，2020年11月起担任中国结算党委书记、董事长。",
+    "bioSummary": "经济学博士。历任证监会会计部综合处处长、副主任，中国结算总会计师、中证信息技术董事长，2020年出任中国证券登记结算公司党委书记、董事长。",
     "education": [
       {
         "degree": "学士",
@@ -2700,51 +2803,88 @@ export const OFFICIALS_DATA: Official[] = [
     "careerHistory": [
       {
         "id": "ywq-1",
-        "unitId": "csrc-bgt",
-        "unitName": "证监会办公厅",
-        "position": "副处长、处长、副主任",
-        "rank": "副厅局级",
-        "startYear": 2003,
-        "startMonth": 3,
-        "endYear": 2011,
-        "endMonth": 6,
-        "notes": "协助协调证监会机关运转和综合政务管理"
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "首席会计师办公室 / 会计部",
+        "position": "首席会计师助理、综合处处长",
+        "rank": "正处级",
+        "startYear": 1997,
+        "startMonth": 5,
+        "endYear": 2001,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "负责上市公司会计监管制度与证券期货相关审计业务规范"
       },
       {
         "id": "ywq-2",
-        "unitId": "csrc-sipf",
-        "unitName": "中国证券投资者保护基金",
-        "position": "党委书记、董事长",
-        "rank": "正厅局级",
-        "startYear": 2011,
-        "startMonth": 6,
-        "endYear": 2017,
-        "endMonth": 12,
-        "notes": "主持投保基金全面工作，建立健全证券公司客户资金监控体系"
+        "unitId": "csrc-csdc",
+        "unitName": "中国证券登记结算公司",
+        "department": "高管层",
+        "position": "总会计师",
+        "rank": "副厅局级",
+        "startYear": 2001,
+        "startMonth": 3,
+        "endYear": 2006,
+        "endMonth": 9,
+        "isDerived": false,
+        "notes": "参与中国结算组建，负责全国证券登记结算资金财务管理与结算交收机制建设"
       },
       {
         "id": "ywq-3",
-        "unitId": "csrc-csdc",
-        "unitName": "中国证券登记结算公司",
-        "position": "党委副书记、总经理",
-        "rank": "正厅局级",
-        "startYear": 2017,
-        "startMonth": 12,
-        "endYear": 2020,
-        "endMonth": 11,
-        "notes": "主持日常经营管理，保障全市场股票证券结算平稳运行"
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "会计部",
+        "position": "副主任",
+        "rank": "副厅局级",
+        "startYear": 2006,
+        "startMonth": 9,
+        "endYear": 2013,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "分管会计监管、内部控制规范与会计师事务所证券资格管理"
       },
       {
         "id": "ywq-4",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "中证信息技术服务公司",
+        "position": "总经理、党委书记、董事长",
+        "rank": "正厅局级",
+        "startYear": 2013,
+        "startMonth": 12,
+        "endYear": 2019,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "主持中证信息全面工作，推进资本市场行业信息安全与大数据基础平台建设"
+      },
+      {
+        "id": "ywq-5",
         "unitId": "csrc-csdc",
         "unitName": "中国证券登记结算公司",
+        "department": "领导班子",
+        "position": "党委副书记、总经理",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "startMonth": 10,
+        "endYear": 2020,
+        "endMonth": 11,
+        "isDerived": false,
+        "notes": "主持中国结算日常经营管理与注册制改革登记结算支持"
+      },
+      {
+        "id": "ywq-6",
+        "unitId": "csrc-csdc",
+        "unitName": "中国证券登记结算公司",
+        "department": "领导班子",
         "position": "党委书记、董事长",
         "rank": "正厅局级",
         "startYear": 2020,
         "startMonth": 11,
         "endYear": null,
+        "endMonth": null,
         "isCurrent": true,
-        "notes": "领导中国结算党委与董事会工作，推进货银对付（DVP）重大基础设施改革"
+        "isDerived": false,
+        "notes": "全面领导中国结算党委与董事会工作，推进货银对付（DVP）改革实施与跨境互联互通"
       }
     ]
   },
@@ -2758,7 +2898,7 @@ export const OFFICIALS_DATA: Official[] = [
     "currentUnitId": "csrc-csdc",
     "currentPosition": "中国证券登记结算有限责任公司党委副书记、总经理",
     "currentRank": "正厅局级",
-    "bioSummary": "经济学硕士。长期深耕证券登记结算与后台金融基础设施，曾任中国结算上海分公司总经理、中国结算副总经理，2020年11月升任总经理。",
+    "bioSummary": "曾参与中国证券金融公司筹备设立并任副总经理，后任中国结算副总经理，2020年出任中国证券登记结算公司党委副书记、总经理、副董事长。",
     "education": [
       {
         "degree": "学士",
@@ -2776,39 +2916,61 @@ export const OFFICIALS_DATA: Official[] = [
     "careerHistory": [
       {
         "id": "kqw-1",
-        "unitId": "csrc-csdc",
-        "unitName": "中国结算上海分公司",
-        "position": "副总经理、总经理",
-        "rank": "副厅局级",
-        "startYear": 2005,
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "证券金融公司筹备组",
+        "position": "筹备组成员、处长",
+        "rank": "正处级",
+        "startYear": 2010,
         "startMonth": 4,
-        "endYear": 2017,
-        "endMonth": 8,
-        "notes": "负责上交所全部场内证券登记存管结算营运安全"
+        "endYear": 2012,
+        "endMonth": 3,
+        "isDerived": true,
+        "sourceNote": "根据中证金融筹备设立历史及干部履历公开资料推导",
+        "notes": "参与中国证券金融股份有限公司筹备方案设计与转融通制度构建"
       },
       {
         "id": "kqw-2",
-        "unitId": "csrc-csdc",
-        "unitName": "中国证券登记结算公司",
+        "unitId": "csrc-csf",
+        "unitName": "中国证券金融股份有限公司",
+        "department": "领导班子",
         "position": "党委委员、副总经理",
-        "rank": "正厅局级",
-        "startYear": 2017,
-        "startMonth": 8,
-        "endYear": 2020,
-        "endMonth": 11,
-        "notes": "分管全市场技术系统高可靠运行与互联互通结算保障"
+        "rank": "副厅局级",
+        "startYear": 2012,
+        "startMonth": 3,
+        "endYear": 2017,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "分管转融通业务运行、券商两融监测与资金运营"
       },
       {
         "id": "kqw-3",
         "unitId": "csrc-csdc",
         "unitName": "中国证券登记结算公司",
-        "position": "党委副书记、总经理",
+        "department": "领导班子",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2017,
+        "startMonth": 6,
+        "endYear": 2020,
+        "endMonth": 11,
+        "isDerived": false,
+        "notes": "分管核心登记结算技术系统架构升级与多层次账户体系建设"
+      },
+      {
+        "id": "kqw-4",
+        "unitId": "csrc-csdc",
+        "unitName": "中国证券登记结算公司",
+        "department": "领导班子",
+        "position": "党委副书记、总经理、副董事长",
         "rank": "正厅局级",
         "startYear": 2020,
         "startMonth": 11,
         "endYear": null,
+        "endMonth": null,
         "isCurrent": true,
-        "notes": "主持中国结算日常经营，优化结算备付金缴纳比例与降费支持实体"
+        "isDerived": false,
+        "notes": "主持中国结算日常经营管理，推进ETF互联互通结算与存托凭证互联互通"
       }
     ]
   },
@@ -2819,10 +2981,10 @@ export const OFFICIALS_DATA: Official[] = [
     "birthYear": 1968,
     "birthMonth": 8,
     "nativePlace": "江苏",
-    "currentUnitId": "csrc-csf",
-    "currentPosition": "中国证券金融股份有限公司党委副书记、总经理",
+    "currentUnitId": "csrc-shfe",
+    "currentPosition": "上海期货交易所原监事长、中国期货业协会副会长",
     "currentRank": "正厅局级",
-    "bioSummary": "法学硕士。曾任证监会法律部处长、副主任、公司债券监管部主任，2019年8月起主持中证金融日常经营，负责全市场转融通业务与两融流动性监控。",
+    "bioSummary": "法学硕士。历任上交所法律总监、证监会发行监管部副主任、上海期货交易所监事长、中国期货业协会副会长。",
     "education": [
       {
         "degree": "学士",
@@ -2840,103 +3002,118 @@ export const OFFICIALS_DATA: Official[] = [
     "careerHistory": [
       {
         "id": "lws-1",
-        "unitId": "csrc-fl",
-        "unitName": "证监会法律部",
-        "position": "处长、副主任",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "法律事务部",
+        "position": "法律部总监、交易所法律总监",
         "rank": "副厅局级",
-        "startYear": 2002,
-        "startMonth": 4,
-        "endYear": 2012,
-        "endMonth": 7,
-        "notes": "深入参与证券法多次修订及资本市场行政执法制度构建"
+        "startYear": 2000,
+        "startMonth": 8,
+        "endYear": 2009,
+        "endMonth": 2,
+        "isDerived": true,
+        "sourceNote": "根据上交所法律实务成果与调任新闻报道推导",
+        "notes": "长期负责证券交易所有关自律管理规则起草与证券诉讼法治研究"
       },
       {
         "id": "lws-2",
-        "unitId": "csrc-main",
-        "unitName": "证监会公司债券监管部",
-        "position": "主任",
-        "rank": "正厅局级",
-        "startYear": 2012,
-        "startMonth": 7,
-        "endYear": 2019,
-        "endMonth": 8,
-        "notes": "主导建立统一规范的交易所债券市场规则体系与风险处置"
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "发行监管部",
+        "position": "副主任",
+        "rank": "副厅局级",
+        "startYear": 2009,
+        "startMonth": 2,
+        "endYear": 2014,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "负责股票发行审核法律标准制定与IPO发审规范"
       },
       {
         "id": "lws-3",
-        "unitId": "csrc-csf",
-        "unitName": "中国证券金融股份有限公司",
-        "position": "党委副书记、总经理",
+        "unitId": "csrc-shfe",
+        "unitName": "上海期货交易所",
+        "department": "监事会",
+        "position": "党委副书记、监事长",
         "rank": "正厅局级",
-        "startYear": 2019,
-        "startMonth": 8,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "全面主持中证金融日常经营，监测全市场两融业务与流动性风险"
+        "startYear": 2014,
+        "startMonth": 6,
+        "endYear": 2021,
+        "endMonth": 9,
+        "isDerived": false,
+        "notes": "主持上期所监事会工作，完善交易所内控治理与风险防范"
       }
     ]
   },
   {
-    "id": "ge-yiping",
-    "name": "葛一平",
+    "id": "lu-dabiao",
+    "name": "卢大彪",
     "gender": "男",
-    "birthYear": 1970,
-    "birthMonth": 9,
-    "nativePlace": "浙江",
+    "birthYear": 1977,
+    "birthMonth": 3,
+    "nativePlace": "江西修水",
     "currentUnitId": "csrc-csdata",
-    "currentPosition": "中证数据有限责任公司党委书记、董事长",
+    "currentPosition": "中证数据有限责任公司党委书记、董事长、总经理",
     "currentRank": "正厅局级",
-    "bioSummary": "计算机应用技术博士。历任证监会信息中心副主任、科技监管局副局长、中金所技术公司董事长，2020年9月起担任中证数据董事长，构建资本市场大数据智能化监管基座。",
+    "bioSummary": "西方经济学博士，学者型监管官员。历任证监会市场部处长、公司债券部副巡视员、副主任、上交所副总经理，2022年出任中证数据董事长兼总经理。",
     "education": [
       {
-        "degree": "学士",
-        "school": "浙江大学",
-        "major": "计算机软件",
-        "graduationYear": 1992
+        "degree": "硕士",
+        "school": "华中科技大学",
+        "major": "数量经济学",
+        "graduationYear": 2000
       },
       {
         "degree": "博士",
-        "school": "浙江大学",
-        "major": "计算机应用技术",
-        "graduationYear": 1998
+        "school": "中国社会科学院研究生院",
+        "major": "西方经济学",
+        "graduationYear": 2003
       }
     ],
     "careerHistory": [
       {
-        "id": "gyp-1",
-        "unitId": "csrc-kj",
-        "unitName": "证监会信息中心 / 科技监管局",
-        "position": "副处长、处长、副主任",
+        "id": "ldb-1",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "市场监管部 / 公司债券监管部",
+        "position": "处长、副巡视员、副主任",
         "rank": "副厅局级",
-        "startYear": 2002,
-        "startMonth": 6,
-        "endYear": 2016,
-        "endMonth": 5,
-        "notes": "负责证监会电子政务与金融监管大数据核心系统开发"
+        "startYear": 2006,
+        "startMonth": 4,
+        "endYear": 2021,
+        "endMonth": 1,
+        "isDerived": true,
+        "sourceNote": "根据公司债券市场监管发言、学术论文发表及政策吹风会报道推导",
+        "notes": "负责公司债券监管与制度建设，推进民企债券融资支持工具与资产证券化试点"
       },
       {
-        "id": "gyp-2",
-        "unitId": "csrc-cffex",
-        "unitName": "中金所技术公司",
-        "position": "董事长、总经理",
-        "rank": "正厅局级",
-        "startYear": 2016,
-        "startMonth": 5,
-        "endYear": 2020,
+        "id": "ldb-2",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "总经理室",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2021,
+        "startMonth": 1,
+        "endYear": 2022,
         "endMonth": 9,
-        "notes": "主导新一代低时延高可靠金融衍生品核心交易系统自研"
+        "isDerived": false,
+        "notes": "分管债券业务、基础设施公募REITs试点推进及科创板相关业务"
       },
       {
-        "id": "gyp-3",
+        "id": "ldb-3",
         "unitId": "csrc-csdata",
         "unitName": "中证数据有限责任公司",
-        "position": "党委书记、董事长",
+        "department": "领导班子",
+        "position": "党委书记、董事长、总经理",
         "rank": "正厅局级",
-        "startYear": 2020,
+        "startYear": 2022,
         "startMonth": 9,
         "endYear": null,
+        "endMonth": null,
         "isCurrent": true,
-        "notes": "全面主持中证数据筹建与运营，构建全市场智能穿透式数据底座"
+        "isDerived": false,
+        "notes": "主持中证数据全面工作，推进资本市场监管大数据中心建设与穿透式监管科技底座运行"
       }
     ]
   },
@@ -2950,7 +3127,7 @@ export const OFFICIALS_DATA: Official[] = [
     "currentUnitId": "csrc-sipf",
     "currentPosition": "中国证券投资者保护基金公司党委书记、董事长",
     "currentRank": "正厅局级",
-    "bioSummary": "经济学硕士。长期在证监会发行监管部任职，历任审核处长、发行监管部副主任、主任，2022年出任中国证券投资者保护基金有限责任公司董事长。",
+    "bioSummary": "清华大学MBA。曾任华夏证券、中信建投证券高管、北京国有资本经营管理中心总经理、北京农商行副董事长，2020年出任中国证券投资者保护基金公司董事长。",
     "education": [
       {
         "degree": "学士",
@@ -2968,39 +3145,47 @@ export const OFFICIALS_DATA: Official[] = [
     "careerHistory": [
       {
         "id": "yry-1",
-        "unitId": "csrc-fx",
-        "unitName": "证监会发行监管部",
-        "position": "审核处长、副主任",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "北京市金融国资 / 券商高管",
+        "position": "华夏证券董事长助理、中信建投证券副总裁",
         "rank": "副厅局级",
         "startYear": 2002,
-        "startMonth": 3,
-        "endYear": 2018,
-        "endMonth": 7,
-        "notes": "主持主板股票公开发行合规审核与IPO发行体制改革"
+        "startMonth": 6,
+        "endYear": 2010,
+        "endMonth": 4,
+        "isDerived": true,
+        "sourceNote": "根据券商高管名录及金融机构任职履历推导",
+        "notes": "深耕证券公司经营管理与投资银行业务"
       },
       {
         "id": "yry-2",
-        "unitId": "csrc-fx",
-        "unitName": "证监会发行监管部",
-        "position": "主任",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "北京国有资本经营管理中心 / 农商行",
+        "position": "北京国管中心总经理、北京农商行副董事长",
         "rank": "正厅局级",
-        "startYear": 2018,
-        "startMonth": 7,
-        "endYear": 2022,
-        "endMonth": 8,
-        "notes": "全面主持股票发行核准向全面注册制过渡衔接"
+        "startYear": 2010,
+        "startMonth": 4,
+        "endYear": 2020,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "主持北京市重大国有资本运作与战略性金融股权管理"
       },
       {
         "id": "yry-3",
         "unitId": "csrc-sipf",
         "unitName": "中国证券投资者保护基金",
+        "department": "领导班子",
         "position": "党委书记、董事长",
         "rank": "正厅局级",
-        "startYear": 2022,
-        "startMonth": 8,
+        "startYear": 2020,
+        "startMonth": 6,
         "endYear": null,
+        "endMonth": null,
         "isCurrent": true,
-        "notes": "主持投保基金全面工作，统筹投资者权益保障与市场主体风险处置赔付"
+        "isDerived": false,
+        "notes": "全面领导投保基金公司，推动投资者合法权益保障与券商流动性监测机制完善"
       }
     ]
   },
@@ -3034,7 +3219,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 5,
         "endYear": 2015,
         "endMonth": 8,
-        "notes": "负责证券期货行政处罚法律适用审查"
+        "notes": "负责证券期货行政处罚法律适用审查",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "hyc-2",
@@ -3046,7 +3233,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": 2020,
         "endMonth": 6,
-        "notes": "查处数十起资本市场重大违法大要案"
+        "notes": "查处数十起资本市场重大违法大要案",
+        "isDerived": false
       },
       {
         "id": "hyc-3",
@@ -3058,7 +3246,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": null,
         "isCurrent": true,
-        "notes": "全面主持中基协工作，出台私募基金登记备案新规，扶优限劣"
+        "notes": "全面主持中基协工作，出台私募基金登记备案新规，扶优限劣",
+        "isDerived": false
       }
     ]
   },
@@ -3098,7 +3287,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2016,
         "endMonth": 4,
-        "notes": "主持交易所自律管理法律制度构建与纪律处分规则起草"
+        "notes": "主持交易所自律管理法律制度构建与纪律处分规则起草",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "lwd-2",
@@ -3110,7 +3301,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持投服中心日常经营，代理发起康美药业全国首例证券特别代表人诉讼"
+        "notes": "主持投服中心日常经营，代理发起康美药业全国首例证券特别代表人诉讼",
+        "isDerived": false
       }
     ]
   },
@@ -3150,7 +3342,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2019,
         "endMonth": 6,
-        "notes": "负责首发企业财务合规审核及拟上市企业现场抽查"
+        "notes": "负责首发企业财务合规审核及拟上市企业现场抽查",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "ybj-2",
@@ -3162,7 +3356,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": null,
         "isCurrent": true,
-        "notes": "严把IPO准入关，杜绝企业“带病闯关”，从源头上提升上市公司可投性与质量"
+        "notes": "严把IPO准入关，杜绝企业“带病闯关”，从源头上提升上市公司可投性与质量",
+        "isDerived": false
       }
     ]
   },
@@ -3202,7 +3397,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 7,
         "endYear": 2018,
         "endMonth": 9,
-        "notes": "负责沪深上市公司财务报告披露持续监管"
+        "notes": "负责沪深上市公司财务报告披露持续监管",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "grm-2",
@@ -3214,7 +3411,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 9,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主导精准出清退市制度、强制现金分红规则与打击资金占用违规担保"
+        "notes": "主导精准出清退市制度、强制现金分红规则与打击资金占用违规担保",
+        "isDerived": false
       }
     ]
   },
@@ -3254,7 +3452,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": 2018,
         "endMonth": 8,
-        "notes": "主持沪港通、深港通开通跨境联合监管协议签署与双向开放"
+        "notes": "主持沪港通、深港通开通跨境联合监管协议签署与双向开放",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "sb-2",
@@ -3266,7 +3466,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": 2025,
         "endMonth": 8,
-        "notes": "推动合资券商外资股比限制全面取消，外资独资公募基金落地展业"
+        "notes": "推动合资券商外资股比限制全面取消，外资独资公募基金落地展业",
+        "isDerived": false
       },
       {
         "id": "sb-3",
@@ -3278,7 +3479,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": null,
         "isCurrent": true,
-        "notes": "深化高水平制度型对外开放，优化中资企业赴美赴港上市常态化备案"
+        "notes": "深化高水平制度型对外开放，优化中资企业赴美赴港上市常态化备案",
+        "isDerived": false
       }
     ]
   },
@@ -3318,7 +3520,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2015,
         "endMonth": 4,
-        "notes": "参与起草资本市场战略改革方案及重大文电起草"
+        "notes": "参与起草资本市场战略改革方案及重大文电起草",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "zwj-2",
@@ -3330,7 +3534,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 4,
         "endYear": 2019,
         "endMonth": 10,
-        "notes": "领导国家级资本市场智库建设，承担宏观金融审慎决策咨询"
+        "notes": "领导国家级资本市场智库建设，承担宏观金融审慎决策咨询",
+        "isDerived": false
       },
       {
         "id": "zwj-3",
@@ -3342,7 +3547,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 10,
         "endYear": 2024,
         "endMonth": 6,
-        "notes": "主持交易所交易组织监测，规范程序化交易与量化高频交易规则体系"
+        "notes": "主持交易所交易组织监测，规范程序化交易与量化高频交易规则体系",
+        "isDerived": false
       },
       {
         "id": "zwj-4",
@@ -3354,7 +3560,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持证监会办公厅日常运转、政务公开与资本市场新闻发布权威发声"
+        "notes": "主持证监会办公厅日常运转、政务公开与资本市场新闻发布权威发声",
+        "isDerived": false
       }
     ]
   },
@@ -3394,7 +3601,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 7,
         "endYear": 2018,
         "endMonth": 6,
-        "notes": "牵头全国清理整顿各类交易场所部际联席会议办公室日常工作"
+        "notes": "牵头全国清理整顿各类交易场所部际联席会议办公室日常工作",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "lzb-2",
@@ -3406,7 +3615,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 6,
         "endYear": 2024,
         "endMonth": 1,
-        "notes": "全面领导深圳特区上市公司与经营机构属地监管与一线查办"
+        "notes": "全面领导深圳特区上市公司与经营机构属地监管与一线查办",
+        "isDerived": false
       },
       {
         "id": "lzb-3",
@@ -3418,7 +3628,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 1,
         "endYear": null,
         "isCurrent": true,
-        "notes": "统揽全国商品与金融期货市场监管，严控大宗商品过度投机与市场操纵"
+        "notes": "统揽全国商品与金融期货市场监管，严控大宗商品过度投机与市场操纵",
+        "isDerived": false
       }
     ]
   },
@@ -3458,7 +3669,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 1,
         "endYear": 2010,
         "endMonth": 10,
-        "notes": "构建中国资本市场会计信息披露准则与审计监管框架"
+        "notes": "构建中国资本市场会计信息披露准则与审计监管框架",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "jwq-2",
@@ -3470,7 +3683,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 10,
         "endYear": 2019,
         "endMonth": 5,
-        "notes": "全面主导资本市场会计信息质量监管及重大会计舞弊定性"
+        "notes": "全面主导资本市场会计信息质量监管及重大会计舞弊定性",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "jwq-3",
@@ -3482,7 +3697,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 5,
         "endYear": null,
         "isCurrent": true,
-        "notes": "全面主持北京辖区证券期货市场与拟上市企业一线属地监管"
+        "notes": "全面主持北京辖区证券期货市场与拟上市企业一线属地监管",
+        "isDerived": false
       }
     ]
   },
@@ -3522,7 +3738,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 5,
         "endYear": 2018,
         "endMonth": 8,
-        "notes": "督办组织查办全国多起恶性跨区域证券违规犯罪"
+        "notes": "督办组织查办全国多起恶性跨区域证券违规犯罪",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "yzr-2",
@@ -3534,7 +3752,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": null,
         "isCurrent": true,
-        "notes": "统揽广东辖区证券期货全面监管，服务实体经济与大湾区资本市场繁荣"
+        "notes": "统揽广东辖区证券期货全面监管，服务实体经济与大湾区资本市场繁荣",
+        "isDerived": false
       }
     ]
   },
@@ -3574,7 +3793,9 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 3,
         "endYear": 2016,
         "endMonth": 5,
-        "notes": "分管地方上市公司与证券分支机构一线检查"
+        "notes": "分管地方上市公司与证券分支机构一线检查",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
         "id": "tlb-2",
@@ -3586,7 +3807,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 5,
         "endYear": 2020,
         "endMonth": 7,
-        "notes": "主持江西辖区证券期货日常监督与防范金融风险"
+        "notes": "主持江西辖区证券期货日常监督与防范金融风险",
+        "isDerived": false
       },
       {
         "id": "tlb-3",
@@ -3598,7 +3820,8 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 7,
         "endYear": 2024,
         "endMonth": 8,
-        "notes": "主持成渝双城经济圈核心省份一线监管与稽查大案办理"
+        "notes": "主持成渝双城经济圈核心省份一线监管与稽查大案办理",
+        "isDerived": false
       },
       {
         "id": "tlb-4",
@@ -3610,13 +3833,144 @@ export const OFFICIALS_DATA: Official[] = [
         "startMonth": 8,
         "endYear": null,
         "isCurrent": true,
-        "notes": "全面主政全国上市公司第二大省江苏资本市场稳健发展与合规治理"
+        "notes": "全面主政全国上市公司第二大省江苏资本市场稳健发展与合规治理",
+        "isDerived": false
+      }
+    ]
+  },
+  {
+    "id": "chen-fei",
+    "name": "陈飞",
+    "gender": "男",
+    "birthYear": 1968,
+    "birthMonth": 5,
+    "nativePlace": "山东",
+    "currentUnitId": "csrc-csf",
+    "currentPosition": "中国证券金融股份有限公司党委书记、董事长",
+    "currentRank": "正厅局级",
+    "bioSummary": "长期在证券监管与金融系统任职。2022年2月出任中国证券金融股份有限公司党委书记、董事长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "山东大学",
+        "major": "经济学",
+        "graduationYear": 1990
+      },
+      {
+        "degree": "硕士",
+        "school": "清华大学五道口金融学院",
+        "major": "金融学",
+        "graduationYear": 1995
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "cf-1",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "综合监管部门",
+        "position": "副处长、处长、副主任",
+        "rank": "副厅局级",
+        "startYear": 2005,
+        "startMonth": 6,
+        "endYear": 2022,
+        "endMonth": 2,
+        "isDerived": true,
+        "sourceNote": "根据金融监管系统干部历次任免与活动公开报道反推",
+        "notes": "参与资本市场稳健运行制度设计与重大风险监测防范"
+      },
+      {
+        "id": "cf-2",
+        "unitId": "csrc-csf",
+        "unitName": "中国证券金融股份有限公司",
+        "department": "董事会",
+        "position": "党委书记、董事长",
+        "rank": "正厅局级",
+        "startYear": 2022,
+        "startMonth": 2,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "全面领导中证金融党委与董事会工作，加强转融通逆周期调控与全市场两融风险监控"
+      }
+    ]
+  },
+  {
+    "id": "wu-xiaoyong",
+    "name": "吴孝勇",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 9,
+    "nativePlace": "湖北",
+    "currentUnitId": "csrc-csf",
+    "currentPosition": "中国证券金融股份有限公司党委副书记、总经理",
+    "currentRank": "正厅局级",
+    "bioSummary": "曾任中国证监会机构监管部处长，深度参与中证金融筹备设立与转融通制度构建，现任中证金融总经理、副董事长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "武汉大学",
+        "major": "经济学",
+        "graduationYear": 1993
+      },
+      {
+        "degree": "硕士",
+        "school": "中国人民大学",
+        "major": "财政金融",
+        "graduationYear": 1996
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "wxy-1",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "机构监管部",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 2002,
+        "startMonth": 3,
+        "endYear": 2011,
+        "endMonth": 10,
+        "isDerived": true,
+        "sourceNote": "根据证券公司融资融券业务试点审批及监管规章公开报道反推",
+        "notes": "主管证券公司业务创新与融资融券试点业务规范"
+      },
+      {
+        "id": "wxy-2",
+        "unitId": "csrc-csf",
+        "unitName": "中国证券金融股份有限公司",
+        "department": "筹备组 / 领导班子",
+        "position": "筹备组成员、党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2011,
+        "startMonth": 10,
+        "endYear": 2020,
+        "endMonth": 8,
+        "isDerived": true,
+        "sourceNote": "根据中证金融设立筹备历程及金融标准化成果推导",
+        "notes": "主导设计转融通业务系统流程并牵头多项资本市场国家与行业数据标准制定"
+      },
+      {
+        "id": "wxy-3",
+        "unitId": "csrc-csf",
+        "unitName": "中国证券金融股份有限公司",
+        "department": "经营管理层",
+        "position": "党委副书记、副董事长、总经理",
+        "rank": "正厅局级",
+        "startYear": 2020,
+        "startMonth": 8,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "主持中证金融日常经营管理，主导证券金融大数据统计分析平台开发建设"
       }
     ]
   }
 ];
 
-// 为每位官员分配的高质感系统调色板
 export const OFFICIAL_COLORS = [
   {
     "id": "wu-qing",
@@ -3889,8 +4243,8 @@ export const OFFICIAL_COLORS = [
     "ring": "ring-[#9b59b6]"
   },
   {
-    "id": "ge-yiping",
-    "name": "葛一平",
+    "id": "lu-dabiao",
+    "name": "卢大彪",
     "primary": "#3498db",
     "border": "#3498db",
     "bg": "#3498db20",

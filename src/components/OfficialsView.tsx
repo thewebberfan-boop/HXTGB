@@ -372,12 +372,25 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                         />
 
                         {/* Record Content */}
-                        <div className="bg-gray-50/60 hover:bg-gray-50 p-3.5 rounded-xl border border-black/[0.04] transition-colors">
+                        <div
+                          className={`p-3.5 rounded-xl border transition-colors ${
+                            item.isDerived
+                              ? 'bg-amber-50/20 hover:bg-amber-50/40 border-dashed border-amber-300/70 shadow-2xs'
+                              : 'bg-gray-50/60 hover:bg-gray-50 border-black/[0.04]'
+                          }`}
+                        >
                           <div className="flex flex-wrap items-center justify-between gap-1 mb-1">
-                            <span className="font-semibold text-sm text-gray-900">
-                              {item.unitName}
-                              {item.department ? ` · ${item.department}` : ''}
-                            </span>
+                            <div className="flex items-center gap-1.5">
+                              <span className="font-semibold text-sm text-gray-900">
+                                {item.unitName}
+                                {item.department ? ` · ${item.department}` : ''}
+                              </span>
+                              {item.isDerived && (
+                                <span className="text-[9.5px] font-medium text-amber-800 bg-amber-100/90 border border-amber-300/80 px-1.5 py-0.2 rounded-md">
+                                  📰 新闻推导
+                                </span>
+                              )}
+                            </div>
                             <span className="text-xs font-mono font-medium text-blue-600">
                               {item.startYear}
                               {item.startMonth ? `.${item.startMonth}` : ''} -{' '}
@@ -393,6 +406,13 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                             </span>
                             <PositionRankBadge rank={item.rank} />
                           </div>
+
+                          {item.sourceNote && (
+                            <div className="text-[11px] text-amber-800 bg-amber-50/80 border border-amber-200/60 px-2 py-1 rounded-md mt-2 leading-tight">
+                              <span className="font-medium">推导佐证：</span>
+                              {item.sourceNote}
+                            </div>
+                          )}
 
                           {item.notes && (
                             <p className="text-xs text-gray-600 mt-2 leading-relaxed">
