@@ -19,8 +19,9 @@ export function AppContainer() {
   const [focusedUnitId, setFocusedUnitId] = useState<string | null>(null);
   const [focusedOfficialId, setFocusedOfficialId] = useState<string | null>(null);
 
-  // 官员页面当前选中的组织机构过滤
+  // 官员页面与机构页面当前选中的组织机构过滤/定位
   const [officialsSelectedUnitId, setOfficialsSelectedUnitId] = useState<string | null>(null);
+  const [unitsSelectedUnitId, setUnitsSelectedUnitId] = useState<string | null>(null);
 
   // 默认精选核心领导班子
   const [selectedOfficialIds, setSelectedOfficialIds] = useState<string[]>([
@@ -151,6 +152,7 @@ export function AppContainer() {
 
   // 视图跳转支持
   const handleSelectOfficialFromUnit = (official: Official) => {
+    setFocusedOfficialId(official.id);
     setCurrentView('officials');
   };
 
@@ -171,6 +173,7 @@ export function AppContainer() {
   // 从泳道跳转到机构主页
   const handleNavigateToUnitPage = (unitId: string) => {
     setFocusedUnitId(unitId);
+    setUnitsSelectedUnitId(unitId);
     setCurrentView('units');
   };
 
@@ -209,6 +212,8 @@ export function AppContainer() {
         onToggleCollapse={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
         selectedUnitIdForOfficials={officialsSelectedUnitId}
         onSelectUnitForOfficials={setOfficialsSelectedUnitId}
+        selectedUnitIdForUnits={unitsSelectedUnitId}
+        onSelectUnitForUnits={setUnitsSelectedUnitId}
       />
 
       {/* 主视图区域：完整高度与宽度留给图谱 */}
@@ -258,6 +263,8 @@ export function AppContainer() {
                 onNavigateToSwimlane={handleNavigateToSwimlane}
                 onBackToSwimlane={handleBackToSwimlane}
                 initialUnitId={focusedUnitId}
+                selectedUnitId={unitsSelectedUnitId}
+                onSelectUnit={setUnitsSelectedUnitId}
               />
             </div>
           </div>

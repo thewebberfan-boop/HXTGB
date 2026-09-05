@@ -45,7 +45,66 @@ interface SidebarProps {
   onToggleCollapse: () => void;
   selectedUnitIdForOfficials?: string | null;
   onSelectUnitForOfficials?: (unitId: string | null) => void;
+  selectedUnitIdForUnits?: string | null;
+  onSelectUnitForUnits?: (unitId: string | null) => void;
 }
+
+export const ORG_CATEGORIES = [
+  {
+    id: 'cat-gov',
+    title: '证监会机关部门 / 司局',
+    icon: '🏛️',
+    unitIds: [
+      'csrc-main',
+      'csrc-bgt',
+      'csrc-fx',
+      'csrc-ss',
+      'csrc-jg',
+      'csrc-sc1',
+      'csrc-sc2',
+      'csrc-qh',
+      'csrc-jc',
+      'csrc-fl',
+      'csrc-gj',
+      'csrc-kj',
+    ],
+  },
+  {
+    id: 'cat-sec',
+    title: '证券交易所',
+    icon: '📈',
+    unitIds: ['csrc-sse', 'csrc-szse', 'csrc-bse'],
+  },
+  {
+    id: 'cat-fut',
+    title: '期货交易所',
+    icon: '🌾',
+    unitIds: ['csrc-shfe', 'csrc-czce', 'csrc-dce', 'csrc-cffex', 'csrc-gfex'],
+  },
+  {
+    id: 'cat-infra',
+    title: '会管企事业单位 / 基础设施',
+    icon: '🏢',
+    unitIds: ['csrc-csdc', 'csrc-csf', 'csrc-csdata', 'csrc-sipf', 'csrc-cfmmc', 'csrc-cfr', 'csrc-isc'],
+  },
+  {
+    id: 'cat-local',
+    title: '地方派出机构与行业协会',
+    icon: '🌐',
+    unitIds: [
+      'csrc-amac',
+      'csrc-sac',
+      'csrc-bj',
+      'csrc-sh',
+      'csrc-gd',
+      'csrc-sz',
+      'csrc-js',
+      'csrc-zj',
+      'csrc-sc',
+      'csrc-yn',
+    ],
+  },
+];
 
 export const Sidebar: React.FC<SidebarProps> = ({
   currentView,
@@ -68,6 +127,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onToggleCollapse,
   selectedUnitIdForOfficials = null,
   onSelectUnitForOfficials,
+  selectedUnitIdForUnits = null,
+  onSelectUnitForUnits,
 }) => {
   const [isAddLaneOpen, setIsAddLaneOpen] = useState(false);
   const [filterOfficialKeyword, setFilterOfficialKeyword] = useState('');
@@ -476,18 +537,26 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </div>
           </div>
         </div>
-      ) : currentView === 'officials' ? (
-        /* 核心需求一：官员页面下的「组织机构架构控件」 */
+      ) : (currentView === 'officials' || currentView === 'units') ? (
+        /* 组织机构架构筛选与导航控件（官员页面与机构页面共用） */
         <div className="flex-1 overflow-y-auto p-3 space-y-3 text-xs">
           <div>
             <div className="flex items-center justify-between px-1 mb-1.5">
               <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider flex items-center gap-1">
                 <Layers className="w-3 h-3 text-blue-600" />
-                <span>组织机构架构筛选</span>
+                <span>
+                  {currentView === 'units' ? '组织机构架构导航' : '组织机构架构筛选'}
+                </span>
               </span>
-              {selectedUnitIdForOfficials && (
+              {(currentView === 'units' ? selectedUnitIdForUnits : selectedUnitIdForOfficials) && (
                 <button
-                  onClick={() => onSelectUnitForOfficials?.(null)}
+                  onClick={() => {
+                    if (currentView === 'units') {
+                      onSelectUnitForUnits?.(null);
+                    } else {
+                      onSelectUnitForOfficials?.(null);
+                    }
+                  }}
                   className="text-[11px] text-blue-600 hover:text-blue-800 font-medium flex items-center gap-0.5"
                 >
                   <span>重置全部</span>
@@ -510,63 +579,40 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
             {/* 全部机构选项卡 */}
             <button
-              onClick={() => onSelectUnitForOfficials?.(null)}
+              onClick={() => {
+                if (currentView === 'units') {
+                  onSelectUnitForUnits?.(null);
+                } else {
+                  onSelectUnitForOfficials?.(null);
+                }
+              }}
               className={`w-full p-2 rounded-xl text-left transition-all mb-2 flex items-center justify-between border ${
-                selectedUnitIdForOfficials === null
+                (currentView === 'units' ? selectedUnitIdForUnits : selectedUnitIdForOfficials) === null
                   ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
                   : 'bg-white hover:bg-gray-50 border-black/[0.05] text-gray-800'
               }`}
             >
               <div className="flex items-center gap-2">
                 <Building className="w-4 h-4 shrink-0" />
-                <span className="font-bold text-xs">全部机构与单位</span>
+                <span className="font-bold text-xs">
+                  {currentView === 'units' ? '全部系统单位档案' : '全部机构与单位'}
+                </span>
               </div>
               <span
                 className={`text-[10px] px-1.5 py-0.5 rounded-md font-mono font-medium ${
-                  selectedUnitIdForOfficials === null
+                  (currentView === 'units' ? selectedUnitIdForUnits : selectedUnitIdForOfficials) === null
                     ? 'bg-white/20 text-white'
                     : 'bg-black/[0.05] text-gray-500'
                 }`}
               >
-                {officials.length}位干部
+                {currentView === 'units' ? `${units.length}个单位` : `${officials.length}位干部`}
               </span>
             </button>
           </div>
 
-          {/* 五大组织层级分类树 */}
+          {/* 五大组织层级分类树 (证监会机关部门/司局在证券交易所上方) */}
           <div className="space-y-2 pr-0.5">
-            {[
-              {
-                id: 'cat-sec',
-                title: '证券交易所',
-                icon: '📈',
-                unitIds: ['csrc-sse', 'csrc-szse', 'csrc-bse'],
-              },
-              {
-                id: 'cat-fut',
-                title: '期货交易所',
-                icon: '🌾',
-                unitIds: ['csrc-shfe', 'csrc-czce', 'csrc-dce', 'csrc-cffex', 'csrc-gfex'],
-              },
-              {
-                id: 'cat-infra',
-                title: '会管企事业单位 / 基础设施',
-                icon: '🏢',
-                unitIds: ['csrc-csdc', 'csrc-csf', 'csrc-csdata', 'csrc-sipf', 'csrc-cfmmc', 'csrc-isc'],
-              },
-              {
-                id: 'cat-gov',
-                title: '证监会机关部门 / 司局',
-                icon: '🏛️',
-                unitIds: ['csrc-jg', 'csrc-bgt', 'csrc-fx', 'csrc-ss', 'csrc-jg-dept', 'csrc-qh', 'csrc-fz', 'csrc-gj'],
-              },
-              {
-                id: 'cat-local',
-                title: '地方派出机构与行业协会',
-                icon: '🌐',
-                unitIds: ['csrc-df', 'csrc-bj', 'csrc-gd', 'csrc-sz', 'csrc-js', 'csrc-amac', 'csrc-cfachina'],
-              },
-            ].map((cat) => {
+            {ORG_CATEGORIES.map((cat) => {
               const isCollapsedCat = !!collapsedOrgCats[cat.id];
               const matchingUnits = units.filter(
                 (u) =>
@@ -600,16 +646,23 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   {!isCollapsedCat && (
                     <div className="space-y-1 pt-0.5">
                       {matchingUnits.map((unit) => {
-                        const isSelected = selectedUnitIdForOfficials === unit.id;
+                        const isUnits = currentView === 'units';
+                        const isSelected = isUnits
+                          ? selectedUnitIdForUnits === unit.id
+                          : selectedUnitIdForOfficials === unit.id;
                         const stats = unitStatsMap.get(unit.id) || { current: 0, past: 0, total: 0 };
                         const displayName = unit.tinyName || unit.shortName;
 
                         return (
                           <div
                             key={unit.id}
-                            onClick={() =>
-                              onSelectUnitForOfficials?.(isSelected ? null : unit.id)
-                            }
+                            onClick={() => {
+                              if (isUnits) {
+                                onSelectUnitForUnits?.(isSelected ? null : unit.id);
+                              } else {
+                                onSelectUnitForOfficials?.(isSelected ? null : unit.id);
+                              }
+                            }}
                             className={`px-2 py-1.5 rounded-lg cursor-pointer transition-all flex items-center justify-between border ${
                               isSelected
                                 ? 'bg-blue-50 border-blue-500/60 ring-1 ring-blue-500/20 shadow-2xs'
@@ -634,26 +687,43 @@ export const Sidebar: React.FC<SidebarProps> = ({
                               </span>
                             </div>
 
-                            {/* 干部人数统计（在职与曾任） */}
+                            {/* 人数与编制统计 */}
                             <div className="flex items-center gap-1 shrink-0 text-[9.5px]">
-                              {stats.current > 0 && (
-                                <span
-                                  className="text-emerald-700 bg-emerald-50 border border-emerald-200/60 px-1 py-0.2 rounded font-medium"
-                                  title={`当前在该机构在职干部 ${stats.current} 位`}
-                                >
-                                  在职 {stats.current}
-                                </span>
-                              )}
-                              {stats.past > 0 && (
-                                <span
-                                  className="text-gray-500 bg-gray-100 px-1 py-0.2 rounded"
-                                  title={`曾在该机构任职干部 ${stats.past} 位`}
-                                >
-                                  曾任 {stats.past}
-                                </span>
-                              )}
-                              {stats.total === 0 && (
-                                <span className="text-gray-300 text-[9px]">-</span>
+                              {isUnits ? (
+                                stats.current > 0 ? (
+                                  <span
+                                    className="text-blue-700 bg-blue-50 border border-blue-200/60 px-1.5 py-0.2 rounded font-medium"
+                                    title={`现任主要负责人 ${stats.current} 位`}
+                                  >
+                                    班子 {stats.current}
+                                  </span>
+                                ) : (
+                                  <span className="text-gray-400 bg-gray-100 px-1 py-0.2 rounded text-[9px]">
+                                    直属
+                                  </span>
+                                )
+                              ) : (
+                                <>
+                                  {stats.current > 0 && (
+                                    <span
+                                      className="text-emerald-700 bg-emerald-50 border border-emerald-200/60 px-1 py-0.2 rounded font-medium"
+                                      title={`当前在该机构在职干部 ${stats.current} 位`}
+                                    >
+                                      在职 {stats.current}
+                                    </span>
+                                  )}
+                                  {stats.past > 0 && (
+                                    <span
+                                      className="text-gray-500 bg-gray-100 px-1 py-0.2 rounded"
+                                      title={`曾在该机构任职干部 ${stats.past} 位`}
+                                    >
+                                      曾任 {stats.past}
+                                    </span>
+                                  )}
+                                  {stats.total === 0 && (
+                                    <span className="text-gray-300 text-[9px]">-</span>
+                                  )}
+                                </>
                               )}
                             </div>
                           </div>
@@ -666,17 +736,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             })}
           </div>
         </div>
-      ) : (
-        /* 在单位页面时的侧边辅助说明 */
-        <div className="flex-1 p-4 text-xs text-gray-500 space-y-3">
-          <div className="bg-gray-50 p-3 rounded-xl border border-black/[0.04] space-y-1.5">
-            <span className="font-semibold text-gray-700 block">系统单位档案</span>
-            <p className="text-[11px] leading-relaxed text-gray-600">
-              收录中国证监会系统核心企事业单位、各大证券与期货交易所、会机关司局及派出机构。点击机构卡片可查看编制与领导班子。
-            </p>
-          </div>
-        </div>
-      )}
+      ) : null}
 
       {/* 底部信息条 */}
       <div className="p-3 border-t border-black/[0.06] bg-gray-50/50 flex items-center justify-between text-[11px] text-gray-400">
