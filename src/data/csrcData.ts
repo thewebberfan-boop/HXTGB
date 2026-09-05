@@ -22,9 +22,11 @@ export const UNITS_DATA: Unit[] = [
     "contactPhone": "010-88061000",
     "currentLeaderIds": [
       "wu-qing",
-      "li-ming",
+      "li-chao",
+      "fan-dazhi",
       "chen-huaping",
-      "fan-dazhi"
+      "liu-haoling",
+      "li-ming"
     ],
     "tagColor": "blue"
   },
@@ -639,7 +641,9 @@ export const UNITS_DATA: Unit[] = [
     ],
     "websiteUrl": "http://www.csrc.gov.cn/beijing/",
     "currentLeaderIds": [
-      "jia-wenqin"
+      "ran-hua",
+      "peng-jing",
+      "hu-jingsheng"
     ],
     "tagColor": "teal"
   },
@@ -658,7 +662,12 @@ export const UNITS_DATA: Unit[] = [
       "维护上海国际金融中心市场秩序，依法处置市场风险事件"
     ],
     "websiteUrl": "http://www.csrc.gov.cn/shanghai/",
-    "tagColor": "teal"
+    "tagColor": "teal",
+    "currentLeaderIds": [
+      "lin-lin",
+      "wang-dengyong",
+      "yang-yong"
+    ]
   },
   {
     "id": "csrc-gd",
@@ -798,6 +807,60 @@ export const UNITS_DATA: Unit[] = [
     ],
     "websiteUrl": "http://www.pbc.gov.cn",
     "tagColor": "slate"
+  },
+  {
+    "id": "csrc-fj",
+    "name": "中国证券监督管理委员会福建监管局",
+    "shortName": "福建证监局",
+    "tinyName": "福建局",
+    "category": "派出机构",
+    "level": "正厅局级",
+    "establishedYear": 1998,
+    "description": "负责福建省（不含厦门）辖区内证券期货市场、上市公司及经营机构的一线日常监管与风险防范处置，正厅局级建制。",
+    "mainDuties": [
+      "监管福建辖区上市公司规范治理与信息披露持续合规",
+      "监管辖区内证券公司、期货公司及私募基金合规风控",
+      "依法查处辖区证券期货违法违规行为，维护地方金融稳定"
+    ],
+    "websiteUrl": "http://www.csrc.gov.cn/fujian/",
+    "currentLeaderIds": [],
+    "tagColor": "teal"
+  },
+  {
+    "id": "csrc-ah",
+    "name": "中国证券监督管理委员会安徽监管局",
+    "shortName": "安徽证监局",
+    "tinyName": "安徽局",
+    "category": "派出机构",
+    "level": "正厅局级",
+    "establishedYear": 1998,
+    "description": "负责安徽省辖区内证券期货市场、上市公司及经营机构的一线日常监管与风险防范处置，正厅局级建制。",
+    "mainDuties": [
+      "监管安徽辖区上市公司规范治理与信息披露持续合规",
+      "监管辖区内证券公司、期货公司及主要分支机构",
+      "防范化解辖区资本市场金融风险，查处违法违规行为"
+    ],
+    "websiteUrl": "http://www.csrc.gov.cn/anhui/",
+    "currentLeaderIds": [],
+    "tagColor": "teal"
+  },
+  {
+    "id": "csrc-df",
+    "name": "中国证监会地方监管局（各省市派出机构）",
+    "shortName": "地方证监局",
+    "tinyName": "地方局",
+    "category": "派出机构",
+    "level": "正厅局级",
+    "establishedYear": 1998,
+    "description": "中国证监会在全国各省、自治区、直辖市及计划单列市设立的派出机构，正厅局级建制，负责各辖区内证券期货市场一线属地监管。",
+    "mainDuties": [
+      "负责辖区内上市公司持续监管与信息披露检查",
+      "负责辖区内证券、期货经营机构及私募机构一线合规风控",
+      "查处辖区证券期货违法违规行为，防范属地金融风险"
+    ],
+    "websiteUrl": "http://www.csrc.gov.cn",
+    "currentLeaderIds": [],
+    "tagColor": "teal"
   }
 ];
 
@@ -805,6 +868,7 @@ export const OFFICIALS_DATA: Official[] = [
   {
     "id": "wu-qing",
     "name": "吴清",
+    "avatarUrl": "/avatars/wu-qing.svg",
     "gender": "男",
     "birthYear": 1965,
     "birthMonth": 4,
@@ -812,19 +876,1027 @@ export const OFFICIALS_DATA: Official[] = [
     "currentUnitId": "csrc-main",
     "currentPosition": "中国证券监督管理委员会党委书记、主席",
     "currentRank": "正部级",
-    "bioSummary": "经济学博士。中国资本市场监管与一线风险处置资深专家，历任中国证监会机构部主任、证券公司风险处置办主任、上海证券交易所理事长、上海市常务副市长、市委副书记，2024年2月出任中国证监会党委书记、主席。",
     "education": [
       {
         "degree": "学士",
-        "school": "安徽大学",
-        "major": "经济学",
-        "graduationYear": 1987
+        "school": "安徽财贸学院（现安徽财经大学）",
+        "major": "财政金融系财政学",
+        "graduationYear": 1989
       },
       {
         "degree": "硕士",
         "school": "中国人民大学",
-        "major": "财政学",
-        "graduationYear": 1990
+        "major": "财政系财政学",
+        "graduationYear": 1992
+      },
+      {
+        "degree": "博士",
+        "school": "中国人民大学",
+        "major": "财政金融学院财政学博士",
+        "graduationYear": 2002
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "wq-1",
+        "unitId": "csrc-main",
+        "unitName": "国家计委 / 证监会早期",
+        "department": "综合司 / 机构部",
+        "position": "干部、副处长、综合处处长",
+        "rank": "正处级",
+        "startYear": 1989,
+        "startMonth": 7,
+        "endYear": 2002,
+        "endMonth": 6,
+        "isDerived": true,
+        "sourceNote": "根据国家计划委员会综合司及早期中国证监会机构监管部综合处干部任职档案考证",
+        "notes": "参与早期资本市场基础性法规研究及证券经营机构监管规章起草"
+      },
+      {
+        "id": "wq-2",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会",
+        "department": "机构监管部",
+        "position": "副主任",
+        "rank": "副厅局级",
+        "startYear": 2002,
+        "startMonth": 6,
+        "endYear": 2005,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "分管证券公司合规审查与综合监管，探索建立券商净资本监管指标体系"
+      },
+      {
+        "id": "wq-3",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "证券公司风险处置办公室",
+        "position": "主任",
+        "rank": "正厅局级",
+        "startYear": 2005,
+        "startMonth": 2,
+        "endYear": 2009,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "临危受命主导历时数年的证券公司综合治理，果断平稳处置南方证券、闽发证券、“德隆系”等31家高风险违规券商，被业界誉为“券商屠夫”"
+      },
+      {
+        "id": "wq-4",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "基金监管部",
+        "position": "主任",
+        "rank": "正厅局级",
+        "startYear": 2009,
+        "startMonth": 3,
+        "endYear": 2010,
+        "endMonth": 11,
+        "isDerived": false,
+        "notes": "铁腕整肃基金行业秩序，严厉打击公募基金“老鼠仓”等内幕交易行为，推动基金信息阳光透明披露"
+      },
+      {
+        "id": "wq-5",
+        "unitId": "gov-sh",
+        "unitName": "上海市地方",
+        "department": "虹口区委 / 区政府",
+        "position": "区委副书记、区长、区委书记",
+        "rank": "正厅局级",
+        "startYear": 2010,
+        "startMonth": 11,
+        "endYear": 2016,
+        "endMonth": 5,
+        "isDerived": false,
+        "notes": "作为中央部委优秀中青年干部交流至上海任职，全力推动北外滩航运与金融双重服务集聚区建设"
+      },
+      {
+        "id": "wq-6",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "党委 / 理事会",
+        "position": "党委书记、理事长",
+        "rank": "副部级",
+        "startYear": 2016,
+        "startMonth": 5,
+        "endYear": 2017,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "重回证券监管体系一线，强化上交所“以监管会员为中心”的穿透式监管理念，主导推进科创板早期制度设计构想"
+      },
+      {
+        "id": "wq-7",
+        "unitId": "gov-sh",
+        "unitName": "上海市人民政府",
+        "department": "市委 / 市政府领导班子",
+        "position": "副市长、市委常委、常务副市长、市委副书记、政法委书记",
+        "rank": "副部级",
+        "startYear": 2017,
+        "startMonth": 12,
+        "endYear": 2024,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "分管上海发展改革、财政、金融、外事等核心板块，深度主导科创板并试点注册制在上交所平稳落地，全力推进上海国际金融中心与科创中心建设"
+      },
+      {
+        "id": "wq-8",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委书记、主席",
+        "rank": "正部级",
+        "startYear": 2024,
+        "startMonth": 2,
+        "endYear": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "出任中国证监会第十任主席（二十届中央候补委员），确立“强本强基、严监严管”主基调，推动国务院新“国九条”出台实施，严厉打击财务造假、操纵市场和恶意做空，全面重塑资本市场生态"
+      }
+    ],
+    "bioSummary": "二十届中央候补委员，经济学博士。中国资本市场监管体制资深实践家，历任证监会机构部副主任、风险办主任、基金部主任、上海市虹口区委书记、上海证券交易所理事长、上海市委副书记、常务副市长。2024年2月出任中国证监会党委书记、主席，推动出台新“国九条”，全面构建穿透式强监管体系。"
+  },
+  {
+    "id": "yi-huiman",
+    "name": "易会满",
+    "avatarUrl": "/avatars/yi-huiman.svg",
+    "gender": "男",
+    "birthYear": 1964,
+    "birthMonth": 12,
+    "nativePlace": "浙江苍南",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原党委书记、主席",
+    "currentRank": "正部级",
+    "education": [
+      {
+        "degree": "大专",
+        "school": "杭州电子工业学院",
+        "major": "统计学",
+        "graduationYear": 1984
+      },
+      {
+        "degree": "硕士",
+        "school": "北京大学光华管理学院",
+        "major": "EMBA高级管理人员工商管理硕士",
+        "graduationYear": 2005
+      },
+      {
+        "degree": "博士",
+        "school": "南京大学",
+        "major": "管理学博士",
+        "graduationYear": 2008
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "yhm-1",
+        "unitId": "csrc-main",
+        "unitName": "中国工商银行",
+        "department": "分行领导班子",
+        "position": "浙江省分行副行长、江苏省分行行长、北京市分行行长",
+        "rank": "正厅局级",
+        "startYear": 1985,
+        "startMonth": 1,
+        "endYear": 2005,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "从基层网点信贷员起步，历任工行三大经济重镇省级分行一把手"
+      },
+      {
+        "id": "yhm-2",
+        "unitId": "csrc-main",
+        "unitName": "中国工商银行",
+        "department": "总行领导班子",
+        "position": "党委委员、副行长、行长、党委书记兼董事长",
+        "rank": "副部级",
+        "startYear": 2005,
+        "startMonth": 3,
+        "endYear": 2019,
+        "endMonth": 1,
+        "isDerived": false,
+        "notes": "掌舵全球资产规模最大的商业银行“宇宙行”，推动工行股改上市与全球化战略布局"
+      },
+      {
+        "id": "yhm-3",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委书记、主席",
+        "rank": "正部级",
+        "startYear": 2019,
+        "startMonth": 1,
+        "endYear": 2024,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "出任中国证监会第九任主席（十九届中央候补委员、二十届中央委员），带领全系统成功设立科创板并试点注册制，进而完成全面股票发行注册制改革，创立北京证券交易所"
+      }
+    ],
+    "bioSummary": "二十届中央委员，管理学博士。历任中国工商银行行长、董事长，2019年1月至2024年2月出任中国证监会主席，主导设立科创板并试点注册制、设立北京证券交易所，全面实施股票发行注册制改革。"
+  },
+  {
+    "id": "liu-shiyu",
+    "name": "刘士余",
+    "avatarUrl": "/avatars/liu-shiyu.svg",
+    "gender": "男",
+    "birthYear": 1961,
+    "birthMonth": 11,
+    "nativePlace": "江苏灌云",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原党委书记、主席",
+    "currentRank": "正部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "清华大学",
+        "major": "水利工程系工学学士",
+        "graduationYear": 1984
+      },
+      {
+        "degree": "硕士",
+        "school": "清华大学",
+        "major": "经济管理学院管理工程硕士",
+        "graduationYear": 1987
+      },
+      {
+        "degree": "博士",
+        "school": "清华大学",
+        "major": "技术经济学博士",
+        "graduationYear": 2002
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "lsy-1",
+        "unitId": "pbc",
+        "unitName": "中国人民银行",
+        "department": "银行司 / 办公厅",
+        "position": "助理巡视员、司长、办公厅主任、行长助理",
+        "rank": "正厅局级",
+        "startYear": 1996,
+        "startMonth": 8,
+        "endYear": 2006,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "全程操盘国有独资商业银行股份制改革与注资重组方案设计"
+      },
+      {
+        "id": "lsy-2",
+        "unitId": "pbc",
+        "unitName": "中国人民银行",
+        "department": "党委 / 行领导",
+        "position": "党委委员、副行长",
+        "rank": "副部级",
+        "startYear": 2006,
+        "startMonth": 6,
+        "endYear": 2014,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "主管央行金融稳定局、金融市场司，统筹化解地方金融风险与债券市场拓宽"
+      },
+      {
+        "id": "lsy-3",
+        "unitId": "csrc-main",
+        "unitName": "中国农业银行",
+        "department": "总行领导班子",
+        "position": "党委书记、董事长",
+        "rank": "副部级",
+        "startYear": 2014,
+        "startMonth": 10,
+        "endYear": 2016,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "掌舵大型国有商业银行农行全面经营与三农金融服务"
+      },
+      {
+        "id": "lsy-4",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委书记、主席",
+        "rank": "正部级",
+        "startYear": 2016,
+        "startMonth": 2,
+        "endYear": 2019,
+        "endMonth": 1,
+        "isDerived": false,
+        "notes": "出任第八任证监会主席，提出依法监管、从严监管、全面监管，严打“野蛮人、害人精、资本大鳄”，化解股市异常波动后市场流动性与股权质押风险"
+      }
+    ],
+    "bioSummary": "清华大学技术经济学博士。历任央行副行长、中国农业银行董事长。2016年2月至2019年1月出任中国证监会主席，强力推进“全面监管、从严监管”，有力处置恶意收购与资本市场乱象。"
+  },
+  {
+    "id": "xiao-gang",
+    "name": "肖钢",
+    "avatarUrl": "/avatars/xiao-gang.svg",
+    "gender": "男",
+    "birthYear": 1958,
+    "birthMonth": 8,
+    "nativePlace": "江西吉安",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原党委书记、主席",
+    "currentRank": "正部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "湖南财经学院",
+        "major": "金融专业",
+        "graduationYear": 1981
+      },
+      {
+        "degree": "硕士",
+        "school": "中国人民大学",
+        "major": "国际经济法硕士",
+        "graduationYear": 1996
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "xg-1",
+        "unitId": "pbc",
+        "unitName": "中国人民银行",
+        "department": "行长办公室 / 计划资金司",
+        "position": "行长秘书、司长、政策研究室主任",
+        "rank": "正厅局级",
+        "startYear": 1981,
+        "startMonth": 7,
+        "endYear": 1996,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "长期参与央行宏观调控方案设计与中央银行宏观审慎政策制定"
+      },
+      {
+        "id": "xg-2",
+        "unitId": "pbc",
+        "unitName": "中国人民银行 / 外汇管理局",
+        "department": "行领导班子",
+        "position": "行长助理、副行长、党委委员兼外汇管理局局长",
+        "rank": "副部级",
+        "startYear": 1996,
+        "startMonth": 10,
+        "endYear": 2003,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "主管全国外汇市场防范亚洲金融危机冲击与跨境外汇收支平衡"
+      },
+      {
+        "id": "xg-3",
+        "unitId": "csrc-main",
+        "unitName": "中国银行",
+        "department": "总行领导班子",
+        "position": "董事长、党委书记、行长",
+        "rank": "副部级",
+        "startYear": 2003,
+        "startMonth": 3,
+        "endYear": 2013,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "掌舵中行十年，成功主导中国银行改制并在香港和A股两地实现大型国有商业银行首家IPO上市"
+      },
+      {
+        "id": "xg-4",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委书记、主席",
+        "rank": "正部级",
+        "startYear": 2013,
+        "startMonth": 3,
+        "endYear": 2016,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "出任第七任证监会主席，力主推进资本市场双向开放，主导开启具有划时代意义的“沪港通”试点，重启IPO注册制改革立法调研"
+      }
+    ],
+    "bioSummary": "法学硕士。曾任央行副行长兼国家外汇管理局局长、中国银行董事长十年。2013年3月至2016年2月出任中国证监会主席，开通“沪港通”，开启境内资本市场与国际市场互联互通新纪元。"
+  },
+  {
+    "id": "guo-shuqing",
+    "name": "郭树清",
+    "avatarUrl": "/avatars/guo-shuqing.svg",
+    "gender": "男",
+    "birthYear": 1956,
+    "birthMonth": 8,
+    "nativePlace": "内蒙古察右后旗",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原党委书记、主席",
+    "currentRank": "正部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "南开大学",
+        "major": "哲学系哲学学士",
+        "graduationYear": 1982
+      },
+      {
+        "degree": "硕士",
+        "school": "中国社科院研究生院",
+        "major": "马列系法学硕士",
+        "graduationYear": 1985
+      },
+      {
+        "degree": "博士",
+        "school": "中国社科院研究生院",
+        "major": "法学博士",
+        "graduationYear": 1988
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "gsq-1",
+        "unitId": "csrc-main",
+        "unitName": "国家计委 / 国家体改委",
+        "department": "经济研究中心 / 综合司",
+        "position": "处长、综合规划司司长",
+        "rank": "正厅局级",
+        "startYear": 1988,
+        "startMonth": 9,
+        "endYear": 1998,
+        "endMonth": 7,
+        "isDerived": false,
+        "notes": "国家宏观体制改革纲领性方案核心起草人之一"
+      },
+      {
+        "id": "gsq-2",
+        "unitId": "csrc-main",
+        "unitName": "贵州省 / 央行",
+        "department": "贵州省政府 / 央行党委",
+        "position": "副省长、央行副行长兼外汇局局长、汇金公司董事长",
+        "rank": "副部级",
+        "startYear": 1998,
+        "startMonth": 7,
+        "endYear": 2005,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "主导中央汇金公司注资建行、中行重大金融改革攻坚"
+      },
+      {
+        "id": "gsq-3",
+        "unitId": "csrc-main",
+        "unitName": "中国建设银行",
+        "department": "总行党委 / 董事会",
+        "position": "党委书记、董事长",
+        "rank": "副部级",
+        "startYear": 2005,
+        "startMonth": 3,
+        "endYear": 2011,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "带领建行率先完成香港H股上市与A股上市，建立现代大型商业银行内控体制"
+      },
+      {
+        "id": "gsq-4",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委书记、主席",
+        "rank": "正部级",
+        "startYear": 2011,
+        "startMonth": 10,
+        "endYear": 2013,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "出任第六任证监会主席，执掌506天密集推出以“郭氏新政”闻名的七十余项制度改革，重塑退市制度、强制上市公司现金分红、严厉打击内幕交易、大幅降低市场交易规费"
+      },
+      {
+        "id": "gsq-5",
+        "unitId": "csrc-main",
+        "unitName": "山东省政府 / 银保监会",
+        "department": "山东省委 / 银保监会党委",
+        "position": "山东省省长、中国银监会主席、中国银保监会主席兼央行党委书记",
+        "rank": "正部级",
+        "startYear": 2013,
+        "startMonth": 3,
+        "endYear": 2023,
+        "endMonth": 5,
+        "isDerived": false,
+        "notes": "主政山东推进“山东金改22条”；后重返金融监管主导银监会保监会机构合并，化解影子银行重大系统性风险"
+      }
+    ],
+    "bioSummary": "法学博士，著名宏观经济与金融学者。历任央行副行长兼外汇局局长、建设银行董事长、山东省省长、中国银保监会主席、央行党委书记。2011年10月至2013年3月任中国证监会主席，推行以“郭氏新政”著称的大刀阔斧改革。"
+  },
+  {
+    "id": "shang-fulin",
+    "name": "尚福林",
+    "avatarUrl": "/avatars/shang-fulin.svg",
+    "gender": "男",
+    "birthYear": 1951,
+    "birthMonth": 11,
+    "nativePlace": "山东济南",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原党委书记、主席",
+    "currentRank": "正部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "北京财贸学院",
+        "major": "金融专业学士",
+        "graduationYear": 1982
+      },
+      {
+        "degree": "博士",
+        "school": "西南财经大学",
+        "major": "金融学院经济学博士",
+        "graduationYear": 1999
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "sfl-1",
+        "unitId": "pbc",
+        "unitName": "中国人民银行",
+        "department": "办公厅 / 条法司",
+        "position": "秘书、条法司司长、副行长兼货币政策委员会秘书长",
+        "rank": "副部级",
+        "startYear": 1982,
+        "startMonth": 7,
+        "endYear": 2000,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "起草初代中国人民银行法及商业银行法基础法理"
+      },
+      {
+        "id": "sfl-2",
+        "unitId": "csrc-main",
+        "unitName": "中国农业银行",
+        "department": "总行领导班子",
+        "position": "党委书记、行长",
+        "rank": "副部级",
+        "startYear": 2000,
+        "startMonth": 2,
+        "endYear": 2002,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "主管农行全行经营，全面推进资产剥离与机构改革"
+      },
+      {
+        "id": "sfl-3",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委书记、主席",
+        "rank": "正部级",
+        "startYear": 2002,
+        "startMonth": 12,
+        "endYear": 2011,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "出任第五任证监会主席，任职长达近九年，是中国证监会历史上任职时间最长的主席。以非凡智慧与坚韧定力完成“股权分置改革”这一划时代的历史攻坚任务，推出中小板与创业板，开启中国股市股权全流通的新纪元"
+      },
+      {
+        "id": "sfl-4",
+        "unitId": "csrc-main",
+        "unitName": "中国银监会",
+        "department": "党委 / 会领导",
+        "position": "党委书记、主席",
+        "rank": "正部级",
+        "startYear": 2011,
+        "startMonth": 10,
+        "endYear": 2017,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "主导全国银行业审慎监管框架设计与民营银行常态化试点"
+      }
+    ],
+    "bioSummary": "金融学博士。证监会历史上任期最长的主席（2002年12月至2011年10月，历时近9年），后任中国银监会主席。开创性领导并成功完成中国资本市场“开弓没有回头箭”的股权分置改革，创设中小板与创业板。"
+  },
+  {
+    "id": "zhou-zhengqing",
+    "name": "周正庆",
+    "avatarUrl": "/avatars/zhou-zhengqing.svg",
+    "gender": "男",
+    "birthYear": 1935,
+    "birthMonth": 2,
+    "nativePlace": "安徽天长",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原主席、党组书记",
+    "currentRank": "正部级",
+    "education": [
+      {
+        "degree": "大专",
+        "school": "中国人民银行干部学校",
+        "major": "金融管理",
+        "graduationYear": 1953
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zzq-1",
+        "unitId": "pbc",
+        "unitName": "中国人民银行 / 国务院证券委",
+        "department": "北京市分行 / 国务院",
+        "position": "北京分行行长、央行副行长、国务院副秘书长、国务院证券委主任",
+        "rank": "正部级",
+        "startYear": 1979,
+        "startMonth": 10,
+        "endYear": 1997,
+        "endMonth": 7,
+        "isDerived": false,
+        "notes": "负责宏观金融整顿与中央证券委政策协调"
+      },
+      {
+        "id": "zzq-2",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "主席、党组书记",
+        "rank": "正部级",
+        "startYear": 1997,
+        "startMonth": 7,
+        "endYear": 2000,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "出任第三任证监会主席，促成新中国第一部《中华人民共和国证券法》通过施行，并领导出台搞活市场的政策组合拳，启动著名的1999年“5·19”牛市行情"
+      }
+    ],
+    "bioSummary": "原国务院证券委主任、中国证监会第三任主席（1997年7月至2000年2月）。主持起草并推动出台新中国首部《证券法》，奠定资本市场法治根基，领导启动著名的“5·19”牛市。"
+  },
+  {
+    "id": "liu-hongru",
+    "name": "刘鸿儒",
+    "avatarUrl": "/avatars/liu-hongru.svg",
+    "gender": "男",
+    "birthYear": 1930,
+    "birthMonth": 11,
+    "nativePlace": "吉林德惠",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会首任主席、党组书记",
+    "currentRank": "正部级",
+    "education": [
+      {
+        "degree": "硕士",
+        "school": "中国人民大学",
+        "major": "财政系研究生",
+        "graduationYear": 1954
+      },
+      {
+        "degree": "博士",
+        "school": "莫斯科大学",
+        "major": "经济系副博士",
+        "graduationYear": 1959
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "lhr-1",
+        "unitId": "pbc",
+        "unitName": "中国人民银行 / 国家体改委",
+        "department": "行领导 / 体改委领导",
+        "position": "央行常务副行长、国家体改委副主任兼中国金融学会副会长",
+        "rank": "正部级",
+        "startYear": 1979,
+        "startMonth": 1,
+        "endYear": 1992,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "中国现代中央银行制度与金融体制改革的总设计师之一"
+      },
+      {
+        "id": "lhr-2",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "首任主席、党组书记",
+        "rank": "正部级",
+        "startYear": 1992,
+        "startMonth": 10,
+        "endYear": 1995,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "中国证券监督管理委员会创始主席。白手起家构建全国统一的股票发行审核体系，推动首批九家大型国企赴香港发行H股上市，确立中国资本市场初代监管框架"
+      }
+    ],
+    "bioSummary": "莫斯科大学经济学副博士。中国金融改革与现代资本市场奠基人，中国人民银行原常务副行长。1992年10月至1995年3月担任中国证监会首任主席、党组书记，开创性搭建了中国证券监管制度体系，主导推进首批H股海外上市。"
+  },
+  {
+    "id": "li-jizun",
+    "name": "李继尊",
+    "gender": "男",
+    "birthYear": 1974,
+    "birthMonth": 9,
+    "nativePlace": "山东莒南",
+    "currentUnitId": "csrc-szse",
+    "currentPosition": "深圳证券交易所党委副书记、总经理",
+    "currentRank": "副部级",
+    "bioSummary": "工学学士、管理学硕士。历任国务院研究室宏观司副司长、证监会研究中心主任、中证金融研究院院长、市场一部主任兼全面深改办主任、市场一司司长，2024年4月出任深交所总经理。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "山东大学",
+        "major": "工学",
+        "graduationYear": 1996
+      },
+      {
+        "degree": "硕士",
+        "school": "清华大学",
+        "major": "管理科学与工程",
+        "graduationYear": 2002
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "ljz-1",
+        "unitId": "csrc-main",
+        "unitName": "国务院研究室 / 证监会",
+        "position": "副司长、研究中心主任",
+        "rank": "正厅局级",
+        "startYear": 2005,
+        "startMonth": 8,
+        "endYear": 2016,
+        "endMonth": 12,
+        "notes": "参与中央经济政策草拟与资本市场战略前瞻性研究",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "ljz-2",
+        "unitId": "csrc-cfr",
+        "unitName": "中证金融研究院",
+        "position": "党委书记、院长",
+        "rank": "正厅局级",
+        "startYear": 2016,
+        "startMonth": 12,
+        "endYear": 2019,
+        "endMonth": 3,
+        "notes": "统领证监会核心高端智库科研与金融宏观政策储备",
+        "isDerived": false
+      },
+      {
+        "id": "ljz-3",
+        "unitId": "csrc-sc1",
+        "unitName": "证监会市场监管一部",
+        "position": "主任兼全面深化资本市场改革办公室主任",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "startMonth": 3,
+        "endYear": 2022,
+        "endMonth": 1,
+        "notes": "统筹协调全面深化资本市场改革12条任务实施与总体施工方案",
+        "isDerived": false
+      },
+      {
+        "id": "ljz-4",
+        "unitId": "csrc-sc1",
+        "unitName": "证监会市场监管一司",
+        "position": "司长",
+        "rank": "正厅局级",
+        "startYear": 2022,
+        "startMonth": 1,
+        "endYear": 2024,
+        "endMonth": 4,
+        "notes": "统揽全市场交易机制建设与异常交易穿透式监控防范",
+        "isDerived": false
+      },
+      {
+        "id": "ljz-5",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "党委副书记、总经理",
+        "rank": "副部级",
+        "startYear": 2024,
+        "startMonth": 4,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "主持深交所日常经营，推动科技创新企业高水平直接融资与市场稳健运行",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/li-jizun.svg"
+  },
+  {
+    "id": "sha-yan",
+    "name": "沙雁",
+    "gender": "女",
+    "birthYear": 1972,
+    "birthMonth": 9,
+    "nativePlace": "黑龙江齐齐哈尔",
+    "currentUnitId": "csrc-szse",
+    "currentPosition": "深圳证券交易所党委书记、理事长",
+    "currentRank": "副部级",
+    "bioSummary": "管理学博士。历任证监会上市公司监管部处长、副主任、机构监管部主任、深交所总经理，2023年12月晋升为深交所党委书记、理事长（副部级）。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "陕西财经学院（现西安交通大学）",
+        "major": "会计学",
+        "graduationYear": 1993
+      },
+      {
+        "degree": "博士",
+        "school": "西安交通大学",
+        "major": "管理科学与工程",
+        "graduationYear": 2003
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "sy-1",
+        "unitId": "csrc-ss",
+        "unitName": "证监会上市公司监管部",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 2000,
+        "startMonth": 11,
+        "endYear": 2013,
+        "endMonth": 5,
+        "notes": "主持上市公司信息披露准则细化与财务核查",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "sy-2",
+        "unitId": "csrc-ss",
+        "unitName": "证监会上市公司监管部",
+        "position": "副主任",
+        "rank": "副厅局级",
+        "startYear": 2013,
+        "startMonth": 5,
+        "endYear": 2017,
+        "endMonth": 4,
+        "notes": "分管上市公司并购重组与重大风险案件研判",
+        "isDerived": false
+      },
+      {
+        "id": "sy-3",
+        "unitId": "csrc-jg",
+        "unitName": "证监会证券基金机构监管部",
+        "position": "主任",
+        "rank": "正厅局级",
+        "startYear": 2017,
+        "startMonth": 4,
+        "endYear": 2020,
+        "endMonth": 6,
+        "notes": "统领全国券商基金法人机构监管，全面推行合规风控全覆盖体系",
+        "isDerived": false
+      },
+      {
+        "id": "sy-4",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "党委副书记、总经理",
+        "rank": "副部级",
+        "startYear": 2020,
+        "startMonth": 6,
+        "endYear": 2023,
+        "endMonth": 12,
+        "notes": "主持深交所日常营运，稳步落地创业板注册制与两板合并重大改革",
+        "isDerived": false
+      },
+      {
+        "id": "sy-5",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "党委书记、理事长",
+        "rank": "副部级",
+        "startYear": 2023,
+        "startMonth": 12,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "全面主持深交所党委与理事会工作，着力打造国际领先创新资本形成中心",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/sha-yan.svg"
+  },
+  {
+    "id": "liu-haoling",
+    "name": "刘浩凌",
+    "avatarUrl": "/avatars/liu-haoling.svg",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 7,
+    "nativePlace": "北京",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证券监督管理委员会党委委员、副主席",
+    "currentRank": "副部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "北京大学",
+        "major": "英语语言文学系",
+        "graduationYear": 1995
+      },
+      {
+        "degree": "学士",
+        "school": "中国政法大学",
+        "major": "法律学学士",
+        "graduationYear": 1997
+      },
+      {
+        "degree": "硕士",
+        "school": "美国爱荷华大学",
+        "major": "法学硕士（LL.M.）",
+        "graduationYear": 1998
+      },
+      {
+        "degree": "硕士",
+        "school": "英国伦敦商学院（LBS）",
+        "major": "金融学硕士（MSF）",
+        "graduationYear": 2003
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "lhl-1",
+        "unitId": "csrc-main",
+        "unitName": "华夏证券 / 证监会早期",
+        "department": "法律事务部 / 上市部",
+        "position": "法律助理、干部、第一至二届发审委委员",
+        "rank": "正处级",
+        "startYear": 1997,
+        "startMonth": 7,
+        "endYear": 2003,
+        "endMonth": 9,
+        "isDerived": true,
+        "sourceNote": "根据中国证监会股票发行审核委员会及早期证券行业履历考证",
+        "notes": "参与早期境内A股上市公司申报形式审查与发审审核"
+      },
+      {
+        "id": "lhl-2",
+        "unitId": "csrc-main",
+        "unitName": "合资券商机构",
+        "department": "合规风控部",
+        "position": "华欧国际证券合规部经理兼董秘、高盛高华证券合规部经理",
+        "rank": "副厅局级",
+        "startYear": 2003,
+        "startMonth": 9,
+        "endYear": 2008,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "主导早期中外合资投资银行境内外合规架构搭建与重大跨境业务法律风险把关"
+      },
+      {
+        "id": "lhl-3",
+        "unitId": "csrc-main",
+        "unitName": "中国投资有限责任公司 / 中央汇金",
+        "department": "法律合规部 / 银行机构管理二部",
+        "position": "业务主管、高级经理、股权管理二部主任",
+        "rank": "正厅局级",
+        "startYear": 2008,
+        "startMonth": 3,
+        "endYear": 2019,
+        "endMonth": 11,
+        "isDerived": false,
+        "notes": "主管国有重点金融机构控股股权行权与境内主权财富基金合规风控"
+      },
+      {
+        "id": "lhl-4",
+        "unitId": "csrc-main",
+        "unitName": "中央汇金公司 / 新华保险",
+        "department": "高管层",
+        "position": "中央汇金副总经理兼新华保险董事长、申万宏源证券董事",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "startMonth": 11,
+        "endYear": 2021,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "全面统领大型保险央企公司治理与国有金融资本运作"
+      },
+      {
+        "id": "lhl-5",
+        "unitId": "csrc-main",
+        "unitName": "中国投资有限责任公司",
+        "department": "执委会 / 领导班子",
+        "position": "副总经理兼副首席风险官、总经理兼首席投资官",
+        "rank": "副部级",
+        "startYear": 2021,
+        "startMonth": 2,
+        "endYear": 2024,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "升任主权财富基金总舵手，全面负责中投公司全球万亿美元境外资产配置及境内直投风控"
+      },
+      {
+        "id": "lhl-6",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委委员、副主席",
+        "rank": "副部级",
+        "startYear": 2024,
+        "startMonth": 4,
+        "endYear": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "调任中国证监会副主席，为现任领导班子中最年轻的“70后”副部级高官，分管国际合作、市场拓展与长期中长期资金入市等"
+      }
+    ],
+    "bioSummary": "双硕士学位（美国爱荷华大学法学硕士、伦敦商学院金融硕士）。证监会现任领导班子中唯一的“70后”副部级领导干部，曾任中投公司总经理兼首席投资官、中央汇金副总经理、新华保险董事长。兼具全球顶尖投资机构管理视野与境内证券合规风控底蕴，2024年4月履新中国证监会副主席。"
+  },
+  {
+    "id": "cai-jianchun",
+    "name": "蔡建春",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 3,
+    "nativePlace": "江西",
+    "currentUnitId": "csrc-sse",
+    "currentPosition": "上海证券交易所党委副书记、总经理",
+    "currentRank": "副部级",
+    "bioSummary": "经济学博士。长期在证监会上市部、债券部任职，历任证监会上市公司监管部副主任、公司债券监管部主任，2020年6月出任上海证券交易所党委副书记、总经理。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "南昌大学",
+        "major": "经济学",
+        "graduationYear": 1991
       },
       {
         "degree": "博士",
@@ -835,111 +1907,52 @@ export const OFFICIALS_DATA: Official[] = [
     ],
     "careerHistory": [
       {
-        "id": "wq-1",
-        "unitId": "csrc-main",
-        "unitName": "中国证监会机关",
-        "department": "机构监管部",
+        "id": "cjc-1",
+        "unitId": "csrc-ss",
+        "unitName": "证监会上市公司监管部",
         "position": "副处长、处长、副主任",
         "rank": "副厅局级",
-        "startYear": 1998,
+        "startYear": 2004,
         "startMonth": 5,
-        "endYear": 2005,
-        "endMonth": 3,
-        "notes": "参与起草证券公司合规管理和分类监管规章制度",
+        "endYear": 2015,
+        "endMonth": 8,
+        "notes": "起草上市公司重大资产重组、收购管理办法等核心规则",
         "isDerived": true,
         "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
-        "id": "wq-2",
+        "id": "cjc-2",
         "unitId": "csrc-main",
-        "unitName": "中国证监会机关",
-        "department": "证券公司风险处置办公室",
+        "unitName": "证监会公司债券监管部",
         "position": "主任",
         "rank": "正厅局级",
-        "startYear": 2005,
-        "startMonth": 3,
-        "endYear": 2009,
-        "endMonth": 3,
-        "notes": "雷厉风行处置数十家高风险违规证券公司，化解系统性金融风险，被称为资本市场“券商屠夫”",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+        "startYear": 2015,
+        "startMonth": 8,
+        "endYear": 2020,
+        "endMonth": 6,
+        "notes": "统一公司债发行审核规则，推出创新创业债、绿色债等多元工具",
+        "isDerived": false
       },
       {
-        "id": "wq-3",
-        "unitId": "csrc-main",
-        "unitName": "中国证监会机关",
-        "department": "基金监管部",
-        "position": "主任",
-        "rank": "正厅局级",
-        "startYear": 2009,
-        "startMonth": 3,
-        "endYear": 2010,
-        "endMonth": 11,
-        "notes": "严厉整饬公募基金“老鼠仓”和内幕交易，推动基金行业法治化规范运作",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "wq-4",
-        "unitId": "gov-sh",
-        "unitName": "上海市政府及直辖区",
-        "department": "中共上海市虹口区委",
-        "position": "区长、区委书记",
-        "rank": "正厅局级",
-        "startYear": 2010,
-        "startMonth": 11,
-        "endYear": 2016,
-        "endMonth": 5,
-        "notes": "主导北外滩财富管理高地建设，推动航运金融聚集区崛起",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "wq-5",
+        "id": "cjc-3",
         "unitId": "csrc-sse",
         "unitName": "上海证券交易所",
-        "position": "党委书记、理事长",
+        "position": "党委副书记、总经理",
         "rank": "副部级",
-        "startYear": 2016,
-        "startMonth": 5,
-        "endYear": 2017,
-        "endMonth": 12,
-        "notes": "主持上交所全面工作，深化一线穿透式监察与沪港通平稳扩容",
-        "isDerived": false
-      },
-      {
-        "id": "wq-6",
-        "unitId": "gov-sh",
-        "unitName": "上海市政府",
-        "department": "上海市委 / 市政府",
-        "position": "副市长、常务副市长、市委副书记、政法委书记",
-        "rank": "副部级",
-        "startYear": 2017,
-        "startMonth": 12,
-        "endYear": 2024,
-        "endMonth": 2,
-        "notes": "分管发展改革、财政、科技创新、金融与国有资产，全力推动科创板试点注册制落地",
-        "isDerived": false
-      },
-      {
-        "id": "wq-7",
-        "unitId": "csrc-main",
-        "unitName": "中国证监会机关",
-        "position": "党委书记、主席",
-        "rank": "正部级",
-        "startYear": 2024,
-        "startMonth": 2,
+        "startYear": 2020,
+        "startMonth": 6,
         "endYear": null,
         "isCurrent": true,
-        "notes": "全面主持中国证监会党组和会行政工作，出台新“国九条”，强化强监管、防风险、促高质量发展主线",
+        "notes": "主持上交所日常运营，主导基础设施公募REITs常态化发行与科创板做市交易机制",
         "isDerived": false
       }
     ],
-    "avatarUrl": "/avatars/wu-qing.svg"
+    "avatarUrl": "/avatars/cai-jianchun.svg"
   },
   {
     "id": "li-ming",
     "name": "李明",
+    "avatarUrl": "/avatars/li-ming.svg",
     "gender": "男",
     "birthYear": 1968,
     "birthMonth": 11,
@@ -947,18 +1960,23 @@ export const OFFICIALS_DATA: Official[] = [
     "currentUnitId": "csrc-main",
     "currentPosition": "中国证券监督管理委员会党委委员、副主席",
     "currentRank": "副部级",
-    "bioSummary": "法学学士、公共管理硕士。曾任证监会发行部副处长、全国股转公司总经理、江苏证监局局长、证监会上市公司监管部主任、稽查局局长、首席检查官，具有丰富的发行上市、一线监管与稽查执法领导经验。",
     "education": [
       {
         "degree": "学士",
         "school": "中国政法大学",
-        "major": "法学",
-        "graduationYear": 1990
+        "major": "法律系法学学士",
+        "graduationYear": 1991
       },
       {
         "degree": "硕士",
-        "school": "清华大学公共管理学院",
-        "major": "公共管理",
+        "school": "中国政法大学",
+        "major": "民商经济法学硕士",
+        "graduationYear": 1996
+      },
+      {
+        "degree": "博士",
+        "school": "中国政法大学",
+        "major": "经济法学博士",
         "graduationYear": 2004
       }
     ],
@@ -966,197 +1984,112 @@ export const OFFICIALS_DATA: Official[] = [
       {
         "id": "lm-1",
         "unitId": "csrc-fx",
-        "unitName": "证监会发行监管司",
-        "position": "副处长、处长",
-        "rank": "正处级",
-        "startYear": 2003,
-        "startMonth": 4,
-        "endYear": 2011,
-        "endMonth": 8,
-        "notes": "深入参与股票公开发行核准与审核规程规范化建设",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+        "unitName": "中国证监会",
+        "department": "发行监管部",
+        "position": "副处长、处长、副主任",
+        "rank": "副厅局级",
+        "startYear": 1998,
+        "startMonth": 7,
+        "endYear": 2016,
+        "endMonth": 11,
+        "isDerived": false,
+        "notes": "长期从事境内A股股票公开发行核准与制度建设，严把拟上市企业入口关"
       },
       {
         "id": "lm-2",
         "unitId": "csrc-bse",
-        "unitName": "全国股转公司（新三板）",
-        "position": "党委委员、副总经理、总经理",
+        "unitName": "全国股转公司",
+        "department": "高管层",
+        "position": "党委副书记、总经理",
         "rank": "正厅局级",
-        "startYear": 2011,
-        "startMonth": 8,
+        "startYear": 2016,
+        "startMonth": 11,
         "endYear": 2018,
         "endMonth": 8,
-        "notes": "主持新三板分层制度改革与做市商交易制度推行",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+        "isDerived": false,
+        "notes": "负责新三板市场日常运行与深化改革，推出创新层与挂牌分层管理体制"
       },
       {
         "id": "lm-3",
         "unitId": "csrc-js",
-        "unitName": "江苏证监局",
+        "unitName": "中国证监会江苏监管局",
+        "department": "局领导班子",
         "position": "党委书记、局长",
         "rank": "正厅局级",
         "startYear": 2018,
         "startMonth": 8,
         "endYear": 2020,
         "endMonth": 6,
-        "notes": "全面主持制造业大省江苏资本市场发展与防范化解股票质押风险",
-        "isDerived": false
+        "isDerived": false,
+        "notes": "全面主持经济大省江苏辖区证券期货市场一线监管与拟上市后备企业梯队服务"
       },
       {
         "id": "lm-4",
         "unitId": "csrc-ss",
-        "unitName": "证监会上市公司监管司",
+        "unitName": "中国证监会",
+        "department": "上市公司监管部",
         "position": "主任",
         "rank": "正厅局级",
         "startYear": 2020,
         "startMonth": 6,
-        "endYear": 2021,
-        "endMonth": 12,
-        "notes": "主导常态化退市制度落地与提高上市公司质量专项行动",
-        "isDerived": false
+        "endYear": 2023,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "负责全面注册制下上市公司持续监管、常态化退市机制建设与防范大股东违规减持"
       },
       {
         "id": "lm-5",
         "unitId": "csrc-jc",
-        "unitName": "证监会稽查局",
-        "position": "局长、首席检查官",
+        "unitName": "中国证监会",
+        "department": "稽查局",
+        "position": "首席检查官兼稽查局局长",
         "rank": "正厅局级",
-        "startYear": 2021,
-        "startMonth": 12,
+        "startYear": 2023,
+        "startMonth": 4,
         "endYear": 2024,
         "endMonth": 7,
-        "notes": "统筹全系统稽查执法与跨部委协同，严肃查办恶性财务造假与操纵市场大案要案",
-        "isDerived": false
+        "isDerived": false,
+        "notes": "执掌全系统稽查执法帅印，以“零容忍”态度雷霆查处重大财务欺诈与操纵市场大案"
       },
       {
         "id": "lm-6",
         "unitId": "csrc-main",
-        "unitName": "中国证监会机关",
+        "unitName": "中国证监会",
+        "department": "领导班子",
         "position": "党委委员、副主席",
         "rank": "副部级",
         "startYear": 2024,
         "startMonth": 7,
         "endYear": null,
         "isCurrent": true,
-        "notes": "协助分管发行监管、上市公司监管与稽查执法等核心战线",
-        "isDerived": false
+        "isDerived": false,
+        "notes": "升任中国证监会副主席，接替方星海分管国际合作司、期货监管司等重点业务"
       }
     ],
-    "avatarUrl": "/avatars/li-ming.svg"
-  },
-  {
-    "id": "chen-huaping",
-    "name": "陈华平",
-    "gender": "男",
-    "birthYear": 1968,
-    "birthMonth": 12,
-    "nativePlace": "江西",
-    "currentUnitId": "csrc-main",
-    "currentPosition": "中国证券监督管理委员会党委委员、副主席",
-    "currentRank": "副部级",
-    "bioSummary": "法学学士。历任证监会机构部副主任、打非办主任、郑商所理事长、证监会办公厅主任、深交所理事长，2023年9月晋升为中国证监会副主席。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "中国政法大学",
-        "major": "法学",
-        "graduationYear": 1991
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "chp-1",
-        "unitId": "csrc-jg",
-        "unitName": "证监会机构监管部 / 打非办",
-        "position": "副主任、主任",
-        "rank": "正厅局级",
-        "startYear": 2003,
-        "startMonth": 6,
-        "endYear": 2016,
-        "endMonth": 6,
-        "notes": "主管证券经营机构日常合规与打击非法证券活动全国协调机制",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "chp-2",
-        "unitId": "csrc-czce",
-        "unitName": "郑州商品交易所",
-        "position": "党委书记、理事长",
-        "rank": "正厅局级",
-        "startYear": 2016,
-        "startMonth": 6,
-        "endYear": 2019,
-        "endMonth": 10,
-        "notes": "主持郑商所全面工作，上市白糖期权、苹果期货等重大特色品种",
-        "isDerived": false
-      },
-      {
-        "id": "chp-3",
-        "unitId": "csrc-bgt",
-        "unitName": "证监会办公厅",
-        "position": "主任、党委办公室主任",
-        "rank": "正厅局级",
-        "startYear": 2019,
-        "startMonth": 10,
-        "endYear": 2021,
-        "endMonth": 12,
-        "notes": "主持证监会办公厅综合运转与重大专项任务督办落实",
-        "isDerived": false
-      },
-      {
-        "id": "chp-4",
-        "unitId": "csrc-szse",
-        "unitName": "深圳证券交易所",
-        "position": "党委书记、理事长",
-        "rank": "副部级",
-        "startYear": 2021,
-        "startMonth": 12,
-        "endYear": 2023,
-        "endMonth": 9,
-        "notes": "领导深交所党委和理事会，推动创业板注册制深化及主板中小板顺利合并",
-        "isDerived": false
-      },
-      {
-        "id": "chp-5",
-        "unitId": "csrc-main",
-        "unitName": "中国证监会机关",
-        "position": "党委委员、副主席",
-        "rank": "副部级",
-        "startYear": 2023,
-        "startMonth": 9,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "协助分管期货监管、市场监管一司及市场平稳运行保障工作",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/chen-huaping.svg"
+    "bioSummary": "法学博士。证监系统自主培养的专家型领导干部，历任发行部副主任、全国股转公司总经理、江苏证监局局长、上市公司监管部主任、首席检查官兼稽查局局长。2024年7月升任中国证监会副主席、党委委员，全面分管资本市场国际化合作与期货衍生品监管。"
   },
   {
     "id": "wang-jianjun",
     "name": "王建军",
+    "avatarUrl": "/avatars/wang-jianjun.svg",
     "gender": "男",
     "birthYear": 1968,
     "birthMonth": 3,
-    "nativePlace": "四川阆中",
+    "nativePlace": "湖南邵阳",
     "currentUnitId": "csrc-main",
-    "currentPosition": "中国证监会原副主席、深交所原理事长",
+    "currentPosition": "中国证监会原党委委员、副主席",
     "currentRank": "副部级",
-    "bioSummary": "经济学硕士。曾任证监会发行监管部处长、云南局副局长、市场监管部主任、办公厅主任、深交所总经理、理事长、证监会副主席。",
     "education": [
       {
         "degree": "学士",
         "school": "中国人民大学",
-        "major": "财政金融",
+        "major": "财政金融学院",
         "graduationYear": 1991
       },
       {
         "degree": "硕士",
         "school": "中国人民大学",
-        "major": "经济学",
+        "major": "经济学硕士",
         "graduationYear": 1994
       }
     ],
@@ -1164,324 +2097,183 @@ export const OFFICIALS_DATA: Official[] = [
       {
         "id": "wjj-1",
         "unitId": "csrc-fx",
-        "unitName": "证监会发行监管部",
-        "position": "副处长、处长",
-        "rank": "正处级",
+        "unitName": "中国证监会",
+        "department": "发行监管部 / 办公厅",
+        "position": "综合处处长、副主任兼秘书二处处长",
+        "rank": "副厅局级",
         "startYear": 1997,
         "startMonth": 4,
-        "endYear": 2005,
-        "endMonth": 3,
-        "notes": "长期在一线承担股票公开发行核准与材料审核",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+        "endYear": 2012,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "长期从事发行审核流程规范化与重大行政决策文电统筹起草"
       },
       {
         "id": "wjj-2",
-        "unitId": "csrc-yn",
-        "unitName": "云南证监局",
-        "position": "党委委员、副局长",
-        "rank": "副厅局级",
-        "startYear": 2005,
-        "startMonth": 3,
-        "endYear": 2007,
-        "endMonth": 12,
-        "notes": "分管辖区上市公司与证券机构一线合规监管",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "wjj-3",
         "unitId": "csrc-sc1",
-        "unitName": "证监会市场监管部",
-        "position": "副主任（主持工作）、主任",
+        "unitName": "中国证监会",
+        "department": "市场监管部",
+        "position": "主任",
         "rank": "正厅局级",
         "startYear": 2012,
         "startMonth": 4,
-        "endYear": 2015,
-        "endMonth": 3,
-        "notes": "主持全市场交易监测，兼任研究中心主任与北京证券期货研究院院长",
-        "isDerived": false
+        "endYear": 2016,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "负责全国交易市场组织监测，参与2015年股市异常波动期间流动性风险防范"
+      },
+      {
+        "id": "wjj-3",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "department": "高管层 / 理事会",
+        "position": "总经理、党委书记、理事长",
+        "rank": "副部级",
+        "startYear": 2016,
+        "startMonth": 4,
+        "endYear": 2021,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "执掌深交所逾五年，主导开通“深港通”，平稳实施创业板改革并试点注册制"
       },
       {
         "id": "wjj-4",
-        "unitId": "csrc-bgt",
-        "unitName": "证监会办公厅",
-        "position": "主任、党委办公室主任",
-        "rank": "正厅局级",
-        "startYear": 2015,
-        "startMonth": 3,
-        "endYear": 2016,
-        "endMonth": 4,
-        "notes": "统揽会机关行政协调与重大政策起草发布",
-        "isDerived": false
-      },
-      {
-        "id": "wjj-5",
-        "unitId": "csrc-szse",
-        "unitName": "深圳证券交易所",
-        "position": "党委副书记、总经理",
-        "rank": "正厅局级",
-        "startYear": 2016,
-        "startMonth": 4,
-        "endYear": 2020,
-        "endMonth": 3,
-        "notes": "主持深交所日常营运，力推深港通开通与深市多层次股权体系",
-        "isDerived": false
-      },
-      {
-        "id": "wjj-6",
-        "unitId": "csrc-szse",
-        "unitName": "深圳证券交易所",
-        "position": "党委书记、理事长",
-        "rank": "副部级",
-        "startYear": 2020,
-        "startMonth": 3,
-        "endYear": 2021,
-        "endMonth": 10,
-        "notes": "全面主导创业板改革并试点注册制成功落地",
-        "isDerived": false
-      },
-      {
-        "id": "wjj-7",
         "unitId": "csrc-main",
-        "unitName": "中国证监会机关",
+        "unitName": "中国证监会",
+        "department": "领导班子",
         "position": "党委委员、副主席",
         "rank": "副部级",
         "startYear": 2021,
         "startMonth": 10,
         "endYear": 2024,
-        "endMonth": 5,
-        "notes": "分管市场监管、国际交流等多项业务",
-        "isDerived": false
+        "endMonth": 7,
+        "isDerived": false,
+        "notes": "分管市场监管一司、公司债券监管司等，统筹深化股票发行注册制落地"
       }
     ],
-    "avatarUrl": "/avatars/wang-jianjun.svg"
+    "bioSummary": "经济学硕士。历任证监会市场部主任、深交所总经理、深交所理事长，2021年10月至2024年7月任中国证监会副主席，主导推动深港通启动及创业板注册制重大改革落地。"
   },
   {
-    "id": "fan-dazhi",
-    "name": "樊大志",
+    "id": "chen-huaping",
+    "name": "陈华平",
+    "avatarUrl": "/avatars/chen-huaping.svg",
     "gender": "男",
-    "birthYear": 1964,
-    "birthMonth": 9,
-    "nativePlace": "吉林",
+    "birthYear": 1968,
+    "birthMonth": 12,
+    "nativePlace": "江西",
     "currentUnitId": "csrc-main",
-    "currentPosition": "中央纪委国家监委驻证监会纪检监察组组长、党委委员",
+    "currentPosition": "中国证券监督管理委员会党委委员、副主席",
     "currentRank": "副部级",
-    "bioSummary": "经济学博士、高级会计师。曾任华夏银行行长、中国银行纪委书记、驻中行纪检监察组长，2019年4月起担任中央纪委国家监委驻中国证监会纪检监察组组长、中国证监会党委委员。",
     "education": [
       {
         "degree": "学士",
-        "school": "东北财经大学",
-        "major": "财政学",
-        "graduationYear": 1987
-      },
-      {
-        "degree": "博士",
-        "school": "辽宁大学",
-        "major": "经济学",
-        "graduationYear": 2004
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "fdz-1",
-        "unitId": "gov-sh",
-        "unitName": "北京市金融机构 / 华夏银行",
-        "position": "华夏银行党委副书记、行长",
-        "rank": "正厅局级",
-        "startYear": 2007,
-        "startMonth": 3,
-        "endYear": 2016,
-        "endMonth": 11,
-        "notes": "主持华夏银行资产负债与全国网络布局日常经营",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "fdz-2",
-        "unitId": "pbc",
-        "unitName": "中国银行股份有限公司",
-        "position": "纪委书记、驻中行纪检监察组长",
-        "rank": "副部级",
-        "startYear": 2016,
-        "startMonth": 12,
-        "endYear": 2019,
-        "endMonth": 4,
-        "notes": "负责大型国有商业银行纪律审查与金融反腐",
-        "isDerived": false
-      },
-      {
-        "id": "fdz-3",
-        "unitId": "csrc-main",
-        "unitName": "中国证监会机关",
-        "position": "驻证监会纪检监察组组长、党委委员",
-        "rank": "副部级",
-        "startYear": 2019,
-        "startMonth": 4,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "主持驻证监会纪检监察组全面工作，强化资本市场正风肃纪反腐与政治监督",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/fan-dazhi.svg"
-  },
-  {
-    "id": "jiao-jinhong",
-    "name": "焦津洪",
-    "gender": "男",
-    "birthYear": 1963,
-    "birthMonth": 11,
-    "nativePlace": "天津",
-    "currentUnitId": "csrc-main",
-    "currentPosition": "中国证监会原首席律师、法律部原主任",
-    "currentRank": "正厅局级",
-    "bioSummary": "法学博士、对外经贸大学法学院原教授。曾任证监会法律部副主任、行政处罚委主任、深圳证监局局长、首席律师，中国资本市场法治建设的核心奠基人之一。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "北京大学",
-        "major": "法学",
-        "graduationYear": 1984
-      },
-      {
-        "degree": "硕士",
-        "school": "中国人民大学",
-        "major": "民商法",
-        "graduationYear": 1986
-      },
-      {
-        "degree": "博士",
-        "school": "对外经济贸易大学",
-        "major": "国际经济法",
-        "graduationYear": 1998
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "jjh-1",
-        "unitId": "csrc-fl",
-        "unitName": "证监会法律部 / 行政处罚委",
-        "position": "副主任、行政处罚委主任委员",
-        "rank": "正厅局级",
-        "startYear": 2002,
-        "startMonth": 11,
-        "endYear": 2012,
-        "endMonth": 8,
-        "notes": "主持行政处罚听证制度化建设，参与证券法、证券投资基金法重大修订",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "jjh-2",
-        "unitId": "csrc-sz",
-        "unitName": "深圳证监局",
-        "position": "党委书记、局长兼深交所理事",
-        "rank": "正厅局级",
-        "startYear": 2012,
-        "startMonth": 8,
-        "endYear": 2018,
-        "endMonth": 9,
-        "notes": "主管深圳辖区一线监管，严厉查处特区证券欺诈和违规质押",
-        "isDerived": false
-      },
-      {
-        "id": "jjh-3",
-        "unitId": "csrc-fl",
-        "unitName": "证监会法律部",
-        "position": "主任、首席律师",
-        "rank": "正厅局级",
-        "startYear": 2018,
-        "startMonth": 9,
-        "endYear": 2023,
-        "endMonth": 12,
-        "notes": "全面主导新证券法、期货和衍生品法落地与特别代表人诉讼首案构建",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/jiao-jinhong.svg"
-  },
-  {
-    "id": "cheng-hehong",
-    "name": "程合红",
-    "gender": "男",
-    "birthYear": 1967,
-    "birthMonth": 5,
-    "nativePlace": "河南",
-    "currentUnitId": "csrc-fl",
-    "currentPosition": "中国证监会首席律师兼法治司司长",
-    "currentRank": "正厅局级",
-    "bioSummary": "法学博士。曾任中国证监会法律部副主任、主任兼诚信办主任、上海证监局党委书记、局长兼上海稽查局局长，现任中国证监会首席律师兼法治司司长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "郑州大学",
-        "major": "法学",
-        "graduationYear": 1989
-      },
-      {
-        "degree": "博士",
         "school": "中国政法大学",
-        "major": "民商法学",
-        "graduationYear": 1999
+        "major": "法律学学士",
+        "graduationYear": 1990
       }
     ],
     "careerHistory": [
       {
-        "id": "chh-1",
-        "unitId": "csrc-fl",
-        "unitName": "证监会法律部",
-        "position": "副处长、处长、副主任",
-        "rank": "副厅局级",
-        "startYear": 2002,
-        "startMonth": 3,
-        "endYear": 2015,
-        "endMonth": 2,
-        "notes": "长期主持资本市场法律法规体系建设与行政复议审查",
+        "id": "chp-1",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会",
+        "department": "综合业务部 / 机构监管部",
+        "position": "干部、副处长、处长",
+        "rank": "正处级",
+        "startYear": 1994,
+        "startMonth": 7,
+        "endYear": 2011,
+        "endMonth": 8,
         "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+        "sourceNote": "根据中国证监会机构监管部门公开工作记录考证",
+        "notes": "长期参与证券公司审慎监管、合规风控法规与分类评价体系构建"
       },
       {
-        "id": "chh-2",
-        "unitId": "csrc-fl",
-        "unitName": "证监会法律部",
-        "position": "主任兼诚信建设办公室主任",
+        "id": "chp-2",
+        "unitId": "csrc-jc",
+        "unitName": "中国证监会",
+        "department": "稽查总队",
+        "position": "党委副书记、副总队长",
+        "rank": "副厅局级",
+        "startYear": 2011,
+        "startMonth": 8,
+        "endYear": 2014,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "负责全市场证券违法线索核查与重大内幕交易、操纵证券市场案件立案查处"
+      },
+      {
+        "id": "chp-3",
+        "unitId": "csrc-bgt",
+        "unitName": "中国证监会",
+        "department": "办公厅",
+        "position": "巡视员",
         "rank": "正厅局级",
-        "startYear": 2015,
+        "startYear": 2014,
         "startMonth": 2,
-        "endYear": 2020,
-        "endMonth": 6,
-        "notes": "深入起草证券法修订草案，建立全国资本市场诚信档案大数据平台",
-        "isDerived": false
+        "endYear": 2016,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "负责证监会党委重要综合会议议题协调督办与跨部委政务衔接"
       },
       {
-        "id": "chh-3",
-        "unitId": "csrc-sh",
-        "unitName": "上海证监局",
-        "position": "党委书记、局长兼上海稽查局局长",
-        "rank": "正厅局级",
-        "startYear": 2020,
-        "startMonth": 6,
-        "endYear": 2024,
-        "endMonth": 1,
-        "notes": "全面主持上海辖区上市公司、证券期货中介一线监管与大案稽查",
-        "isDerived": false
+        "id": "chp-4",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "department": "监事会",
+        "position": "党委副书记、监事长",
+        "rank": "副厅局级",
+        "startYear": 2016,
+        "startMonth": 2,
+        "endYear": 2019,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "履行一线法定监督职责，健全交易所风控底线与会员内控监督机制"
       },
       {
-        "id": "chh-4",
-        "unitId": "csrc-fl",
-        "unitName": "证监会法治司",
-        "position": "首席律师兼法治司司长",
+        "id": "chp-5",
+        "unitId": "csrc-czce",
+        "unitName": "郑州商品交易所",
+        "department": "党委 / 理事会",
+        "position": "党委书记、理事长",
         "rank": "正厅局级",
-        "startYear": 2024,
-        "startMonth": 1,
+        "startYear": 2019,
+        "startMonth": 10,
+        "endYear": 2021,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "主持郑商所全面工作，推动花生、短纤、PTA期权等系列大宗商品衍生品上市与国际化"
+      },
+      {
+        "id": "chp-6",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "department": "党委 / 理事会",
+        "position": "党委书记、理事长",
+        "rank": "副部级",
+        "startYear": 2021,
+        "startMonth": 12,
+        "endYear": 2023,
+        "endMonth": 9,
+        "isDerived": false,
+        "notes": "主持深交所全面工作，深入推进创业板改革并试点注册制，主导主板与中小板顺利合并"
+      },
+      {
+        "id": "chp-7",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委委员、副主席",
+        "rank": "副部级",
+        "startYear": 2023,
+        "startMonth": 9,
         "endYear": null,
         "isCurrent": true,
-        "notes": "统筹全系统法治建设、行政规章合法性审查及涉外法治保障",
-        "isDerived": false
+        "isDerived": false,
+        "notes": "升任中国证监会副主席，分管稽查局、稽查总队及行政处罚等一线执法重拳板块"
       }
     ],
-    "avatarUrl": "/avatars/cheng-hehong.svg"
+    "bioSummary": "法学学士。长期在证监系统机构监管、稽查执法及核心交易所一线历练，曾任稽查总队副总队长、办公厅巡视员、深交所监事长、郑商所理事长、深交所理事长。2023年9月出任中国证监会副主席、党委委员，全面分管稽查执法与重大证券违规查处体系。"
   },
   {
     "id": "qiu-yong",
@@ -1567,73 +2359,2439 @@ export const OFFICIALS_DATA: Official[] = [
     "avatarUrl": "/avatars/qiu-yong.svg"
   },
   {
-    "id": "cai-jianchun",
-    "name": "蔡建春",
+    "id": "li-chao",
+    "name": "李超",
+    "avatarUrl": "/avatars/li-chao.svg",
     "gender": "男",
-    "birthYear": 1969,
-    "birthMonth": 3,
-    "nativePlace": "江西",
-    "currentUnitId": "csrc-sse",
-    "currentPosition": "上海证券交易所党委副书记、总经理",
+    "birthYear": 1965,
+    "birthMonth": 12,
+    "nativePlace": "河南焦作",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证券监督管理委员会党委委员、副主席",
     "currentRank": "副部级",
-    "bioSummary": "经济学博士。长期在证监会上市部、债券部任职，历任证监会上市公司监管部副主任、公司债券监管部主任，2020年6月出任上海证券交易所党委副书记、总经理。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "清华大学",
+        "major": "汽车工程系工学学士",
+        "graduationYear": 1987
+      },
+      {
+        "degree": "硕士",
+        "school": "清华大学",
+        "major": "经济管理学院工业外贸工学硕士",
+        "graduationYear": 1994
+      },
+      {
+        "degree": "博士",
+        "school": "清华大学",
+        "major": "经济管理学院管理科学与工程博士",
+        "graduationYear": 2004
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "lc-1",
+        "unitId": "csrc-main",
+        "unitName": "中国建设银行",
+        "department": "人事教育部 / 办公室",
+        "position": "干部管理处处长、办公室副主任",
+        "rank": "正处级",
+        "startYear": 1987,
+        "startMonth": 7,
+        "endYear": 2000,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "长期从事专业干部人事管理与总行综合综合协调保障工作"
+      },
+      {
+        "id": "lc-2",
+        "unitId": "csrc-bgt",
+        "unitName": "中国证监会",
+        "department": "办公厅",
+        "position": "副主任",
+        "rank": "副厅局级",
+        "startYear": 2000,
+        "startMonth": 6,
+        "endYear": 2003,
+        "endMonth": 1,
+        "isDerived": false,
+        "notes": "协助主持证监会办公厅日常运转、政务统筹与重要综合文件拟订"
+      },
+      {
+        "id": "lc-3",
+        "unitId": "pbc",
+        "unitName": "中国人民银行",
+        "department": "办公厅",
+        "position": "副主任、主任兼新闻发言人",
+        "rank": "正厅局级",
+        "startYear": 2003,
+        "startMonth": 1,
+        "endYear": 2008,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "负责央行全系统政务综合运转、突发舆情应对与宏观货币政策对外新闻权威发布"
+      },
+      {
+        "id": "lc-4",
+        "unitId": "pbc",
+        "unitName": "国家外汇管理局 / 央行营管部",
+        "department": "局党组 / 营管部党委",
+        "position": "副局长、党组成员兼央行营业管理部主任、党委书记",
+        "rank": "副部级",
+        "startYear": 2008,
+        "startMonth": 12,
+        "endYear": 2015,
+        "endMonth": 9,
+        "isDerived": false,
+        "notes": "统筹国家外汇储备投资运营合规风控，主管首都地区货币信贷投放与外汇属地审慎监管"
+      },
+      {
+        "id": "lc-5",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委委员、副主席",
+        "rank": "副部级",
+        "startYear": 2015,
+        "startMonth": 9,
+        "endYear": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "分管证券基金机构监管司、私募投资基金监管司、信息中心及监管科技数字化工作，强力推进公募REITs常态化发行"
+      }
+    ],
+    "bioSummary": "管理学博士，资深金融监管高官。历任建设银行办公室副主任、中国证监会办公厅副主任、中国人民银行办公厅主任兼新闻发言人、国家外汇管理局副局长。2015年9月出任中国证监会副主席、党委委员，长期分管机构监管、私募股权监管及公募REITs试点工作。"
+  },
+  {
+    "id": "fang-xinghai",
+    "name": "方星海",
+    "avatarUrl": "/avatars/fang-xinghai.svg",
+    "gender": "男",
+    "birthYear": 1964,
+    "birthMonth": 5,
+    "nativePlace": "浙江乐清",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原党委委员、副主席",
+    "currentRank": "副部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "清华大学",
+        "major": "经济管理学院信息系统工学学士",
+        "graduationYear": 1986
+      },
+      {
+        "degree": "硕士",
+        "school": "美国斯坦福大学",
+        "major": "经济学硕士",
+        "graduationYear": 1989
+      },
+      {
+        "degree": "博士",
+        "school": "美国斯坦福大学",
+        "major": "经济学博士",
+        "graduationYear": 1993
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "fxh-1",
+        "unitId": "csrc-main",
+        "unitName": "世界银行总部",
+        "department": "华盛顿总部",
+        "position": "经济学家",
+        "rank": "正处级",
+        "startYear": 1993,
+        "startMonth": 7,
+        "endYear": 1998,
+        "endMonth": 8,
+        "isDerived": false,
+        "notes": "从事发展中国家宏观经济与金融深化课题研究"
+      },
+      {
+        "id": "fxh-2",
+        "unitId": "csrc-main",
+        "unitName": "建设银行 / 银河证券",
+        "department": "高管层",
+        "position": "建行行长助理、银河证券监事会主席",
+        "rank": "正厅局级",
+        "startYear": 1998,
+        "startMonth": 8,
+        "endYear": 2001,
+        "endMonth": 7,
+        "isDerived": false,
+        "notes": "参与中国银河证券重组设立与国有大行商业化运营改革"
+      },
+      {
+        "id": "fxh-3",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "高管层",
+        "position": "党委委员、副总经理",
+        "rank": "正厅局级",
+        "startYear": 2001,
+        "startMonth": 7,
+        "endYear": 2005,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "推动上交所金融衍生品研发、ETF产品线布局与大盘蓝筹股市场建设"
+      },
+      {
+        "id": "fxh-4",
+        "unitId": "gov-sh",
+        "unitName": "上海市金融服务办",
+        "department": "领导班子",
+        "position": "上海市金融工委副书记、金融服务办公室主任",
+        "rank": "正厅局级",
+        "startYear": 2005,
+        "startMonth": 12,
+        "endYear": 2013,
+        "endMonth": 5,
+        "isDerived": false,
+        "notes": "深度主导“上海国际金融中心”建设纲要制定，推动原油期货等国家重大战略平台筹备"
+      },
+      {
+        "id": "fxh-5",
+        "unitId": "csrc-main",
+        "unitName": "中央财办",
+        "department": "经济一组 / 国际经济局",
+        "position": "局长",
+        "rank": "正厅局级",
+        "startYear": 2013,
+        "startMonth": 5,
+        "endYear": 2015,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "参与国家高层宏观经济与重大金融改革决策咨询起草"
+      },
+      {
+        "id": "fxh-6",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委委员、副主席",
+        "rank": "副部级",
+        "startYear": 2015,
+        "startMonth": 10,
+        "endYear": 2024,
+        "endMonth": 7,
+        "isDerived": false,
+        "notes": "出任副主席近九年，长期分管国际部、期货部、会计部，推动A股纳入MSCI、富时罗素等国际指数，落地境内原油、铁矿石期货国际化，开通沪伦通"
+      }
+    ],
+    "bioSummary": "斯坦福大学经济学博士。中国金融界最具国际声誉的学者型官员之一，曾任世界银行经济学家、上交所副总经理、上海金融办主任、中央财办国际经济局局长。2015年10月至2024年7月任中国证监会副主席，全力推进资本市场高水平对外开放与大宗期货衍生品国际化。"
+  },
+  {
+    "id": "fan-dazhi",
+    "name": "樊大志",
+    "avatarUrl": "/avatars/fan-dazhi.svg",
+    "gender": "男",
+    "birthYear": 1964,
+    "birthMonth": 9,
+    "nativePlace": "北京",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中央纪委国家监委驻中国证监会纪检监察组组长、党委委员",
+    "currentRank": "副部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "东北财经大学",
+        "major": "金融系",
+        "graduationYear": 1987
+      },
+      {
+        "degree": "博士",
+        "school": "东北财经大学",
+        "major": "金融学博士",
+        "graduationYear": 2008
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "fdz-1",
+        "unitId": "csrc-main",
+        "unitName": "东北证券 / 北京证券",
+        "department": "高管层",
+        "position": "投资银行部总经理、总监、瑞泰人寿董事长",
+        "rank": "正处级",
+        "startYear": 1987,
+        "startMonth": 7,
+        "endYear": 2004,
+        "endMonth": 4,
+        "isDerived": true,
+        "sourceNote": "根据证券公司高管人员公开任职履历与工商登记考证",
+        "notes": "主持券商投资银行、资金运营及合资金融机构筹备"
+      },
+      {
+        "id": "fdz-2",
+        "unitId": "csrc-main",
+        "unitName": "北京银行",
+        "department": "行领导班子",
+        "position": "党委委员、副行长",
+        "rank": "正厅局级",
+        "startYear": 2004,
+        "startMonth": 4,
+        "endYear": 2007,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "分管信贷审批与风险合规，助力北京银行完成更名改制并成功在上交所主板IPO上市"
+      },
+      {
+        "id": "fdz-3",
+        "unitId": "csrc-main",
+        "unitName": "华夏银行",
+        "department": "总行领导班子",
+        "position": "党委副书记、行长、党委书记、董事长",
+        "rank": "正厅局级",
+        "startYear": 2007,
+        "startMonth": 12,
+        "endYear": 2016,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "全面主持全国性股份制商业银行经营管理与党委工作近十年，深入推动中小企业特色金融战略"
+      },
+      {
+        "id": "fdz-4",
+        "unitId": "csrc-main",
+        "unitName": "中国银行",
+        "department": "总行纪委",
+        "position": "中央纪委驻中国银行纪检组组长",
+        "rank": "副部级",
+        "startYear": 2016,
+        "startMonth": 12,
+        "endYear": 2019,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "负责大型国有商业银行党风廉政建设与反腐败监督执纪"
+      },
+      {
+        "id": "fdz-5",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "纪检监察组 / 党委班子",
+        "position": "中央纪委国家监委驻中国证监会纪检监察组组长、党委委员",
+        "rank": "副部级",
+        "startYear": 2019,
+        "startMonth": 4,
+        "endYear": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "二十届中央纪委委员。深耕资本市场反腐，强力推进“政商旋转门”、“逃逸式辞职”专项整治，深挖发审审核与监管审批领域腐败违纪案件"
+      }
+    ],
+    "bioSummary": "二十届中央纪委委员，经济学博士，高级经济师。资深金融高管与纪检监察官员，曾任北京银行副行长、华夏银行董事长、中央纪委驻中国银行纪检组长。2019年4月出任中央纪委国家监委驻中国证监会纪检监察组组长、证监会党委委员，以铁腕手段推进资本市场全链条反腐与“政商旋转门”治理。"
+  },
+  {
+    "id": "yan-qingmin",
+    "name": "阎庆民",
+    "avatarUrl": "/avatars/yan-qingmin.svg",
+    "gender": "男",
+    "birthYear": 1961,
+    "birthMonth": 5,
+    "nativePlace": "山西天镇",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原党委委员、副主席",
+    "currentRank": "副部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "西南财经大学",
+        "major": "金融系学士",
+        "graduationYear": 1984
+      },
+      {
+        "degree": "博士",
+        "school": "中国人民大学",
+        "major": "经济学博士",
+        "graduationYear": 2002
+      },
+      {
+        "degree": "博士",
+        "school": "清华大学",
+        "major": "管理学博士",
+        "graduationYear": 2005
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "yqm-1",
+        "unitId": "pbc",
+        "unitName": "中国人民银行",
+        "department": "重庆营业管理部",
+        "position": "党委书记、主任兼国家外汇局重庆外汇管理部主任",
+        "rank": "正厅局级",
+        "startYear": 1998,
+        "startMonth": 11,
+        "endYear": 2003,
+        "endMonth": 7,
+        "isDerived": false,
+        "notes": "主管直辖市重庆中央银行货币监管业务与跨区域资金统筹"
+      },
+      {
+        "id": "yqm-2",
+        "unitId": "csrc-main",
+        "unitName": "中国银监会",
+        "department": "银行监管一部 / 党委班子",
+        "position": "主任、主席助理、党委委员、副主席",
+        "rank": "副部级",
+        "startYear": 2003,
+        "startMonth": 7,
+        "endYear": 2014,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "主管四大国有商业银行审慎监管，推动建立大型银行全球系统重要性评估体系"
+      },
+      {
+        "id": "yqm-3",
+        "unitId": "csrc-main",
+        "unitName": "天津市人民政府",
+        "department": "市领导班子",
+        "position": "副市长、党组成员",
+        "rank": "副部级",
+        "startYear": 2014,
+        "startMonth": 12,
+        "endYear": 2017,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "分管天津金融、自贸区建设与海河产业基金运作"
+      },
+      {
+        "id": "yqm-4",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委委员、副主席",
+        "rank": "副部级",
+        "startYear": 2017,
+        "startMonth": 12,
+        "endYear": 2021,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "分管上市公司监管司，推动《国务院关于进一步提高上市公司质量的意见》落地，力推常态化退市机制"
+      }
+    ],
+    "bioSummary": "双博士（经济学博士、管理学博士）。曾任银监会副主席、天津市副市长，2017年12月至2021年12月任中国证监会副主席，主导多项提升上市公司治理质量与化解股票质押风险专项行动。"
+  },
+  {
+    "id": "jiang-yang",
+    "name": "姜洋",
+    "avatarUrl": "/avatars/jiang-yang.svg",
+    "gender": "男",
+    "birthYear": 1956,
+    "birthMonth": 9,
+    "nativePlace": "四川涪陵",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原党委委员、副主席",
+    "currentRank": "副部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "电子科技大学",
+        "major": "工学学士",
+        "graduationYear": 1982
+      },
+      {
+        "degree": "博士",
+        "school": "中国社会科学院研究生院",
+        "major": "经济学博士",
+        "graduationYear": 1999
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "jy-1",
+        "unitId": "pbc",
+        "unitName": "经济日报 / 央行",
+        "department": "办公厅新闻处 / 非银司",
+        "position": "处长、副司长",
+        "rank": "副厅局级",
+        "startYear": 1982,
+        "startMonth": 7,
+        "endYear": 1998,
+        "endMonth": 7,
+        "isDerived": false,
+        "notes": "早期参与非银行金融机构信托证券整顿与金融宏观宣传"
+      },
+      {
+        "id": "jy-2",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会",
+        "department": "机构监管部",
+        "position": "主任",
+        "rank": "正厅局级",
+        "startYear": 1998,
+        "startMonth": 7,
+        "endYear": 2001,
+        "endMonth": 7,
+        "isDerived": false,
+        "notes": "主持全国证券公司日常监管业务规范与资质审查"
+      },
+      {
+        "id": "jy-3",
+        "unitId": "csrc-shfe",
+        "unitName": "上海期货交易所",
+        "department": "党委 / 高管层",
+        "position": "党委书记、总经理",
+        "rank": "正厅局级",
+        "startYear": 2001,
+        "startMonth": 7,
+        "endYear": 2006,
+        "endMonth": 7,
+        "isDerived": false,
+        "notes": "推动上期所铜、铝、天胶等工业品期货发展成为具有国际定价影响力的标杆市场"
+      },
+      {
+        "id": "jy-4",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "主席助理、党委委员、副主席",
+        "rank": "副部级",
+        "startYear": 2006,
+        "startMonth": 7,
+        "endYear": 2018,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "历任主席助理与副主席十二载，主导期货市场五部规章立法，开通原油期货等国际化品种"
+      }
+    ],
+    "bioSummary": "经济学博士。中国期货衍生品市场重要奠基人，曾任证监会机构部主任、上期所总经理，2006年7月起任证监会主席助理，2012年8月至2018年6月任证监会副主席，主导中国期货市场跨越式发展。"
+  },
+  {
+    "id": "zhuang-xinyi",
+    "name": "庄心一",
+    "avatarUrl": "/avatars/zhuang-xinyi.svg",
+    "gender": "男",
+    "birthYear": 1955,
+    "birthMonth": 4,
+    "nativePlace": "上海",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原党委委员、副主席",
+    "currentRank": "副部级",
+    "education": [
+      {
+        "degree": "硕士",
+        "school": "中国社会科学院研究生院",
+        "major": "经济学硕士",
+        "graduationYear": 1989
+      },
+      {
+        "degree": "博士",
+        "school": "中国社会科学院研究生院",
+        "major": "经济学博士",
+        "graduationYear": 1999
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zxy-1",
+        "unitId": "csrc-main",
+        "unitName": "建设银行 / 国务院证券委",
+        "department": "信贷部 / 办公室",
+        "position": "处长、副主任",
+        "rank": "副厅局级",
+        "startYear": 1982,
+        "startMonth": 7,
+        "endYear": 1995,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "参与国家早期证券市场政策拟定与统筹监管协调"
+      },
+      {
+        "id": "zxy-2",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "department": "高管层",
+        "position": "党委副书记、总经理",
+        "rank": "正厅局级",
+        "startYear": 1995,
+        "startMonth": 10,
+        "endYear": 1997,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "主持深交所日常运作与技术升级，应对特大市场行情波动"
+      },
+      {
+        "id": "zxy-3",
+        "unitId": "gov-sh",
+        "unitName": "深圳市人民政府",
+        "department": "市政府领导班子",
+        "position": "副市长、党组成员",
+        "rank": "正厅局级",
+        "startYear": 1997,
+        "startMonth": 10,
+        "endYear": 2002,
+        "endMonth": 7,
+        "isDerived": false,
+        "notes": "分管深圳市金融、国资等工作，推动高新技术成果交易会创立"
+      },
+      {
+        "id": "zxy-4",
+        "unitId": "csrc-sac",
+        "unitName": "中国证券业协会",
+        "department": "协会领导",
+        "position": "党委书记、会长",
+        "rank": "正厅局级",
+        "startYear": 2002,
+        "startMonth": 7,
+        "endYear": 2005,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "主持中证协全面工作，开启证券行业合规文化与自律框架设计"
+      },
+      {
+        "id": "zxy-5",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委委员、副主席",
+        "rank": "副部级",
+        "startYear": 2005,
+        "startMonth": 2,
+        "endYear": 2015,
+        "endMonth": 8,
+        "isDerived": false,
+        "notes": "副主席任期长达十年，主抓全行业券商综合治理，化解30余家券商流动性穿透风险，重塑券商合规合账体制"
+      }
+    ],
+    "bioSummary": "经济学博士。中国证券监管史核心操盘手，曾任深交所总经理、深圳市副市长、中证协会长。2005年至2015年任中国证监会副主席，以极其坚韧的魄力主持全行业证券公司综合治理并大获全胜。"
+  },
+  {
+    "id": "gui-minjie",
+    "name": "桂敏杰",
+    "avatarUrl": "/avatars/gui-minjie.svg",
+    "gender": "男",
+    "birthYear": 1953,
+    "birthMonth": 12,
+    "nativePlace": "吉林吉林",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原党委副书记、副主席，上交所原理事长",
+    "currentRank": "副部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "中国政法大学",
+        "major": "法律系",
+        "graduationYear": 1982
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "gmj-1",
+        "unitId": "csrc-main",
+        "unitName": "国务院法制局 / 证监会办公厅",
+        "department": "财金法规司 / 办公室",
+        "position": "副司长、办公室主任",
+        "rank": "正厅局级",
+        "startYear": 1982,
+        "startMonth": 7,
+        "endYear": 1998,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "中国证券法制化核心起草人之一"
+      },
+      {
+        "id": "gmj-2",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "department": "党委 / 高管层",
+        "position": "党委书记、总经理",
+        "rank": "正厅局级",
+        "startYear": 1998,
+        "startMonth": 4,
+        "endYear": 2001,
+        "endMonth": 5,
+        "isDerived": false,
+        "notes": "主持深交所日常经营，平稳推进交易结算系统升级"
+      },
+      {
+        "id": "gmj-3",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "主席助理、副主席、党委副书记",
+        "rank": "副部级",
+        "startYear": 2001,
+        "startMonth": 5,
+        "endYear": 2012,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "担任副主席十年，长期分管发行部、市场部、基金部等核心板块，协助推进股权分置改革"
+      },
+      {
+        "id": "gmj-4",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "党委 / 理事会",
+        "position": "党委书记、理事长",
+        "rank": "副部级",
+        "startYear": 2012,
+        "startMonth": 4,
+        "endYear": 2016,
+        "endMonth": 5,
+        "isDerived": false,
+        "notes": "出任上交所理事长，主导推出“沪港通”和股票期权交易试点"
+      }
+    ],
+    "bioSummary": "中国资本市场法制建设拓荒者之一，曾任国务院法制局财金司副司长、深交所总经理、中国证监会党委副书记、常务副主席，上交所理事长，亲历并主导了股权分置改革、沪港通及股票期权落地。"
+  },
+  {
+    "id": "gao-xiqing",
+    "name": "高西庆",
+    "avatarUrl": "/avatars/gao-xiqing.svg",
+    "gender": "男",
+    "birthYear": 1953,
+    "birthMonth": 9,
+    "nativePlace": "陕西西安",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原副主席，中投公司原总经理",
+    "currentRank": "副部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "对外经济贸易大学",
+        "major": "外贸英语学士",
+        "graduationYear": 1978
+      },
+      {
+        "degree": "硕士",
+        "school": "对外经济贸易大学",
+        "major": "国际经济法硕士",
+        "graduationYear": 1981
+      },
+      {
+        "degree": "博士",
+        "school": "美国杜克大学法学院",
+        "major": "法学博士（J.D.）",
+        "graduationYear": 1986
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "gxq-1",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会初创期",
+        "department": "首任首席律师 / 发行部",
+        "position": "首席律师兼发行监管部主任",
+        "rank": "正厅局级",
+        "startYear": 1992,
+        "startMonth": 10,
+        "endYear": 1995,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "作为“股票市场九人联称建议”发起起草人之一，起草中国证监会初代章程与发行监管审核规则"
+      },
+      {
+        "id": "gxq-2",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "副主席、党委委员",
+        "rank": "副部级",
+        "startYear": 1999,
+        "startMonth": 7,
+        "endYear": 2002,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "分管市场监管与对外开放，积极引进外资战略投资者与推行国际化信息披露准则"
+      },
+      {
+        "id": "gxq-3",
+        "unitId": "csrc-main",
+        "unitName": "全国社保基金理事会",
+        "department": "党组 / 会领导",
+        "position": "副理事长、党组成员",
+        "rank": "副部级",
+        "startYear": 2003,
+        "startMonth": 1,
+        "endYear": 2007,
+        "endMonth": 9,
+        "isDerived": false,
+        "notes": "主导全国社保基金海外投资与境内股权直投合规风控体系搭建"
+      },
+      {
+        "id": "gxq-4",
+        "unitId": "csrc-main",
+        "unitName": "中国投资有限责任公司",
+        "department": "执委会 / 领导班子",
+        "position": "党委副书记、副董事长、总经理兼首席投资官",
+        "rank": "副部级",
+        "startYear": 2007,
+        "startMonth": 9,
+        "endYear": 2014,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "作为中国主权财富基金中投公司首任总经理，开拓并建立世界级主权基金全球多资产配置体系"
+      }
+    ],
+    "bioSummary": "杜克大学法学博士（J.D.）。新中国首批获美国纽约州律师执业资格学者，中国资本市场核心创建者之一。曾任证监会首任首席律师、发行部主任、证监会副主席、中投公司首任总经理兼首席投资官。"
+  },
+  {
+    "id": "zhou-xiaochuan",
+    "name": "周小川",
+    "avatarUrl": "/avatars/zhou-xiaochuan.svg",
+    "gender": "男",
+    "birthYear": 1948,
+    "birthMonth": 1,
+    "nativePlace": "江苏宜兴",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原党委书记、主席，央行原行长",
+    "currentRank": "副部级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "北京化工学院",
+        "major": "化学工程系",
+        "graduationYear": 1975
+      },
+      {
+        "degree": "博士",
+        "school": "清华大学",
+        "major": "自动化系系统工程工学博士",
+        "graduationYear": 1985
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zxc-1",
+        "unitId": "csrc-main",
+        "unitName": "外经贸部 / 中国银行 / 外汇局",
+        "department": "领导班子",
+        "position": "外经贸部部长助理、中行副行长、外汇局局长、央行副行长、建行行长",
+        "rank": "副部级",
+        "startYear": 1986,
+        "startMonth": 11,
+        "endYear": 2000,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "主持外汇体制重大改革、人民币经常项目可兑换及国有大型商业银行商业化重组"
+      },
+      {
+        "id": "zxc-2",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "领导班子",
+        "position": "党委书记、主席",
+        "rank": "正部级",
+        "startYear": 2000,
+        "startMonth": 2,
+        "endYear": 2002,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "出任第四任证监会主席，引入现代国际监管机制，果断推行股票发行核准制取代行政审批制、建立上市公司退市机制、引入合格境外机构投资者（QFII）"
+      },
+      {
+        "id": "zxc-3",
+        "unitId": "pbc",
+        "unitName": "中国人民银行",
+        "department": "行党委 / 领导班子",
+        "position": "行长、党委书记（十二届全国政协副主席）",
+        "rank": "副部级",
+        "startYear": 2002,
+        "startMonth": 12,
+        "endYear": 2018,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "执掌中国中央银行十六载，主导利率市场化、汇率形成机制改革、人民币加入国际货币基金组织SDR货币篮子"
+      }
+    ],
+    "bioSummary": "清华大学工学博士。全球享有崇高声望的改革家与央行行长。2000年2月至2002年12月任中国证监会主席，推行股票发行核准制、上市公司退市机制并开创性引入QFII制度，奠定中国现代资本市场制度基石。"
+  },
+  {
+    "id": "lu-dabiao",
+    "name": "卢大彪",
+    "gender": "男",
+    "birthYear": 1977,
+    "birthMonth": 3,
+    "nativePlace": "江西修水",
+    "currentUnitId": "csrc-csdata",
+    "currentPosition": "中证数据有限责任公司党委书记、董事长、总经理",
+    "currentRank": "正厅局级",
+    "bioSummary": "西方经济学博士，学者型监管官员。历任证监会市场部处长、公司债券部副巡视员、副主任、上交所副总经理，2022年出任中证数据董事长兼总经理。",
+    "education": [
+      {
+        "degree": "硕士",
+        "school": "华中科技大学",
+        "major": "数量经济学",
+        "graduationYear": 2000
+      },
+      {
+        "degree": "博士",
+        "school": "中国社会科学院研究生院",
+        "major": "西方经济学",
+        "graduationYear": 2003
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "ldb-1",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "市场监管部 / 公司债券监管部",
+        "position": "处长、副巡视员、副主任",
+        "rank": "副厅局级",
+        "startYear": 2006,
+        "startMonth": 4,
+        "endYear": 2021,
+        "endMonth": 1,
+        "isDerived": true,
+        "sourceNote": "根据公司债券市场监管发言、学术论文发表及政策吹风会报道推导",
+        "notes": "负责公司债券监管与制度建设，推进民企债券融资支持工具与资产证券化试点"
+      },
+      {
+        "id": "ldb-2",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "总经理室",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2021,
+        "startMonth": 1,
+        "endYear": 2022,
+        "endMonth": 9,
+        "isDerived": false,
+        "notes": "分管债券业务、基础设施公募REITs试点推进及科创板相关业务"
+      },
+      {
+        "id": "ldb-3",
+        "unitId": "csrc-csdata",
+        "unitName": "中证数据有限责任公司",
+        "department": "领导班子",
+        "position": "党委书记、董事长、总经理",
+        "rank": "正厅局级",
+        "startYear": 2022,
+        "startMonth": 9,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "主持中证数据全面工作，推进资本市场监管大数据中心建设与穿透式监管科技底座运行"
+      }
+    ],
+    "avatarUrl": "/avatars/lu-dabiao.svg"
+  },
+  {
+    "id": "peng-ming",
+    "name": "彭明",
+    "gender": "男",
+    "birthYear": 1976,
+    "birthMonth": 10,
+    "nativePlace": "江西泰和",
+    "currentUnitId": "csrc-sz",
+    "currentPosition": "深圳证监局党委书记、局长兼深圳稽查局局长",
+    "currentRank": "正厅局级",
+    "bioSummary": "工商管理硕士研究生。深交所历练二十余年，曾任深交所市场监察部总监、办公室主任、党委委员、副总经理，2024年1月调任深圳证监局局长兼深圳稽查局局长。",
     "education": [
       {
         "degree": "学士",
         "school": "南昌大学",
         "major": "经济学",
-        "graduationYear": 1991
+        "graduationYear": 1998
+      },
+      {
+        "degree": "硕士",
+        "school": "厦门大学",
+        "major": "工商管理 (MBA)",
+        "graduationYear": 2005
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "pm-1",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "市场监察部总监、办公室主任",
+        "rank": "正处级",
+        "startYear": 2000,
+        "startMonth": 10,
+        "endYear": 2017,
+        "endMonth": 9,
+        "notes": "主持深市交易实时监控预警模型开发与跨市场联防联控",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "pm-2",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2017,
+        "startMonth": 9,
+        "endYear": 2024,
+        "endMonth": 1,
+        "notes": "分管债券市场、固定收益及金融科技数字化底座",
+        "isDerived": false
+      },
+      {
+        "id": "pm-3",
+        "unitId": "csrc-sz",
+        "unitName": "深圳证监局",
+        "position": "党委书记、局长兼深圳稽查局局长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "startMonth": 1,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "全面主持深圳特区上市公司与头部法人金融机构一线属地监管",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/peng-ming.svg"
+  },
+  {
+    "id": "zhang-wangjun",
+    "name": "张望军",
+    "gender": "男",
+    "birthYear": 1975,
+    "birthMonth": 8,
+    "nativePlace": "山东",
+    "currentUnitId": "csrc-bgt",
+    "currentPosition": "中国证监会办公厅主任兼新闻发言人",
+    "currentRank": "正厅局级",
+    "bioSummary": "中国人民大学经济学博士。历任证监会办公厅、市场部处长、中证金融研究院党委书记兼院长、市场监管一司司长，现任中国证监会办公厅主任兼新闻发言人。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "中国人民大学",
+        "major": "经济学",
+        "graduationYear": 1997
+      },
+      {
+        "degree": "博士",
+        "school": "中国人民大学劳动人事学院",
+        "major": "经济学",
+        "graduationYear": 2004
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zwj-1",
+        "unitId": "csrc-bgt",
+        "unitName": "证监会办公厅 / 市场监管部",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 2004,
+        "startMonth": 6,
+        "endYear": 2015,
+        "endMonth": 4,
+        "notes": "参与起草资本市场战略改革方案及重大文电起草",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "zwj-2",
+        "unitId": "csrc-cfr",
+        "unitName": "中证金融研究院",
+        "position": "党委书记、院长",
+        "rank": "正厅局级",
+        "startYear": 2015,
+        "startMonth": 4,
+        "endYear": 2019,
+        "endMonth": 10,
+        "notes": "领导国家级资本市场智库建设，承担宏观金融审慎决策咨询",
+        "isDerived": false
+      },
+      {
+        "id": "zwj-3",
+        "unitId": "csrc-sc1",
+        "unitName": "证监会市场监管一司",
+        "position": "司长",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "startMonth": 10,
+        "endYear": 2024,
+        "endMonth": 6,
+        "notes": "主持交易所交易组织监测，规范程序化交易与量化高频交易规则体系",
+        "isDerived": false
+      },
+      {
+        "id": "zwj-4",
+        "unitId": "csrc-bgt",
+        "unitName": "证监会办公厅",
+        "position": "主任兼新闻发言人",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "startMonth": 6,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "主持证监会办公厅日常运转、政务公开与资本市场新闻发布权威发声",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/zhang-wangjun.svg"
+  },
+  {
+    "id": "zhou-xiaozhou",
+    "name": "周小舟",
+    "avatarUrl": "/avatars/zhou-xiaozhou.svg",
+    "gender": "男",
+    "birthYear": 1974,
+    "birthMonth": 6,
+    "nativePlace": "四川",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会综合业务司司长",
+    "currentRank": "正厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "西南财经大学",
+        "major": "经济学学士",
+        "graduationYear": 1996
+      },
+      {
+        "degree": "博士",
+        "school": "北京大学光华管理学院",
+        "major": "管理学博士",
+        "graduationYear": 2004
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zxz-1",
+        "unitId": "csrc-fx",
+        "unitName": "中国证监会",
+        "department": "发行监管部",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 2004,
+        "startMonth": 7,
+        "endYear": 2016,
+        "endMonth": 5,
+        "isDerived": false,
+        "notes": "参与股票再融资与重大资产重组审核规则拟订"
+      },
+      {
+        "id": "zxz-2",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "公司债券监管部 / 公司债券监管司",
+        "position": "副主任、主任、司长",
+        "rank": "正厅局级",
+        "startYear": 2016,
+        "startMonth": 5,
+        "endYear": 2023,
+        "endMonth": 11,
+        "isDerived": false,
+        "notes": "主持全国交易所债券市场与基础设施REITs常态化制度设计，推进企业信用债券统一标准"
+      },
+      {
+        "id": "zxz-3",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "综合业务司",
+        "position": "司长",
+        "rank": "正厅局级",
+        "startYear": 2023,
+        "startMonth": 11,
+        "endYear": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "统管证监会全系统宏观政策综合协调、资本市场重大顶层设计落地与金融“五篇大文章”推进"
+      }
+    ],
+    "bioSummary": "北京大学光华管理学院管理学博士。曾任证监会公司债券监管部主任，现任中国证监会综合业务司司长，长期负责资本市场重大战略顶层政策规划与公募REITs常态化机制推进。"
+  },
+  {
+    "id": "sui-qiang",
+    "name": "隋强",
+    "gender": "男",
+    "birthYear": 1974,
+    "birthMonth": 10,
+    "nativePlace": "辽宁大连",
+    "currentUnitId": "csrc-bse",
+    "currentPosition": "北京证券交易所副董事长、总经理",
+    "currentRank": "正厅局级",
+    "bioSummary": "经济学博士。历任证监会办公厅、市场监管部处长、全国股转公司总经理助理、副总经理，现任全国股转公司党委副书记、副董事长、总经理，北交所副董事长、总经理。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "东北财经大学",
+        "major": "金融学",
+        "graduationYear": 1996
+      },
+      {
+        "degree": "硕士",
+        "school": "东北财经大学",
+        "major": "经济学",
+        "graduationYear": 1999
       },
       {
         "degree": "博士",
         "school": "财政部财政科学研究所",
         "major": "财政学",
+        "graduationYear": 2004
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "sq-1",
+        "unitId": "csrc-sc1",
+        "unitName": "证监会市场监管部 / 办公厅",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 2003,
+        "startMonth": 4,
+        "endYear": 2013,
+        "endMonth": 1,
+        "notes": "参与起草非上市公众公司监管办法及多层次资本市场制度",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "sq-2",
+        "unitId": "csrc-bse",
+        "unitName": "全国股转公司",
+        "position": "总经理助理、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2013,
+        "startMonth": 1,
+        "endYear": 2020,
+        "endMonth": 11,
+        "notes": "主导全国股转新三板精选层筹备与制度设计",
+        "isDerived": false
+      },
+      {
+        "id": "sq-3",
+        "unitId": "csrc-bse",
+        "unitName": "北京证券交易所",
+        "position": "党委副书记、副董事长、总经理",
+        "rank": "正厅局级",
+        "startYear": 2020,
+        "startMonth": 11,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "主持北交所与全国股转公司日常运营，优化中小企业快速审核机制",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/sui-qiang.svg"
+  },
+  {
+    "id": "xing-xiangfei",
+    "name": "邢向飞",
+    "gender": "男",
+    "birthYear": 1972,
+    "birthMonth": 8,
+    "nativePlace": "河南",
+    "currentUnitId": "csrc-gfex",
+    "currentPosition": "广州期货交易所党委副书记、总经理",
+    "currentRank": "正厅局级",
+    "bioSummary": "经济学硕士。曾任郑州商品交易所副总经理、中国期货市场监控中心党委负责人，2025年11月出任广州期货交易所总经理。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "河南大学",
+        "major": "经济学",
+        "graduationYear": 1994
+      },
+      {
+        "degree": "硕士",
+        "school": "西安交通大学",
+        "major": "金融学",
+        "graduationYear": 2001
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "xxf-1",
+        "unitId": "csrc-czce",
+        "unitName": "郑州商品交易所",
+        "position": "副总经理",
+        "rank": "副厅局级",
+        "startYear": 2008,
+        "startMonth": 5,
+        "endYear": 2018,
+        "endMonth": 10,
+        "notes": "负责郑商所交易组织与品种开发创新",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "xxf-2",
+        "unitId": "csrc-cfmmc",
+        "unitName": "中国期货市场监控中心",
+        "position": "党委负责人",
+        "rank": "正厅局级",
+        "startYear": 2018,
+        "startMonth": 10,
+        "endYear": 2025,
+        "endMonth": 11,
+        "notes": "主持监控中心工作，筑牢全国期货市场保证金安全防线",
+        "isDerived": false
+      },
+      {
+        "id": "xxf-3",
+        "unitId": "csrc-gfex",
+        "unitName": "广州期货交易所",
+        "position": "党委副书记、总经理",
+        "rank": "正厅局级",
+        "startYear": 2025,
+        "startMonth": 11,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "主持广期所日常营运与新能源产业链风险管理生态建设",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/xing-xiangfei.svg"
+  },
+  {
+    "id": "guo-ruiming",
+    "name": "郭瑞明",
+    "gender": "男",
+    "birthYear": 1972,
+    "birthMonth": 8,
+    "nativePlace": "河北",
+    "currentUnitId": "csrc-ss",
+    "currentPosition": "中国证监会上市公司监管司司长",
+    "currentRank": "正厅局级",
+    "bioSummary": "管理学硕士。长期主持上市公司日常监管与制度建设，历任证监会上市公司监管部副主任、主任，现任上市公司监管司司长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "北京大学",
+        "major": "经济学",
+        "graduationYear": 1994
+      },
+      {
+        "degree": "硕士",
+        "school": "清华大学经济管理学院",
+        "major": "工商管理",
+        "graduationYear": 2001
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "grm-1",
+        "unitId": "csrc-ss",
+        "unitName": "证监会上市公司监管部",
+        "position": "监管处长、副主任",
+        "rank": "副厅局级",
+        "startYear": 2005,
+        "startMonth": 7,
+        "endYear": 2018,
+        "endMonth": 9,
+        "notes": "负责沪深上市公司财务报告披露持续监管",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "grm-2",
+        "unitId": "csrc-ss",
+        "unitName": "证监会上市公司监管司",
+        "position": "司长",
+        "rank": "正厅局级",
+        "startYear": 2018,
+        "startMonth": 9,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "主导精准出清退市制度、强制现金分红规则与打击资金占用违规担保",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/guo-ruiming.svg"
+  },
+  {
+    "id": "wu-xiaoyong",
+    "name": "吴孝勇",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 9,
+    "nativePlace": "湖北",
+    "currentUnitId": "csrc-csf",
+    "currentPosition": "中国证券金融股份有限公司党委副书记、总经理",
+    "currentRank": "正厅局级",
+    "bioSummary": "曾任中国证监会机构监管部处长，深度参与中证金融筹备设立与转融通制度构建，现任中证金融总经理、副董事长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "武汉大学",
+        "major": "经济学",
+        "graduationYear": 1993
+      },
+      {
+        "degree": "硕士",
+        "school": "中国人民大学",
+        "major": "财政金融",
+        "graduationYear": 1996
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "wxy-1",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "机构监管部",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 2002,
+        "startMonth": 3,
+        "endYear": 2011,
+        "endMonth": 10,
+        "isDerived": true,
+        "sourceNote": "根据证券公司融资融券业务试点审批及监管规章公开报道反推",
+        "notes": "主管证券公司业务创新与融资融券试点业务规范"
+      },
+      {
+        "id": "wxy-2",
+        "unitId": "csrc-csf",
+        "unitName": "中国证券金融股份有限公司",
+        "department": "筹备组 / 领导班子",
+        "position": "筹备组成员、党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2011,
+        "startMonth": 10,
+        "endYear": 2020,
+        "endMonth": 8,
+        "isDerived": true,
+        "sourceNote": "根据中证金融设立筹备历程及金融标准化成果推导",
+        "notes": "主导设计转融通业务系统流程并牵头多项资本市场国家与行业数据标准制定"
+      },
+      {
+        "id": "wxy-3",
+        "unitId": "csrc-csf",
+        "unitName": "中国证券金融股份有限公司",
+        "department": "经营管理层",
+        "position": "党委副书记、副董事长、总经理",
+        "rank": "正厅局级",
+        "startYear": 2020,
+        "startMonth": 8,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "主持中证金融日常经营管理，主导证券金融大数据统计分析平台开发建设"
+      }
+    ],
+    "avatarUrl": "/avatars/wu-xiaoyong.svg"
+  },
+  {
+    "id": "zhou-guihua",
+    "name": "周贵华",
+    "gender": "男",
+    "birthYear": 1970,
+    "birthMonth": 10,
+    "nativePlace": "四川",
+    "currentUnitId": "csrc-bse",
+    "currentPosition": "北京证券交易所董事长、全国股转公司董事长",
+    "currentRank": "正厅局级",
+    "bioSummary": "工学硕士。曾任中国证监会办公厅副主任、非上市公众公司监管部副主任、主任、综合业务司司长，2022年5月出任北交所、全国股转公司党委书记、董事长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "华中科技大学",
+        "major": "工程学",
+        "graduationYear": 1992
+      },
+      {
+        "degree": "硕士",
+        "school": "中国科学院大学",
+        "major": "工学",
+        "graduationYear": 1995
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zgh-1",
+        "unitId": "csrc-bgt",
+        "unitName": "证监会办公厅",
+        "position": "副处长、处长、副主任",
+        "rank": "副厅局级",
+        "startYear": 2002,
+        "startMonth": 3,
+        "endYear": 2014,
+        "endMonth": 6,
+        "notes": "协调会机关综合处务运转与新闻发布会组织",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "zgh-2",
+        "unitId": "csrc-sc2",
+        "unitName": "证监会非上市公众公司监管部",
+        "position": "副主任、主任",
+        "rank": "正厅局级",
+        "startYear": 2014,
+        "startMonth": 6,
+        "endYear": 2022,
+        "endMonth": 5,
+        "notes": "主导非上市公众公司监管制度框架起草，全程主导北京证券交易所设立方案制定",
+        "isDerived": false
+      },
+      {
+        "id": "zgh-3",
+        "unitId": "csrc-bse",
+        "unitName": "北京证券交易所",
+        "position": "党委书记、董事长",
+        "rank": "正厅局级",
+        "startYear": 2022,
+        "startMonth": 5,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "全面主导北交所高质量建设，推出“北证50”成份指数与做市交易机制",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/zhou-guihua.svg"
+  },
+  {
+    "id": "tang-libin",
+    "name": "唐理斌",
+    "gender": "男",
+    "birthYear": 1970,
+    "birthMonth": 10,
+    "nativePlace": "四川",
+    "currentUnitId": "csrc-js",
+    "currentPosition": "江苏证监局党委书记、局长",
+    "currentRank": "正厅局级",
+    "bioSummary": "经济学硕士。历任安徽证监局副局长、山东证监局副局长、江西证监局局长、四川证监局局长兼成都稽查局局长，2024年8月调任江苏证监局局长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "西南财经大学",
+        "major": "金融学",
+        "graduationYear": 1992
+      },
+      {
+        "degree": "硕士",
+        "school": "西南财经大学",
+        "major": "经济学",
+        "graduationYear": 1998
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "tlb-1",
+        "unitId": "csrc-main",
+        "unitName": "安徽证监局 / 山东证监局",
+        "position": "副局长、党委委员",
+        "rank": "副厅局级",
+        "startYear": 2004,
+        "startMonth": 3,
+        "endYear": 2016,
+        "endMonth": 5,
+        "notes": "分管地方上市公司与证券分支机构一线检查",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "tlb-2",
+        "unitId": "csrc-main",
+        "unitName": "江西证监局",
+        "position": "党委书记、局长",
+        "rank": "正厅局级",
+        "startYear": 2016,
+        "startMonth": 5,
+        "endYear": 2020,
+        "endMonth": 7,
+        "notes": "主持江西辖区证券期货日常监督与防范金融风险",
+        "isDerived": false
+      },
+      {
+        "id": "tlb-3",
+        "unitId": "csrc-sc",
+        "unitName": "四川证监局",
+        "position": "党委书记、局长兼成都稽查局局长",
+        "rank": "正厅局级",
+        "startYear": 2020,
+        "startMonth": 7,
+        "endYear": 2024,
+        "endMonth": 8,
+        "notes": "主持成渝双城经济圈核心省份一线监管与稽查大案办理",
+        "isDerived": false
+      },
+      {
+        "id": "tlb-4",
+        "unitId": "csrc-js",
+        "unitName": "江苏证监局",
+        "position": "党委书记、局长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "startMonth": 8,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "全面主政全国上市公司第二大省江苏资本市场稳健发展与合规治理",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/tang-libin.svg"
+  },
+  {
+    "id": "yao-qian",
+    "name": "姚前",
+    "avatarUrl": "/avatars/yao-qian.svg",
+    "gender": "男",
+    "birthYear": 1970,
+    "birthMonth": 1,
+    "nativePlace": "安徽",
+    "currentUnitId": "csrc-kj",
+    "currentPosition": "中国证监会科技监管司原司长、信息中心原主任",
+    "currentRank": "正厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "南京大学",
+        "major": "计算机科学系",
+        "graduationYear": 1992
+      },
+      {
+        "degree": "博士",
+        "school": "南京大学",
+        "major": "信息管理系工学博士",
+        "graduationYear": 2004
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "yq-1",
+        "unitId": "csrc-csdc",
+        "unitName": "中国证监会 / 中国结算",
+        "department": "信息中心 / 技术开发部",
+        "position": "高级工程师、技术总监",
+        "rank": "副厅局级",
+        "startYear": 1997,
+        "startMonth": 7,
+        "endYear": 2010,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "参与早期全市场证券统一登记结算系统与信息中心数据库建设"
+      },
+      {
+        "id": "yq-2",
+        "unitId": "pbc",
+        "unitName": "中国人民银行",
+        "department": "科技司 / 数字货币研究所",
+        "position": "副司长、首任所长",
+        "rank": "正厅局级",
+        "startYear": 2010,
+        "startMonth": 12,
+        "endYear": 2018,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "领导创建央行数字货币研究所，主导中国法定数字货币（e-CNY）顶层原型设计与区块链前瞻研究"
+      },
+      {
+        "id": "yq-3",
+        "unitId": "csrc-csdc",
+        "unitName": "中国证券登记结算有限责任公司",
+        "department": "领导班子",
+        "position": "党委副书记、总经理",
+        "rank": "正厅局级",
+        "startYear": 2018,
+        "startMonth": 10,
+        "endYear": 2019,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "主持中国结算日常运行与结算备付金制度优化"
+      },
+      {
+        "id": "yq-4",
+        "unitId": "csrc-kj",
+        "unitName": "中国证监会",
+        "department": "科技监管局 / 科技监管司",
+        "position": "局长、司长兼信息中心主任",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "startMonth": 12,
+        "endYear": 2024,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "主导全系统监管科技三年规划。2024年4月因涉嫌严重违纪违法接受审查调查，2024年11月被依法双开"
+      }
+    ],
+    "bioSummary": "南京大学工学博士。曾任中国人民银行数字货币研究所首任所长、中国结算总经理、证监会科技监管司司长兼信息中心主任。在央行法定数字货币技术研究方面颇具知名度，2024年因严重违纪违法被双开。"
+  },
+  {
+    "id": "xiong-jun",
+    "name": "熊军",
+    "gender": "男",
+    "birthYear": 1970,
+    "birthMonth": 5,
+    "nativePlace": "湖北",
+    "currentUnitId": "csrc-dce",
+    "currentPosition": "大连商品交易所党委书记、理事长",
+    "currentRank": "正厅局级",
+    "bioSummary": "经济学博士。长期从事期货一线监管与现代期货交易所运营管理，历任云南证监局副局长、证监会期货部副主任、郑商所总经理、郑商所理事长，2025年11月出任大连商品交易所党委书记、理事长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "武汉大学",
+        "major": "经济学",
+        "graduationYear": 1992
+      },
+      {
+        "degree": "硕士",
+        "school": "中南财经政法大学",
+        "major": "金融学",
+        "graduationYear": 1995
+      },
+      {
+        "degree": "博士",
+        "school": "中国人民大学",
+        "major": "经济学",
+        "graduationYear": 2003
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "xj-1",
+        "unitId": "csrc-yn",
+        "unitName": "云南证监局",
+        "position": "党委委员、副局长",
+        "rank": "副厅局级",
+        "startYear": 2002,
+        "startMonth": 4,
+        "endYear": 2011,
+        "endMonth": 8,
+        "notes": "分管云南辖区期货机构与大宗金属企业一线合规监管",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "xj-2",
+        "unitId": "csrc-qh",
+        "unitName": "证监会期货监管二部 / 期货部",
+        "position": "副主任",
+        "rank": "副厅局级",
+        "startYear": 2011,
+        "startMonth": 8,
+        "endYear": 2016,
+        "endMonth": 6,
+        "notes": "负责农产品商品期货监管、规则拟订与异常价格预警研判",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "xj-3",
+        "unitId": "csrc-czce",
+        "unitName": "郑州商品交易所",
+        "position": "党委副书记、总经理",
+        "rank": "正厅局级",
+        "startYear": 2016,
+        "startMonth": 6,
+        "endYear": 2019,
+        "endMonth": 11,
+        "notes": "主持郑商所日常经营，推出苹果期货、PTA期货引入境外交易者",
+        "isDerived": false
+      },
+      {
+        "id": "xj-4",
+        "unitId": "csrc-czce",
+        "unitName": "郑州商品交易所",
+        "position": "党委书记、理事长",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "startMonth": 11,
+        "endYear": 2025,
+        "endMonth": 11,
+        "notes": "领导郑商所党委与理事会，全面提升实体产业参与期货深度",
+        "isDerived": false
+      },
+      {
+        "id": "xj-5",
+        "unitId": "csrc-dce",
+        "unitName": "大连商品交易所",
+        "position": "党委书记、理事长",
+        "rank": "正厅局级",
+        "startYear": 2025,
+        "startMonth": 11,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "主持大商所全面工作，推动全球重要农产品与黑色衍生品定价枢纽建设",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/xiong-jun.svg"
+  },
+  {
+    "id": "shen-bing",
+    "name": "申兵",
+    "gender": "男",
+    "birthYear": 1970,
+    "birthMonth": 7,
+    "nativePlace": "北京",
+    "currentUnitId": "csrc-gj",
+    "currentPosition": "中国证监会国际合作司司长",
+    "currentRank": "正厅局级",
+    "bioSummary": "经济学硕士。历任证监会国际合作部处长、副主任、主任、证券基金机构监管司司长，2025年8月调任国际合作司司长，统筹境内企业境外上市与跨境监管协作。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "对外经济贸易大学",
+        "major": "国际贸易",
+        "graduationYear": 1992
+      },
+      {
+        "degree": "硕士",
+        "school": "中国人民大学",
+        "major": "金融学",
+        "graduationYear": 1999
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "sb-1",
+        "unitId": "csrc-gj",
+        "unitName": "证监会国际合作部",
+        "position": "处长、副主任、主任",
+        "rank": "正厅局级",
+        "startYear": 2003,
+        "startMonth": 4,
+        "endYear": 2018,
+        "endMonth": 8,
+        "notes": "主持沪港通、深港通开通跨境联合监管协议签署与双向开放",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "sb-2",
+        "unitId": "csrc-jg",
+        "unitName": "证监会证券基金机构监管司",
+        "position": "司长",
+        "rank": "正厅局级",
+        "startYear": 2018,
+        "startMonth": 8,
+        "endYear": 2025,
+        "endMonth": 8,
+        "notes": "推动合资券商外资股比限制全面取消，外资独资公募基金落地展业",
+        "isDerived": false
+      },
+      {
+        "id": "sb-3",
+        "unitId": "csrc-gj",
+        "unitName": "证监会国际合作司",
+        "position": "司长",
+        "rank": "正厅局级",
+        "startYear": 2025,
+        "startMonth": 8,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "深化高水平制度型对外开放，优化中资企业赴美赴港上市常态化备案",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/shen-bing.svg"
+  },
+  {
+    "id": "gao-weibing",
+    "name": "高卫兵",
+    "gender": "男",
+    "birthYear": 1970,
+    "birthMonth": 4,
+    "nativePlace": "吉林",
+    "currentUnitId": "csrc-gfex",
+    "currentPosition": "广州期货交易所党委书记、董事长",
+    "currentRank": "正厅局级",
+    "bioSummary": "经济学硕士。长期担任中国证监会人事教育部主任、党委组织部部长、一级巡视员，多次代表证监会党委宣读系统重要任免。2023年11月出任广州期货交易所党委书记、董事长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "吉林大学",
+        "major": "国际金融",
+        "graduationYear": 1992
+      },
+      {
+        "degree": "硕士",
+        "school": "吉林大学",
+        "major": "经济学",
+        "graduationYear": 1995
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "gwb-1",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "人事教育部（党委组织部）",
+        "position": "处长、副主任、主任（党委组织部部长、一级巡视员）",
+        "rank": "正厅局级",
+        "startYear": 2012,
+        "startMonth": 6,
+        "endYear": 2023,
+        "endMonth": 11,
+        "isDerived": true,
+        "sourceNote": "根据2013-2023年系统重要干部大会宣读任免报道及组织任职动态推导",
+        "notes": "主持证监会干部人事与组织工作，多次代表证监会党委赴各大交易所和会管单位宣布干部任免决定"
+      },
+      {
+        "id": "gwb-2",
+        "unitId": "csrc-gfex",
+        "unitName": "广州期货交易所",
+        "department": "领导班子",
+        "position": "党委书记、董事长",
+        "rank": "正厅局级",
+        "startYear": 2023,
+        "startMonth": 11,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "2023年11月接替胡政出任广期所第二任党委书记、董事长，主导推进新能源金属期货品种体系建设"
+      }
+    ],
+    "avatarUrl": "/avatars/gao-weibing.svg"
+  },
+  {
+    "id": "yan-bojin",
+    "name": "严伯进",
+    "avatarUrl": "/avatars/yan-bojin.svg",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 9,
+    "nativePlace": "浙江",
+    "currentUnitId": "csrc-fx",
+    "currentPosition": "中国证监会首席风险官兼发行监管司司长",
+    "currentRank": "正厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "复旦大学",
+        "major": "经济学学士",
+        "graduationYear": 1991
+      },
+      {
+        "degree": "博士",
+        "school": "复旦大学",
+        "major": "经济学博士",
         "graduationYear": 2002
       }
     ],
     "careerHistory": [
       {
-        "id": "cjc-1",
-        "unitId": "csrc-ss",
-        "unitName": "证监会上市公司监管部",
-        "position": "副处长、处长、副主任",
+        "id": "ybj-1",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海监管局",
+        "department": "局领导班子",
+        "position": "党委委员、副局长",
+        "rank": "副厅局级",
+        "startYear": 2005,
+        "startMonth": 6,
+        "endYear": 2012,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "分管上海辖区上市公司监管与拟上市公司辅导验收"
+      },
+      {
+        "id": "ybj-2",
+        "unitId": "csrc-ah",
+        "unitName": "中国证监会安徽监管局",
+        "department": "局领导班子",
+        "position": "党委书记、局长",
+        "rank": "正厅局级",
+        "startYear": 2012,
+        "startMonth": 4,
+        "endYear": 2014,
+        "endMonth": 9,
+        "isDerived": false,
+        "notes": "全面主持安徽辖区资本市场一线监管与风险处置"
+      },
+      {
+        "id": "ybj-3",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海监管局",
+        "department": "局领导班子",
+        "position": "党委书记、局长兼上海稽查局局长",
+        "rank": "正厅局级",
+        "startYear": 2014,
+        "startMonth": 9,
+        "endYear": 2020,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "主政上海证监局近六年，深度参与并全力保障设立科创板并试点注册制在上海顺利起航"
+      },
+      {
+        "id": "ybj-4",
+        "unitId": "csrc-fx",
+        "unitName": "中国证监会",
+        "department": "发行监管司（原发行部）",
+        "position": "发行部主任、首席风险官兼发行监管司司长",
+        "rank": "正厅局级",
+        "startYear": 2020,
+        "startMonth": 6,
+        "endYear": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "出任全市场发行审核总把关人，主导推进全面股票发行注册制审核，严把IPO准入关，强化现场检查与发行逆周期调节"
+      }
+    ],
+    "bioSummary": "复旦大学经济学博士。历任上海证监局副局长、安徽证监局局长、上海证监局局长（2014-2020）。2020年6月调任证监会发行部主任，现任中国证监会首席风险官兼发行监管司司长，全面掌管全市场股票发行注册把关。"
+  },
+  {
+    "id": "he-qingwen",
+    "name": "何庆文",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 11,
+    "nativePlace": "湖南",
+    "currentUnitId": "csrc-cffex",
+    "currentPosition": "中国金融期货交易所党委书记、董事长",
+    "currentRank": "正厅局级",
+    "bioSummary": "长期在证券监管系统工作，历任河南证监局副局长兼纪委书记、湖北证监局纪委书记、江西证监局党委书记兼局长。2021年6月起任中国金融期货交易所党委书记、董事长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "湖南大学",
+        "major": "经济学",
+        "graduationYear": 1991
+      },
+      {
+        "degree": "博士",
+        "school": "中国社科院研究生院",
+        "major": "金融学",
+        "graduationYear": 2001
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "hqw-1",
+        "unitId": "csrc-df",
+        "unitName": "地方证监局",
+        "department": "河南监管局 / 湖北监管局",
+        "position": "党委委员、副局长兼纪委书记",
         "rank": "副厅局级",
         "startYear": 2004,
         "startMonth": 5,
+        "endYear": 2016,
+        "endMonth": 8,
+        "isDerived": true,
+        "sourceNote": "根据地方监管局公开工作动态与纪检监察报道推导任职跨度",
+        "notes": "长期在地方派出机构负责党风廉政建设与一线市场监管"
+      },
+      {
+        "id": "hqw-2",
+        "unitId": "csrc-df",
+        "unitName": "地方证监局",
+        "department": "江西监管局",
+        "position": "党委书记、局长",
+        "rank": "正厅局级",
+        "startYear": 2016,
+        "startMonth": 8,
+        "endYear": 2021,
+        "endMonth": 6,
+        "isDerived": true,
+        "sourceNote": "根据江西证监局政务公开信息及地方调研新闻推导",
+        "notes": "主持江西证监局全面工作，推动辖区多层次资本市场发展与风险防控"
+      },
+      {
+        "id": "hqw-3",
+        "unitId": "csrc-cffex",
+        "unitName": "中国金融期货交易所",
+        "department": "领导班子",
+        "position": "党委书记、董事长",
+        "rank": "正厅局级",
+        "startYear": 2021,
+        "startMonth": 6,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "2021年6月起任中金所党委书记、董事长，推动30年期国债期货、上证50与中证1000股指期权平稳上市运行"
+      }
+    ],
+    "avatarUrl": "/avatars/he-qingwen.svg"
+  },
+  {
+    "id": "he-yanchun",
+    "name": "何艳春",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 2,
+    "nativePlace": "四川",
+    "currentUnitId": "csrc-amac",
+    "currentPosition": "中国证券投资基金业协会党委书记、会长",
+    "currentRank": "正厅局级",
+    "bioSummary": "法学学士。历任证监会法律部处长、稽查局副局长、行政处罚委办公室主任，2020年6月起执掌中国证券投资基金业协会，领导全国公私募基金行业自律管理。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "华东政法大学",
+        "major": "法学",
+        "graduationYear": 1991
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "hyc-1",
+        "unitId": "csrc-fl",
+        "unitName": "证监会法律部",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 2002,
+        "startMonth": 5,
         "endYear": 2015,
         "endMonth": 8,
-        "notes": "起草上市公司重大资产重组、收购管理办法等核心规则",
+        "notes": "负责证券期货行政处罚法律适用审查",
         "isDerived": true,
         "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
-        "id": "cjc-2",
-        "unitId": "csrc-main",
-        "unitName": "证监会公司债券监管部",
-        "position": "主任",
+        "id": "hyc-2",
+        "unitId": "csrc-jc",
+        "unitName": "证监会稽查局 / 处罚委",
+        "position": "副局长、行政处罚委办主任",
         "rank": "正厅局级",
         "startYear": 2015,
         "startMonth": 8,
         "endYear": 2020,
         "endMonth": 6,
-        "notes": "统一公司债发行审核规则，推出创新创业债、绿色债等多元工具",
+        "notes": "查处数十起资本市场重大违法大要案",
         "isDerived": false
       },
       {
-        "id": "cjc-3",
-        "unitId": "csrc-sse",
-        "unitName": "上海证券交易所",
-        "position": "党委副书记、总经理",
-        "rank": "副部级",
+        "id": "hyc-3",
+        "unitId": "csrc-amac",
+        "unitName": "中国证券投资基金业协会",
+        "position": "党委书记、会长",
+        "rank": "正厅局级",
         "startYear": 2020,
         "startMonth": 6,
         "endYear": null,
         "isCurrent": true,
-        "notes": "主持上交所日常运营，主导基础设施公募REITs常态化发行与科创板做市交易机制",
+        "notes": "全面主持中基协工作，出台私募基金登记备案新规，扶优限劣",
         "isDerived": false
       }
     ],
-    "avatarUrl": "/avatars/cai-jianchun.svg"
+    "avatarUrl": "/avatars/he-yanchun.svg"
+  },
+  {
+    "id": "ran-hua",
+    "name": "冉华",
+    "avatarUrl": "/avatars/ran-hua.svg",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 12,
+    "nativePlace": "四川酉阳",
+    "currentUnitId": "csrc-bj",
+    "currentPosition": "中国证监会北京监管局党委书记、局长",
+    "currentRank": "正厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "西南大学",
+        "major": "经济学学士",
+        "graduationYear": 1992
+      },
+      {
+        "degree": "博士",
+        "school": "中国社会科学院研究生院",
+        "major": "金融学博士",
+        "graduationYear": 2004
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "rh-1",
+        "unitId": "csrc-qh",
+        "unitName": "中国证监会",
+        "department": "人事教育部 / 期货监管部",
+        "position": "干部、副处长、处长、副主任",
+        "rank": "副厅局级",
+        "startYear": 1997,
+        "startMonth": 7,
+        "endYear": 2011,
+        "endMonth": 8,
+        "isDerived": false,
+        "notes": "长期从事期货交易所日常监管与期货经纪机构合规风控规章制定"
+      },
+      {
+        "id": "rh-2",
+        "unitId": "csrc-cfmmc",
+        "unitName": "中国期货保证金监控中心",
+        "department": "高管层",
+        "position": "党委书记、总经理",
+        "rank": "正厅局级",
+        "startYear": 2011,
+        "startMonth": 8,
+        "endYear": 2014,
+        "endMonth": 5,
+        "isDerived": false,
+        "notes": "全面主持期货投资者保证金安全监控，搭建穿透式实时监测系统"
+      },
+      {
+        "id": "rh-3",
+        "unitId": "csrc-qh",
+        "unitName": "中国证监会",
+        "department": "期货监管部",
+        "position": "主任",
+        "rank": "正厅局级",
+        "startYear": 2014,
+        "startMonth": 5,
+        "endYear": 2017,
+        "endMonth": 7,
+        "isDerived": false,
+        "notes": "主持全国期货市场监管全面工作，严密防范商品期货大幅异动风险"
+      },
+      {
+        "id": "rh-4",
+        "unitId": "csrc-main",
+        "unitName": "南京市人民政府",
+        "department": "市政府领导班子",
+        "position": "副市长、党组成员",
+        "rank": "正厅局级",
+        "startYear": 2017,
+        "startMonth": 7,
+        "endYear": 2020,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "分管南京金融监管、国资国企及战略性新兴产业投融资"
+      },
+      {
+        "id": "rh-5",
+        "unitId": "csrc-dce",
+        "unitName": "大连商品交易所",
+        "department": "党委 / 理事会",
+        "position": "党委书记、理事长",
+        "rank": "正厅局级",
+        "startYear": 2020,
+        "startMonth": 6,
+        "endYear": 2024,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "执掌大商所逾四年，主导生猪期货等关键大宗衍生品上市，大幅提升大豆铁矿石国际定价影响力"
+      },
+      {
+        "id": "rh-6",
+        "unitId": "csrc-bj",
+        "unitName": "中国证监会北京监管局",
+        "department": "局领导班子",
+        "position": "党委书记、局长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "startMonth": 12,
+        "endYear": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "接棒主持首都北京辖区证券期货市场、海量上市公司与头部券商基金的一线属地全面监管工作"
+      }
+    ],
+    "bioSummary": "金融学博士，土家族。资深专家型金融监管官员，历任证监会期货部主任、中国期货保证金监控中心总经理、南京市副市长、大连商品交易所理事长。2024年底出任北京证监局党委书记、局长，全面主持首都资本市场一线监管与风险防控。"
+  },
+  {
+    "id": "kong-qingwen",
+    "name": "孔庆文",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 8,
+    "nativePlace": "山东",
+    "currentUnitId": "csrc-csdc",
+    "currentPosition": "中国证券登记结算有限责任公司党委副书记、总经理",
+    "currentRank": "正厅局级",
+    "bioSummary": "曾参与中国证券金融公司筹备设立并任副总经理，后任中国结算副总经理，2020年出任中国证券登记结算公司党委副书记、总经理、副董事长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "上海财经大学",
+        "major": "统计学",
+        "graduationYear": 1991
+      },
+      {
+        "degree": "硕士",
+        "school": "复旦大学",
+        "major": "经济学",
+        "graduationYear": 1998
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "kqw-1",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "证券金融公司筹备组",
+        "position": "筹备组成员、处长",
+        "rank": "正处级",
+        "startYear": 2010,
+        "startMonth": 4,
+        "endYear": 2012,
+        "endMonth": 3,
+        "isDerived": true,
+        "sourceNote": "根据中证金融筹备设立历史及干部履历公开资料推导",
+        "notes": "参与中国证券金融股份有限公司筹备方案设计与转融通制度构建"
+      },
+      {
+        "id": "kqw-2",
+        "unitId": "csrc-csf",
+        "unitName": "中国证券金融股份有限公司",
+        "department": "领导班子",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2012,
+        "startMonth": 3,
+        "endYear": 2017,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "分管转融通业务运行、券商两融监测与资金运营"
+      },
+      {
+        "id": "kqw-3",
+        "unitId": "csrc-csdc",
+        "unitName": "中国证券登记结算公司",
+        "department": "领导班子",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2017,
+        "startMonth": 6,
+        "endYear": 2020,
+        "endMonth": 11,
+        "isDerived": false,
+        "notes": "分管核心登记结算技术系统架构升级与多层次账户体系建设"
+      },
+      {
+        "id": "kqw-4",
+        "unitId": "csrc-csdc",
+        "unitName": "中国证券登记结算公司",
+        "department": "领导班子",
+        "position": "党委副书记、总经理、副董事长",
+        "rank": "正厅局级",
+        "startYear": 2020,
+        "startMonth": 11,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "主持中国结算日常经营管理，推进ETF互联互通结算与存托凭证互联互通"
+      }
+    ],
+    "avatarUrl": "/avatars/kong-qingwen.svg"
+  },
+  {
+    "id": "zhu-lihong",
+    "name": "朱丽红",
+    "gender": "女",
+    "birthYear": 1969,
+    "birthMonth": 3,
+    "nativePlace": "辽宁",
+    "currentUnitId": "csrc-czce",
+    "currentPosition": "郑州商品交易所党委书记、理事长",
+    "currentRank": "正厅局级",
+    "bioSummary": "经济学硕士。深耕期货市场二十余载，历任大连商品交易所副总经理、广州期货交易所副董事长兼总经理，2025年11月调任郑州商品交易所党委书记、理事长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "辽宁大学",
+        "major": "经济学",
+        "graduationYear": 1991
+      },
+      {
+        "degree": "硕士",
+        "school": "吉林大学",
+        "major": "经济学",
+        "graduationYear": 1997
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zlh-1",
+        "unitId": "csrc-dce",
+        "unitName": "大连商品交易所",
+        "position": "副总经理",
+        "rank": "副厅局级",
+        "startYear": 2005,
+        "startMonth": 8,
+        "endYear": 2020,
+        "endMonth": 11,
+        "notes": "主导“保险+期货”金融支农创新模式发源与全国推广",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "zlh-2",
+        "unitId": "csrc-gfex",
+        "unitName": "广州期货交易所",
+        "position": "党委副书记、副董事长、总经理",
+        "rank": "正厅局级",
+        "startYear": 2020,
+        "startMonth": 11,
+        "endYear": 2025,
+        "endMonth": 11,
+        "notes": "主持广期所初创运营，成功开创工业硅与碳酸锂新能源绿色期货",
+        "isDerived": false
+      },
+      {
+        "id": "zlh-3",
+        "unitId": "csrc-czce",
+        "unitName": "郑州商品交易所",
+        "position": "党委书记、理事长",
+        "rank": "正厅局级",
+        "startYear": 2025,
+        "startMonth": 11,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "主持郑商所全面工作，深化大宗粮棉原料期货功能发挥与服务国家粮食安全",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/zhu-lihong.svg"
+  },
+  {
+    "id": "li-zhibin",
+    "name": "李至斌",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 8,
+    "nativePlace": "湖南",
+    "currentUnitId": "csrc-qh",
+    "currentPosition": "中国证监会期货监管司司长",
+    "currentRank": "正厅局级",
+    "bioSummary": "法学硕士。历任中国证监会打击非法证券期货活动局局长、深圳证监局党委书记兼局长、深圳稽查局局长，2024年1月出任期货监管司司长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "西南政法大学",
+        "major": "法学",
+        "graduationYear": 1991
+      },
+      {
+        "degree": "硕士",
+        "school": "北京大学",
+        "major": "法律硕士",
+        "graduationYear": 2002
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "lzb-1",
+        "unitId": "csrc-main",
+        "unitName": "证监会打击非法证券期货活动局",
+        "position": "副局长、局长",
+        "rank": "正厅局级",
+        "startYear": 2005,
+        "startMonth": 7,
+        "endYear": 2018,
+        "endMonth": 6,
+        "notes": "牵头全国清理整顿各类交易场所部际联席会议办公室日常工作",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "lzb-2",
+        "unitId": "csrc-sz",
+        "unitName": "深圳证监局",
+        "position": "党委书记、局长兼深圳稽查局局长",
+        "rank": "正厅局级",
+        "startYear": 2018,
+        "startMonth": 6,
+        "endYear": 2024,
+        "endMonth": 1,
+        "notes": "全面领导深圳特区上市公司与经营机构属地监管与一线查办",
+        "isDerived": false
+      },
+      {
+        "id": "lzb-3",
+        "unitId": "csrc-qh",
+        "unitName": "证监会期货监管司",
+        "position": "司长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "startMonth": 1,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "统揽全国商品与金融期货市场监管，严控大宗商品过度投机与市场操纵",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/li-zhibin.svg"
   },
   {
     "id": "huo-ruirong",
@@ -1744,482 +4902,6 @@ export const OFFICIALS_DATA: Official[] = [
     "avatarUrl": "/avatars/huo-ruirong.svg"
   },
   {
-    "id": "sha-yan",
-    "name": "沙雁",
-    "gender": "女",
-    "birthYear": 1972,
-    "birthMonth": 9,
-    "nativePlace": "黑龙江齐齐哈尔",
-    "currentUnitId": "csrc-szse",
-    "currentPosition": "深圳证券交易所党委书记、理事长",
-    "currentRank": "副部级",
-    "bioSummary": "管理学博士。历任证监会上市公司监管部处长、副主任、机构监管部主任、深交所总经理，2023年12月晋升为深交所党委书记、理事长（副部级）。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "陕西财经学院（现西安交通大学）",
-        "major": "会计学",
-        "graduationYear": 1993
-      },
-      {
-        "degree": "博士",
-        "school": "西安交通大学",
-        "major": "管理科学与工程",
-        "graduationYear": 2003
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "sy-1",
-        "unitId": "csrc-ss",
-        "unitName": "证监会上市公司监管部",
-        "position": "副处长、处长",
-        "rank": "正处级",
-        "startYear": 2000,
-        "startMonth": 11,
-        "endYear": 2013,
-        "endMonth": 5,
-        "notes": "主持上市公司信息披露准则细化与财务核查",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "sy-2",
-        "unitId": "csrc-ss",
-        "unitName": "证监会上市公司监管部",
-        "position": "副主任",
-        "rank": "副厅局级",
-        "startYear": 2013,
-        "startMonth": 5,
-        "endYear": 2017,
-        "endMonth": 4,
-        "notes": "分管上市公司并购重组与重大风险案件研判",
-        "isDerived": false
-      },
-      {
-        "id": "sy-3",
-        "unitId": "csrc-jg",
-        "unitName": "证监会证券基金机构监管部",
-        "position": "主任",
-        "rank": "正厅局级",
-        "startYear": 2017,
-        "startMonth": 4,
-        "endYear": 2020,
-        "endMonth": 6,
-        "notes": "统领全国券商基金法人机构监管，全面推行合规风控全覆盖体系",
-        "isDerived": false
-      },
-      {
-        "id": "sy-4",
-        "unitId": "csrc-szse",
-        "unitName": "深圳证券交易所",
-        "position": "党委副书记、总经理",
-        "rank": "副部级",
-        "startYear": 2020,
-        "startMonth": 6,
-        "endYear": 2023,
-        "endMonth": 12,
-        "notes": "主持深交所日常营运，稳步落地创业板注册制与两板合并重大改革",
-        "isDerived": false
-      },
-      {
-        "id": "sy-5",
-        "unitId": "csrc-szse",
-        "unitName": "深圳证券交易所",
-        "position": "党委书记、理事长",
-        "rank": "副部级",
-        "startYear": 2023,
-        "startMonth": 12,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "全面主持深交所党委与理事会工作，着力打造国际领先创新资本形成中心",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/sha-yan.svg"
-  },
-  {
-    "id": "li-jizun",
-    "name": "李继尊",
-    "gender": "男",
-    "birthYear": 1974,
-    "birthMonth": 9,
-    "nativePlace": "山东莒南",
-    "currentUnitId": "csrc-szse",
-    "currentPosition": "深圳证券交易所党委副书记、总经理",
-    "currentRank": "副部级",
-    "bioSummary": "工学学士、管理学硕士。历任国务院研究室宏观司副司长、证监会研究中心主任、中证金融研究院院长、市场一部主任兼全面深改办主任、市场一司司长，2024年4月出任深交所总经理。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "山东大学",
-        "major": "工学",
-        "graduationYear": 1996
-      },
-      {
-        "degree": "硕士",
-        "school": "清华大学",
-        "major": "管理科学与工程",
-        "graduationYear": 2002
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "ljz-1",
-        "unitId": "csrc-main",
-        "unitName": "国务院研究室 / 证监会",
-        "position": "副司长、研究中心主任",
-        "rank": "正厅局级",
-        "startYear": 2005,
-        "startMonth": 8,
-        "endYear": 2016,
-        "endMonth": 12,
-        "notes": "参与中央经济政策草拟与资本市场战略前瞻性研究",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "ljz-2",
-        "unitId": "csrc-cfr",
-        "unitName": "中证金融研究院",
-        "position": "党委书记、院长",
-        "rank": "正厅局级",
-        "startYear": 2016,
-        "startMonth": 12,
-        "endYear": 2019,
-        "endMonth": 3,
-        "notes": "统领证监会核心高端智库科研与金融宏观政策储备",
-        "isDerived": false
-      },
-      {
-        "id": "ljz-3",
-        "unitId": "csrc-sc1",
-        "unitName": "证监会市场监管一部",
-        "position": "主任兼全面深化资本市场改革办公室主任",
-        "rank": "正厅局级",
-        "startYear": 2019,
-        "startMonth": 3,
-        "endYear": 2022,
-        "endMonth": 1,
-        "notes": "统筹协调全面深化资本市场改革12条任务实施与总体施工方案",
-        "isDerived": false
-      },
-      {
-        "id": "ljz-4",
-        "unitId": "csrc-sc1",
-        "unitName": "证监会市场监管一司",
-        "position": "司长",
-        "rank": "正厅局级",
-        "startYear": 2022,
-        "startMonth": 1,
-        "endYear": 2024,
-        "endMonth": 4,
-        "notes": "统揽全市场交易机制建设与异常交易穿透式监控防范",
-        "isDerived": false
-      },
-      {
-        "id": "ljz-5",
-        "unitId": "csrc-szse",
-        "unitName": "深圳证券交易所",
-        "position": "党委副书记、总经理",
-        "rank": "副部级",
-        "startYear": 2024,
-        "startMonth": 4,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "主持深交所日常经营，推动科技创新企业高水平直接融资与市场稳健运行",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/li-jizun.svg"
-  },
-  {
-    "id": "peng-ming",
-    "name": "彭明",
-    "gender": "男",
-    "birthYear": 1976,
-    "birthMonth": 10,
-    "nativePlace": "江西泰和",
-    "currentUnitId": "csrc-sz",
-    "currentPosition": "深圳证监局党委书记、局长兼深圳稽查局局长",
-    "currentRank": "正厅局级",
-    "bioSummary": "工商管理硕士研究生。深交所历练二十余年，曾任深交所市场监察部总监、办公室主任、党委委员、副总经理，2024年1月调任深圳证监局局长兼深圳稽查局局长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "南昌大学",
-        "major": "经济学",
-        "graduationYear": 1998
-      },
-      {
-        "degree": "硕士",
-        "school": "厦门大学",
-        "major": "工商管理 (MBA)",
-        "graduationYear": 2005
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "pm-1",
-        "unitId": "csrc-szse",
-        "unitName": "深圳证券交易所",
-        "position": "市场监察部总监、办公室主任",
-        "rank": "正处级",
-        "startYear": 2000,
-        "startMonth": 10,
-        "endYear": 2017,
-        "endMonth": 9,
-        "notes": "主持深市交易实时监控预警模型开发与跨市场联防联控",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "pm-2",
-        "unitId": "csrc-szse",
-        "unitName": "深圳证券交易所",
-        "position": "党委委员、副总经理",
-        "rank": "副厅局级",
-        "startYear": 2017,
-        "startMonth": 9,
-        "endYear": 2024,
-        "endMonth": 1,
-        "notes": "分管债券市场、固定收益及金融科技数字化底座",
-        "isDerived": false
-      },
-      {
-        "id": "pm-3",
-        "unitId": "csrc-sz",
-        "unitName": "深圳证监局",
-        "position": "党委书记、局长兼深圳稽查局局长",
-        "rank": "正厅局级",
-        "startYear": 2024,
-        "startMonth": 1,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "全面主持深圳特区上市公司与头部法人金融机构一线属地监管",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/peng-ming.svg"
-  },
-  {
-    "id": "zhou-guihua",
-    "name": "周贵华",
-    "gender": "男",
-    "birthYear": 1970,
-    "birthMonth": 10,
-    "nativePlace": "四川",
-    "currentUnitId": "csrc-bse",
-    "currentPosition": "北京证券交易所董事长、全国股转公司董事长",
-    "currentRank": "正厅局级",
-    "bioSummary": "工学硕士。曾任中国证监会办公厅副主任、非上市公众公司监管部副主任、主任、综合业务司司长，2022年5月出任北交所、全国股转公司党委书记、董事长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "华中科技大学",
-        "major": "工程学",
-        "graduationYear": 1992
-      },
-      {
-        "degree": "硕士",
-        "school": "中国科学院大学",
-        "major": "工学",
-        "graduationYear": 1995
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "zgh-1",
-        "unitId": "csrc-bgt",
-        "unitName": "证监会办公厅",
-        "position": "副处长、处长、副主任",
-        "rank": "副厅局级",
-        "startYear": 2002,
-        "startMonth": 3,
-        "endYear": 2014,
-        "endMonth": 6,
-        "notes": "协调会机关综合处务运转与新闻发布会组织",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "zgh-2",
-        "unitId": "csrc-sc2",
-        "unitName": "证监会非上市公众公司监管部",
-        "position": "副主任、主任",
-        "rank": "正厅局级",
-        "startYear": 2014,
-        "startMonth": 6,
-        "endYear": 2022,
-        "endMonth": 5,
-        "notes": "主导非上市公众公司监管制度框架起草，全程主导北京证券交易所设立方案制定",
-        "isDerived": false
-      },
-      {
-        "id": "zgh-3",
-        "unitId": "csrc-bse",
-        "unitName": "北京证券交易所",
-        "position": "党委书记、董事长",
-        "rank": "正厅局级",
-        "startYear": 2022,
-        "startMonth": 5,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "全面主导北交所高质量建设，推出“北证50”成份指数与做市交易机制",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/zhou-guihua.svg"
-  },
-  {
-    "id": "sui-qiang",
-    "name": "隋强",
-    "gender": "男",
-    "birthYear": 1974,
-    "birthMonth": 10,
-    "nativePlace": "辽宁大连",
-    "currentUnitId": "csrc-bse",
-    "currentPosition": "北京证券交易所副董事长、总经理",
-    "currentRank": "正厅局级",
-    "bioSummary": "经济学博士。历任证监会办公厅、市场监管部处长、全国股转公司总经理助理、副总经理，现任全国股转公司党委副书记、副董事长、总经理，北交所副董事长、总经理。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "东北财经大学",
-        "major": "金融学",
-        "graduationYear": 1996
-      },
-      {
-        "degree": "硕士",
-        "school": "东北财经大学",
-        "major": "经济学",
-        "graduationYear": 1999
-      },
-      {
-        "degree": "博士",
-        "school": "财政部财政科学研究所",
-        "major": "财政学",
-        "graduationYear": 2004
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "sq-1",
-        "unitId": "csrc-sc1",
-        "unitName": "证监会市场监管部 / 办公厅",
-        "position": "副处长、处长",
-        "rank": "正处级",
-        "startYear": 2003,
-        "startMonth": 4,
-        "endYear": 2013,
-        "endMonth": 1,
-        "notes": "参与起草非上市公众公司监管办法及多层次资本市场制度",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "sq-2",
-        "unitId": "csrc-bse",
-        "unitName": "全国股转公司",
-        "position": "总经理助理、副总经理",
-        "rank": "副厅局级",
-        "startYear": 2013,
-        "startMonth": 1,
-        "endYear": 2020,
-        "endMonth": 11,
-        "notes": "主导全国股转新三板精选层筹备与制度设计",
-        "isDerived": false
-      },
-      {
-        "id": "sq-3",
-        "unitId": "csrc-bse",
-        "unitName": "北京证券交易所",
-        "position": "党委副书记、副董事长、总经理",
-        "rank": "正厅局级",
-        "startYear": 2020,
-        "startMonth": 11,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "主持北交所与全国股转公司日常运营，优化中小企业快速审核机制",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/sui-qiang.svg"
-  },
-  {
-    "id": "tian-xiangyang",
-    "name": "田向阳",
-    "gender": "男",
-    "birthYear": 1968,
-    "birthMonth": 10,
-    "nativePlace": "陕西",
-    "currentUnitId": "csrc-shfe",
-    "currentPosition": "上海期货交易所党委书记、理事长",
-    "currentRank": "正厅局级",
-    "bioSummary": "曾任中国证监会研究中心从事宏观经济政策研究，后任宁波证监局等职。2019年任浙江证监局局长，2022年4月出任上海期货交易所党委书记、理事长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "西北工业大学",
-        "major": "材料学",
-        "graduationYear": 1990
-      },
-      {
-        "degree": "硕士",
-        "school": "西北工业大学",
-        "major": "工学",
-        "graduationYear": 1993
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "txy-1",
-        "unitId": "csrc-jg",
-        "unitName": "中国证监会机关",
-        "department": "研究中心 / 地方派出机构",
-        "position": "研究员、处长、宁波局副局长等",
-        "rank": "副厅局级",
-        "startYear": 2003,
-        "startMonth": 7,
-        "endYear": 2019,
-        "endMonth": 5,
-        "isDerived": true,
-        "sourceNote": "根据宏观经济与资本市场研究成果发表及派出机构新闻推导",
-        "notes": "深耕宏观经济与资本市场中长期改革理论研究"
-      },
-      {
-        "id": "txy-2",
-        "unitId": "csrc-df",
-        "unitName": "地方证监局",
-        "department": "浙江监管局",
-        "position": "党委书记、局长兼杭州特派办主任",
-        "rank": "正厅局级",
-        "startYear": 2019,
-        "startMonth": 5,
-        "endYear": 2022,
-        "endMonth": 4,
-        "isDerived": false,
-        "notes": "主持浙江证监局全面工作，推动'凤凰行动'升级与上市公司高质量发展"
-      },
-      {
-        "id": "txy-3",
-        "unitId": "csrc-shfe",
-        "unitName": "上海期货交易所",
-        "department": "理事会",
-        "position": "党委书记、理事长",
-        "rank": "正厅局级",
-        "startYear": 2022,
-        "startMonth": 4,
-        "endYear": null,
-        "endMonth": null,
-        "isCurrent": true,
-        "isDerived": false,
-        "notes": "2022年4月出任上期所党委书记、理事长，推进大宗商品'全仓登'建设与高水平对外开放"
-      }
-    ],
-    "avatarUrl": "/avatars/tian-xiangyang.svg"
-  },
-  {
     "id": "lu-dongsheng",
     "name": "鲁东升",
     "gender": "男",
@@ -2302,246 +4984,6 @@ export const OFFICIALS_DATA: Official[] = [
     "avatarUrl": "/avatars/lu-dongsheng.svg"
   },
   {
-    "id": "wang-fenghai",
-    "name": "王凤海",
-    "gender": "男",
-    "birthYear": 1966,
-    "birthMonth": 8,
-    "nativePlace": "辽宁",
-    "currentUnitId": "csrc-shfe",
-    "currentPosition": "上海期货交易所原党委副书记、总经理",
-    "currentRank": "正厅局级",
-    "bioSummary": "中国期货市场资深高管。曾任大连商品交易所副总经理、总经理，2019年10月至2024年12月出任上海期货交易所总经理。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "大连理工大学",
-        "major": "工学",
-        "graduationYear": 1988
-      },
-      {
-        "degree": "硕士",
-        "school": "大连理工大学",
-        "major": "管理学",
-        "graduationYear": 1994
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "wfh-1",
-        "unitId": "csrc-dce",
-        "unitName": "大连商品交易所",
-        "position": "副总经理",
-        "rank": "副厅局级",
-        "startYear": 2008,
-        "startMonth": 3,
-        "endYear": 2016,
-        "endMonth": 5,
-        "notes": "分管农产品交易与实物交割仓库标准化管理",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "wfh-2",
-        "unitId": "csrc-dce",
-        "unitName": "大连商品交易所",
-        "position": "党委副书记、总经理",
-        "rank": "正厅局级",
-        "startYear": 2016,
-        "startMonth": 5,
-        "endYear": 2019,
-        "endMonth": 10,
-        "notes": "主持大商所日常营运，推出铁矿石期货国际化与豆粕期权",
-        "isDerived": false
-      },
-      {
-        "id": "wfh-3",
-        "unitId": "csrc-shfe",
-        "unitName": "上海期货交易所",
-        "position": "党委副书记、总经理",
-        "rank": "正厅局级",
-        "startYear": 2019,
-        "startMonth": 10,
-        "endYear": 2024,
-        "endMonth": 12,
-        "notes": "主持上期所日常营运，上市低硫燃料油、集运指数欧线期货",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/wang-fenghai.svg"
-  },
-  {
-    "id": "zhu-lihong",
-    "name": "朱丽红",
-    "gender": "女",
-    "birthYear": 1969,
-    "birthMonth": 3,
-    "nativePlace": "辽宁",
-    "currentUnitId": "csrc-czce",
-    "currentPosition": "郑州商品交易所党委书记、理事长",
-    "currentRank": "正厅局级",
-    "bioSummary": "经济学硕士。深耕期货市场二十余载，历任大连商品交易所副总经理、广州期货交易所副董事长兼总经理，2025年11月调任郑州商品交易所党委书记、理事长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "辽宁大学",
-        "major": "经济学",
-        "graduationYear": 1991
-      },
-      {
-        "degree": "硕士",
-        "school": "吉林大学",
-        "major": "经济学",
-        "graduationYear": 1997
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "zlh-1",
-        "unitId": "csrc-dce",
-        "unitName": "大连商品交易所",
-        "position": "副总经理",
-        "rank": "副厅局级",
-        "startYear": 2005,
-        "startMonth": 8,
-        "endYear": 2020,
-        "endMonth": 11,
-        "notes": "主导“保险+期货”金融支农创新模式发源与全国推广",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "zlh-2",
-        "unitId": "csrc-gfex",
-        "unitName": "广州期货交易所",
-        "position": "党委副书记、副董事长、总经理",
-        "rank": "正厅局级",
-        "startYear": 2020,
-        "startMonth": 11,
-        "endYear": 2025,
-        "endMonth": 11,
-        "notes": "主持广期所初创运营，成功开创工业硅与碳酸锂新能源绿色期货",
-        "isDerived": false
-      },
-      {
-        "id": "zlh-3",
-        "unitId": "csrc-czce",
-        "unitName": "郑州商品交易所",
-        "position": "党委书记、理事长",
-        "rank": "正厅局级",
-        "startYear": 2025,
-        "startMonth": 11,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "主持郑商所全面工作，深化大宗粮棉原料期货功能发挥与服务国家粮食安全",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/zhu-lihong.svg"
-  },
-  {
-    "id": "xiong-jun",
-    "name": "熊军",
-    "gender": "男",
-    "birthYear": 1970,
-    "birthMonth": 5,
-    "nativePlace": "湖北",
-    "currentUnitId": "csrc-dce",
-    "currentPosition": "大连商品交易所党委书记、理事长",
-    "currentRank": "正厅局级",
-    "bioSummary": "经济学博士。长期从事期货一线监管与现代期货交易所运营管理，历任云南证监局副局长、证监会期货部副主任、郑商所总经理、郑商所理事长，2025年11月出任大连商品交易所党委书记、理事长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "武汉大学",
-        "major": "经济学",
-        "graduationYear": 1992
-      },
-      {
-        "degree": "硕士",
-        "school": "中南财经政法大学",
-        "major": "金融学",
-        "graduationYear": 1995
-      },
-      {
-        "degree": "博士",
-        "school": "中国人民大学",
-        "major": "经济学",
-        "graduationYear": 2003
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "xj-1",
-        "unitId": "csrc-yn",
-        "unitName": "云南证监局",
-        "position": "党委委员、副局长",
-        "rank": "副厅局级",
-        "startYear": 2002,
-        "startMonth": 4,
-        "endYear": 2011,
-        "endMonth": 8,
-        "notes": "分管云南辖区期货机构与大宗金属企业一线合规监管",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "xj-2",
-        "unitId": "csrc-qh",
-        "unitName": "证监会期货监管二部 / 期货部",
-        "position": "副主任",
-        "rank": "副厅局级",
-        "startYear": 2011,
-        "startMonth": 8,
-        "endYear": 2016,
-        "endMonth": 6,
-        "notes": "负责农产品商品期货监管、规则拟订与异常价格预警研判",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "xj-3",
-        "unitId": "csrc-czce",
-        "unitName": "郑州商品交易所",
-        "position": "党委副书记、总经理",
-        "rank": "正厅局级",
-        "startYear": 2016,
-        "startMonth": 6,
-        "endYear": 2019,
-        "endMonth": 11,
-        "notes": "主持郑商所日常经营，推出苹果期货、PTA期货引入境外交易者",
-        "isDerived": false
-      },
-      {
-        "id": "xj-4",
-        "unitId": "csrc-czce",
-        "unitName": "郑州商品交易所",
-        "position": "党委书记、理事长",
-        "rank": "正厅局级",
-        "startYear": 2019,
-        "startMonth": 11,
-        "endYear": 2025,
-        "endMonth": 11,
-        "notes": "领导郑商所党委与理事会，全面提升实体产业参与期货深度",
-        "isDerived": false
-      },
-      {
-        "id": "xj-5",
-        "unitId": "csrc-dce",
-        "unitName": "大连商品交易所",
-        "position": "党委书记、理事长",
-        "rank": "正厅局级",
-        "startYear": 2025,
-        "startMonth": 11,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "主持大商所全面工作，推动全球重要农产品与黑色衍生品定价枢纽建设",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/xiong-jun.svg"
-  },
-  {
     "id": "yan-shaoming",
     "name": "严绍明",
     "gender": "男",
@@ -2596,208 +5038,6 @@ export const OFFICIALS_DATA: Official[] = [
       }
     ],
     "avatarUrl": "/avatars/yan-shaoming.svg"
-  },
-  {
-    "id": "he-qingwen",
-    "name": "何庆文",
-    "gender": "男",
-    "birthYear": 1969,
-    "birthMonth": 11,
-    "nativePlace": "湖南",
-    "currentUnitId": "csrc-cffex",
-    "currentPosition": "中国金融期货交易所党委书记、董事长",
-    "currentRank": "正厅局级",
-    "bioSummary": "长期在证券监管系统工作，历任河南证监局副局长兼纪委书记、湖北证监局纪委书记、江西证监局党委书记兼局长。2021年6月起任中国金融期货交易所党委书记、董事长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "湖南大学",
-        "major": "经济学",
-        "graduationYear": 1991
-      },
-      {
-        "degree": "博士",
-        "school": "中国社科院研究生院",
-        "major": "金融学",
-        "graduationYear": 2001
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "hqw-1",
-        "unitId": "csrc-df",
-        "unitName": "地方证监局",
-        "department": "河南监管局 / 湖北监管局",
-        "position": "党委委员、副局长兼纪委书记",
-        "rank": "副厅局级",
-        "startYear": 2004,
-        "startMonth": 5,
-        "endYear": 2016,
-        "endMonth": 8,
-        "isDerived": true,
-        "sourceNote": "根据地方监管局公开工作动态与纪检监察报道推导任职跨度",
-        "notes": "长期在地方派出机构负责党风廉政建设与一线市场监管"
-      },
-      {
-        "id": "hqw-2",
-        "unitId": "csrc-df",
-        "unitName": "地方证监局",
-        "department": "江西监管局",
-        "position": "党委书记、局长",
-        "rank": "正厅局级",
-        "startYear": 2016,
-        "startMonth": 8,
-        "endYear": 2021,
-        "endMonth": 6,
-        "isDerived": true,
-        "sourceNote": "根据江西证监局政务公开信息及地方调研新闻推导",
-        "notes": "主持江西证监局全面工作，推动辖区多层次资本市场发展与风险防控"
-      },
-      {
-        "id": "hqw-3",
-        "unitId": "csrc-cffex",
-        "unitName": "中国金融期货交易所",
-        "department": "领导班子",
-        "position": "党委书记、董事长",
-        "rank": "正厅局级",
-        "startYear": 2021,
-        "startMonth": 6,
-        "endYear": null,
-        "endMonth": null,
-        "isCurrent": true,
-        "isDerived": false,
-        "notes": "2021年6月起任中金所党委书记、董事长，推动30年期国债期货、上证50与中证1000股指期权平稳上市运行"
-      }
-    ],
-    "avatarUrl": "/avatars/he-qingwen.svg"
-  },
-  {
-    "id": "gao-weibing",
-    "name": "高卫兵",
-    "gender": "男",
-    "birthYear": 1970,
-    "birthMonth": 4,
-    "nativePlace": "吉林",
-    "currentUnitId": "csrc-gfex",
-    "currentPosition": "广州期货交易所党委书记、董事长",
-    "currentRank": "正厅局级",
-    "bioSummary": "经济学硕士。长期担任中国证监会人事教育部主任、党委组织部部长、一级巡视员，多次代表证监会党委宣读系统重要任免。2023年11月出任广州期货交易所党委书记、董事长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "吉林大学",
-        "major": "国际金融",
-        "graduationYear": 1992
-      },
-      {
-        "degree": "硕士",
-        "school": "吉林大学",
-        "major": "经济学",
-        "graduationYear": 1995
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "gwb-1",
-        "unitId": "csrc-jg",
-        "unitName": "中国证监会机关",
-        "department": "人事教育部（党委组织部）",
-        "position": "处长、副主任、主任（党委组织部部长、一级巡视员）",
-        "rank": "正厅局级",
-        "startYear": 2012,
-        "startMonth": 6,
-        "endYear": 2023,
-        "endMonth": 11,
-        "isDerived": true,
-        "sourceNote": "根据2013-2023年系统重要干部大会宣读任免报道及组织任职动态推导",
-        "notes": "主持证监会干部人事与组织工作，多次代表证监会党委赴各大交易所和会管单位宣布干部任免决定"
-      },
-      {
-        "id": "gwb-2",
-        "unitId": "csrc-gfex",
-        "unitName": "广州期货交易所",
-        "department": "领导班子",
-        "position": "党委书记、董事长",
-        "rank": "正厅局级",
-        "startYear": 2023,
-        "startMonth": 11,
-        "endYear": null,
-        "endMonth": null,
-        "isCurrent": true,
-        "isDerived": false,
-        "notes": "2023年11月接替胡政出任广期所第二任党委书记、董事长，主导推进新能源金属期货品种体系建设"
-      }
-    ],
-    "avatarUrl": "/avatars/gao-weibing.svg"
-  },
-  {
-    "id": "xing-xiangfei",
-    "name": "邢向飞",
-    "gender": "男",
-    "birthYear": 1972,
-    "birthMonth": 8,
-    "nativePlace": "河南",
-    "currentUnitId": "csrc-gfex",
-    "currentPosition": "广州期货交易所党委副书记、总经理",
-    "currentRank": "正厅局级",
-    "bioSummary": "经济学硕士。曾任郑州商品交易所副总经理、中国期货市场监控中心党委负责人，2025年11月出任广州期货交易所总经理。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "河南大学",
-        "major": "经济学",
-        "graduationYear": 1994
-      },
-      {
-        "degree": "硕士",
-        "school": "西安交通大学",
-        "major": "金融学",
-        "graduationYear": 2001
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "xxf-1",
-        "unitId": "csrc-czce",
-        "unitName": "郑州商品交易所",
-        "position": "副总经理",
-        "rank": "副厅局级",
-        "startYear": 2008,
-        "startMonth": 5,
-        "endYear": 2018,
-        "endMonth": 10,
-        "notes": "负责郑商所交易组织与品种开发创新",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "xxf-2",
-        "unitId": "csrc-cfmmc",
-        "unitName": "中国期货市场监控中心",
-        "position": "党委负责人",
-        "rank": "正厅局级",
-        "startYear": 2018,
-        "startMonth": 10,
-        "endYear": 2025,
-        "endMonth": 11,
-        "notes": "主持监控中心工作，筑牢全国期货市场保证金安全防线",
-        "isDerived": false
-      },
-      {
-        "id": "xxf-3",
-        "unitId": "csrc-gfex",
-        "unitName": "广州期货交易所",
-        "position": "党委副书记、总经理",
-        "rank": "正厅局级",
-        "startYear": 2025,
-        "startMonth": 11,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "主持广期所日常营运与新能源产业链风险管理生态建设",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/xing-xiangfei.svg"
   },
   {
     "id": "yu-wenqiang",
@@ -2914,91 +5154,309 @@ export const OFFICIALS_DATA: Official[] = [
     "avatarUrl": "/avatars/yu-wenqiang.svg"
   },
   {
-    "id": "kong-qingwen",
-    "name": "孔庆文",
+    "id": "lu-wendao",
+    "name": "卢文道",
     "gender": "男",
-    "birthYear": 1969,
-    "birthMonth": 8,
-    "nativePlace": "山东",
-    "currentUnitId": "csrc-csdc",
-    "currentPosition": "中国证券登记结算有限责任公司党委副书记、总经理",
+    "birthYear": 1968,
+    "birthMonth": 12,
+    "nativePlace": "浙江",
+    "currentUnitId": "csrc-isc",
+    "currentPosition": "中证中小投资者服务中心总经理、法定代表人",
     "currentRank": "正厅局级",
-    "bioSummary": "曾参与中国证券金融公司筹备设立并任副总经理，后任中国结算副总经理，2020年出任中国证券登记结算公司党委副书记、总经理、副董事长。",
+    "bioSummary": "法学博士。深耕资本市场自律管理与法律实务，曾任上海证券交易所法律事务部总监、首席律师，现任中证中小投资者服务中心党委副书记、总经理。",
     "education": [
       {
         "degree": "学士",
-        "school": "上海财经大学",
-        "major": "统计学",
-        "graduationYear": 1991
+        "school": "华东政法大学",
+        "major": "法学",
+        "graduationYear": 1990
       },
       {
-        "degree": "硕士",
-        "school": "复旦大学",
-        "major": "经济学",
-        "graduationYear": 1998
+        "degree": "博士",
+        "school": "华东政法大学",
+        "major": "国际法学",
+        "graduationYear": 2001
       }
     ],
     "careerHistory": [
       {
-        "id": "kqw-1",
-        "unitId": "csrc-jg",
-        "unitName": "中国证监会机关",
-        "department": "证券金融公司筹备组",
-        "position": "筹备组成员、处长",
+        "id": "lwd-1",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "position": "法律事务部总监",
         "rank": "正处级",
-        "startYear": 2010,
-        "startMonth": 4,
-        "endYear": 2012,
-        "endMonth": 3,
+        "startYear": 2000,
+        "startMonth": 6,
+        "endYear": 2016,
+        "endMonth": 4,
+        "notes": "主持交易所自律管理法律制度构建与纪律处分规则起草",
         "isDerived": true,
-        "sourceNote": "根据中证金融筹备设立历史及干部履历公开资料推导",
-        "notes": "参与中国证券金融股份有限公司筹备方案设计与转融通制度构建"
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
-        "id": "kqw-2",
-        "unitId": "csrc-csf",
-        "unitName": "中国证券金融股份有限公司",
-        "department": "领导班子",
-        "position": "党委委员、副总经理",
+        "id": "lwd-2",
+        "unitId": "csrc-isc",
+        "unitName": "中证中小投资者服务中心",
+        "position": "党委副书记、总经理",
+        "rank": "正厅局级",
+        "startYear": 2016,
+        "startMonth": 4,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "主持投服中心日常经营，代理发起康美药业全国首例证券特别代表人诉讼",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/lu-wendao.svg"
+  },
+  {
+    "id": "lin-lin",
+    "name": "林林",
+    "avatarUrl": "/avatars/lin-lin.svg",
+    "gender": "男",
+    "birthYear": 1968,
+    "birthMonth": 5,
+    "nativePlace": "福建",
+    "currentUnitId": "csrc-sh",
+    "currentPosition": "中国证监会上海监管局党委书记、局长兼上海稽查局局长",
+    "currentRank": "正厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "厦门大学",
+        "major": "经济系学士",
+        "graduationYear": 1990
+      },
+      {
+        "degree": "硕士",
+        "school": "厦门大学",
+        "major": "财政金融系经济学硕士",
+        "graduationYear": 1996
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "ll-1",
+        "unitId": "csrc-fj",
+        "unitName": "中国证监会福建监管局",
+        "department": "稽查处",
+        "position": "处长、局长助理",
+        "rank": "副厅局级",
+        "startYear": 1998,
+        "startMonth": 7,
+        "endYear": 2012,
+        "endMonth": 2,
+        "isDerived": false,
+        "notes": "长期扎根地方稽查办案一线，获中国证监会“稽查先进工作者”及全国证券期货系统劳动奖章"
+      },
+      {
+        "id": "ll-2",
+        "unitId": "csrc-fj",
+        "unitName": "中国证监会福建监管局",
+        "department": "局领导班子",
+        "position": "党委委员、副局长",
         "rank": "副厅局级",
         "startYear": 2012,
-        "startMonth": 3,
-        "endYear": 2017,
-        "endMonth": 6,
+        "startMonth": 2,
+        "endYear": 2016,
+        "endMonth": 5,
         "isDerived": false,
-        "notes": "分管转融通业务运行、券商两融监测与资金运营"
+        "notes": "分管福建辖区上市公司监管与机构现场检查"
       },
       {
-        "id": "kqw-3",
-        "unitId": "csrc-csdc",
-        "unitName": "中国证券登记结算公司",
-        "department": "领导班子",
-        "position": "党委委员、副总经理",
-        "rank": "副厅局级",
-        "startYear": 2017,
-        "startMonth": 6,
+        "id": "ll-3",
+        "unitId": "csrc-yn",
+        "unitName": "中国证监会云南监管局",
+        "department": "局领导班子",
+        "position": "党委书记、局长",
+        "rank": "正厅局级",
+        "startYear": 2016,
+        "startMonth": 5,
         "endYear": 2020,
-        "endMonth": 11,
+        "endMonth": 8,
         "isDerived": false,
-        "notes": "分管核心登记结算技术系统架构升级与多层次账户体系建设"
+        "notes": "全面主持云南辖区证券期货市场监管与企业上市培育"
       },
       {
-        "id": "kqw-4",
-        "unitId": "csrc-csdc",
-        "unitName": "中国证券登记结算公司",
-        "department": "领导班子",
-        "position": "党委副书记、总经理、副董事长",
+        "id": "ll-4",
+        "unitId": "csrc-fj",
+        "unitName": "中国证监会福建监管局",
+        "department": "局领导班子",
+        "position": "党委书记、局长",
         "rank": "正厅局级",
         "startYear": 2020,
-        "startMonth": 11,
+        "startMonth": 8,
+        "endYear": 2024,
+        "endMonth": 1,
+        "isDerived": false,
+        "notes": "重返福建主持全面工作，推动民营经济强省上市公司提质增效"
+      },
+      {
+        "id": "ll-5",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海监管局",
+        "department": "局领导班子",
+        "position": "党委书记、局长兼上海稽查局局长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "startMonth": 1,
+        "endYear": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "主政上海证监局，统领上海国际金融中心属地数百家上市公司、龙头券商及外资证券期货机构一线穿透监管"
+      }
+    ],
+    "bioSummary": "厦门大学经济学硕士。全国证券期货系统劳动奖章获得者，历任福建证监局副局长、云南证监局局长、福建证监局局长。2024年1月履新上海证监局党委书记、局长兼上海稽查局局长，执掌全国体量最大的地方监管局之一。"
+  },
+  {
+    "id": "tian-xiangyang",
+    "name": "田向阳",
+    "gender": "男",
+    "birthYear": 1968,
+    "birthMonth": 10,
+    "nativePlace": "陕西",
+    "currentUnitId": "csrc-shfe",
+    "currentPosition": "上海期货交易所党委书记、理事长",
+    "currentRank": "正厅局级",
+    "bioSummary": "曾任中国证监会研究中心从事宏观经济政策研究，后任宁波证监局等职。2019年任浙江证监局局长，2022年4月出任上海期货交易所党委书记、理事长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "西北工业大学",
+        "major": "材料学",
+        "graduationYear": 1990
+      },
+      {
+        "degree": "硕士",
+        "school": "西北工业大学",
+        "major": "工学",
+        "graduationYear": 1993
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "txy-1",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会机关",
+        "department": "研究中心 / 地方派出机构",
+        "position": "研究员、处长、宁波局副局长等",
+        "rank": "副厅局级",
+        "startYear": 2003,
+        "startMonth": 7,
+        "endYear": 2019,
+        "endMonth": 5,
+        "isDerived": true,
+        "sourceNote": "根据宏观经济与资本市场研究成果发表及派出机构新闻推导",
+        "notes": "深耕宏观经济与资本市场中长期改革理论研究"
+      },
+      {
+        "id": "txy-2",
+        "unitId": "csrc-df",
+        "unitName": "地方证监局",
+        "department": "浙江监管局",
+        "position": "党委书记、局长兼杭州特派办主任",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "startMonth": 5,
+        "endYear": 2022,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "主持浙江证监局全面工作，推动'凤凰行动'升级与上市公司高质量发展"
+      },
+      {
+        "id": "txy-3",
+        "unitId": "csrc-shfe",
+        "unitName": "上海期货交易所",
+        "department": "理事会",
+        "position": "党委书记、理事长",
+        "rank": "正厅局级",
+        "startYear": 2022,
+        "startMonth": 4,
         "endYear": null,
         "endMonth": null,
         "isCurrent": true,
         "isDerived": false,
-        "notes": "主持中国结算日常经营管理，推进ETF互联互通结算与存托凭证互联互通"
+        "notes": "2022年4月出任上期所党委书记、理事长，推进大宗商品'全仓登'建设与高水平对外开放"
       }
     ],
-    "avatarUrl": "/avatars/kong-qingwen.svg"
+    "avatarUrl": "/avatars/tian-xiangyang.svg"
+  },
+  {
+    "id": "cheng-hehong",
+    "name": "程合红",
+    "avatarUrl": "/avatars/cheng-hehong.svg",
+    "gender": "男",
+    "birthYear": 1968,
+    "birthMonth": 11,
+    "nativePlace": "河南商丘",
+    "currentUnitId": "csrc-fl",
+    "currentPosition": "中国证监会法治司司长兼首席律师",
+    "currentRank": "正厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "郑州大学",
+        "major": "法律系法学学士",
+        "graduationYear": 1991
+      },
+      {
+        "degree": "硕士",
+        "school": "中国社会科学院研究生院",
+        "major": "法学硕士",
+        "graduationYear": 1994
+      },
+      {
+        "degree": "博士",
+        "school": "中国社会科学院研究生院",
+        "major": "民商法学博士",
+        "graduationYear": 1997
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "chh-1",
+        "unitId": "csrc-fl",
+        "unitName": "中国证监会",
+        "department": "法律部",
+        "position": "处长、副主任、巡视员",
+        "rank": "正厅局级",
+        "startYear": 1998,
+        "startMonth": 7,
+        "endYear": 2020,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "深耕法律部二十余年，作为核心立法专家深度主持《证券法》四次大修以及《期货和衍生品法》立法全过程起草"
+      },
+      {
+        "id": "chh-2",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海监管局",
+        "department": "局领导班子",
+        "position": "党委书记、局长兼上海稽查局局长",
+        "rank": "正厅局级",
+        "startYear": 2020,
+        "startMonth": 6,
+        "endYear": 2024,
+        "endMonth": 1,
+        "isDerived": false,
+        "notes": "主政上海证监局近四年，以法治化理念推动科创板持续深化试点与上海属地金融秩序规范"
+      },
+      {
+        "id": "chh-3",
+        "unitId": "csrc-fl",
+        "unitName": "中国证监会",
+        "department": "法治司（原法律部）",
+        "position": "首席律师兼法治司司长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "startMonth": 1,
+        "endYear": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "重回证监会机关执掌法治司与首席律师重任，全面统筹资本市场新一轮法律法规与重大执法案件法制审核"
+      }
+    ],
+    "bioSummary": "中国社科院法学博士。中国证券期货立法权威专家，历任证监会法律部巡视员、上海证监局党委书记兼局长（2020-2024）。2024年1月调回会机关出任中国证监会首席律师兼法治司司长。"
   },
   {
     "id": "lu-wenshan",
@@ -3073,77 +5531,119 @@ export const OFFICIALS_DATA: Official[] = [
     "avatarUrl": "/avatars/lu-wenshan.svg"
   },
   {
-    "id": "lu-dabiao",
-    "name": "卢大彪",
+    "id": "chen-fei",
+    "name": "陈飞",
     "gender": "男",
-    "birthYear": 1977,
-    "birthMonth": 3,
-    "nativePlace": "江西修水",
-    "currentUnitId": "csrc-csdata",
-    "currentPosition": "中证数据有限责任公司党委书记、董事长、总经理",
+    "birthYear": 1968,
+    "birthMonth": 5,
+    "nativePlace": "山东",
+    "currentUnitId": "csrc-csf",
+    "currentPosition": "中国证券金融股份有限公司党委书记、董事长",
     "currentRank": "正厅局级",
-    "bioSummary": "西方经济学博士，学者型监管官员。历任证监会市场部处长、公司债券部副巡视员、副主任、上交所副总经理，2022年出任中证数据董事长兼总经理。",
+    "bioSummary": "长期在证券监管与金融系统任职。2022年2月出任中国证券金融股份有限公司党委书记、董事长。",
     "education": [
       {
-        "degree": "硕士",
-        "school": "华中科技大学",
-        "major": "数量经济学",
-        "graduationYear": 2000
+        "degree": "学士",
+        "school": "山东大学",
+        "major": "经济学",
+        "graduationYear": 1990
       },
       {
-        "degree": "博士",
-        "school": "中国社会科学院研究生院",
-        "major": "西方经济学",
-        "graduationYear": 2003
+        "degree": "硕士",
+        "school": "清华大学五道口金融学院",
+        "major": "金融学",
+        "graduationYear": 1995
       }
     ],
     "careerHistory": [
       {
-        "id": "ldb-1",
+        "id": "cf-1",
         "unitId": "csrc-jg",
         "unitName": "中国证监会机关",
-        "department": "市场监管部 / 公司债券监管部",
-        "position": "处长、副巡视员、副主任",
+        "department": "综合监管部门",
+        "position": "副处长、处长、副主任",
         "rank": "副厅局级",
-        "startYear": 2006,
-        "startMonth": 4,
-        "endYear": 2021,
-        "endMonth": 1,
-        "isDerived": true,
-        "sourceNote": "根据公司债券市场监管发言、学术论文发表及政策吹风会报道推导",
-        "notes": "负责公司债券监管与制度建设，推进民企债券融资支持工具与资产证券化试点"
-      },
-      {
-        "id": "ldb-2",
-        "unitId": "csrc-sse",
-        "unitName": "上海证券交易所",
-        "department": "总经理室",
-        "position": "党委委员、副总经理",
-        "rank": "副厅局级",
-        "startYear": 2021,
-        "startMonth": 1,
+        "startYear": 2005,
+        "startMonth": 6,
         "endYear": 2022,
-        "endMonth": 9,
-        "isDerived": false,
-        "notes": "分管债券业务、基础设施公募REITs试点推进及科创板相关业务"
+        "endMonth": 2,
+        "isDerived": true,
+        "sourceNote": "根据金融监管系统干部历次任免与活动公开报道反推",
+        "notes": "参与资本市场稳健运行制度设计与重大风险监测防范"
       },
       {
-        "id": "ldb-3",
-        "unitId": "csrc-csdata",
-        "unitName": "中证数据有限责任公司",
-        "department": "领导班子",
-        "position": "党委书记、董事长、总经理",
+        "id": "cf-2",
+        "unitId": "csrc-csf",
+        "unitName": "中国证券金融股份有限公司",
+        "department": "董事会",
+        "position": "党委书记、董事长",
         "rank": "正厅局级",
         "startYear": 2022,
-        "startMonth": 9,
+        "startMonth": 2,
         "endYear": null,
         "endMonth": null,
         "isCurrent": true,
         "isDerived": false,
-        "notes": "主持中证数据全面工作，推进资本市场监管大数据中心建设与穿透式监管科技底座运行"
+        "notes": "全面领导中证金融党委与董事会工作，加强转融通逆周期调控与全市场两融风险监控"
       }
     ],
-    "avatarUrl": "/avatars/lu-dabiao.svg"
+    "avatarUrl": "/avatars/chen-fei.svg"
+  },
+  {
+    "id": "yang-zongru",
+    "name": "杨宗儒",
+    "gender": "男",
+    "birthYear": 1967,
+    "birthMonth": 6,
+    "nativePlace": "湖南",
+    "currentUnitId": "csrc-gd",
+    "currentPosition": "广东证监局党委书记、局长兼广州稽查局局长",
+    "currentRank": "正厅局级",
+    "bioSummary": "经济学硕士，第十四届全国政协委员。长期在证监会稽查系统工作，曾任稽查局副局长，2018年起出任广东证监局局长兼广州稽查局局长。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "湖南大学",
+        "major": "经济学",
+        "graduationYear": 1989
+      },
+      {
+        "degree": "硕士",
+        "school": "中南财经政法大学",
+        "major": "经济学",
+        "graduationYear": 1996
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "yzr-1",
+        "unitId": "csrc-jc",
+        "unitName": "证监会稽查局",
+        "position": "副处长、处长、副局长",
+        "rank": "副厅局级",
+        "startYear": 2002,
+        "startMonth": 5,
+        "endYear": 2018,
+        "endMonth": 8,
+        "notes": "督办组织查办全国多起恶性跨区域证券违规犯罪",
+        "isDerived": true,
+        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+      },
+      {
+        "id": "yzr-2",
+        "unitId": "csrc-gd",
+        "unitName": "广东证监局",
+        "position": "党委书记、局长兼广州稽查局局长",
+        "rank": "正厅局级",
+        "startYear": 2018,
+        "startMonth": 8,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "统揽广东辖区证券期货全面监管，服务实体经济与大湾区资本市场繁荣",
+        "isDerived": false
+      }
+    ],
+    "avatarUrl": "/avatars/yang-zongru.svg"
   },
   {
     "id": "yin-rongyan",
@@ -3219,796 +5719,745 @@ export const OFFICIALS_DATA: Official[] = [
     "avatarUrl": "/avatars/yin-rongyan.svg"
   },
   {
-    "id": "he-yanchun",
-    "name": "何艳春",
+    "id": "wang-fenghai",
+    "name": "王凤海",
     "gender": "男",
-    "birthYear": 1969,
-    "birthMonth": 2,
-    "nativePlace": "四川",
-    "currentUnitId": "csrc-amac",
-    "currentPosition": "中国证券投资基金业协会党委书记、会长",
+    "birthYear": 1966,
+    "birthMonth": 8,
+    "nativePlace": "辽宁",
+    "currentUnitId": "csrc-shfe",
+    "currentPosition": "上海期货交易所原党委副书记、总经理",
     "currentRank": "正厅局级",
-    "bioSummary": "法学学士。历任证监会法律部处长、稽查局副局长、行政处罚委办公室主任，2020年6月起执掌中国证券投资基金业协会，领导全国公私募基金行业自律管理。",
+    "bioSummary": "中国期货市场资深高管。曾任大连商品交易所副总经理、总经理，2019年10月至2024年12月出任上海期货交易所总经理。",
     "education": [
       {
         "degree": "学士",
-        "school": "华东政法大学",
-        "major": "法学",
-        "graduationYear": 1991
+        "school": "大连理工大学",
+        "major": "工学",
+        "graduationYear": 1988
+      },
+      {
+        "degree": "硕士",
+        "school": "大连理工大学",
+        "major": "管理学",
+        "graduationYear": 1994
       }
     ],
     "careerHistory": [
       {
-        "id": "hyc-1",
-        "unitId": "csrc-fl",
-        "unitName": "证监会法律部",
-        "position": "副处长、处长",
-        "rank": "正处级",
-        "startYear": 2002,
-        "startMonth": 5,
-        "endYear": 2015,
-        "endMonth": 8,
-        "notes": "负责证券期货行政处罚法律适用审查",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "hyc-2",
-        "unitId": "csrc-jc",
-        "unitName": "证监会稽查局 / 处罚委",
-        "position": "副局长、行政处罚委办主任",
-        "rank": "正厅局级",
-        "startYear": 2015,
-        "startMonth": 8,
-        "endYear": 2020,
-        "endMonth": 6,
-        "notes": "查处数十起资本市场重大违法大要案",
-        "isDerived": false
-      },
-      {
-        "id": "hyc-3",
-        "unitId": "csrc-amac",
-        "unitName": "中国证券投资基金业协会",
-        "position": "党委书记、会长",
-        "rank": "正厅局级",
-        "startYear": 2020,
-        "startMonth": 6,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "全面主持中基协工作，出台私募基金登记备案新规，扶优限劣",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/he-yanchun.svg"
-  },
-  {
-    "id": "lu-wendao",
-    "name": "卢文道",
-    "gender": "男",
-    "birthYear": 1968,
-    "birthMonth": 12,
-    "nativePlace": "浙江",
-    "currentUnitId": "csrc-isc",
-    "currentPosition": "中证中小投资者服务中心总经理、法定代表人",
-    "currentRank": "正厅局级",
-    "bioSummary": "法学博士。深耕资本市场自律管理与法律实务，曾任上海证券交易所法律事务部总监、首席律师，现任中证中小投资者服务中心党委副书记、总经理。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "华东政法大学",
-        "major": "法学",
-        "graduationYear": 1990
-      },
-      {
-        "degree": "博士",
-        "school": "华东政法大学",
-        "major": "国际法学",
-        "graduationYear": 2001
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "lwd-1",
-        "unitId": "csrc-sse",
-        "unitName": "上海证券交易所",
-        "position": "法律事务部总监",
-        "rank": "正处级",
-        "startYear": 2000,
-        "startMonth": 6,
+        "id": "wfh-1",
+        "unitId": "csrc-dce",
+        "unitName": "大连商品交易所",
+        "position": "副总经理",
+        "rank": "副厅局级",
+        "startYear": 2008,
+        "startMonth": 3,
         "endYear": 2016,
-        "endMonth": 4,
-        "notes": "主持交易所自律管理法律制度构建与纪律处分规则起草",
+        "endMonth": 5,
+        "notes": "分管农产品交易与实物交割仓库标准化管理",
         "isDerived": true,
         "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
-        "id": "lwd-2",
-        "unitId": "csrc-isc",
-        "unitName": "中证中小投资者服务中心",
+        "id": "wfh-2",
+        "unitId": "csrc-dce",
+        "unitName": "大连商品交易所",
         "position": "党委副书记、总经理",
         "rank": "正厅局级",
         "startYear": 2016,
-        "startMonth": 4,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "主持投服中心日常经营，代理发起康美药业全国首例证券特别代表人诉讼",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/lu-wendao.svg"
-  },
-  {
-    "id": "yan-bojin",
-    "name": "严伯进",
-    "gender": "男",
-    "birthYear": 1971,
-    "birthMonth": 6,
-    "nativePlace": "浙江",
-    "currentUnitId": "csrc-fx",
-    "currentPosition": "中国证监会首席风险官兼发行监管司司长",
-    "currentRank": "正厅局级",
-    "bioSummary": "经济学硕士。长期深耕股票发行上市审核与监管一线，曾任证监会发行监管部处长、副主任、主任，现任证监会首席风险官兼发行监管司司长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "对外经济贸易大学",
-        "major": "国际金融",
-        "graduationYear": 1993
-      },
-      {
-        "degree": "硕士",
-        "school": "财政部财政科学研究所",
-        "major": "财政学",
-        "graduationYear": 2001
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "ybj-1",
-        "unitId": "csrc-fx",
-        "unitName": "证监会发行监管部",
-        "position": "审核处长、副主任",
-        "rank": "副厅局级",
-        "startYear": 2004,
-        "startMonth": 3,
-        "endYear": 2019,
-        "endMonth": 6,
-        "notes": "负责首发企业财务合规审核及拟上市企业现场抽查",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "ybj-2",
-        "unitId": "csrc-fx",
-        "unitName": "证监会发行监管司",
-        "position": "主任（司长）兼首席风险官",
-        "rank": "正厅局级",
-        "startYear": 2019,
-        "startMonth": 6,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "严把IPO准入关，杜绝企业“带病闯关”，从源头上提升上市公司可投性与质量",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/yan-bojin.svg"
-  },
-  {
-    "id": "guo-ruiming",
-    "name": "郭瑞明",
-    "gender": "男",
-    "birthYear": 1972,
-    "birthMonth": 8,
-    "nativePlace": "河北",
-    "currentUnitId": "csrc-ss",
-    "currentPosition": "中国证监会上市公司监管司司长",
-    "currentRank": "正厅局级",
-    "bioSummary": "管理学硕士。长期主持上市公司日常监管与制度建设，历任证监会上市公司监管部副主任、主任，现任上市公司监管司司长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "北京大学",
-        "major": "经济学",
-        "graduationYear": 1994
-      },
-      {
-        "degree": "硕士",
-        "school": "清华大学经济管理学院",
-        "major": "工商管理",
-        "graduationYear": 2001
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "grm-1",
-        "unitId": "csrc-ss",
-        "unitName": "证监会上市公司监管部",
-        "position": "监管处长、副主任",
-        "rank": "副厅局级",
-        "startYear": 2005,
-        "startMonth": 7,
-        "endYear": 2018,
-        "endMonth": 9,
-        "notes": "负责沪深上市公司财务报告披露持续监管",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "grm-2",
-        "unitId": "csrc-ss",
-        "unitName": "证监会上市公司监管司",
-        "position": "司长",
-        "rank": "正厅局级",
-        "startYear": 2018,
-        "startMonth": 9,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "主导精准出清退市制度、强制现金分红规则与打击资金占用违规担保",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/guo-ruiming.svg"
-  },
-  {
-    "id": "shen-bing",
-    "name": "申兵",
-    "gender": "男",
-    "birthYear": 1970,
-    "birthMonth": 7,
-    "nativePlace": "北京",
-    "currentUnitId": "csrc-gj",
-    "currentPosition": "中国证监会国际合作司司长",
-    "currentRank": "正厅局级",
-    "bioSummary": "经济学硕士。历任证监会国际合作部处长、副主任、主任、证券基金机构监管司司长，2025年8月调任国际合作司司长，统筹境内企业境外上市与跨境监管协作。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "对外经济贸易大学",
-        "major": "国际贸易",
-        "graduationYear": 1992
-      },
-      {
-        "degree": "硕士",
-        "school": "中国人民大学",
-        "major": "金融学",
-        "graduationYear": 1999
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "sb-1",
-        "unitId": "csrc-gj",
-        "unitName": "证监会国际合作部",
-        "position": "处长、副主任、主任",
-        "rank": "正厅局级",
-        "startYear": 2003,
-        "startMonth": 4,
-        "endYear": 2018,
-        "endMonth": 8,
-        "notes": "主持沪港通、深港通开通跨境联合监管协议签署与双向开放",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "sb-2",
-        "unitId": "csrc-jg",
-        "unitName": "证监会证券基金机构监管司",
-        "position": "司长",
-        "rank": "正厅局级",
-        "startYear": 2018,
-        "startMonth": 8,
-        "endYear": 2025,
-        "endMonth": 8,
-        "notes": "推动合资券商外资股比限制全面取消，外资独资公募基金落地展业",
-        "isDerived": false
-      },
-      {
-        "id": "sb-3",
-        "unitId": "csrc-gj",
-        "unitName": "证监会国际合作司",
-        "position": "司长",
-        "rank": "正厅局级",
-        "startYear": 2025,
-        "startMonth": 8,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "深化高水平制度型对外开放，优化中资企业赴美赴港上市常态化备案",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/shen-bing.svg"
-  },
-  {
-    "id": "zhang-wangjun",
-    "name": "张望军",
-    "gender": "男",
-    "birthYear": 1975,
-    "birthMonth": 8,
-    "nativePlace": "山东",
-    "currentUnitId": "csrc-bgt",
-    "currentPosition": "中国证监会办公厅主任兼新闻发言人",
-    "currentRank": "正厅局级",
-    "bioSummary": "中国人民大学经济学博士。历任证监会办公厅、市场部处长、中证金融研究院党委书记兼院长、市场监管一司司长，现任中国证监会办公厅主任兼新闻发言人。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "中国人民大学",
-        "major": "经济学",
-        "graduationYear": 1997
-      },
-      {
-        "degree": "博士",
-        "school": "中国人民大学劳动人事学院",
-        "major": "经济学",
-        "graduationYear": 2004
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "zwj-1",
-        "unitId": "csrc-bgt",
-        "unitName": "证监会办公厅 / 市场监管部",
-        "position": "副处长、处长",
-        "rank": "正处级",
-        "startYear": 2004,
-        "startMonth": 6,
-        "endYear": 2015,
-        "endMonth": 4,
-        "notes": "参与起草资本市场战略改革方案及重大文电起草",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "zwj-2",
-        "unitId": "csrc-cfr",
-        "unitName": "中证金融研究院",
-        "position": "党委书记、院长",
-        "rank": "正厅局级",
-        "startYear": 2015,
-        "startMonth": 4,
+        "startMonth": 5,
         "endYear": 2019,
         "endMonth": 10,
-        "notes": "领导国家级资本市场智库建设，承担宏观金融审慎决策咨询",
+        "notes": "主持大商所日常营运，推出铁矿石期货国际化与豆粕期权",
         "isDerived": false
       },
       {
-        "id": "zwj-3",
-        "unitId": "csrc-sc1",
-        "unitName": "证监会市场监管一司",
-        "position": "司长",
+        "id": "wfh-3",
+        "unitId": "csrc-shfe",
+        "unitName": "上海期货交易所",
+        "position": "党委副书记、总经理",
         "rank": "正厅局级",
         "startYear": 2019,
         "startMonth": 10,
         "endYear": 2024,
-        "endMonth": 6,
-        "notes": "主持交易所交易组织监测，规范程序化交易与量化高频交易规则体系",
-        "isDerived": false
-      },
-      {
-        "id": "zwj-4",
-        "unitId": "csrc-bgt",
-        "unitName": "证监会办公厅",
-        "position": "主任兼新闻发言人",
-        "rank": "正厅局级",
-        "startYear": 2024,
-        "startMonth": 6,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "主持证监会办公厅日常运转、政务公开与资本市场新闻发布权威发声",
+        "endMonth": 12,
+        "notes": "主持上期所日常营运，上市低硫燃料油、集运指数欧线期货",
         "isDerived": false
       }
     ],
-    "avatarUrl": "/avatars/zhang-wangjun.svg"
-  },
-  {
-    "id": "li-zhibin",
-    "name": "李至斌",
-    "gender": "男",
-    "birthYear": 1969,
-    "birthMonth": 8,
-    "nativePlace": "湖南",
-    "currentUnitId": "csrc-qh",
-    "currentPosition": "中国证监会期货监管司司长",
-    "currentRank": "正厅局级",
-    "bioSummary": "法学硕士。历任中国证监会打击非法证券期货活动局局长、深圳证监局党委书记兼局长、深圳稽查局局长，2024年1月出任期货监管司司长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "西南政法大学",
-        "major": "法学",
-        "graduationYear": 1991
-      },
-      {
-        "degree": "硕士",
-        "school": "北京大学",
-        "major": "法律硕士",
-        "graduationYear": 2002
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "lzb-1",
-        "unitId": "csrc-main",
-        "unitName": "证监会打击非法证券期货活动局",
-        "position": "副局长、局长",
-        "rank": "正厅局级",
-        "startYear": 2005,
-        "startMonth": 7,
-        "endYear": 2018,
-        "endMonth": 6,
-        "notes": "牵头全国清理整顿各类交易场所部际联席会议办公室日常工作",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
-      },
-      {
-        "id": "lzb-2",
-        "unitId": "csrc-sz",
-        "unitName": "深圳证监局",
-        "position": "党委书记、局长兼深圳稽查局局长",
-        "rank": "正厅局级",
-        "startYear": 2018,
-        "startMonth": 6,
-        "endYear": 2024,
-        "endMonth": 1,
-        "notes": "全面领导深圳特区上市公司与经营机构属地监管与一线查办",
-        "isDerived": false
-      },
-      {
-        "id": "lzb-3",
-        "unitId": "csrc-qh",
-        "unitName": "证监会期货监管司",
-        "position": "司长",
-        "rank": "正厅局级",
-        "startYear": 2024,
-        "startMonth": 1,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "统揽全国商品与金融期货市场监管，严控大宗商品过度投机与市场操纵",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/li-zhibin.svg"
+    "avatarUrl": "/avatars/wang-fenghai.svg"
   },
   {
     "id": "jia-wenqin",
     "name": "贾文勤",
+    "avatarUrl": "/avatars/jia-wenqin.svg",
     "gender": "女",
     "birthYear": 1965,
-    "birthMonth": 8,
-    "nativePlace": "陕西",
+    "birthMonth": 7,
+    "nativePlace": "北京",
     "currentUnitId": "csrc-bj",
-    "currentPosition": "北京证监局党委书记、局长",
+    "currentPosition": "北京证监局原党委书记、局长，原首席会计师",
     "currentRank": "正厅局级",
-    "bioSummary": "管理学硕士，资深注册会计师。中国证监会系统资深财务与会计专家，长期执掌证监会会计部，历任首席会计师，2019年5月起主持北京证监局全面工作。",
     "education": [
       {
         "degree": "学士",
-        "school": "中央财政金融学院（现中央财经大学）",
-        "major": "会计学",
+        "school": "中央财经大学",
+        "major": "会计系审计学士",
         "graduationYear": 1987
       },
       {
         "degree": "硕士",
-        "school": "中国财政科学研究院",
-        "major": "会计学",
-        "graduationYear": 1999
+        "school": "财政部财政科学研究所",
+        "major": "管理学硕士",
+        "graduationYear": 1990
       }
     ],
     "careerHistory": [
       {
         "id": "jwq-1",
         "unitId": "csrc-main",
-        "unitName": "证监会会计部",
-        "position": "副处长、处长、副主任",
-        "rank": "副厅局级",
-        "startYear": 2000,
-        "startMonth": 1,
-        "endYear": 2010,
-        "endMonth": 10,
-        "notes": "构建中国资本市场会计信息披露准则与审计监管框架",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+        "unitName": "财政部 / 证监会会计部",
+        "department": "会计司 / 会计部",
+        "position": "干部、副处长、处长",
+        "rank": "正处级",
+        "startYear": 1990,
+        "startMonth": 7,
+        "endYear": 2004,
+        "endMonth": 5,
+        "isDerived": false,
+        "notes": "参与境内上市公司会计准则制定与证券期货审计业务执业标准拟订"
       },
       {
         "id": "jwq-2",
         "unitId": "csrc-main",
-        "unitName": "证监会会计部",
-        "position": "主任、首席会计师",
-        "rank": "正厅局级",
-        "startYear": 2010,
-        "startMonth": 10,
-        "endYear": 2019,
-        "endMonth": 5,
-        "notes": "全面主导资本市场会计信息质量监管及重大会计舞弊定性",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+        "unitName": "中国证监会",
+        "department": "会计部",
+        "position": "副主任",
+        "rank": "副厅局级",
+        "startYear": 2004,
+        "startMonth": 5,
+        "endYear": 2012,
+        "endMonth": 4,
+        "isDerived": false,
+        "notes": "分管会计信息披露监督、注册会计师与评估机构从事证券期货业务资质审核"
       },
       {
         "id": "jwq-3",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "会计部 / 首席会计师办公室",
+        "position": "首席会计师兼会计部主任",
+        "rank": "正厅局级",
+        "startYear": 2012,
+        "startMonth": 4,
+        "endYear": 2019,
+        "endMonth": 5,
+        "isDerived": false,
+        "notes": "担任证监会首席会计师长达七年，主导建立全市场反财务造假防线与跨国跨境审计监管合作机制"
+      },
+      {
+        "id": "jwq-4",
         "unitId": "csrc-bj",
-        "unitName": "北京证监局",
+        "unitName": "中国证监会北京监管局",
+        "department": "局领导班子",
         "position": "党委书记、局长",
         "rank": "正厅局级",
         "startYear": 2019,
         "startMonth": 5,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "全面主持北京辖区证券期货市场与拟上市企业一线属地监管",
-        "isDerived": false
+        "endYear": 2024,
+        "endMonth": 12,
+        "isDerived": false,
+        "notes": "执掌北京证监局五年余（十三届、十四届全国人大代表），严打首都辖区财务造假，主导制定多项优化注册制下中介机构看门人责任法规建议"
       }
     ],
-    "avatarUrl": "/avatars/jia-wenqin.svg"
+    "bioSummary": "管理学硕士，资深注册会计师，第十三届、十四届全国人大代表。证监会资深财务会计监管权威，历任证监会首席会计师兼会计部主任七年，2019年5月至2024年底任北京证监局党委书记、局长。"
   },
   {
-    "id": "yang-zongru",
-    "name": "杨宗儒",
+    "id": "jiao-jinhong",
+    "name": "焦津洪",
     "gender": "男",
-    "birthYear": 1967,
-    "birthMonth": 6,
-    "nativePlace": "湖南",
-    "currentUnitId": "csrc-gd",
-    "currentPosition": "广东证监局党委书记、局长兼广州稽查局局长",
+    "birthYear": 1963,
+    "birthMonth": 11,
+    "nativePlace": "天津",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原首席律师、法律部原主任",
     "currentRank": "正厅局级",
-    "bioSummary": "经济学硕士，第十四届全国政协委员。长期在证监会稽查系统工作，曾任稽查局副局长，2018年起出任广东证监局局长兼广州稽查局局长。",
+    "bioSummary": "法学博士、对外经贸大学法学院原教授。曾任证监会法律部副主任、行政处罚委主任、深圳证监局局长、首席律师，中国资本市场法治建设的核心奠基人之一。",
     "education": [
       {
         "degree": "学士",
-        "school": "湖南大学",
-        "major": "经济学",
-        "graduationYear": 1989
+        "school": "北京大学",
+        "major": "法学",
+        "graduationYear": 1984
       },
       {
         "degree": "硕士",
-        "school": "中南财经政法大学",
-        "major": "经济学",
-        "graduationYear": 1996
-      }
-    ],
-    "careerHistory": [
-      {
-        "id": "yzr-1",
-        "unitId": "csrc-jc",
-        "unitName": "证监会稽查局",
-        "position": "副处长、处长、副局长",
-        "rank": "副厅局级",
-        "startYear": 2002,
-        "startMonth": 5,
-        "endYear": 2018,
-        "endMonth": 8,
-        "notes": "督办组织查办全国多起恶性跨区域证券违规犯罪",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+        "school": "中国人民大学",
+        "major": "民商法",
+        "graduationYear": 1986
       },
       {
-        "id": "yzr-2",
-        "unitId": "csrc-gd",
-        "unitName": "广东证监局",
-        "position": "党委书记、局长兼广州稽查局局长",
-        "rank": "正厅局级",
-        "startYear": 2018,
-        "startMonth": 8,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "统揽广东辖区证券期货全面监管，服务实体经济与大湾区资本市场繁荣",
-        "isDerived": false
-      }
-    ],
-    "avatarUrl": "/avatars/yang-zongru.svg"
-  },
-  {
-    "id": "tang-libin",
-    "name": "唐理斌",
-    "gender": "男",
-    "birthYear": 1970,
-    "birthMonth": 10,
-    "nativePlace": "四川",
-    "currentUnitId": "csrc-js",
-    "currentPosition": "江苏证监局党委书记、局长",
-    "currentRank": "正厅局级",
-    "bioSummary": "经济学硕士。历任安徽证监局副局长、山东证监局副局长、江西证监局局长、四川证监局局长兼成都稽查局局长，2024年8月调任江苏证监局局长。",
-    "education": [
-      {
-        "degree": "学士",
-        "school": "西南财经大学",
-        "major": "金融学",
-        "graduationYear": 1992
-      },
-      {
-        "degree": "硕士",
-        "school": "西南财经大学",
-        "major": "经济学",
+        "degree": "博士",
+        "school": "对外经济贸易大学",
+        "major": "国际经济法",
         "graduationYear": 1998
       }
     ],
     "careerHistory": [
       {
-        "id": "tlb-1",
-        "unitId": "csrc-main",
-        "unitName": "安徽证监局 / 山东证监局",
-        "position": "副局长、党委委员",
-        "rank": "副厅局级",
-        "startYear": 2004,
-        "startMonth": 3,
-        "endYear": 2016,
-        "endMonth": 5,
-        "notes": "分管地方上市公司与证券分支机构一线检查",
+        "id": "jjh-1",
+        "unitId": "csrc-fl",
+        "unitName": "证监会法律部 / 行政处罚委",
+        "position": "副主任、行政处罚委主任委员",
+        "rank": "正厅局级",
+        "startYear": 2002,
+        "startMonth": 11,
+        "endYear": 2012,
+        "endMonth": 8,
+        "notes": "主持行政处罚听证制度化建设，参与证券法、证券投资基金法重大修订",
         "isDerived": true,
         "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
       },
       {
-        "id": "tlb-2",
-        "unitId": "csrc-main",
-        "unitName": "江西证监局",
-        "position": "党委书记、局长",
+        "id": "jjh-2",
+        "unitId": "csrc-sz",
+        "unitName": "深圳证监局",
+        "position": "党委书记、局长兼深交所理事",
         "rank": "正厅局级",
-        "startYear": 2016,
-        "startMonth": 5,
-        "endYear": 2020,
-        "endMonth": 7,
-        "notes": "主持江西辖区证券期货日常监督与防范金融风险",
-        "isDerived": false
-      },
-      {
-        "id": "tlb-3",
-        "unitId": "csrc-sc",
-        "unitName": "四川证监局",
-        "position": "党委书记、局长兼成都稽查局局长",
-        "rank": "正厅局级",
-        "startYear": 2020,
-        "startMonth": 7,
-        "endYear": 2024,
-        "endMonth": 8,
-        "notes": "主持成渝双城经济圈核心省份一线监管与稽查大案办理",
-        "isDerived": false
-      },
-      {
-        "id": "tlb-4",
-        "unitId": "csrc-js",
-        "unitName": "江苏证监局",
-        "position": "党委书记、局长",
-        "rank": "正厅局级",
-        "startYear": 2024,
+        "startYear": 2012,
         "startMonth": 8,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "全面主政全国上市公司第二大省江苏资本市场稳健发展与合规治理",
+        "endYear": 2018,
+        "endMonth": 9,
+        "notes": "主管深圳辖区一线监管，严厉查处特区证券欺诈和违规质押",
+        "isDerived": false
+      },
+      {
+        "id": "jjh-3",
+        "unitId": "csrc-fl",
+        "unitName": "证监会法律部",
+        "position": "主任、首席律师",
+        "rank": "正厅局级",
+        "startYear": 2018,
+        "startMonth": 9,
+        "endYear": 2023,
+        "endMonth": 12,
+        "notes": "全面主导新证券法、期货和衍生品法落地与特别代表人诉讼首案构建",
         "isDerived": false
       }
     ],
-    "avatarUrl": "/avatars/tang-libin.svg"
+    "avatarUrl": "/avatars/jiao-jinhong.svg"
   },
   {
-    "id": "chen-fei",
-    "name": "陈飞",
+    "id": "wang-jianping",
+    "name": "王建平",
+    "avatarUrl": "/avatars/wang-jianping.svg",
     "gender": "男",
-    "birthYear": 1968,
-    "birthMonth": 5,
-    "nativePlace": "山东",
-    "currentUnitId": "csrc-csf",
-    "currentPosition": "中国证券金融股份有限公司党委书记、董事长",
+    "birthYear": 1963,
+    "birthMonth": 6,
+    "nativePlace": "河北",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会市场监管二部原主任，北京证监局原局长",
     "currentRank": "正厅局级",
-    "bioSummary": "长期在证券监管与金融系统任职。2022年2月出任中国证券金融股份有限公司党委书记、董事长。",
     "education": [
       {
         "degree": "学士",
-        "school": "山东大学",
-        "major": "经济学",
-        "graduationYear": 1990
+        "school": "中国人民大学",
+        "major": "经济学学士",
+        "graduationYear": 1985
       },
       {
         "degree": "硕士",
-        "school": "清华大学五道口金融学院",
-        "major": "金融学",
+        "school": "财政部科研所",
+        "major": "经济学硕士",
+        "graduationYear": 1988
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "wjp-1",
+        "unitId": "csrc-jg",
+        "unitName": "中国证监会",
+        "department": "机构监管部",
+        "position": "副处长、处长、副主任",
+        "rank": "副厅局级",
+        "startYear": 1998,
+        "startMonth": 7,
+        "endYear": 2015,
+        "endMonth": 1,
+        "isDerived": false,
+        "notes": "负责全国证券公司日常经营监管与机构业务准入核准"
+      },
+      {
+        "id": "wjp-2",
+        "unitId": "csrc-bj",
+        "unitName": "中国证监会北京监管局",
+        "department": "局领导班子",
+        "position": "党委书记、局长",
+        "rank": "正厅局级",
+        "startYear": 2015,
+        "startMonth": 1,
+        "endYear": 2019,
+        "endMonth": 5,
+        "isDerived": false,
+        "notes": "全面主持北京辖区证券期货日常一线监管，稳妥处置网贷P2P及地方金融异动"
+      },
+      {
+        "id": "wjp-3",
+        "unitId": "csrc-sc2",
+        "unitName": "中国证监会",
+        "department": "市场监管二部（打非局 / 清整办）",
+        "position": "主任",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "startMonth": 5,
+        "endYear": 2023,
+        "endMonth": 11,
+        "isDerived": false,
+        "notes": "主管全国私募投资基金合规风控、清理整顿各类地方交易场所与打击非法证券期货活动"
+      }
+    ],
+    "bioSummary": "经济学硕士。曾任证监会机构部副主任、北京证监局党委书记兼局长（2015-2019），后任证监会市场监管二部主任兼清整办主任，全面主管私募监管与清理整顿各类交易场所。"
+  },
+  {
+    "id": "zhang-sining",
+    "name": "张思宁",
+    "avatarUrl": "/avatars/zhang-sining.svg",
+    "gender": "女",
+    "birthYear": 1960,
+    "birthMonth": 8,
+    "nativePlace": "辽宁",
+    "currentUnitId": "csrc-main",
+    "currentPosition": "中国证监会原创业板部主任，上海证监局原局长",
+    "currentRank": "正厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "东北财经大学",
+        "major": "经济学学士",
+        "graduationYear": 1982
+      },
+      {
+        "degree": "硕士",
+        "school": "东北财经大学",
+        "major": "经济学硕士",
+        "graduationYear": 1988
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zsn-1",
+        "unitId": "csrc-fx",
+        "unitName": "中国证监会",
+        "department": "创业板发行监管部",
+        "position": "主任",
+        "rank": "正厅局级",
+        "startYear": 2009,
+        "startMonth": 3,
+        "endYear": 2012,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "作为证监会创业板首任掌门人，搭建创业板发行上市审核全套标准规章"
+      },
+      {
+        "id": "zsn-2",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海监管局",
+        "department": "局领导班子",
+        "position": "党委书记、局长兼上海稽查局局长",
+        "rank": "正厅局级",
+        "startYear": 2012,
+        "startMonth": 6,
+        "endYear": 2014,
+        "endMonth": 9,
+        "isDerived": false,
+        "notes": "全面主持上海辖区证券期货日常一线监管"
+      },
+      {
+        "id": "zsn-3",
+        "unitId": "csrc-sc2",
+        "unitName": "中国证监会",
+        "department": "打击非法证券期货活动局",
+        "position": "局长",
+        "rank": "正厅局级",
+        "startYear": 2014,
+        "startMonth": 9,
+        "endYear": 2017,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "负责全国清理整顿非法证券期货交易场所与非法集资专项打击"
+      },
+      {
+        "id": "zsn-4",
+        "unitId": "csrc-main",
+        "unitName": "证通股份有限公司",
+        "department": "董事会",
+        "position": "党委书记、董事长",
+        "rank": "正厅局级",
+        "startYear": 2017,
+        "startMonth": 6,
+        "endYear": 2022,
+        "endMonth": 8,
+        "isDerived": false,
+        "notes": "主导证券行业公用金融科技与跨机构信息联网基础设施运营"
+      }
+    ],
+    "bioSummary": "经济学硕士。证监会创业板发行监管部首任主任、上海证监局原局长、打非局原局长、证通股份有限公司原董事长，在创业板初期发行制度奠基方面具有重要影响。"
+  },
+  {
+    "id": "han-kang",
+    "name": "韩康",
+    "avatarUrl": "/avatars/han-kang.svg",
+    "gender": "男",
+    "birthYear": 1958,
+    "birthMonth": 4,
+    "nativePlace": "江苏",
+    "currentUnitId": "csrc-sh",
+    "currentPosition": "上海证监局原副局长（正局级巡视员）、中基协原副会长",
+    "currentRank": "正厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "上海财经大学",
+        "major": "金融系",
+        "graduationYear": 1982
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "hk-1",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海证管办",
+        "department": "综合处 / 机构处",
+        "position": "综合处处长兼机构处处长、副主任兼纪委书记",
+        "rank": "副厅局级",
+        "startYear": 1998,
+        "startMonth": 10,
+        "endYear": 2004,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "上海早期证券监管骨干，统筹华东机构一线治理"
+      },
+      {
+        "id": "hk-2",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海监管局",
+        "department": "局领导班子",
+        "position": "党委委员、副局长、正局级巡视员",
+        "rank": "正厅局级",
+        "startYear": 2004,
+        "startMonth": 3,
+        "endYear": 2012,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "担任上海证监局副局长近十年，分管基金与机构一线综合监管"
+      },
+      {
+        "id": "hk-3",
+        "unitId": "csrc-amac",
+        "unitName": "中国证券投资基金业协会",
+        "department": "协会领导",
+        "position": "专职副会长兼秘书长",
+        "rank": "正厅局级",
+        "startYear": 2012,
+        "startMonth": 6,
+        "endYear": 2018,
+        "endMonth": 8,
+        "isDerived": false,
+        "notes": "参与中国证券投资基金业协会初创筹备，构建私募基金登记备案自律体系"
+      }
+    ],
+    "bioSummary": "上海财经大学毕业。上海资本市场早期监管元老，历任上海证管办副主任兼纪委书记、上海证监局副局长（正局级巡视员），2012年参与筹备中国证券投资基金业协会并任专职副会长兼秘书长。"
+  },
+  {
+    "id": "zhang-ning",
+    "name": "张宁",
+    "avatarUrl": "/avatars/zhang-ning.svg",
+    "gender": "女",
+    "birthYear": 1954,
+    "birthMonth": 10,
+    "nativePlace": "上海",
+    "currentUnitId": "csrc-sh",
+    "currentPosition": "中国证监会上海监管局原党委书记、局长",
+    "currentRank": "正厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "复旦大学",
+        "major": "经济系学士",
+        "graduationYear": 1982
+      },
+      {
+        "degree": "硕士",
+        "school": "复旦大学",
+        "major": "世界经济系硕士",
+        "graduationYear": 1986
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zn-1",
+        "unitId": "pbc",
+        "unitName": "中国人民银行上海市分行",
+        "department": "金融管理处",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 1984,
+        "startMonth": 7,
+        "endYear": 1998,
+        "endMonth": 10,
+        "isDerived": false,
+        "notes": "参与早期上海证券交易所筹建与属地非银金融机构整顿"
+      },
+      {
+        "id": "zn-2",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海证管办",
+        "department": "领导班子",
+        "position": "党委书记、主任",
+        "rank": "正厅局级",
+        "startYear": 1998,
+        "startMonth": 10,
+        "endYear": 2004,
+        "endMonth": 3,
+        "isDerived": false,
+        "notes": "中国证监会派驻上海大区办事处首任主任，统管华东地区证券市场早期一线监管"
+      },
+      {
+        "id": "zn-3",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海监管局",
+        "department": "局领导班子",
+        "position": "党委书记、局长",
+        "rank": "正厅局级",
+        "startYear": 2004,
+        "startMonth": 3,
+        "endYear": 2012,
+        "endMonth": 6,
+        "isDerived": false,
+        "notes": "改制后执掌上海证监局逾八年，深度守护上海资本市场规范稳健运行，被誉为上海金融监管界“铁娘子”"
+      }
+    ],
+    "bioSummary": "经济学硕士。上海证券期货市场早期监管的核心奠基人，历任央行上海分行金融管理处处长、证监会上海证管办主任、上海证监局首任局长（执掌达14年之久），在华东地区证券市场制度规范方面作出了深远贡献。"
+  },
+  {
+    "id": "yang-yong",
+    "name": "杨勇",
+    "avatarUrl": "/avatars/yang-yong.svg",
+    "gender": "男",
+    "birthYear": 1973,
+    "birthMonth": 10,
+    "nativePlace": "四川",
+    "currentUnitId": "csrc-sh",
+    "currentPosition": "中国证监会上海监管局党委委员、纪委书记",
+    "currentRank": "副厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "西南政法大学",
+        "major": "法学学士",
         "graduationYear": 1995
       }
     ],
     "careerHistory": [
       {
-        "id": "cf-1",
-        "unitId": "csrc-jg",
-        "unitName": "中国证监会机关",
-        "department": "综合监管部门",
-        "position": "副处长、处长、副主任",
-        "rank": "副厅局级",
-        "startYear": 2005,
-        "startMonth": 6,
-        "endYear": 2022,
-        "endMonth": 2,
+        "id": "yy-1",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "纪检部门 / 法律部",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 1997,
+        "startMonth": 7,
+        "endYear": 2019,
+        "endMonth": 6,
         "isDerived": true,
-        "sourceNote": "根据金融监管系统干部历次任免与活动公开报道反推",
-        "notes": "参与资本市场稳健运行制度设计与重大风险监测防范"
+        "sourceNote": "根据证监会纪检监察干部选拔公示考证",
+        "notes": "从事系统内部纪律审查与法制合规复核"
       },
       {
-        "id": "cf-2",
-        "unitId": "csrc-csf",
-        "unitName": "中国证券金融股份有限公司",
-        "department": "董事会",
-        "position": "党委书记、董事长",
-        "rank": "正厅局级",
-        "startYear": 2022,
-        "startMonth": 2,
+        "id": "yy-2",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海监管局",
+        "department": "局党委 / 纪委",
+        "position": "党委委员、纪委书记",
+        "rank": "副厅局级",
+        "startYear": 2019,
+        "startMonth": 6,
         "endYear": null,
-        "endMonth": null,
         "isCurrent": true,
         "isDerived": false,
-        "notes": "全面领导中证金融党委与董事会工作，加强转融通逆周期调控与全市场两融风险监控"
+        "notes": "全面负责上海证监局党风廉政建设、执纪监督与干部履职廉洁督查"
       }
     ],
-    "avatarUrl": "/avatars/chen-fei.svg"
+    "bioSummary": "法学学士。长期从事证券法制与纪检监督工作，现任中国证监会上海监管局党委委员、纪委书记。"
   },
   {
-    "id": "wu-xiaoyong",
-    "name": "吴孝勇",
-    "gender": "男",
-    "birthYear": 1971,
-    "birthMonth": 9,
+    "id": "peng-jing",
+    "name": "彭晶",
+    "avatarUrl": "/avatars/peng-jing.svg",
+    "gender": "女",
+    "birthYear": 1972,
+    "birthMonth": 8,
     "nativePlace": "湖北",
-    "currentUnitId": "csrc-csf",
-    "currentPosition": "中国证券金融股份有限公司党委副书记、总经理",
-    "currentRank": "正厅局级",
-    "bioSummary": "曾任中国证监会机构监管部处长，深度参与中证金融筹备设立与转融通制度构建，现任中证金融总经理、副董事长。",
+    "currentUnitId": "csrc-bj",
+    "currentPosition": "中国证监会北京监管局党委委员、纪委书记",
+    "currentRank": "副厅局级",
     "education": [
       {
         "degree": "学士",
-        "school": "武汉大学",
-        "major": "经济学",
-        "graduationYear": 1993
-      },
-      {
-        "degree": "硕士",
-        "school": "中国人民大学",
-        "major": "财政金融",
-        "graduationYear": 1996
+        "school": "中南财经政法大学",
+        "major": "经济法学士",
+        "graduationYear": 1994
       }
     ],
     "careerHistory": [
       {
-        "id": "wxy-1",
-        "unitId": "csrc-jg",
-        "unitName": "中国证监会机关",
-        "department": "机构监管部",
+        "id": "pj-1",
+        "unitId": "csrc-main",
+        "unitName": "中国证监会",
+        "department": "纪检监察部门 / 稽查部门",
         "position": "副处长、处长",
         "rank": "正处级",
-        "startYear": 2002,
-        "startMonth": 3,
-        "endYear": 2011,
-        "endMonth": 10,
+        "startYear": 1996,
+        "startMonth": 7,
+        "endYear": 2018,
+        "endMonth": 5,
         "isDerived": true,
-        "sourceNote": "根据证券公司融资融券业务试点审批及监管规章公开报道反推",
-        "notes": "主管证券公司业务创新与融资融券试点业务规范"
+        "sourceNote": "根据中国证监会纪检监察与地方督察干部档案考证",
+        "notes": "从事证券执法督察与系统内部党风廉政建设"
       },
       {
-        "id": "wxy-2",
-        "unitId": "csrc-csf",
-        "unitName": "中国证券金融股份有限公司",
-        "department": "筹备组 / 领导班子",
-        "position": "筹备组成员、党委委员、副总经理",
+        "id": "pj-2",
+        "unitId": "csrc-bj",
+        "unitName": "中国证监会北京监管局",
+        "department": "局党委 / 纪委",
+        "position": "党委委员、纪委书记",
         "rank": "副厅局级",
-        "startYear": 2011,
-        "startMonth": 10,
-        "endYear": 2020,
-        "endMonth": 8,
-        "isDerived": true,
-        "sourceNote": "根据中证金融设立筹备历程及金融标准化成果推导",
-        "notes": "主导设计转融通业务系统流程并牵头多项资本市场国家与行业数据标准制定"
-      },
-      {
-        "id": "wxy-3",
-        "unitId": "csrc-csf",
-        "unitName": "中国证券金融股份有限公司",
-        "department": "经营管理层",
-        "position": "党委副书记、副董事长、总经理",
-        "rank": "正厅局级",
-        "startYear": 2020,
-        "startMonth": 8,
+        "startYear": 2018,
+        "startMonth": 5,
         "endYear": null,
-        "endMonth": null,
         "isCurrent": true,
         "isDerived": false,
-        "notes": "主持中证金融日常经营管理，主导证券金融大数据统计分析平台开发建设"
+        "notes": "全面主持北京证监局纪检监督与党风廉政执纪问责，严抓监管干部廉洁履职"
       }
     ],
-    "avatarUrl": "/avatars/wu-xiaoyong.svg"
+    "bioSummary": "法学学士。长期从事证券期货监管系统内部纪检监察与督察巡视，现任中国证监会北京监管局党委委员、纪委书记。"
+  },
+  {
+    "id": "wang-dengyong",
+    "name": "王登勇",
+    "avatarUrl": "/avatars/wang-dengyong.svg",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 3,
+    "nativePlace": "江苏",
+    "currentUnitId": "csrc-sh",
+    "currentPosition": "中国证监会上海监管局党委委员、副局长",
+    "currentRank": "副厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "南京大学",
+        "major": "经济学学士",
+        "graduationYear": 1993
+      },
+      {
+        "degree": "硕士",
+        "school": "复旦大学",
+        "major": "金融学硕士",
+        "graduationYear": 2001
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "wdy-1",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海监管局",
+        "department": "机构监管处 / 稽查处",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 1998,
+        "startMonth": 10,
+        "endYear": 2018,
+        "endMonth": 3,
+        "isDerived": true,
+        "sourceNote": "根据上海证监局处级领导任职公示考证",
+        "notes": "长期负责上海辖区证券公司合规抽查与稽查大案现场勘验"
+      },
+      {
+        "id": "wdy-2",
+        "unitId": "csrc-sh",
+        "unitName": "中国证监会上海监管局",
+        "department": "局领导班子",
+        "position": "党委委员、副局长",
+        "rank": "副厅局级",
+        "startYear": 2018,
+        "startMonth": 3,
+        "endYear": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "分管上海辖区证券基金期货经营机构合规风控及属地重大金融风险化解"
+      }
+    ],
+    "bioSummary": "金融学硕士。长期在上海证监局系统从事机构监管与合规风控，现任中国证监会上海监管局党委委员、副局长。"
+  },
+  {
+    "id": "hu-jingsheng",
+    "name": "胡经生",
+    "avatarUrl": "/avatars/hu-jingsheng.svg",
+    "gender": "男",
+    "birthYear": 1970,
+    "birthMonth": 11,
+    "nativePlace": "山东",
+    "currentUnitId": "csrc-bj",
+    "currentPosition": "中国证监会北京监管局党委委员、副局长",
+    "currentRank": "副厅局级",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "山东大学",
+        "major": "经济系学士",
+        "graduationYear": 1992
+      },
+      {
+        "degree": "硕士",
+        "school": "中国人民大学",
+        "major": "金融学硕士",
+        "graduationYear": 1998
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "hjs-1",
+        "unitId": "csrc-bj",
+        "unitName": "中国证监会北京监管局",
+        "department": "上市公司监管处 / 机构处",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 1998,
+        "startMonth": 10,
+        "endYear": 2017,
+        "endMonth": 6,
+        "isDerived": true,
+        "sourceNote": "根据北京证监局干部任职动态及辖区上市公司治理调研考证",
+        "notes": "负责北京辖区央企与高科技上市公司持续信息披露与合规抽查"
+      },
+      {
+        "id": "hjs-2",
+        "unitId": "csrc-bj",
+        "unitName": "中国证监会北京监管局",
+        "department": "局领导班子",
+        "position": "党委委员、副局长",
+        "rank": "副厅局级",
+        "startYear": 2017,
+        "startMonth": 6,
+        "endYear": null,
+        "isCurrent": true,
+        "isDerived": false,
+        "notes": "协助局长分管上市公司监管、现场检查与拟上市企业辅导监管"
+      }
+    ],
+    "bioSummary": "金融学硕士。长期扎根北京证监局一线监管工作，曾任上市公司监管处处长，现任中国证监会北京监管局党委委员、副局长。"
   }
 ];
 

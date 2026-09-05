@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" width="240" height="320">
+  <defs>
+    <!-- Background Gradient (Standard 2-Inch Red/Navy Backdrop) -->
+    <radialGradient id="bgGrad-yi-huiman" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#580f0f"/>
+    </radialGradient>
+    <filter id="shadow-yi-huiman" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Photo Background -->
+  <rect width="240" height="320" fill="url(#bgGrad-yi-huiman)"/>
+
+  <!-- Subtle Rim Light & Studio Background Glow -->
+  <circle cx="120" cy="115" r="85" fill="white" opacity="0.08"/>
+
+  <!-- Formal Suit Silhouette -->
+  <!-- Shoulders & Body -->
+  <path d="M 30 320 L 45 235 C 55 210 75 198 100 195 L 140 195 C 165 198 185 210 195 235 L 210 320 Z" fill="#111827" filter="url(#shadow-yi-huiman)"/>
+
+  <!-- Shirt Collar -->
+  <polygon points="105,195 120,230 135,195 130,185 110,185" fill="#ffffff"/>
+
+  <!-- Necktie or Brooch -->
+  <polygon points='116,215 124,215 128,295 120,315 112,295' fill='#dc2626'/>
+  <polygon points='118,220 122,220 124,290 120,298 116,290' fill='#fbbf24' opacity='0.75'/>
+
+  <!-- Suit Lapels Left & Right -->
+  <polygon points="50,235 100,195 115,255 70,320 30,320" fill="#030712"/>
+  <polygon points="190,235 140,195 125,255 170,320 210,320" fill="#030712"/>
+
+  <!-- Neck -->
+  <rect x="106" y="155" width="28" height="35" rx="5" fill="#fcd34d"/>
+
+  <!-- Head / Hair Silhouette -->
+  <!-- Hair Base -->
+  <ellipse cx="120" cy="110" rx="42" ry="46" fill="#1f2937"/>
+
+  <!-- Face Contour -->
+  <ellipse cx="120" cy="118" rx="34" ry="38" fill="#fde68a"/>
+
+  <!-- Hair Forehead Trim -->
+  <path d='M 84 105 Q 120 75 156 105 Q 140 90 120 90 Q 98 90 84 105 Z' fill='#111827'/>
+
+  <!-- Official Emblem Name Banner at Bottom -->
+  <rect x="25" y="278" width="190" height="28" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.25)" stroke-width="1"/>
+  <text x="120" y="297" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', PingFang SC, 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="2">
+    易会满
+  </text>
+</svg>
