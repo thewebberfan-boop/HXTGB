@@ -67,12 +67,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const handleSelectCoreLeadership = () => {
     onSelectAllOfficials([
       'wu-qing',
+      'li-ming',
+      'chen-huaping',
       'qiu-yong',
+      'cai-jianchun',
       'sha-yan',
+      'li-jizun',
       'zhou-guihua',
       'tian-xiangyang',
+      'xiong-jun',
+      'zhu-lihong',
       'he-qingwen',
-      'ran-hua',
       'yu-wenqiang',
       'lu-wenshan',
       'ge-yiping'

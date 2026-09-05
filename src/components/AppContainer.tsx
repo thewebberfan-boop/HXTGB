@@ -17,51 +17,54 @@ export function AppContainer() {
   // 默认精选核心领导班子
   const [selectedOfficialIds, setSelectedOfficialIds] = useState<string[]>([
     'wu-qing',
+    'li-ming',
+    'chen-huaping',
     'qiu-yong',
+    'cai-jianchun',
     'sha-yan',
+    'li-jizun',
     'zhou-guihua',
     'tian-xiangyang',
+    'xiong-jun',
+    'zhu-lihong',
     'he-qingwen',
-    'ran-hua',
     'yu-wenqiang',
     'lu-wenshan',
     'ge-yiping',
   ]);
 
-  // 默认激活的核心泳道单位列表（涵盖所有期货所、中国结算、中证数据、中证金融等）
-  const defaultLaneUnitIds = [
-    'csrc-main',
-    'csrc-sse',
-    'csrc-szse',
-    'csrc-bse',
-    'csrc-cffex',
-    'csrc-shfe',
-    'csrc-dce',
-    'csrc-czce',
-    'csrc-gfex',
-    'csrc-csdc',
-    'csrc-csf',
-    'csrc-csdata',
-    'csrc-sipf',
-    'csrc-bj',
-    'csrc-sh',
-    'csrc-gd',
-    'csrc-sz',
-    'gov-sh',
-  ];
+  // 默认激活所有系统单位（SwimlaneView 会根据选中的官员动态自适应过滤掉无内容的单位）
+  const defaultLaneUnitIds = UNITS_DATA.map((u) => u.id);
   const [activeLaneUnitIds, setActiveLaneUnitIds] = useState<string[]>(defaultLaneUnitIds);
 
   // 切换官员勾选
   const handleToggleOfficialSelection = (officialId: string) => {
-    setSelectedOfficialIds((prev) =>
-      prev.includes(officialId)
-        ? prev.filter((id) => id !== officialId)
-        : [...prev, officialId]
-    );
+    setSelectedOfficialIds((prev) => {
+      const isAlreadySelected = prev.includes(officialId);
+      if (isAlreadySelected) {
+        return prev.filter((id) => id !== officialId);
+      } else {
+        // 选中官员时，将其履历单位自动补充到泳道候选池，确保其单位泳道自动浮现
+        const off = OFFICIALS_DATA.find((o) => o.id === officialId);
+        if (off) {
+          const uids = [off.currentUnitId, ...off.careerHistory.map((r) => r.unitId)].filter(Boolean);
+          setActiveLaneUnitIds((lanes) => Array.from(new Set([...lanes, ...uids])));
+        }
+        return [...prev, officialId];
+      }
+    });
   };
 
   const handleSelectAllOfficials = (ids: string[]) => {
     setSelectedOfficialIds(ids);
+    const uids = new Set<string>();
+    OFFICIALS_DATA.filter((o) => ids.includes(o.id)).forEach((off) => {
+      if (off.currentUnitId) uids.add(off.currentUnitId);
+      off.careerHistory.forEach((r) => {
+        if (r.unitId) uids.add(r.unitId);
+      });
+    });
+    setActiveLaneUnitIds((lanes) => Array.from(new Set([...lanes, ...uids])));
   };
 
   const handleClearOfficials = () => {
@@ -84,6 +87,39 @@ export function AppContainer() {
   // 拖拽重排泳道
   const handleReorderLanes = (newLaneIds: string[]) => {
     setActiveLaneUnitIds(newLaneIds);
+  };
+
+  // 核心交互：列头点击「补全干部」，补全该单位在系统中的全部官员并在侧边栏选中，同时自动补充其历任单位泳道
+  const handleCompleteUnitOfficials = (unitId: string) => {
+    const matchingOfficials = OFFICIALS_DATA.filter(
+      (o) =>
+        o.currentUnitId === unitId ||
+        o.careerHistory.some(
+          (r) => r.unitId === unitId || (unitId === 'csrc-main' && r.unitId.startsWith('csrc-'))
+        )
+    );
+
+    if (matchingOfficials.length === 0) return;
+
+    // 1. 将该单位全部官员在左侧边栏自动选中
+    const matchingIds = matchingOfficials.map((o) => o.id);
+    setSelectedOfficialIds((prev) => Array.from(new Set([...prev, ...matchingIds])));
+
+    // 2. 将这些官员历任的全部单位自动补充到泳道候选池，触发“单位”泳道自动补充展示
+    const unitIdsToAdd = new Set<string>();
+    unitIdsToAdd.add(unitId);
+    matchingOfficials.forEach((o) => {
+      if (o.currentUnitId) unitIdsToAdd.add(o.currentUnitId);
+      o.careerHistory.forEach((rec) => {
+        if (rec.unitId) unitIdsToAdd.add(rec.unitId);
+      });
+    });
+
+    setActiveLaneUnitIds((prev) => {
+      const combined = new Set(prev);
+      unitIdsToAdd.forEach((uid) => combined.add(uid));
+      return Array.from(combined);
+    });
   };
 
   // 一键匹配相关单位
@@ -159,6 +195,7 @@ export function AppContainer() {
               activeLaneUnitIds={activeLaneUnitIds}
               onReorderLanes={handleReorderLanes}
               onRemoveLane={handleRemoveLane}
+              onCompleteUnitOfficials={handleCompleteUnitOfficials}
               isTimeReversed={isTimeReversed}
               hoveredOfficialId={hoveredOfficialId}
               onHoverOfficial={setHoveredOfficialId}

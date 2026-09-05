@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState, useMemo, useRef } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { Official, Unit, CareerRecord, UnitLevel } from '../types';
 import { getOfficialColor } from '../data/csrcData';
-import { GripVertical, X } from 'lucide-react';
+import { GripVertical, X, UserPlus, Sparkles, Check } from 'lucide-react';
 
 interface SwimlaneViewProps {
   units: Unit[];
@@ -12,6 +12,7 @@ interface SwimlaneViewProps {
   activeLaneUnitIds: string[];
   onReorderLanes: (newLaneIds: string[]) => void;
   onRemoveLane: (unitId: string) => void;
+  onCompleteUnitOfficials: (unitId: string) => void;
   isTimeReversed: boolean;
   hoveredOfficialId: string | null;
   onHoverOfficial: (id: string | null) => void;
@@ -24,6 +25,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
   activeLaneUnitIds,
   onReorderLanes,
   onRemoveLane,
+  onCompleteUnitOfficials,
   isTimeReversed,
   hoveredOfficialId,
   onHoverOfficial,
@@ -36,6 +38,11 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
   } | null>(null);
   const [hoveredLaneUnit, setHoveredLaneUnit] = useState<Unit | null>(null);
   const [laneTooltipPos, setLaneTooltipPos] = useState<{ x: number; y: number } | null>(null);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const toastTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+  // 容器宽度测量
+  const [containerWidth, setContainerWidth] = useState<number>(1200);
 
   // 拖拽重排状态
   const [draggedLaneIndex, setDraggedLaneIndex] = useState<number | null>(null);
@@ -48,7 +55,37 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
   const MAX_YEAR = 2026;
   const YEAR_HEIGHT = 44; // 每年 44px
   const TOTAL_HEIGHT = (MAX_YEAR - MIN_YEAR + 1) * YEAR_HEIGHT;
-  const LANE_WIDTH = 58; // 泳道单列宽度 58px
+  const TIME_RULER_WIDTH = 64; // 左侧年份固定标尺 64px
+  const MIN_LANE_WIDTH = 58; // 最小宽度（保证至少可显示 3 个汉字）
+
+  // 监听容器尺寸，动态自适应
+  useEffect(() => {
+    const el = chartScrollContainerRef.current;
+    if (!el) return;
+
+    const handleResize = () => {
+      if (el.clientWidth > 0) {
+        setContainerWidth(el.clientWidth);
+      }
+    };
+
+    handleResize();
+    const observer = new ResizeObserver(handleResize);
+    observer.observe(el);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  // 浮层提示触发
+  const triggerToast = (msg: string) => {
+    if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+    setToastMessage(msg);
+    toastTimerRef.current = setTimeout(() => {
+      setToastMessage(null);
+    }, 2400);
+  };
 
   // 年份列表
   const years = useMemo(() => {
@@ -66,17 +103,60 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
     return map;
   }, [units]);
 
-  // 当前有效泳道列表
-  const activeLanes = useMemo(() => {
-    return activeLaneUnitIds
-      .map((id) => unitMap.get(id))
-      .filter((u): u is Unit => Boolean(u));
-  }, [activeLaneUnitIds, unitMap]);
-
-  // 当前选中的官员
+  // 当前勾选的官员
   const selectedOfficials = useMemo(() => {
     return officials.filter((o) => selectedOfficialIds.includes(o.id));
   }, [officials, selectedOfficialIds]);
+
+  // 1. 核心需求一：根据选中的官员，动态过滤掉“没有履职内容”的空单位泳道
+  const visibleLanes = useMemo(() => {
+    // 转化为完整单位实体
+    const candidateLanes = activeLaneUnitIds
+      .map((id) => unitMap.get(id))
+      .filter((u): u is Unit => Boolean(u));
+
+    // 如果未选择任何官员，则保留已选泳道
+    if (selectedOfficials.length === 0) {
+      return candidateLanes;
+    }
+
+    // 动态过滤：仅保留当前选中官员有任职履历或现任的单位
+    return candidateLanes.filter((lane) => {
+      return selectedOfficials.some((official) => {
+        return (
+          official.currentUnitId === lane.id ||
+          official.careerHistory.some(
+            (rec) =>
+              rec.unitId === lane.id ||
+              (lane.id === 'csrc-main' && rec.unitId.startsWith('csrc-'))
+          )
+        );
+      });
+    });
+  }, [activeLaneUnitIds, unitMap, selectedOfficials]);
+
+  // 2. 核心需求一（下半部分）：按照屏幕宽度平均分配各单位的泳道宽度（保证 >= MIN_LANE_WIDTH）
+  const computedLaneWidth = useMemo(() => {
+    const count = Math.max(1, visibleLanes.length);
+    // 减去左侧固定时间标尺及少量边缘留白
+    const availableWidth = Math.max(0, containerWidth - TIME_RULER_WIDTH - 4);
+    const allocated = Math.floor(availableWidth / count);
+    return Math.max(MIN_LANE_WIDTH, allocated);
+  }, [containerWidth, visibleLanes.length, TIME_RULER_WIDTH, MIN_LANE_WIDTH]);
+
+  // 3. 统计系统中各单位拥有的全部官员数量（供一键补全按钮使用）
+  const unitTotalOfficialsMap = useMemo(() => {
+    const map = new Map<string, number>();
+    units.forEach((u) => {
+      const matchCount = officials.filter(
+        (o) =>
+          o.currentUnitId === u.id ||
+          o.careerHistory.some((r) => r.unitId === u.id)
+      ).length;
+      map.set(u.id, matchCount);
+    });
+    return map;
+  }, [units, officials]);
 
   // 拖拽排序
   const handleDragStart = (index: number) => {
@@ -97,10 +177,21 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
       return;
     }
 
+    // 找到在原始 activeLaneUnitIds 中的映射
+    const draggedUnit = visibleLanes[draggedLaneIndex];
+    const targetUnit = visibleLanes[dropIndex];
+    if (!draggedUnit || !targetUnit) return;
+
     const updated = [...activeLaneUnitIds];
-    const [movedItem] = updated.splice(draggedLaneIndex, 1);
-    updated.splice(dropIndex, 0, movedItem);
-    onReorderLanes(updated);
+    const fromIdx = updated.indexOf(draggedUnit.id);
+    const toIdx = updated.indexOf(targetUnit.id);
+
+    if (fromIdx !== -1 && toIdx !== -1) {
+      const [moved] = updated.splice(fromIdx, 1);
+      updated.splice(toIdx, 0, moved);
+      onReorderLanes(updated);
+    }
+
     setDraggedLaneIndex(null);
     setDragOverLaneIndex(null);
   };
@@ -160,8 +251,10 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
       }
     >();
 
-    activeLanes.forEach((lane, laneIdx) => {
-      const laneLeft = laneIdx * LANE_WIDTH;
+    const isWide = computedLaneWidth >= 110;
+
+    visibleLanes.forEach((lane, laneIdx) => {
+      const laneLeft = laneIdx * computedLaneWidth;
       const rawRecords: { official: Official; record: CareerRecord }[] = [];
 
       selectedOfficials.forEach((official) => {
@@ -170,7 +263,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
             rec.unitId === lane.id ||
             (lane.id === 'csrc-main' &&
               rec.unitId.startsWith('csrc-') &&
-              !activeLaneUnitIds.includes(rec.unitId));
+              !visibleLanes.some((l) => l.id === rec.unitId));
 
           if (matches) {
             rawRecords.push({ official, record: rec });
@@ -195,8 +288,12 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
         });
 
         const isMulti = hasOverlap && rawRecords.length > 1;
-        const width = isMulti ? LANE_WIDTH / 2 - 3 : LANE_WIDTH - 6;
-        const blockRelLeft = isMulti ? (i % 2 === 0 ? 2 : LANE_WIDTH / 2 + 1) : 3;
+        const width = isMulti
+          ? Math.max(26, Math.floor((computedLaneWidth - (isWide ? 14 : 5)) / 2))
+          : computedLaneWidth - (isWide ? 10 : 5);
+        const blockRelLeft = isMulti
+          ? (i % 2 === 0 ? (isWide ? 5 : 2) : Math.floor(computedLaneWidth / 2) + (isWide ? 2 : 1))
+          : (isWide ? 5 : 2.5);
         const absLeft = laneLeft + blockRelLeft;
         const centerX = absLeft + width / 2;
         const bottom = top + height;
@@ -228,7 +325,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
     });
 
     return { laneRecordsMap: lMap, blockCoordMap: cMap };
-  }, [activeLanes, selectedOfficials, isTimeReversed]);
+  }, [visibleLanes, selectedOfficials, computedLaneWidth, isTimeReversed]);
 
   // 跨泳道流转连线：箭头精准指向目标职位 label 的上方正中间！
   const trajectoryCurves = useMemo(() => {
@@ -259,7 +356,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
             const x1 = fromCoord.centerX;
             const y1 = !isTimeReversed ? fromCoord.bottom : fromCoord.top;
 
-            // 终点：目标职位 label 的上方中间（精准指向 label 上方中心！）
+            // 终点：目标职位 label 的上方中间（精准指向目标职位卡片 Label 正中！）
             const x2 = toCoord.centerX;
             const y2 = !isTimeReversed ? toCoord.top : toCoord.bottom;
 
@@ -287,13 +384,24 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
     return paths;
   }, [selectedOfficials, blockCoordMap, isTimeReversed]);
 
+  const isWideMode = computedLaneWidth >= 110;
+
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative select-none">
+      {/* 快捷操作反馈 Toast 浮层 */}
+      {toastMessage && (
+        <div className="absolute top-3 left-1/2 -translate-x-1/2 z-50 bg-gray-900/90 text-white text-xs px-4 py-2 rounded-xl shadow-xl flex items-center gap-2 backdrop-blur-md animate-in fade-in slide-in-from-top-2 duration-150 border border-white/10">
+          <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+          <span>{toastMessage}</span>
+        </div>
+      )}
+
       {/* 
         主泳道图谱容器：
         - 充满可视高度，双向自由滚动
         - 列头通过 sticky top-0 牢牢锁定在顶部，纵向上滑时永不移出视线！
         - 左侧年份标尺通过 sticky left-0 牢牢锁定在左侧！
+        - 泳道自适应屏幕宽度，平分剩余空间！
       */}
       <div
         ref={chartScrollContainerRef}
@@ -303,19 +411,26 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
           {/* 1. 顶部锁定表头行 (Sticky Top) */}
           <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-black/[0.08] flex items-stretch min-w-max shadow-2xs">
             {/* 左上角交叉区域 (Sticky Top + Left) */}
-            <div className="sticky left-0 z-40 w-16 shrink-0 border-r border-black/[0.06] flex flex-col items-center justify-center bg-gray-100/90 text-gray-600 text-xs font-semibold py-2.5 shadow-xs">
+            <div
+              style={{ width: `${TIME_RULER_WIDTH}px` }}
+              className="sticky left-0 z-40 shrink-0 border-r border-black/[0.06] flex flex-col items-center justify-center bg-gray-100/95 text-gray-600 text-xs font-semibold py-2.5 shadow-xs"
+            >
               <span className="text-[11px] font-bold">年份</span>
               <span className="text-[9px] text-gray-400 font-normal">
                 {isTimeReversed ? '26-96' : '96-26'}
               </span>
+              <span className="text-[8.5px] text-blue-600 bg-blue-50 px-1 py-0.2 rounded font-medium mt-1">
+                {visibleLanes.length}泳道
+              </span>
             </div>
 
-            {/* 各单位窄版竖排表头 */}
+            {/* 各单位自适应宽度的表头列 */}
             <div className="flex flex-1 items-stretch">
-              {activeLanes.map((lane, index) => {
+              {visibleLanes.map((lane, index) => {
                 const isOver = dragOverLaneIndex === index;
                 const microRank = getMicroRank(lane.level);
                 const displayName = lane.tinyName || lane.shortName;
+                const totalOfficialsInUnit = unitTotalOfficialsMap.get(lane.id) || 0;
 
                 return (
                   <div
@@ -336,46 +451,89 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                       setHoveredLaneUnit(null);
                       setLaneTooltipPos(null);
                     }}
-                    style={{ width: `${LANE_WIDTH}px` }}
-                    className={`shrink-0 border-r border-black/[0.06] flex flex-col items-center justify-between py-2 px-0.5 cursor-move select-none transition-all relative group h-32 ${
-                      isOver ? 'bg-blue-100 border-blue-500' : 'bg-white hover:bg-blue-50/50'
+                    style={{ width: `${computedLaneWidth}px` }}
+                    className={`shrink-0 border-r border-black/[0.06] flex flex-col justify-between py-2 px-1 cursor-move transition-all relative group h-32 ${
+                      isOver ? 'bg-blue-100 border-blue-500' : 'bg-white hover:bg-blue-50/40'
                     }`}
                     title="左右拖拽调换泳道排序"
                   >
-                    {/* Top: 抓手 & 级别小角标 */}
-                    <div className="flex flex-col items-center gap-1 w-full">
-                      <GripVertical className="w-3 h-3 text-gray-300 group-hover:text-gray-600 transition-colors" />
+                    {/* Top: 抓手 & 级别小角标 & 移除按钮 */}
+                    <div className="flex items-center justify-between w-full px-0.5">
+                      <GripVertical className="w-3 h-3 text-gray-300 group-hover:text-gray-600 transition-colors shrink-0" />
                       <span
                         className={`text-[8.5px] font-bold px-1 py-0.2 rounded leading-none ${microRank.bg}`}
                       >
                         {microRank.text}
                       </span>
-                    </div>
-
-                    {/* Middle: 机构名称竖排展示 */}
-                    <div
-                      className="font-semibold text-[11px] text-gray-800 tracking-wider flex items-center justify-center my-0.5 leading-tight text-center"
-                      style={{
-                        writingMode: 'vertical-rl',
-                        textOrientation: 'upright',
-                        letterSpacing: '1px',
-                      }}
-                    >
-                      {displayName}
-                    </div>
-
-                    {/* Bottom: 移除泳道 */}
-                    <div className="h-3 flex items-center justify-center">
-                      {activeLanes.length > 1 && (
+                      {visibleLanes.length > 1 ? (
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             onRemoveLane(lane.id);
                           }}
                           className="opacity-0 group-hover:opacity-100 text-gray-400 hover:text-red-500 p-0.5 rounded transition-opacity"
-                          title="隐藏此泳道"
+                          title="从泳道视图中移除"
                         >
                           <X className="w-2.5 h-2.5" />
+                        </button>
+                      ) : (
+                        <span className="w-2.5" />
+                      )}
+                    </div>
+
+                    {/* Middle: 机构名称（宽屏横排，窄屏竖排） */}
+                    <div className="my-auto flex items-center justify-center w-full px-0.5">
+                      {isWideMode ? (
+                        <div className="text-center">
+                          <span className="font-bold text-xs text-gray-900 leading-tight line-clamp-2">
+                            {lane.shortName || displayName}
+                          </span>
+                        </div>
+                      ) : (
+                        <div
+                          className="font-semibold text-[11px] text-gray-800 tracking-wider flex items-center justify-center leading-tight text-center"
+                          style={{
+                            writingMode: 'vertical-rl',
+                            textOrientation: 'upright',
+                            letterSpacing: '1px',
+                          }}
+                        >
+                          {displayName}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Bottom: 核心需求二「补全该单位所有官员及关联泳道」操作按钮 */}
+                    <div className="w-full flex items-center justify-center pt-1 border-t border-black/[0.04]">
+                      {isWideMode ? (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onCompleteUnitOfficials(lane.id);
+                            triggerToast(
+                              `已补全「${displayName}」的全部 ${totalOfficialsInUnit} 位干部并自动联动关联泳道！`
+                            );
+                          }}
+                          className="w-full py-1 px-1.5 bg-blue-50 hover:bg-blue-100 text-blue-600 rounded-lg text-[10px] font-medium flex items-center justify-center gap-1 border border-blue-200/50 shadow-2xs transition-all hover:scale-[1.02] active:scale-95"
+                          title={`点击一键补全「${displayName}」全部 ${totalOfficialsInUnit} 位履历官员，并自动补充其流转单位泳道`}
+                        >
+                          <UserPlus className="w-3 h-3 shrink-0 text-blue-600" />
+                          <span className="truncate">补全干部 ({totalOfficialsInUnit})</span>
+                        </button>
+                      ) : (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onCompleteUnitOfficials(lane.id);
+                            triggerToast(
+                              `已补全「${displayName}」的 ${totalOfficialsInUnit} 位干部履历与关联泳道`
+                            );
+                          }}
+                          className="p-1 w-full bg-blue-50 hover:bg-blue-100 text-blue-600 rounded-md text-[9px] font-medium flex items-center justify-center gap-0.5 border border-blue-200/50 shadow-2xs transition-all hover:scale-105 active:scale-95"
+                          title={`补全「${displayName}」全部 ${totalOfficialsInUnit} 位履历官员及关联泳道`}
+                        >
+                          <UserPlus className="w-3 h-3 text-blue-600 shrink-0" />
+                          <span className="text-[8.5px] font-bold">{totalOfficialsInUnit}</span>
                         </button>
                       )}
                     </div>
@@ -391,7 +549,10 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
             style={{ height: `${TOTAL_HEIGHT}px` }}
           >
             {/* 左侧锁定时间标尺 (Sticky Left) */}
-            <div className="sticky left-0 z-20 w-16 shrink-0 border-r border-black/[0.06] bg-gray-50/90 backdrop-blur-xs select-none relative shadow-xs">
+            <div
+              style={{ width: `${TIME_RULER_WIDTH}px` }}
+              className="sticky left-0 z-20 shrink-0 border-r border-black/[0.06] bg-gray-50/90 backdrop-blur-xs select-none relative shadow-xs"
+            >
               {years.map((year) => {
                 const y = getYearYPosition(year, 1);
                 const isMilestone = year % 5 === 0 || year === 2026 || year === 1996;
@@ -497,13 +658,13 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
               </svg>
 
               {/* 各单位泳道内容 */}
-              {activeLanes.map((lane) => {
+              {visibleLanes.map((lane) => {
                 const records = laneRecordsMap[lane.id] || [];
 
                 return (
                   <div
                     key={lane.id}
-                    style={{ width: `${LANE_WIDTH}px` }}
+                    style={{ width: `${computedLaneWidth}px` }}
                     className="shrink-0 border-r border-black/[0.06] relative z-20 hover:bg-black/[0.005] transition-colors"
                   >
                     {/* 任职卡片 Block */}
@@ -539,7 +700,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                             onHoverOfficial(null);
                             setActiveTooltip(null);
                           }}
-                          className={`absolute rounded-lg cursor-pointer transition-all duration-150 border-l-[3.5px] border-t border-r border-b border-black/[0.08] flex flex-col items-center justify-center p-0.5 select-none ${
+                          className={`absolute rounded-lg cursor-pointer transition-all duration-150 border-l-[3.5px] border-t border-r border-b border-black/[0.08] flex flex-col justify-center p-1 select-none overflow-hidden ${
                             isOfficialHighlighted
                               ? 'opacity-100 shadow-xs hover:shadow-md hover:scale-105 hover:z-40'
                               : 'opacity-20 grayscale'
@@ -556,28 +717,59 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                               : undefined,
                           }}
                         >
-                          {/* 核心显示：官员姓名（3个汉字清晰排布） */}
-                          <span
-                            className="font-bold text-[11px] sm:text-xs text-gray-900 tracking-tight leading-tight text-center truncate w-full block"
-                            style={{
-                              color: isOfficialHighlighted ? color.primary : '#1f2937',
-                            }}
-                          >
-                            {official.name}
-                          </span>
+                          {/* 宽屏与窄屏自适应显示 */}
+                          {isWideMode ? (
+                            <div className="w-full h-full flex flex-col justify-between py-0.5 leading-tight">
+                              <div className="flex items-center justify-between gap-1">
+                                <span
+                                  className="font-bold text-xs text-gray-900 truncate"
+                                  style={{
+                                    color: isOfficialHighlighted ? color.primary : '#111827',
+                                  }}
+                                >
+                                  {official.name}
+                                </span>
+                                <span className="text-[9px] text-gray-400 bg-gray-100 px-1 py-0.2 rounded font-mono shrink-0">
+                                  {record.startYear % 100}-{record.endYear ? record.endYear % 100 : '今'}
+                                </span>
+                              </div>
 
-                          {/* 较长任期显示年限 */}
-                          {height >= 50 && (
-                            <span className="text-[9px] font-mono text-gray-400 leading-none mt-0.5 scale-90">
-                              {record.startYear % 100}-{record.endYear ? record.endYear % 100 : '今'}
-                            </span>
-                          )}
+                              {/* 职务 */}
+                              <div className="text-[10px] text-gray-600 truncate font-medium mt-0.5">
+                                {record.position}
+                              </div>
 
-                          {/* 更长任期展示职务前三字 */}
-                          {height >= 75 && (
-                            <span className="text-[9px] text-gray-500 line-clamp-1 text-center scale-90 leading-none mt-0.5">
-                              {record.position.slice(0, 3)}
-                            </span>
+                              {/* 备注或部门 */}
+                              {height >= 60 && record.department && (
+                                <div className="text-[9px] text-gray-400 truncate mt-0.5">
+                                  {record.department}
+                                </div>
+                              )}
+                            </div>
+                          ) : (
+                            /* 窄屏紧凑模式（核心突出 3 汉字人名） */
+                            <div className="w-full flex flex-col items-center justify-center">
+                              <span
+                                className="font-bold text-[11px] sm:text-xs text-gray-900 tracking-tight leading-tight text-center truncate w-full block"
+                                style={{
+                                  color: isOfficialHighlighted ? color.primary : '#1f2937',
+                                }}
+                              >
+                                {official.name}
+                              </span>
+
+                              {height >= 50 && (
+                                <span className="text-[9px] font-mono text-gray-400 leading-none mt-0.5 scale-90">
+                                  {record.startYear % 100}-{record.endYear ? record.endYear % 100 : '今'}
+                                </span>
+                              )}
+
+                              {height >= 75 && (
+                                <span className="text-[9px] text-gray-500 line-clamp-1 text-center scale-90 leading-none mt-0.5">
+                                  {record.position.slice(0, 3)}
+                                </span>
+                              )}
+                            </div>
                           )}
                         </div>
                       );
@@ -610,6 +802,9 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
             </div>
             <div className="text-gray-500 text-[11px]">
               建制年份：{hoveredLaneUnit.establishedYear}年 | 机构简称：{hoveredLaneUnit.shortName}
+            </div>
+            <div className="text-blue-600 text-[11px] font-medium">
+              系统记录任职干部：{unitTotalOfficialsMap.get(hoveredLaneUnit.id) || 0} 位
             </div>
             <p className="text-gray-600 text-[11px] line-clamp-2 leading-relaxed">
               {hoveredLaneUnit.description}
