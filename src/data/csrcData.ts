@@ -934,7 +934,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "全面主持中国证监会党组和会行政工作，出台新“国九条”，强化强监管、防风险、促高质量发展主线",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/wu-qing.svg"
   },
   {
     "id": "li-ming",
@@ -1042,7 +1043,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "协助分管发行监管、上市公司监管与稽查执法等核心战线",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/li-ming.svg"
   },
   {
     "id": "chen-huaping",
@@ -1130,7 +1132,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "协助分管期货监管、市场监管一司及市场平稳运行保障工作",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/chen-huaping.svg"
   },
   {
     "id": "wang-jianjun",
@@ -1251,7 +1254,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "分管市场监管、国际交流等多项业务",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/wang-jianjun.svg"
   },
   {
     "id": "fan-dazhi",
@@ -1319,7 +1323,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持驻证监会纪检监察组全面工作，强化资本市场正风肃纪反腐与政治监督",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/fan-dazhi.svg"
   },
   {
     "id": "jiao-jinhong",
@@ -1393,7 +1398,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "全面主导新证券法、期货和衍生品法落地与特别代表人诉讼首案构建",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/jiao-jinhong.svg"
   },
   {
     "id": "cheng-hehong",
@@ -1474,7 +1480,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "统筹全系统法治建设、行政规章合法性审查及涉外法治保障",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/cheng-hehong.svg"
   },
   {
     "id": "qiu-yong",
@@ -1556,7 +1563,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持上交所党委和理事会，深化科创板“硬科技”定位与主板注册制走深走实",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/qiu-yong.svg"
   },
   {
     "id": "cai-jianchun",
@@ -1624,7 +1632,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持上交所日常运营，主导基础设施公募REITs常态化发行与科创板做市交易机制",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/cai-jianchun.svg"
   },
   {
     "id": "huo-ruirong",
@@ -1731,7 +1740,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "协助主持上交所理事会工作，主管国际合作与金融衍生品创新",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/huo-ruirong.svg"
   },
   {
     "id": "sha-yan",
@@ -1825,7 +1835,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "全面主持深交所党委与理事会工作，着力打造国际领先创新资本形成中心",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/sha-yan.svg"
   },
   {
     "id": "li-jizun",
@@ -1919,7 +1930,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持深交所日常经营，推动科技创新企业高水平直接融资与市场稳健运行",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/li-jizun.svg"
   },
   {
     "id": "peng-ming",
@@ -1987,7 +1999,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "全面主持深圳特区上市公司与头部法人金融机构一线属地监管",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/peng-ming.svg"
   },
   {
     "id": "zhou-guihua",
@@ -2055,7 +2068,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "全面主导北交所高质量建设，推出“北证50”成份指数与做市交易机制",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/zhou-guihua.svg"
   },
   {
     "id": "sui-qiang",
@@ -2129,7 +2143,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持北交所与全国股转公司日常运营，优化中小企业快速审核机制",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/sui-qiang.svg"
   },
   {
     "id": "tian-xiangyang",
@@ -2201,7 +2216,8 @@ export const OFFICIALS_DATA: Official[] = [
         "isDerived": false,
         "notes": "2022年4月出任上期所党委书记、理事长，推进大宗商品'全仓登'建设与高水平对外开放"
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/tian-xiangyang.svg"
   },
   {
     "id": "lu-dongsheng",
@@ -2282,7 +2298,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持上期所日常营运，稳步拓展商品期货期权国际化做市制度",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/lu-dongsheng.svg"
   },
   {
     "id": "wang-fenghai",
@@ -2350,7 +2367,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持上期所日常营运，上市低硫燃料油、集运指数欧线期货",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/wang-fenghai.svg"
   },
   {
     "id": "zhu-lihong",
@@ -2418,7 +2436,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持郑商所全面工作，深化大宗粮棉原料期货功能发挥与服务国家粮食安全",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/zhu-lihong.svg"
   },
   {
     "id": "xiong-jun",
@@ -2519,7 +2538,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持大商所全面工作，推动全球重要农产品与黑色衍生品定价枢纽建设",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/xiong-jun.svg"
   },
   {
     "id": "yan-shaoming",
@@ -2574,7 +2594,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持大商所日常营运，推出生猪期权、集装箱运力期货研发",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/yan-shaoming.svg"
   },
   {
     "id": "he-qingwen",
@@ -2647,7 +2668,8 @@ export const OFFICIALS_DATA: Official[] = [
         "isDerived": false,
         "notes": "2021年6月起任中金所党委书记、董事长，推动30年期国债期货、上证50与中证1000股指期权平稳上市运行"
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/he-qingwen.svg"
   },
   {
     "id": "gao-weibing",
@@ -2705,7 +2727,8 @@ export const OFFICIALS_DATA: Official[] = [
         "isDerived": false,
         "notes": "2023年11月接替胡政出任广期所第二任党委书记、董事长，主导推进新能源金属期货品种体系建设"
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/gao-weibing.svg"
   },
   {
     "id": "xing-xiangfei",
@@ -2773,7 +2796,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持广期所日常营运与新能源产业链风险管理生态建设",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/xing-xiangfei.svg"
   },
   {
     "id": "yu-wenqiang",
@@ -2886,7 +2910,8 @@ export const OFFICIALS_DATA: Official[] = [
         "isDerived": false,
         "notes": "全面领导中国结算党委与董事会工作，推进货银对付（DVP）改革实施与跨境互联互通"
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/yu-wenqiang.svg"
   },
   {
     "id": "kong-qingwen",
@@ -2972,7 +2997,8 @@ export const OFFICIALS_DATA: Official[] = [
         "isDerived": false,
         "notes": "主持中国结算日常经营管理，推进ETF互联互通结算与存托凭证互联互通"
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/kong-qingwen.svg"
   },
   {
     "id": "lu-wenshan",
@@ -3043,7 +3069,8 @@ export const OFFICIALS_DATA: Official[] = [
         "isDerived": false,
         "notes": "主持上期所监事会工作，完善交易所内控治理与风险防范"
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/lu-wenshan.svg"
   },
   {
     "id": "lu-dabiao",
@@ -3115,7 +3142,8 @@ export const OFFICIALS_DATA: Official[] = [
         "isDerived": false,
         "notes": "主持中证数据全面工作，推进资本市场监管大数据中心建设与穿透式监管科技底座运行"
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/lu-dabiao.svg"
   },
   {
     "id": "yin-rongyan",
@@ -3187,7 +3215,8 @@ export const OFFICIALS_DATA: Official[] = [
         "isDerived": false,
         "notes": "全面领导投保基金公司，推动投资者合法权益保障与券商流动性监测机制完善"
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/yin-rongyan.svg"
   },
   {
     "id": "he-yanchun",
@@ -3249,7 +3278,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "全面主持中基协工作，出台私募基金登记备案新规，扶优限劣",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/he-yanchun.svg"
   },
   {
     "id": "lu-wendao",
@@ -3304,7 +3334,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持投服中心日常经营，代理发起康美药业全国首例证券特别代表人诉讼",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/lu-wendao.svg"
   },
   {
     "id": "yan-bojin",
@@ -3359,7 +3390,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "严把IPO准入关，杜绝企业“带病闯关”，从源头上提升上市公司可投性与质量",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/yan-bojin.svg"
   },
   {
     "id": "guo-ruiming",
@@ -3414,7 +3446,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主导精准出清退市制度、强制现金分红规则与打击资金占用违规担保",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/guo-ruiming.svg"
   },
   {
     "id": "shen-bing",
@@ -3482,7 +3515,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "深化高水平制度型对外开放，优化中资企业赴美赴港上市常态化备案",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/shen-bing.svg"
   },
   {
     "id": "zhang-wangjun",
@@ -3563,7 +3597,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "主持证监会办公厅日常运转、政务公开与资本市场新闻发布权威发声",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/zhang-wangjun.svg"
   },
   {
     "id": "li-zhibin",
@@ -3631,7 +3666,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "统揽全国商品与金融期货市场监管，严控大宗商品过度投机与市场操纵",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/li-zhibin.svg"
   },
   {
     "id": "jia-wenqin",
@@ -3700,7 +3736,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "全面主持北京辖区证券期货市场与拟上市企业一线属地监管",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/jia-wenqin.svg"
   },
   {
     "id": "yang-zongru",
@@ -3755,7 +3792,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "统揽广东辖区证券期货全面监管，服务实体经济与大湾区资本市场繁荣",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/yang-zongru.svg"
   },
   {
     "id": "tang-libin",
@@ -3836,7 +3874,8 @@ export const OFFICIALS_DATA: Official[] = [
         "notes": "全面主政全国上市公司第二大省江苏资本市场稳健发展与合规治理",
         "isDerived": false
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/tang-libin.svg"
   },
   {
     "id": "chen-fei",
@@ -3894,7 +3933,8 @@ export const OFFICIALS_DATA: Official[] = [
         "isDerived": false,
         "notes": "全面领导中证金融党委与董事会工作，加强转融通逆周期调控与全市场两融风险监控"
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/chen-fei.svg"
   },
   {
     "id": "wu-xiaoyong",
@@ -3967,7 +4007,8 @@ export const OFFICIALS_DATA: Official[] = [
         "isDerived": false,
         "notes": "主持中证金融日常经营管理，主导证券金融大数据统计分析平台开发建设"
       }
-    ]
+    ],
+    "avatarUrl": "/avatars/wu-xiaoyong.svg"
   }
 ];
 

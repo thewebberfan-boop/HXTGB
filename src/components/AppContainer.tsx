@@ -19,6 +19,9 @@ export function AppContainer() {
   const [focusedUnitId, setFocusedUnitId] = useState<string | null>(null);
   const [focusedOfficialId, setFocusedOfficialId] = useState<string | null>(null);
 
+  // 官员页面当前选中的组织机构过滤
+  const [officialsSelectedUnitId, setOfficialsSelectedUnitId] = useState<string | null>(null);
+
   // 默认精选核心领导班子
   const [selectedOfficialIds, setSelectedOfficialIds] = useState<string[]>([
     'wu-qing',
@@ -35,7 +38,7 @@ export function AppContainer() {
     'he-qingwen',
     'yu-wenqiang',
     'lu-wenshan',
-    'ge-yiping',
+    'lu-dabiao',
   ]);
 
   // 默认激活所有系统单位（SwimlaneView 会根据选中的官员动态自适应过滤掉无内容的单位）
@@ -204,6 +207,8 @@ export function AppContainer() {
         onHoverOfficial={setHoveredOfficialId}
         isCollapsed={isSidebarCollapsed}
         onToggleCollapse={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
+        selectedUnitIdForOfficials={officialsSelectedUnitId}
+        onSelectUnitForOfficials={setOfficialsSelectedUnitId}
       />
 
       {/* 主视图区域：完整高度与宽度留给图谱 */}
@@ -285,6 +290,8 @@ export function AppContainer() {
                 onNavigateToSwimlaneWithOfficial={handleNavigateToSwimlaneWithOfficial}
                 onBackToSwimlane={handleBackToSwimlane}
                 activeOfficialId={focusedOfficialId}
+                selectedUnitId={officialsSelectedUnitId}
+                onSelectUnit={setOfficialsSelectedUnitId}
               />
             </div>
           </div>

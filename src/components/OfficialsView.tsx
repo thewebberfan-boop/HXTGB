@@ -17,6 +17,7 @@ import {
   ArrowLeft
 } from 'lucide-react';
 import { PositionRankBadge } from './PositionRankBadge';
+import { OfficialIdPhoto } from './OfficialIdPhoto';
 
 interface OfficialsViewProps {
   officials: Official[];
@@ -26,7 +27,18 @@ interface OfficialsViewProps {
   onNavigateToSwimlaneWithOfficial: (officialId: string) => void;
   onBackToSwimlane?: () => void;
   activeOfficialId?: string | null;
+  selectedUnitId?: string | null;
+  onSelectUnit?: (unitId: string | null) => void;
 }
+
+const RANK_SCORE: Record<string, number> = {
+  '正部级': 6,
+  '副部级': 5,
+  '正厅局级': 4,
+  '副厅局级': 3,
+  '正处级': 2,
+  '副处级': 1,
+};
 
 export const OfficialsView: React.FC<OfficialsViewProps> = ({
   officials,
@@ -36,9 +48,10 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
   onNavigateToSwimlaneWithOfficial,
   onBackToSwimlane,
   activeOfficialId,
+  selectedUnitId = null,
+  onSelectUnit,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedUnitId, setSelectedUnitId] = useState<string>('all');
   const [selectedRank, setSelectedRank] = useState<string>('all');
   const [activeOfficial, setActiveOfficial] = useState<Official | null>(() => {
     if (activeOfficialId) {
@@ -61,10 +74,69 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
     return map;
   }, [units]);
 
-  // 过滤官员
-  const filteredOfficials = useMemo(() => {
-    return officials.filter((off) => {
+  // 当前选中的机构对象
+  const currentSelectedUnit = useMemo(() => {
+    if (!selectedUnitId || selectedUnitId === 'all') return null;
+    return unitMap.get(selectedUnitId) || null;
+  }, [selectedUnitId, unitMap]);
+
+  // 获取某位官员在所选机构或全局的“最高级别”
+  const getHighestRankScore = (off: Official, targetUnitId?: string | null) => {
+    let ranks: string[] = [];
+    if (targetUnitId && targetUnitId !== 'all') {
+      const unitRanks = off.careerHistory
+        .filter((r) => r.unitId === targetUnitId)
+        .map((r) => r.rank)
+        .filter(Boolean) as string[];
+      ranks = [...unitRanks];
+      if (off.currentUnitId === targetUnitId) {
+        ranks.push(off.currentRank);
+      }
+      ranks.push(off.currentRank);
+    } else {
+      ranks = [off.currentRank, ...off.careerHistory.map((r) => r.rank).filter(Boolean) as string[]];
+    }
+    const scores = ranks.map((r) => RANK_SCORE[r] || 0);
+    return scores.length > 0 ? Math.max(...scores) : RANK_SCORE[off.currentRank] || 0;
+  };
+
+  // 获取官员在所选机构的任职最早起始年份（用于同级别/同职务下时间先后排序）
+  const getEarliestStartYear = (off: Official, targetUnitId?: string | null) => {
+    if (targetUnitId && targetUnitId !== 'all') {
+      const recs = off.careerHistory.filter((r) => r.unitId === targetUnitId);
+      if (recs.length > 0) {
+        return Math.min(...recs.map((r) => r.startYear));
+      }
+    }
+    return off.careerHistory.length > 0 ? Math.min(...off.careerHistory.map((r) => r.startYear)) : 9999;
+  };
+
+  // 排序算法：级别降序 -> 同职务时间先后升序 -> 出生年份
+  const sortOfficialsList = (list: Official[], targetUnitId?: string | null) => {
+    return [...list].sort((a, b) => {
+      // 1. 最高级别从高到低 (多个级别取最高级别)
+      const rankA = getHighestRankScore(a, targetUnitId);
+      const rankB = getHighestRankScore(b, targetUnitId);
+      if (rankB !== rankA) return rankB - rankA;
+
+      // 2. 同级别/同职务下，按照任职时间先后顺序排序
+      const yearA = getEarliestStartYear(a, targetUnitId);
+      const yearB = getEarliestStartYear(b, targetUnitId);
+      if (yearA !== yearB) return yearA - yearB;
+
+      // 3. 次级按出生年份稳定排序
+      return a.birthYear - b.birthYear;
+    });
+  };
+
+  // 过滤并智能分组官员：在职组 与 曾任组
+  const { currentServingOfficials, pastServingOfficials, allFilteredOfficials } = useMemo(() => {
+    const targetUnitId = selectedUnitId && selectedUnitId !== 'all' ? selectedUnitId : null;
+
+    // 先根据搜索词与职级进行通用过滤
+    const baseFiltered = officials.filter((off) => {
       const matchSearch =
+        !searchTerm ||
         off.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         off.currentPosition.toLowerCase().includes(searchTerm.toLowerCase()) ||
         off.education.some(
@@ -73,15 +145,49 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
             (edu.major && edu.major.toLowerCase().includes(searchTerm.toLowerCase()))
         );
 
-      const matchUnit =
-        selectedUnitId === 'all' || off.currentUnitId === selectedUnitId;
-
-      const matchRank =
-        selectedRank === 'all' || off.currentRank === selectedRank;
-
-      return matchSearch && matchUnit && matchRank;
+      const matchRank = selectedRank === 'all' || off.currentRank === selectedRank;
+      return matchSearch && matchRank;
     });
-  }, [officials, searchTerm, selectedUnitId, selectedRank]);
+
+    if (targetUnitId) {
+      // 筛选与所选机构相关的官员
+      const unitRelated = baseFiltered.filter(
+        (off) =>
+          off.currentUnitId === targetUnitId ||
+          off.careerHistory.some((r) => r.unitId === targetUnitId)
+      );
+
+      // 分成在职与曾任两大分组
+      const currentList: Official[] = [];
+      const pastList: Official[] = [];
+
+      unitRelated.forEach((off) => {
+        const isCurrentServing =
+          off.currentUnitId === targetUnitId ||
+          off.careerHistory.some((r) => r.unitId === targetUnitId && (r.isCurrent || r.endYear === null));
+
+        if (isCurrentServing) {
+          currentList.push(off);
+        } else {
+          pastList.push(off);
+        }
+      });
+
+      return {
+        currentServingOfficials: sortOfficialsList(currentList, targetUnitId),
+        pastServingOfficials: sortOfficialsList(pastList, targetUnitId),
+        allFilteredOfficials: sortOfficialsList(unitRelated, targetUnitId),
+      };
+    }
+
+    // 未选具体机构时（全部机构）：全部作为主体显示，并按级别和资历严格排序
+    const sorted = sortOfficialsList(baseFiltered, null);
+    return {
+      currentServingOfficials: sorted,
+      pastServingOfficials: [],
+      allFilteredOfficials: sorted,
+    };
+  }, [officials, searchTerm, selectedRank, selectedUnitId]);
 
   // 计算年龄（基准年份：2026年）
   const calculateAge = (birthYear: number) => {
@@ -124,16 +230,16 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
               <span>筛选:</span>
             </div>
 
-            {/* 现任单位筛选 */}
+            {/* 机构组织筛选（与左侧侧边栏双向联动） */}
             <select
-              value={selectedUnitId}
-              onChange={(e) => setSelectedUnitId(e.target.value)}
+              value={selectedUnitId || 'all'}
+              onChange={(e) => onSelectUnit?.(e.target.value === 'all' ? null : e.target.value)}
               className="px-3 py-1.5 bg-black/[0.03] hover:bg-black/[0.05] text-xs font-medium text-gray-700 rounded-lg border border-black/[0.06] outline-none cursor-pointer"
             >
-              <option value="all">全部现任单位</option>
+              <option value="all">全部机构架构</option>
               {units.map((u) => (
                 <option key={u.id} value={u.id}>
-                  {u.shortName}
+                  {u.tinyName || u.shortName} ({u.level.replace('局级', '')})
                 </option>
               ))}
             </select>
@@ -152,112 +258,247 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
             </select>
 
             <span className="text-xs text-gray-400 ml-2">
-              共 <strong className="text-gray-900">{filteredOfficials.length}</strong> 位主要领导
+              共 <strong className="text-gray-900">{allFilteredOfficials.length}</strong> 位干部
             </span>
           </div>
         </div>
+
+        {/* 若选中了具体机构，展示该机构的聚焦横幅 */}
+        {currentSelectedUnit && (
+          <div className="mt-4 pt-3.5 border-t border-black/[0.06] flex items-center justify-between flex-wrap gap-2">
+            <div className="flex items-center gap-2">
+              <span className="text-lg">🏛️</span>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="font-bold text-sm text-gray-900">
+                    {currentSelectedUnit.name}
+                  </span>
+                  <span className="text-[10px] text-blue-700 bg-blue-100/70 border border-blue-200 px-1.5 py-0.2 rounded font-medium">
+                    {currentSelectedUnit.level}
+                  </span>
+                  <span className="text-xs text-gray-400">
+                    建制：{currentSelectedUnit.establishedYear}年
+                  </span>
+                </div>
+                <p className="text-[11px] text-gray-500 line-clamp-1 mt-0.5">
+                  {currentSelectedUnit.description}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5 text-xs">
+                <span className="text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-lg font-medium">
+                  在职主要领导: {currentServingOfficials.length} 人
+                </span>
+                <span className="text-gray-600 bg-gray-100 border border-gray-200 px-2 py-0.5 rounded-lg font-medium">
+                  曾在此任职: {pastServingOfficials.length} 人
+                </span>
+              </div>
+              <button
+                onClick={() => onSelectUnit?.(null)}
+                className="text-xs text-gray-400 hover:text-blue-600 hover:underline ml-2"
+              >
+                重置查看全部
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* 主体两栏布局：左侧官员卡片列表，右侧 macOS Inspector 简历全景档案 */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        {/* 左侧官员列表 */}
-        <div className="lg:col-span-5 space-y-3">
-          {filteredOfficials.map((official) => {
-            const isSelectedInSwimlane = selectedOfficialIds.includes(official.id);
-            const isActiveInspector = activeOfficial?.id === official.id;
-            const officialColor = getOfficialColor(official.id);
-            const currentUnit = unitMap.get(official.currentUnitId);
+        {/* 左侧官员列表（根据机构实现智能两级分组与级别/任期排序） */}
+        <div className="lg:col-span-5 space-y-5">
+          {/* 渲染官员卡片的公用闭包 */}
+          {(() => {
+            const renderCard = (official: Official, isCurrentServingGroup: boolean) => {
+              const isSelectedInSwimlane = selectedOfficialIds.includes(official.id);
+              const isActiveInspector = activeOfficial?.id === official.id;
+              const officialColor = getOfficialColor(official.id);
+              const currentUnit = unitMap.get(official.currentUnitId);
 
-            return (
-              <div
-                key={official.id}
-                onClick={() => setActiveOfficial(official)}
-                className={`mac-card rounded-2xl p-4 cursor-pointer transition-all border relative overflow-hidden ${
-                  isActiveInspector
-                    ? 'border-blue-500/60 ring-2 ring-blue-500/10 bg-blue-50/20'
-                    : 'hover:border-gray-300'
-                }`}
-              >
-                {/* 官员专属色条 */}
+              // 如果是在选定机构下且属于曾任干部，找到其在该机构的历史任职
+              const pastRecordsInSelectedUnit = currentSelectedUnit
+                ? official.careerHistory.filter((r) => r.unitId === currentSelectedUnit.id)
+                : [];
+
+              return (
                 <div
-                  className="absolute left-0 top-0 bottom-0 w-1.5"
-                  style={{ backgroundColor: officialColor.primary }}
-                />
+                  key={official.id}
+                  onClick={() => setActiveOfficial(official)}
+                  className={`mac-card rounded-2xl p-3.5 cursor-pointer transition-all border relative overflow-hidden ${
+                    isActiveInspector
+                      ? 'border-blue-500/70 ring-2 ring-blue-500/15 bg-blue-50/25'
+                      : 'hover:border-gray-300'
+                  }`}
+                >
+                  {/* 官员专属左侧高亮色条 */}
+                  <div
+                    className="absolute left-0 top-0 bottom-0 w-1.5"
+                    style={{ backgroundColor: officialColor.primary }}
+                  />
 
-                <div className="flex items-start justify-between gap-3 pl-2">
-                  <div className="flex items-start gap-3">
-                    {/* 姓名首字母圆形头像徽标 */}
-                    <div
-                      className="w-11 h-11 rounded-xl flex items-center justify-center font-bold text-white shadow-xs shrink-0 text-base"
-                      style={{ backgroundColor: officialColor.primary }}
-                    >
-                      {official.name.slice(0, 1)}
+                  <div className="flex items-start justify-between gap-2.5 pl-1.5">
+                    <div className="flex items-start gap-3 flex-1 min-w-0">
+                      {/* 核心需求二：官员标准正装免冠证件照（1寸微缩版） */}
+                      <OfficialIdPhoto official={official} size="sm" />
+
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-1.5 flex-wrap">
+                          <h3 className="font-bold text-sm sm:text-base text-gray-900 truncate">
+                            {official.name}
+                          </h3>
+                          <PositionRankBadge rank={official.currentRank} />
+                          <span className="text-[11px] text-gray-400">
+                            {calculateAge(official.birthYear)}岁
+                          </span>
+
+                          {/* 机构分组标签 */}
+                          {currentSelectedUnit && (
+                            <span
+                              className={`text-[9px] px-1.5 py-0.2 rounded-md font-medium shrink-0 ${
+                                isCurrentServingGroup
+                                  ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
+                                  : 'bg-slate-100 text-slate-600 border border-slate-200'
+                              }`}
+                            >
+                              {isCurrentServingGroup ? '现任班子' : '曾在此任职'}
+                            </span>
+                          )}
+                        </div>
+
+                        <p className="text-xs text-gray-700 font-medium mt-1 leading-snug truncate">
+                          {official.currentPosition}
+                        </p>
+
+                        {/* 若为曾任干部，展示其在该机构的历史任期与职务 */}
+                        {!isCurrentServingGroup && pastRecordsInSelectedUnit.length > 0 && (
+                          <div className="text-[10.5px] text-blue-700 bg-blue-50/90 border border-blue-200/60 px-2 py-0.5 rounded-md mt-1.5 leading-tight flex items-center gap-1">
+                            <span className="font-bold shrink-0">曾任：</span>
+                            <span className="truncate">
+                              {pastRecordsInSelectedUnit
+                                .map(
+                                  (r) =>
+                                    `${r.position} (${r.startYear}-${r.endYear || '至今'})`
+                                )
+                                .join('；')}
+                            </span>
+                          </div>
+                        )}
+
+                        <div className="flex flex-wrap items-center gap-2 mt-2 text-[11px] text-gray-400">
+                          <span className="text-gray-600 font-medium">
+                            {currentUnit?.tinyName || currentUnit?.shortName || '系统'}
+                          </span>
+                          <span>•</span>
+                          <span className="truncate">
+                            {official.education[official.education.length - 1]?.school || '高校'}
+                          </span>
+                          <span>•</span>
+                          <span className="text-blue-600 font-mono">
+                            {official.careerHistory.length}段任职
+                          </span>
+                        </div>
+                      </div>
                     </div>
 
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <h3 className="font-bold text-base text-gray-900">
-                          {official.name}
-                        </h3>
-                        <span className="text-[11px] font-semibold text-gray-700 bg-gray-100 px-2 py-0.5 rounded-md">
-                          {official.currentRank}
-                        </span>
-                        <span className="text-xs text-gray-400">
-                          {calculateAge(official.birthYear)} 岁
-                        </span>
-                      </div>
+                    {/* 快捷操作：泳道对比勾选 */}
+                    <div className="flex flex-col items-end gap-1.5 shrink-0">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onToggleOfficialSelection(official.id);
+                        }}
+                        className={`px-2 py-1 text-[10.5px] font-medium rounded-lg transition-all flex items-center gap-1 ${
+                          isSelectedInSwimlane
+                            ? 'bg-blue-600 text-white shadow-xs'
+                            : 'bg-black/[0.04] text-gray-600 hover:bg-black/[0.08]'
+                        }`}
+                        title="加入时空泳道图谱对比"
+                      >
+                        <GitCommitVertical className="w-3 h-3" />
+                        <span>{isSelectedInSwimlane ? '已加' : '+ 泳道'}</span>
+                      </button>
 
-                      <p className="text-xs text-gray-700 font-medium mt-1 leading-snug">
-                        {official.currentPosition}
-                      </p>
-
-                      <div className="flex flex-wrap items-center gap-2 mt-2 text-[11px] text-gray-500">
-                        <span>{currentUnit?.shortName || '证监系统'}</span>
-                        <span>•</span>
-                        <span>
-                          {official.education[official.education.length - 1]?.school || '高校'}
-                        </span>
-                        <span>•</span>
-                        <span className="text-blue-600 font-medium">
-                          {official.careerHistory.length} 段重要任职
-                        </span>
-                      </div>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onNavigateToSwimlaneWithOfficial(official.id);
+                        }}
+                        className="text-[10px] text-gray-400 hover:text-blue-600 transition-colors flex items-center gap-0.5 mt-0.5"
+                        title="单独在泳道中展开此人完整履历"
+                      >
+                        <span>泳道</span>
+                        <ArrowUpRight className="w-2.5 h-2.5" />
+                      </button>
                     </div>
-                  </div>
-
-                  {/* 快捷操作：泳道对比勾选 */}
-                  <div className="flex flex-col items-end gap-1.5 shrink-0">
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        onToggleOfficialSelection(official.id);
-                      }}
-                      className={`px-2.5 py-1 text-[11px] font-medium rounded-lg transition-all flex items-center gap-1 ${
-                        isSelectedInSwimlane
-                          ? 'bg-blue-600 text-white shadow-xs'
-                          : 'bg-black/[0.04] text-gray-600 hover:bg-black/[0.08]'
-                      }`}
-                      title="加入时空泳道图谱对比"
-                    >
-                      <GitCommitVertical className="w-3 h-3" />
-                      <span>{isSelectedInSwimlane ? '已加入泳道' : '+ 泳道对比'}</span>
-                    </button>
-
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        onNavigateToSwimlaneWithOfficial(official.id);
-                      }}
-                      className="text-[11px] text-gray-400 hover:text-blue-600 transition-colors flex items-center gap-0.5 mt-1"
-                    >
-                      <span>单人演进</span>
-                      <ArrowUpRight className="w-3 h-3" />
-                    </button>
                   </div>
                 </div>
+              );
+            };
+
+            // 模式 A：选中了具体机构，按「在职主要领导」与「曾任干部」严格两级分组排版
+            if (currentSelectedUnit) {
+              return (
+                <>
+                  {/* 分组 1：在职领导班子 */}
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between px-1">
+                      <div className="flex items-center gap-1.5 text-xs font-bold text-gray-900">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500 ring-4 ring-emerald-100" />
+                        <span>在职主要领导班子 ({currentServingOfficials.length}人)</span>
+                      </div>
+                      <span className="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200/80 px-2 py-0.5 rounded-md font-medium">
+                        按级别最高优先 · 任期先后排序
+                      </span>
+                    </div>
+
+                    {currentServingOfficials.length > 0 ? (
+                      currentServingOfficials.map((off) => renderCard(off, true))
+                    ) : (
+                      <div className="p-4 bg-gray-50/60 rounded-xl text-xs text-gray-400 text-center border border-dashed border-gray-200">
+                        暂无该机构当前在任班子主要领导记录
+                      </div>
+                    )}
+                  </div>
+
+                  {/* 分组 2：曾在此机构任职干部 */}
+                  {pastServingOfficials.length > 0 && (
+                    <div className="space-y-3 pt-4 border-t border-black/[0.06]">
+                      <div className="flex items-center justify-between px-1">
+                        <div className="flex items-center gap-1.5 text-xs font-bold text-gray-700">
+                          <span className="w-2 h-2 rounded-full bg-slate-400 ring-4 ring-slate-100" />
+                          <span>曾在此机构任职干部 ({pastServingOfficials.length}人)</span>
+                        </div>
+                        <span className="text-[10px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded-md font-medium">
+                          历任转出 · 级别最高优先
+                        </span>
+                      </div>
+
+                      {pastServingOfficials.map((off) => renderCard(off, false))}
+                    </div>
+                  )}
+                </>
+              );
+            }
+
+            // 模式 B：全部机构模式，展示全体干部（按级别由高到低，同级别按任期先后排序）
+            return (
+              <div className="space-y-3">
+                <div className="flex items-center justify-between px-1">
+                  <span className="text-xs font-bold text-gray-800">
+                    全部主要领导干部档案 ({allFilteredOfficials.length}人)
+                  </span>
+                  <span className="text-[10px] text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md font-medium">
+                    按级别由高到低 · 资历先后排序
+                  </span>
+                </div>
+
+                {allFilteredOfficials.map((off) => renderCard(off, true))}
               </div>
             );
-          })}
+          })()}
         </div>
 
         {/* 右侧：活跃官员的详细履历档案全景 (macOS Inspector Detail) */}
@@ -266,15 +507,9 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
             <div className="mac-card rounded-2xl p-6 bg-white border border-black/[0.06] shadow-sm space-y-6">
               {/* Profile Header */}
               <div className="flex items-start justify-between pb-5 border-b border-black/[0.06]">
-                <div className="flex items-center gap-4">
-                  <div
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center font-bold text-white text-2xl shadow-md"
-                    style={{
-                      backgroundColor: getOfficialColor(activeOfficial.id).primary,
-                    }}
-                  >
-                    {activeOfficial.name.slice(0, 1)}
-                  </div>
+                <div className="flex items-center gap-5">
+                  {/* 核心需求二：官员标准正装免冠证件照（标准2寸大图，带相纸光泽与红底渐变） */}
+                  <OfficialIdPhoto official={activeOfficial} size="lg" />
 
                   <div>
                     <div className="flex items-center gap-2.5">
