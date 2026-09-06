@@ -702,6 +702,50 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
     return 2026 - birthYear;
   };
 
+  // 官员任职履历按时间倒序排序（由近及远：现任/最新职务置顶，早期履历在后）
+  const sortedCareerHistory = useMemo(() => {
+    if (!activeOfficial) return [];
+    return [...activeOfficial.careerHistory].sort((a, b) => {
+      // 1. 结束年份降序：无 endYear (即“至今”) 权重最高 (置顶)
+      const endA = a.endYear ?? 9999;
+      const endB = b.endYear ?? 9999;
+      if (endA !== endB) {
+        return endB - endA;
+      }
+      // 2. 结束月份降序
+      const endMonthA = a.endMonth ?? (a.endYear ? 12 : 12);
+      const endMonthB = b.endMonth ?? (b.endYear ? 12 : 12);
+      if (endMonthA !== endMonthB) {
+        return endMonthB - endMonthA;
+      }
+      // 3. 起始年份降序
+      const startA = a.startYear ?? 0;
+      const startB = b.startYear ?? 0;
+      if (startA !== startB) {
+        return startB - startA;
+      }
+      // 4. 起始月份降序
+      const startMonthA = a.startMonth ?? 1;
+      const startMonthB = b.startMonth ?? 1;
+      return startMonthB - startMonthA;
+    });
+  }, [activeOfficial]);
+
+  // 官员教育履历按时间倒序排序（由近及远：最高/最新学历置顶）
+  const sortedEducation = useMemo(() => {
+    if (!activeOfficial) return [];
+    return [...activeOfficial.education].sort((a, b) => {
+      const endA = a.endYear ?? a.graduationYear ?? (a.startYear ? a.startYear + 4 : 0);
+      const endB = b.endYear ?? b.graduationYear ?? (b.startYear ? b.startYear + 4 : 0);
+      if (endA !== endB) {
+        return endB - endA;
+      }
+      const startA = a.startYear ?? 0;
+      const startB = b.startYear ?? 0;
+      return startB - startA;
+    });
+  }, [activeOfficial]);
+
   const isSelectedInSwimlane = activeOfficial
     ? selectedOfficialIds.includes(activeOfficial.id)
     : false;
@@ -1020,15 +1064,15 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
             <div className="flex items-center justify-between pb-3 border-b border-black/[0.06]">
               <h3 className="text-sm font-bold text-gray-900 tracking-tight flex items-center gap-2">
                 <GraduationCap className="w-4 h-4 text-blue-600" />
-                <span>教育背景与在校履历（共 {activeOfficial.education.length} 段学历档案）</span>
+                <span>教育背景与在校履历（共 {sortedEducation.length} 段学历档案 · 时间倒序）</span>
               </h3>
               <span className="text-xs text-gray-400">
-                在校全时段展示 · 右侧联动同期同校校友圈
+                最新学历置顶 · 在校全时段展示 · 右侧联动同期同校校友圈
               </span>
             </div>
 
             <div className="space-y-4">
-              {activeOfficial.education.map((edu, idx) => {
+              {sortedEducation.map((edu, idx) => {
                 const alumniList = findAlumniForEdu(activeOfficial, edu, officials);
                 const span = getEduSpan(activeOfficial, edu);
                 const durationYears = Math.max(1, span.endYear - span.startYear);
@@ -1174,10 +1218,10 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
             <div className="flex items-center justify-between pb-3 border-b border-black/[0.06]">
               <h3 className="text-sm font-bold text-gray-900 tracking-tight flex items-center gap-2">
                 <Briefcase className="w-4 h-4 text-blue-600" />
-                <span>完整履职履历与任职演进（共 {activeOfficial.careerHistory.length} 段履职记录）</span>
+                <span>完整履职履历与任职演进（共 {sortedCareerHistory.length} 段履职记录 · 时间倒序）</span>
               </h3>
               <span className="text-xs text-gray-400">
-                左1/3履历实录 · 右2/3高密度同期同事网络
+                现任/最新职务置顶 · 沿时间线由近及远追溯 · 右侧联动高密度同期同事网络
               </span>
             </div>
 
@@ -1210,8 +1254,8 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
             </div>
 
             <div className="relative pl-7 sm:pl-8 space-y-6 before:absolute before:left-3 before:top-3 before:bottom-3 before:w-0.5 before:bg-gray-200">
-              {activeOfficial.careerHistory.map((item, idx) => {
-                const isLatest = idx === activeOfficial.careerHistory.length - 1;
+              {sortedCareerHistory.map((item, idx) => {
+                const isLatest = idx === 0 || !item.endYear;
                 const colleaguesList = findColleaguesForCareer(activeOfficial, item, officials);
 
                 return (
