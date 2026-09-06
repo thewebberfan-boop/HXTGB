@@ -779,11 +779,11 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
       {/* 核心改动：全屏宽幅全息干部档案看板（彻底移除了冗余的左侧41人列表列，空间完全留给详细履历） */}
       {activeOfficial ? (
         <div className="space-y-6">
-          {/* 1. 干部履历概貌与特质全息看板 (第一和第二部分融合 + 粘性置顶高密度看板) */}
-          <div className="sticky top-0 z-30 mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.08] bg-white/95 backdrop-blur-md shadow-sm space-y-3">
-            <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
-              {/* 左侧：2寸免冠照 + 核心政务属性与职务 */}
-              <div className="flex items-start sm:items-center gap-4 flex-1 min-w-0">
+          {/* 1. 干部履历概貌与特质全息看板 (左侧身份档案，右侧履职特质简介，紧凑置顶) */}
+          <div className="sticky top-0 z-30 mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.08] bg-white/95 backdrop-blur-md shadow-sm">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+              {/* 左侧：2寸免冠照 + 核心政务属性与职务 (占 7 列) */}
+              <div className="lg:col-span-7 xl:col-span-7 flex items-start sm:items-center gap-4 min-w-0 pr-0 lg:pr-4 border-b lg:border-b-0 lg:border-r border-black/[0.06] pb-3.5 lg:pb-0">
                 <OfficialIdPhoto official={activeOfficial} size="md" />
 
                 <div className="space-y-1.5 flex-1 min-w-0">
@@ -866,44 +866,25 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                 </div>
               </div>
 
-              {/* 右侧：动作按钮 */}
-              <div className="flex items-center gap-2 shrink-0 w-full lg:w-auto justify-end">
-                <button
-                  onClick={() => onNavigateToSwimlaneWithOfficial(activeOfficial.id)}
-                  className="flex items-center justify-center gap-1.5 px-3.5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold shadow-2xs transition-all hover:scale-[1.02] active:scale-95"
-                >
-                  <GitCommitVertical className="w-3.5 h-3.5" />
-                  <span>在时空泳道中分析</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
-
-                <button
-                  onClick={() => onToggleOfficialSelection(activeOfficial.id)}
-                  className={`flex items-center justify-center gap-1 px-3 py-2 rounded-xl text-xs font-medium border transition-colors ${
-                    isSelectedInSwimlane
-                      ? 'bg-blue-50 text-blue-700 border-blue-200'
-                      : 'bg-gray-50 hover:bg-gray-100 text-gray-700 border-black/[0.05]'
-                  }`}
-                >
-                  <GitCommitVertical className="w-3 h-3" />
-                  <span>{isSelectedInSwimlane ? '已加入对比' : '+ 对比池'}</span>
-                  {isSelectedInSwimlane && <Check className="w-3 h-3 text-blue-600" />}
-                </button>
+              {/* 右侧：原下方的履职特质与业务擅长简介直接移到右侧 (占 5 列) */}
+              <div className="lg:col-span-5 xl:col-span-5 min-w-0">
+                {activeOfficial.bioSummary ? (
+                  <div className="p-3 bg-blue-50/30 rounded-xl border border-blue-100/50 text-xs text-gray-700 leading-relaxed flex flex-col justify-center">
+                    <div className="flex items-center gap-1.5 font-bold text-blue-700 text-[11px] mb-1">
+                      <Sparkles className="w-3.5 h-3.5" />
+                      <span>履职特质与业务擅长：</span>
+                    </div>
+                    <p className="text-[11.5px] text-gray-600 leading-relaxed line-clamp-3">
+                      {activeOfficial.bioSummary}
+                    </p>
+                  </div>
+                ) : (
+                  <div className="p-3 bg-gray-50/60 rounded-xl border border-black/[0.04] text-xs text-gray-400 text-center flex items-center justify-center">
+                    暂无补充特质履职记述
+                  </div>
+                )}
               </div>
             </div>
-
-            {/* 融合的第二部分：履职特质与业务擅长 (紧凑内嵌条) */}
-            {activeOfficial.bioSummary && (
-              <div className="pt-2.5 border-t border-black/[0.04] flex items-start gap-2 text-xs leading-relaxed text-gray-700 bg-blue-50/30 p-2.5 rounded-xl border border-blue-100/50">
-                <div className="flex items-center gap-1 font-bold text-blue-700 shrink-0 mt-0.5">
-                  <Sparkles className="w-3.5 h-3.5" />
-                  <span>履职特质与业务擅长：</span>
-                </div>
-                <p className="flex-1 min-w-0 text-gray-600">
-                  {activeOfficial.bioSummary}
-                </p>
-              </div>
-            )}
           </div>
 
           {/* 3. 教育背景与学位学历 (左1/3个人求学档案，右2/3同期同校校友矩阵) */}
@@ -1290,15 +1271,30 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
           </div>
 
           {/* 5. 底部横幅快捷跳转 */}
-          <div className="mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.06] bg-gray-50 flex items-center justify-between">
-            <button
-              onClick={() => onNavigateToSwimlaneWithOfficial(activeOfficial.id)}
-              className="flex items-center gap-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-xl shadow-xs transition-colors"
-            >
-              <GitCommitVertical className="w-3.5 h-3.5" />
-              <span>在时空演进泳道中展开该干部的演进轨迹</span>
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
+          <div className="mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.06] bg-gray-50 flex flex-wrap items-center justify-between gap-3">
+            <div className="flex items-center gap-2.5 flex-wrap">
+              <button
+                onClick={() => onNavigateToSwimlaneWithOfficial(activeOfficial.id)}
+                className="flex items-center gap-2 px-4 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-xl shadow-xs transition-colors"
+              >
+                <GitCommitVertical className="w-3.5 h-3.5" />
+                <span>在时空演进泳道中展开该干部的演进轨迹</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+
+              <button
+                onClick={() => onToggleOfficialSelection(activeOfficial.id)}
+                className={`flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-medium border transition-colors ${
+                  isSelectedInSwimlane
+                    ? 'bg-blue-50 text-blue-700 border-blue-200 shadow-2xs'
+                    : 'bg-white hover:bg-gray-100 text-gray-700 border-black/[0.06]'
+                }`}
+              >
+                <GitCommitVertical className="w-3.5 h-3.5" />
+                <span>{isSelectedInSwimlane ? '已加入泳道对比池' : '+ 加入泳道对比池'}</span>
+                {isSelectedInSwimlane && <Check className="w-3.5 h-3.5 text-blue-600" />}
+              </button>
+            </div>
 
             {onBackToSwimlane && (
               <button
