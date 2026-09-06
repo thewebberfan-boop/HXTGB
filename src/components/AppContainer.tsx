@@ -9,8 +9,8 @@ import { OfficialsView } from './OfficialsView';
 import { SwimlaneView } from './SwimlaneView';
 
 export function AppContainer() {
-  // 核心需求二：默认将“时空泳道”作为网站首页
-  const [currentView, setCurrentView] = useState<ViewMode>('swimlanes');
+  // 默认进入页面为“机构”编制档案
+  const [currentView, setCurrentView] = useState<ViewMode>('units');
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState<boolean>(false);
   const [isTimeReversed, setIsTimeReversed] = useState<boolean>(false);
   const [hoveredOfficialId, setHoveredOfficialId] = useState<string | null>(null);
@@ -23,28 +23,11 @@ export function AppContainer() {
   const [officialsSelectedUnitId, setOfficialsSelectedUnitId] = useState<string | null>(null);
   const [unitsSelectedUnitId, setUnitsSelectedUnitId] = useState<string | null>(null);
 
-  // 默认精选核心领导班子
-  const [selectedOfficialIds, setSelectedOfficialIds] = useState<string[]>([
-    'wu-qing',
-    'li-ming',
-    'chen-huaping',
-    'qiu-yong',
-    'cai-jianchun',
-    'sha-yan',
-    'li-jizun',
-    'zhou-guihua',
-    'tian-xiangyang',
-    'xiong-jun',
-    'zhu-lihong',
-    'he-qingwen',
-    'yu-wenqiang',
-    'lu-wenshan',
-    'lu-dabiao',
-  ]);
+  // 泳道页默认选择人员变为空
+  const [selectedOfficialIds, setSelectedOfficialIds] = useState<string[]>([]);
 
-  // 默认激活所有系统单位（SwimlaneView 会根据选中的官员动态自适应过滤掉无内容的单位）
-  const defaultLaneUnitIds = UNITS_DATA.map((u) => u.id);
-  const [activeLaneUnitIds, setActiveLaneUnitIds] = useState<string[]>(defaultLaneUnitIds);
+  // 泳道页默认选择机构变为空
+  const [activeLaneUnitIds, setActiveLaneUnitIds] = useState<string[]>([]);
 
   // 切换官员勾选
   const handleToggleOfficialSelection = (officialId: string) => {
@@ -78,6 +61,26 @@ export function AppContainer() {
 
   const handleClearOfficials = () => {
     setSelectedOfficialIds([]);
+  };
+
+  const handleSelectCoreLeadership = () => {
+    handleSelectAllOfficials([
+      'wu-qing',
+      'li-ming',
+      'chen-huaping',
+      'qiu-yong',
+      'cai-jianchun',
+      'sha-yan',
+      'li-jizun',
+      'zhou-guihua',
+      'tian-xiangyang',
+      'xiong-jun',
+      'zhu-lihong',
+      'he-qingwen',
+      'yu-wenqiang',
+      'lu-wenshan',
+      'ge-yiping',
+    ]);
   };
 
   // 添加单位到泳道
@@ -193,6 +196,11 @@ export function AppContainer() {
     if (!selectedOfficialIds.includes(officialId)) {
       setSelectedOfficialIds((prev) => [...prev, officialId]);
     }
+    const off = OFFICIALS_DATA.find((o) => o.id === officialId);
+    if (off) {
+      const uids = [off.currentUnitId, ...off.careerHistory.map((r) => r.unitId)].filter(Boolean);
+      setActiveLaneUnitIds((lanes) => Array.from(new Set([...lanes, ...uids])));
+    }
     setCurrentView('swimlanes');
   };
 
@@ -262,6 +270,8 @@ export function AppContainer() {
               isTimeReversed={isTimeReversed}
               hoveredOfficialId={hoveredOfficialId}
               onHoverOfficial={setHoveredOfficialId}
+              onSelectCoreLeadership={handleSelectCoreLeadership}
+              onShowAllUnits={handleShowAllUnits}
             />
           </div>
         )}
@@ -282,7 +292,7 @@ export function AppContainer() {
                   onClick={handleBackToSwimlane}
                   className="flex items-center gap-1.5 px-3 py-1.5 bg-white hover:bg-gray-50 text-gray-700 hover:text-blue-600 rounded-xl border border-black/[0.08] shadow-2xs text-xs font-semibold transition-all hover:scale-105 active:scale-95"
                 >
-                  <span>← 返回时空泳道</span>
+                  <span>进入时空泳道 →</span>
                 </button>
               </div>
               <UnitsView
@@ -316,7 +326,7 @@ export function AppContainer() {
                   onClick={handleBackToSwimlane}
                   className="flex items-center gap-1.5 px-3 py-1.5 bg-white hover:bg-gray-50 text-gray-700 hover:text-blue-600 rounded-xl border border-black/[0.08] shadow-2xs text-xs font-semibold transition-all hover:scale-105 active:scale-95"
                 >
-                  <span>← 返回时空泳道</span>
+                  <span>进入时空泳道 →</span>
                 </button>
               </div>
               <OfficialsView

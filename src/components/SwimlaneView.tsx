@@ -19,6 +19,8 @@ interface SwimlaneViewProps {
   isTimeReversed: boolean;
   hoveredOfficialId: string | null;
   onHoverOfficial: (id: string | null) => void;
+  onSelectCoreLeadership?: () => void;
+  onShowAllUnits?: () => void;
 }
 
 export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
@@ -34,6 +36,8 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
   isTimeReversed,
   hoveredOfficialId,
   onHoverOfficial,
+  onSelectCoreLeadership,
+  onShowAllUnits,
 }) => {
   const [activeTooltip, setActiveTooltip] = useState<{
     record: CareerRecord;
@@ -506,7 +510,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
         ref={chartScrollContainerRef}
         className="mac-card rounded-2xl bg-white border border-black/[0.06] shadow-sm relative h-[calc(100vh-28px)] overflow-auto"
       >
-        <div className="relative min-w-max">
+        <div className="relative min-w-full w-max">
           {/* 1. 顶部锁定表头行 (Sticky Top) */}
           <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-black/[0.08] flex items-stretch min-w-max shadow-2xs">
             {/* 左上角交叉区域 (Sticky Top + Left) */}
@@ -525,7 +529,12 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
 
             {/* 各单位自适应宽度的表头列 */}
             <div className="flex flex-1 items-stretch">
-              {visibleLanes.map((lane, index) => {
+              {visibleLanes.length === 0 ? (
+                <div className="flex-1 flex items-center px-4 text-xs text-gray-400 italic">
+                  未选择泳道机构（可在左侧侧边栏添加或载入）
+                </div>
+              ) : (
+                visibleLanes.map((lane, index) => {
                 const isOver = dragOverLaneIndex === index;
                 const microRank = getMicroRank(lane.level);
                 const displayName = lane.tinyName || lane.shortName;
@@ -698,13 +707,13 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                     </div>
                   </div>
                 );
-              })}
+              }))}
             </div>
           </div>
 
           {/* 2. 泳道纵向主体网格 */}
           <div
-            className="relative flex min-w-max"
+            className="relative flex min-w-full w-max"
             style={{ height: `${TOTAL_HEIGHT}px` }}
           >
             {/* 左侧锁定时间标尺 (Sticky Left) */}
@@ -742,6 +751,39 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
 
             {/* 右侧主网格内容区域 */}
             <div className="flex flex-1 relative">
+              {visibleLanes.length === 0 ? (
+                <div className="flex-1 flex flex-col items-center justify-center p-12 text-center select-none sticky top-28 left-0 right-0 h-[calc(100vh-160px)] min-h-[420px]">
+                  <div className="w-16 h-16 rounded-2xl bg-blue-50 border border-blue-100/80 flex items-center justify-center text-blue-600 mb-4 shadow-xs">
+                    <Sparkles className="w-8 h-8 stroke-[1.75]" />
+                  </div>
+                  <h3 className="text-base font-bold text-gray-800 tracking-tight mb-2">
+                    时空泳道暂未选择对比机构或人员
+                  </h3>
+                  <p className="text-xs text-gray-500 max-w-md leading-relaxed mb-6">
+                    当前泳道尚未加载任何官员或机构。您可以在左侧侧边栏勾选感兴趣的干部、添加机构，或直接点击下方按钮一键载入对比。
+                  </p>
+                  <div className="flex items-center gap-3">
+                    {onSelectCoreLeadership && (
+                      <button
+                        onClick={onSelectCoreLeadership}
+                        className="px-4 py-2 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white text-xs font-semibold rounded-xl shadow-sm transition-all flex items-center gap-1.5 cursor-pointer"
+                      >
+                        <Sparkles className="w-3.5 h-3.5" />
+                        <span>载入核心领导班子</span>
+                      </button>
+                    )}
+                    {onShowAllUnits && (
+                      <button
+                        onClick={onShowAllUnits}
+                        className="px-4 py-2 bg-white hover:bg-gray-50 active:scale-95 text-gray-700 text-xs font-semibold rounded-xl border border-black/[0.08] shadow-2xs transition-all flex items-center gap-1.5 cursor-pointer"
+                      >
+                        <span>显示全部 24 个单位泳道</span>
+                      </button>
+                    )}
+                  </div>
+                </div>
+              ) : (
+                <>
               {/* 水平年份参考横虚线 */}
               <div className="absolute inset-0 pointer-events-none z-0">
                 {years.map((year) => {
@@ -989,6 +1031,8 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                   </div>
                 );
               })}
+                </>
+              )}
             </div>
           </div>
         </div>
