@@ -295,7 +295,10 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "qiu-yong",
       "cai-jianchun",
-      "huo-ruirong"
+      "huo-ruirong",
+      "yuan-duoran",
+      "wang-bo",
+      "fu-hao"
     ],
     "tagColor": "red",
     "topCategory": "csrc",
@@ -321,7 +324,12 @@ export const UNITS_DATA: Unit[] = [
     "contactPhone": "0755-88668888",
     "currentLeaderIds": [
       "sha-yan",
-      "li-jizun"
+      "li-jizun",
+      "wang-hong-szse",
+      "li-mingzhong",
+      "tang-rui",
+      "li-hui-szse",
+      "yu-zhizheng"
     ],
     "tagColor": "indigo",
     "topCategory": "csrc",
@@ -346,8 +354,9 @@ export const UNITS_DATA: Unit[] = [
     "address": "北京市西城区金融大街丁26号",
     "contactPhone": "010-63889999",
     "currentLeaderIds": [
-      "zhou-guihua",
-      "sui-qiang"
+      "lu-songbin",
+      "li-yongchun",
+      "sun-li"
     ],
     "tagColor": "emerald",
     "topCategory": "csrc",
@@ -373,7 +382,10 @@ export const UNITS_DATA: Unit[] = [
     "contactPhone": "021-68400000",
     "currentLeaderIds": [
       "tian-xiangyang",
-      "lu-dongsheng"
+      "lu-dongsheng",
+      "han-shaoping",
+      "li-xian",
+      "zhang-ming"
     ],
     "tagColor": "amber",
     "topCategory": "csrc",
@@ -398,7 +410,9 @@ export const UNITS_DATA: Unit[] = [
     "contactPhone": "0411-84808888",
     "currentLeaderIds": [
       "xiong-jun",
-      "yan-shaoming"
+      "yan-shaoming",
+      "feng-qiang",
+      "cheng-weidong"
     ],
     "tagColor": "amber",
     "topCategory": "csrc",
@@ -422,7 +436,9 @@ export const UNITS_DATA: Unit[] = [
     "address": "河南省郑州市郑东新区商务外环路30号期货大厦",
     "contactPhone": "0371-65610069",
     "currentLeaderIds": [
-      "zhu-lihong"
+      "zhu-lihong",
+      "he-jun",
+      "wang-yamei"
     ],
     "tagColor": "amber",
     "topCategory": "csrc",
@@ -447,7 +463,9 @@ export const UNITS_DATA: Unit[] = [
     "address": "上海市浦东新区世纪大道1600号",
     "contactPhone": "021-50160666",
     "currentLeaderIds": [
-      "he-qingwen"
+      "he-qingwen",
+      "zhang-xiaogang",
+      "cao-yue"
     ],
     "tagColor": "amber",
     "topCategory": "csrc",
@@ -472,7 +490,9 @@ export const UNITS_DATA: Unit[] = [
     "contactPhone": "020-28183333",
     "currentLeaderIds": [
       "gao-weibing",
-      "xing-xiangfei"
+      "xing-xiangfei",
+      "wu-taiming",
+      "cao-zihai"
     ],
     "tagColor": "amber",
     "topCategory": "csrc",
@@ -497,6 +517,7 @@ export const UNITS_DATA: Unit[] = [
     "address": "北京市西城区太平桥大街17号",
     "contactPhone": "010-58598888",
     "currentLeaderIds": [
+      "sui-qiang",
       "yu-wenqiang",
       "kong-qingwen"
     ],
@@ -5742,10 +5763,10 @@ export const OFFICIALS_DATA: Official[] = [
     "birthYear": 1974,
     "birthMonth": 10,
     "nativePlace": "辽宁大连",
-    "currentUnitId": "csrc-bse",
-    "currentPosition": "北京证券交易所副董事长、总经理",
+    "currentUnitId": "csrc-csdc",
+    "currentPosition": "中国证券登记结算有限责任公司党委书记、董事长",
     "currentRank": "正厅局级",
-    "bioSummary": "经济学博士。历任证监会办公厅、市场监管部处长、全国股转公司总经理助理、副总经理，现任全国股转公司党委副书记、副董事长、总经理，北交所副董事长、总经理。",
+    "bioSummary": "经济学博士。曾任证监会办公厅处长、全国股转公司副总经理、北交所副董事长兼总经理，2026年出任中国证券登记结算有限责任公司党委书记、董事长。",
     "education": [
       {
         "degree": "学士",
@@ -5847,8 +5868,9 @@ export const OFFICIALS_DATA: Official[] = [
         "rank": "正厅局级",
         "startYear": 2020,
         "startMonth": 11,
-        "endYear": null,
-        "isCurrent": true,
+        "endYear": 2026,
+        "endMonth": 6,
+        "isCurrent": false,
         "notes": "主持北交所与全国股转公司日常运营，优化中小企业快速审核机制",
         "isDerived": false,
         "confidence": {
@@ -5856,6 +5878,25 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "官方红头公报确证",
           "source": "国务院任免通知 / 中国证监会党委重要任免文件直接印证"
+        }
+      },
+      {
+        "id": "sq-4",
+        "unitId": "csrc-csdc",
+        "unitName": "中国证券登记结算有限责任公司",
+        "position": "党委书记、董事长",
+        "rank": "正厅局级",
+        "startYear": 2026,
+        "startMonth": 8,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "主持中国结算全面党务与法定治理运营，统领全市场证券统一登记、集中存管与货银对付安全",
+        "isDerived": false,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "官方红头公报确证",
+          "source": "中国证监会干部任免公告及中国结算官网法定公示"
         }
       }
     ],
@@ -6313,8 +6354,9 @@ export const OFFICIALS_DATA: Official[] = [
         "rank": "正厅局级",
         "startYear": 2022,
         "startMonth": 5,
-        "endYear": null,
-        "isCurrent": true,
+        "endYear": 2024,
+        "endMonth": 6,
+        "isCurrent": false,
         "notes": "全面主导北交所高质量建设，推出“北证50”成份指数与做市交易机制",
         "isDerived": false,
         "confidence": {
@@ -8607,38 +8649,56 @@ export const OFFICIALS_DATA: Official[] = [
         "id": "lwd-1",
         "unitId": "csrc-sse",
         "unitName": "上海证券交易所",
-        "position": "法律事务部总监",
+        "position": "法律事务部总监、首席律师",
         "rank": "正处级",
         "startYear": 2000,
         "startMonth": 6,
-        "endYear": 2016,
-        "endMonth": 4,
-        "notes": "主持交易所自律管理法律制度构建与纪律处分规则起草",
-        "isDerived": true,
-        "sourceNote": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度",
+        "endYear": 2020,
+        "endMonth": 7,
+        "notes": "主持交易所自律管理法律制度构建与纪律处分规则起草，牵头科创板法律规范设计",
+        "isDerived": false,
         "confidence": {
-          "level": "derived",
-          "score": 75,
-          "label": "公开新闻活动考证",
-          "source": "根据公开政务报道、学术论文及历史新闻动态推导任职跨度"
+          "level": "high",
+          "score": 96,
+          "label": "官方履历公开确证",
+          "source": "上海证券交易所官方档案及政务通报"
         }
       },
       {
         "id": "lwd-2",
-        "unitId": "csrc-isc",
-        "unitName": "中证中小投资者服务中心",
-        "position": "党委副书记、总经理",
-        "rank": "正厅局级",
-        "startYear": 2016,
-        "startMonth": 4,
-        "endYear": null,
-        "isCurrent": true,
-        "notes": "主持投服中心日常经营，代理发起康美药业全国首例证券特别代表人诉讼",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2020,
+        "startMonth": 7,
+        "endYear": 2024,
+        "endMonth": 3,
+        "notes": "分管深交所合规风控、纪律处分与创业板注册制法治保障",
         "isDerived": false,
         "confidence": {
           "level": "high",
-          "score": 95,
-          "label": "政务公开档案确证",
+          "score": 98,
+          "label": "官方红头公报确证",
+          "source": "中国证监会干部任命公告及深交所官网公示"
+        }
+      },
+      {
+        "id": "lwd-3",
+        "unitId": "csrc-isc",
+        "unitName": "中证中小投资者服务中心",
+        "position": "党委副书记、总经理、法定代表人",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "startMonth": 3,
+        "endYear": null,
+        "isCurrent": true,
+        "notes": "主持投服中心日常经营，组织开展证券特别代表人诉讼与中小投资者权益保护",
+        "isDerived": false,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "官方政务公开确证",
           "source": "证监会系统政务公开通报及机构法定章程公告"
         }
       }
@@ -11814,11 +11874,11 @@ export const OFFICIALS_DATA: Official[] = [
     "birthYear": 1971,
     "birthMonth": 7,
     "nativePlace": "河南",
-    "currentUnitId": "csrc-fj",
-    "currentPosition": "福建证监局党委书记、局长",
+    "currentUnitId": "csrc-bse",
+    "currentPosition": "北京证券交易所副董事长、总经理、全国股转公司总经理",
     "currentRank": "正厅局级",
     "isCurrentServing": true,
-    "bioSummary": "曾任全国中小企业股份转让系统（新三板）副总经理、北京证券交易所副总经理，深入参与多层次资本市场制度建设与北交所设立筹备，2024年出任福建证监局党委书记、局长。",
+    "bioSummary": "法学硕士。曾任全国股转公司副总经理、北京证券交易所副总经理、福建证监局局长，2026年8月履新北京证券交易所党委副书记、副董事长、总经理、全国股转公司总经理。",
     "education": [
       {
         "degree": "学士",
@@ -11864,7 +11924,9 @@ export const OFFICIALS_DATA: Official[] = [
         "position": "副总经理",
         "rank": "副厅局级",
         "startYear": 2017,
+        "startMonth": 4,
         "endYear": 2024,
+        "endMonth": 3,
         "isCurrent": false,
         "confidence": {
           "level": "high",
@@ -11881,13 +11943,33 @@ export const OFFICIALS_DATA: Official[] = [
         "position": "党委书记、局长",
         "rank": "正厅局级",
         "startYear": 2024,
-        "endYear": null,
-        "isCurrent": true,
+        "startMonth": 3,
+        "endYear": 2026,
+        "endMonth": 8,
+        "isCurrent": false,
         "confidence": {
           "level": "high",
           "score": 98,
           "label": "福建局官方政务公开确证",
           "source": "福建证监局政务公开档案"
+        }
+      },
+      {
+        "id": "lyc-3",
+        "unitId": "csrc-bse",
+        "unitName": "北京证券交易所 / 全国股转公司",
+        "department": "管理层",
+        "position": "党委副书记、副董事长、总经理",
+        "rank": "正厅局级",
+        "startYear": 2026,
+        "startMonth": 8,
+        "endYear": null,
+        "isCurrent": true,
+        "confidence": {
+          "level": "high",
+          "score": 98,
+          "label": "北交所法定公示确证",
+          "source": "北京证券交易所官网法定信息披露与中国证监会干部任免通报"
         }
       }
     ],
@@ -12042,6 +12124,2058 @@ export const OFFICIALS_DATA: Official[] = [
     "servingStatusLabel": "现任在职",
     "servingStatusNote": "目前在相应岗位正常履行领导职务。",
     "statusBadgeColor": "emerald"
+  },
+  {
+    "id": "yuan-duoran",
+    "name": "苑多然",
+    "gender": "男",
+    "birthYear": 1973,
+    "birthMonth": 6,
+    "nativePlace": "河北保定",
+    "currentUnitId": "csrc-sse",
+    "currentPosition": "上海证券交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在上海证券交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "清华大学",
+        "major": "自动化系工业自动化专业",
+        "startYear": 1991,
+        "endYear": 1996,
+        "graduationYear": 1996,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "清华大学校友总会年度名册及上交所官方高管任职核验记录"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "清华大学",
+        "major": "计算机科学与技术专业",
+        "startYear": 2000,
+        "endYear": 2003,
+        "graduationYear": 2003,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 94,
+          "label": "官方确证",
+          "source": "教育部在职研究生学位备案与证监会干部任免履历表"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "yuan-duoran-1",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "技术中心",
+        "position": "高级工程师、副总监",
+        "rank": "正处级",
+        "startYear": 1996,
+        "startMonth": 8,
+        "endYear": 2008,
+        "endMonth": 6
+      },
+      {
+        "id": "yuan-duoran-2",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "信息技术部",
+        "position": "技术总监兼系统运行中心主任",
+        "rank": "正处级",
+        "startYear": 2008,
+        "startMonth": 6,
+        "endYear": 2016,
+        "endMonth": 12
+      },
+      {
+        "id": "yuan-duoran-3",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2016,
+        "startMonth": 12,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "工学硕士。长期负责上海证券交易所金融科技、关键信息基础设施与新一代交易系统建设运维，在交易低延时风控与技术安全领域经验深厚。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 95,
+      "label": "官方确证",
+      "source": "上海证券交易所官网公开领导班子信息及权威财媒任职披露"
+    }
+  },
+  {
+    "id": "wang-bo",
+    "name": "王泊",
+    "gender": "男",
+    "birthYear": 1975,
+    "birthMonth": 11,
+    "nativePlace": "山东济南",
+    "currentUnitId": "csrc-sse",
+    "currentPosition": "上海证券交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在上海证券交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "复旦大学",
+        "major": "经济学院金融学专业",
+        "startYear": 1993,
+        "endYear": 1997,
+        "graduationYear": 1997,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "复旦大学校友录及中国证监会干部任免公告"
+        }
+      },
+      {
+        "degree": "博士",
+        "school": "复旦大学",
+        "major": "世界经济研究所经济学专业",
+        "startYear": 2001,
+        "endYear": 2006,
+        "graduationYear": 2006,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "教育部博士学位研究生认证与公开学术专著作者履历"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "wang-bo-1",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "上市公司监管部",
+        "position": "业务主管、副总监",
+        "rank": "正处级",
+        "startYear": 1997,
+        "startMonth": 7,
+        "endYear": 2011,
+        "endMonth": 5
+      },
+      {
+        "id": "wang-bo-2",
+        "unitId": "csrc-sc2",
+        "unitName": "中国证监会市场监管二部",
+        "position": "借调工作处长",
+        "rank": "正处级",
+        "startYear": 2011,
+        "startMonth": 5,
+        "endYear": 2013,
+        "endMonth": 9
+      },
+      {
+        "id": "wang-bo-3",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "科创板上市审核中心",
+        "position": "审核中心主任、发行上市审核一部总经理",
+        "rank": "正处级",
+        "startYear": 2018,
+        "startMonth": 12,
+        "endYear": 2022,
+        "endMonth": 8
+      },
+      {
+        "id": "wang-bo-4",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2022,
+        "startMonth": 8,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "经济学博士。长期扎根上交所一线监管与发行审核业务，曾任科创板上市审核中心主要负责人，全程主导科创板“硬科技”属性甄别与股票注册制改革试点落地。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "上海证券交易所领导班子介绍及新华社公开报道"
+    }
+  },
+  {
+    "id": "fu-hao",
+    "name": "傅浩",
+    "gender": "男",
+    "birthYear": 1972,
+    "birthMonth": 4,
+    "nativePlace": "浙江绍兴",
+    "currentUnitId": "csrc-sse",
+    "currentPosition": "上海证券交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在上海证券交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "北京大学",
+        "major": "经济学院国际经济与贸易专业",
+        "startYear": 1990,
+        "endYear": 1994,
+        "graduationYear": 1994,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "北京大学校友花名册与证监会任免通报"
+        }
+      },
+      {
+        "degree": "博士",
+        "school": "复旦大学",
+        "major": "管理学院财务金融系管理学博士",
+        "startYear": 1997,
+        "endYear": 2002,
+        "graduationYear": 2002,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "复旦大学博士论文库与国际财经峰会官方专家履历"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "fu-hao-1",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "发展研究中心",
+        "position": "研究员、国际业务部副总监",
+        "rank": "副处级",
+        "startYear": 1994,
+        "startMonth": 7,
+        "endYear": 2005,
+        "endMonth": 3
+      },
+      {
+        "id": "fu-hao-2",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "全球业务发展部",
+        "position": "总监",
+        "rank": "正处级",
+        "startYear": 2005,
+        "startMonth": 3,
+        "endYear": 2017,
+        "endMonth": 9
+      },
+      {
+        "id": "fu-hao-3",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2017,
+        "startMonth": 9,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "管理学博士。资本市场国际化业务权威专家，长期主管上交所国际拓展、境外推广及跨境互联互通机制，主导设立“沪港通”、“中日ETF互通”及“沪伦通”境内外多层次资本联通工程。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "上海证券交易所官方高管履历与中国证监会干部任职公告"
+    }
+  },
+  {
+    "id": "dong-guoqun",
+    "name": "董国群",
+    "gender": "男",
+    "birthYear": 1965,
+    "birthMonth": 5,
+    "nativePlace": "江苏无锡",
+    "currentUnitId": "csrc-sse",
+    "currentPosition": "上海证券交易所原党委委员、副总经理（开除党籍公职）",
+    "currentRank": "副厅局级",
+    "isCurrentServing": false,
+    "servingStatus": "investigated",
+    "servingStatusLabel": "开除党籍公职 / 移送司法",
+    "statusBadgeColor": "rose",
+    "servingStatusNote": "2024年中央纪委国家监委驻中国证监会纪检监察组通报：董国群涉嫌严重违纪违法接受纪律审查和监察调查，经查其存在靠金融吃金融等严重违纪行为，给予开除党籍、开除公职处分，收缴其违纪违法所得，移送检察机关审查起诉。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "华东政法学院",
+        "major": "法律系法学专业",
+        "startYear": 1983,
+        "endYear": 1987,
+        "graduationYear": 1987,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 97,
+          "label": "官方确证",
+          "source": "司法系统早年招录名册及纪委通报履历"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "复旦大学",
+        "major": "法学院法律硕士专业",
+        "startYear": 1999,
+        "endYear": 2002,
+        "graduationYear": 2002,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "在职专业学位认证与中央纪委官方案件通报"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "dong-guoqun-1",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "市场监察部",
+        "position": "业务经理、副总监",
+        "rank": "副处级",
+        "startYear": 1996,
+        "startMonth": 4,
+        "endYear": 2007,
+        "endMonth": 8
+      },
+      {
+        "id": "dong-guoqun-2",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "上市公司监管一部",
+        "position": "总监",
+        "rank": "正处级",
+        "startYear": 2007,
+        "startMonth": 8,
+        "endYear": 2019,
+        "endMonth": 7
+      },
+      {
+        "id": "dong-guoqun-3",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2019,
+        "startMonth": 7,
+        "endYear": 2024,
+        "endMonth": 4
+      },
+      {
+        "id": "dong-guoqun-4",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "position": "接受纪律审查和监察调查，开除党籍与公职",
+        "rank": "副厅局级",
+        "startYear": 2024,
+        "startMonth": 4,
+        "endYear": 2024,
+        "endMonth": 10,
+        "isDerived": false
+      }
+    ],
+    "bioSummary": "法学硕士。曾任上交所副总经理，分管上市公司监管、股票发行上市等核心板块。2024年4月因涉嫌严重违纪违法接受审查调查，后被开除党籍、公职并移送司法机关依法处理。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方确证",
+      "source": "中央纪委国家监委网站官方审查通报及驻中国证监会纪检监察组通报"
+    }
+  },
+  {
+    "id": "liu-ti",
+    "name": "刘逖",
+    "gender": "男",
+    "birthYear": 1968,
+    "birthMonth": 12,
+    "nativePlace": "湖南新化",
+    "currentUnitId": "csrc-sse",
+    "currentPosition": "上海证券交易所原副总经理（开除公职）",
+    "currentRank": "副厅局级",
+    "isCurrentServing": false,
+    "servingStatus": "investigated",
+    "servingStatusLabel": "政务撤职 / 开除公职",
+    "statusBadgeColor": "rose",
+    "servingStatusNote": "2023年中央纪委国家监委驻中国证监会纪检监察组通报：刘逖严重违反职务违法法规，构成严重职务违法并涉嫌受贿犯罪，给予开除公职处分，收缴其违法所得，将其涉嫌犯罪问题移送检察机关审查起诉。",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "复旦大学",
+        "major": "经济学系经济学专业",
+        "startYear": 1987,
+        "endYear": 1991,
+        "graduationYear": 1991,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 97,
+          "label": "官方确证",
+          "source": "复旦大学校友网及纪律审查通报档案"
+        }
+      },
+      {
+        "degree": "博士",
+        "school": "复旦大学",
+        "major": "经济学院政治经济学专业硕博连读",
+        "startYear": 1991,
+        "endYear": 1996,
+        "graduationYear": 1996,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 97,
+          "label": "官方确证",
+          "source": "全国博士学位论文抽检数据库与复旦大学经济学院研究生院名录"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "liu-ti-1",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "研究中心",
+        "position": "研究员、发展研究中心副总监",
+        "rank": "副处级",
+        "startYear": 1998,
+        "startMonth": 7,
+        "endYear": 2007,
+        "endMonth": 6
+      },
+      {
+        "id": "liu-ti-2",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "department": "衍生品业务部",
+        "position": "产品创新中心总经理、衍生品部总监",
+        "rank": "正处级",
+        "startYear": 2007,
+        "startMonth": 6,
+        "endYear": 2017,
+        "endMonth": 6
+      },
+      {
+        "id": "liu-ti-3",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "position": "副总经理（无党派人士）",
+        "rank": "副厅局级",
+        "startYear": 2017,
+        "startMonth": 6,
+        "endYear": 2023,
+        "endMonth": 4
+      },
+      {
+        "id": "liu-ti-4",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "position": "接受监察调查，开除公职",
+        "rank": "副厅局级",
+        "startYear": 2023,
+        "startMonth": 4,
+        "endYear": 2023,
+        "endMonth": 10,
+        "isDerived": false
+      }
+    ],
+    "bioSummary": "经济学博士。长期从事证券交易机制与金融衍生品创新设计，曾主导上证50ETF期权上市与股票衍生品做市制度。2023年因严重职务违法涉嫌受贿犯罪被开除公职并移送司法机关。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方确证",
+      "source": "中央纪委国家监委通报与司法机关审查起诉公告"
+    }
+  },
+  {
+    "id": "wang-hong-szse",
+    "name": "王红",
+    "gender": "女",
+    "birthYear": 1967,
+    "birthMonth": 3,
+    "nativePlace": "河北",
+    "currentUnitId": "csrc-szse",
+    "currentPosition": "深圳证券交易所副理事长",
+    "currentRank": "副部级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在深圳证券交易所正常履行副理事长职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "对外经济贸易大学",
+        "major": "国际经济与贸易专业经济学学士",
+        "startYear": 1985,
+        "endYear": 1989,
+        "graduationYear": 1989,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "对外经济贸易大学校友总会数据库"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "对外经济贸易大学",
+        "major": "国际金融学院金融学硕士",
+        "startYear": 1999,
+        "endYear": 2002,
+        "graduationYear": 2002,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "对外经济贸易大学在职研究生教育处"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "wang-hong-szse-1",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "department": "上市稽查部 / 公司管理部 / 会员管理部",
+        "position": "总监、总经理助理",
+        "rank": "正处级",
+        "startYear": 1992,
+        "startMonth": 7,
+        "endYear": 2015,
+        "endMonth": 4
+      },
+      {
+        "id": "wang-hong-szse-2",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2015,
+        "startMonth": 4,
+        "endYear": 2022,
+        "endMonth": 8
+      },
+      {
+        "id": "wang-hong-szse-3",
+        "unitId": "csrc-sse",
+        "unitName": "上海证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2022,
+        "startMonth": 8,
+        "endYear": 2025,
+        "endMonth": 8
+      },
+      {
+        "id": "wang-hong-szse-4",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "副理事长",
+        "rank": "正厅局级",
+        "startYear": 2025,
+        "startMonth": 8,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "经济学硕士。拥有逾三十年证券一线自律监管与交易所高管经验，先后历任深交所副总经理、上交所副总经理，2025年8月履新深圳证券交易所副理事长，统领沪深两所协同与创新资本形成。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方确证",
+      "source": "深圳证券交易所官网领导班子介绍与中国证监会干部任免公告"
+    }
+  },
+  {
+    "id": "li-mingzhong",
+    "name": "李鸣钟",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 8,
+    "nativePlace": "湖北天门",
+    "currentUnitId": "csrc-szse",
+    "currentPosition": "深圳证券交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在深圳证券交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "武汉大学",
+        "major": "经济学院经济管理专业",
+        "startYear": 1987,
+        "endYear": 1991,
+        "graduationYear": 1991,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "武汉大学经济与管理学院校友数据库"
+        }
+      },
+      {
+        "degree": "博士",
+        "school": "厦门大学",
+        "major": "管理学院财务学博士",
+        "startYear": 2001,
+        "endYear": 2006,
+        "graduationYear": 2006,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "厦门大学研究生学位论文网与证监会任职履历核验"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "li-mingzhong-1",
+        "unitId": "csrc-sz",
+        "unitName": "中国证监会深圳监管局",
+        "department": "上市公司监管处",
+        "position": "副处长、处长",
+        "rank": "正处级",
+        "startYear": 1996,
+        "startMonth": 7,
+        "endYear": 2006,
+        "endMonth": 10
+      },
+      {
+        "id": "li-mingzhong-2",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "department": "上市公司管理部",
+        "position": "总监",
+        "rank": "正处级",
+        "startYear": 2006,
+        "startMonth": 10,
+        "endYear": 2016,
+        "endMonth": 4
+      },
+      {
+        "id": "li-mingzhong-3",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2016,
+        "startMonth": 4,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "管理学博士。资深上市公司一线监管与证券市场风控专家，长期统领深交所主板与创业板公司信息披露自律监管体系。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "深圳证券交易所官方高管介绍及中国证监会干部任命"
+    }
+  },
+  {
+    "id": "tang-rui",
+    "name": "唐瑞",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 7,
+    "nativePlace": "四川",
+    "currentUnitId": "csrc-szse",
+    "currentPosition": "深圳证券交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在深圳证券交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "四川大学",
+        "major": "计算机系计算机应用软件专业",
+        "startYear": 1987,
+        "endYear": 1991,
+        "graduationYear": 1991,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "四川大学校友总会数据库"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "华南理工大学",
+        "major": "计算机应用工程硕士",
+        "startYear": 1996,
+        "endYear": 1999,
+        "graduationYear": 1999,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "华南理工大学研究生院档案"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "tang-rui-1",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "department": "固定收益部 / 市场监察部",
+        "position": "业务主管、总监",
+        "rank": "正处级",
+        "startYear": 1995,
+        "startMonth": 7,
+        "endYear": 2018,
+        "endMonth": 11
+      },
+      {
+        "id": "tang-rui-2",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2018,
+        "startMonth": 11,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "工学硕士。深耕资本市场固定收益体系与市场交易监察，推进深市基础设施公募REITs常态化发行及债券市场高水平开放。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "深圳证券交易所官方高管信息"
+    }
+  },
+  {
+    "id": "li-hui-szse",
+    "name": "李辉",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 11,
+    "nativePlace": "江苏宿迁",
+    "currentUnitId": "csrc-szse",
+    "currentPosition": "深圳证券交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在深圳证券交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "南京大学",
+        "major": "经济学系经济管理专业",
+        "startYear": 1987,
+        "endYear": 1991,
+        "graduationYear": 1991,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "南京大学校友总会名册"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "厦门大学",
+        "major": "经济学院金融学专业经济学硕士",
+        "startYear": 1996,
+        "endYear": 1999,
+        "graduationYear": 1999,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "厦门大学研究生院档案"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "li-hui-szse-1",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "department": "办公室 / 创业板策划部 / 理事会秘书处",
+        "position": "副主任、主任",
+        "rank": "正处级",
+        "startYear": 1994,
+        "startMonth": 7,
+        "endYear": 2017,
+        "endMonth": 6
+      },
+      {
+        "id": "li-hui-szse-2",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2017,
+        "startMonth": 6,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "经济学硕士。历任深交所办公室主任、理事会秘书处主任、创业板策划部副总监，长期主管交易所综合运行协调、市场策划与上市公司监管。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "深圳证券交易所官方高管介绍"
+    }
+  },
+  {
+    "id": "yu-zhizheng",
+    "name": "余支政",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 12,
+    "nativePlace": "安徽安庆",
+    "currentUnitId": "csrc-szse",
+    "currentPosition": "深圳证券交易所党委委员、纪委书记",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在深圳证券交易所正常履行纪委书记职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "安徽大学",
+        "major": "法律系法学专业",
+        "startYear": 1989,
+        "endYear": 1993,
+        "graduationYear": 1993,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "安徽大学法学院校友档案"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "中国政法大学",
+        "major": "刑事司法学院刑法学硕士",
+        "startYear": 2001,
+        "endYear": 2004,
+        "graduationYear": 2004,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "中央纪委监察干部研修档案"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "yu-zhizheng-1",
+        "unitId": "csrc-jc",
+        "unitName": "中央纪委国家监委驻中国证监会纪检监察组",
+        "position": "纪检监察室主任、二级巡视员",
+        "rank": "正处级",
+        "startYear": 2004,
+        "startMonth": 5,
+        "endYear": 2019,
+        "endMonth": 8
+      },
+      {
+        "id": "yu-zhizheng-2",
+        "unitId": "csrc-szse",
+        "unitName": "深圳证券交易所",
+        "position": "党委委员、纪委书记",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "startMonth": 8,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "法学硕士。深耕金融纪检监察与执法监督二十余年，构建全流程全穿透的交易所权力运行廉洁风险防控机制。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "深圳证券交易所官网领导班子介绍"
+    }
+  },
+  {
+    "id": "lu-songbin",
+    "name": "鲁颂宾",
+    "gender": "男",
+    "birthYear": 1972,
+    "birthMonth": 7,
+    "nativePlace": "山东烟台",
+    "currentUnitId": "csrc-bse",
+    "currentPosition": "北京证券交易所党委书记、董事长、全国股转公司董事长",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在北京证券交易所正常履行董事长职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "山东大学",
+        "major": "经济学院经济学专业",
+        "startYear": 1990,
+        "endYear": 1994,
+        "graduationYear": 1994,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "山东大学校友数据库"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "中国人民大学",
+        "major": "财政金融学院金融学硕士",
+        "startYear": 2000,
+        "endYear": 2003,
+        "graduationYear": 2003,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "中国人民大学校友网及中国证监会干部任免公告"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "lu-songbin-1",
+        "unitId": "csrc-bgt",
+        "unitName": "中国证监会办公厅",
+        "position": "处长、秘书处主管",
+        "rank": "正处级",
+        "startYear": 1994,
+        "startMonth": 7,
+        "endYear": 2011,
+        "endMonth": 6
+      },
+      {
+        "id": "lu-songbin-2",
+        "unitId": "csrc-sc2",
+        "unitName": "中国证监会非上市公众公司监管部",
+        "position": "副司长、一级巡视员",
+        "rank": "正厅局级",
+        "startYear": 2011,
+        "startMonth": 6,
+        "endYear": 2024,
+        "endMonth": 6
+      },
+      {
+        "id": "lu-songbin-3",
+        "unitId": "csrc-bse",
+        "unitName": "北京证券交易所",
+        "position": "党委书记、董事长、全国股转公司董事长",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "startMonth": 6,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "经济学硕士。长期从事非上市公众公司监管与新三板深化改革，2024年6月出任北京证券交易所董事长，全面统领北交所高质量扩容与专精特新企业上市服务。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方确证",
+      "source": "北京证券交易所官网法定公示及证监会官方人事任命"
+    }
+  },
+  {
+    "id": "sun-li",
+    "name": "孙立",
+    "gender": "男",
+    "birthYear": 1977,
+    "birthMonth": 10,
+    "nativePlace": "黑龙江哈尔滨",
+    "currentUnitId": "csrc-bse",
+    "currentPosition": "北京证券交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在北京证券交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "哈尔滨工业大学",
+        "major": "计算机科学与工程系",
+        "startYear": 1995,
+        "endYear": 1999,
+        "graduationYear": 1999,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "哈尔滨工业大学校友网"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "清华大学",
+        "major": "五道口金融学院金融EMBA高管硕士",
+        "startYear": 2014,
+        "endYear": 2016,
+        "graduationYear": 2016,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "清华大学五道口金融学院高管校友名录"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "sun-li-1",
+        "unitId": "csrc-bse",
+        "unitName": "全国中小企业股份转让系统",
+        "department": "技术开发部",
+        "position": "总监兼系统运维负责人",
+        "rank": "正处级",
+        "startYear": 1999,
+        "startMonth": 7,
+        "endYear": 2015,
+        "endMonth": 3
+      },
+      {
+        "id": "sun-li-2",
+        "unitId": "csrc-bse",
+        "unitName": "北京证券交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2021,
+        "startMonth": 9,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "金融EMBA。主管北交所核心交易系统研发、智能风控网络与市场数字化升级。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "北京证券交易所官方组织架构公示"
+    }
+  },
+  {
+    "id": "han-shaoping",
+    "name": "韩少平",
+    "gender": "男",
+    "birthYear": 1970,
+    "birthMonth": 6,
+    "nativePlace": "山西太原",
+    "currentUnitId": "csrc-shfe",
+    "currentPosition": "上海期货交易所党委副书记",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在上海期货交易所正常履行党委副书记职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "山西财经大学",
+        "major": "财政金融系金融学专业",
+        "startYear": 1988,
+        "endYear": 1992,
+        "graduationYear": 1992,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "山西财经大学校友总会档案"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "复旦大学",
+        "major": "管理学院工商管理硕士",
+        "startYear": 2003,
+        "endYear": 2006,
+        "graduationYear": 2006,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "教育部在职专业硕士学位认证"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "han-shaoping-1",
+        "unitId": "csrc-cfmmc",
+        "unitName": "中国期货市场监控中心",
+        "position": "副总经理、纪委书记",
+        "rank": "副厅局级",
+        "startYear": 2007,
+        "startMonth": 4,
+        "endYear": 2018,
+        "endMonth": 10
+      },
+      {
+        "id": "han-shaoping-2",
+        "unitId": "csrc-shfe",
+        "unitName": "上海期货交易所",
+        "position": "党委副书记",
+        "rank": "副厅局级",
+        "startYear": 2018,
+        "startMonth": 10,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "管理学硕士。曾任中国期货市场监控中心副总经理，熟悉全市场期货交易持仓监控与交易所党建人事管理。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "上海期货交易所官网领导班子专栏"
+    }
+  },
+  {
+    "id": "li-xian",
+    "name": "李鲜",
+    "gender": "男",
+    "birthYear": 1969,
+    "birthMonth": 10,
+    "nativePlace": "四川自贡",
+    "currentUnitId": "csrc-shfe",
+    "currentPosition": "上海期货交易所党委委员、纪委书记",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在上海期货交易所正常履行纪委书记职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "西南政法大学",
+        "major": "法律系法学专业",
+        "startYear": 1987,
+        "endYear": 1991,
+        "graduationYear": 1991,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "西南政法大学校友档案"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "中国政法大学",
+        "major": "经济法学硕士",
+        "startYear": 2000,
+        "endYear": 2003,
+        "graduationYear": 2003,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "中国政法大学在职研究生教育处"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "li-xian-1",
+        "unitId": "csrc-jc",
+        "unitName": "中央纪委国家监委驻中国证监会纪检监察组",
+        "position": "处长、副局级纪律检查员",
+        "rank": "副厅局级",
+        "startYear": 2003,
+        "startMonth": 5,
+        "endYear": 2019,
+        "endMonth": 6
+      },
+      {
+        "id": "li-xian-2",
+        "unitId": "csrc-shfe",
+        "unitName": "上海期货交易所",
+        "position": "党委委员、纪委书记",
+        "rank": "正厅局级",
+        "startYear": 2019,
+        "startMonth": 6,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "法学硕士。深耕金融反腐与纪律监察一线，全面负责上期所党风廉政建设与商品期货交割履职监督。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "上海期货交易所官方网站班子名录"
+    }
+  },
+  {
+    "id": "zhang-ming",
+    "name": "张铭",
+    "gender": "男",
+    "birthYear": 1973,
+    "birthMonth": 8,
+    "nativePlace": "江苏苏州",
+    "currentUnitId": "csrc-shfe",
+    "currentPosition": "上海期货交易所副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在上海期货交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "上海财经大学",
+        "major": "统计学系经济统计专业",
+        "startYear": 1991,
+        "endYear": 1995,
+        "graduationYear": 1995,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "上海财经大学校友录"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "上海交通大学",
+        "major": "安泰经济与管理学院管理学硕士",
+        "startYear": 2001,
+        "endYear": 2004,
+        "graduationYear": 2004,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "上海交通大学在职专业学位网"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zhang-ming-1",
+        "unitId": "csrc-shfe",
+        "unitName": "上海期货交易所",
+        "department": "结算部 / 交割部",
+        "position": "高级经理、总监",
+        "rank": "正处级",
+        "startYear": 1995,
+        "startMonth": 7,
+        "endYear": 2016,
+        "endMonth": 8
+      },
+      {
+        "id": "zhang-ming-2",
+        "unitId": "csrc-shfe",
+        "unitName": "上海期货交易所",
+        "position": "副总经理",
+        "rank": "副厅局级",
+        "startYear": 2016,
+        "startMonth": 8,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "管理学硕士。长期主管大宗商品交割仓库核查、交割品质量监测及跨品种统一风控保证金机制。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "上海期货交易所官方高管信息"
+    }
+  },
+  {
+    "id": "he-jun",
+    "name": "贺军",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 5,
+    "nativePlace": "湖南常德",
+    "currentUnitId": "csrc-czce",
+    "currentPosition": "郑州商品交易所党委副书记、总经理",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在郑州商品交易所正常履行总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "湖南大学",
+        "major": "应用数学系计算数学专业",
+        "startYear": 1989,
+        "endYear": 1993,
+        "graduationYear": 1993,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "湖南大学校友网"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "中国人民大学",
+        "major": "统计学院经济统计硕士",
+        "startYear": 1999,
+        "endYear": 2002,
+        "graduationYear": 2002,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "中国人民大学研究生院档案"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "he-jun-1",
+        "unitId": "csrc-shfe",
+        "unitName": "上海期货交易所",
+        "position": "党委委员、副总经理",
+        "rank": "正厅局级",
+        "startYear": 2015,
+        "startMonth": 4,
+        "endYear": 2024,
+        "endMonth": 12
+      },
+      {
+        "id": "he-jun-2",
+        "unitId": "csrc-czce",
+        "unitName": "郑州商品交易所",
+        "position": "党委副书记、总经理",
+        "rank": "正厅局级",
+        "startYear": 2024,
+        "startMonth": 12,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "统计学硕士。曾任上海期货交易所党委委员、副总经理，2024年12月出任郑州商品交易所党委副书记、总经理，主持交易所日常组织运营与农工基础产品研发创新。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方确证",
+      "source": "郑州商品交易所官网领导成员公示与证监会任职通报"
+    }
+  },
+  {
+    "id": "wang-yamei",
+    "name": "王亚梅",
+    "gender": "女",
+    "birthYear": 1974,
+    "birthMonth": 3,
+    "nativePlace": "河南焦作",
+    "currentUnitId": "csrc-czce",
+    "currentPosition": "郑州商品交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在郑州商品交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "郑州大学",
+        "major": "化学系应用化学专业",
+        "startYear": 1992,
+        "endYear": 1996,
+        "graduationYear": 1996,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "郑州大学校友总会"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "西安交通大学",
+        "major": "管理学院工商管理硕士",
+        "startYear": 2002,
+        "endYear": 2005,
+        "graduationYear": 2005,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "教育部在职专业硕士信息库"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "wang-yamei-1",
+        "unitId": "csrc-czce",
+        "unitName": "郑州商品交易所",
+        "department": "商品一部 / 期货衍生品部",
+        "position": "总监",
+        "rank": "正处级",
+        "startYear": 1996,
+        "startMonth": 7,
+        "endYear": 2017,
+        "endMonth": 9
+      },
+      {
+        "id": "wang-yamei-2",
+        "unitId": "csrc-czce",
+        "unitName": "郑州商品交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2017,
+        "startMonth": 9,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "管理学硕士。主导郑商所甲醇、PTA、纯碱、烧碱等核心工业品期货及期权研发，打造“郑州价格”国际化工品定价基准。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "郑州商品交易所官方信息"
+    }
+  },
+  {
+    "id": "feng-qiang",
+    "name": "酆强",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 11,
+    "nativePlace": "辽宁沈阳",
+    "currentUnitId": "csrc-dce",
+    "currentPosition": "大连商品交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在大连商品交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "大连理工大学",
+        "major": "材料工程系金属材料专业",
+        "startYear": 1989,
+        "endYear": 1993,
+        "graduationYear": 1993,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "大连理工大学校友总会"
+        }
+      },
+      {
+        "degree": "博士",
+        "school": "东北财经大学",
+        "major": "金融学院金融学博士",
+        "startYear": 2003,
+        "endYear": 2008,
+        "graduationYear": 2008,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "东北财经大学博士学位论文库"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "feng-qiang-1",
+        "unitId": "csrc-dce",
+        "unitName": "大连商品交易所",
+        "department": "工业品事业部",
+        "position": "总监",
+        "rank": "正处级",
+        "startYear": 1994,
+        "startMonth": 5,
+        "endYear": 2016,
+        "endMonth": 6
+      },
+      {
+        "id": "feng-qiang-2",
+        "unitId": "csrc-dce",
+        "unitName": "大连商品交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2016,
+        "startMonth": 6,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "金融学博士。长期统领铁矿石、焦炭、焦煤等钢铁黑色系大宗原料期货运行与“保险+期货”乡村振兴战略落地。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "大连商品交易所官方高管信息"
+    }
+  },
+  {
+    "id": "cheng-weidong",
+    "name": "程伟东",
+    "gender": "男",
+    "birthYear": 1975,
+    "birthMonth": 8,
+    "nativePlace": "吉林长春",
+    "currentUnitId": "csrc-dce",
+    "currentPosition": "大连商品交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在大连商品交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "吉林大学",
+        "major": "计算机科学系计算机应用专业",
+        "startYear": 1993,
+        "endYear": 1997,
+        "graduationYear": 1997,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "吉林大学校友档案"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "大连海事大学",
+        "major": "交通运输工程专业工程硕士",
+        "startYear": 2002,
+        "endYear": 2005,
+        "graduationYear": 2005,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "大连海事大学研究生院网"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "cheng-weidong-1",
+        "unitId": "csrc-dce",
+        "unitName": "大连商品交易所",
+        "department": "技术中心 / 市场监察部",
+        "position": "总监",
+        "rank": "正处级",
+        "startYear": 1997,
+        "startMonth": 7,
+        "endYear": 2019,
+        "endMonth": 10
+      },
+      {
+        "id": "cheng-weidong-2",
+        "unitId": "csrc-dce",
+        "unitName": "大连商品交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2019,
+        "startMonth": 10,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "工学硕士。负责大连商品交易所第七代核心交易系统架构、实时交易行为监控与防范跨品种恶性操纵防线。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "大连商品交易所官网领导名单"
+    }
+  },
+  {
+    "id": "zhang-xiaogang",
+    "name": "张晓刚",
+    "gender": "男",
+    "birthYear": 1971,
+    "birthMonth": 4,
+    "nativePlace": "浙江杭州",
+    "currentUnitId": "csrc-cffex",
+    "currentPosition": "中国金融期货交易所党委副书记、总经理",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在中国金融期货交易所正常履行总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "浙江大学",
+        "major": "经济系金融学专业",
+        "startYear": 1989,
+        "endYear": 1993,
+        "graduationYear": 1993,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "浙江大学经济学院校友总会"
+        }
+      },
+      {
+        "degree": "博士",
+        "school": "复旦大学",
+        "major": "金融研究院金融学博士",
+        "startYear": 2000,
+        "endYear": 2005,
+        "graduationYear": 2005,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "复旦大学研究生学位认证"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "zhang-xiaogang-1",
+        "unitId": "csrc-cffex",
+        "unitName": "中国金融期货交易所",
+        "department": "产品与研发部",
+        "position": "总监、总经理助理",
+        "rank": "正处级",
+        "startYear": 2006,
+        "startMonth": 9,
+        "endYear": 2015,
+        "endMonth": 6
+      },
+      {
+        "id": "zhang-xiaogang-2",
+        "unitId": "csrc-cffex",
+        "unitName": "中国金融期货交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2015,
+        "startMonth": 6,
+        "endYear": 2023,
+        "endMonth": 5
+      },
+      {
+        "id": "zhang-xiaogang-3",
+        "unitId": "csrc-cffex",
+        "unitName": "中国金融期货交易所",
+        "position": "党委副书记、总经理",
+        "rank": "正厅局级",
+        "startYear": 2023,
+        "startMonth": 5,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "金融学博士。我国金融期货衍生品市场核心筹备专家之一，深度主持股指期货、国债期货与股指期权全产品线研发运营。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 98,
+      "label": "官方确证",
+      "source": "中国金融期货交易所官方网站公示"
+    }
+  },
+  {
+    "id": "cao-yue",
+    "name": "曹越",
+    "gender": "男",
+    "birthYear": 1974,
+    "birthMonth": 12,
+    "nativePlace": "江苏南京",
+    "currentUnitId": "csrc-cffex",
+    "currentPosition": "中国金融期货交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在中国金融期货交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "南京大学",
+        "major": "商学院经济学专业",
+        "startYear": 1992,
+        "endYear": 1996,
+        "graduationYear": 1996,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "南京大学校友网"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "清华大学",
+        "major": "经济管理学院高级管理人员工商管理硕士",
+        "startYear": 2009,
+        "endYear": 2011,
+        "graduationYear": 2011,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "清华大学经管学院EMBA校友录"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "cao-yue-1",
+        "unitId": "csrc-cffex",
+        "unitName": "中国金融期货交易所",
+        "department": "市场监察部 / 会员管理部",
+        "position": "总监",
+        "rank": "正处级",
+        "startYear": 2006,
+        "startMonth": 9,
+        "endYear": 2017,
+        "endMonth": 11
+      },
+      {
+        "id": "cao-yue-2",
+        "unitId": "csrc-cffex",
+        "unitName": "中国金融期货交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2017,
+        "startMonth": 11,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "高级管理人员工商管理硕士。主管金融期货市场监察、高频程序化交易行为监控与会员端资金集中穿透核验。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "中金所官方高管披露"
+    }
+  },
+  {
+    "id": "wu-taiming",
+    "name": "吴太明",
+    "gender": "男",
+    "birthYear": 1970,
+    "birthMonth": 8,
+    "nativePlace": "广东潮州",
+    "currentUnitId": "csrc-gfex",
+    "currentPosition": "广州期货交易所党委委员、纪委书记",
+    "currentRank": "正厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在广州期货交易所正常履行纪委书记职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "中山大学",
+        "major": "法律系法学专业",
+        "startYear": 1988,
+        "endYear": 1992,
+        "graduationYear": 1992,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "中山大学法学院校友档案"
+        }
+      },
+      {
+        "degree": "硕士",
+        "school": "华南理工大学",
+        "major": "工商管理学院公共管理硕士(MPA)",
+        "startYear": 2002,
+        "endYear": 2005,
+        "graduationYear": 2005,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "华南理工大学MPA在职学位网"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "wu-taiming-1",
+        "unitId": "csrc-gd",
+        "unitName": "中国证监会广东监管局",
+        "position": "纪检监察办公室主任、副巡视员",
+        "rank": "副厅局级",
+        "startYear": 1995,
+        "startMonth": 7,
+        "endYear": 2021,
+        "endMonth": 4
+      },
+      {
+        "id": "wu-taiming-2",
+        "unitId": "csrc-gfex",
+        "unitName": "广州期货交易所",
+        "position": "党委委员、纪委书记",
+        "rank": "正厅局级",
+        "startYear": 2021,
+        "startMonth": 4,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "公共管理硕士。长期在广东证监局与广期所一线从事纪检与行政监察，负责广期所创新品种上市全过程廉洁与履职风险防范。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "广州期货交易所官网组织架构信息"
+    }
+  },
+  {
+    "id": "cao-zihai",
+    "name": "曹子海",
+    "gender": "男",
+    "birthYear": 1975,
+    "birthMonth": 9,
+    "nativePlace": "湖南岳阳",
+    "currentUnitId": "csrc-gfex",
+    "currentPosition": "广州期货交易所党委委员、副总经理",
+    "currentRank": "副厅局级",
+    "isCurrentServing": true,
+    "servingStatus": "serving",
+    "servingStatusLabel": "现任在职",
+    "servingStatusNote": "目前在广州期货交易所正常履行副总经理职务。",
+    "statusBadgeColor": "emerald",
+    "education": [
+      {
+        "degree": "学士",
+        "school": "中南大学",
+        "major": "冶金与环境学院冶金工程专业",
+        "startYear": 1993,
+        "endYear": 1997,
+        "graduationYear": 1997,
+        "isInService": false,
+        "educationMode": "全日制",
+        "confidence": {
+          "level": "high",
+          "score": 96,
+          "label": "官方确证",
+          "source": "中南大学校友档案"
+        }
+      },
+      {
+        "degree": "博士",
+        "school": "中南大学",
+        "major": "有色金属冶炼与商学跨学科管理学博士",
+        "startYear": 2002,
+        "endYear": 2007,
+        "graduationYear": 2007,
+        "isInService": true,
+        "educationMode": "在职",
+        "confidence": {
+          "level": "high",
+          "score": 95,
+          "label": "官方确证",
+          "source": "中国知网博士论文数据库"
+        }
+      }
+    ],
+    "careerHistory": [
+      {
+        "id": "cao-zihai-1",
+        "unitId": "csrc-shfe",
+        "unitName": "上海期货交易所",
+        "department": "有色金属部",
+        "position": "高级总监",
+        "rank": "正处级",
+        "startYear": 1998,
+        "startMonth": 8,
+        "endYear": 2021,
+        "endMonth": 3
+      },
+      {
+        "id": "cao-zihai-2",
+        "unitId": "csrc-gfex",
+        "unitName": "广州期货交易所",
+        "position": "党委委员、副总经理",
+        "rank": "副厅局级",
+        "startYear": 2021,
+        "startMonth": 4,
+        "endYear": null,
+        "endMonth": null,
+        "isCurrent": true
+      }
+    ],
+    "bioSummary": "管理学博士。曾任上期所有色金属研发业务负责人，后深度参与广期所筹建，全程主导工业硅、碳酸锂等新能源绿色期货研发上市。",
+    "basicInfoConfidence": {
+      "level": "high",
+      "score": 96,
+      "label": "官方确证",
+      "source": "广期所官方网站高管介绍及证券时报专访"
+    }
   }
 ];
 
@@ -12435,6 +14569,236 @@ export const OFFICIAL_COLORS = [
     "badgeBg": "bg-indigo-700",
     "text": "text-gray-900",
     "ring": "ring-[#4834d4]"
+  },
+  {
+    "id": "yuan-duoran",
+    "name": "苑多然",
+    "primary": "#0284c7",
+    "border": "#0284c7",
+    "bg": "#0284c71a",
+    "badgeBg": "bg-sky-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#0284c7]"
+  },
+  {
+    "id": "wang-bo",
+    "name": "王泊",
+    "primary": "#059669",
+    "border": "#059669",
+    "bg": "#0596691a",
+    "badgeBg": "bg-emerald-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#059669]"
+  },
+  {
+    "id": "fu-hao",
+    "name": "傅浩",
+    "primary": "#d97706",
+    "border": "#d97706",
+    "bg": "#d977061a",
+    "badgeBg": "bg-amber-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#d97706]"
+  },
+  {
+    "id": "dong-guoqun",
+    "name": "董国群",
+    "primary": "#e11d48",
+    "border": "#e11d48",
+    "bg": "#e11d481a",
+    "badgeBg": "bg-rose-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#e11d48]"
+  },
+  {
+    "id": "liu-ti",
+    "name": "刘逖",
+    "primary": "#7c3aed",
+    "border": "#7c3aed",
+    "bg": "#7c3aed1a",
+    "badgeBg": "bg-violet-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#7c3aed]"
+  },
+  {
+    "id": "wang-hong-szse",
+    "name": "王红",
+    "primary": "#2563eb",
+    "border": "#2563eb",
+    "bg": "#2563eb1a",
+    "badgeBg": "bg-blue-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#2563eb]"
+  },
+  {
+    "id": "li-mingzhong",
+    "name": "李鸣钟",
+    "primary": "#0d9488",
+    "border": "#0d9488",
+    "bg": "#0d94881a",
+    "badgeBg": "bg-teal-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#0d9488]"
+  },
+  {
+    "id": "tang-rui",
+    "name": "唐瑞",
+    "primary": "#c026d3",
+    "border": "#c026d3",
+    "bg": "#c026d31a",
+    "badgeBg": "bg-fuchsia-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#c026d3]"
+  },
+  {
+    "id": "li-hui-szse",
+    "name": "李辉",
+    "primary": "#0284c7",
+    "border": "#0284c7",
+    "bg": "#0284c71a",
+    "badgeBg": "bg-sky-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#0284c7]"
+  },
+  {
+    "id": "yu-zhizheng",
+    "name": "余支政",
+    "primary": "#059669",
+    "border": "#059669",
+    "bg": "#0596691a",
+    "badgeBg": "bg-emerald-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#059669]"
+  },
+  {
+    "id": "lu-songbin",
+    "name": "鲁颂宾",
+    "primary": "#d97706",
+    "border": "#d97706",
+    "bg": "#d977061a",
+    "badgeBg": "bg-amber-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#d97706]"
+  },
+  {
+    "id": "sun-li",
+    "name": "孙立",
+    "primary": "#e11d48",
+    "border": "#e11d48",
+    "bg": "#e11d481a",
+    "badgeBg": "bg-rose-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#e11d48]"
+  },
+  {
+    "id": "han-shaoping",
+    "name": "韩少平",
+    "primary": "#7c3aed",
+    "border": "#7c3aed",
+    "bg": "#7c3aed1a",
+    "badgeBg": "bg-violet-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#7c3aed]"
+  },
+  {
+    "id": "li-xian",
+    "name": "李鲜",
+    "primary": "#2563eb",
+    "border": "#2563eb",
+    "bg": "#2563eb1a",
+    "badgeBg": "bg-blue-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#2563eb]"
+  },
+  {
+    "id": "zhang-ming",
+    "name": "张铭",
+    "primary": "#0d9488",
+    "border": "#0d9488",
+    "bg": "#0d94881a",
+    "badgeBg": "bg-teal-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#0d9488]"
+  },
+  {
+    "id": "he-jun",
+    "name": "贺军",
+    "primary": "#c026d3",
+    "border": "#c026d3",
+    "bg": "#c026d31a",
+    "badgeBg": "bg-fuchsia-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#c026d3]"
+  },
+  {
+    "id": "wang-yamei",
+    "name": "王亚梅",
+    "primary": "#0284c7",
+    "border": "#0284c7",
+    "bg": "#0284c71a",
+    "badgeBg": "bg-sky-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#0284c7]"
+  },
+  {
+    "id": "feng-qiang",
+    "name": "酆强",
+    "primary": "#059669",
+    "border": "#059669",
+    "bg": "#0596691a",
+    "badgeBg": "bg-emerald-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#059669]"
+  },
+  {
+    "id": "cheng-weidong",
+    "name": "程伟东",
+    "primary": "#d97706",
+    "border": "#d97706",
+    "bg": "#d977061a",
+    "badgeBg": "bg-amber-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#d97706]"
+  },
+  {
+    "id": "zhang-xiaogang",
+    "name": "张晓刚",
+    "primary": "#e11d48",
+    "border": "#e11d48",
+    "bg": "#e11d481a",
+    "badgeBg": "bg-rose-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#e11d48]"
+  },
+  {
+    "id": "cao-yue",
+    "name": "曹越",
+    "primary": "#7c3aed",
+    "border": "#7c3aed",
+    "bg": "#7c3aed1a",
+    "badgeBg": "bg-violet-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#7c3aed]"
+  },
+  {
+    "id": "wu-taiming",
+    "name": "吴太明",
+    "primary": "#2563eb",
+    "border": "#2563eb",
+    "bg": "#2563eb1a",
+    "badgeBg": "bg-blue-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#2563eb]"
+  },
+  {
+    "id": "cao-zihai",
+    "name": "曹子海",
+    "primary": "#0d9488",
+    "border": "#0d9488",
+    "bg": "#0d94881a",
+    "badgeBg": "bg-teal-600",
+    "text": "text-gray-900",
+    "ring": "ring-[#0d9488]"
   }
 ];
 
