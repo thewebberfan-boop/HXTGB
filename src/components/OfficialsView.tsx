@@ -1172,11 +1172,16 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                                   <OfficialIdPhoto official={alumni.official} size="sm" />
                                   <div className="flex-1 min-w-0 space-y-1">
                                     <div className="flex items-center justify-between gap-1">
-                                      <div className="flex items-center gap-1.5">
+                                      <div className="flex items-center gap-1.5 flex-wrap">
                                         <span className="font-bold text-xs text-gray-900 group-hover:text-blue-600 transition-colors">
                                           {alumni.official.name}
                                         </span>
                                         <PositionRankBadge rank={alumni.official.currentRank} />
+                                        {alumni.official.birthYear && (
+                                          <span className="text-[10px] text-gray-500 bg-gray-100 px-1.5 py-0.2 rounded font-mono">
+                                            {calculateAge(alumni.official.birthYear)}岁
+                                          </span>
+                                        )}
                                       </div>
                                       <span className="text-[10px] font-bold font-mono text-purple-700 bg-purple-50 border border-purple-200 px-1.5 py-0.2 rounded shrink-0">
                                         {alumni.overlapDisplay}
@@ -1382,11 +1387,16 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                                     <div className="flex-1 min-w-0 space-y-1">
                                       {/* 第一行：姓名、职级、严谨的月份级重合时间 */}
                                       <div className="flex items-center justify-between gap-1">
-                                        <div className="flex items-center gap-1.5">
+                                        <div className="flex items-center gap-1.5 flex-wrap">
                                           <span className="font-bold text-xs text-gray-900 group-hover:text-blue-600 transition-colors">
                                             {colleague.official.name}
                                           </span>
                                           <PositionRankBadge rank={colleague.official.currentRank} />
+                                          {colleague.official.birthYear && (
+                                            <span className="text-[10px] text-gray-500 bg-gray-100 px-1.5 py-0.2 rounded font-mono">
+                                              {calculateAge(colleague.official.birthYear)}岁
+                                            </span>
+                                          )}
                                         </div>
                                         <span className="text-[10px] font-bold font-mono text-blue-700 bg-blue-50 border border-blue-200 px-1.5 py-0.2 rounded shrink-0 shadow-2xs">
                                           {colleague.overlapDisplay}

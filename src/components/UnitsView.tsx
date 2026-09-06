@@ -743,6 +743,11 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                                 {leader.name}
                               </span>
                               <PositionRankBadge rank={leader.currentRank} />
+                              {leader.birthYear && (
+                                <span className="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded-md font-mono">
+                                  {2026 - leader.birthYear}岁
+                                </span>
+                              )}
                             </div>
 
                             {/* 职务展示 */}
