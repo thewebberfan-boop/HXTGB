@@ -1824,7 +1824,7 @@ export const OFFICIALS_DATA: Official[] = [
       "level": "high",
       "score": 98,
       "label": "官方公报确证",
-      "source": "国务院任免国家工作人员公报 / 证监会政务公开与全国两会代表法定公示"
+      "source": "中央纪委国家监委审查调查通报 / 国务院任免公报 / 证监会政务公开"
     },
     "isCurrentServing": false,
     "servingStatus": "investigated",
@@ -6447,9 +6447,9 @@ export const OFFICIALS_DATA: Official[] = [
     "bioSummary": "南京大学工学博士。曾任中国人民银行数字货币研究所首任所长、中国结算总经理、证监会科技监管司司长兼信息中心主任。在央行法定数字货币技术研究方面颇具知名度，2024年因严重违纪违法被双开。",
     "basicInfoConfidence": {
       "level": "high",
-      "score": 95,
-      "label": "权威官方认证",
-      "source": "中国证监会官方履历档案与金融机构法定披露"
+      "score": 98,
+      "label": "官方通报确证",
+      "source": "中央纪委国家监委网站及驻证监会纪检监察组通报 / 证监会法定履历档案"
     },
     "isCurrentServing": false,
     "servingStatus": "investigated",

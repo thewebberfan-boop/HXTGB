@@ -1241,7 +1241,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                   <span className="px-1.5 py-0.2 rounded bg-emerald-100 text-emerald-800 font-semibold border border-emerald-300">
                     95%+ · 官方确证
                   </span>
-                  <span className="text-gray-400">国务院任免/法定公示/公报</span>
+                  <span className="text-gray-400">国务院任免/中纪委审查通报/法定公报</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <span className="px-1.5 py-0.2 rounded bg-blue-100 text-blue-800 font-semibold border border-blue-300">
