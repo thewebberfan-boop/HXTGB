@@ -8,6 +8,13 @@ import { UnitsView } from './UnitsView';
 import { OfficialsView } from './OfficialsView';
 import { SwimlaneView } from './SwimlaneView';
 
+interface NavHistoryItem {
+  view: ViewMode;
+  officialId?: string | null;
+  unitId?: string | null;
+  label?: string;
+}
+
 export function AppContainer() {
   // 默认进入页面为“机构”编制档案
   const [currentView, setCurrentView] = useState<ViewMode>('units');
@@ -20,8 +27,8 @@ export function AppContainer() {
   const [focusedOfficialId, setFocusedOfficialId] = useState<string | null>(
     () => OFFICIALS_DATA[0]?.id || 'wu-qing'
   );
-  // 记录跳转来源页面（当从其他页面跳转到官员页面时，记录来源用于一键返回）
-  const [previousViewForOfficial, setPreviousViewForOfficial] = useState<ViewMode | null>(null);
+  // 导航历史栈（支持“各种情况的返回”：跨页面返回、跨官员返回、多次嵌套返回）
+  const [navHistory, setNavHistory] = useState<NavHistoryItem[]>([]);
 
   // 官员页面与机构页面当前选中的组织机构过滤/定位
   const [officialsSelectedUnitId, setOfficialsSelectedUnitId] = useState<string | null>(null);
@@ -183,9 +190,16 @@ export function AppContainer() {
     setActiveLaneUnitIds(UNITS_DATA.map((u) => u.id));
   };
 
-  // 视图跳转支持
+  // 视图跳转支持：跳转至官员主页时压入当前视图与上下文至历史栈
   const handleSelectOfficialFromUnit = (official: Official) => {
-    setPreviousViewForOfficial('units');
+    setNavHistory((prev) => [
+      ...prev,
+      {
+        view: 'units',
+        unitId: unitsSelectedUnitId,
+        label: '系统单位编制档案',
+      },
+    ]);
     setFocusedOfficialId(official.id);
     setCurrentView('officials');
   };
@@ -219,29 +233,81 @@ export function AppContainer() {
 
   // 从泳道跳转到官员主页
   const handleNavigateToOfficialPage = (officialId: string) => {
-    setPreviousViewForOfficial('swimlanes');
+    setNavHistory((prev) => [
+      ...prev,
+      {
+        view: 'swimlanes',
+        label: '时空泳道',
+      },
+    ]);
     setFocusedOfficialId(officialId);
     setCurrentView('officials');
   };
 
-  // 从官员页面返回跳转前视图
-  const handleBackFromOfficial = () => {
-    if (previousViewForOfficial) {
-      setCurrentView(previousViewForOfficial);
-      setPreviousViewForOfficial(null);
-    } else {
-      setCurrentView('units');
+  // 在官员页面内部切换官员（点击关联官员、校友、同僚、侧边栏机构班子等）
+  const handleOfficialChange = (newOfficialId: string) => {
+    if (focusedOfficialId && focusedOfficialId !== newOfficialId) {
+      const prevOfficial = OFFICIALS_DATA.find((o) => o.id === focusedOfficialId);
+      setNavHistory((prev) => [
+        ...prev,
+        {
+          view: 'officials',
+          officialId: focusedOfficialId,
+          label: prevOfficial ? `上一位官员（${prevOfficial.name}）` : '上一位官员',
+        },
+      ]);
     }
+    setFocusedOfficialId(newOfficialId);
   };
 
+  // 顶部/侧边栏切换主视图
   const handleViewChange = (view: ViewMode) => {
     if (view === 'officials' && currentView !== 'officials') {
-      setPreviousViewForOfficial(currentView);
-    } else if (view !== 'officials') {
-      setPreviousViewForOfficial(null);
+      setNavHistory((prev) => [
+        ...prev,
+        {
+          view: currentView,
+          unitId: unitsSelectedUnitId,
+          label: currentView === 'units' ? '系统单位编制档案' : '时空泳道',
+        },
+      ]);
     }
     setCurrentView(view);
   };
+
+  // 全能历史回退：支持按顺序退回到上一个官员、上一个机构、上一个泳道
+  const handleGoBack = () => {
+    if (navHistory.length === 0) return;
+    const lastItem = navHistory[navHistory.length - 1];
+    setNavHistory((prev) => prev.slice(0, -1));
+
+    if (lastItem.view === 'officials') {
+      if (lastItem.officialId) {
+        setFocusedOfficialId(lastItem.officialId);
+      }
+      setCurrentView('officials');
+    } else if (lastItem.view === 'units') {
+      if (lastItem.unitId) {
+        setUnitsSelectedUnitId(lastItem.unitId);
+        setFocusedUnitId(lastItem.unitId);
+      }
+      setCurrentView('units');
+    } else if (lastItem.view === 'swimlanes') {
+      setCurrentView('swimlanes');
+    }
+  };
+
+  // 获取最近返回目标的说明文案
+  const lastHistoryItem = navHistory[navHistory.length - 1];
+  const backTargetLabel = lastHistoryItem?.label || (
+    lastHistoryItem?.view === 'officials'
+      ? '上一位官员'
+      : lastHistoryItem?.view === 'units'
+      ? '系统单位编制档案'
+      : lastHistoryItem?.view === 'swimlanes'
+      ? '时空泳道'
+      : undefined
+  );
 
   // 需求四：通用返回时空泳道（保持原有的所有官员和泳道筛选配置）
   const handleBackToSwimlane = () => {
@@ -275,7 +341,7 @@ export function AppContainer() {
         selectedUnitIdForUnits={unitsSelectedUnitId}
         onSelectUnitForUnits={setUnitsSelectedUnitId}
         activeOfficialId={focusedOfficialId}
-        onSelectOfficial={setFocusedOfficialId}
+        onSelectOfficial={handleOfficialChange}
       />
 
       {/* 主视图区域：完整高度与宽度留给图谱 */}
@@ -364,9 +430,10 @@ export function AppContainer() {
                 activeOfficialId={focusedOfficialId}
                 selectedUnitId={officialsSelectedUnitId}
                 onSelectUnit={setOfficialsSelectedUnitId}
-                onActiveOfficialChange={setFocusedOfficialId}
-                previousView={previousViewForOfficial}
-                onBackToPreviousView={handleBackFromOfficial}
+                onActiveOfficialChange={handleOfficialChange}
+                canGoBack={navHistory.length > 0}
+                backTargetLabel={backTargetLabel}
+                onGoBack={handleGoBack}
               />
             </div>
           </div>

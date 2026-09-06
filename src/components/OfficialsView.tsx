@@ -40,8 +40,9 @@ interface OfficialsViewProps {
   selectedUnitId?: string | null;
   onSelectUnit?: (unitId: string | null) => void;
   onActiveOfficialChange?: (officialId: string) => void;
-  previousView?: 'units' | 'officials' | 'swimlanes' | null;
-  onBackToPreviousView?: () => void;
+  canGoBack?: boolean;
+  backTargetLabel?: string;
+  onGoBack?: () => void;
 }
 
 
@@ -587,8 +588,9 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
   selectedUnitId = null,
   onSelectUnit,
   onActiveOfficialChange,
-  previousView,
-  onBackToPreviousView,
+  canGoBack,
+  backTargetLabel,
+  onGoBack,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showBioModal, setShowBioModal] = useState(false);
@@ -680,17 +682,17 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
   const handlePrevOfficial = () => {
     if (candidateOfficials.length === 0) return;
     if (currentIndex > 0) {
-      setActiveOfficial(candidateOfficials[currentIndex - 1]);
+      handleSelectOfficial(candidateOfficials[currentIndex - 1]);
     } else {
-      setActiveOfficial(candidateOfficials[candidateOfficials.length - 1]);
+      handleSelectOfficial(candidateOfficials[candidateOfficials.length - 1]);
     }
   };
   const handleNextOfficial = () => {
     if (candidateOfficials.length === 0) return;
     if (currentIndex >= 0 && currentIndex < candidateOfficials.length - 1) {
-      setActiveOfficial(candidateOfficials[currentIndex + 1]);
+      handleSelectOfficial(candidateOfficials[currentIndex + 1]);
     } else {
-      setActiveOfficial(candidateOfficials[0]);
+      handleSelectOfficial(candidateOfficials[0]);
     }
   };
 
@@ -770,12 +772,12 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
               <div className="flex items-start sm:items-center gap-4 min-w-0 w-full lg:w-auto lg:max-w-[55%] shrink-0 pr-0 lg:pr-5 border-b lg:border-b-0 lg:border-r border-black/[0.06] pb-3.5 lg:pb-0">
                 <div className="flex flex-col items-center gap-2 shrink-0">
                   <OfficialIdPhoto official={activeOfficial} size="md" />
-                  {previousView && onBackToPreviousView && (
+                  {canGoBack && onGoBack && (
                     <button
                       type="button"
-                      onClick={onBackToPreviousView}
+                      onClick={onGoBack}
                       className="w-full py-1 px-2 rounded-lg bg-gray-100 hover:bg-gray-200 active:scale-95 text-gray-700 hover:text-blue-600 text-xs font-semibold flex items-center justify-center gap-1 border border-black/[0.08] shadow-2xs transition-all cursor-pointer group"
-                      title={`返回上一页面（${previousView === 'units' ? '系统单位编制档案' : '时空泳道'}）`}
+                      title={backTargetLabel ? `返回：${backTargetLabel}` : '返回上一页/上一位官员'}
                     >
                       <ArrowLeft className="w-3.5 h-3.5 text-gray-500 group-hover:text-blue-600 transition-colors" />
                       <span>返回</span>
