@@ -24,14 +24,43 @@ export interface ConfidenceInfo {
   source?: string; // 详实信源与证据链说明
 }
 
+export type InformationSourceType =
+  | 'official_profile'
+  | 'appointment'
+  | 'official_notice'
+  | 'discipline_notice'
+  | 'institution_disclosure'
+  | 'authoritative_media'
+  | 'academic'
+  | 'other';
+
+/** 可复核的信息来源。supports 用于说明该来源具体支撑哪些字段或履历记录。 */
+export interface InformationSource {
+  id: string;
+  title: string;
+  publisher: string;
+  url?: string;
+  sourceType: InformationSourceType;
+  publishedDate?: string;
+  accessedDate: string;
+  supports: string[];
+  note?: string;
+}
+
+export interface ProfileReview {
+  status: 'verified' | 'partially_verified' | 'needs_review';
+  reviewedAt?: string;
+  note?: string;
+}
+
 export interface CareerRecord {
   id: string;
-  unitId: string;
+  unitId: string; // 空字符串表示外部历史机构，避免错误链接到站内其他机构页
   unitName: string;
   department?: string;
   position: string;
   rank?: UnitLevel;
-  startYear: number;
+  startYear?: number;
   startMonth?: number;
   endYear: number | null; // null 表示至今
   endMonth?: number | null;
@@ -65,13 +94,14 @@ export interface Official {
   id: string;
   name: string;
   avatarUrl?: string;
-  gender: '男' | '女';
-  birthYear: number;
+  avatarVerified?: boolean; // false 时禁止加载历史图片资产，直接显示姓名占位头像
+  gender: '男' | '女' | '未公开';
+  birthYear?: number;
   birthMonth?: number;
   nativePlace?: string; // 籍贯
   currentUnitId: string;
   currentPosition: string;
-  currentRank: UnitLevel;
+  currentRank?: UnitLevel;
   education: EducationInfo[];
   careerHistory: CareerRecord[];
   bioSummary?: string;
@@ -81,6 +111,8 @@ export interface Official {
   servingStatusLabel?: string; // 履职状态中文标签（如“现任在职”、“正常退休”、“开除党籍公职”、“留党察看/政务撤职”）
   servingStatusNote?: string; // 状态详细说明或官方通报纪实
   statusBadgeColor?: 'emerald' | 'slate' | 'rose' | 'amber' | 'blue';
+  sources?: InformationSource[]; // 构建本人物档案所使用的可复核来源
+  profileReview?: ProfileReview; // 档案整体核验状态，避免局部证据被误读为全档案已核验
 }
 
 export interface Unit {

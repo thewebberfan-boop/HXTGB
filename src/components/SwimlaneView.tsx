@@ -69,7 +69,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
   const MIN_LANE_WIDTH = 58; // 最小宽度（保证至少可显示 3 个汉字）
 
   // 双位数规范化年份辅助函数（如 2004 显示为 '04'，2007 显示为 '07'）
-  const format2DigitYear = (year: number) => String(year % 100).padStart(2, '0');
+  const format2DigitYear = (year?: number) => year ? String(year % 100).padStart(2, '0') : '--';
 
   // 监听容器尺寸，动态自适应宽度与高度
   useEffect(() => {
@@ -357,7 +357,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
             matches = rec.unitId === lane.id;
           }
 
-          if (matches) {
+          if (matches && rec.startYear) {
             rawRecords.push({ official, record: rec });
           }
         });
@@ -365,14 +365,14 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
 
       // 计算卡片位置及重叠避让
       const positioned = rawRecords.map((item, i) => {
-        const startY = getYearYPosition(item.record.startYear, item.record.startMonth || 1);
+        const startY = getYearYPosition(item.record.startYear!, item.record.startMonth || 1);
         const endY = getYearYPosition(item.record.endYear || 2026, item.record.endMonth || 12);
         const top = Math.min(startY, endY);
         const height = Math.max(32, Math.abs(endY - startY));
 
         const hasOverlap = rawRecords.some((other, j) => {
           if (i === j) return false;
-          const oStartY = getYearYPosition(other.record.startYear, other.record.startMonth || 1);
+          const oStartY = getYearYPosition(other.record.startYear!, other.record.startMonth || 1);
           const oEndY = getYearYPosition(other.record.endYear || 2026, other.record.endMonth || 12);
           const oTop = Math.min(oStartY, oEndY);
           const oBottom = Math.max(oStartY, oEndY);

@@ -363,7 +363,7 @@ const LeaderCard: React.FC<LeaderCardProps> = ({
             )}
 
             <p className="text-[10.5px] text-gray-400 mt-1 font-mono">
-              {leader.birthYear}年生（约{new Date().getFullYear() - leader.birthYear}岁）
+              {leader.birthYear ? `${leader.birthYear}年生（约${new Date().getFullYear() - leader.birthYear}岁）` : '出生信息未公开'}
             </p>
           </div>
         </div>
@@ -771,7 +771,7 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                               <PositionRankBadge rank={leader.currentRank} />
                               {leader.birthYear && (
                                 <span className="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded-md font-mono">
-                                  {2026 - leader.birthYear}岁
+                                  {new Date().getFullYear() - leader.birthYear}岁
                                 </span>
                               )}
                             </div>
@@ -798,7 +798,7 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                             )}
 
                             <p className="text-[11px] text-gray-400 mt-1 font-mono">
-                              {leader.birthYear}年生（约{new Date().getFullYear() - leader.birthYear}岁）
+                              {leader.birthYear ? `${leader.birthYear}年生（约${new Date().getFullYear() - leader.birthYear}岁）` : '出生信息未公开'}
                             </p>
                           </div>
                         </div>

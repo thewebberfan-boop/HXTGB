@@ -312,7 +312,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
     // 1. 历史履历（按时间正序排列）
     const sortedCareer = [...(targetOfficial.careerHistory || [])].sort((a, b) => {
-      if (a.startYear !== b.startYear) return a.startYear - b.startYear;
+      if (a.startYear !== b.startYear) return (a.startYear ?? 9999) - (b.startYear ?? 9999);
       return (a.startMonth || 1) - (b.startMonth || 1);
     });
 
@@ -472,14 +472,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             : 'text-emerald-700 bg-emerald-50 border border-emerald-200/60'
                         }`}
                       >
-                        {off.currentRank.replace('局级', '').replace('级', '')}
+                        {off.currentRank?.replace('局级', '').replace('级', '') || '待核'}
                       </span>
                       <span
                         className={`text-[9px] font-mono ${
                           isActive ? 'text-blue-100' : 'text-gray-400'
                         }`}
                       >
-                        {2026 - off.birthYear}岁
+                        {off.birthYear ? `${new Date().getFullYear() - off.birthYear}岁` : '年龄待核'}
                       </span>
                     </div>
                   </button>
@@ -526,14 +526,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             : 'text-gray-500 bg-gray-100'
                         }`}
                       >
-                        {off.currentRank.replace('局级', '').replace('级', '')}
+                        {off.currentRank?.replace('局级', '').replace('级', '') || '待核'}
                       </span>
                       <span
                         className={`text-[9px] font-mono ${
                           isActive ? 'text-blue-100' : 'text-gray-400'
                         }`}
                       >
-                        {2026 - off.birthYear}岁
+                        {off.birthYear ? `${new Date().getFullYear() - off.birthYear}岁` : '年龄待核'}
                       </span>
                     </div>
                   </button>

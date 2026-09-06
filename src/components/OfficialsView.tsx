@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo, useEffect } from 'react';
-import { Official, Unit, EducationInfo, CareerRecord } from '../types';
+import { Official, Unit, EducationInfo, CareerRecord, InformationSource } from '../types';
 import {
   getOfficialColor,
   isOfficialActiveInUnit,
@@ -24,7 +24,10 @@ import {
   ShieldCheck,
   Users,
   X,
-  Maximize2
+  Maximize2,
+  BookOpen,
+  ExternalLink,
+  CircleAlert
 } from 'lucide-react';
 import { PositionRankBadge } from './PositionRankBadge';
 import { OfficialIdPhoto } from './OfficialIdPhoto';
@@ -45,11 +48,56 @@ interface OfficialsViewProps {
   onGoBack?: () => void;
 }
 
+interface DisplaySource extends Partial<InformationSource> {
+  id: string;
+  title: string;
+  publisher: string;
+  supports: string[];
+  isLegacy: boolean;
+}
+
+function collectProfileSources(official: Official): DisplaySource[] {
+  const structured: DisplaySource[] = (official.sources || []).map((source) => ({
+    ...source,
+    isLegacy: false,
+  }));
+  const knownLabels = new Set(structured.map((source) => source.title.trim()));
+  const legacyLabels = [
+    official.basicInfoConfidence?.source,
+    ...official.education.map((item) => item.confidence?.source),
+    ...official.careerHistory.map((item) => item.confidence?.source),
+  ].filter((source): source is string => Boolean(source?.trim()));
+
+  Array.from(new Set(legacyLabels)).forEach((label, index) => {
+    if (knownLabels.has(label.trim())) return;
+    structured.push({
+      id: `legacy-${official.id}-${index}`,
+      title: label,
+      publisher: '原始数据中的文字信源',
+      supports: ['对应的基础信息、教育经历或任职记录'],
+      isLegacy: true,
+    });
+  });
+
+  return structured;
+}
+
+const SOURCE_TYPE_LABELS: Record<string, string> = {
+  official_profile: '官方简历',
+  appointment: '任免文件',
+  official_notice: '政务公告',
+  discipline_notice: '纪检通报',
+  institution_disclosure: '机构披露',
+  authoritative_media: '权威媒体',
+  academic: '学术资料',
+  other: '其他来源',
+};
+
 
 // ==================== 时空重叠匹配引擎 (Alumni & Colleague Matching Engine) ====================
 
-const CURRENT_DATA_YEAR = 2026;
-const CURRENT_DATA_MONTH = 3;
+const CURRENT_DATA_YEAR = new Date().getFullYear();
+const CURRENT_DATA_MONTH = new Date().getMonth() + 1;
 
 /**
  * 严谨的月份级时间区间交集计算函数
@@ -139,7 +187,7 @@ export function getColleagueTotalIntersections(
   for (const rA of targetOfficial.careerHistory || []) {
     for (const rB of colleagueOfficial.careerHistory || []) {
       const { isMatch } = checkSpaceMatch(rA, rB);
-      if (isMatch) {
+      if (isMatch && rA.startYear && rB.startYear) {
         const ov = calculatePreciseOverlap(
           rA.startYear,
           rA.startMonth,
@@ -220,14 +268,32 @@ export function normalizeSchoolName(school: string): string {
   return s;
 }
 
-export function getEduSpan(official: Official, edu: EducationInfo): { startYear: number; endYear: number } {
+export function getEduSpan(_official: Official, edu: EducationInfo): { startYear: number; endYear: number } | null {
   if (edu.startYear && edu.endYear) {
     return { startYear: edu.startYear, endYear: edu.endYear };
   }
 
   const gradYear = edu.graduationYear;
   const degree = edu.degree;
-  const birth = official.birthYear || 1970;
+  const estimatedYears = degree === '学士' || degree === '大专' || degree === '博士'
+    ? 4
+    : degree === '硕士'
+      ? 3
+      : 4;
+
+  // 只有数据明确标记为“学制推算”时，才允许从单侧年份估算另一端。
+  // 官方材料只给毕业年份时，该年份本身可以展示，但不能自动制造入学年份或校友关系。
+  if (!edu.isDerivedSpan) {
+    return null;
+  }
+
+  // 已有单侧年份时必须优先使用，不能因出生年份缺失而退回默认年份反推。
+  if (edu.startYear) {
+    return { startYear: edu.startYear, endYear: edu.startYear + estimatedYears };
+  }
+  if (edu.endYear) {
+    return { startYear: edu.endYear - estimatedYears, endYear: edu.endYear };
+  }
 
   if (gradYear) {
     if (degree === '学士' || degree === '大专') {
@@ -239,17 +305,10 @@ export function getEduSpan(official: Official, edu: EducationInfo): { startYear:
     } else {
       return { startYear: gradYear - 3, endYear: gradYear };
     }
-  } else {
-    if (degree === '学士' || degree === '大专') {
-      return { startYear: birth + 18, endYear: birth + 22 };
-    } else if (degree === '硕士') {
-      return { startYear: birth + 22, endYear: birth + 25 };
-    } else if (degree === '博士') {
-      return { startYear: birth + 25, endYear: birth + 29 };
-    } else {
-      return { startYear: birth + 20, endYear: birth + 24 };
-    }
   }
+
+  // 没有任何教育年份证据时不得根据出生年份反推入学年份。
+  return null;
 }
 
 export interface AlumniMatch {
@@ -268,9 +327,10 @@ export function findAlumniForEdu(
   allOfficials: Official[]
 ): AlumniMatch[] {
   const normSchool = normalizeSchoolName(targetEdu.school);
-  if (!normSchool || normSchool.length < 3) return [];
+  if (!normSchool || normSchool.length < 3 || normSchool.includes('未公开')) return [];
 
   const targetSpan = getEduSpan(targetOfficial, targetEdu);
+  if (!targetSpan) return [];
   const matches: AlumniMatch[] = [];
 
   for (const other of allOfficials) {
@@ -282,6 +342,7 @@ export function findAlumniForEdu(
       const otherNormSchool = normalizeSchoolName(otherEdu.school);
       if (otherNormSchool === normSchool) {
         const otherSpan = getEduSpan(other, otherEdu);
+        if (!otherSpan) continue;
         const ovStart = Math.max(targetSpan.startYear, otherSpan.startYear);
         const ovEnd = Math.min(targetSpan.endYear, otherSpan.endYear);
 
@@ -540,7 +601,7 @@ export function findColleaguesForCareer(
 
     for (const recB of other.careerHistory || []) {
       const { isMatch, reason } = checkSpaceMatch(targetRecord, recB);
-      if (isMatch && reason) {
+      if (isMatch && reason && targetRecord.startYear && recB.startYear) {
         const ov = calculatePreciseOverlap(
           targetRecord.startYear,
           targetRecord.startMonth,
@@ -707,8 +768,8 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
     }
   };
 
-  const calculateAge = (birthYear: number) => {
-    return 2026 - birthYear;
+  const calculateAge = (birthYear?: number) => {
+    return birthYear ? `${new Date().getFullYear() - birthYear}岁` : '年龄未公开';
   };
 
   // 官员任职履历按时间倒序排序（由近及远：现任/最新职务置顶，早期履历在后）
@@ -759,6 +820,12 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
     ? selectedOfficialIds.includes(activeOfficial.id)
     : false;
   const currentUnit = activeOfficial ? unitMap.get(activeOfficial.currentUnitId) : null;
+  const profileSources = useMemo(
+    () => (activeOfficial ? collectProfileSources(activeOfficial) : []),
+    [activeOfficial]
+  );
+  const linkedSourceCount = profileSources.filter((source) => source.url).length;
+  const reviewStatus = activeOfficial?.profileReview?.status || 'needs_review';
 
   return (
     <div className="space-y-6">
@@ -792,7 +859,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                     </h2>
                     <PositionRankBadge rank={activeOfficial.currentRank} />
                     <span className="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded-md font-mono">
-                      {calculateAge(activeOfficial.birthYear)}岁
+                      {calculateAge(activeOfficial.birthYear)}
                     </span>
 
                     {/* 履职在任/离任/退休/处分状态徽标 */}
@@ -831,7 +898,9 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                   <div className="flex flex-wrap items-center gap-3 text-[11px] text-gray-500 pt-0.5">
                     <span className="flex items-center gap-1">
                       <Calendar className="w-3 h-3 text-gray-400" />
-                      {activeOfficial.birthYear}年{activeOfficial.birthMonth}月生
+                      {activeOfficial.birthYear
+                        ? `${activeOfficial.birthYear}年${activeOfficial.birthMonth ? `${activeOfficial.birthMonth}月` : ''}生`
+                        : '出生信息未公开'}
                     </span>
 
                     {activeOfficial.nativePlace && (
@@ -922,7 +991,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                         </h3>
                         <PositionRankBadge rank={activeOfficial.currentRank} />
                         <span className="text-[11px] text-gray-500 font-mono bg-gray-100 px-2 py-0.5 rounded-md">
-                          {calculateAge(activeOfficial.birthYear)}岁
+                          {calculateAge(activeOfficial.birthYear)}
                         </span>
                       </div>
                       <p className="text-xs text-blue-700 font-semibold mt-1 flex items-center gap-1.5">
@@ -970,7 +1039,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                     <div className="p-3 bg-gray-50 rounded-xl border border-black/[0.04]">
                       <span className="text-gray-400 block text-[11px] mb-0.5">出生籍贯</span>
                       <span className="font-semibold text-gray-800">
-                        {activeOfficial.birthYear}年 · {activeOfficial.nativePlace || '未公开'}
+                        {activeOfficial.birthYear ? `${activeOfficial.birthYear}年` : '出生年份未公开'} · {activeOfficial.nativePlace || '籍贯未公开'}
                       </span>
                     </div>
                     <div className="p-3 bg-gray-50 rounded-xl border border-black/[0.04]">
@@ -1018,7 +1087,9 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
               {sortedEducation.map((edu, idx) => {
                 const alumniList = findAlumniForEdu(activeOfficial, edu, officials);
                 const span = getEduSpan(activeOfficial, edu);
-                const durationYears = Math.max(1, span.endYear - span.startYear);
+                const durationYears = span ? Math.max(1, span.endYear - span.startYear) : null;
+                const educationModeLabel = edu.educationMode
+                  || (edu.isInService === true ? '在职' : edu.isInService === false ? '全日制' : '培养方式未公开');
                 return (
                   <div
                     key={idx}
@@ -1034,36 +1105,53 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                           <span className="font-bold text-xs text-blue-800 bg-blue-100/90 border border-blue-200 px-2 py-0.5 rounded-md">
                             {edu.degree}
                           </span>
-                          {edu.isInService ? (
+                          {educationModeLabel === '在职' ? (
                             <span className="font-bold text-[11px] text-amber-800 bg-amber-100/90 border border-amber-300 px-2 py-0.5 rounded-md flex items-center gap-1 shadow-2xs">
                               <span className="w-1.5 h-1.5 rounded-full bg-amber-600" />
                               <span>在职学历</span>
                             </span>
-                          ) : (
+                          ) : educationModeLabel === '全日制' ? (
                             <span className="font-bold text-[11px] text-emerald-800 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-md flex items-center gap-1">
                               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
                               <span>全日制</span>
+                            </span>
+                          ) : (
+                            <span className="font-bold text-[11px] text-gray-600 bg-gray-100 border border-gray-200 px-2 py-0.5 rounded-md">
+                              培养方式未公开
                             </span>
                           )}
                         </div>
 
                         {/* 明确补充在校全部时段（包含推理标记） */}
                         <div className="p-2 rounded-lg bg-white border border-black/[0.05] space-y-1">
-                          <div className="text-[11px] font-mono font-bold text-blue-700 flex items-center justify-between">
-                            <span className="flex items-center gap-1">
-                              <Calendar className="w-3 h-3 text-blue-500" />
-                              <span>在校时段: {span.startYear} - {span.endYear}</span>
-                            </span>
-                            <span className="text-[10px] text-gray-500 font-normal">
-                              ({durationYears}年制)
-                            </span>
-                          </div>
-                          <div className="text-[10px] text-gray-400 flex items-center justify-between">
-                            <span>{edu.graduationYear ? `毕业年份: ${edu.graduationYear}年` : '学制推算'}</span>
-                            <span className="text-emerald-700 font-medium bg-emerald-50 px-1.5 py-0.2 rounded text-[9.5px]">
-                              {edu.isDerivedSpan ? '学制推算时段' : '官方确证时段'}
-                            </span>
-                          </div>
+                          {span ? (
+                            <>
+                              <div className="text-[11px] font-mono font-bold text-blue-700 flex items-center justify-between">
+                                <span className="flex items-center gap-1">
+                                  <Calendar className="w-3 h-3 text-blue-500" />
+                                  <span>在校时段: {span.startYear} - {span.endYear}</span>
+                                </span>
+                                <span className="text-[10px] text-gray-500 font-normal">
+                                  ({durationYears}年制)
+                                </span>
+                              </div>
+                              <div className="text-[10px] text-gray-400 flex items-center justify-between">
+                                <span>{edu.graduationYear ? `毕业年份: ${edu.graduationYear}年` : '单侧年份推算'}</span>
+                                <span className="text-emerald-700 font-medium bg-emerald-50 px-1.5 py-0.2 rounded text-[9.5px]">
+                                  {edu.isDerivedSpan || !edu.startYear || !edu.endYear ? '推算时段' : '有起止年份'}
+                                </span>
+                              </div>
+                            </>
+                          ) : (
+                            <div className="text-[11px] font-medium text-gray-500 flex items-center gap-1.5">
+                              <Calendar className="w-3 h-3 text-gray-400" />
+                              <span>
+                                {edu.graduationYear
+                                  ? `毕业年份：${edu.graduationYear}年；入学年份未公开，不作学制反推`
+                                  : '在校及毕业年份未公开，不作年龄反推'}
+                              </span>
+                            </div>
+                          )}
                         </div>
 
                         <div className="text-xs text-gray-700 font-medium flex items-center justify-between flex-wrap gap-1">
@@ -1072,7 +1160,11 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                             <span className="text-gray-800 font-semibold">{edu.major || '未公开具体专业'}</span>
                           </div>
                           <span className="text-[10.5px] font-medium text-gray-500 bg-white px-2 py-0.5 rounded border border-black/[0.04]">
-                            {edu.isInService ? '在职培养 / 边工作边攻读' : '统招全日制教育'}
+                            {educationModeLabel === '在职'
+                              ? '在职培养 / 边工作边攻读'
+                              : educationModeLabel === '全日制'
+                                ? '统招全日制教育'
+                                : '培养方式未公开'}
                           </span>
                         </div>
 
@@ -1122,6 +1214,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 max-h-[320px] overflow-y-auto pr-1">
                             {alumniList.map((alumni) => {
                               const oSpan = getEduSpan(alumni.official, alumni.education);
+                              if (!oSpan) return null;
                               return (
                                 <button
                                   key={alumni.official.id}
@@ -1138,7 +1231,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                                         <PositionRankBadge rank={alumni.official.currentRank} />
                                         {alumni.official.birthYear && (
                                           <span className="text-[10px] text-gray-500 bg-gray-100 px-1.5 py-0.2 rounded font-mono">
-                                            {calculateAge(alumni.official.birthYear)}岁
+                                            {calculateAge(alumni.official.birthYear)}
                                           </span>
                                         )}
                                       </div>
@@ -1254,8 +1347,9 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                               {item.unitName}
                             </span>
                             <span className="text-xs font-mono font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md">
-                              {item.startYear}
-                              {item.startMonth ? `.${item.startMonth < 10 ? '0' + item.startMonth : item.startMonth}` : ''} -{' '}
+                              {item.startYear
+                                ? `${item.startYear}${item.startMonth ? `.${item.startMonth < 10 ? '0' + item.startMonth : item.startMonth}` : ''}`
+                                : '起始时间待核'}{' '} -{' '}
                               {item.endYear
                                 ? `${item.endYear}${item.endMonth ? `.${item.endMonth < 10 ? '0' + item.endMonth : item.endMonth}` : ''}`
                                 : '至今'}
@@ -1310,7 +1404,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
 
                           {item.sourceNote && !item.confidence && (
                             <div className="text-xs text-amber-800 bg-amber-50/90 border border-amber-200/80 px-2.5 py-1 rounded-xl mt-2 leading-relaxed">
-                              <span className="font-bold">推导依据：</span>
+                              <span className="font-bold">{item.isDerived ? '推导依据：' : '履历依据：'}</span>
                               {item.sourceNote}
                             </div>
                           )}
@@ -1360,7 +1454,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                                           <PositionRankBadge rank={colleague.official.currentRank} />
                                           {colleague.official.birthYear && (
                                             <span className="text-[10px] text-gray-500 bg-gray-100 px-1.5 py-0.2 rounded font-mono">
-                                              {calculateAge(colleague.official.birthYear)}岁
+                                              {calculateAge(colleague.official.birthYear)}
                                             </span>
                                           )}
                                         </div>
@@ -1418,7 +1512,117 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
             </div>
           </div>
 
-          {/* 5. 底部横幅快捷跳转 */}
+          {/* 5. 信息来源与核验状态 */}
+          <section className="mac-card rounded-2xl p-5 sm:p-7 border border-black/[0.08] bg-white shadow-xs space-y-5">
+            <div className="flex flex-wrap items-start justify-between gap-3 pb-4 border-b border-black/[0.06]">
+              <div>
+                <h3 className="text-sm font-bold text-gray-900 tracking-tight flex items-center gap-2">
+                  <BookOpen className="w-4 h-4 text-blue-600" />
+                  <span>档案信息来源</span>
+                </h3>
+                <p className="text-[11px] text-gray-500 mt-1 leading-relaxed">
+                  记录用于构建本人物简历的公开材料；有原始链接的来源可直接复核。
+                </p>
+              </div>
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className={`px-2.5 py-1 rounded-lg text-[10.5px] font-bold border ${
+                  reviewStatus === 'verified'
+                    ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                    : reviewStatus === 'partially_verified'
+                    ? 'bg-blue-50 text-blue-700 border-blue-200'
+                    : 'bg-amber-50 text-amber-800 border-amber-200'
+                }`}>
+                  {reviewStatus === 'verified'
+                    ? '档案已核验'
+                    : reviewStatus === 'partially_verified'
+                    ? '档案部分核验'
+                    : '档案待系统核验'}
+                </span>
+                <span className="px-2.5 py-1 rounded-lg text-[10.5px] font-semibold text-gray-600 bg-gray-50 border border-black/[0.06]">
+                  {linkedSourceCount}/{profileSources.length} 条含原始链接
+                </span>
+              </div>
+            </div>
+
+            {activeOfficial.profileReview?.note && (
+              <div className="flex items-start gap-2.5 p-3 rounded-xl bg-blue-50/70 border border-blue-200/80 text-xs text-blue-900 leading-relaxed">
+                <ShieldCheck className="w-4 h-4 mt-0.5 shrink-0 text-blue-600" />
+                <div>
+                  <span className="font-bold">本轮核验说明：</span>
+                  {activeOfficial.profileReview.note}
+                  {activeOfficial.profileReview.reviewedAt && (
+                    <span className="text-blue-600 ml-1">（核验于 {activeOfficial.profileReview.reviewedAt}）</span>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {profileSources.length > 0 ? (
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                {profileSources.map((source, index) => {
+                  const content = (
+                    <>
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="min-w-0">
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <span className="text-[10px] font-mono text-gray-400">[{index + 1}]</span>
+                            <span className={`px-1.5 py-0.5 rounded text-[9.5px] font-bold border ${
+                              source.isLegacy
+                                ? 'bg-amber-50 text-amber-800 border-amber-200'
+                                : 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                            }`}>
+                              {source.isLegacy ? '待补原始链接' : SOURCE_TYPE_LABELS[source.sourceType || 'other']}
+                            </span>
+                          </div>
+                          <div className="font-bold text-sm text-gray-900 mt-1.5 leading-snug">
+                            {source.title}
+                          </div>
+                          <div className="text-[10.5px] text-gray-500 mt-1">
+                            {source.publisher}
+                            {source.publishedDate ? ` · 发布 ${source.publishedDate}` : ''}
+                            {source.accessedDate ? ` · 访问 ${source.accessedDate}` : ''}
+                          </div>
+                        </div>
+                        {source.url && <ExternalLink className="w-4 h-4 text-blue-500 shrink-0 mt-1" />}
+                      </div>
+                      <div className="mt-3 pt-2.5 border-t border-black/[0.05] text-[10.5px] text-gray-600 leading-relaxed">
+                        <span className="font-bold text-gray-700">支撑字段：</span>
+                        {source.supports.join('、')}
+                      </div>
+                      {source.note && <p className="text-[10.5px] text-gray-500 mt-1.5">{source.note}</p>}
+                    </>
+                  );
+
+                  return source.url ? (
+                    <a
+                      key={source.id}
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block p-4 rounded-xl bg-gray-50/70 hover:bg-blue-50/60 border border-black/[0.06] hover:border-blue-200 transition-colors"
+                    >
+                      {content}
+                    </a>
+                  ) : (
+                    <div key={source.id} className="p-4 rounded-xl bg-amber-50/30 border border-dashed border-amber-200/90">
+                      {content}
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              <div className="flex items-center justify-center gap-2 min-h-24 rounded-xl border border-dashed border-amber-300 bg-amber-50/50 text-xs text-amber-800">
+                <CircleAlert className="w-4 h-4" />
+                <span>尚未登记信息来源，本档案应视为待核实材料。</span>
+              </div>
+            )}
+
+            <p className="text-[10.5px] text-gray-400 leading-relaxed">
+              提示：来源只证明“支撑字段”中列出的事实，不代表该来源为整份档案背书；旧数据中的文字信源需继续补充标题、发布机构、日期及原始链接。
+            </p>
+          </section>
+
+          {/* 6. 底部横幅快捷跳转 */}
           <div className="mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.06] bg-gray-50 flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-2.5 flex-wrap">
               <button

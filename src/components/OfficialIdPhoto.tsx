@@ -24,9 +24,13 @@ export const OfficialIdPhoto: React.FC<OfficialIdPhotoProps> = ({
   const color = getOfficialColor(official.id);
 
   useEffect(() => {
+    if (official.avatarVerified === false) {
+      setFallbackStage(2);
+      return;
+    }
     setCurrentSrc(official.avatarUrl || `/avatars/${official.id}.jpg`);
     setFallbackStage(0);
-  }, [official.id, official.avatarUrl]);
+  }, [official.id, official.avatarUrl, official.avatarVerified]);
 
   const handleImageError = () => {
     if (fallbackStage === 0) {
@@ -65,7 +69,7 @@ export const OfficialIdPhoto: React.FC<OfficialIdPhotoProps> = ({
         boxShadow: `0 2px 10px -1px ${color.primary}25, 0 1px 3px 0 rgba(0, 0, 0, 0.12)`,
       }}
     >
-      {fallbackStage < 2 ? (
+      {official.avatarVerified !== false && fallbackStage < 2 ? (
         <img
           src={currentSrc}
           alt={`${official.name} 证件照片`}
@@ -93,13 +97,13 @@ export const OfficialIdPhoto: React.FC<OfficialIdPhotoProps> = ({
       {/* 规格微标 */}
       {size === 'lg' && showBadge && (
         <div className="absolute top-1.5 right-1.5 bg-black/60 backdrop-blur-xs text-white text-[8.5px] font-medium px-1.5 py-0.5 rounded-md border border-white/20 shadow-xs flex items-center gap-1">
-          {isRealPhoto ? (
+          {official.avatarVerified !== false && isRealPhoto ? (
             <>
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse" />
               <span>标准工作照</span>
             </>
           ) : (
-            <span>2寸免冠</span>
+            <span>{official.avatarVerified === false ? '照片待核' : '2寸免冠'}</span>
           )}
         </div>
       )}
