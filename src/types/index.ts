@@ -47,6 +47,9 @@ export interface EducationInfo {
   school: string;
   major?: string;
   graduationYear?: number;
+  startYear?: number; // 在校起始年份
+  endYear?: number; // 在校毕业/结业年份
+  isDerivedSpan?: boolean; // 在校时段是否为学制推理
   confidence?: ConfidenceInfo; // 学历置信度评价
 }
 

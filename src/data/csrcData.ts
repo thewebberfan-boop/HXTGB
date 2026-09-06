@@ -1334,7 +1334,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1989,
+        "startYear": 1985,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -1346,7 +1349,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1992,
+        "startYear": 1989,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -1358,7 +1364,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2002,
+        "startYear": 1998,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -1559,7 +1568,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1984,
+        "startYear": 1981,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -1571,7 +1583,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2005,
+        "startYear": 2002,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -1583,7 +1598,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2008,
+        "startYear": 2004,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -1683,7 +1701,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1984,
+        "startYear": 1980,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -1695,7 +1716,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1987,
+        "startYear": 1984,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -1707,7 +1731,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2002,
+        "startYear": 1998,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -1827,7 +1854,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1981,
+        "startYear": 1977,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -1839,7 +1869,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1993,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -1959,7 +1992,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1982,
+        "startYear": 1978,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -1971,7 +2007,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国社科院研究生院知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1985,
+        "startYear": 1982,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -1983,7 +2022,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国社科院研究生院知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1988,
+        "startYear": 1984,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -2123,7 +2165,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1982,
+        "startYear": 1978,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -2135,7 +2180,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1999,
+        "startYear": 1995,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -2255,7 +2303,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1953,
+        "startYear": 1950,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -2335,7 +2386,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1954,
+        "startYear": 1951,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -2347,7 +2401,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1959,
+        "startYear": 1955,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -2427,7 +2484,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1992,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -2439,7 +2499,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2002,
+        "startYear": 1999,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -2575,7 +2638,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1993,
+        "startYear": 1989,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -2587,7 +2653,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2003,
+        "startYear": 1999,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -2723,7 +2792,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1995,
+        "startYear": 1991,
+        "isDerivedSpan": true
       },
       {
         "degree": "学士",
@@ -2735,7 +2807,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1997,
+        "startYear": 1993,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -2747,7 +2822,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1998,
+        "startYear": 1995,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -2759,7 +2837,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2003,
+        "startYear": 2000,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -2920,7 +3001,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -2932,7 +3016,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2002,
+        "startYear": 1998,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -3030,7 +3117,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -3042,7 +3132,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1993,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -3054,7 +3147,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2004,
+        "startYear": 2000,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -3214,7 +3310,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -3226,7 +3325,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1994,
+        "startYear": 1991,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -3346,7 +3448,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1986,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -3527,7 +3632,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1988,
+        "startYear": 1984,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -3539,7 +3647,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2003,
+        "startYear": 1999,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -3657,7 +3768,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1987,
+        "startYear": 1983,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -3669,7 +3783,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1994,
+        "startYear": 1991,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -3681,7 +3798,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2004,
+        "startYear": 2000,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -3821,7 +3941,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1986,
+        "startYear": 1982,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -3833,7 +3956,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "美国斯坦福大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1989,
+        "startYear": 1986,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -3845,7 +3971,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "美国斯坦福大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1993,
+        "startYear": 1989,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -4005,7 +4134,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1987,
+        "startYear": 1983,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -4017,7 +4149,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2008,
+        "startYear": 2004,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -4158,7 +4293,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1984,
+        "startYear": 1980,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -4170,7 +4308,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2002,
+        "startYear": 1998,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -4182,7 +4323,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2005,
+        "startYear": 2001,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -4302,7 +4446,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1982,
+        "startYear": 1978,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -4314,7 +4461,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1999,
+        "startYear": 1995,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -4434,7 +4584,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1989,
+        "startYear": 1986,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -4446,7 +4599,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1999,
+        "startYear": 1995,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -4586,7 +4742,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1982,
+        "startYear": 1978,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -4706,7 +4865,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1978,
+        "startYear": 1974,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -4718,7 +4880,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1981,
+        "startYear": 1978,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -4730,7 +4895,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "美国杜克大学法学院知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1986,
+        "startYear": 1982,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -4850,7 +5018,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1975,
+        "startYear": 1971,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -4862,7 +5033,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1985,
+        "startYear": 1981,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -4962,7 +5136,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2000,
+        "startYear": 1997,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -4974,7 +5151,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2003,
+        "startYear": 1999,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -5076,7 +5256,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1998,
+        "startYear": 1994,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -5088,7 +5271,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2005,
+        "startYear": 2002,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -5186,7 +5372,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1997,
+        "startYear": 1993,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -5198,7 +5387,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学劳动人事学院知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2004,
+        "startYear": 2000,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -5315,7 +5507,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1992,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -5327,7 +5522,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2004,
+        "startYear": 2000,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -5427,7 +5625,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1992,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -5439,7 +5640,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1999,
+        "startYear": 1996,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -5451,7 +5655,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2004,
+        "startYear": 2000,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -5549,7 +5756,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1994,
+        "startYear": 1990,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -5561,7 +5771,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2001,
+        "startYear": 1998,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -5659,7 +5872,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1994,
+        "startYear": 1990,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -5671,7 +5887,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学经济管理学院知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2001,
+        "startYear": 1998,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -5750,7 +5969,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1993,
+        "startYear": 1989,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -5762,7 +5984,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1993,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -5865,7 +6090,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1992,
+        "startYear": 1988,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -5877,7 +6105,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1995,
+        "startYear": 1992,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -5975,7 +6206,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1992,
+        "startYear": 1988,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -5987,7 +6221,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1998,
+        "startYear": 1995,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -6104,7 +6341,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1992,
+        "startYear": 1988,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -6116,7 +6356,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2004,
+        "startYear": 2000,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -6236,7 +6479,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1992,
+        "startYear": 1988,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -6248,7 +6494,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中南财经政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1995,
+        "startYear": 1992,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -6260,7 +6509,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2003,
+        "startYear": 1999,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -6397,7 +6649,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1992,
+        "startYear": 1988,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -6409,7 +6664,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1999,
+        "startYear": 1996,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -6507,7 +6765,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1992,
+        "startYear": 1988,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -6519,7 +6780,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1995,
+        "startYear": 1992,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -6601,7 +6865,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "复旦大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -6613,7 +6880,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "复旦大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2002,
+        "startYear": 1998,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -6733,7 +7003,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -6745,7 +7018,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国社科院研究生院知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2001,
+        "startYear": 1997,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -6848,7 +7124,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "华东政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -6946,7 +7225,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1992,
+        "startYear": 1988,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -6958,7 +7240,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2004,
+        "startYear": 2000,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -7118,7 +7403,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -7130,7 +7418,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "复旦大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1998,
+        "startYear": 1995,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -7252,7 +7543,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -7264,7 +7558,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1997,
+        "startYear": 1994,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -7362,7 +7659,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "西南政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -7374,7 +7674,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2002,
+        "startYear": 1999,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -7472,7 +7775,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -7484,7 +7790,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 2003,
+        "startYear": 1999,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -7639,7 +7948,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -7651,7 +7963,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1993,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -7768,7 +8083,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1986,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -7780,7 +8098,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1993,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -7859,7 +8180,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1986,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -7871,7 +8195,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学经济管理学院知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1993,
+        "startYear": 1990,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -8032,7 +8359,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "华东政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1986,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -8044,7 +8374,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "华东政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2001,
+        "startYear": 1997,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -8123,7 +8456,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1986,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -8135,7 +8471,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1993,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -8275,7 +8614,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1986,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -8287,7 +8629,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1993,
+        "startYear": 1990,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -8389,7 +8734,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -8401,7 +8749,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1994,
+        "startYear": 1991,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -8413,7 +8764,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1997,
+        "startYear": 1993,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -8513,7 +8867,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "西南政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1986,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -8525,7 +8882,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1993,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -8626,7 +8986,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1986,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -8638,7 +9001,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "清华大学五道口金融学院知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1995,
+        "startYear": 1992,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -8720,7 +9086,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1989,
+        "startYear": 1985,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -8732,7 +9101,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中南财经政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1993,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -8811,7 +9183,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1989,
+        "startYear": 1985,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -8823,7 +9198,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1995,
+        "startYear": 1992,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -8925,7 +9303,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1988,
+        "startYear": 1984,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -8937,7 +9318,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1994,
+        "startYear": 1991,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -9035,7 +9419,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1987,
+        "startYear": 1983,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -9047,7 +9434,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1987,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -9167,7 +9557,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1984,
+        "startYear": 1980,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -9179,7 +9572,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1986,
+        "startYear": 1983,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -9191,7 +9587,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1998,
+        "startYear": 1994,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -9289,7 +9688,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1985,
+        "startYear": 1981,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -9301,7 +9703,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1988,
+        "startYear": 1985,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -9401,7 +9806,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1982,
+        "startYear": 1978,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -9413,7 +9821,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1988,
+        "startYear": 1985,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -9533,7 +9944,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1982,
+        "startYear": 1978,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -9633,7 +10047,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "复旦大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1982,
+        "startYear": 1978,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -9645,7 +10062,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "复旦大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1986,
+        "startYear": 1983,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -9745,7 +10165,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "西南政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1995,
+        "startYear": 1991,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -9826,7 +10249,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中南财经政法大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1994,
+        "startYear": 1990,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -9907,7 +10333,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1993,
+        "startYear": 1989,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -9919,7 +10348,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "复旦大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 2001,
+        "startYear": 1998,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10000,7 +10432,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 95,
           "label": "官方履历公示学历",
           "source": "干部选拔任职资格审查及官方公布履历"
-        }
+        },
+        "endYear": 1992,
+        "startYear": 1988,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -10012,7 +10447,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "重点高校官方校友录核验",
           "source": "中国人民大学知名校友档案及法定公开发表学位论文登记"
-        }
+        },
+        "endYear": 1998,
+        "startYear": 1995,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10095,7 +10533,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "官方名册校友核验",
           "source": "全国重点高校知名校友名册登记"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1986,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -10107,7 +10548,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 96,
           "label": "高校学位档案核验",
           "source": "教育部学位论文数据库与官方公布简历"
-        }
+        },
+        "endYear": 1997,
+        "startYear": 1994,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10198,7 +10642,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "高校校友档案核验",
           "source": "武汉大学法学院校友档案"
-        }
+        },
+        "endYear": 1993,
+        "startYear": 1989,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -10210,7 +10657,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 96,
           "label": "学位论文核验",
           "source": "北京大学学位评定委员会公示记录"
-        }
+        },
+        "endYear": 2000,
+        "startYear": 1997,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10284,7 +10734,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "高校校友录核验",
           "source": "中国政法大学校友名录"
-        }
+        },
+        "endYear": 1995,
+        "startYear": 1991,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -10296,7 +10749,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 96,
           "label": "学位论文核验",
           "source": "中国人民大学法学院硕士论文数据库"
-        }
+        },
+        "endYear": 2002,
+        "startYear": 1999,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10370,7 +10826,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "高校校友档案核验",
           "source": "南开大学校友录"
-        }
+        },
+        "endYear": 1992,
+        "startYear": 1988,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -10382,7 +10841,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 96,
           "label": "学位论文核验",
           "source": "清华大学公共管理学院"
-        }
+        },
+        "endYear": 2004,
+        "startYear": 2001,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10439,7 +10901,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "高校校友档案核验",
           "source": "浙江大学校友录"
-        }
+        },
+        "endYear": 1993,
+        "startYear": 1989,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -10451,7 +10916,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 96,
           "label": "高校学位论文核验",
           "source": "复旦大学研究生院"
-        }
+        },
+        "endYear": 1999,
+        "startYear": 1996,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10542,7 +11010,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "高校校友名册核验",
           "source": "上海交通大学杰出校友名册"
-        }
+        },
+        "endYear": 1993,
+        "startYear": 1989,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -10554,7 +11025,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "硕士学位论文核验",
           "source": "复旦大学学位论文数据库"
-        }
+        },
+        "endYear": 1996,
+        "startYear": 1993,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10628,7 +11102,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "高校校友名册核验",
           "source": "浙江大学校友录"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1986,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -10640,7 +11117,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 96,
           "label": "高校学位论文核验",
           "source": "上海交通大学安泰经管学院"
-        }
+        },
+        "endYear": 1998,
+        "startYear": 1995,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10714,7 +11194,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "社科院博士学位档案核验",
           "source": "中国社会科学院博士研究生毕业名录"
-        }
+        },
+        "endYear": 1999,
+        "startYear": 1995,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10788,7 +11271,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "高校校友录核验",
           "source": "中南财经政法大学校友名录"
-        }
+        },
+        "endYear": 1992,
+        "startYear": 1988,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -10800,7 +11286,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 96,
           "label": "学位论文核验",
           "source": "中国政法大学研究生学位论文数据库"
-        }
+        },
+        "endYear": 1999,
+        "startYear": 1996,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10874,7 +11363,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "高校校友档案核验",
           "source": "西南财经大学知名校友名册"
-        }
+        },
+        "endYear": 1990,
+        "startYear": 1986,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -10931,7 +11423,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "高校校友名册核验",
           "source": "江西财经大学校友录"
-        }
+        },
+        "endYear": 1994,
+        "startYear": 1990,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -11005,7 +11500,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "高校校友档案核验",
           "source": "中南财经政法大学校友名册"
-        }
+        },
+        "endYear": 1993,
+        "startYear": 1989,
+        "isDerivedSpan": true
       },
       {
         "degree": "硕士",
@@ -11017,7 +11515,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 96,
           "label": "学位论文核验",
           "source": "对外经济贸易大学研究生院"
-        }
+        },
+        "endYear": 2001,
+        "startYear": 1998,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -11091,7 +11592,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "高校校友名册核验",
           "source": "厦门大学校友名录"
-        }
+        },
+        "endYear": 1991,
+        "startYear": 1987,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [
@@ -11148,7 +11652,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 98,
           "label": "官方公报简历确证",
           "source": "新华社官方受权发布简历"
-        }
+        },
+        "endYear": 1983,
+        "startYear": 1979,
+        "isDerivedSpan": true
       },
       {
         "degree": "博士",
@@ -11160,7 +11667,10 @@ export const OFFICIALS_DATA: Official[] = [
           "score": 99,
           "label": "官方公报简历确证",
           "source": "新华社官方受权发布简历"
-        }
+        },
+        "endYear": 1993,
+        "startYear": 1989,
+        "isDerivedSpan": true
       }
     ],
     "careerHistory": [

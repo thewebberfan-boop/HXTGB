@@ -43,6 +43,134 @@ interface OfficialsViewProps {
 
 // ==================== 时空重叠匹配引擎 (Alumni & Colleague Matching Engine) ====================
 
+const CURRENT_DATA_YEAR = 2026;
+const CURRENT_DATA_MONTH = 3;
+
+/**
+ * 严谨的月份级时间区间交集计算函数
+ * 彻底消除过去朴素整数减法 + 1 造成的虚高错误，精确到年和月
+ */
+export function calculatePreciseOverlap(
+  startA: number,
+  startMonthA: number | undefined,
+  endA: number | null,
+  endMonthA: number | null | undefined,
+  startB: number,
+  startMonthB: number | undefined,
+  endB: number | null,
+  endMonthB: number | null | undefined,
+  currentYear = CURRENT_DATA_YEAR,
+  currentMonth = CURRENT_DATA_MONTH
+): {
+  hasOverlap: boolean;
+  overlapMonths: number;
+  overlapDisplay: string;
+  startStr: string;
+  endStr: string;
+} {
+  const smA = startA * 12 + ((startMonthA || 1) - 1);
+  const emA = endA ? endA * 12 + ((endMonthA || 12) - 1) : currentYear * 12 + (currentMonth - 1);
+
+  const smB = startB * 12 + ((startMonthB || 1) - 1);
+  const emB = endB ? endB * 12 + ((endMonthB || 12) - 1) : currentYear * 12 + (currentMonth - 1);
+
+  const ovStart = Math.max(smA, smB);
+  const ovEnd = Math.min(emA, emB);
+
+  if (ovStart > ovEnd) {
+    return {
+      hasOverlap: false,
+      overlapMonths: 0,
+      overlapDisplay: '',
+      startStr: '',
+      endStr: '',
+    };
+  }
+
+  const totalMonths = ovEnd - ovStart + 1;
+  const years = Math.floor(totalMonths / 12);
+  const remMonths = totalMonths % 12;
+
+  let overlapDisplay = '';
+  if (years > 0 && remMonths >= 2) {
+    overlapDisplay = `重合 ${years}年${remMonths}个月`;
+  } else if (years > 0) {
+    overlapDisplay = `重合约 ${years} 年`;
+  } else {
+    overlapDisplay = `重合 ${Math.max(1, remMonths)} 个月`;
+  }
+
+  const startY = Math.floor(ovStart / 12);
+  const startM = (ovStart % 12) + 1;
+  const endY = Math.floor(ovEnd / 12);
+  const endM = (ovEnd % 12) + 1;
+
+  const startStr = `${startY}.${startM < 10 ? '0' + startM : startM}`;
+  const endStr = !endA && !endB && endY >= currentYear ? '至今' : `${endY}.${endM < 10 ? '0' + endM : endM}`;
+
+  return {
+    hasOverlap: true,
+    overlapMonths: totalMonths,
+    overlapDisplay,
+    startStr,
+    endStr,
+  };
+}
+
+/**
+ * 统计两位官员在整个历史生涯中的“总交汇次数”与“累计总共事时长”
+ */
+export function getColleagueTotalIntersections(
+  targetOfficial: Official,
+  colleagueOfficial: Official
+): {
+  totalCount: number;
+  totalMonths: number;
+  totalDisplay: string;
+} {
+  let totalCount = 0;
+  let totalMonths = 0;
+
+  for (const rA of targetOfficial.careerHistory || []) {
+    for (const rB of colleagueOfficial.careerHistory || []) {
+      const { isMatch } = checkSpaceMatch(rA, rB);
+      if (isMatch) {
+        const ov = calculatePreciseOverlap(
+          rA.startYear,
+          rA.startMonth,
+          rA.endYear,
+          rA.endMonth,
+          rB.startYear,
+          rB.startMonth,
+          rB.endYear,
+          rB.endMonth
+        );
+        if (ov.hasOverlap) {
+          totalCount += 1;
+          totalMonths += ov.overlapMonths;
+        }
+      }
+    }
+  }
+
+  const years = Math.floor(totalMonths / 12);
+  const remMonths = totalMonths % 12;
+  let durStr = '';
+  if (years > 0 && remMonths >= 2) {
+    durStr = `${years}年${remMonths}个月`;
+  } else if (years > 0) {
+    durStr = `约 ${years} 年`;
+  } else {
+    durStr = `${Math.max(1, remMonths)} 个月`;
+  }
+
+  return {
+    totalCount,
+    totalMonths,
+    totalDisplay: `累计交汇 ${totalCount} 次 · 共 ${durStr}`,
+  };
+}
+
 export function normalizeSchoolName(school: string): string {
   let s = (school || '').trim();
   s = s.replace(/（.*?）|\(.*?\)/g, '').trim();
@@ -88,6 +216,10 @@ export function normalizeSchoolName(school: string): string {
 }
 
 export function getEduSpan(official: Official, edu: EducationInfo): { startYear: number; endYear: number } {
+  if (edu.startYear && edu.endYear) {
+    return { startYear: edu.startYear, endYear: edu.endYear };
+  }
+
   const gradYear = edu.graduationYear;
   const degree = edu.degree;
   const birth = official.birthYear || 1970;
@@ -119,7 +251,9 @@ export interface AlumniMatch {
   official: Official;
   education: EducationInfo;
   overlapYears: number;
-  overlapSpan: string;
+  overlapDisplay: string;
+  totalIntersectionCount: number;
+  totalIntersectionDisplay: string;
   reason: string;
 }
 
@@ -147,13 +281,17 @@ export function findAlumniForEdu(
         const ovEnd = Math.min(targetSpan.endYear, otherSpan.endYear);
 
         if (ovStart <= ovEnd) {
-          const years = Math.max(1, ovEnd - ovStart + 1);
+          // 学制重叠年限计算：跨越的共同学年数
+          const years = Math.max(1, ovEnd - ovStart);
           if (!bestMatchForOther || years > bestMatchForOther.overlapYears) {
+            const stats = getColleagueTotalIntersections(targetOfficial, other);
             bestMatchForOther = {
               official: other,
               education: otherEdu,
               overlapYears: years,
-              overlapSpan: `${ovStart} - ${ovEnd}`,
+              overlapDisplay: `同窗 ${years} 年`,
+              totalIntersectionCount: stats.totalCount,
+              totalIntersectionDisplay: stats.totalDisplay,
               reason: `${normSchool}校友`,
             };
           }
@@ -376,8 +514,10 @@ function checkSpaceMatch(recA: CareerRecord, recB: CareerRecord): { isMatch: boo
 export interface ColleagueMatch {
   official: Official;
   record: CareerRecord;
-  overlapYears: number;
-  overlapSpan: string;
+  overlapMonths: number;
+  overlapDisplay: string;
+  totalIntersectionCount: number;
+  totalIntersectionDisplay: string;
   reason: string;
 }
 
@@ -386,8 +526,6 @@ export function findColleaguesForCareer(
   targetRecord: CareerRecord,
   allOfficials: Official[]
 ): ColleagueMatch[] {
-  const startA = targetRecord.startYear;
-  const endA = targetRecord.endYear || 2026;
   const matches: ColleagueMatch[] = [];
 
   for (const other of allOfficials) {
@@ -396,22 +534,29 @@ export function findColleaguesForCareer(
     let bestMatchForOther: ColleagueMatch | null = null;
 
     for (const recB of other.careerHistory || []) {
-      const startB = recB.startYear;
-      const endB = recB.endYear || 2026;
+      const { isMatch, reason } = checkSpaceMatch(targetRecord, recB);
+      if (isMatch && reason) {
+        const ov = calculatePreciseOverlap(
+          targetRecord.startYear,
+          targetRecord.startMonth,
+          targetRecord.endYear,
+          targetRecord.endMonth,
+          recB.startYear,
+          recB.startMonth,
+          recB.endYear,
+          recB.endMonth
+        );
 
-      const ovStart = Math.max(startA, startB);
-      const ovEnd = Math.min(endA, endB);
-
-      if (ovStart <= ovEnd) {
-        const { isMatch, reason } = checkSpaceMatch(targetRecord, recB);
-        if (isMatch && reason) {
-          const years = Math.max(1, ovEnd - ovStart + 1);
-          if (!bestMatchForOther || years > bestMatchForOther.overlapYears) {
+        if (ov.hasOverlap) {
+          if (!bestMatchForOther || ov.overlapMonths > bestMatchForOther.overlapMonths) {
+            const stats = getColleagueTotalIntersections(targetOfficial, other);
             bestMatchForOther = {
               official: other,
               record: recB,
-              overlapYears: years,
-              overlapSpan: `${ovStart} - ${ovEnd === 2026 && !targetRecord.endYear && !recB.endYear ? '至今' : ovEnd}`,
+              overlapMonths: ov.overlapMonths,
+              overlapDisplay: ov.overlapDisplay,
+              totalIntersectionCount: stats.totalCount,
+              totalIntersectionDisplay: stats.totalDisplay,
               reason,
             };
           }
@@ -424,7 +569,7 @@ export function findColleaguesForCareer(
     }
   }
 
-  return matches.sort((a, b) => b.overlapYears - a.overlapYears);
+  return matches.sort((a, b) => b.overlapMonths - a.overlapMonths);
 }
 
 export const OfficialsView: React.FC<OfficialsViewProps> = ({
@@ -536,6 +681,8 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
     setActiveOfficial(official);
     if (typeof window !== 'undefined') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      const scrollContainers = document.querySelectorAll('.overflow-y-auto');
+      scrollContainers.forEach((el) => el.scrollTo({ top: 0, behavior: 'smooth' }));
     }
   };
 
@@ -632,104 +779,84 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
       {/* 核心改动：全屏宽幅全息干部档案看板（彻底移除了冗余的左侧41人列表列，空间完全留给详细履历） */}
       {activeOfficial ? (
         <div className="space-y-6">
-          {/* 1. 干部履历概貌首长卡 (Hero Profile Banner) */}
-          <div className="mac-card rounded-2xl p-6 sm:p-8 border border-black/[0.08] bg-white shadow-sm relative overflow-hidden">
-            <div className="flex flex-col sm:flex-row items-start justify-between gap-6">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 flex-1 min-w-0">
-                {/* 干部标准 2 寸免冠证件照 */}
-                <OfficialIdPhoto official={activeOfficial} size="lg" />
+          {/* 1. 干部履历概貌与特质全息看板 (第一和第二部分融合 + 粘性置顶高密度看板) */}
+          <div className="sticky top-0 z-30 mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.08] bg-white/95 backdrop-blur-md shadow-sm space-y-3">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+              {/* 左侧：2寸免冠照 + 核心政务属性与职务 */}
+              <div className="flex items-start sm:items-center gap-4 flex-1 min-w-0">
+                <OfficialIdPhoto official={activeOfficial} size="md" />
 
-                <div className="space-y-2 flex-1 min-w-0">
-                  <div className="flex items-center gap-2.5 flex-wrap">
-                    <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight">
+                <div className="space-y-1.5 flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <h2 className="text-xl sm:text-2xl font-extrabold text-gray-900 tracking-tight">
                       {activeOfficial.name}
                     </h2>
                     <PositionRankBadge rank={activeOfficial.currentRank} />
-                    <span className="text-xs text-gray-500 bg-gray-100 px-2.5 py-0.5 rounded-lg font-mono">
+                    <span className="text-[11px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded-md font-mono">
                       {calculateAge(activeOfficial.birthYear)}岁
                     </span>
 
                     {/* 履职在任/离任/退休/处分状态徽标 */}
                     {activeOfficial.servingStatus === 'investigated' ? (
-                      <span className="text-xs font-bold text-rose-800 bg-rose-50 border border-rose-200 px-2.5 py-0.5 rounded-lg flex items-center gap-1.5 shadow-2xs">
-                        <span className="w-2 h-2 rounded-full bg-rose-600 animate-pulse" />
+                      <span className="text-[11px] font-bold text-rose-800 bg-rose-50 border border-rose-200 px-2 py-0.5 rounded-md flex items-center gap-1 shadow-2xs">
+                        <span className="w-1.5 h-1.5 rounded-full bg-rose-600 animate-pulse" />
                         <span>{activeOfficial.servingStatusLabel || '审查调查 / 撤职处分'}</span>
                       </span>
                     ) : activeOfficial.servingStatus === 'retired' ? (
-                      <span className="text-xs font-bold text-slate-700 bg-slate-100 border border-slate-200 px-2.5 py-0.5 rounded-lg flex items-center gap-1.5 shadow-2xs">
+                      <span className="text-[11px] font-bold text-slate-700 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded-md flex items-center gap-1 shadow-2xs">
                         <span>🏛️</span>
                         <span>{activeOfficial.servingStatusLabel || '正常退休'}</span>
                       </span>
                     ) : activeOfficial.servingStatus === 'transferred' ? (
-                      <span className="text-xs font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 px-2.5 py-0.5 rounded-lg flex items-center gap-1.5 shadow-2xs">
+                      <span className="text-[11px] font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded-md flex items-center gap-1 shadow-2xs">
                         <span>🔄</span>
                         <span>{activeOfficial.servingStatusLabel || '调离系统'}</span>
                       </span>
                     ) : (
-                      <span className="text-xs font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-lg flex items-center gap-1.5 shadow-2xs">
-                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                      <span className="text-[11px] font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-md flex items-center gap-1 shadow-2xs">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                         <span>现任在职</span>
                       </span>
                     )}
                   </div>
 
-                  <p className="text-base sm:text-lg font-semibold text-gray-800">
-                    {activeOfficial.currentPosition}
-                  </p>
-
-                  {/* 离任、退休或审查处分事实说明卡 */}
-                  {activeOfficial.servingStatusNote && activeOfficial.servingStatus !== 'serving' && (
-                    <div
-                      className={`p-3 rounded-xl text-xs leading-relaxed border my-1.5 ${
-                        activeOfficial.servingStatus === 'investigated'
-                          ? 'bg-rose-50/90 border-rose-200/90 text-rose-900 shadow-2xs'
-                          : activeOfficial.servingStatus === 'retired'
-                          ? 'bg-slate-50 border-slate-200 text-slate-700'
-                          : 'bg-blue-50/80 border-blue-200 text-blue-900'
-                      }`}
-                    >
-                      <span className="font-bold mr-1.5">
-                        {activeOfficial.servingStatus === 'investigated'
-                          ? '⚠️ 纪检监察审查/处分官方通报：'
-                          : activeOfficial.servingStatus === 'retired'
-                          ? '🏛️ 离任/退休事实：'
-                          : 'ℹ️ 职务调动/变动情况：'}
+                  <div className="text-sm font-semibold text-gray-800 flex items-center gap-2 flex-wrap">
+                    <span>{activeOfficial.currentPosition}</span>
+                    {activeOfficial.servingStatusNote && activeOfficial.servingStatus !== 'serving' && (
+                      <span className="text-[11px] font-normal text-gray-500 bg-gray-50 border border-gray-200 px-2 py-0.5 rounded">
+                        {activeOfficial.servingStatusNote}
                       </span>
-                      <span>{activeOfficial.servingStatusNote}</span>
-                    </div>
-                  )}
+                    )}
+                  </div>
 
-                  <div className="flex flex-wrap items-center gap-4 text-xs text-gray-500 pt-1">
+                  <div className="flex flex-wrap items-center gap-3 text-[11px] text-gray-500 pt-0.5">
                     <span className="flex items-center gap-1">
-                      <Calendar className="w-3.5 h-3.5 text-gray-400" />
+                      <Calendar className="w-3 h-3 text-gray-400" />
                       {activeOfficial.birthYear}年{activeOfficial.birthMonth}月生
                     </span>
 
                     {activeOfficial.nativePlace && (
                       <span className="flex items-center gap-1">
-                        <MapPin className="w-3.5 h-3.5 text-gray-400" />
+                        <MapPin className="w-3 h-3 text-gray-400" />
                         籍贯：{activeOfficial.nativePlace}
                       </span>
                     )}
 
                     <span className="flex items-center gap-1">
-                      <Building className="w-3.5 h-3.5 text-gray-400" />
+                      <Building className="w-3 h-3 text-gray-400" />
                       编制归属：{currentUnit?.name || '中国证监会系统'}
                     </span>
 
                     {activeOfficial.basicInfoConfidence && (
-                      <span className="flex items-center gap-1.5 pl-1 border-l border-black/[0.08]">
-                        <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span className="text-gray-400">信息置信度：</span>
+                      <span className="flex items-center gap-1 pl-1 border-l border-black/[0.08]">
+                        <ShieldCheck className="w-3 h-3 text-emerald-600 shrink-0" />
+                        <span className="text-gray-400">信息置信度:</span>
                         <span
-                          className={`px-1.5 py-0.5 rounded text-[10.5px] font-semibold ${
+                          className={`px-1.5 py-0.2 rounded text-[10px] font-semibold ${
                             activeOfficial.basicInfoConfidence.level === 'high'
                               ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
-                              : activeOfficial.basicInfoConfidence.level === 'medium'
-                              ? 'bg-blue-50 text-blue-700 border border-blue-200'
-                              : 'bg-amber-50 text-amber-700 border border-amber-200'
+                              : 'bg-blue-50 text-blue-700 border border-blue-200'
                           }`}
-                          title={`信源依据：${activeOfficial.basicInfoConfidence.source || '官方档案'}`}
                         >
                           {activeOfficial.basicInfoConfidence.score}% · {activeOfficial.basicInfoConfidence.label}
                         </span>
@@ -739,113 +866,123 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                 </div>
               </div>
 
-              {/* 右侧泳道动作大按钮 */}
-              <div className="flex flex-col items-stretch sm:items-end gap-2.5 shrink-0 w-full sm:w-auto">
+              {/* 右侧：动作按钮 */}
+              <div className="flex items-center gap-2 shrink-0 w-full lg:w-auto justify-end">
                 <button
                   onClick={() => onNavigateToSwimlaneWithOfficial(activeOfficial.id)}
-                  className="flex items-center justify-center gap-2 px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-sm font-semibold shadow-sm transition-all hover:scale-[1.02] active:scale-95"
+                  className="flex items-center justify-center gap-1.5 px-3.5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold shadow-2xs transition-all hover:scale-[1.02] active:scale-95"
                 >
-                  <GitCommitVertical className="w-4 h-4" />
-                  <span>在时空演进泳道中分析</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <GitCommitVertical className="w-3.5 h-3.5" />
+                  <span>在时空泳道中分析</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
                 </button>
 
                 <button
                   onClick={() => onToggleOfficialSelection(activeOfficial.id)}
-                  className={`flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-xs font-medium border transition-colors ${
+                  className={`flex items-center justify-center gap-1 px-3 py-2 rounded-xl text-xs font-medium border transition-colors ${
                     isSelectedInSwimlane
                       ? 'bg-blue-50 text-blue-700 border-blue-200'
                       : 'bg-gray-50 hover:bg-gray-100 text-gray-700 border-black/[0.05]'
                   }`}
                 >
-                  <GitCommitVertical className="w-3.5 h-3.5" />
-                  <span>{isSelectedInSwimlane ? '已加入泳道对比池' : '+ 加入泳道对比池'}</span>
-                  {isSelectedInSwimlane && <Check className="w-3.5 h-3.5 text-blue-600" />}
+                  <GitCommitVertical className="w-3 h-3" />
+                  <span>{isSelectedInSwimlane ? '已加入对比' : '+ 对比池'}</span>
+                  {isSelectedInSwimlane && <Check className="w-3 h-3 text-blue-600" />}
                 </button>
               </div>
             </div>
+
+            {/* 融合的第二部分：履职特质与业务擅长 (紧凑内嵌条) */}
+            {activeOfficial.bioSummary && (
+              <div className="pt-2.5 border-t border-black/[0.04] flex items-start gap-2 text-xs leading-relaxed text-gray-700 bg-blue-50/30 p-2.5 rounded-xl border border-blue-100/50">
+                <div className="flex items-center gap-1 font-bold text-blue-700 shrink-0 mt-0.5">
+                  <Sparkles className="w-3.5 h-3.5" />
+                  <span>履职特质与业务擅长：</span>
+                </div>
+                <p className="flex-1 min-w-0 text-gray-600">
+                  {activeOfficial.bioSummary}
+                </p>
+              </div>
+            )}
           </div>
 
-          {/* 2. 履职特质与评价 */}
-          {activeOfficial.bioSummary && (
-            <div className="mac-card rounded-2xl p-5 sm:p-6 border border-black/[0.08] bg-white shadow-xs space-y-2">
-              <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider flex items-center gap-1.5">
-                <Sparkles className="w-4 h-4 text-blue-600" />
-                <span>履职特质与业务擅长</span>
-              </h3>
-              <p className="text-sm text-gray-700 leading-relaxed bg-gray-50/80 p-4 rounded-xl border border-black/[0.04]">
-                {activeOfficial.bioSummary}
-              </p>
-            </div>
-          )}
-
-          {/* 3. 教育背景与学位学历 (横向长卡片时间轴结构 + 右侧同期校友时空重叠网络) */}
-          <div className="mac-card rounded-2xl p-6 sm:p-8 border border-black/[0.08] bg-white shadow-xs space-y-6">
+          {/* 3. 教育背景与学位学历 (左1/3个人求学档案，右2/3同期同校校友矩阵) */}
+          <div className="mac-card rounded-2xl p-5 sm:p-7 border border-black/[0.08] bg-white shadow-xs space-y-5">
             <div className="flex items-center justify-between pb-3 border-b border-black/[0.06]">
               <h3 className="text-sm font-bold text-gray-900 tracking-tight flex items-center gap-2">
                 <GraduationCap className="w-4 h-4 text-blue-600" />
-                <span>教育背景与学位学历（共 {activeOfficial.education.length} 段求学履历）</span>
+                <span>教育背景与在校履历（共 {activeOfficial.education.length} 段学历档案）</span>
               </h3>
               <span className="text-xs text-gray-400">
-                横向长卡片展开 · 右侧联动同期同校校友圈
+                在校全时段展示 · 右侧联动同期同校校友圈
               </span>
             </div>
 
-            <div className="space-y-5">
+            <div className="space-y-4">
               {activeOfficial.education.map((edu, idx) => {
                 const alumniList = findAlumniForEdu(activeOfficial, edu, officials);
                 const span = getEduSpan(activeOfficial, edu);
+                const durationYears = Math.max(1, span.endYear - span.startYear);
                 return (
                   <div
                     key={idx}
-                    className="p-5 sm:p-6 rounded-2xl border border-black/[0.06] bg-gray-50/70 hover:bg-gray-50/95 transition-all shadow-2xs"
+                    className="p-5 rounded-2xl border border-black/[0.06] bg-gray-50/70 hover:bg-gray-50/95 transition-all shadow-2xs"
                   >
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                      {/* 左侧：学历详情卡片 (col-span-7) */}
-                      <div className="lg:col-span-7 space-y-3.5 pr-0 lg:pr-4 border-b lg:border-b-0 lg:border-r border-black/[0.06] pb-4 lg:pb-0">
-                        <div className="flex flex-wrap items-center justify-between gap-2">
-                          <div className="flex items-center gap-2.5">
-                            <span className="font-extrabold text-base sm:text-lg text-gray-900">
-                              {edu.school}
-                            </span>
-                            <span className="font-bold text-xs text-blue-800 bg-blue-100/90 border border-blue-200 px-2.5 py-0.5 rounded-lg">
-                              {edu.degree}
-                            </span>
-                          </div>
-                          <span className="text-xs font-mono font-semibold text-blue-700 bg-blue-50/90 border border-blue-200 px-2.5 py-1 rounded-lg">
-                            {edu.graduationYear ? `毕业年份: ${edu.graduationYear} 年` : `在读跨度: 约 ${span.startYear} - ${span.endYear}`}
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                      {/* 左侧：个人学历信息 (精确占 1/3: lg:col-span-4) */}
+                      <div className="lg:col-span-4 space-y-2.5 pr-0 lg:pr-4 border-b lg:border-b-0 lg:border-r border-black/[0.06] pb-4 lg:pb-0">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="font-extrabold text-base text-gray-900">
+                            {edu.school}
+                          </span>
+                          <span className="font-bold text-xs text-blue-800 bg-blue-100/90 border border-blue-200 px-2 py-0.5 rounded-md">
+                            {edu.degree}
                           </span>
                         </div>
 
-                        <div className="text-sm text-gray-700 font-medium flex items-center gap-2">
-                          <span className="text-gray-400 text-xs">专业方向：</span>
-                          <span className="bg-white px-2.5 py-1 rounded-lg border border-black/[0.04] text-gray-800">
-                            {edu.major || '全日制统招'}
-                          </span>
+                        {/* 明确补充在校全部时段（包含推理标记） */}
+                        <div className="p-2 rounded-lg bg-white border border-black/[0.05] space-y-1">
+                          <div className="text-[11px] font-mono font-bold text-blue-700 flex items-center justify-between">
+                            <span className="flex items-center gap-1">
+                              <Calendar className="w-3 h-3 text-blue-500" />
+                              <span>在校时段: {span.startYear} - {span.endYear}</span>
+                            </span>
+                            <span className="text-[10px] text-gray-500 font-normal">
+                              ({durationYears}年制)
+                            </span>
+                          </div>
+                          <div className="text-[10px] text-gray-400 flex items-center justify-between">
+                            <span>{edu.graduationYear ? `毕业年份: ${edu.graduationYear}年` : '学制推算'}</span>
+                            <span className="text-emerald-700 font-medium bg-emerald-50 px-1.5 py-0.2 rounded text-[9.5px]">
+                              {edu.isDerivedSpan ? '学制推算时段' : '官方确证时段'}
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="text-xs text-gray-700 font-medium">
+                          <span className="text-gray-400">专业方向：</span>
+                          <span className="text-gray-800 font-semibold">{edu.major || '全日制统招'}</span>
                         </div>
 
                         {edu.confidence && (
-                          <div className="p-3 rounded-xl bg-white/90 border border-black/[0.05] space-y-1 text-xs shadow-2xs">
+                          <div className="p-2.5 rounded-lg bg-white/90 border border-black/[0.04] space-y-1 text-xs">
                             <div className="flex items-center justify-between">
-                              <span className="font-semibold text-gray-600 text-[11px] flex items-center gap-1">
-                                <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+                              <span className="font-semibold text-gray-500 text-[10px] flex items-center gap-1">
+                                <ShieldCheck className="w-3 h-3 text-emerald-600" />
                                 学历考证置信度
                               </span>
                               <span
-                                className={`px-2 py-0.5 rounded-md font-bold text-[10px] ${
+                                className={`px-1.5 py-0.2 rounded font-bold text-[9.5px] ${
                                   edu.confidence.level === 'high'
-                                    ? 'bg-emerald-100 text-emerald-800 border border-emerald-300'
-                                    : edu.confidence.level === 'medium'
-                                    ? 'bg-blue-100 text-blue-800 border border-blue-300'
-                                    : 'bg-amber-100 text-amber-800 border border-amber-300'
+                                    ? 'bg-emerald-100 text-emerald-800'
+                                    : 'bg-blue-100 text-blue-800'
                                 }`}
                               >
                                 {edu.confidence.score}% · {edu.confidence.label}
                               </span>
                             </div>
                             {edu.confidence.source && (
-                              <div className="text-[11px] text-gray-500 leading-relaxed pt-0.5">
-                                <span className="font-medium text-gray-400">核验证据：</span>
+                              <div className="text-[10px] text-gray-500 truncate" title={edu.confidence.source}>
                                 {edu.confidence.source}
                               </div>
                             )}
@@ -853,8 +990,8 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                         )}
                       </div>
 
-                      {/* 右侧：同期校友列 (col-span-5) */}
-                      <div className="lg:col-span-5 space-y-3">
+                      {/* 右侧：同期同校校友矩阵 (精确占 2/3: lg:col-span-8) */}
+                      <div className="lg:col-span-8 space-y-2.5">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-1.5 text-xs font-bold text-gray-700">
                             <span>🎓 同期同校校友</span>
@@ -864,46 +1001,50 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                           </div>
                           {alumniList.length > 0 && (
                             <span className="text-[10px] text-gray-400 bg-gray-100 px-2 py-0.5 rounded-md font-medium">
-                              按同窗重合年限降序
+                              按同窗年限从长到短排序
                             </span>
                           )}
                         </div>
 
                         {alumniList.length > 0 ? (
-                          <div className="space-y-2.5 max-h-[280px] overflow-y-auto pr-1">
-                            {alumniList.map((alumni) => (
-                              <button
-                                key={alumni.official.id}
-                                onClick={() => handleSelectOfficial(alumni.official)}
-                                className="w-full text-left p-3 rounded-xl bg-white hover:bg-blue-50/40 border border-black/[0.06] hover:border-blue-300 transition-all shadow-2xs group flex items-start gap-3"
-                              >
-                                <OfficialIdPhoto official={alumni.official} size="sm" />
-                                <div className="flex-1 min-w-0 space-y-1">
-                                  <div className="flex items-center justify-between gap-1">
-                                    <div className="flex items-center gap-1.5">
-                                      <span className="font-bold text-xs text-gray-900 group-hover:text-blue-600 transition-colors">
-                                        {alumni.official.name}
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 max-h-[320px] overflow-y-auto pr-1">
+                            {alumniList.map((alumni) => {
+                              const oSpan = getEduSpan(alumni.official, alumni.education);
+                              return (
+                                <button
+                                  key={alumni.official.id}
+                                  onClick={() => handleSelectOfficial(alumni.official)}
+                                  className="w-full text-left p-3 rounded-xl bg-white hover:bg-blue-50/40 border border-black/[0.06] hover:border-blue-300 transition-all shadow-2xs group flex items-start gap-2.5"
+                                >
+                                  <OfficialIdPhoto official={alumni.official} size="sm" />
+                                  <div className="flex-1 min-w-0 space-y-1">
+                                    <div className="flex items-center justify-between gap-1">
+                                      <div className="flex items-center gap-1.5">
+                                        <span className="font-bold text-xs text-gray-900 group-hover:text-blue-600 transition-colors">
+                                          {alumni.official.name}
+                                        </span>
+                                        <PositionRankBadge rank={alumni.official.currentRank} />
+                                      </div>
+                                      <span className="text-[10px] font-bold font-mono text-purple-700 bg-purple-50 border border-purple-200 px-1.5 py-0.2 rounded shrink-0">
+                                        {alumni.overlapDisplay}
                                       </span>
-                                      <PositionRankBadge rank={alumni.official.currentRank} />
                                     </div>
-                                    <span className="text-[10px] font-bold font-mono text-purple-700 bg-purple-50 border border-purple-200 px-1.5 py-0.2 rounded shrink-0">
-                                      同窗 {alumni.overlapYears} 年
-                                    </span>
+                                    <div className="text-[11px] text-gray-700 font-medium truncate">
+                                      {alumni.education.degree} · {alumni.education.major || alumni.education.school}
+                                    </div>
+                                    <div className="text-[10px] text-gray-500 font-mono">
+                                      在校: {oSpan.startYear} - {oSpan.endYear}
+                                    </div>
+                                    {/* 跨期交汇属性 */}
+                                    {alumni.totalIntersectionCount > 0 && (
+                                      <div className="text-[9.5px] font-bold text-amber-700 bg-amber-50/80 px-1.5 py-0.2 rounded border border-amber-200 flex items-center gap-1">
+                                        <span>🌟 兼同事关系: {alumni.totalIntersectionDisplay}</span>
+                                      </div>
+                                    )}
                                   </div>
-                                  <div className="text-[11px] text-gray-600 truncate">
-                                    <span className="text-gray-400">求学：</span>
-                                    {alumni.education.degree} · {alumni.education.major || alumni.education.school}
-                                    {alumni.education.graduationYear ? ` (${alumni.education.graduationYear}届)` : ''}
-                                  </div>
-                                  <div className="text-[10.5px] text-blue-600 flex items-center justify-between pt-0.5">
-                                    <span>共同在校跨度: {alumni.overlapSpan}</span>
-                                    <span className="opacity-0 group-hover:opacity-100 text-[10px] transition-opacity flex items-center gap-0.5">
-                                      查看档案 →
-                                    </span>
-                                  </div>
-                                </div>
-                              </button>
-                            ))}
+                                </button>
+                              );
+                            })}
                           </div>
                         ) : (
                           <div className="h-28 rounded-xl border border-dashed border-black/[0.08] bg-white/60 flex flex-col items-center justify-center text-center p-3">
@@ -919,15 +1060,15 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
             </div>
           </div>
 
-          {/* 4. 完整履职履历时间线 (宽幅全景时间轴) */}
-          <div className="mac-card rounded-2xl p-6 sm:p-8 border border-black/[0.08] bg-white shadow-xs space-y-6">
+          {/* 4. 完整履职履历时间线 (左1/3主干部履历，右2/3同期同事矩阵) */}
+          <div className="mac-card rounded-2xl p-5 sm:p-7 border border-black/[0.08] bg-white shadow-xs space-y-6">
             <div className="flex items-center justify-between pb-3 border-b border-black/[0.06]">
               <h3 className="text-sm font-bold text-gray-900 tracking-tight flex items-center gap-2">
                 <Briefcase className="w-4 h-4 text-blue-600" />
                 <span>完整履职履历与任职演进（共 {activeOfficial.careerHistory.length} 段履职记录）</span>
               </h3>
               <span className="text-xs text-gray-400">
-                按任职时间先后顺序完整展开
+                左1/3履历实录 · 右2/3高密度同期同事网络
               </span>
             </div>
 
@@ -973,31 +1114,22 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                       }`}
                     />
 
-                    {/* Record Horizontal Long Card with 2 Columns */}
+                    {/* Record Horizontal Long Card with 1/3 vs 2/3 Columns */}
                     <div
-                      className={`p-5 sm:p-6 rounded-2xl border transition-all ${
+                      className={`p-5 rounded-2xl border transition-all ${
                         item.isDerived
                           ? 'bg-amber-50/25 hover:bg-amber-50/45 border-dashed border-amber-300/80 shadow-2xs'
                           : 'bg-gray-50/70 hover:bg-gray-50/95 border-black/[0.06] shadow-2xs'
                       }`}
                     >
-                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                        {/* 左侧：主官员履历卡片 (col-span-7) */}
-                        <div className="lg:col-span-7 space-y-3 pr-0 lg:pr-4 border-b lg:border-b-0 lg:border-r border-black/[0.06] pb-4 lg:pb-0">
-                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-1">
-                            <div className="flex items-center gap-2 flex-wrap">
-                              <span className="font-bold text-base text-gray-900">
-                                {item.unitName}
-                                {item.department ? ` · ${item.department}` : ''}
-                              </span>
-                              {item.isDerived && (
-                                <span className="text-[10px] font-medium text-amber-800 bg-amber-100/90 border border-amber-300 px-2 py-0.5 rounded-md">
-                                  📰 新闻推导
-                                </span>
-                              )}
-                            </div>
-
-                            <span className="text-xs font-mono font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-lg">
+                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                        {/* 左侧：主官员履历卡片 (精确占 1/3: lg:col-span-4) */}
+                        <div className="lg:col-span-4 space-y-2.5 pr-0 lg:pr-4 border-b lg:border-b-0 lg:border-r border-black/[0.06] pb-4 lg:pb-0">
+                          <div className="flex items-center justify-between gap-2 flex-wrap">
+                            <span className="font-bold text-base text-gray-900 leading-tight">
+                              {item.unitName}
+                            </span>
+                            <span className="text-xs font-mono font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md">
                               {item.startYear}
                               {item.startMonth ? `.${item.startMonth < 10 ? '0' + item.startMonth : item.startMonth}` : ''} -{' '}
                               {item.endYear
@@ -1006,23 +1138,34 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                             </span>
                           </div>
 
-                          <div className="flex items-center gap-2.5 mt-1.5 flex-wrap">
-                            <span className="text-sm font-semibold text-gray-800">
+                          {item.department && (
+                            <div className="text-xs font-medium text-gray-600">
+                              部门：{item.department}
+                            </div>
+                          )}
+
+                          <div className="flex items-center gap-2 mt-1 flex-wrap">
+                            <span className="text-sm font-bold text-gray-800">
                               {item.position}
                             </span>
                             <PositionRankBadge rank={item.rank} />
+                            {item.isDerived && (
+                              <span className="text-[10px] font-medium text-amber-800 bg-amber-100/90 border border-amber-300 px-1.5 py-0.2 rounded">
+                                📰 新闻推导
+                              </span>
+                            )}
                           </div>
 
                           {/* 置信度评价与信源依据 */}
                           {item.confidence && (
-                            <div className="mt-3 p-3 rounded-xl bg-white/95 border border-black/[0.05] space-y-1 text-xs shadow-2xs">
+                            <div className="mt-2 p-2.5 rounded-xl bg-white/95 border border-black/[0.05] space-y-1 text-xs shadow-2xs">
                               <div className="flex items-center justify-between">
-                                <span className="font-semibold text-gray-600 text-[11px] flex items-center gap-1">
+                                <span className="font-semibold text-gray-600 text-[10.5px] flex items-center gap-1">
                                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
                                   履历考据置信度
                                 </span>
                                 <span
-                                  className={`px-2 py-0.5 rounded-md font-bold text-[10.5px] ${
+                                  className={`px-2 py-0.5 rounded-md font-bold text-[10px] ${
                                     item.confidence.level === 'high'
                                       ? 'bg-emerald-100 text-emerald-800 border border-emerald-300'
                                       : item.confidence.level === 'medium'
@@ -1034,30 +1177,29 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                                 </span>
                               </div>
                               {item.confidence.source && (
-                                <div className="text-[11px] text-gray-600 leading-relaxed pt-0.5">
-                                  <span className="font-medium text-gray-400">信源依据：</span>
-                                  {item.confidence.source}
+                                <div className="text-[10.5px] text-gray-500 leading-relaxed truncate" title={item.confidence.source}>
+                                  信源：{item.confidence.source}
                                 </div>
                               )}
                             </div>
                           )}
 
                           {item.sourceNote && !item.confidence && (
-                            <div className="text-xs text-amber-800 bg-amber-50/90 border border-amber-200/80 px-3 py-1.5 rounded-xl mt-3 leading-relaxed">
-                              <span className="font-bold">推导佐证依据：</span>
+                            <div className="text-xs text-amber-800 bg-amber-50/90 border border-amber-200/80 px-2.5 py-1 rounded-xl mt-2 leading-relaxed">
+                              <span className="font-bold">推导依据：</span>
                               {item.sourceNote}
                             </div>
                           )}
 
                           {item.notes && (
-                            <p className="text-xs text-gray-600 mt-2.5 leading-relaxed bg-white/70 p-2.5 rounded-xl border border-black/[0.03]">
+                            <p className="text-xs text-gray-600 mt-2 leading-relaxed bg-white/70 p-2.5 rounded-xl border border-black/[0.03]">
                               {item.notes}
                             </p>
                           )}
                         </div>
 
-                        {/* 右侧：同期同事标准卡片列 (col-span-5) */}
-                        <div className="lg:col-span-5 space-y-3">
+                        {/* 右侧：同期同事标准卡片矩阵 (精确占 2/3: lg:col-span-8) */}
+                        <div className="lg:col-span-8 space-y-2.5">
                           <div className="flex items-center justify-between">
                             <div className="flex items-center gap-1.5 text-xs font-bold text-gray-700">
                               <span>👥 同期机构/部门同事</span>
@@ -1067,13 +1209,13 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                             </div>
                             {colleaguesList.length > 0 && (
                               <span className="text-[10px] text-gray-400 bg-gray-100 px-2 py-0.5 rounded-md font-medium">
-                                按在任重合年限降序
+                                按实际重合时长严谨降序
                               </span>
                             )}
                           </div>
 
                           {colleaguesList.length > 0 ? (
-                            <div className="space-y-2.5 max-h-[300px] overflow-y-auto pr-1">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 max-h-[360px] overflow-y-auto pr-1">
                               {colleaguesList.map((colleague) => {
                                 const recB = colleague.record;
                                 const timeB = `${recB.startYear}${recB.startMonth ? `.${recB.startMonth < 10 ? '0' + recB.startMonth : recB.startMonth}` : ''} - ${recB.endYear ? `${recB.endYear}${recB.endMonth ? `.${recB.endMonth < 10 ? '0' + recB.endMonth : recB.endMonth}` : ''}` : '至今'}`;
@@ -1081,10 +1223,11 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                                   <button
                                     key={colleague.official.id}
                                     onClick={() => handleSelectOfficial(colleague.official)}
-                                    className="w-full text-left p-3 rounded-xl bg-white hover:bg-blue-50/40 border border-black/[0.06] hover:border-blue-300 transition-all shadow-2xs group flex items-start gap-3"
+                                    className="w-full text-left p-3 rounded-xl bg-white hover:bg-blue-50/40 border border-black/[0.06] hover:border-blue-300 transition-all shadow-2xs group flex items-start gap-2.5"
                                   >
                                     <OfficialIdPhoto official={colleague.official} size="sm" />
                                     <div className="flex-1 min-w-0 space-y-1">
+                                      {/* 第一行：姓名、职级、严谨的月份级重合时间 */}
                                       <div className="flex items-center justify-between gap-1">
                                         <div className="flex items-center gap-1.5">
                                           <span className="font-bold text-xs text-gray-900 group-hover:text-blue-600 transition-colors">
@@ -1092,27 +1235,37 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                                           </span>
                                           <PositionRankBadge rank={colleague.official.currentRank} />
                                         </div>
-                                        <span className="text-[10px] font-bold font-mono text-blue-700 bg-blue-50 border border-blue-200 px-1.5 py-0.2 rounded shrink-0">
-                                          重合 {colleague.overlapYears} 年
+                                        <span className="text-[10px] font-bold font-mono text-blue-700 bg-blue-50 border border-blue-200 px-1.5 py-0.2 rounded shrink-0 shadow-2xs">
+                                          {colleague.overlapDisplay}
                                         </span>
                                       </div>
 
-                                      {/* 关键：显示该同事覆盖此时期的机构与职务！ */}
+                                      {/* 第二行：该同事覆盖此重合时期的单位机构与部门 */}
                                       <div className="text-[11px] text-gray-800 font-medium truncate">
                                         {recB.unitName}
                                         {recB.department ? ` · ${recB.department}` : ''}
                                       </div>
-                                      <div className="text-[11px] text-gray-600 flex items-center gap-1.5 flex-wrap">
+
+                                      {/* 第三行：该同事在此时期的职务与起止时间 */}
+                                      <div className="text-[10.5px] text-gray-600 flex items-center gap-1 flex-wrap">
                                         <span className="font-semibold text-gray-700">{recB.position}</span>
                                         <span className="text-gray-400 font-mono text-[10px]">({timeB})</span>
                                       </div>
 
-                                      <div className="text-[10.5px] text-emerald-700 flex items-center justify-between pt-0.5">
-                                        <span className="flex items-center gap-1">
-                                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                                          <span>交汇区间: {colleague.overlapSpan} ({colleague.reason})</span>
+                                      {/* 第四行：如果存在多次跨期交汇，展示总交汇时间属性！ */}
+                                      {colleague.totalIntersectionCount > 1 && (
+                                        <div className="mt-1 px-2 py-0.5 rounded-md bg-amber-50/90 border border-amber-200/90 text-[10px] font-bold text-amber-800 flex items-center gap-1">
+                                          <span>🔥</span>
+                                          <span>{colleague.totalIntersectionDisplay}</span>
+                                        </div>
+                                      )}
+
+                                      {/* 第五行：去掉“交汇区间”字样，明确展示共事背景属性 */}
+                                      <div className="text-[10px] text-gray-500 flex items-center justify-between pt-0.5 border-t border-black/[0.03]">
+                                        <span className="truncate text-gray-500">
+                                          🏛️ {colleague.reason}
                                         </span>
-                                        <span className="opacity-0 group-hover:opacity-100 text-[10px] text-blue-600 transition-opacity flex items-center gap-0.5 shrink-0">
+                                        <span className="opacity-0 group-hover:opacity-100 text-[10px] text-blue-600 font-medium transition-opacity flex items-center gap-0.5 shrink-0">
                                           查看档案 →
                                         </span>
                                       </div>
