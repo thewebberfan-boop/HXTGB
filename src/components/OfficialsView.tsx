@@ -39,6 +39,7 @@ interface OfficialsViewProps {
   activeOfficialId?: string | null;
   selectedUnitId?: string | null;
   onSelectUnit?: (unitId: string | null) => void;
+  onActiveOfficialChange?: (officialId: string) => void;
 }
 
 
@@ -583,6 +584,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
   activeOfficialId,
   selectedUnitId = null,
   onSelectUnit,
+  onActiveOfficialChange,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showBioModal, setShowBioModal] = useState(false);
@@ -691,6 +693,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
 
   const handleSelectOfficial = (official: Official) => {
     setActiveOfficial(official);
+    onActiveOfficialChange?.(official.id);
     if (typeof window !== 'undefined') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       const scrollContainers = document.querySelectorAll('.overflow-y-auto');
@@ -753,85 +756,6 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
 
   return (
     <div className="space-y-6">
-      {/* 若从侧边栏或筛选中选中了具体机构，呈现机构班子快捷选择栏 */}
-      {currentSelectedUnit && currentUnitOfficials && (
-        <div className="mac-card rounded-2xl p-4 bg-white/95 border border-black/[0.06] shadow-xs space-y-3">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <span className="text-base">🏛️</span>
-              <div>
-                <span className="font-bold text-sm text-gray-900 mr-2">
-                  {currentSelectedUnit.name}
-                </span>
-                <span className="text-[10px] text-blue-700 bg-blue-50 border border-blue-200 px-1.5 py-0.2 rounded font-medium">
-                  {currentSelectedUnit.level}
-                </span>
-              </div>
-            </div>
-            <button
-              onClick={() => onSelectUnit?.(null)}
-              className="text-xs text-blue-600 hover:text-blue-800 flex items-center gap-1 font-medium"
-            >
-              <span>清除机构定位显示全部干部</span>
-              <X className="w-3 h-3" />
-            </button>
-          </div>
-
-          {/* 在职班子与曾任干部快捷切换 Pills */}
-          <div className="flex flex-wrap items-center gap-2 pt-1 border-t border-black/[0.04]">
-            <span className="text-[11px] font-semibold text-gray-400 shrink-0">在职班子:</span>
-            {currentUnitOfficials.currentServing.map((off) => {
-              const isActive = activeOfficial?.id === off.id;
-              return (
-                <button
-                  key={off.id}
-                  onClick={() => setActiveOfficial(off)}
-                  className={`px-3 py-1 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5 ${
-                    isActive
-                      ? 'bg-blue-600 text-white shadow-xs scale-105'
-                      : 'bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200/80'
-                  }`}
-                >
-                  <span>{off.name}</span>
-                  <span className={`text-[10px] ${isActive ? 'text-blue-100' : 'text-emerald-600'}`}>
-                    {off.currentRank.replace('局级', '')}
-                  </span>
-                </button>
-              );
-            })}
-            {currentUnitOfficials.currentServing.length === 0 && (
-              <span className="text-xs text-gray-400 italic">暂无在职班子记录</span>
-            )}
-
-            {currentUnitOfficials.pastServing.length > 0 && (
-              <>
-                <span className="text-gray-300 mx-1">|</span>
-                <span className="text-[11px] font-semibold text-gray-400 shrink-0">曾在此任职:</span>
-                {currentUnitOfficials.pastServing.map((off) => {
-                  const isActive = activeOfficial?.id === off.id;
-                  return (
-                    <button
-                      key={off.id}
-                      onClick={() => setActiveOfficial(off)}
-                      className={`px-3 py-1 rounded-xl text-xs font-medium transition-all flex items-center gap-1.5 ${
-                        isActive
-                          ? 'bg-blue-600 text-white shadow-xs scale-105'
-                          : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-black/[0.05]'
-                      }`}
-                    >
-                      <span>{off.name}</span>
-                      <span className={`text-[10px] ${isActive ? 'text-blue-100' : 'text-gray-400'}`}>
-                        {off.currentRank.replace('局级', '')}
-                      </span>
-                    </button>
-                  );
-                })}
-              </>
-            )}
-          </div>
-        </div>
-      )}
-
       {/* 核心改动：全屏宽幅全息干部档案看板（彻底移除了冗余的左侧41人列表列，空间完全留给详细履历） */}
       {activeOfficial ? (
         <div className="space-y-6">

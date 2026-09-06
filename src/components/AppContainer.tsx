@@ -241,6 +241,8 @@ export function AppContainer() {
         onSelectUnitForOfficials={setOfficialsSelectedUnitId}
         selectedUnitIdForUnits={unitsSelectedUnitId}
         onSelectUnitForUnits={setUnitsSelectedUnitId}
+        activeOfficialId={focusedOfficialId}
+        onSelectOfficial={setFocusedOfficialId}
       />
 
       {/* 主视图区域：完整高度与宽度留给图谱 */}
@@ -327,6 +329,7 @@ export function AppContainer() {
                 activeOfficialId={focusedOfficialId}
                 selectedUnitId={officialsSelectedUnitId}
                 onSelectUnit={setOfficialsSelectedUnitId}
+                onActiveOfficialChange={setFocusedOfficialId}
               />
             </div>
           </div>
