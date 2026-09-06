@@ -17,7 +17,11 @@ export function AppContainer() {
 
   // 跨页面跳转聚焦定位状态（从泳道跳转到机构或官员主页）
   const [focusedUnitId, setFocusedUnitId] = useState<string | null>(null);
-  const [focusedOfficialId, setFocusedOfficialId] = useState<string | null>(null);
+  const [focusedOfficialId, setFocusedOfficialId] = useState<string | null>(
+    () => OFFICIALS_DATA[0]?.id || 'wu-qing'
+  );
+  // 记录跳转来源页面（当从其他页面跳转到官员页面时，记录来源用于一键返回）
+  const [previousViewForOfficial, setPreviousViewForOfficial] = useState<ViewMode | null>(null);
 
   // 官员页面与机构页面当前选中的组织机构过滤/定位
   const [officialsSelectedUnitId, setOfficialsSelectedUnitId] = useState<string | null>(null);
@@ -181,6 +185,7 @@ export function AppContainer() {
 
   // 视图跳转支持
   const handleSelectOfficialFromUnit = (official: Official) => {
+    setPreviousViewForOfficial('units');
     setFocusedOfficialId(official.id);
     setCurrentView('officials');
   };
@@ -214,8 +219,28 @@ export function AppContainer() {
 
   // 从泳道跳转到官员主页
   const handleNavigateToOfficialPage = (officialId: string) => {
+    setPreviousViewForOfficial('swimlanes');
     setFocusedOfficialId(officialId);
     setCurrentView('officials');
+  };
+
+  // 从官员页面返回跳转前视图
+  const handleBackFromOfficial = () => {
+    if (previousViewForOfficial) {
+      setCurrentView(previousViewForOfficial);
+      setPreviousViewForOfficial(null);
+    } else {
+      setCurrentView('units');
+    }
+  };
+
+  const handleViewChange = (view: ViewMode) => {
+    if (view === 'officials' && currentView !== 'officials') {
+      setPreviousViewForOfficial(currentView);
+    } else if (view !== 'officials') {
+      setPreviousViewForOfficial(null);
+    }
+    setCurrentView(view);
   };
 
   // 需求四：通用返回时空泳道（保持原有的所有官员和泳道筛选配置）
@@ -228,7 +253,7 @@ export function AppContainer() {
       {/* 统一的 macOS 风格左侧多功能侧边栏 */}
       <Sidebar
         currentView={currentView}
-        onViewChange={setCurrentView}
+        onViewChange={handleViewChange}
         selectedOfficialIds={selectedOfficialIds}
         onToggleOfficialSelection={handleToggleOfficialSelection}
         onSelectAllOfficials={handleSelectAllOfficials}
@@ -340,6 +365,8 @@ export function AppContainer() {
                 selectedUnitId={officialsSelectedUnitId}
                 onSelectUnit={setOfficialsSelectedUnitId}
                 onActiveOfficialChange={setFocusedOfficialId}
+                previousView={previousViewForOfficial}
+                onBackToPreviousView={handleBackFromOfficial}
               />
             </div>
           </div>

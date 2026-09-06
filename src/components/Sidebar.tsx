@@ -301,6 +301,94 @@ export const Sidebar: React.FC<SidebarProps> = ({
     }
   }, [selectedUnitIdForOfficials]);
 
+  // 根据当前展示的官员，计算其相关的全部机构（按任职先后时间正序排列）
+  const officialRelatedUnits = useMemo(() => {
+    const targetId = activeOfficialId || officials[0]?.id;
+    if (!targetId) return [];
+    const targetOfficial = officials.find((o) => o.id === targetId);
+    if (!targetOfficial) return [];
+
+    const unitIds: string[] = [];
+
+    // 1. 历史履历（按时间正序排列）
+    const sortedCareer = [...(targetOfficial.careerHistory || [])].sort((a, b) => {
+      if (a.startYear !== b.startYear) return a.startYear - b.startYear;
+      return (a.startMonth || 1) - (b.startMonth || 1);
+    });
+
+    sortedCareer.forEach((rec) => {
+      if (rec.unitId && units.some((u) => u.id === rec.unitId)) {
+        if (!unitIds.includes(rec.unitId)) {
+          unitIds.push(rec.unitId);
+        }
+      }
+    });
+
+    // 2. 现任在职单位（作为最终任职/最新机构，放在末尾）
+    if (targetOfficial.currentUnitId && units.some((u) => u.id === targetOfficial.currentUnitId)) {
+      const idx = unitIds.indexOf(targetOfficial.currentUnitId);
+      if (idx !== -1) {
+        unitIds.splice(idx, 1);
+      }
+      unitIds.push(targetOfficial.currentUnitId);
+    }
+
+    // 3. 容错补全：检查 isOfficialActiveInUnit / isOfficialPastInUnit
+    units.forEach((u) => {
+      if (
+        (isOfficialActiveInUnit(targetOfficial, u.id) || isOfficialPastInUnit(targetOfficial, u.id)) &&
+        !unitIds.includes(u.id)
+      ) {
+        unitIds.push(u.id);
+      }
+    });
+
+    return unitIds;
+  }, [activeOfficialId, officials, units]);
+
+  // 当处于官员页面时，自动展开相关机构（若有多个，定位最后一个），并定位到该官员
+  React.useEffect(() => {
+    if (currentView !== 'officials') return;
+    const targetId = activeOfficialId || officials[0]?.id;
+    if (!targetId || officialRelatedUnits.length === 0) return;
+
+    const targetOfficial = officials.find((o) => o.id === targetId);
+    if (!targetOfficial) return;
+
+    // 检查当前已经展开的手风琴机构是否已经包含该官员
+    const isAlreadyInCurrentExpanded =
+      expandedUnitIdForOfficials &&
+      (isOfficialActiveInUnit(targetOfficial, expandedUnitIdForOfficials) ||
+        isOfficialPastInUnit(targetOfficial, expandedUnitIdForOfficials));
+
+    // 如果未展开或当前展开的机构不包含该官员，则展开相关的最后一个机构
+    if (!isAlreadyInCurrentExpanded) {
+      const lastUnitId = officialRelatedUnits[officialRelatedUnits.length - 1];
+      setExpandedUnitIdForOfficials(lastUnitId);
+      onSelectUnitForOfficials?.(lastUnitId);
+
+      // 确保该机构所属的顶级分类与二级分类展开
+      TOP_ORG_CATEGORIES.forEach((topCat) => {
+        topCat.subCategories.forEach((subCat) => {
+          if (subCat.unitIds.includes(lastUnitId)) {
+            setCollapsedTopCats((prev) => ({ ...prev, [topCat.id]: false }));
+            setCollapsedOrgCats((prev) => ({ ...prev, [subCat.id]: false }));
+          }
+        });
+      });
+    }
+
+    // 定位到这个官员（平滑滚动到该官员的列表项）
+    const timer = setTimeout(() => {
+      const el = document.getElementById(`sidebar-official-${targetId}`);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }, 150);
+
+    return () => clearTimeout(timer);
+  }, [currentView, activeOfficialId, officialRelatedUnits]);
+
   const handleToggleUnitAccordion = (unitId: string) => {
     if (expandedUnitIdForOfficials === unitId) {
       // 再次点击同一个机构 -> 收起
@@ -361,6 +449,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 return (
                   <button
                     key={off.id}
+                    id={`sidebar-official-${off.id}`}
                     type="button"
                     onClick={(e) => {
                       e.stopPropagation();
@@ -414,6 +503,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 return (
                   <button
                     key={off.id}
+                    id={`sidebar-official-${off.id}`}
                     type="button"
                     onClick={(e) => {
                       e.stopPropagation();

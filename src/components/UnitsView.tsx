@@ -296,12 +296,29 @@ const LeaderCard: React.FC<LeaderCardProps> = ({
         </div>
 
         <div className="flex items-start gap-3">
-          {/* 干部免冠证件照 */}
-          <OfficialIdPhoto official={leader} size="sm" />
+          {/* 干部免冠证件照（点击跳转档案） */}
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onSelectOfficial(leader);
+            }}
+            className="shrink-0 transition-transform hover:scale-105 cursor-pointer rounded-xl group/avatar focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+            title={`点击查看「${leader.name}」完整个人档案`}
+          >
+            <OfficialIdPhoto official={leader} size="sm" />
+          </button>
 
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-1.5 flex-wrap">
-              <span className="font-bold text-base text-gray-900 group-hover:text-blue-600 transition-colors">
+              <span
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onSelectOfficial(leader);
+                }}
+                className="font-bold text-base text-gray-900 hover:text-blue-600 cursor-pointer transition-colors"
+                title={`点击查看「${leader.name}」档案`}
+              >
                 {leader.name}
               </span>
               <PositionRankBadge rank={leader.currentRank} />
@@ -353,18 +370,7 @@ const LeaderCard: React.FC<LeaderCardProps> = ({
       </div>
 
       {/* 底部交互按钮栏 */}
-      <div className="mt-3 pt-2 border-t border-black/[0.05] flex items-center justify-between text-xs font-medium">
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            onSelectOfficial(leader);
-          }}
-          className="text-blue-600 hover:text-blue-800 flex items-center gap-0.5 group-hover:translate-x-0.5 transition-transform"
-        >
-          <span>查看个人档案</span>
-          <span>→</span>
-        </button>
-
+      <div className="mt-3 pt-2 border-t border-black/[0.05] flex items-center justify-end text-xs font-medium">
         <button
           onClick={(e) => {
             e.stopPropagation();
@@ -734,12 +740,29 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                         </div>
 
                         <div className="flex items-start gap-3">
-                          {/* 干部免冠证件照 */}
-                          <OfficialIdPhoto official={leader} size="sm" />
+                          {/* 干部免冠证件照（点击跳转档案） */}
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              onSelectOfficial(leader);
+                            }}
+                            className="shrink-0 transition-transform hover:scale-105 cursor-pointer rounded-xl group/avatar focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+                            title={`点击查看「${leader.name}」完整个人档案`}
+                          >
+                            <OfficialIdPhoto official={leader} size="sm" />
+                          </button>
 
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-1.5 flex-wrap">
-                              <span className="font-bold text-base text-gray-900 group-hover:text-blue-600 transition-colors">
+                              <span
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  onSelectOfficial(leader);
+                                }}
+                                className="font-bold text-base text-gray-900 hover:text-blue-600 cursor-pointer transition-colors"
+                                title={`点击查看「${leader.name}」档案`}
+                              >
                                 {leader.name}
                               </span>
                               <PositionRankBadge rank={leader.currentRank} />
@@ -779,18 +802,7 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                       </div>
 
                       {/* 底部交互按钮栏 */}
-                      <div className="mt-4 pt-2.5 border-t border-black/[0.05] flex items-center justify-between text-xs font-medium">
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            onSelectOfficial(leader);
-                          }}
-                          className="text-blue-600 hover:text-blue-800 flex items-center gap-0.5 group-hover:translate-x-0.5 transition-transform"
-                        >
-                          <span>查看个人档案</span>
-                          <span>→</span>
-                        </button>
-
+                      <div className="mt-4 pt-2.5 border-t border-black/[0.05] flex items-center justify-end text-xs font-medium">
                         <button
                           onClick={(e) => {
                             e.stopPropagation();

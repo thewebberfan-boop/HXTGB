@@ -40,6 +40,8 @@ interface OfficialsViewProps {
   selectedUnitId?: string | null;
   onSelectUnit?: (unitId: string | null) => void;
   onActiveOfficialChange?: (officialId: string) => void;
+  previousView?: 'units' | 'officials' | 'swimlanes' | null;
+  onBackToPreviousView?: () => void;
 }
 
 
@@ -585,6 +587,8 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
   selectedUnitId = null,
   onSelectUnit,
   onActiveOfficialChange,
+  previousView,
+  onBackToPreviousView,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showBioModal, setShowBioModal] = useState(false);
@@ -764,7 +768,20 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
             <div className="flex flex-col lg:flex-row items-stretch gap-4 lg:gap-5">
               {/* 左侧：2寸免冠照 + 核心政务属性与职务 (自适应收缩/扩展，为右侧特质动态分享空间) */}
               <div className="flex items-start sm:items-center gap-4 min-w-0 w-full lg:w-auto lg:max-w-[55%] shrink-0 pr-0 lg:pr-5 border-b lg:border-b-0 lg:border-r border-black/[0.06] pb-3.5 lg:pb-0">
-                <OfficialIdPhoto official={activeOfficial} size="md" />
+                <div className="flex flex-col items-center gap-2 shrink-0">
+                  <OfficialIdPhoto official={activeOfficial} size="md" />
+                  {previousView && onBackToPreviousView && (
+                    <button
+                      type="button"
+                      onClick={onBackToPreviousView}
+                      className="w-full py-1 px-2 rounded-lg bg-gray-100 hover:bg-gray-200 active:scale-95 text-gray-700 hover:text-blue-600 text-xs font-semibold flex items-center justify-center gap-1 border border-black/[0.08] shadow-2xs transition-all cursor-pointer group"
+                      title={`返回上一页面（${previousView === 'units' ? '系统单位编制档案' : '时空泳道'}）`}
+                    >
+                      <ArrowLeft className="w-3.5 h-3.5 text-gray-500 group-hover:text-blue-600 transition-colors" />
+                      <span>返回</span>
+                    </button>
+                  )}
+                </div>
 
                 <div className="space-y-1.5 flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
