@@ -1091,6 +1091,17 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                           <span className="font-bold text-xs text-blue-800 bg-blue-100/90 border border-blue-200 px-2 py-0.5 rounded-md">
                             {edu.degree}
                           </span>
+                          {edu.isInService ? (
+                            <span className="font-bold text-[11px] text-amber-800 bg-amber-100/90 border border-amber-300 px-2 py-0.5 rounded-md flex items-center gap-1 shadow-2xs">
+                              <span className="w-1.5 h-1.5 rounded-full bg-amber-600" />
+                              <span>在职学历</span>
+                            </span>
+                          ) : (
+                            <span className="font-bold text-[11px] text-emerald-800 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-md flex items-center gap-1">
+                              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                              <span>全日制</span>
+                            </span>
+                          )}
                         </div>
 
                         {/* 明确补充在校全部时段（包含推理标记） */}
@@ -1112,9 +1123,14 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                           </div>
                         </div>
 
-                        <div className="text-xs text-gray-700 font-medium">
-                          <span className="text-gray-400">专业方向：</span>
-                          <span className="text-gray-800 font-semibold">{edu.major || '全日制统招'}</span>
+                        <div className="text-xs text-gray-700 font-medium flex items-center justify-between flex-wrap gap-1">
+                          <div>
+                            <span className="text-gray-400">专业方向：</span>
+                            <span className="text-gray-800 font-semibold">{edu.major || '未公开具体专业'}</span>
+                          </div>
+                          <span className="text-[10.5px] font-medium text-gray-500 bg-white px-2 py-0.5 rounded border border-black/[0.04]">
+                            {edu.isInService ? '在职培养 / 边工作边攻读' : '统招全日制教育'}
+                          </span>
                         </div>
 
                         {edu.confidence && (
@@ -1187,8 +1203,15 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                                         {alumni.overlapDisplay}
                                       </span>
                                     </div>
-                                    <div className="text-[11px] text-gray-700 font-medium truncate">
-                                      {alumni.education.degree} · {alumni.education.major || alumni.education.school}
+                                    <div className="text-[11px] text-gray-700 font-medium truncate flex items-center justify-between gap-1.5">
+                                      <span className="truncate">{alumni.education.degree} · {alumni.education.major || alumni.education.school}</span>
+                                      <span className={`text-[9.5px] px-1.5 py-0.2 rounded font-semibold shrink-0 ${
+                                        alumni.education.isInService
+                                          ? 'bg-amber-100 text-amber-800 border border-amber-300'
+                                          : 'bg-emerald-50 text-emerald-700 border border-emerald-200'
+                                      }`}>
+                                        {alumni.education.isInService ? '在职' : '全日制'}
+                                      </span>
                                     </div>
                                     <div className="text-[10px] text-gray-500 font-mono">
                                       在校: {oSpan.startYear} - {oSpan.endYear}

@@ -50,6 +50,8 @@ export interface EducationInfo {
   startYear?: number; // 在校起始年份
   endYear?: number; // 在校毕业/结业年份
   isDerivedSpan?: boolean; // 在校时段是否为学制推理
+  isInService?: boolean; // 是否属于“在职”学历 / 在职研究生 / 在职学位
+  educationMode?: '全日制' | '在职'; // 培养类型：全日制或在职
   confidence?: ConfidenceInfo; // 学历置信度评价
 }
 

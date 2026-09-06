@@ -1337,7 +1337,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1989,
         "startYear": 1985,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -1352,7 +1354,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1992,
         "startYear": 1989,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       },
       {
         "degree": "博士",
@@ -1367,7 +1371,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2002,
         "startYear": 1998,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -1571,7 +1577,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1984,
         "startYear": 1981,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -1586,7 +1594,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2005,
         "startYear": 2002,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       },
       {
         "degree": "博士",
@@ -1601,7 +1611,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2008,
         "startYear": 2004,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -1704,7 +1716,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1984,
         "startYear": 1980,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -1719,7 +1733,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1987,
         "startYear": 1984,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -1734,7 +1750,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2002,
         "startYear": 1998,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -1857,7 +1875,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1981,
         "startYear": 1977,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -1872,7 +1892,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -1995,7 +2017,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1982,
         "startYear": 1978,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -2010,7 +2034,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1985,
         "startYear": 1982,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -2025,7 +2051,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1988,
         "startYear": 1984,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -2168,7 +2196,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1982,
         "startYear": 1978,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -2183,7 +2213,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1999,
         "startYear": 1995,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -2306,7 +2338,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1953,
         "startYear": 1950,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -2389,7 +2423,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1954,
         "startYear": 1951,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -2404,7 +2440,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1959,
         "startYear": 1955,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -2487,7 +2525,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1992,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -2502,7 +2542,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2002,
         "startYear": 1999,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -2641,7 +2683,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1993,
         "startYear": 1989,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -2656,7 +2700,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2003,
         "startYear": 1999,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -2795,7 +2841,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1995,
         "startYear": 1991,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "学士",
@@ -2810,7 +2858,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1997,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -2825,7 +2875,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1998,
         "startYear": 1995,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       },
       {
         "degree": "硕士",
@@ -2840,7 +2892,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2003,
         "startYear": 2000,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -3004,7 +3058,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -3019,7 +3075,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2002,
         "startYear": 1998,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -3120,7 +3178,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -3135,7 +3195,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -3150,7 +3212,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2004,
         "startYear": 2000,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -3313,7 +3377,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -3328,7 +3394,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1994,
         "startYear": 1991,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -3451,7 +3519,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -3635,7 +3705,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1988,
         "startYear": 1984,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -3650,7 +3722,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2003,
         "startYear": 1999,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -3771,7 +3845,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1987,
         "startYear": 1983,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -3786,7 +3862,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1994,
         "startYear": 1991,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       },
       {
         "degree": "博士",
@@ -3801,7 +3879,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2004,
         "startYear": 2000,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -3944,7 +4024,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1986,
         "startYear": 1982,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -3959,7 +4041,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1989,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -3974,7 +4058,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1993,
         "startYear": 1989,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -4137,7 +4223,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1987,
         "startYear": 1983,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -4152,7 +4240,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2008,
         "startYear": 2004,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -4296,7 +4386,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1984,
         "startYear": 1980,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -4311,7 +4403,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2002,
         "startYear": 1998,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       },
       {
         "degree": "博士",
@@ -4326,7 +4420,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2005,
         "startYear": 2001,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -4449,7 +4545,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1982,
         "startYear": 1978,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -4464,7 +4562,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1999,
         "startYear": 1995,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -4587,7 +4687,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1989,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       },
       {
         "degree": "博士",
@@ -4602,7 +4704,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1999,
         "startYear": 1995,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -4745,7 +4849,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1982,
         "startYear": 1978,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -4868,7 +4974,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1978,
         "startYear": 1974,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -4883,7 +4991,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1981,
         "startYear": 1978,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -4898,7 +5008,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1986,
         "startYear": 1982,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -5021,7 +5133,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1975,
         "startYear": 1971,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -5036,7 +5150,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1985,
         "startYear": 1981,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -5139,7 +5255,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2000,
         "startYear": 1997,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -5154,7 +5272,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2003,
         "startYear": 1999,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -5259,7 +5379,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1998,
         "startYear": 1994,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -5274,7 +5396,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2005,
         "startYear": 2002,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -5375,7 +5499,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1997,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -5390,7 +5516,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2004,
         "startYear": 2000,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -5510,7 +5638,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1992,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -5525,7 +5655,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2004,
         "startYear": 2000,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -5628,7 +5760,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1992,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -5643,7 +5777,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1999,
         "startYear": 1996,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -5658,7 +5794,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2004,
         "startYear": 2000,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -5759,7 +5897,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1994,
         "startYear": 1990,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -5774,7 +5914,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2001,
         "startYear": 1998,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -5875,7 +6017,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1994,
         "startYear": 1990,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -5890,7 +6034,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2001,
         "startYear": 1998,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -5972,7 +6118,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1993,
         "startYear": 1989,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -5987,7 +6135,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -6093,7 +6243,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1992,
         "startYear": 1988,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -6108,7 +6260,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1995,
         "startYear": 1992,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -6209,7 +6363,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1992,
         "startYear": 1988,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -6224,7 +6380,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1998,
         "startYear": 1995,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -6344,7 +6502,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1992,
         "startYear": 1988,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -6359,7 +6519,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2004,
         "startYear": 2000,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -6482,7 +6644,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1992,
         "startYear": 1988,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -6497,7 +6661,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1995,
         "startYear": 1992,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -6512,7 +6678,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2003,
         "startYear": 1999,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -6652,7 +6820,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1992,
         "startYear": 1988,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -6667,7 +6837,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1999,
         "startYear": 1996,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -6768,7 +6940,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1992,
         "startYear": 1988,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -6783,7 +6957,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1995,
         "startYear": 1992,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -6868,7 +7044,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -6883,7 +7061,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2002,
         "startYear": 1998,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -7006,7 +7186,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -7021,7 +7203,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2001,
         "startYear": 1997,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -7127,7 +7311,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -7228,7 +7414,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1992,
         "startYear": 1988,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -7243,7 +7431,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2004,
         "startYear": 2000,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -7406,7 +7596,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -7421,7 +7613,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1998,
         "startYear": 1995,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -7546,7 +7740,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -7561,7 +7757,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1997,
         "startYear": 1994,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -7662,7 +7860,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -7677,7 +7877,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2002,
         "startYear": 1999,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -7778,7 +7980,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -7793,7 +7997,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2003,
         "startYear": 1999,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -7951,7 +8157,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -7966,7 +8174,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -8086,7 +8296,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -8101,7 +8313,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -8183,7 +8397,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -8198,7 +8414,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1993,
         "startYear": 1990,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -8362,7 +8580,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -8377,7 +8597,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2001,
         "startYear": 1997,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -8459,7 +8681,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -8474,7 +8698,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -8617,7 +8843,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -8632,7 +8860,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1993,
         "startYear": 1990,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -8737,7 +8967,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -8752,7 +8984,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1994,
         "startYear": 1991,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -8767,7 +9001,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1997,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -8870,7 +9106,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -8885,7 +9123,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -8989,7 +9229,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -9004,7 +9246,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1995,
         "startYear": 1992,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -9089,7 +9333,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1989,
         "startYear": 1985,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -9104,7 +9350,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -9186,7 +9434,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1989,
         "startYear": 1985,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -9201,7 +9451,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1995,
         "startYear": 1992,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -9306,7 +9558,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1988,
         "startYear": 1984,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -9321,7 +9575,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1994,
         "startYear": 1991,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -9422,7 +9678,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1987,
         "startYear": 1983,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -9437,7 +9695,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -9560,7 +9820,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1984,
         "startYear": 1980,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -9575,7 +9837,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1986,
         "startYear": 1983,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -9590,7 +9854,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1998,
         "startYear": 1994,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -9691,7 +9957,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1985,
         "startYear": 1981,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -9706,7 +9974,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1988,
         "startYear": 1985,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -9809,7 +10079,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1982,
         "startYear": 1978,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -9824,7 +10096,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1988,
         "startYear": 1985,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -9947,7 +10221,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1982,
         "startYear": 1978,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -10050,7 +10326,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1982,
         "startYear": 1978,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -10065,7 +10343,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1986,
         "startYear": 1983,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -10168,7 +10448,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1995,
         "startYear": 1991,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -10252,7 +10534,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1994,
         "startYear": 1990,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -10336,7 +10620,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1993,
         "startYear": 1989,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -10351,7 +10637,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2001,
         "startYear": 1998,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -10435,7 +10723,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1992,
         "startYear": 1988,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -10450,7 +10740,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1998,
         "startYear": 1995,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -10536,7 +10828,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -10551,7 +10845,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1997,
         "startYear": 1994,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -10645,7 +10941,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1993,
         "startYear": 1989,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -10660,7 +10958,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2000,
         "startYear": 1997,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -10737,7 +11037,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1995,
         "startYear": 1991,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -10752,7 +11054,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2002,
         "startYear": 1999,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -10829,7 +11133,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1992,
         "startYear": 1988,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -10844,7 +11150,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2004,
         "startYear": 2001,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": true,
+        "educationMode": "在职"
       }
     ],
     "careerHistory": [
@@ -10904,7 +11212,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1993,
         "startYear": 1989,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -10919,7 +11229,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1999,
         "startYear": 1996,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -11013,7 +11325,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1993,
         "startYear": 1989,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -11028,7 +11342,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1996,
         "startYear": 1993,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -11105,7 +11421,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -11120,7 +11438,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1998,
         "startYear": 1995,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -11197,7 +11517,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1999,
         "startYear": 1995,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -11274,7 +11596,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1992,
         "startYear": 1988,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -11289,7 +11613,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1999,
         "startYear": 1996,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -11366,7 +11692,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1990,
         "startYear": 1986,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -11426,7 +11754,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1994,
         "startYear": 1990,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -11503,7 +11833,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1993,
         "startYear": 1989,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "硕士",
@@ -11518,7 +11850,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 2001,
         "startYear": 1998,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -11595,7 +11929,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1991,
         "startYear": 1987,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
@@ -11655,7 +11991,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1983,
         "startYear": 1979,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       },
       {
         "degree": "博士",
@@ -11670,7 +12008,9 @@ export const OFFICIALS_DATA: Official[] = [
         },
         "endYear": 1993,
         "startYear": 1989,
-        "isDerivedSpan": true
+        "isDerivedSpan": true,
+        "isInService": false,
+        "educationMode": "全日制"
       }
     ],
     "careerHistory": [
