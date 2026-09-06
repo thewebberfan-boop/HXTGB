@@ -23,7 +23,8 @@ import {
   Sparkles,
   ShieldCheck,
   Users,
-  X
+  X,
+  Maximize2
 } from 'lucide-react';
 import { PositionRankBadge } from './PositionRankBadge';
 import { OfficialIdPhoto } from './OfficialIdPhoto';
@@ -584,6 +585,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
   onSelectUnit,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [showBioModal, setShowBioModal] = useState(false);
   const [activeOfficial, setActiveOfficial] = useState<Official | null>(() => {
     if (activeOfficialId) {
       return officials.find((o) => o.id === activeOfficialId) || officials[0] || null;
@@ -597,6 +599,16 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
       if (found) setActiveOfficial(found);
     }
   }, [activeOfficialId, officials]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && showBioModal) {
+        setShowBioModal(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [showBioModal]);
 
   const unitMap = useMemo(() => {
     const map = new Map<string, Unit>();
@@ -779,11 +791,11 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
       {/* 核心改动：全屏宽幅全息干部档案看板（彻底移除了冗余的左侧41人列表列，空间完全留给详细履历） */}
       {activeOfficial ? (
         <div className="space-y-6">
-          {/* 1. 干部履历概貌与特质全息看板 (左侧身份档案，右侧履职特质简介，紧凑置顶) */}
+          {/* 1. 干部履历概貌与特质全息看板 (左侧身份档案与右侧特质动态分享空间，紧凑置顶) */}
           <div className="sticky top-0 z-30 mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.08] bg-white/95 backdrop-blur-md shadow-sm">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
-              {/* 左侧：2寸免冠照 + 核心政务属性与职务 (占 7 列) */}
-              <div className="lg:col-span-7 xl:col-span-7 flex items-start sm:items-center gap-4 min-w-0 pr-0 lg:pr-4 border-b lg:border-b-0 lg:border-r border-black/[0.06] pb-3.5 lg:pb-0">
+            <div className="flex flex-col lg:flex-row items-stretch gap-4 lg:gap-5">
+              {/* 左侧：2寸免冠照 + 核心政务属性与职务 (自适应收缩/扩展，为右侧特质动态分享空间) */}
+              <div className="flex items-start sm:items-center gap-4 min-w-0 w-full lg:w-auto lg:max-w-[55%] shrink-0 pr-0 lg:pr-5 border-b lg:border-b-0 lg:border-r border-black/[0.06] pb-3.5 lg:pb-0">
                 <OfficialIdPhoto official={activeOfficial} size="md" />
 
                 <div className="space-y-1.5 flex-1 min-w-0">
@@ -866,26 +878,142 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                 </div>
               </div>
 
-              {/* 右侧：原下方的履职特质与业务擅长简介直接移到右侧 (占 5 列) */}
-              <div className="lg:col-span-5 xl:col-span-5 min-w-0">
+              {/* 右侧：履职特质与业务擅长 (与左侧动态分享空间，支持卡内滚动与全息弹窗) */}
+              <div className="flex-1 min-w-0 flex flex-col justify-center">
                 {activeOfficial.bioSummary ? (
-                  <div className="p-3 bg-blue-50/30 rounded-xl border border-blue-100/50 text-xs text-gray-700 leading-relaxed flex flex-col justify-center">
-                    <div className="flex items-center gap-1.5 font-bold text-blue-700 text-[11px] mb-1">
-                      <Sparkles className="w-3.5 h-3.5" />
-                      <span>履职特质与业务擅长：</span>
+                  <div className="p-3 bg-blue-50/40 hover:bg-blue-50/70 rounded-xl border border-blue-100/60 text-xs text-gray-700 transition-all flex flex-col justify-center h-full">
+                    <div className="flex items-center justify-between gap-2 mb-1 shrink-0">
+                      <div className="flex items-center gap-1.5 font-bold text-blue-700 text-[11px]">
+                        <Sparkles className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                        <span>履职特质与业务擅长：</span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => setShowBioModal(true)}
+                        className="inline-flex items-center gap-1 text-[10.5px] font-semibold text-blue-600 hover:text-blue-800 bg-white/90 hover:bg-blue-100/80 border border-blue-200/70 px-2 py-0.5 rounded-lg shadow-2xs transition-all hover:scale-105 active:scale-95 cursor-pointer shrink-0"
+                        title="点击打开弹窗查看完整特质述评"
+                      >
+                        <Maximize2 className="w-3 h-3 text-blue-600" />
+                        <span>弹窗全文</span>
+                      </button>
                     </div>
-                    <p className="text-[11.5px] text-gray-600 leading-relaxed line-clamp-3">
-                      {activeOfficial.bioSummary}
-                    </p>
+
+                    {/* 卡内平滑滚动区域：高度自适应，支持滚动查看全部文字，杜绝截断 */}
+                    <div className="max-h-[66px] sm:max-h-[74px] overflow-y-auto pr-1 text-[11.5px] text-gray-600 leading-relaxed select-text">
+                      <p className="whitespace-normal">
+                        {activeOfficial.bioSummary}
+                      </p>
+                    </div>
                   </div>
                 ) : (
-                  <div className="p-3 bg-gray-50/60 rounded-xl border border-black/[0.04] text-xs text-gray-400 text-center flex items-center justify-center">
+                  <div className="p-3 bg-gray-50/60 rounded-xl border border-black/[0.04] text-xs text-gray-400 text-center flex items-center justify-center h-full">
                     暂无补充特质履职记述
                   </div>
                 )}
               </div>
             </div>
           </div>
+
+          {/* 全息弹窗：完整履职特质与业务擅长深度述评 */}
+          {showBioModal && activeOfficial && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/45 backdrop-blur-xs animate-in fade-in duration-150"
+              onClick={() => setShowBioModal(false)}
+            >
+              <div
+                className="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl border border-black/[0.08] overflow-hidden flex flex-col max-h-[85vh] animate-in zoom-in-95 duration-150"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {/* 弹窗头部 */}
+                <div className="px-6 py-4 border-b border-black/[0.06] bg-gradient-to-r from-blue-50/80 via-indigo-50/40 to-white flex items-center justify-between">
+                  <div className="flex items-center gap-3.5 min-w-0">
+                    <OfficialIdPhoto official={activeOfficial} size="sm" />
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h3 className="text-base sm:text-lg font-bold text-gray-900 tracking-tight">
+                          {activeOfficial.name}
+                        </h3>
+                        <PositionRankBadge rank={activeOfficial.currentRank} />
+                        <span className="text-[11px] text-gray-500 font-mono bg-gray-100 px-2 py-0.5 rounded-md">
+                          {calculateAge(activeOfficial.birthYear)}岁
+                        </span>
+                      </div>
+                      <p className="text-xs text-blue-700 font-semibold mt-1 flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                        <span>履职特质与业务擅长全息述评</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <button
+                    onClick={() => setShowBioModal(false)}
+                    className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-500 hover:text-gray-800 flex items-center justify-center transition-colors shrink-0 ml-2"
+                    title="关闭 (ESC)"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
+
+                {/* 弹窗内容 */}
+                <div className="p-6 overflow-y-auto space-y-4">
+                  <div className="p-5 bg-blue-50/40 rounded-2xl border border-blue-100/70 text-sm leading-relaxed text-gray-800">
+                    <div className="flex items-center gap-1.5 text-xs font-bold text-blue-800 mb-2.5">
+                      <Sparkles className="w-4 h-4 text-blue-600" />
+                      <span>深度履职研判与监管业务擅长：</span>
+                    </div>
+                    <p className="leading-7 whitespace-pre-line text-[13.5px] text-gray-700">
+                      {activeOfficial.bioSummary || '暂无补充特质履职记述'}
+                    </p>
+                  </div>
+
+                  {/* 核心元数据档案网格 */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                    <div className="p-3 bg-gray-50 rounded-xl border border-black/[0.04]">
+                      <span className="text-gray-400 block text-[11px] mb-0.5">现任职务</span>
+                      <span className="font-semibold text-gray-800 truncate block" title={activeOfficial.currentPosition}>
+                        {activeOfficial.currentPosition}
+                      </span>
+                    </div>
+                    <div className="p-3 bg-gray-50 rounded-xl border border-black/[0.04]">
+                      <span className="text-gray-400 block text-[11px] mb-0.5">编制归属</span>
+                      <span className="font-semibold text-gray-800 truncate block" title={currentUnit?.name || '中国证监会系统'}>
+                        {currentUnit?.name || '中国证监会系统'}
+                      </span>
+                    </div>
+                    <div className="p-3 bg-gray-50 rounded-xl border border-black/[0.04]">
+                      <span className="text-gray-400 block text-[11px] mb-0.5">出生籍贯</span>
+                      <span className="font-semibold text-gray-800">
+                        {activeOfficial.birthYear}年 · {activeOfficial.nativePlace || '未公开'}
+                      </span>
+                    </div>
+                    <div className="p-3 bg-gray-50 rounded-xl border border-black/[0.04]">
+                      <span className="text-gray-400 block text-[11px] mb-0.5">履职状态</span>
+                      <span className="font-semibold text-gray-800">
+                        {activeOfficial.servingStatus === 'investigated'
+                          ? '立案调查'
+                          : activeOfficial.servingStatus === 'retired'
+                          ? '正常退休'
+                          : activeOfficial.servingStatus === 'transferred'
+                          ? '调离系统'
+                          : '现任在职'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 弹窗底部操作条 */}
+                <div className="px-6 py-3.5 border-t border-black/[0.06] bg-gray-50/80 flex items-center justify-between">
+                  <span className="text-xs text-gray-400">按 ESC 键或点击外部遮罩亦可快速退出</span>
+                  <button
+                    onClick={() => setShowBioModal(false)}
+                    className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold shadow-xs transition-colors"
+                  >
+                    完成查阅
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* 3. 教育背景与学位学历 (左1/3个人求学档案，右2/3同期同校校友矩阵) */}
           <div className="mac-card rounded-2xl p-5 sm:p-7 border border-black/[0.08] bg-white shadow-xs space-y-5">
