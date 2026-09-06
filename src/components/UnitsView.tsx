@@ -496,28 +496,28 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
       {/* 全屏宽幅全息单位档案看板 */}
       {activeUnit ? (
         <div className="space-y-6">
-          {/* 1. 单位概貌首长卡 (Hero Dossier Banner) */}
-          <div className="mac-card rounded-2xl p-6 sm:p-8 border border-black/[0.08] bg-white shadow-sm relative overflow-hidden">
-            <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
-              <div className="space-y-3 flex-1">
+          {/* 1. 单位概貌首长卡 (Hero Dossier Banner - 移动到顶端时吸顶保持显示) */}
+          <div className="sticky top-0 z-30 mac-card rounded-2xl p-4 sm:p-5 border border-black/[0.08] bg-white/95 backdrop-blur-md shadow-sm relative overflow-hidden transition-all">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+              <div className="space-y-2 flex-1 min-w-0">
                 {/* 徽章行 */}
-                <div className="flex items-center gap-2.5 flex-wrap">
-                  <span className="text-xs font-semibold text-blue-800 bg-blue-50 border border-blue-200/80 px-3 py-1 rounded-lg shadow-2xs">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="text-xs font-semibold text-blue-800 bg-blue-50 border border-blue-200/80 px-2.5 py-0.5 rounded-lg shadow-2xs">
                     {activeUnit.category}
                   </span>
                   <span
-                    className={`text-xs font-semibold px-3 py-1 rounded-lg border shadow-2xs ${getLevelBadgeClass(
+                    className={`text-xs font-semibold px-2.5 py-0.5 rounded-lg border shadow-2xs ${getLevelBadgeClass(
                       activeUnit.level
                     )}`}
                   >
                     编制级别：{activeUnit.level}
                   </span>
-                  <span className="text-xs text-gray-500 bg-gray-100 px-2.5 py-1 rounded-lg flex items-center gap-1 font-mono">
+                  <span className="text-xs text-gray-500 bg-gray-100 px-2.5 py-0.5 rounded-lg flex items-center gap-1 font-mono">
                     <Calendar className="w-3.5 h-3.5 text-gray-400" />
                     建制成立：{activeUnit.establishedYear} 年
                   </span>
                   {activeUnit.address && (
-                    <span className="hidden sm:flex text-xs text-gray-500 bg-gray-100 px-2.5 py-1 rounded-lg items-center gap-1">
+                    <span className="hidden sm:flex text-xs text-gray-500 bg-gray-100 px-2.5 py-0.5 rounded-lg items-center gap-1">
                       <MapPin className="w-3.5 h-3.5 text-gray-400" />
                       {activeUnit.address}
                     </span>
@@ -526,10 +526,10 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
 
                 {/* 单位正式名称 */}
                 <div>
-                  <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 tracking-tight leading-tight">
+                  <h2 className="text-xl sm:text-2xl font-extrabold text-gray-900 tracking-tight leading-tight">
                     {activeUnit.name}
                   </h2>
-                  <p className="text-sm text-gray-500 font-mono mt-1 flex items-center gap-2">
+                  <p className="text-xs text-gray-500 font-mono mt-0.5 flex items-center gap-2">
                     <span>机构简称与代号：{activeUnit.shortName}</span>
                     {activeUnit.tinyName && (
                       <span className="text-blue-600 font-medium">
@@ -540,15 +540,17 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                 </div>
               </div>
 
-              {/* 右侧泳道快捷大按钮 */}
-              <div className="flex flex-col sm:flex-row lg:flex-col items-stretch sm:items-center lg:items-end gap-2 shrink-0">
+              {/* 右侧泳道快捷操作按钮 */}
+              <div className="flex items-center gap-2 shrink-0">
                 <button
+                  type="button"
                   onClick={() => onNavigateToSwimlane(activeUnit.id)}
-                  className="flex items-center justify-center gap-2 px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-sm font-semibold shadow-sm transition-all hover:scale-[1.02] active:scale-95"
+                  className="flex items-center justify-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-semibold shadow-2xs transition-all hover:scale-[1.02] active:scale-95 cursor-pointer"
+                  title={`在时空演进泳道中展开「${activeUnit.name}」`}
                 >
-                  <GitCommitVertical className="w-4 h-4" />
-                  <span>在时空演进泳道中展开</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <GitCommitVertical className="w-3.5 h-3.5" />
+                  <span>在时空泳道中展开</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
                 </button>
 
                 {activeUnit.websiteUrl && (
@@ -556,10 +558,11 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                     href={activeUnit.websiteUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center justify-center gap-1.5 px-4 py-2 bg-gray-50 hover:bg-gray-100 text-gray-700 hover:text-blue-600 text-xs font-medium rounded-xl border border-black/[0.05] transition-colors"
+                    className="flex items-center justify-center gap-1.5 px-3 py-2 bg-gray-50 hover:bg-gray-100 text-gray-700 hover:text-blue-600 text-xs font-medium rounded-xl border border-black/[0.05] transition-colors"
+                    title="访问官方网站主页 ↗"
                   >
-                    <span>访问官方网站主页</span>
-                    <ExternalLink className="w-3.5 h-3.5 text-gray-400" />
+                    <span>官网主页</span>
+                    <ExternalLink className="w-3 h-3 text-gray-400" />
                   </a>
                 )}
               </div>
