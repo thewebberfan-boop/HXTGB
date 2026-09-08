@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { PositionRankBadge } from './PositionRankBadge';
 import { OfficialIdPhoto } from './OfficialIdPhoto';
+import { InstitutionHistoryCard } from './InstitutionHistoryCard';
 import {
   isOfficialActiveInUnit,
   isOfficialPastInUnit,
@@ -629,6 +630,8 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
               </div>
             </div>
           </div>
+
+          <InstitutionHistoryCard unit={activeUnit} />
 
           {/* 3. 单位领导干部档案看板：严格区分「在任领导班子」与「历任/曾任干部」 */}
           <div className="mac-card rounded-2xl p-6 sm:p-7 border border-black/[0.08] bg-white shadow-xs space-y-5">

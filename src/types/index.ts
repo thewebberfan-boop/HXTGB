@@ -54,6 +54,7 @@ export interface ProfileReview {
 }
 
 export interface CareerRecord {
+  sourceIds?: string[]; // 本段事实对应 Official.sources 的 ID
   id: string;
   unitId: string; // 空字符串表示外部历史机构，避免错误链接到站内其他机构页
   unitName: string;
@@ -72,6 +73,8 @@ export interface CareerRecord {
 }
 
 export interface EducationInfo {
+  id?: string;
+  sourceIds?: string[];
   degree: '学士' | '硕士' | '博士' | '大专' | '其他';
   school: string;
   major?: string;
@@ -115,6 +118,23 @@ export interface Official {
   profileReview?: ProfileReview; // 档案整体核验状态，避免局部证据被误读为全档案已核验
 }
 
+export interface InstitutionHistoryEntry {
+  id: string;
+  name: string; // 当时名称；不改写履历原文
+  startYear?: number;
+  endYear?: number; // 未知不等于至今
+  changeType: 'established' | 'rename' | 'merge' | 'split' | 'other';
+  continuity: 'same_entity' | 'related_entity' | 'unverified';
+  note?: string;
+  sources: InformationSource[];
+}
+
+export interface InstitutionIdentity {
+  id: string;
+  name: string;
+  history?: InstitutionHistoryEntry[];
+}
+
 export interface Unit {
   id: string;
   name: string;
@@ -133,6 +153,7 @@ export interface Unit {
   contactPhone?: string;
   currentLeaderIds?: string[];
   tagColor?: string;
+  history?: InstitutionHistoryEntry[];
 }
 
 export type ViewMode = 'units' | 'officials' | 'swimlanes';

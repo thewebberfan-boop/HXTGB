@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start -p 4000",
     "lint": "next lint",
-    "audit:data": "node scripts/audit-data.mjs"
+    "audit:data": "node scripts/audit-data.mjs",
+    "test:relations": "node --test scripts/test-relations.mjs"
   },
   "dependencies": {
     "next": "^15.1.7",

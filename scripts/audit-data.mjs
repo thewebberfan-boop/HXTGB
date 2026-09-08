@@ -80,6 +80,23 @@ for (const id of ['csrc-shfe', 'csrc-dce', 'csrc-czce', 'csrc-cffex', 'csrc-gfex
   console.log(`${unit?.name}：旧名录${members.length}条；有来源${linked.length}条；身份待核${pending.map(item => item?.name || '缺失人物').join('、') || '无新增标记'}`);
 }
 
+for (const official of officials) {
+  const sourceIds = new Set((official.sources || []).map(source => source.id));
+  for (const record of [...official.careerHistory, ...official.education]) {
+    for (const id of record.sourceIds || []) {
+      if (!sourceIds.has(id)) structuralErrors.push(`${official.name}的履历来源ID不存在：${id}`);
+    }
+  }
+}
+for (const unit of units) {
+  const history = unit.history || [];
+  if (duplicates(history.map(entry => entry.id)).length) structuralErrors.push(`${unit.name}历史沿革ID重复`);
+  for (const entry of history) {
+    if (entry.startYear != null && entry.endYear != null && entry.startYear > entry.endYear) structuralErrors.push(`${unit.name}/${entry.id}沿革年份倒置`);
+    if (['merge', 'split'].includes(entry.changeType) && entry.continuity === 'same_entity') structuralErrors.push(`${unit.name}/${entry.id}合并拆分不得直接归并为同一实体`);
+  }
+}
+
 if (structuralErrors.length) {
   console.error('\n结构性错误：');
   structuralErrors.forEach((error) => console.error(`- ${error}`));
