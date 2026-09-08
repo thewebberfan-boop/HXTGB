@@ -17671,7 +17671,10 @@ for (const id of ['tang-xian', 'wu-taiming']) {
   delete official.nativePlace;
   delete official.currentRank;
   delete official.basicInfoConfidence;
-  delete official.isCurrentServing;
+  // 不能只从机构名册删除：页面的兜底规则会按 currentUnitId 再次判定为在职。
+  // 此处明确撤销“当前在职”与当前机构归属，保留待核人物条目而不制造在任事实。
+  official.isCurrentServing = false;
+  official.currentUnitId = '';
   delete official.servingStatus;
   official.servingStatusLabel = '身份待核验';
   official.servingStatusNote = '旧库交易所归属待核验，不代表已确认在任；本次未检索到相匹配的任职证据。';
@@ -17718,6 +17721,389 @@ if (youHang) {
   }, {
     id: 'you-hang-psx-report-profile', title: 'Pakistan Stock Exchange — You Hang profile（报告第79页）', publisher: 'Pakistan Stock Exchange', url: 'https://dps.psx.com.pk/download/document/238598.pdf', sourceType: 'institution_disclosure', accessedDate: '2026-09-06', supports: ['中金所国际业务发展、办公室、股指衍生品、外汇衍生品、市场数据相关部门经历'], note: '部门岗位细分日期未披露，暂以摘要列示，不反推为连续任期。',
   }];
+}
+
+// 五家期货交易所履历补全批次（2026-09-08）。
+// 这层只做两件事：把“现任班子”与已证实人员对齐，并把每条可展示的
+// 时间线记录绑定到具体来源。它不把没有机构材料支持的旧名录成员当作在任。
+const futuresUnits = new Set(['csrc-shfe', 'csrc-dce', 'csrc-czce', 'csrc-cffex', 'csrc-gfex']);
+const unresolvedFuturesRosterIds = new Set(['tang-xian', 'wu-taiming']);
+
+for (const unit of UNITS_DATA) {
+  if (futuresUnits.has(unit.id)) {
+    unit.currentLeaderIds = (unit.currentLeaderIds || []).filter((id) => !unresolvedFuturesRosterIds.has(id));
+  }
+}
+
+// 现任记录：领导名录／任免材料分别支撑在任状态和已公开的任期起点。
+// sourceIds 供关联卡片逐段展示证据，避免把人物的其他新闻错误地当作该段任职依据。
+const futuresCareerSourceBindings: Record<string, string[]> = {
+  'tian-xiangyang-verified-current': ['tian-xiangyang-csrc-shfe-roster-20260906', 'tian-xiangyang-shfe-pay-2022'],
+  'lu-dongsheng-verified-current': ['lu-dongsheng-csrc-shfe-roster-20260906', 'lu-dongsheng-shfe-appointment-20241212'],
+  'lu-dongsheng-czce-verified-end': ['lu-dongsheng-shfe-appointment-20241212'],
+  'han-shaoping-verified-current': ['han-shaoping-csrc-shfe-roster-20260906'],
+  'li-xian-verified-current': ['li-xian-csrc-shfe-roster-20260906', 'li-xian-shfe-pay-2022'],
+  'li-hui-shfe-verified-current': ['li-hui-shfe-csrc-shfe-roster-20260906', 'li-hui-shfe-pay-2022'],
+  'lu-feng-verified-current': ['lu-feng-csrc-shfe-roster-20260906', 'lu-feng-shfe-pay-2022'],
+  'zhang-ming-verified-current': ['zhang-ming-csrc-shfe-roster-20260906', 'zhang-ming-shfe-pay-2022'],
+  'yang-ke-verified-current': ['yang-ke-csrc-shfe-roster-20260906'],
+  'xiong-jun-verified-current': ['xiong-jun-csrc-dce-roster-20260906', 'xiong-jun-dce-appointment-20251111'],
+  'xiong-jun-czce-verified-end': ['xiong-jun-dce-appointment-20251111', 'xiong-jun-czce-history-2019'],
+  'xiong-jun-czce-gm-2016': ['xiong-jun-czce-history-2019'],
+  'yan-shaoming-verified-current': ['yan-shaoming-csrc-dce-roster-20260906', 'yan-shaoming-dce-appointment-20220217'],
+  'feng-qiang-verified-current': ['feng-qiang-csrc-dce-roster-20260906'],
+  'wang-yufei-verified-current': ['wang-yufei-csrc-dce-roster-20260906'],
+  'cheng-weidong-verified-current': ['cheng-weidong-csrc-dce-roster-20260906'],
+  'yu-li-verified-current': ['yu-li-csrc-dce-roster-20260906'],
+  'zhang-qing-verified-current': ['zhang-qing-csrc-dce-roster-20260906'],
+  'zhu-lihong-verified-current': ['zhu-lihong-csrc-czce-roster-20260906', 'zhu-lihong-czce-appointment-20251111'],
+  'zhu-lihong-gfex-prior': ['zhu-lihong-cs-2022', 'zhu-lihong-gfex-exit-2025'],
+  'he-jun-verified-current': ['he-jun-csrc-czce-roster-20260906', 'he-jun-czce-appointment-20241212'],
+  'he-jun-shfe-verified-2017-2024': ['he-jun-shfe-pay-2022', 'he-jun-czce-appointment-20241212'],
+  'wang-xiaoming-czce-verified-current': ['wang-xiaoming-czce-csrc-czce-roster-20260906'],
+  'wang-yamei-verified-current': ['wang-yamei-csrc-czce-roster-20260906'],
+  'guo-shuhua-verified-current': ['guo-shuhua-csrc-czce-roster-20260906'],
+  'kang-le-verified-current': ['kang-le-csrc-czce-roster-20260906'],
+  'sun-yongwen-verified-current': ['sun-yongwen-csrc-czce-roster-20260906'],
+  'he-qingwen-hunan-evidence': ['he-qingwen-futures-recheck-0'],
+  'he-qingwen-latest-supported-role': ['he-qingwen-futures-recheck-0', 'he-qingwen-futures-recheck-1'],
+  'zhang-xiaogang-latest-supported-role': ['zhang-xiaogang-futures-recheck-1', 'zhang-xiaogang-futures-recheck-2'],
+  'liu-shaotong-latest-supported-role': ['liu-shaotong-futures-recheck-2'],
+  'cao-yue-latest-supported-role': ['cao-yue-futures-recheck-1', 'cao-yue-futures-recheck-2'],
+  'sheng-chunhong-latest-supported-role': ['sheng-chunhong-futures-recheck-0', 'sheng-chunhong-futures-recheck-2'],
+  'cai-xianghui-latest-supported-role': ['cai-xianghui-futures-recheck-1'],
+  'you-hang-latest-supported-role': ['you-hang-futures-recheck-0', 'you-hang-futures-recheck-1'],
+  'you-hang-psx-dmd': ['you-hang-psx-board-profile'],
+  'cai-jianchun-sse-rechecked': ['cai-jianchun-futures-recheck-0'],
+  'gao-weibing-latest-supported-role': ['gao-weibing-futures-recheck-0', 'gao-weibing-futures-recheck-2'],
+  'xing-xiangfei-latest-supported-role': ['xing-xiangfei-futures-recheck-0', 'xing-xiangfei-futures-recheck-1'],
+  'cao-zihai-latest-supported-role': ['cao-zihai-futures-recheck-1', 'cao-zihai-futures-recheck-2'],
+  'leng-bing-latest-supported-role': ['leng-bing-futures-recheck-0', 'leng-bing-futures-recheck-2'],
+  'li-muchun-latest-supported-role': ['li-muchun-futures-recheck-1', 'li-muchun-futures-recheck-2'],
+  'li-zhen-latest-supported-role': ['li-zhen-futures-recheck-0', 'li-zhen-futures-recheck-1'],
+};
+
+for (const official of OFFICIALS_DATA) {
+  if (!futuresUnits.has(official.currentUnitId || '')) continue;
+  for (const record of official.careerHistory) {
+    const sourceIds = futuresCareerSourceBindings[record.id];
+    if (sourceIds) record.sourceIds = sourceIds;
+  }
+}
+
+// 中金所官网的近期会议材料直接确认何庆文、曹越的职务；作为较早人物新闻的
+// 交叉确认，不据此虚构其他成员的完整班子名单或任职起始日。
+const cffexRoleRechecks: Array<[string, InformationSource]> = [
+  ['he-qingwen', {
+    id: 'he-qingwen-cffex-risk-committee-202602', title: '中金所召开董事会风险委员会2025年度工作会议', publisher: '中国金融期货交易所', url: 'https://www.cffex.com.cn/jysdt/20260206/46830.html', sourceType: 'institution_disclosure', publishedDate: '2026-02-06', accessedDate: '2026-09-08', supports: ['2026年2月任中金所党委书记、董事长'], note: '官网会议报道，确认报道时职务；不披露任职起始时间或完整领导名册。',
+  }],
+  ['cao-yue', {
+    id: 'cao-yue-cffex-risk-committee-202602', title: '中金所召开董事会风险委员会2025年度工作会议', publisher: '中国金融期货交易所', url: 'https://www.cffex.com.cn/jysdt/20260206/46830.html', sourceType: 'institution_disclosure', publishedDate: '2026-02-06', accessedDate: '2026-09-08', supports: ['2026年2月任中金所党委委员、副总经理'], note: '官网会议报道，确认报道时职务；不披露任职起始时间或完整领导名册。',
+  }],
+];
+for (const [id, source] of cffexRoleRechecks) {
+  const official = OFFICIALS_DATA.find((item) => item.id === id);
+  if (!official || official.sources?.some((item) => item.id === source.id)) continue;
+  official.sources = [...(official.sources || []), source];
+  const currentRecord = official.careerHistory.find((item) => item.id === `${id}-latest-supported-role`);
+  if (currentRecord) currentRecord.sourceIds = [...(currentRecord.sourceIds || []), source.id];
+}
+
+// 第二轮逐人深检（上期所、大商所）。材料按“原文明确说了什么”拆分，
+// 不将一次活动的称谓倒推为精确升任日，也不把同名搜索结果并入档案。
+const futuresDeepProfilesRoundOne: Array<{
+  id: string;
+  summary: string;
+  sources: InformationSource[];
+  records?: CareerRecord[];
+  education?: EducationInfo[];
+}> = [
+  {
+    id: 'tian-xiangyang',
+    summary: '曾在中国证监会研究中心从事宏观经济、资本市场及证券市场监管政策研究；后挂任重庆市渝中区副区长，随后任职宁波证监局，2019年出任浙江证监局局长。2022年3月起任上海期货交易所党委书记、理事长。研究中心、渝中区及宁波证监局的具体任职起止时间和教育经历，现有材料不足以逐项确定。',
+    sources: [
+      { id: 'tian-xiangyang-chinanews-2007', title: '学而优则仕：从四名博士的官场人生管窥学者官员（2）', publisher: '中国新闻网', url: 'https://www.chinanews.com.cn/gn/news/2007/12-19/1108417.shtml', sourceType: 'authoritative_media', publishedDate: '2007-12-19', accessedDate: '2026-09-08', supports: ['曾在中国证监会研究中心从事宏观经济、资本市场和证券市场监管政策研究', '由证监会研究中心挂任重庆市渝中区副区长'], note: '报道不披露两段任职的完整起止日期。' },
+      { id: 'tian-xiangyang-caixin-2022-history', title: '田向阳履新上期所理事长 曹勇升任浙江局局长', publisher: '财新网', url: 'https://finance.caixin.com/m/2022-04-22/101874860.html', sourceType: 'authoritative_media', publishedDate: '2022-04-22', accessedDate: '2026-09-08', supports: ['曾任证监会研究中心、宁波证监局', '2019年出任浙江证监局局长', '2022年获任上期所党委书记、非会员理事并当选理事长'], note: '“2019年出任”仅支持年份，未据此填写月份。' },
+      { id: 'tian-xiangyang-zhejiang-csrc-2020', title: '搭建平台促自律 凝聚共识谋发展', publisher: '中国证监会浙江监管局', url: 'https://www.csrc.gov.cn/zhejiang/c100657/c1284933/content.shtml', sourceType: 'official_notice', publishedDate: '2020-04-30', accessedDate: '2026-09-08', supports: ['2020年4月任浙江证监局局长'], note: '公开活动的在任时间点，不替代任命日期。' },
+    ],
+    records: [{ id: 'tian-xiangyang-zhejiang-csrc-2019-2022', unitId: '', unitName: '中国证监会浙江监管局', position: '局长', startYear: 2019, endYear: 2022, endMonth: 3, isDerived: true, sourceIds: ['tian-xiangyang-caixin-2022-history', 'tian-xiangyang-zhejiang-csrc-2020'], sourceNote: '财新报道载明2019年出任、2022年4月履新上期所；以已公开年份和后续任职月作为区间边界，起始月份未声称已知。' }],
+  },
+  {
+    id: 'lu-dongsheng',
+    summary: '长期从事期货行业监管工作，曾任中国证监会期货部干部；2011年公开人事报道确认其任中国金融期货交易所副总经理。2019年12月已以郑州商品交易所总经理身份公开活动，2024年12月调任上海期货交易所党委副书记、总经理。早期入职时间、证监会期货部具体职务和郑商所任职起始日仍待任免材料补足。',
+    sources: [
+      { id: 'lu-dongsheng-tsinghua-alumni-profile', title: '五道口人行在期货变革前夜——访中国证券监督委员会期货部鲁东升师兄', publisher: '清华大学五道口金融学院校友资料', url: 'https://alumni.pbcsf.tsinghua.edu.cn/__local/1/E5/BB/D76FA14EBEC57B734A6422B87B7_34A92832_2AE0BC0.pdf?e=.pdf', sourceType: 'academic', accessedDate: '2026-09-08', supports: ['曾任职中国证监会期货部', '长期从事期货行业监管工作'], note: '材料未披露期货部任职年份和学历学位信息。' },
+    ],
+  },
+  {
+    id: 'han-shaoping',
+    summary: '2011年已任广东证监局副局长；2020年由上海证监局副局长调任四川证监局局长，后任证监会稽查总队党委书记、总队长，现任上期所党委副书记。公开国际交流材料披露其曾在复旦大学经济学院攻读经济学硕士（2002—2005），郑州航空工业管理学院经济学学士（1987—1991），并于2011年起就读上海交通大学上海高级金融学院EMBA；后者结业时间未获同一材料确认。',
+    sources: [
+      { id: 'han-shaoping-ntu-2012-profile', title: 'Lien Fellows Profiles 2012 — Han Shaoping', publisher: '南洋理工大学', url: 'https://www3.ntu.edu.sg/corpcomms2/Releases/FS_121017_2012ChineseLienFellowsProfiles.pdf', sourceType: 'academic', accessedDate: '2026-09-08', supports: ['2011年任广东证监局副局长', '复旦大学经济学院经济学硕士（2002—2005）', '郑州航空工业管理学院经济学学士（1987—1991）', '2011年起上海交通大学上海高级金融学院EMBA学员'], note: 'EMBA材料写作“2011—Present”，未据此填入毕业年份。' },
+      { id: 'han-shaoping-caixin-2020-transfer', title: '地方证监局空职落实 川沪粤调入新人', publisher: '财新网', url: 'https://wenews.caixin.com/2020-03-04/102023948.html', sourceType: 'authoritative_media', publishedDate: '2020-03-04', accessedDate: '2026-09-08', supports: ['由上海证监局副局长接任四川证监局局长'], note: '报道未披露上海证监局任职起点或四川局完整任期。' },
+    ],
+    education: [
+      { id: 'han-shaoping-fudan-ma', degree: '硕士', school: '复旦大学', major: '经济学', startYear: 2002, endYear: 2005, sourceIds: ['han-shaoping-ntu-2012-profile'] },
+      { id: 'han-shaoping-zhua-bachelor', degree: '学士', school: '郑州航空工业管理学院', major: '经济学', startYear: 1987, endYear: 1991, sourceIds: ['han-shaoping-ntu-2012-profile'] },
+      { id: 'han-shaoping-sjtu-aif-emba', degree: '硕士', school: '上海交通大学上海高级金融学院', major: 'EMBA', startYear: 2011, isInService: true, educationMode: '在职', sourceIds: ['han-shaoping-ntu-2012-profile'] },
+    ],
+  },
+  {
+    id: 'li-xian',
+    summary: '2018年已任湖北证监局党委委员、纪委书记；2022年11月起任上海期货交易所党委委员、纪委书记。湖北证监局任职起点、调任月份和教育经历尚未获得可定位的原始材料。',
+    sources: [{ id: 'li-xian-sac-2018', title: '2018年中国证券业协会打非宣传月健康跑武汉站活动成功举办', publisher: '中国证券业协会', url: 'https://www.sac.net.cn/xxgk/xhxx/gzdt/202512/t20251231_71082.html', sourceType: 'institution_disclosure', accessedDate: '2026-09-08', supports: ['2018年任湖北证监局党委委员、纪委书记'], note: '活动报道只证明该时间点职务。' }],
+  },
+  {
+    id: 'li-hui-shfe',
+    summary: '至少自2005年已在上海期货交易所从事研究或业务工作；2018年6月起任党委委员、副总经理。此前教育、部门任职和入所时间未获得可定位材料，未据论文署名推定学历。',
+    sources: [{ id: 'li-hui-shfe-journal-2005', title: '《今日衍生品》2005年目录', publisher: '上海期货交易所', url: 'https://www.shfe.com.cn/jrysp/26/18.pdf', sourceType: 'institution_disclosure', accessedDate: '2026-09-08', supports: ['2005年以“上海期货交易所李辉”署名发表研究文章'], note: '署名可证明当时工作机构，不足以证明具体部门、职务或入职日期。' }],
+  },
+  {
+    id: 'lu-feng',
+    summary: '2017年已任上海国际能源交易中心副总经理，2019年3月起任上海期货交易所党委委员、副总经理。能源中心具体起始任期和教育经历待原始任免或校方材料补足。',
+    sources: [{ id: 'lu-feng-cs-2017-ine', title: '2017年中国国际期货大会专题报道', publisher: '中国证券报·中证网', url: 'https://www.cs.com.cn/hyzb/2017qhdh/03/02_73352/201711/t20171127_5593339.html', sourceType: 'authoritative_media', publishedDate: '2017-11-27', accessedDate: '2026-09-08', supports: ['2017年任上海国际能源交易中心副总经理'], note: '公开会议资料，不据此确定能源中心任职起点。' }],
+  },
+  {
+    id: 'zhang-ming',
+    summary: '2014年任上海期货交易所会员服务和投资者教育部高级总监，2022年9月起任上海期货交易所副总经理。两职之间的岗位变动、教育经历及入所时间仍待可定位材料补足。',
+    sources: [{ id: 'zhang-ming-pku-2014', title: '把脉未来经济 共谋发展商机——北大光华上海校区组织参观上海期货交易所', publisher: '北京大学光华管理学院', url: 'https://www.gsm.pku.edu.cn/emba/info/1158/8852.htm', sourceType: 'academic', publishedDate: '2014-12-05', accessedDate: '2026-09-08', supports: ['2014年任上海期货交易所会员服务和投资者教育部高级总监'], note: '高校活动材料，仅支持该时间点职务。' }],
+  },
+  {
+    id: 'yang-ke',
+    summary: '2002年8月加入上海期货交易所，曾先后担任国际合作部、办公室负责人；2014年任国际合作部执行总监，后任会员服务和投资者教育部总监、会员管理部总监，现任党委委员、副总经理。中欧国际工商学院金融MBA 2013级；具体毕业年份、前述各部门轮岗月份及升任副总经理月份仍待核。',
+    sources: [{ id: 'yang-ke-cfachina-2020-bio', title: '关于举办“对话期现”系列直播培训（第七期）的通知', publisher: '中国期货业协会', url: 'https://www.cfachina.org/aboutassociation/associationannouncement/202011/t20201124_13116.html', sourceType: 'institution_disclosure', publishedDate: '2020-11-24', accessedDate: '2026-09-08', supports: ['2002年8月加入上海期货交易所', '曾任国际合作部、办公室负责人', '2020年任会员服务和投资者教育部总监'], note: '“先后担任”不拆为未披露起止时间的多段岗位。' }],
+    records: [{ id: 'yang-ke-shfe-joined-2002', unitId: 'csrc-shfe', unitName: '上海期货交易所', position: '工作人员（具体部门与初任职务未公开）', startYear: 2002, startMonth: 8, endYear: null, isCurrent: false, sourceIds: ['yang-ke-cfachina-2020-bio'], sourceNote: '中国期货业协会通知明确其2002年8月加入上期所；连续具体岗位与当前副总经理任职起始时间未完整公开。' }],
+  },
+  {
+    id: 'xiong-jun',
+    summary: '2008年已任云南证监局副局长，2011年由云南证监局副局长转任证监会期货二部副主任；2014年部门合并后任期货监管部副主任。2016年6月任郑商所党委副书记、总经理，2019年12月任党委书记、理事长，2025年11月调任大商所党委书记、理事长。教育经历尚待核。',
+    sources: [{ id: 'xiong-jun-yunnan-csrc-2008', title: '创新形式 试点投资者教育基地——云南证监局把投资者教育工作不断引向深入', publisher: '中国证监会云南监管局', url: 'https://www.csrc.gov.cn/yunnan/c105479/c1303583/content.shtml', sourceType: 'official_notice', publishedDate: '2008-03-21', accessedDate: '2026-09-08', supports: ['2008年任云南证监局副局长'], note: '活动报道仅支持该时间点职务。' }],
+  },
+  {
+    id: 'feng-qiang',
+    summary: '曾在中国人民银行人事司、中国证监会人事教育部任职；至少2011年已在中国期货市场监控中心从事统一开户系统工作，2014年已任该中心副总经理，后任大商所党委委员、副总经理。人民银行、证监会人教部及监控中心各段完整任期、教育经历仍待核。',
+    sources: [{ id: 'feng-qiang-cfachina-award-2011', title: '2011年证券期货科学技术奖获奖项目', publisher: '中国期货业协会', url: 'https://www.cfachina.org/aboutassociation/associationannouncement/201203/P020201215458521400168.pdf', sourceType: 'institution_disclosure', accessedDate: '2026-09-08', supports: ['2011年为中国期货市场监控中心统一开户系统项目主要完成人'], note: '项目署名只证明当时工作关联，不推定具体行政职务。' }],
+  },
+  {
+    id: 'wang-yufei',
+    summary: '2017年11月、2018年9月均以大商所农业品事业部总监身份公开活动，2019年8月已任副总经理，现任大商所副总经理。农业品事业部总监的任命时间、升任副总经理精确月份及教育经历待核。',
+    sources: [{ id: 'wang-yufei-syau-2017', title: '永安期货第一期人才订单班正式开班', publisher: '沈阳农业大学经济管理学院', url: 'https://jgxy.syau.edu.cn/info/1168/1636.htm', sourceType: 'academic', publishedDate: '2017-11-14', accessedDate: '2026-09-08', supports: ['2017年任大连商品交易所农业品事业部总监'], note: '高校活动材料只证明当时职务。' }],
+  },
+  {
+    id: 'cheng-weidong',
+    summary: '2019年已任大商所产业拓展部总监，2021年已任副总经理，现任党委委员、副总经理。产业拓展部任职起始日、升任副总经理准确月份及教育经历尚待原始材料。',
+    sources: [{ id: 'cheng-weidong-sina-2019', title: '程伟东：坚持探索创新 大商所持续服务产业发展', publisher: '新浪财经', url: 'https://finance.sina.cn/futuremarket/qszx/2019-11-07/detail-iicezuev7839959.d.html', sourceType: 'authoritative_media', publishedDate: '2019-11-07', accessedDate: '2026-09-08', supports: ['2019年任大连商品交易所产业拓展部总监'], note: '报道不披露该职务起始日期。' }],
+  },
+  {
+    id: 'yu-li',
+    summary: '2009年作为大连商品交易所博士后管理人员获辽宁省表彰；2023年公开活动确认其任大商所党委委员、副总经理。中间具体部门、任职区间和教育经历尚待原始材料。',
+    sources: [{ id: 'yu-li-liaoning-2009', title: '关于表彰辽宁省优秀博士后和管理人员的决定', publisher: '辽宁省人力资源和社会保障厅', url: 'https://rst.ln.gov.cn/rst/zxzx/gsgg/44ECFD46D12F4BC998DABF73F7F32E54/index.shtml', sourceType: 'official_notice', publishedDate: '2010-02-10', accessedDate: '2026-09-08', supports: ['2009年为大连商品交易所博士后管理人员'], note: '表彰信息不等同于博士后研究经历或学历，未据此填写学位。' }],
+  },
+];
+
+for (const entry of futuresDeepProfilesRoundOne) {
+  const official = OFFICIALS_DATA.find((item) => item.id === entry.id);
+  if (!official) continue;
+  official.sources = [...(official.sources || []), ...entry.sources.filter((source) => !official.sources?.some((item) => item.id === source.id))];
+  if (entry.records) {
+    official.careerHistory = [...entry.records.filter((record) => !official.careerHistory.some((item) => item.id === record.id)), ...official.careerHistory];
+  }
+  if (entry.education) official.education = entry.education;
+  official.bioSummary = entry.summary;
+  official.profileReview = { status: 'partially_verified', reviewedAt: '2026-09-08', note: '已完成第二轮逐人检索并补入可定位材料；未被原文明确披露的任期、教育或早期岗位继续留空。' };
+}
+
+const futuresDeepProfilesRoundTwo: Array<{
+  id: string;
+  summary: string;
+  sources: InformationSource[];
+  records?: CareerRecord[];
+}> = [
+  {
+    id: 'zhu-lihong',
+    summary: '经济学博士。曾任大连商品交易所研究部副部长、总监、高级总监、规划研究部部长、会员服务部／期货学院总监；2011年任大商所党委委员、副总经理，后参与广州期货交易所筹备并任党委副书记、副董事长、总经理，2025年11月调任郑商所党委书记、理事长。前述大商所内部岗位为“先后任”，公开年报未披露各段起止日期。',
+    sources: [{ id: 'zhu-lihong-cfachina-annual-2013', title: '2013中国期货业协会年报——协会领导简介', publisher: '中国期货业协会', url: 'https://eng.cfachina.org/nb/201404/P020210804598690848374.pdf', sourceType: 'institution_disclosure', accessedDate: '2026-09-08', supports: ['经济学博士', '历任大商所研究部副部长、总监、高级总监、规划研究部部长、会员服务部／期货学院总监', '2013年任大商所党委委员、副总经理'], note: '年报未披露博士院校、专业和各内部岗位起止时间。' }],
+  },
+  {
+    id: 'he-jun',
+    summary: '曾任中国金融期货交易所总经理助理，2017年2月起任上海期货交易所副总经理，2024年12月任郑州商品交易所党委副书记、总经理。中金所任职起止时间、教育经历及更早岗位仍待原始材料。',
+    sources: [{ id: 'he-jun-caixin-2017-cffex', title: '上期所调整管理层 姜岩出任理事长', publisher: '财新网', url: 'https://finance.caixin.com/2017-02-10/101054097.html', sourceType: 'authoritative_media', publishedDate: '2017-02-10', accessedDate: '2026-09-08', supports: ['由中国金融期货交易所总经理助理任上海期货交易所副总经理'], note: '报道与上期所负责人薪酬披露交叉确认其2017年任上期所副总经理。' }],
+  },
+  {
+    id: 'wang-xiaoming-czce',
+    summary: '至少自2003年已在郑州商品交易所工作；2016年任新闻信息部负责人，2017年11月已任副总经理，现任党委委员、副总经理。入所具体月份、此前部门及教育经历尚待核。',
+    sources: [
+      { id: 'wang-xiaoming-cfachina-2003-list', title: '第一批申请换领执业证书的人员名单', publisher: '中国期货业协会', url: 'https://www.cfachina.org/aboutassociation/associationannouncement/200306/t20030605_11511.html', sourceType: 'institution_disclosure', publishedDate: '2003-06-05', accessedDate: '2026-09-08', supports: ['2003年列入郑州商品交易所申请换领执业证书人员名单'], note: '名单只证明当时在郑商所工作，不披露具体部门和入职日期。' },
+      { id: 'wang-xiaoming-czce-forum-2019', title: '郑州商品交易所专场活动议程', publisher: '郑州商品交易所', url: 'https://www.myevent.com.cn/cidf/images/cidf2019/%E9%83%91%E5%B7%9E%E5%95%86%E5%93%81%E4%BA%A4%E6%98%93%E6%89%80%E4%B8%93%E5%9C%BA%E6%B4%BB%E5%8A%A8.pdf', sourceType: 'institution_disclosure', accessedDate: '2026-09-08', supports: ['2019年任郑州商品交易所副总经理'], note: '会议议程确认活动时身份，不替代任命日期。' },
+    ],
+    records: [{ id: 'wang-xiaoming-czce-employed-2003', unitId: 'csrc-czce', unitName: '郑州商品交易所', position: '工作人员（具体部门未公开）', startYear: 2003, endYear: null, isCurrent: false, sourceIds: ['wang-xiaoming-cfachina-2003-list'], sourceNote: '执业证书换领名单可确认2003年已在郑商所；不据此填写入所月份或早期部门。' }],
+  },
+  {
+    id: 'wang-yamei',
+    summary: '至少自2002年任郑州商品交易所财务部负责人，2003年列入郑商所申请换领执业证书人员名单，2021年已任副总经理，现任党委委员、副总经理。财务部之外的历任岗位、升任日期和教育经历待核。',
+    sources: [
+      { id: 'wang-yamei-czce-annual-2002', title: '郑州商品交易所2002年年报', publisher: '郑州商品交易所', url: 'https://www.czce.com.cn/cn/administrator/AdminArticle/editor/UploadWord/2004923162739642.pdf', sourceType: 'institution_disclosure', accessedDate: '2026-09-08', supports: ['2002年任郑州商品交易所财务部负责人'], note: '年报只说明该年度组织架构。' },
+      { id: 'wang-yamei-cfachina-2003-list', title: '第一批申请换领执业证书的人员名单', publisher: '中国期货业协会', url: 'https://www.cfachina.org/aboutassociation/associationannouncement/200306/t20030605_11511.html', sourceType: 'institution_disclosure', publishedDate: '2003-06-05', accessedDate: '2026-09-08', supports: ['2003年列入郑州商品交易所申请换领执业证书人员名单'], note: '名单不披露入所日期。' },
+    ],
+  },
+  {
+    id: 'guo-shuhua',
+    summary: '至少自2003年已在郑州商品交易所工作；2016年任非农产品部负责人，2017年、2020年仍任非农产品部总监，后任副总经理，现任党委委员、副总经理。入所时间、部门轮岗和升任副总经理日期仍待核。',
+    sources: [
+      { id: 'guo-shuhua-cfachina-2003-list', title: '第一批申请换领执业证书的人员名单', publisher: '中国期货业协会', url: 'https://www.cfachina.org/aboutassociation/associationannouncement/200306/t20030605_11511.html', sourceType: 'institution_disclosure', publishedDate: '2003-06-05', accessedDate: '2026-09-08', supports: ['2003年列入郑州商品交易所申请换领执业证书人员名单'], note: '名单不披露具体部门。' },
+      { id: 'guo-shuhua-bwu-2017', title: '北京物资学院协办中国金融衍生品人才发展高峰论坛', publisher: '北京物资学院经济学院', url: 'https://jjxy.bwu.edu.cn/info/1072/5890.htm', sourceType: 'academic', accessedDate: '2026-09-08', supports: ['2017年任郑州商品交易所非农产品部总监'], note: '高校活动材料，仅支持该时间点职务。' },
+    ],
+    records: [{ id: 'guo-shuhua-czce-employed-2003', unitId: 'csrc-czce', unitName: '郑州商品交易所', position: '工作人员（具体部门未公开）', startYear: 2003, endYear: null, isCurrent: false, sourceIds: ['guo-shuhua-cfachina-2003-list'], sourceNote: '执业证书换领名单确认2003年已在郑商所，不推定入所日期。' }],
+  },
+  {
+    id: 'sun-yongwen',
+    summary: '2021年12月已任新疆证监局党委委员、纪委书记；2026年7月公开活动确认其任郑州商品交易所党委委员、纪委书记。新疆证监局任职起始、调任郑商所时间及教育经历尚待任免原文。',
+    sources: [],
+  },
+  {
+    id: 'kang-le',
+    summary: '2016年主持郑州商品交易所技术规划与开发部工作；2018年任郑州易盛信息技术有限公司副总经理，并以清华大学毕业生身份公开发言；后任郑商所党委委员、副总经理。清华大学学位、专业、入学毕业年份及升任交易所副总经理日期尚待校方或任免材料。',
+    sources: [{ id: 'kang-le-czce-annual-2016', title: '郑州商品交易所党委责任年度报告（组织架构）', publisher: '郑州商品交易所', url: 'https://www.czce.com.cn/cn/rootimages/2016/08/26/1461145159746390.pdf', sourceType: 'institution_disclosure', publishedDate: '2016-08-26', accessedDate: '2026-09-08', supports: ['2016年主持郑州商品交易所技术规划与开发部工作'], note: '年度组织架构仅反映该年度。' }],
+  },
+];
+
+for (const entry of futuresDeepProfilesRoundTwo) {
+  const official = OFFICIALS_DATA.find((item) => item.id === entry.id);
+  if (!official) continue;
+  official.sources = [...(official.sources || []), ...entry.sources.filter((source) => !official.sources?.some((item) => item.id === source.id))];
+  if (entry.records) official.careerHistory = [...entry.records.filter((record) => !official.careerHistory.some((item) => item.id === record.id)), ...official.careerHistory];
+  official.bioSummary = entry.summary;
+  official.profileReview = { status: 'partially_verified', reviewedAt: '2026-09-08', note: '已完成第二轮逐人检索并补入可定位材料；未被原文明确披露的任期、教育或早期岗位继续留空。' };
+}
+
+const futuresDeepProfilesRoundThree: Array<{
+  id: string;
+  summary: string;
+  sources: InformationSource[];
+  records?: CareerRecord[];
+}> = [
+  {
+    id: 'he-qingwen',
+    summary: '1967年1月出生。长期供职证监系统，先后在河南、湖北、江西、湖南证监局任职，未见其在证监会机关部门履职的公开材料；2017年1月已任江西证监局局长，2018年11月至2021年6月任湖南证监局党委书记、局长，后任中金所党委书记、董事长。教育经历尚待官方人物材料。',
+    sources: [
+      { id: 'he-qingwen-caixin-2021-background', title: '中金所新任董事长敲定 牵动多名局级干部变动', publisher: '财新网', url: 'https://wenews.caixin.com/2021-05-12/102024524.html', sourceType: 'authoritative_media', publishedDate: '2021-05-12', accessedDate: '2026-09-08', supports: ['1967年1月出生', '曾在河南、湖北、江西和湖南证监局任职', '未曾在证监会机关部门履职'], note: '跨省局经历未披露逐段起止时间。' },
+      { id: 'he-qingwen-jiangxi-csrc-2017', title: '江西证监局顺利组织实施2016年度辖区证券期货业信息安全联合应急演练', publisher: '中国证监会江西监管局', url: 'https://www.csrc.gov.cn/jiangxi/c100771/c1288397/content.shtml', sourceType: 'official_notice', publishedDate: '2017-01-12', accessedDate: '2026-09-08', supports: ['2017年1月任江西证监局局长'], note: '公开工作报道证明当时职务，不替代任命日。' },
+    ],
+  },
+  {
+    id: 'zhang-xiaogang',
+    summary: '1993年进入期货行业，1993—1998年任上海金属交易所信息部分析员；后在上海期货交易所历任发展研究中心高级研究员、战略规划部总监、金融期货事业部总监。2006年加入中金所任研发部总监，2015年10月起任副总经理，后任党委副书记、总经理。教育经历尚未获得可靠的同名校友或学位材料。',
+    sources: [
+      { id: 'zhang-xiaogang-hft-2010-bio', title: '张晓刚：股指期货可以降低指数跟踪误差', publisher: '海富通基金（转载机构投资）', url: 'https://www.hftfund.com/contents/2010/8/27-1667a735ce034987a054b9ff6e0dd13b.html', sourceType: 'authoritative_media', publishedDate: '2010-08-27', accessedDate: '2026-09-08', supports: ['1993—1998年任上海金属交易所信息部分析员', '2002年起任上海期货交易所战略规划部总监', '2006年加入中金所'], note: '与高校人物简介交叉核验；未用其推定学历。' },
+      { id: 'zhang-xiaogang-usst-2019-bio', title: '学术报告：我国资产管理行业与金融衍生品市场发展', publisher: '上海理工大学管理学院', url: 'https://bs.usst.edu.cn/2019/1110/c6310a196351/page.htm', sourceType: 'academic', publishedDate: '2019-11-10', accessedDate: '2026-09-08', supports: ['历任上期所发展研究中心高级研究员、战略规划部总监、金融期货事业部总监', '2006年任中金所研发部总监', '2015年10月起任中金所副总经理'], note: '高校报告人简介，未披露各早期岗位的完整起止时间。' },
+    ],
+    records: [
+      { id: 'zhang-xiaogang-sme-1993-1998', unitId: '', unitName: '上海金属交易所', department: '信息部', position: '分析员', startYear: 1993, endYear: 1998, sourceIds: ['zhang-xiaogang-hft-2010-bio'], sourceNote: '人物简介明确载明1993—1998年任期。' },
+      { id: 'zhang-xiaogang-cffex-vgm-2015', unitId: 'csrc-cffex', unitName: '中国金融期货交易所', position: '副总经理', startYear: 2015, startMonth: 10, endYear: null, isCurrent: false, sourceIds: ['zhang-xiaogang-usst-2019-bio'], sourceNote: '高校简介明确载明2015年10月起任副总经理；后续升任总经理的月份尚未填入。' },
+    ],
+  },
+  {
+    id: 'liu-shaotong',
+    summary: '至少2014年至2020年任上海证券交易所副总经理，2025年5月已任中金所副总经理。上交所早期部门经历、调任中金所的任免月份和教育经历尚待核。',
+    sources: [{ id: 'liu-shaotong-sse-2018', title: '上交所与泛欧交易所成功举办合作谅解备忘录签署仪式', publisher: '上海证券交易所', url: 'https://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20181016_4656981.shtml', sourceType: 'institution_disclosure', publishedDate: '2018-10-16', accessedDate: '2026-09-08', supports: ['2018年任上海证券交易所副总经理'], note: '官网活动报道，不替代任命日期。' }],
+  },
+  {
+    id: 'cao-yue',
+    summary: '至少自上海期货交易所法律事务部高级总监时期从事期货法制研究；2015年任上期所总经理助理，2017年2月不再担任该职，后任中金所党委委员、副总经理。上期所法律事务部任职起止、调任中金所月份及教育经历尚待核。',
+    sources: [
+      { id: 'cao-yue-shfe-pay-2015', title: '上海期货交易所负责人2015年度薪酬情况', publisher: '上海期货交易所', url: 'https://www.shfe.com.cn/about/introduce/informaton/201606/t20160628_791682.html', sourceType: 'institution_disclosure', publishedDate: '2016-06-28', accessedDate: '2026-09-08', supports: ['2015年任上海期货交易所总经理助理'], note: '薪酬披露确认2015年度任职状态，未披露任命起始日。' },
+      { id: 'cao-yue-shfe-legal-affairs-paper', title: '股指期货上市的法律问题研究', publisher: '上海期货交易所', url: 'https://www.shfe.com.cn/jrysp/19/7.pdf', sourceType: 'institution_disclosure', accessedDate: '2026-09-08', supports: ['曾任上海期货交易所法律事务部高级总监'], note: '论文署名未标注发表年份；不将其转换为精确任期。' },
+    ],
+  },
+  {
+    id: 'sheng-chunhong',
+    summary: '2023年3月已任中金所副总经理，2025年、2026年公开机构活动确认其党委委员、副总经理。此前部门经历、教育经历和任职起始月份尚待原始材料。',
+    sources: [{ id: 'sheng-chunhong-chinanews-2023', title: '资本市场服务长三角上市公司绿色高质量发展走进宁波专场举行', publisher: '中国新闻网', url: 'https://www.chinanews.com.cn/cj/2023/03-17/9973552.shtml', sourceType: 'authoritative_media', publishedDate: '2023-03-17', accessedDate: '2026-09-08', supports: ['2023年3月任中国金融期货交易所副总经理'], note: '活动报道仅支持当时职务。' }],
+  },
+  {
+    id: 'cai-xianghui',
+    summary: '曾在中金所研发部、投资者教育中心、业务发展部任职；研究材料显示其在复旦大学经济学院攻读博士阶段时供职中金所研发部，2021年任业务发展部总经理、总监，后任党委委员、副总经理。博士学位是否取得、专业方向、学习时间及各部门任职区间均待学位库或校方材料确认。',
+    sources: [
+      { id: 'cai-xianghui-szse-paper-profile', title: '境外市场客户交易信息披露经验的借鉴与思考', publisher: '深圳证券交易所研究资料', url: 'https://www.szse.cn/aboutus/research/secuities/documents/P020180328491983498094.pdf', sourceType: 'academic', accessedDate: '2026-09-08', supports: ['曾为复旦大学经济学院博士生', '当时供职中国金融期货交易所研发部'], note: '“博士生”不是“博士学位”，不据此录入已获博士学历。' },
+      { id: 'cai-xianghui-shanghai-finance-2021', title: '上海金融系统优秀共产党员、优秀党务工作者、先进基层党组织拟表彰名单', publisher: '中共上海市委金融委员会办公室', url: 'https://jrj.sh.gov.cn/zwdt-gg/20210624/51bfac67d7fd4cb5920d6826016b70b2.html', sourceType: 'official_notice', publishedDate: '2021-06-24', accessedDate: '2026-09-08', supports: ['2021年任中金所业务发展部总经理、总监'], note: '表彰公示列示当时职务。' },
+    ],
+  },
+  {
+    id: 'you-hang',
+    summary: '曾任中金所国际合作部职务、驻巴基斯坦首席代表；2017年8月至2018年8月任巴基斯坦证券交易所副总经理，后任中金所党委委员、副总经理。获得芝加哥大学公共政策硕士（金融方向）及工学学士；学士院校英文披露待中文校名交叉核验。',
+    sources: [{ id: 'you-hang-shobserver-2018-psx', title: '新考卷，怎么答？《瞭望》推出专题报道“上海奋楫高质量发展”', publisher: '上观新闻', url: 'https://www.shobserver.cn/wx/detail.do?id=98921', sourceType: 'authoritative_media', publishedDate: '2018-03-25', accessedDate: '2026-09-08', supports: ['受中金所委派赴巴基斯坦证券交易所', '2017年8月任巴交所副总经理'], note: '与巴交所官网董事简介的2017年8月至2018年8月任期交叉核验。' }],
+  },
+  {
+    id: 'cai-jianchun',
+    summary: '2001年4月起在证监会上市公司监管部先后任配股监管二处处长、信息披露处调研员、处长；2004年5月起先后任河北证监局党委委员、副局长、上市公司监管部副主任、浙江证监局党委委员、副局长；2015年4月起先后任公司债券监管部主任、上市公司监管部主任。2020年6月至2026年7月任上交所党委副书记、总经理，2026年赴中金所工作并列为董事。中金所党委班子身份尚未获证实。',
+    sources: [],
+  },
+];
+
+for (const entry of futuresDeepProfilesRoundThree) {
+  const official = OFFICIALS_DATA.find((item) => item.id === entry.id);
+  if (!official) continue;
+  official.sources = [...(official.sources || []), ...entry.sources.filter((source) => !official.sources?.some((item) => item.id === source.id))];
+  if (entry.records) official.careerHistory = [...entry.records.filter((record) => !official.careerHistory.some((item) => item.id === record.id)), ...official.careerHistory];
+  official.bioSummary = entry.summary;
+  official.profileReview = { status: 'partially_verified', reviewedAt: '2026-09-08', note: '已完成第二轮逐人检索并补入可定位材料；未被原文明确披露的任期、教育或早期岗位继续留空。' };
+}
+
+const futuresDeepProfilesRoundFour: Array<{
+  id: string;
+  summary: string;
+  sources: InformationSource[];
+  records?: CareerRecord[];
+}> = [
+  {
+    id: 'gao-weibing',
+    summary: '2012年任中国证监会人事教育部主任；后任人事教育部主任、一级巡视员，2023年11月调任广州期货交易所党委书记、董事长。证监会此前岗位、教育经历与广期所正式任命日仍待原始材料补足。',
+    sources: [{ id: 'gao-weibing-cnfin-2012', title: '中国资本市场学院成立', publisher: '新华财经', url: 'https://www.cnfin.com/stock-xh08/a/20121204/1077422.shtml', sourceType: 'authoritative_media', publishedDate: '2012-12-04', accessedDate: '2026-09-08', supports: ['2012年任中国证监会人事教育部主任'], note: '活动报道仅确认报道时职务。' }],
+  },
+  {
+    id: 'xing-xiangfei',
+    summary: '曾任郑州易盛信息技术有限公司总经理，至少2019年至2022年任郑州商品交易所副总经理；后任中国期货市场监控中心党委负责人，2025年11月任广州期货交易所党委副书记、副董事长、总经理。易盛任职起止、监控中心任职时间与教育经历待核。',
+    sources: [
+      { id: 'xing-xiangfei-esunny-2011', title: '中投信成为郑州商品交易所之海外市场行情代理', publisher: '中国投资信息有限公司', url: 'https://www.ciis.com.hk/hongkong/sc/doc/2018/03/21/365.shtml', sourceType: 'institution_disclosure', publishedDate: '2011-11-11', accessedDate: '2026-09-08', supports: ['2011年任郑州易盛信息技术有限公司总经理'], note: '公告确认签约时职务，不披露就任时间。' },
+      { id: 'xing-xiangfei-esunny-2019', title: '郑州商品交易所和中国金融期货交易所技术讲座暨2019届校园招聘宣讲会', publisher: '郑州易盛信息技术有限公司', url: 'https://www.esunny.com.cn/about/news/detail/2540', sourceType: 'institution_disclosure', accessedDate: '2026-09-08', supports: ['2019年任郑州商品交易所副总经理'], note: '活动报道仅确认当时职务。' },
+    ],
+  },
+  {
+    id: 'cao-zihai',
+    summary: '2019年至少任广东证监局副局长；2020年参与广州期货交易所筹备，2021年已任广期所副总经理，2022年已任党委委员、副总经理。广东证监局任职起始、筹备组具体职责和教育经历尚待核。',
+    sources: [
+      { id: 'cao-zihai-gd-association-2019', title: '2019年中国证券业协会打非宣传月健康跑（广州站）活动', publisher: '广东证券期货业协会', url: 'https://www.gdcm.org.cn/gdcm/MoreList.aspx?ItemID=384&ParentId=117', sourceType: 'institution_disclosure', publishedDate: '2019-12-17', accessedDate: '2026-09-08', supports: ['2019年任广东证监局副局长'], note: '协会图片新闻确认活动时职务。' },
+      { id: 'cao-zihai-gd-association-2022', title: '推进广东碳市场建设宣传活动成功举办', publisher: '广东证券期货业协会', url: 'https://www.gdcm.org.cn/xhxx/377/20081008102253816.html', sourceType: 'institution_disclosure', publishedDate: '2022-11-29', accessedDate: '2026-09-08', supports: ['2022年任广州期货交易所党委委员、副总经理'], note: '活动报道确认当时职务。' },
+    ],
+  },
+  {
+    id: 'leng-bing',
+    summary: '2022年9月、12月已任广州期货交易所副总经理／党委委员、副总经理，2026年5月仍以党委委员、副总经理身份公开活动。早期机构、教育经历及任职起始月份未获可定位材料。',
+    sources: [{ id: 'leng-bing-gd-association-2022', title: '我会于11月22日顺利开展广州期货交易所调研交流活动', publisher: '广东证券期货业协会', url: 'https://www.gdcm.org.cn/img/377/20081008102255140.html', sourceType: 'institution_disclosure', accessedDate: '2026-09-08', supports: ['2022年11月任广州期货交易所副总经理'], note: '协会活动报道，仅确认时间点职务。' }],
+  },
+  {
+    id: 'li-muchun',
+    summary: '至少2012年任中金所结算部副总监，2013年任国债小组组长、高级副总监，2016年至2019年任债券事业部总监，2022年公开材料称其为中金所衍生品二部、三部总监，后任广州期货交易所党委委员、副总经理。教育经历尚待校方或学位材料。',
+    sources: [
+      { id: 'li-muchun-people-2012', title: '李慕春：过桥账户可解决跨市场国债期货交割', publisher: '人民网（来源证券时报）', url: 'https://finance.people.com.cn/n/2012/1203/c70846-19771218.html', sourceType: 'authoritative_media', publishedDate: '2012-12-03', accessedDate: '2026-09-08', supports: ['2012年任中国金融期货交易所结算部副总监'], note: '公开论坛报道，只证明当时职务。' },
+      { id: 'li-muchun-fisf-2016', title: '复旦大学泛海国际金融学院—中国金融期货交易所联合研讨会成功举办', publisher: '复旦大学国际金融学院', url: 'https://fisf.fudan.edu.cn/show-79-3869.html', sourceType: 'academic', accessedDate: '2026-09-08', supports: ['2016年任中国金融期货交易所债券事业部总监'], note: '高校研讨会材料，仅确认当时职务。' },
+      { id: 'li-muchun-ccnew-2022', title: '中原证券获中金所2022年度优秀交易团队奖', publisher: '中原证券', url: 'https://www.ccnew.com/main/a/20230224/1918822.shtml', sourceType: 'institution_disclosure', accessedDate: '2026-09-08', supports: ['2022年任中金所衍生品二部、三部总监'], note: '机构新闻确认活动时部门职务。' },
+    ],
+  },
+  {
+    id: 'li-zhen',
+    summary: '2021年已任广州期货交易所副总经理，2025年仍以副总经理身份参加金融科技大会。此前工作机构、教育经历和广期所任职起始日期尚待核。',
+    sources: [{ id: 'li-zhen-guangxi-2021', title: '广西与期货交易所举办期现结合培训会', publisher: '广西壮族自治区地方金融监督管理局（转载材料）', url: 'https://edu.sxslqh.com/uploadfiles/2021/10/20211021095236427.pdf', sourceType: 'institution_disclosure', accessedDate: '2026-09-08', supports: ['2021年任广州期货交易所副总经理'], note: '材料为活动报道，不替代任命日期。' }],
+  },
+];
+
+for (const entry of futuresDeepProfilesRoundFour) {
+  const official = OFFICIALS_DATA.find((item) => item.id === entry.id);
+  if (!official) continue;
+  official.sources = [...(official.sources || []), ...entry.sources.filter((source) => !official.sources?.some((item) => item.id === source.id))];
+  if (entry.records) official.careerHistory = [...entry.records.filter((record) => !official.careerHistory.some((item) => item.id === record.id)), ...official.careerHistory];
+  official.bioSummary = entry.summary;
+  official.profileReview = { status: 'partially_verified', reviewedAt: '2026-09-08', note: '已完成第二轮逐人检索并补入可定位材料；未被原文明确披露的任期、教育或早期岗位继续留空。' };
 }
 
 export const OFFICIAL_COLORS = [
