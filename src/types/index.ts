@@ -53,7 +53,33 @@ export interface ProfileReview {
   note?: string;
 }
 
+/** 精度由实际提供的字段决定；未知月份／日期不补值。 */
+export interface PartialDate {
+  year: number;
+  month?: number;
+  day?: number;
+}
+
+export interface FieldEvidence {
+  status: 'needs_review' | 'verified' | 'conflicted' | 'rejected';
+  basis: 'direct' | 'observation' | 'derived';
+  sourceIds: string[];
+  reviewedAt?: string;
+  note?: string;
+}
+
+export type CareerEvidenceField = 'unitId' | 'recordKind' | 'unitName' | 'department' | 'position' | 'rank'
+  | 'startYear' | 'startMonth' | 'startDay' | 'endYear' | 'endMonth' | 'endDay'
+  | 'observedAt' | 'tenureStatus' | 'confirmedAsOf';
+export type EducationEvidenceField = 'school' | 'degree' | 'degreeStatus' | 'educationLevel' | 'studyStatus'
+  | 'major' | 'startYear' | 'endYear' | 'graduationYear' | 'educationMode' | 'isInService';
+
 export interface CareerRecord {
+  recordKind?: 'tenure' | 'observation'; // 未填为旧任期记录；观察点不代表连续任期
+  tenureStatus?: 'current' | 'historical' | 'unknown';
+  observedAt?: PartialDate; // 活动／材料实际确认任职的时点，不是发稿日或上任日
+  confirmedAsOf?: PartialDate; // 现任状态的证据截止时间，不自动延长到系统今天
+  fieldEvidence?: Partial<Record<CareerEvidenceField, FieldEvidence>>;
   sourceIds?: string[]; // 本段事实对应 Official.sources 的 ID
   id: string;
   unitId: string; // 空字符串表示外部历史机构，避免错误链接到站内其他机构页
@@ -63,8 +89,10 @@ export interface CareerRecord {
   rank?: UnitLevel;
   startYear?: number;
   startMonth?: number;
-  endYear: number | null; // null 表示至今
+  startDay?: number;
+  endYear?: number | null; // undefined 为未知；null 仅兼容旧“至今”，新记录使用 tenureStatus
   endMonth?: number | null;
+  endDay?: number;
   isCurrent?: boolean;
   isDerived?: boolean; // 是否属于公开新闻/会议报道推导反推履历
   sourceNote?: string; // 推导来源或佐证说明
@@ -75,8 +103,12 @@ export interface CareerRecord {
 export interface EducationInfo {
   id?: string;
   sourceIds?: string[];
-  degree: '学士' | '硕士' | '博士' | '大专' | '其他';
-  school: string;
+  degree?: '学士' | '硕士' | '博士' | '大专' | '其他'; // 大专仅兼容旧值，新数据写 educationLevel
+  school?: string;
+  educationLevel?: '专科' | '本科' | '研究生' | '其他';
+  studyStatus?: 'studying' | 'graduated' | 'completed' | 'unknown';
+  degreeStatus?: 'awarded' | 'pursuing' | 'unknown'; // 毕业／在读与是否获得学位分别核验
+  fieldEvidence?: Partial<Record<EducationEvidenceField, FieldEvidence>>;
   major?: string;
   graduationYear?: number;
   startYear?: number; // 在校起始年份
@@ -88,16 +120,30 @@ export interface EducationInfo {
 }
 
 export type OfficialServingStatus = 
+  | 'unknown'      // 当前履职状态待核
   | 'serving'       // 现任在职
   | 'retired'       // 正常退休/到龄离休
   | 'investigated'  // 违纪审查/撤职处分/立案调查
   | 'transferred';  // 调离系统/免职转任
 
+export interface PortraitSource {
+  kind: 'official_portrait' | 'official_event_photo' | 'authoritative_news_photo';
+  title: string;
+  publisher: string;
+  url: string;
+  accessedDate: string;
+  note?: string;
+}
+
 export interface Official {
+  basicFieldEvidence?: Record<string, FieldEvidence | undefined>;
+  researchNotices?: string[];
+  researchCurrentStatusPending?: boolean;
   id: string;
   name: string;
   avatarUrl?: string;
   avatarVerified?: boolean; // false 时禁止加载历史图片资产，直接显示姓名占位头像
+  portraitSource?: PortraitSource; // 肖像单独留存来源；不得以人物履历来源替代图片来源
   gender: '男' | '女' | '未公开';
   birthYear?: number;
   birthMonth?: number;
@@ -136,6 +182,13 @@ export interface InstitutionIdentity {
 }
 
 export interface Unit {
+  rosterReview?: {
+    status: 'complete' | 'partial' | 'needs_review';
+    asOf?: PartialDate;
+    scope: string; // 党委、经营管理层、董事等口径
+    sources: InformationSource[];
+    note?: string;
+  };
   id: string;
   name: string;
   shortName: string;

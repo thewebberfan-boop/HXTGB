@@ -1,5 +1,6 @@
 import type { Official, CareerRecord, EducationInfo, InstitutionIdentity } from '../types';
 import { resolveInstitution } from './institutionIdentity';
+import { careerInterval } from './recordSemantics';
 
 // Relationships are computed from biography records, never stored person-to-person edges.
 // Exact aliases only: do not merge predecessors, subsidiaries or similarly named schools.
@@ -17,7 +18,7 @@ const usable = (value: string) => value.length >= 3 && !/未知|不详|待核|�
 const yearOK = (value: unknown): value is number => Number.isInteger(value) && Number(value) > 1800 && Number(value) < 2200;
 const monthOK = (value: number | null | undefined) => value == null || (Number.isInteger(value) && value >= 1 && value <= 12);
 
-export function normalizeSchoolName(school: string): string {
+export function normalizeSchoolName(school?: string): string {
   // Preserve campus, independent-college and predecessor names until explicitly resolved.
   return clean(school);
 }
@@ -32,8 +33,8 @@ export function checkSpaceMatch(a: CareerRecord, b: CareerRecord, identities: In
   const nameA = institutionAliases[clean(a.unitName)] || clean(a.unitName);
   const nameB = institutionAliases[clean(b.unitName)] || clean(b.unitName);
   // IDs in legacy data sometimes refer to broad parent units, so a shared ID alone is insufficient.
-  const identityA = resolveInstitution(nameA, a.startYear, a.endYear === null ? new Date().getFullYear() : a.endYear, identities);
-  const identityB = resolveInstitution(nameB, b.startYear, b.endYear === null ? new Date().getFullYear() : b.endYear, identities);
+  const identityA = resolveInstitution(nameA, a.startYear, careerInterval(a)?.end.year, identities);
+  const identityB = resolveInstitution(nameB, b.startYear, careerInterval(b)?.end.year, identities);
   if (!usable(nameA) || !usable(nameB) || !identityA || identityA !== identityB) return { isMatch: false };
   const department = clean(a.department);
   const sameDept = department && department === clean(b.department) && !/领导班子|待核|未公开/.test(department);
@@ -75,11 +76,10 @@ export function calculatePreciseOverlap(
 }
 
 function careerOverlap(a: CareerRecord, b: CareerRecord) {
-  // Legacy null means current. Explicitly historical/derived records must not become current evidence.
-  if ((a.endYear === null && a.isCurrent === false) || (b.endYear === null && b.isCurrent === false)
-    || a.isDerived || b.isDerived || !yearOK(a.startYear) || !yearOK(b.startYear)) return noOverlap();
-  return calculatePreciseOverlap(a.startYear, a.startMonth, a.endYear, a.endMonth,
-    b.startYear, b.startMonth, b.endYear, b.endMonth);
+  const ia = careerInterval(a), ib = careerInterval(b);
+  if (a.isDerived || b.isDerived || !ia || !ib) return noOverlap();
+  return calculatePreciseOverlap(ia.start.year, ia.start.month, ia.end.year, ia.end.month,
+    ib.start.year, ib.start.month, ib.end.year, ib.end.month);
 }
 
 export function getColleagueTotalIntersections(a: Official, b: Official) {

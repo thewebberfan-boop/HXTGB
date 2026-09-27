@@ -1,5 +1,13 @@
 # 中国证监会系统干部人事全景推演与组织架构知识库系统 (HXTGB)
 
+> **模型接手入口：[AGENTS.md](AGENTS.md)。** 当用户要求学习或接手项目时，按该文件读取研究规则和续接进度；用户要求继续研究时，从已保存的断点恢复。
+
+研究系统已支持[本地研究工作台](docs/research-workbench.md)：版本化事实与证据、冲突历史、推理依赖失效、候选／公开数据隔离。新研究增量走`research-data/people`；`src/data/csrcData.ts`为读取入口，旧库及覆盖逻辑保留于`legacyData.ts`。运行`npm run research:report`查看研究队列。
+
+[发布保障与故障恢复](docs/research-safety.md)说明影响预览与确认码、构建／页面版本核对、自动备份及中断恢复。使用`npm run build`和`npm start`保留版本检查；版本一致不代表事实已核验。
+
+[下一步计划](docs/research/next-steps.md)：先完成小批真实研究和覆盖对账，再固化自动检查，并按需补足异地备份与协作能力；当前研究范围待用户确定。
+
 > **CSRC Cadre Trajectory & Institutional Radar System**  
 > 面向中国资本市场监管与金融治理体系的专业级干部人事履历时空推演、组织编制全景穿梭及多维证据链评价知识图谱系统。
 
@@ -180,7 +188,11 @@ export interface CareerRecord {
 
 ## 六、干部数据收集与交叉校验标准规范 (SOP)
 
-**执行入口：[干部履历搜集与丰富操作手册](docs/biography-research-handbook.md)。后续补充、核验人物档案前请完整阅读该手册，并使用[人物研究底稿模板](docs/research/templates/person.md)记录查询、证据、冲突与交接。** 手册包含具体网站入口、搜索式、结果处理、任期表达和验收要求。
+**持续工作入口：[持续研究与模型交接说明](docs/research/continuous-work.md) → [续接索引](docs/research/progress.md)。** 后续模型先恢复批次与人物断点，按“广泛发现候选 → 逐项核验 → 反向复核与受约束推理 → 入库对账”执行，保存旧模型线索和暂未证实的信息。
+
+**数据录入约定：[研究数据语义](docs/research-data-model.md)。** 已支持历史任职未知日期、任职观察点、现任证据截至日、部分教育信息及字段级证据；上文旧接口示例仅供背景参考，以实际类型与该说明为准。
+
+**具体检索规范：[干部履历搜集与丰富操作手册](docs/biography-research-handbook.md)。后续补充、核验人物档案前请完整阅读该手册，并使用[人物研究底稿模板](docs/research/templates/person.md)与[批次模板](docs/research/templates/batch.md)记录查询、证据、冲突、推理与交接。** 手册包含具体网站入口、搜索式、结果处理、任期表达和验收要求。
 
 以下为原有工作范围与评分约定。评分不是经统计校准的准确概率；来源类别不能替代逐条事实核验，年鉴或学术材料也不天然属于推导。具体搜集与验收按上述手册执行。
 

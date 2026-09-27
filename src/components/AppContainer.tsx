@@ -7,6 +7,7 @@ import { Sidebar } from './Sidebar';
 import { UnitsView } from './UnitsView';
 import { OfficialsView } from './OfficialsView';
 import { SwimlaneView } from './SwimlaneView';
+import { DataVersionStatus } from './DataVersionStatus';
 
 interface NavHistoryItem {
   view: ViewMode;
@@ -346,6 +347,7 @@ export function AppContainer() {
 
       {/* 主视图区域：完整高度与宽度留给图谱 */}
       <main className="flex-1 min-w-0 h-screen overflow-hidden flex flex-col">
+        <DataVersionStatus />
         {currentView === 'swimlanes' && (
           <div className="p-3 w-full h-full">
             <SwimlaneView

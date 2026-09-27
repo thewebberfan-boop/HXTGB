@@ -4,11 +4,13 @@
 
 本文用于后续人员或模型接续研究。目标是扩大**有证据的独立履历事实总量**，同时控制错人、错误日期、遗漏成员和无依据推断。它规定研究流程，不代表已经搜遍所列网站，也不代表相关数据模型已经实现。
 
+持续执行入口（2026-09-27补充）：先读[持续研究与模型交接说明](research/continuous-work.md)和[续接索引](research/progress.md)。前者补充旧模型线索找回、逐项核验、推理依赖、入库对账与跨轮断点；本手册保留具体检索和证据规则。新批次使用[批次模板](research/templates/batch.md)，逐人使用[人物模板](research/templates/person.md)。
+
 ## 0. 每次接手先读这里
 
 1. 确认当前仓库是 HXTGB，查看 `git status --short`，不要混入 AHOWP 或其他项目。
 2. 阅读本文、`src/types/index.ts`、本批研究底稿及上次交接记录。以实际代码为准，README 中的接口示例可能过时。
-3. 查找人物在 `src/data/csrcData.ts` 中的所有出现位置。该文件存在原始数据和后续覆盖逻辑，仅修改前部原始记录可能不改变页面。
+3. 查找人物在`src/data/legacyData.ts`兼容基线及`research-data/people`中的全部位置；`src/data/csrcData.ts`现为公开读取入口。基线保留历史覆盖顺序，新研究通过[工作台](research-workbench.md)导入，不能仅修改基线前部原始记录。
 4. 确定研究截止日、机构范围、班子口径和待办人物。名单核验与个人履历丰富是两个独立任务。
 5. 先恢复已读证据、待核线索和下一条搜索式，不从头重复检索。
 6. 每获得一条新证据及时写底稿；每完成一个人物或需要中断时保存进度。不得依赖聊天记忆作为唯一研究记录。
@@ -274,7 +276,7 @@ site:hkexnews.hk "{繁体姓名}"
 | `candidate` | 只有线索、摘要或身份未定 | 不作为确定事实进入网站 |
 | `rejected` | 已有依据确认错人／误读／错误说法 | 保留拒绝理由，撤下对应错误字段 |
 
-这些是研究底稿状态，不是现有 TypeScript 已支持的枚举。不要直接写入现有接口。
+这些状态已在`src/types/research.ts`研究库接口中实现，但不是`CareerRecord`的枚举。通过工作台生成公开投影，不直接塞进页面履历接口。
 
 直接、清楚的官方来源一条可以足够；不强制所有事实都找两条。明确可靠的媒体正文也可支撑其实际陈述的经历，不必等到永远未公开的红头文件。复杂同名、矛盾、精确日期和含糊表述应追加独立核验。
 
@@ -317,14 +319,14 @@ site:hkexnews.hk "{繁体姓名}"
 
 本次只建立手册，不自动更改人物数据。今后获授权执行补充时：
 
-1. 先在底稿核验，后更新 `src/data/csrcData.ts`。保留稳定人物 ID，合并已有已核验字段和来源，不用一个短简历整体覆盖长简历。
+1. 先在底稿核验，再按[研究工作台](research-workbench.md)向人物研究JSON追加版本并导入。保留稳定人物及履历ID；公开投影合并已接管字段，不用短简历整体覆盖长简历。
 2. 现有 `InformationSource.supports` 要明确写支撑的字段／履历 ID；一个现任名单来源不能同时为出生、院校和全部历史岗位背书。
-3. `CareerRecord.endYear: null` 当前表示“至今”，不能用来表示未知的历史结束时间。日期不完整的历史岗位暂放入 `bioSummary`，用“曾任，任期未披露”表达，并关联来源及底稿事实 ID；不得为迁就时间轴虚构年份。
-4. 现有 `EducationInfo` 要求 `school` 和 `degree`。只知道学位、不知道学校时，暂在简介表达，不填“某大学”，不把未知程度写成“其他”掩盖问题。
-5. 后续模型改造应明确支持 `tenureStatus: current/historical/unknown`、日期精度、观察日期和事实级来源 ID；修改类型、前端、审计及原数据迁移应作为独立实现任务，不能只添加接口就宣称完成。
+3. 日期不完整的历史岗位现在可结构化保存：`recordKind: 'tenure'`、`tenureStatus: 'historical'`，省略未知结束日期。`endYear: null` 仅兼容旧“至今”，不能表示未知历史结束。观察点使用 `recordKind: 'observation'` 与 `observedAt`，不填任期起止。详见[研究数据语义](research-data-model.md)。
+4. `EducationInfo.school` 和 `degree` 现在可分别未知；另有教育层次、学习状态、学位获授状态。只知道学位时可以保留该字段，不填“某大学”；毕业不自动等于获授学位。
+5. 新现任记录使用 `tenureStatus: 'current'` 与 `confirmedAsOf` 保存证据截至日；任职与教育使用字段证据。缺少实际证据时不批量生成“已核验”标签。冲突版本和推理依赖录入研究JSON，详细论证留在底稿；输入变化后导出、验证并重建页面，不保留失效推理。
 6. 新闻直接证明一次任职观察，推导才是额外判断。兼容旧界面时需在 `sourceNote`／`notes` 说明是哪一种，不能把观察点包装成完整任期。
 7. 局部完成仍标记 `partially_verified`。研究流程完成与全档案事实确证分开，不为完成任务提高核验等级。
-8. 运行 `npm run audit:data`、`npx tsc --noEmit`；改代码时再按影响做构建及页面验证。审计通过只说明对应结构检查通过，不证明真实。
+8. 运行 `npm run audit:data`、`npx tsc --noEmit`；日期语义、字段证据或数据迁移另运行 `npm run test:records`，关系变更运行 `npm run test:relations`；改代码时再按影响做构建及页面验证。审计通过只说明对应结构检查通过，不证明真实。
 9. 在 localhost:4000 检查人物卡片、详情、来源区和时间轴：历史经历未变成现任、未知未变成“至今”、并行职务未丢失、照片未串人。不要启动其他项目或随意替换现有运行服务。
 10. 交付前检查 `git diff`，列明内容增量与剩余缺口；提交／推送、对外发布按当次用户授权执行，不由本手册自动授权。
 
@@ -367,7 +369,8 @@ site:hkexnews.hk "{繁体姓名}"
 ## 10. 交接给下一次执行的指令模板
 
 ```text
-项目 HXTGB，端口 4000。请先完整阅读 docs/biography-research-handbook.md，
+项目 HXTGB，端口 4000。请先完整阅读 docs/research/continuous-work.md、
+docs/biography-research-handbook.md，再阅读 docs/research/progress.md，
 再读本批 docs/research/batches/{文件}.md 与相关 people/{人物ID}.md。
 研究截止日：{日期}；范围：{机构及班子口径}。
 当前正在处理：{人物ID、查询包、最后一个查询ID}。

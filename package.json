@@ -3,12 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "npm run research:export",
     "dev": "next dev -p 4000",
-    "build": "next build",
+    "build": "node scripts/research-release.mjs build",
+    "prestart": "node scripts/research-release.mjs check",
     "start": "next start -p 4000",
     "lint": "next lint",
     "audit:data": "node scripts/audit-data.mjs",
-    "test:relations": "node --test scripts/test-relations.mjs"
+    "test:relations": "node --test scripts/test-relations.mjs",
+    "test:records": "node --test scripts/test-records.mjs",
+    "test:research": "node --test scripts/test-research.mjs",
+    "research:report": "node scripts/research-workbench.mjs report",
+    "research:import": "node scripts/research-workbench.mjs import",
+    "research:export": "node scripts/research-workbench.mjs export",
+    "research:check": "node scripts/research-workbench.mjs check",
+    "research:backup": "node scripts/research-workbench.mjs backup",
+    "research:restore-backup": "node scripts/research-workbench.mjs restore-backup",
+    "research:recovery": "node scripts/research-workbench.mjs recovery",
+    "research:recover": "node scripts/research-workbench.mjs recover",
+    "research:unlock": "node scripts/research-workbench.mjs unlock",
+    "test:safety": "node --test scripts/test-research-safety.mjs"
   },
   "dependencies": {
     "next": "^15.1.7",

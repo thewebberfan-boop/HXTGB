@@ -22,6 +22,13 @@ export const OfficialIdPhoto: React.FC<OfficialIdPhotoProps> = ({
   );
   const [fallbackStage, setFallbackStage] = useState<number>(0); // 0: real jpg, 1: svg, 2: placeholder badge
   const color = getOfficialColor(official.id);
+  const portraitLabel = official.portraitSource?.kind === 'official_portrait'
+    ? '官方肖像'
+    : official.portraitSource?.kind === 'official_event_photo'
+      ? '官方活动照'
+      : official.portraitSource?.kind === 'authoritative_news_photo'
+        ? '权威新闻照'
+        : '标准工作照';
 
   useEffect(() => {
     if (official.avatarVerified === false) {
@@ -65,6 +72,7 @@ export const OfficialIdPhoto: React.FC<OfficialIdPhotoProps> = ({
   return (
     <div
       className={`relative shrink-0 overflow-hidden select-none border border-black/10 shadow-sm transition-all bg-slate-900 ${sizeConfig.container} ${className}`}
+      title={official.portraitSource ? `${portraitLabel}｜${official.portraitSource.publisher}：${official.portraitSource.title}` : undefined}
       style={{
         boxShadow: `0 2px 10px -1px ${color.primary}25, 0 1px 3px 0 rgba(0, 0, 0, 0.12)`,
       }}
@@ -100,7 +108,7 @@ export const OfficialIdPhoto: React.FC<OfficialIdPhotoProps> = ({
           {official.avatarVerified !== false && isRealPhoto ? (
             <>
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse" />
-              <span>标准工作照</span>
+              <span>{portraitLabel}</span>
             </>
           ) : (
             <span>{official.avatarVerified === false ? '照片待核' : '2寸免冠'}</span>

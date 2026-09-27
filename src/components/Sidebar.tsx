@@ -2,7 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { ViewMode, Official, Unit } from '../types';
-import { getOfficialColor, isOfficialActiveInUnit, isOfficialPastInUnit, sortOfficialsByRankAndSeniority } from '../data/csrcData';
+import { getOfficialColor, isOfficialActiveInUnit, isOfficialPastInUnit, isOfficialUnresolvedInUnit, sortOfficialsByRankAndSeniority } from '../data/csrcData';
 import {
   Building2,
   Users,
@@ -411,6 +411,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
           .sort(sortOfficialsByRankAndSeniority);
         if (past.length > 0) {
           onSelectOfficial?.(past[0].id);
+        } else {
+          const unresolved = officials.find(off => isOfficialUnresolvedInUnit(off, unitId));
+          if (unresolved) onSelectOfficial?.(unresolved.id);
         }
       }
     }
@@ -424,7 +427,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
       .filter((off) => isOfficialPastInUnit(off, unitId))
       .sort(sortOfficialsByRankAndSeniority);
 
-    if (serving.length === 0 && past.length === 0) {
+    const unresolved = officials.filter(off => isOfficialUnresolvedInUnit(off, unitId));
+    if (serving.length === 0 && past.length === 0 && unresolved.length === 0) {
       return (
         <div className="mt-1 pl-2.5 pr-2 py-2 bg-gray-50/90 rounded-lg border border-black/[0.04] text-[10.5px] text-gray-400 italic text-center">
           暂无关联的在职或曾任干部记录
@@ -434,6 +438,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
     return (
       <div className="mt-1 pl-2 pr-1.5 py-2 bg-blue-50/30 rounded-lg border border-blue-100/80 space-y-2 text-[11px] animate-in slide-in-from-top-1 duration-150 shadow-2xs">
+        {!!unresolved.length && <div className="text-amber-800 space-y-1">
+          <p>任职记载 · 状态待核（{unresolved.length}人）</p>
+          {unresolved.map(off => <button key={off.id} id={`sidebar-official-${off.id}`} className="block text-blue-700 underline" onClick={() => onSelectOfficial?.(off.id)}>{off.name}</button>)}
+        </div>}
         {/* 在职班子 */}
         <div>
           <div className="flex items-center justify-between text-[10px] text-emerald-800 font-semibold px-1 mb-1">
@@ -802,10 +810,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
               <button
                 onClick={onShowAllUnits}
                 className="flex items-center justify-center gap-1 p-2 bg-gray-50 hover:bg-gray-100 text-gray-700 font-medium rounded-xl border border-black/[0.04] transition-colors text-[11px]"
-                title="平铺全部24个单位"
+                title="平铺全部单位"
               >
                 <Eye className="w-3 h-3 text-gray-500" />
-                <span>全景 (24单位)</span>
+                <span>全景（全部单位）</span>
               </button>
 
               {/* 添加单位下拉 */}

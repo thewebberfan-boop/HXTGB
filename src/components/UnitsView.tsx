@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useMemo, useEffect } from 'react';
-import { Unit, Official, UnitLevel } from '../types';
+import { Unit, Official, UnitLevel, CareerRecord } from '../types';
 import {
   Building2,
   ExternalLink,
@@ -21,9 +21,11 @@ import {
 import { PositionRankBadge } from './PositionRankBadge';
 import { OfficialIdPhoto } from './OfficialIdPhoto';
 import { InstitutionHistoryCard } from './InstitutionHistoryCard';
+import { careerStatus, careerSortDate, formatCareerDates, formatDate } from '../lib/recordSemantics';
 import {
   isOfficialActiveInUnit,
   isOfficialPastInUnit,
+  isOfficialUnresolvedInUnit,
   sortOfficialsByRankAndSeniority
 } from '../data/csrcData';
 
@@ -50,7 +52,8 @@ export function getOfficialPositionAndTenure(official: Official, unit: Unit, isS
   const hist = official.careerHistory || [];
   const uid = unit.id;
 
-  let matchedRecord = hist.find((r) => r.unitId === uid);
+  let matchedRecord: CareerRecord | undefined = [...hist].filter((r) => r.unitId === uid).sort((a, b) =>
+    Number(careerStatus(b) === 'current') - Number(careerStatus(a) === 'current') || careerSortDate(b) - careerSortDate(a))[0];
   if (!matchedRecord && uid.startsWith('gov-')) {
     matchedRecord = hist.find(
       (r) =>
@@ -66,35 +69,8 @@ export function getOfficialPositionAndTenure(official: Official, unit: Unit, isS
     ? matchedRecord?.position || official.currentPosition || '主要负责人'
     : matchedRecord?.position || official.currentPosition || '曾任职务';
 
-  const startYear = matchedRecord?.startYear;
-  const startMonth = matchedRecord?.startMonth;
-  const endYear = matchedRecord?.endYear;
-  const endMonth = matchedRecord?.endMonth;
-
-  let tenureStr = '';
-  let durationStr = '';
-
-  if (isServing) {
-    if (startYear) {
-      tenureStr = `${startYear}.${startMonth ? (startMonth < 10 ? '0' + startMonth : startMonth) : '01'} - 至今`;
-      const curYear = new Date().getFullYear();
-      const yrs = Math.max(1, curYear - startYear);
-      durationStr = `已履任约 ${yrs} 年`;
-    } else {
-      tenureStr = '现任在职';
-    }
-  } else {
-    if (startYear) {
-      const endPart = endYear ? `${endYear}.${endMonth ? (endMonth < 10 ? '0' + endMonth : endMonth) : '12'}` : '离任';
-      tenureStr = `${startYear}.${startMonth ? (startMonth < 10 ? '0' + startMonth : startMonth) : '01'} - ${endPart}`;
-      if (endYear) {
-        const yrs = Math.max(1, endYear - startYear);
-        durationStr = `任期约 ${yrs} 年`;
-      }
-    } else {
-      tenureStr = '历史曾任';
-    }
-  }
+  const tenureStr = matchedRecord ? formatCareerDates(matchedRecord) : '任期信息待核';
+  const durationStr = ''; // 日期精度不足时不生成看似精确的任期长度
 
   return {
     position: pos,
@@ -440,6 +416,7 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
   }, [activeUnit, officials]);
 
   // 3. 标签切换状态：'all' | 'serving' | 'past'
+  const unresolvedLeaders = activeUnit ? officials.filter(off => isOfficialUnresolvedInUnit(off, activeUnit.id)) : [];
   const [officialTab, setOfficialTab] = useState<'all' | 'serving' | 'past'>('all');
 
   // 4. 核心需求二：默认官员定位（如果不是跳转进来，请默认定位在“在职”的官员）
@@ -632,6 +609,19 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
           </div>
 
           <InstitutionHistoryCard unit={activeUnit} />
+          {!!unresolvedLeaders.length && <section className="rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs space-y-3">
+            <h3 className="font-semibold">任职记载 · 现任／离任状态待核（{unresolvedLeaders.length}人）</h3>
+            {unresolvedLeaders.map(official => <div key={official.id}>
+              <button className="text-blue-700 underline" onClick={() => onSelectOfficial(official)}>{official.name} · 查看档案</button>
+              {official.careerHistory.filter(r => r.unitId === activeUnit.id).map(r => <p key={r.id}>{r.position} · {formatCareerDates(r)}</p>)}
+            </div>)}
+          </section>}
+          <div className="text-xs rounded-xl border bg-white p-4 text-gray-600 space-y-1">
+            <p>名册核验：{activeUnit.rosterReview ? `${activeUnit.rosterReview.status === 'complete' ? '指定范围已核清' : activeUnit.rosterReview.status === 'partial' ? '部分核验' : '待核验'} · ${activeUnit.rosterReview.scope}` : '完整性及截止日期待核验'}</p>
+            {activeUnit.rosterReview?.asOf && <p>名册截至：{formatDate(activeUnit.rosterReview.asOf)}；该日期之后的变化需继续复核。</p>}
+            {activeUnit.rosterReview?.note && <p>{activeUnit.rosterReview.note}</p>}
+            {activeUnit.rosterReview?.sources.map(source => <p key={source.id}>{source.url ? <a className="text-blue-700 underline" href={source.url} target="_blank" rel="noreferrer">{source.title}</a> : source.title}</p>)}
+          </div>
 
           {/* 3. 单位领导干部档案看板：严格区分「在任领导班子」与「历任/曾任干部」 */}
           <div className="mac-card rounded-2xl p-6 sm:p-7 border border-black/[0.08] bg-white shadow-xs space-y-5">
@@ -695,11 +685,7 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                 {displayedLeaders.map((leader) => {
                   const isServing = isOfficialActiveInUnit(leader, activeUnit.id);
                   const isFocused = leader.id === focusedOfficialId;
-                  const histRecord = leader.careerHistory.find(
-                    (r) =>
-                      r.unitId === activeUnit.id ||
-                      (activeUnit.id === 'csrc-main' && r.unitId.startsWith('csrc-'))
-                  );
+                  const histRecord = getOfficialPositionAndTenure(leader, activeUnit, isServing).matchedRecord;
 
                   return (
                     <div
@@ -790,7 +776,7 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                                   曾任：{histRecord?.position || leader.currentPosition}
                                   {histRecord && (
                                     <span className="text-[10px] text-gray-500 font-mono font-normal ml-1">
-                                      ({histRecord.startYear}-{histRecord.endYear || '离任'})
+                                      ({formatCareerDates(histRecord)})
                                     </span>
                                   )}
                                 </p>
@@ -800,6 +786,7 @@ export const UnitsView: React.FC<UnitsViewProps> = ({
                               </div>
                             )}
 
+                            {isServing && <p className="text-[11px] text-blue-700 mt-1">{getOfficialPositionAndTenure(leader, activeUnit, true).tenureStr}</p>}
                             <p className="text-[11px] text-gray-400 mt-1 font-mono">
                               {leader.birthYear ? `${leader.birthYear}年生（约${new Date().getFullYear() - leader.birthYear}岁）` : '出生信息未公开'}
                             </p>

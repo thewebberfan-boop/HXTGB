@@ -1,4 +1,5 @@
 'use client';
+import { careerPlot, careerSortDate, formatCareerDates } from '../lib/recordSemantics';
 
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { Official, Unit, CareerRecord, UnitLevel } from '../types';
@@ -61,8 +62,12 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
   const chartScrollContainerRef = useRef<HTMLDivElement>(null);
 
   // 尺寸参数
-  const MIN_YEAR = 1996;
-  const MAX_YEAR = 2026;
+  const plotYears = officials.filter(o => selectedOfficialIds.includes(o.id)).flatMap(o => o.careerHistory.flatMap(r => {
+    const plot = careerPlot(r);
+    return plot ? [plot.start.year, plot.end.year] : [];
+  }));
+  const MIN_YEAR = Math.min(1996, ...plotYears);
+  const MAX_YEAR = Math.max(new Date().getFullYear(), ...plotYears);
   const YEAR_HEIGHT = 44; // 每年 44px
   const TOTAL_HEIGHT = (MAX_YEAR - MIN_YEAR + 1) * YEAR_HEIGHT;
   const TIME_RULER_WIDTH = 64; // 左侧年份固定标尺 64px
@@ -123,6 +128,9 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
   const selectedOfficials = useMemo(() => {
     return officials.filter((o) => selectedOfficialIds.includes(o.id));
   }, [officials, selectedOfficialIds]);
+  const unlocatedRecords = selectedOfficials.flatMap(official => official.careerHistory
+    .filter(record => !careerPlot(record) || !unitMap.has(record.unitId))
+    .map(record => ({ official, record })));
 
   // 全国各省市派出机构 ID 集合（在泳道图中统一汇聚为 csrc-df 单一泳道）
   const REGIONAL_BUREAU_IDS = useMemo(
@@ -357,7 +365,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
             matches = rec.unitId === lane.id;
           }
 
-          if (matches && rec.startYear) {
+          if (matches && careerPlot(rec)) {
             rawRecords.push({ official, record: rec });
           }
         });
@@ -365,15 +373,17 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
 
       // 计算卡片位置及重叠避让
       const positioned = rawRecords.map((item, i) => {
-        const startY = getYearYPosition(item.record.startYear!, item.record.startMonth || 1);
-        const endY = getYearYPosition(item.record.endYear || 2026, item.record.endMonth || 12);
+        const plot = careerPlot(item.record)!;
+        const startY = getYearYPosition(plot.start.year, plot.start.month ?? 6);
+        const endY = plot.kind === 'observation' ? startY : getYearYPosition(plot.end.year, plot.end.month ?? 6);
         const top = Math.min(startY, endY);
         const height = Math.max(32, Math.abs(endY - startY));
 
         const hasOverlap = rawRecords.some((other, j) => {
           if (i === j) return false;
-          const oStartY = getYearYPosition(other.record.startYear!, other.record.startMonth || 1);
-          const oEndY = getYearYPosition(other.record.endYear || 2026, other.record.endMonth || 12);
+          const otherPlot = careerPlot(other.record)!;
+          const oStartY = getYearYPosition(otherPlot.start.year, otherPlot.start.month ?? 6);
+          const oEndY = otherPlot.kind === 'observation' ? oStartY : getYearYPosition(otherPlot.end.year, otherPlot.end.month ?? 6);
           const oTop = Math.min(oStartY, oEndY);
           const oBottom = Math.max(oStartY, oEndY);
           return !(top + height < oTop || top > oBottom);
@@ -401,7 +411,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
           bottom,
         };
 
-        cMap.set(item.record.id, {
+        cMap.set(`${item.official.id}/${item.record.id}`, {
           left: absLeft,
           top,
           width,
@@ -417,7 +427,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
     });
 
     return { laneRecordsMap: lMap, blockCoordMap: cMap };
-  }, [visibleLanes, selectedOfficials, computedLaneWidth, isTimeReversed]);
+  }, [visibleLanes, selectedOfficials, computedLaneWidth, isTimeReversed, MIN_YEAR, MAX_YEAR]);
 
   // 跨泳道流转连线：箭头精准指向目标职位 label 的上方正中间！
   const trajectoryCurves = useMemo(() => {
@@ -432,16 +442,20 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
 
     selectedOfficials.forEach((official) => {
       const color = getOfficialColor(official.id);
-      const history = official.careerHistory;
+      const history = [...official.careerHistory].sort((a, b) => careerSortDate(a) - careerSortDate(b));
 
       for (let i = 0; i < history.length - 1; i++) {
         const currentRec = history[i];
         const nextRec = history[i + 1];
+        const fromPlot = careerPlot(currentRec), toPlot = careerPlot(nextRec);
+        if (!fromPlot || !toPlot || fromPlot.kind !== 'tenure' || toPlot.kind !== 'tenure'
+          || currentRec.isDerived || nextRec.isDerived
+          || fromPlot.end.year * 12 + (fromPlot.end.month ?? 12) >= toPlot.start.year * 12 + (toPlot.start.month ?? 1)) continue;
 
         // 跨单位流动
         if (currentRec.unitId !== nextRec.unitId) {
-          const fromCoord = blockCoordMap.get(currentRec.id);
-          const toCoord = blockCoordMap.get(nextRec.id);
+          const fromCoord = blockCoordMap.get(`${official.id}/${currentRec.id}`);
+          const toCoord = blockCoordMap.get(`${official.id}/${nextRec.id}`);
 
           if (fromCoord && toCoord) {
             // 起点：原职位 label 的下方中间
@@ -510,6 +524,16 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
         ref={chartScrollContainerRef}
         className="mac-card rounded-2xl bg-white border border-black/[0.06] shadow-sm relative h-[calc(100vh-28px)] overflow-auto"
       >
+        <div className="p-3 text-xs text-gray-600 border-b bg-slate-50 space-y-2">
+          <p>◆ 为任职观察点，不代表任期；虚线为月份不完整或推导记录。月份未知时仅在年份中部示意定位。连线表示记录时间顺序，不证明直接调任。</p>
+          {!!unlocatedRecords.length && <details>
+            <summary className="cursor-pointer font-medium text-blue-700">未定位到泳道的经历（{unlocatedRecords.length}条，日期不完整或尚无站内机构）</summary>
+            <ul className="mt-2 space-y-2">{unlocatedRecords.map(({ official, record }) => <li key={`${official.id}/${record.id}`} className="rounded border p-2 bg-white">
+              <button onClick={() => onNavigateToOfficial(official.id)} className="text-blue-700 underline">{official.name}</button> · {record.unitName} · {record.position}
+              <p>{formatCareerDates(record)}</p>
+            </li>)}</ul>
+          </details>}
+        </div>
         <div className="relative min-w-full w-max">
           {/* 1. 顶部锁定表头行 (Sticky Top) */}
           <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-black/[0.08] flex items-stretch min-w-max shadow-2xs">
@@ -520,7 +544,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
             >
               <span className="text-[11px] font-bold">年份</span>
               <span className="text-[9px] text-gray-400 font-normal">
-                {isTimeReversed ? '26-96' : '96-26'}
+                {isTimeReversed ? `${MAX_YEAR}—${MIN_YEAR}` : `${MIN_YEAR}—${MAX_YEAR}`}
               </span>
               <span className="text-[8.5px] text-blue-600 bg-blue-50 px-1 py-0.2 rounded font-medium mt-1">
                 {visibleLanes.length}泳道
@@ -723,7 +747,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
             >
               {years.map((year) => {
                 const y = getYearYPosition(year, 1);
-                const isMilestone = year % 5 === 0 || year === 2026 || year === 1996;
+                const isMilestone = year % 5 === 0 || year === MAX_YEAR || year === MIN_YEAR;
                 return (
                   <div
                     key={year}
@@ -777,7 +801,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                         onClick={onShowAllUnits}
                         className="px-4 py-2 bg-white hover:bg-gray-50 active:scale-95 text-gray-700 text-xs font-semibold rounded-xl border border-black/[0.08] shadow-2xs transition-all flex items-center gap-1.5 cursor-pointer"
                       >
-                        <span>显示全部 24 个单位泳道</span>
+                        <span>显示全部单位泳道</span>
                       </button>
                     )}
                   </div>
@@ -875,10 +899,13 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                         hoveredOfficialId === null ||
                         hoveredOfficialId === official.id;
                       const isDerived = !!record.isDerived;
+                      const plot = careerPlot(record)!;
 
                       return (
                         <div
-                          key={record.id}
+                          key={`${official.id}/${record.id}`}
+                          title={formatCareerDates(record)}
+                          data-record-kind={plot.kind}
                           onMouseEnter={(e) => {
                             onHoverOfficial(official.id);
                             setActiveTooltip({
@@ -903,7 +930,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                             setActiveTooltip(null);
                           }}
                           className={`absolute rounded-lg cursor-pointer transition-all duration-150 flex flex-col justify-center p-1 select-none overflow-hidden ${
-                            isDerived
+                            isDerived || plot.uncertain || plot.kind === 'observation'
                               ? 'border-l-[3.5px] border-t border-r border-b border-dashed border-amber-600/40'
                               : 'border-l-[3.5px] border-t border-r border-b border-black/[0.08]'
                           } ${
@@ -916,7 +943,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                             height: `${height}px`,
                             left: `${left}px`,
                             width: `${width}px`,
-                            // 推导履历使用略浅、带半透明质感的浅灰底色；确证履历使用纯白
+                            // 底色区分推导标记，不代表原始事实已经核验
                             backgroundColor: isDerived ? '#f8fafc' : '#ffffff',
                             borderLeftColor: color.primary,
                             boxShadow: isOfficialHighlighted
@@ -948,7 +975,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                                 </div>
                                 <div className="flex items-center gap-0.5 shrink-0">
                                   <span className="text-[9px] text-gray-400 bg-gray-100 px-1 py-0.2 rounded font-mono shrink-0">
-                                    {format2DigitYear(record.startYear)}-{record.endYear ? format2DigitYear(record.endYear) : '今'}
+                                    {plot.kind === 'observation' ? '◆ 观察点' : formatCareerDates(record)}
                                   </span>
                                   {/* 需求四：卡片右上角跳转官员主页 */}
                                   <button
@@ -1011,7 +1038,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
 
                               {height >= 44 && (
                                 <span className="text-[9px] font-mono text-gray-400 leading-none mt-0.5 scale-90">
-                                  {format2DigitYear(record.startYear)}-{record.endYear ? format2DigitYear(record.endYear) : '今'}
+                                  {plot.kind === 'observation' ? '◆ 观察点' : formatCareerDates(record)}
                                 </span>
                               )}
 
@@ -1101,15 +1128,12 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                   {activeTooltip.official.name}
                 </span>
                 <span className="text-gray-400 text-[11px]">
-                  ({activeTooltip.official.currentRank})
+                  ({activeTooltip.record.rank || '当时职级待核'})
                 </span>
               </div>
               <div className="flex items-center gap-1.5">
                 <span className="text-blue-600 font-mono font-medium text-[11px]">
-                  {format2DigitYear(activeTooltip.record.startYear)}.{activeTooltip.record.startMonth || 1} -{' '}
-                  {activeTooltip.record.endYear
-                    ? `${format2DigitYear(activeTooltip.record.endYear)}.${activeTooltip.record.endMonth || 12}`
-                    : '至今'}
+                  {formatCareerDates(activeTooltip.record)}
                 </span>
                 <button
                   onClick={() => onNavigateToOfficial(activeTooltip.official.id)}
@@ -1137,7 +1161,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
             {activeTooltip.record.confidence && (
               <div className="p-2 rounded-lg bg-gray-50 border border-black/[0.04] space-y-1">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] text-gray-500 font-medium">考据置信度</span>
+                  <span className="text-[10px] text-gray-500 font-medium">历史来源说明</span>
                   <span
                     className={`px-1.5 py-0.2 rounded font-semibold text-[10px] ${
                       activeTooltip.record.confidence.level === 'high'
@@ -1147,7 +1171,7 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
                         : 'bg-amber-100 text-amber-800 border border-amber-300/60'
                     }`}
                   >
-                    {activeTooltip.record.confidence.score}% · {activeTooltip.record.confidence.label}
+                    旧标注待逐项复核
                   </span>
                 </div>
                 {activeTooltip.record.confidence.source && (
@@ -1179,21 +1203,20 @@ export const SwimlaneView: React.FC<SwimlaneViewProps> = ({
         </div>
       )}
 
-      {/* 底部悬浮图例说明：清晰告知用户实线确证与虚线推导的视觉规范 */}
+      {/* 线型与核验状态是独立维度 */}
       <div className="absolute bottom-3 right-4 z-40 bg-white/95 backdrop-blur-md border border-black/[0.08] rounded-xl px-3 py-1.5 shadow-md flex items-center gap-3 text-[11px] text-gray-600 pointer-events-auto select-none">
         <div className="flex items-center gap-1.5">
           <span className="w-3.5 h-2.5 bg-white border border-gray-400 rounded-xs shadow-2xs inline-block" />
-          <span className="font-medium text-gray-700">实线白底：确证履历</span>
+          <span className="font-medium text-gray-700">实线：日期完整到月</span>
         </div>
         <span className="text-gray-300">|</span>
         <div className="flex items-center gap-1.5">
           <span className="w-3.5 h-2.5 bg-slate-100 border border-dashed border-amber-500/80 rounded-xs inline-block" />
           <span className="flex items-center gap-0.5">
-            <span className="font-medium text-gray-700">虚线浅色</span>
-            <span className="text-[8px] bg-amber-100 text-amber-800 border border-amber-300/70 px-0.5 rounded leading-none">推</span>
-            <span className="font-medium text-gray-700">：新闻推导</span>
+            <span className="font-medium text-gray-700">虚线：日期不全／推导／观察点</span>
           </span>
         </div>
+        <span>核验状态见字段证据</span>
       </div>
     </div>
   );

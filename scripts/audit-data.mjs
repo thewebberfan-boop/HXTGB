@@ -1,21 +1,10 @@
-import fs from 'node:fs';
-import ts from 'typescript';
-
-const source = fs.readFileSync(new URL('../src/data/csrcData.ts', import.meta.url), 'utf8');
-const javascript = ts.transpileModule(source, {
-  compilerOptions: {
-    module: ts.ModuleKind.CommonJS,
-    target: ts.ScriptTarget.ES2020,
-  },
-}).outputText;
-const dataModule = { exports: {} };
-new Function('require', 'module', 'exports', javascript)(
-  () => ({}),
-  dataModule,
-  dataModule.exports
-);
-
-const { UNITS_DATA: units, OFFICIALS_DATA: officials } = dataModule.exports;
+import { fileURLToPath } from 'node:url';
+import { loadTypeScript } from './load-typescript.mjs';
+import { exportResearch } from './research-workbench.mjs';
+exportResearch(undefined, true);
+const { UNITS_DATA: units, OFFICIALS_DATA: officials } = loadTypeScript(fileURLToPath(new URL('../src/data/csrcData.ts', import.meta.url)));
+const { validateRecord } = loadTypeScript(fileURLToPath(new URL('../src/lib/recordValidation.ts', import.meta.url)));
+const { validDate } = loadTypeScript(fileURLToPath(new URL('../src/lib/recordSemantics.ts', import.meta.url)));
 const unitIds = new Set(units.map((unit) => unit.id));
 
 function duplicates(values) {
@@ -81,6 +70,10 @@ for (const id of ['csrc-shfe', 'csrc-dce', 'csrc-czce', 'csrc-cffex', 'csrc-gfex
 }
 
 for (const official of officials) {
+  if (duplicates(official.careerHistory.map(r => r.id)).length) structuralErrors.push(`${official.name}履历ID重复`);
+  if (duplicates((official.sources || []).map(s => s.id)).length) structuralErrors.push(`${official.name}来源ID重复`);
+  for (const record of official.careerHistory) for (const error of validateRecord(record, official.sources || [], 'career')) structuralErrors.push(`${official.name}/${record.id}：${error}`);
+  for (const record of official.education) for (const error of validateRecord(record, official.sources || [], 'education')) structuralErrors.push(`${official.name}/教育${record.id || ''}：${error}`);
   const sourceIds = new Set((official.sources || []).map(source => source.id));
   for (const record of [...official.careerHistory, ...official.education]) {
     for (const id of record.sourceIds || []) {
@@ -89,6 +82,8 @@ for (const official of officials) {
   }
 }
 for (const unit of units) {
+  if (unit.currentLeaderIds?.some(id => !officials.some(o => o.id === id))) structuralErrors.push(`${unit.name}名册含不存在的人物`);
+  if (unit.rosterReview?.status === 'complete' && (!validDate(unit.rosterReview.asOf) || !unit.rosterReview.scope.trim() || !unit.rosterReview.sources.some(s => s.url))) structuralErrors.push(`${unit.name}完整名册核验缺少日期、范围或来源`);
   const history = unit.history || [];
   if (duplicates(history.map(entry => entry.id)).length) structuralErrors.push(`${unit.name}历史沿革ID重复`);
   for (const entry of history) {

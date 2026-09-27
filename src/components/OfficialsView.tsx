@@ -6,6 +6,7 @@ import {
   getOfficialColor,
   isOfficialActiveInUnit,
   isOfficialPastInUnit,
+  isOfficialUnresolvedInUnit,
   sortOfficialsByRankAndSeniority,
 } from '../data/csrcData';
 import {
@@ -31,6 +32,8 @@ import {
 } from 'lucide-react';
 import { PositionRankBadge } from './PositionRankBadge';
 import { OfficialIdPhoto } from './OfficialIdPhoto';
+import { careerSortDate, careerStatus, formatCareerDates, formatEducation } from '../lib/recordSemantics';
+import { RecordEvidence } from './RecordEvidence';
 
 interface OfficialsViewProps {
   officials: Official[];
@@ -162,7 +165,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
     return {
       currentServing,
       pastServing,
-      all: [...currentServing, ...pastServing],
+      all: [...currentServing, ...pastServing, ...officials.filter(off => isOfficialUnresolvedInUnit(off, selectedUnitId))],
     };
   }, [selectedUnitId, officials]);
 
@@ -187,7 +190,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
         .sort(sortOfficialsByRankAndSeniority);
 
       // 如果当前干部不属于该机构，或当前干部为曾任但机构有在任班子（且非外部指定干部跳转），默认定位到首位在职干部
-      if (!isServingInUnit && !isPastInUnit) {
+      if (!isServingInUnit && !isPastInUnit && !(activeOfficial && isOfficialUnresolvedInUnit(activeOfficial, selectedUnitId))) {
         if (serving.length > 0) {
           setActiveOfficial(serving[0]);
         } else if (past.length > 0) {
@@ -235,38 +238,15 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
   // 官员任职履历按时间倒序排序（由近及远：现任/最新职务置顶，早期履历在后）
   const sortedCareerHistory = useMemo(() => {
     if (!activeOfficial) return [];
-    return [...activeOfficial.careerHistory].sort((a, b) => {
-      // 1. 结束年份降序：无 endYear (即“至今”) 权重最高 (置顶)
-      const endA = a.endYear ?? 9999;
-      const endB = b.endYear ?? 9999;
-      if (endA !== endB) {
-        return endB - endA;
-      }
-      // 2. 结束月份降序
-      const endMonthA = a.endMonth ?? (a.endYear ? 12 : 12);
-      const endMonthB = b.endMonth ?? (b.endYear ? 12 : 12);
-      if (endMonthA !== endMonthB) {
-        return endMonthB - endMonthA;
-      }
-      // 3. 起始年份降序
-      const startA = a.startYear ?? 0;
-      const startB = b.startYear ?? 0;
-      if (startA !== startB) {
-        return startB - startA;
-      }
-      // 4. 起始月份降序
-      const startMonthA = a.startMonth ?? 1;
-      const startMonthB = b.startMonth ?? 1;
-      return startMonthB - startMonthA;
-    });
+    return [...activeOfficial.careerHistory].sort((a, b) => careerSortDate(b) - careerSortDate(a));
   }, [activeOfficial]);
 
   // 官员教育履历按时间倒序排序（由近及远：最高/最新学历置顶）
   const sortedEducation = useMemo(() => {
     if (!activeOfficial) return [];
     return [...activeOfficial.education].sort((a, b) => {
-      const endA = a.endYear ?? a.graduationYear ?? (a.startYear ? a.startYear + 4 : 0);
-      const endB = b.endYear ?? b.graduationYear ?? (b.startYear ? b.startYear + 4 : 0);
+      const endA = a.endYear ?? a.graduationYear ?? a.startYear ?? 0;
+      const endB = b.endYear ?? b.graduationYear ?? b.startYear ?? 0;
       if (endA !== endB) {
         return endB - endA;
       }
@@ -341,7 +321,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                     ) : (
                       <span className="text-[11px] font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-md flex items-center gap-1 shadow-2xs">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                        <span>现任在职</span>
+                        <span>{isOfficialActiveInUnit(activeOfficial, activeOfficial.currentUnitId) ? '在任记录 · 截止时间见履历' : '当前履职状态待核'}</span>
                       </span>
                     )}
                   </div>
@@ -378,7 +358,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                     {activeOfficial.basicInfoConfidence && (
                       <span className="flex items-center gap-1 pl-1 border-l border-black/[0.08]">
                         <ShieldCheck className="w-3 h-3 text-emerald-600 shrink-0" />
-                        <span className="text-gray-400">信息置信度:</span>
+                        <span className="text-gray-400">历史信息标注:</span>
                         <span
                           className={`px-1.5 py-0.2 rounded text-[10px] font-semibold ${
                             activeOfficial.basicInfoConfidence.level === 'high'
@@ -386,7 +366,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                               : 'bg-blue-50 text-blue-700 border border-blue-200'
                           }`}
                         >
-                          {activeOfficial.basicInfoConfidence.score}% · {activeOfficial.basicInfoConfidence.label}
+                          待逐项复核
                         </span>
                       </span>
                     )}
@@ -511,7 +491,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                           ? '正常退休'
                           : activeOfficial.servingStatus === 'transferred'
                           ? '调离系统'
-                          : '现任在职'}
+                          : isOfficialActiveInUnit(activeOfficial, activeOfficial.currentUnitId) ? '在任记录，截止时间见履历' : '当前履职状态待核'}
                       </span>
                     </div>
                   </div>
@@ -559,10 +539,10 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                       <div className="lg:col-span-4 space-y-2.5 pr-0 lg:pr-4 border-b lg:border-b-0 lg:border-r border-black/[0.06] pb-4 lg:pb-0">
                         <div className="flex items-center gap-2 flex-wrap">
                           <span className="font-extrabold text-base text-gray-900">
-                            {edu.school}
+                            {edu.school || '学校待核'}
                           </span>
                           <span className="font-bold text-xs text-blue-800 bg-blue-100/90 border border-blue-200 px-2 py-0.5 rounded-md">
-                            {edu.degree}
+                            {formatEducation(edu)}
                           </span>
                           {educationModeLabel === '在职' ? (
                             <span className="font-bold text-[11px] text-amber-800 bg-amber-100/90 border border-amber-300 px-2 py-0.5 rounded-md flex items-center gap-1 shadow-2xs">
@@ -605,9 +585,8 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                             <div className="text-[11px] font-medium text-gray-500 flex items-center gap-1.5">
                               <Calendar className="w-3 h-3 text-gray-400" />
                               <span>
-                                {edu.graduationYear
-                                  ? `毕业年份：${edu.graduationYear}年；入学年份未公开，不作学制反推`
-                                  : '在校及毕业年份未公开，不作年龄反推'}
+                                {edu.isDerivedSpan ? '原在校时段为推算，不用于确定同期；' : ''}
+                                入学：{edu.startYear ?? '待核'}；结束：{edu.endYear ?? '待核'}；毕业：{edu.graduationYear ?? '待核'}
                               </span>
                             </div>
                           )}
@@ -632,7 +611,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                             <div className="flex items-center justify-between">
                               <span className="font-semibold text-gray-500 text-[10px] flex items-center gap-1">
                                 <ShieldCheck className="w-3 h-3 text-emerald-600" />
-                                学历考证置信度
+                                历史来源说明
                               </span>
                               <span
                                 className={`px-1.5 py-0.2 rounded font-bold text-[9.5px] ${
@@ -641,7 +620,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                                     : 'bg-blue-100 text-blue-800'
                                 }`}
                               >
-                                {edu.confidence.score}% · {edu.confidence.label}
+                                旧标注待逐项复核
                               </span>
                             </div>
                             {edu.confidence.source && (
@@ -651,6 +630,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                             )}
                           </div>
                         )}
+                        <RecordEvidence record={edu} official={activeOfficial} />
                       </div>
 
                       <BiographyRelationPanel target={activeOfficial} record={{ type: 'education', value: edu }} officials={officials} units={units} onSelect={handleSelectOfficial} />
@@ -669,7 +649,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                 <span>完整履职履历与任职演进（共 {sortedCareerHistory.length} 段履职记录 · 时间倒序）</span>
               </h3>
               <span className="text-xs text-gray-400">
-                现任/最新职务置顶 · 沿时间线由近及远追溯 · 右侧联动高密度同期同事网络
+                按已知时间由近及远 · 无日期经历保留于末尾 · 右侧按记录计算关联
               </span>
             </div>
 
@@ -677,33 +657,33 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
             <div className="p-3 bg-gray-50/90 rounded-xl border border-black/[0.04] flex flex-wrap items-center justify-between gap-2 text-xs text-gray-600">
               <div className="flex items-center gap-2 font-medium text-gray-700">
                 <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                <span>履职考据置信度标准：</span>
+                <span>证据表达：</span>
               </div>
               <div className="flex flex-wrap items-center gap-3 text-[11px]">
                 <div className="flex items-center gap-1.5">
                   <span className="px-1.5 py-0.2 rounded bg-emerald-100 text-emerald-800 font-semibold border border-emerald-300">
-                    95%+ · 官方确证
+                    原文明确记载
                   </span>
-                  <span className="text-gray-400">国务院任免/中纪委审查通报/法定公报</span>
+                  <span className="text-gray-400">只支持原文明说的字段</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <span className="px-1.5 py-0.2 rounded bg-blue-100 text-blue-800 font-semibold border border-blue-300">
-                    85%+ · 权威财媒
+                    时间点观察
                   </span>
-                  <span className="text-gray-400">《财新》/证券时报头版要闻</span>
+                  <span className="text-gray-400">某时已任，不等于上任日期</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <span className="px-1.5 py-0.2 rounded bg-amber-100 text-amber-800 font-semibold border border-amber-300">
-                    70%+ · 新闻推导
+                    事实推导
                   </span>
-                  <span className="text-gray-400">公开行业活动/通报反推</span>
+                  <span className="text-gray-400">需核对依据与推理边界</span>
                 </div>
               </div>
             </div>
 
             <div className="relative pl-7 sm:pl-8 space-y-6 before:absolute before:left-3 before:top-3 before:bottom-3 before:w-0.5 before:bg-gray-200">
               {sortedCareerHistory.map((item, idx) => {
-                const isLatest = idx === 0 || !item.endYear;
+                const isLatest = careerStatus(item) === 'current';
 
                 return (
                   <div key={item.id} className="relative group">
@@ -730,12 +710,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                               {item.unitName}
                             </span>
                             <span className="text-xs font-mono font-semibold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md">
-                              {item.startYear
-                                ? `${item.startYear}${item.startMonth ? `.${item.startMonth < 10 ? '0' + item.startMonth : item.startMonth}` : ''}`
-                                : '起始时间待核'}{' '} -{' '}
-                              {item.endYear
-                                ? `${item.endYear}${item.endMonth ? `.${item.endMonth < 10 ? '0' + item.endMonth : item.endMonth}` : ''}`
-                                : '至今'}
+                              {formatCareerDates(item)}
                             </span>
                           </div>
 
@@ -763,7 +738,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                               <div className="flex items-center justify-between">
                                 <span className="font-semibold text-gray-600 text-[10.5px] flex items-center gap-1">
                                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                                  履历考据置信度
+                                  历史来源说明
                                 </span>
                                 <span
                                   className={`px-2 py-0.5 rounded-md font-bold text-[10px] ${
@@ -774,7 +749,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                                       : 'bg-amber-100 text-amber-800 border border-amber-300'
                                   }`}
                                 >
-                                  {item.confidence.score}% · {item.confidence.label}
+                                  旧标注待逐项复核
                                 </span>
                               </div>
                               {item.confidence.source && (
@@ -797,6 +772,7 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
                               {item.notes}
                             </p>
                           )}
+                          <RecordEvidence record={item} official={activeOfficial} />
                         </div>
 
                       <BiographyRelationPanel target={activeOfficial} record={{ type: 'career', value: item }} officials={officials} units={units} onSelect={handleSelectOfficial} />
@@ -809,6 +785,11 @@ export const OfficialsView: React.FC<OfficialsViewProps> = ({
           </div>
 
           {/* 5. 信息来源与核验状态 */}
+          {(activeOfficial.basicFieldEvidence || activeOfficial.researchNotices?.length) && <section className="mac-card rounded-2xl p-5 bg-white border space-y-3">
+            <h3 className="text-sm font-semibold">基础字段与研究更新</h3>
+            {activeOfficial.basicFieldEvidence && <RecordEvidence record={{ fieldEvidence: activeOfficial.basicFieldEvidence }} official={activeOfficial} />}
+            {activeOfficial.researchNotices?.map(note => <p key={note} className="text-xs text-amber-800">{note}</p>)}
+          </section>}
           <section className="mac-card rounded-2xl p-5 sm:p-7 border border-black/[0.08] bg-white shadow-xs space-y-5">
             <div className="flex flex-wrap items-start justify-between gap-3 pb-4 border-b border-black/[0.06]">
               <div>

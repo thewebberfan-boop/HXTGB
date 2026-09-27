@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "personId": "guo-shuhua",
+  "evidence": [],
+  "facts": [
+    {
+      "id": "F001",
+      "revision": 1,
+      "target": { "kind": "career", "recordId": "guo-shuhua-czce-employed-2003", "field": "observedAt" },
+      "value": { "year": 2003 },
+      "status": "candidate",
+      "citations": [],
+      "note": "从兼容基线迁入的待核线索，不是本轮新发现或已读证据。原记录sourceIds及人物底稿供后续追溯；复核原文后追加证据和事实版本。"
+    }
+  ],
+  "rules": [],
+  "publications": []
+}

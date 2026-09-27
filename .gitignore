@@ -5,6 +5,12 @@
 
 # testing
 /coverage
+/research-data/.write-lock/
+/research-data/.transactions/
+/research-data/.recovery-copies/
+/research-data/.transactions/*.tmp
+/research-data/people/*.tmp
+/src/data/generatedResearch.ts.*.tmp
 
 # next.js
 /.next/
