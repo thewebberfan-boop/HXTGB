@@ -1,0 +1,2426 @@
+{
+  "schemaVersion": 1,
+  "personId": "chen-huaping",
+  "evidence": [
+    {
+      "id": "S001",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "yicai-20211206",
+      "note": "第一财经披露2014.02提正局及郑商所、办公厅、深交所精确到日节点",
+      "source": {
+        "id": "chen-huaping-yicai-20211206",
+        "title": "深交所党委书记官宣！陈华平接棒王建军，曾任郑商所理事长",
+        "publisher": "第一财经",
+        "url": "https://www.yicai.com/news/101250445.html",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2021-12-06",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2014年2月由副司局级提升为正局级，此前曾任证监会机构部副主任、打击非法证券活动办公室主任",
+          "2016年6月2日任郑商所党委书记并提名理事长人选",
+          "2019年10月23日调任证监会办公厅主任",
+          "2021年12月6日任深交所党委书记"
+        ]
+      }
+    },
+    {
+      "id": "S002",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "caixin-20211223",
+      "note": "财新网补齐早年机构部检查一处处长、天津证监局局长助理及打非局局长全序列，并确认深交所副部长级理事长选举结果",
+      "source": {
+        "id": "chen-huaping-caixin-20211223",
+        "title": "陈华平正式接任深交所理事长",
+        "publisher": "财新网",
+        "url": "https://finance.caixin.com/2021-12-23/101821444.html",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2021-12-23",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "历任机构部检查一处处长、天津证监局局长助理、机构部副主任",
+          "2014年提拔为打非局局长",
+          "2021年12月22日当选深交所理事会理事长（副部长级）"
+        ]
+      }
+    },
+    {
+      "id": "S003",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "sina-csrc-20230927",
+      "note": "确认法学学士及2023年9月卸任深交所理事长、出任证监会副主席",
+      "source": {
+        "id": "chen-huaping-sina-20230927",
+        "title": "一文看懂中国证监会副主席陈华平履历、近期观点",
+        "publisher": "新浪证券（引国务院及证监会任免）",
+        "url": "https://finance.sina.cn/stock/ggyj/2023-09-27/detail-imzpeaxi3977171.d.html?vt=4",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2023-09-27",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "1968年12月出生，法学学士",
+          "2023年9月27日国务院任命为中国证监会副主席，不再担任深交所理事长"
+        ]
+      }
+    },
+    {
+      "id": "S004",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "czce-notice-20191213",
+      "note": "郑商所官方任免公告交叉印证理事长卸任",
+      "source": {
+        "id": "chen-huaping-czce-sina-20191213",
+        "title": "郑商所:熊军同志任郑商所党委书记 提名为理事长人选",
+        "publisher": "新浪财经（引郑州商品交易所公告）",
+        "url": "https://finance.sina.com.cn/money/future/fmnews/2019-12-13/doc-iihnzahi7297546.shtml",
+        "sourceType": "official_notice",
+        "publishedDate": "2019-12-13",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "陈华平不再担任郑州商品交易所党委书记、理事长、非会员理事"
+        ]
+      }
+    },
+    {
+      "id": "S005",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "cls-20230927",
+      "note": "财联社核实郑商所第五届理事会第18次会议当选理事长细节",
+      "source": {
+        "id": "chen-huaping-cls-20230927",
+        "title": "证监会迎新任副主席，原深交所理事长陈华平走马上任，丰富监管经验加持，时隔4年再回富凯大厦",
+        "publisher": "财联社",
+        "url": "https://m.cls.cn/detail/1474565",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2023-09-27",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "郑商所第五届理事会第18次会议选举陈华平为郑商所理事会理事长",
+          "天津证监局、机构部、打非办、郑商所、证监会办公厅、深交所全序列印证"
+        ]
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "revision": 1,
+      "target": {
+        "kind": "basic",
+        "field": "currentRank"
+      },
+      "value": "副部级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "陈华平为深圳证券交易所理事会理事长（副部长级）人选"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "9月27日，国务院决定，任命陈华平为中国证监会副主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "深交所理事长（副部长级）及现任证监会副主席均为副部级"
+    },
+    {
+      "id": "F002",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "chen-huaping-edu-ba",
+        "field": "degree"
+      },
+      "value": "学士",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "陈华平同志，男，汉族，1968年12月出生，法学学士，中共党员"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "履历显示，陈华平，1968年12月出生，法学学士，中共党员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线法学学士记录；具体本科院校官方简历未公开，旧库“西南政法大学”单列candidate不发布"
+    },
+    {
+      "id": "F003",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "chen-huaping-edu-ba",
+        "field": "degreeStatus"
+      },
+      "value": "awarded",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "陈华平同志，男，汉族，1968年12月出生，法学学士，中共党员"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "履历显示，陈华平，1968年12月出生，法学学士，中共党员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线法学学士记录；具体本科院校官方简历未公开，旧库“西南政法大学”单列candidate不发布"
+    },
+    {
+      "id": "F004",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "chen-huaping-edu-ba",
+        "field": "educationLevel"
+      },
+      "value": "本科",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "陈华平同志，男，汉族，1968年12月出生，法学学士，中共党员"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "履历显示，陈华平，1968年12月出生，法学学士，中共党员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线法学学士记录；具体本科院校官方简历未公开，旧库“西南政法大学”单列candidate不发布"
+    },
+    {
+      "id": "F005",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "chen-huaping-edu-ba",
+        "field": "studyStatus"
+      },
+      "value": "graduated",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "陈华平同志，男，汉族，1968年12月出生，法学学士，中共党员"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "履历显示，陈华平，1968年12月出生，法学学士，中共党员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线法学学士记录；具体本科院校官方简历未公开，旧库“西南政法大学”单列candidate不发布"
+    },
+    {
+      "id": "F006",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "chen-huaping-edu-ba",
+        "field": "major"
+      },
+      "value": "法学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "陈华平同志，男，汉族，1968年12月出生，法学学士，中共党员"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "履历显示，陈华平，1968年12月出生，法学学士，中共党员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线法学学士记录；具体本科院校官方简历未公开，旧库“西南政法大学”单列candidate不发布"
+    },
+    {
+      "id": "F007",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "chen-huaping-edu-ba",
+        "field": "school"
+      },
+      "value": "西南政法大学",
+      "status": "candidate",
+      "citations": [],
+      "note": "旧库原始记录写“1991西南政法大学法学学士”，本轮已读5篇权威来源均仅载“法学学士”而未披露具体母校，降为candidate待校友名录或母校贺信核实"
+    },
+    {
+      "id": "F008",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-jg-early",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增证监会机构监管部检查一处处长及副主任核验记录（精确起止年月未公开故留空）"
+    },
+    {
+      "id": "F009",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-jg-early",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增证监会机构监管部检查一处处长及副主任核验记录（精确起止年月未公开故留空）"
+    },
+    {
+      "id": "F010",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-jg-early",
+        "field": "unitId"
+      },
+      "value": "csrc-jg",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增证监会机构监管部检查一处处长及副主任核验记录（精确起止年月未公开故留空）"
+    },
+    {
+      "id": "F011",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-jg-early",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增证监会机构监管部检查一处处长及副主任核验记录（精确起止年月未公开故留空）"
+    },
+    {
+      "id": "F012",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-jg-early",
+        "field": "department"
+      },
+      "value": "机构监管部",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增证监会机构监管部检查一处处长及副主任核验记录（精确起止年月未公开故留空）"
+    },
+    {
+      "id": "F013",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-jg-early",
+        "field": "position"
+      },
+      "value": "检查一处处长、副主任（先后任职）",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增证监会机构监管部检查一处处长及副主任核验记录（精确起止年月未公开故留空）"
+    },
+    {
+      "id": "F014",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-jg-early",
+        "field": "rank"
+      },
+      "value": "副厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增证监会机构监管部检查一处处长及副主任核验记录（精确起止年月未公开故留空）"
+    },
+    {
+      "id": "F015",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-tj-csrc-hist",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第7段",
+          "statement": "在郑州商品期货交易所、证监会机构部、打击非法证券活动办公室、天津证监局有过任职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增天津证监局局长助理历史任职（站内无天津局独立unitId，按规则置空unitId）"
+    },
+    {
+      "id": "F016",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-tj-csrc-hist",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第7段",
+          "statement": "在郑州商品期货交易所、证监会机构部、打击非法证券活动办公室、天津证监局有过任职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增天津证监局局长助理历史任职（站内无天津局独立unitId，按规则置空unitId）"
+    },
+    {
+      "id": "F017",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-tj-csrc-hist",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第7段",
+          "statement": "在郑州商品期货交易所、证监会机构部、打击非法证券活动办公室、天津证监局有过任职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增天津证监局局长助理历史任职（站内无天津局独立unitId，按规则置空unitId）"
+    },
+    {
+      "id": "F018",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-tj-csrc-hist",
+        "field": "unitName"
+      },
+      "value": "中国证监会天津监管局",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第7段",
+          "statement": "在郑州商品期货交易所、证监会机构部、打击非法证券活动办公室、天津证监局有过任职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增天津证监局局长助理历史任职（站内无天津局独立unitId，按规则置空unitId）"
+    },
+    {
+      "id": "F019",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-tj-csrc-hist",
+        "field": "position"
+      },
+      "value": "局长助理",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "历任机构部检查一处处长，天津证监局局长助理、机构部副主任等"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第7段",
+          "statement": "在郑州商品期货交易所、证监会机构部、打击非法证券活动办公室、天津证监局有过任职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增天津证监局局长助理历史任职（站内无天津局独立unitId，按规则置空unitId）"
+    },
+    {
+      "id": "F020",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-dafei-hist",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2014年2月由副司局级提升为正局级，此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任。2016年6月2日陈华平任郑商所党委书记"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2014年，陈华平由机构部副主任提拔为打非局局长；2016年又调任郑商所理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增2014年2月提任打非局局长（打非办主任，正厅局级）记录，证伪旧库“稽查总队副总队长”“办公厅巡视员”编造经历"
+    },
+    {
+      "id": "F021",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-dafei-hist",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2014年2月由副司局级提升为正局级，此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任。2016年6月2日陈华平任郑商所党委书记"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2014年，陈华平由机构部副主任提拔为打非局局长；2016年又调任郑商所理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增2014年2月提任打非局局长（打非办主任，正厅局级）记录，证伪旧库“稽查总队副总队长”“办公厅巡视员”编造经历"
+    },
+    {
+      "id": "F022",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-dafei-hist",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2014年2月由副司局级提升为正局级，此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任。2016年6月2日陈华平任郑商所党委书记"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2014年，陈华平由机构部副主任提拔为打非局局长；2016年又调任郑商所理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增2014年2月提任打非局局长（打非办主任，正厅局级）记录，证伪旧库“稽查总队副总队长”“办公厅巡视员”编造经历"
+    },
+    {
+      "id": "F023",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-dafei-hist",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会打击非法证券期货活动局（打非办）",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2014年2月由副司局级提升为正局级，此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任。2016年6月2日陈华平任郑商所党委书记"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2014年，陈华平由机构部副主任提拔为打非局局长；2016年又调任郑商所理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增2014年2月提任打非局局长（打非办主任，正厅局级）记录，证伪旧库“稽查总队副总队长”“办公厅巡视员”编造经历"
+    },
+    {
+      "id": "F024",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-dafei-hist",
+        "field": "position"
+      },
+      "value": "局长（打击非法证券活动办公室主任）",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2014年2月由副司局级提升为正局级，此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任。2016年6月2日陈华平任郑商所党委书记"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2014年，陈华平由机构部副主任提拔为打非局局长；2016年又调任郑商所理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增2014年2月提任打非局局长（打非办主任，正厅局级）记录，证伪旧库“稽查总队副总队长”“办公厅巡视员”编造经历"
+    },
+    {
+      "id": "F025",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-dafei-hist",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2014年2月由副司局级提升为正局级，此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任。2016年6月2日陈华平任郑商所党委书记"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2014年，陈华平由机构部副主任提拔为打非局局长；2016年又调任郑商所理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增2014年2月提任打非局局长（打非办主任，正厅局级）记录，证伪旧库“稽查总队副总队长”“办公厅巡视员”编造经历"
+    },
+    {
+      "id": "F026",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-dafei-hist",
+        "field": "startYear"
+      },
+      "value": 2014,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2014年2月由副司局级提升为正局级，此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任。2016年6月2日陈华平任郑商所党委书记"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2014年，陈华平由机构部副主任提拔为打非局局长；2016年又调任郑商所理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增2014年2月提任打非局局长（打非办主任，正厅局级）记录，证伪旧库“稽查总队副总队长”“办公厅巡视员”编造经历"
+    },
+    {
+      "id": "F027",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-dafei-hist",
+        "field": "startMonth"
+      },
+      "value": 2,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2014年2月由副司局级提升为正局级，此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任。2016年6月2日陈华平任郑商所党委书记"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2014年，陈华平由机构部副主任提拔为打非局局长；2016年又调任郑商所理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增2014年2月提任打非局局长（打非办主任，正厅局级）记录，证伪旧库“稽查总队副总队长”“办公厅巡视员”编造经历"
+    },
+    {
+      "id": "F028",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-dafei-hist",
+        "field": "endYear"
+      },
+      "value": 2016,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2014年2月由副司局级提升为正局级，此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任。2016年6月2日陈华平任郑商所党委书记"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2014年，陈华平由机构部副主任提拔为打非局局长；2016年又调任郑商所理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增2014年2月提任打非局局长（打非办主任，正厅局级）记录，证伪旧库“稽查总队副总队长”“办公厅巡视员”编造经历"
+    },
+    {
+      "id": "F029",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-csrc-dafei-hist",
+        "field": "endMonth"
+      },
+      "value": 6,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2014年2月由副司局级提升为正局级，此前曾先后担任证监会机构部副主任、打击非法证券活动办公室主任。2016年6月2日陈华平任郑商所党委书记"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2014年，陈华平由机构部副主任提拔为打非局局长；2016年又调任郑商所理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "新增2014年2月提任打非局局长（打非办主任，正厅局级）记录，证伪旧库“稽查总队副总队长”“办公厅巡视员”编造经历"
+    },
+    {
+      "id": "F030",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-czce-deep",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年6月2日陈华平任郑商所党委书记，提名为郑商所理事会理事长人选。2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "郑商所第五届理事会第18次会议，选举陈华平为郑商所理事会理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线郑商所党委书记、理事长任期记录，消除旧derived占位"
+    },
+    {
+      "id": "F031",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-czce-deep",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年6月2日陈华平任郑商所党委书记，提名为郑商所理事会理事长人选。2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "郑商所第五届理事会第18次会议，选举陈华平为郑商所理事会理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线郑商所党委书记、理事长任期记录，消除旧derived占位"
+    },
+    {
+      "id": "F032",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-czce-deep",
+        "field": "unitId"
+      },
+      "value": "csrc-czce",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年6月2日陈华平任郑商所党委书记，提名为郑商所理事会理事长人选。2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "郑商所第五届理事会第18次会议，选举陈华平为郑商所理事会理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线郑商所党委书记、理事长任期记录，消除旧derived占位"
+    },
+    {
+      "id": "F033",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-czce-deep",
+        "field": "unitName"
+      },
+      "value": "郑州商品交易所",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年6月2日陈华平任郑商所党委书记，提名为郑商所理事会理事长人选。2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "郑商所第五届理事会第18次会议，选举陈华平为郑商所理事会理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线郑商所党委书记、理事长任期记录，消除旧derived占位"
+    },
+    {
+      "id": "F034",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-czce-deep",
+        "field": "position"
+      },
+      "value": "党委书记、理事长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年6月2日陈华平任郑商所党委书记，提名为郑商所理事会理事长人选。2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "郑商所第五届理事会第18次会议，选举陈华平为郑商所理事会理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线郑商所党委书记、理事长任期记录，消除旧derived占位"
+    },
+    {
+      "id": "F035",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-czce-deep",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年6月2日陈华平任郑商所党委书记，提名为郑商所理事会理事长人选。2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "郑商所第五届理事会第18次会议，选举陈华平为郑商所理事会理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线郑商所党委书记、理事长任期记录，消除旧derived占位"
+    },
+    {
+      "id": "F036",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-czce-deep",
+        "field": "startYear"
+      },
+      "value": 2016,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年6月2日陈华平任郑商所党委书记，提名为郑商所理事会理事长人选。2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "郑商所第五届理事会第18次会议，选举陈华平为郑商所理事会理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线郑商所党委书记、理事长任期记录，消除旧derived占位"
+    },
+    {
+      "id": "F037",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-czce-deep",
+        "field": "startMonth"
+      },
+      "value": 6,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年6月2日陈华平任郑商所党委书记，提名为郑商所理事会理事长人选。2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "郑商所第五届理事会第18次会议，选举陈华平为郑商所理事会理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线郑商所党委书记、理事长任期记录，消除旧derived占位"
+    },
+    {
+      "id": "F038",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-czce-deep",
+        "field": "endYear"
+      },
+      "value": 2019,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年6月2日陈华平任郑商所党委书记，提名为郑商所理事会理事长人选。2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "郑商所第五届理事会第18次会议，选举陈华平为郑商所理事会理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线郑商所党委书记、理事长任期记录，消除旧derived占位"
+    },
+    {
+      "id": "F039",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-czce-deep",
+        "field": "endMonth"
+      },
+      "value": 10,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年6月2日陈华平任郑商所党委书记，提名为郑商所理事会理事长人选。2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "郑商所第五届理事会第18次会议，选举陈华平为郑商所理事会理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线郑商所党委书记、理事长任期记录，消除旧derived占位"
+    },
+    {
+      "id": "F040",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-office-deep",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3—4段",
+          "statement": "12月6日下午……陈华平同志任深圳证券交易所党委书记……2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "2019年10月，中国证券监督管理委员会办公厅主任；2021年12月，深圳证券交易所党委书记、理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线证监会办公厅主任任期记录"
+    },
+    {
+      "id": "F041",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-office-deep",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3—4段",
+          "statement": "12月6日下午……陈华平同志任深圳证券交易所党委书记……2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "2019年10月，中国证券监督管理委员会办公厅主任；2021年12月，深圳证券交易所党委书记、理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线证监会办公厅主任任期记录"
+    },
+    {
+      "id": "F042",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-office-deep",
+        "field": "unitId"
+      },
+      "value": "csrc-bgt",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3—4段",
+          "statement": "12月6日下午……陈华平同志任深圳证券交易所党委书记……2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "2019年10月，中国证券监督管理委员会办公厅主任；2021年12月，深圳证券交易所党委书记、理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线证监会办公厅主任任期记录"
+    },
+    {
+      "id": "F043",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-office-deep",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3—4段",
+          "statement": "12月6日下午……陈华平同志任深圳证券交易所党委书记……2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "2019年10月，中国证券监督管理委员会办公厅主任；2021年12月，深圳证券交易所党委书记、理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线证监会办公厅主任任期记录"
+    },
+    {
+      "id": "F044",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-office-deep",
+        "field": "department"
+      },
+      "value": "办公厅",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3—4段",
+          "statement": "12月6日下午……陈华平同志任深圳证券交易所党委书记……2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "2019年10月，中国证券监督管理委员会办公厅主任；2021年12月，深圳证券交易所党委书记、理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线证监会办公厅主任任期记录"
+    },
+    {
+      "id": "F045",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-office-deep",
+        "field": "position"
+      },
+      "value": "主任",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3—4段",
+          "statement": "12月6日下午……陈华平同志任深圳证券交易所党委书记……2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "2019年10月，中国证券监督管理委员会办公厅主任；2021年12月，深圳证券交易所党委书记、理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线证监会办公厅主任任期记录"
+    },
+    {
+      "id": "F046",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-office-deep",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3—4段",
+          "statement": "12月6日下午……陈华平同志任深圳证券交易所党委书记……2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "2019年10月，中国证券监督管理委员会办公厅主任；2021年12月，深圳证券交易所党委书记、理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线证监会办公厅主任任期记录"
+    },
+    {
+      "id": "F047",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-office-deep",
+        "field": "startYear"
+      },
+      "value": 2019,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3—4段",
+          "statement": "12月6日下午……陈华平同志任深圳证券交易所党委书记……2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "2019年10月，中国证券监督管理委员会办公厅主任；2021年12月，深圳证券交易所党委书记、理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线证监会办公厅主任任期记录"
+    },
+    {
+      "id": "F048",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-office-deep",
+        "field": "startMonth"
+      },
+      "value": 10,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3—4段",
+          "statement": "12月6日下午……陈华平同志任深圳证券交易所党委书记……2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "2019年10月，中国证券监督管理委员会办公厅主任；2021年12月，深圳证券交易所党委书记、理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线证监会办公厅主任任期记录"
+    },
+    {
+      "id": "F049",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-office-deep",
+        "field": "endYear"
+      },
+      "value": 2021,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3—4段",
+          "statement": "12月6日下午……陈华平同志任深圳证券交易所党委书记……2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "2019年10月，中国证券监督管理委员会办公厅主任；2021年12月，深圳证券交易所党委书记、理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线证监会办公厅主任任期记录"
+    },
+    {
+      "id": "F050",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-office-deep",
+        "field": "endMonth"
+      },
+      "value": 12,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3—4段",
+          "statement": "12月6日下午……陈华平同志任深圳证券交易所党委书记……2019年10月23日，陈华平调任证监会办公厅主任"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "陈华平履历段",
+          "statement": "2019年10月，中国证券监督管理委员会办公厅主任；2021年12月，深圳证券交易所党委书记、理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线证监会办公厅主任任期记录"
+    },
+    {
+      "id": "F051",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-szse-deep",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第2—3段",
+          "statement": "12月22日晚间……选举陈华平为深圳证券交易所理事会理事长（副部长级）……此前12月6日……陈华平任深交所党委书记"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "9月27日，国务院决定，任命陈华平为中国证监会副主席，同意其不再担任深圳证券交易所理事会理事长职务"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线深交所党委书记、理事长（副部级）任期记录"
+    },
+    {
+      "id": "F052",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-szse-deep",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第2—3段",
+          "statement": "12月22日晚间……选举陈华平为深圳证券交易所理事会理事长（副部长级）……此前12月6日……陈华平任深交所党委书记"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "9月27日，国务院决定，任命陈华平为中国证监会副主席，同意其不再担任深圳证券交易所理事会理事长职务"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线深交所党委书记、理事长（副部级）任期记录"
+    },
+    {
+      "id": "F053",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-szse-deep",
+        "field": "unitId"
+      },
+      "value": "csrc-szse",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第2—3段",
+          "statement": "12月22日晚间……选举陈华平为深圳证券交易所理事会理事长（副部长级）……此前12月6日……陈华平任深交所党委书记"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "9月27日，国务院决定，任命陈华平为中国证监会副主席，同意其不再担任深圳证券交易所理事会理事长职务"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线深交所党委书记、理事长（副部级）任期记录"
+    },
+    {
+      "id": "F054",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-szse-deep",
+        "field": "unitName"
+      },
+      "value": "深圳证券交易所",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第2—3段",
+          "statement": "12月22日晚间……选举陈华平为深圳证券交易所理事会理事长（副部长级）……此前12月6日……陈华平任深交所党委书记"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "9月27日，国务院决定，任命陈华平为中国证监会副主席，同意其不再担任深圳证券交易所理事会理事长职务"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线深交所党委书记、理事长（副部级）任期记录"
+    },
+    {
+      "id": "F055",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-szse-deep",
+        "field": "position"
+      },
+      "value": "党委书记、理事长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第2—3段",
+          "statement": "12月22日晚间……选举陈华平为深圳证券交易所理事会理事长（副部长级）……此前12月6日……陈华平任深交所党委书记"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "9月27日，国务院决定，任命陈华平为中国证监会副主席，同意其不再担任深圳证券交易所理事会理事长职务"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线深交所党委书记、理事长（副部级）任期记录"
+    },
+    {
+      "id": "F056",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-szse-deep",
+        "field": "rank"
+      },
+      "value": "副部级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第2—3段",
+          "statement": "12月22日晚间……选举陈华平为深圳证券交易所理事会理事长（副部长级）……此前12月6日……陈华平任深交所党委书记"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "9月27日，国务院决定，任命陈华平为中国证监会副主席，同意其不再担任深圳证券交易所理事会理事长职务"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线深交所党委书记、理事长（副部级）任期记录"
+    },
+    {
+      "id": "F057",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-szse-deep",
+        "field": "startYear"
+      },
+      "value": 2021,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第2—3段",
+          "statement": "12月22日晚间……选举陈华平为深圳证券交易所理事会理事长（副部长级）……此前12月6日……陈华平任深交所党委书记"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "9月27日，国务院决定，任命陈华平为中国证监会副主席，同意其不再担任深圳证券交易所理事会理事长职务"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线深交所党委书记、理事长（副部级）任期记录"
+    },
+    {
+      "id": "F058",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-szse-deep",
+        "field": "startMonth"
+      },
+      "value": 12,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第2—3段",
+          "statement": "12月22日晚间……选举陈华平为深圳证券交易所理事会理事长（副部长级）……此前12月6日……陈华平任深交所党委书记"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "9月27日，国务院决定，任命陈华平为中国证监会副主席，同意其不再担任深圳证券交易所理事会理事长职务"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线深交所党委书记、理事长（副部级）任期记录"
+    },
+    {
+      "id": "F059",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-szse-deep",
+        "field": "endYear"
+      },
+      "value": 2023,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第2—3段",
+          "statement": "12月22日晚间……选举陈华平为深圳证券交易所理事会理事长（副部长级）……此前12月6日……陈华平任深交所党委书记"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "9月27日，国务院决定，任命陈华平为中国证监会副主席，同意其不再担任深圳证券交易所理事会理事长职务"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线深交所党委书记、理事长（副部级）任期记录"
+    },
+    {
+      "id": "F060",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "chen-huaping-szse-deep",
+        "field": "endMonth"
+      },
+      "value": 9,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第2—3段",
+          "statement": "12月22日晚间……选举陈华平为深圳证券交易所理事会理事长（副部长级）……此前12月6日……陈华平任深交所党委书记"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "9月27日，国务院决定，任命陈华平为中国证监会副主席，同意其不再担任深圳证券交易所理事会理事长职务"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1968年12月生、法学学士，历任证监会机构部检查一处处长、天津证监局局长助理、机构部副主任、打非局局长（打非办主任）、郑商所理事长、证监会办公厅主任、深交所理事长，现中国证监会副主席陈华平",
+        "countercheck": "多篇权威财经报道交叉印证2014年2月由机构部副主任提任打非办主任（打非局局长），彻底证伪旧库“稽查总队副总队长”“办公厅副巡视员、巡视员”编造记录；未获一手证实的本科院校保留为未公开candidate"
+      },
+      "note": "升级基线深交所党委书记、理事长（副部级）任期记录"
+    }
+  ],
+  "rules": [],
+  "publications": [
+    {
+      "id": "P001",
+      "factId": "F001",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P002",
+      "factId": "F002",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P003",
+      "factId": "F003",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P004",
+      "factId": "F004",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P005",
+      "factId": "F005",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P006",
+      "factId": "F006",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P007",
+      "factId": "F008",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P008",
+      "factId": "F009",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P009",
+      "factId": "F010",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P010",
+      "factId": "F011",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P011",
+      "factId": "F012",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P012",
+      "factId": "F013",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P013",
+      "factId": "F014",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P014",
+      "factId": "F015",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P015",
+      "factId": "F016",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P016",
+      "factId": "F017",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P017",
+      "factId": "F018",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P018",
+      "factId": "F019",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P019",
+      "factId": "F020",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P020",
+      "factId": "F021",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P021",
+      "factId": "F022",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P022",
+      "factId": "F023",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P023",
+      "factId": "F024",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P024",
+      "factId": "F025",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P025",
+      "factId": "F026",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P026",
+      "factId": "F027",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P027",
+      "factId": "F028",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P028",
+      "factId": "F029",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P029",
+      "factId": "F030",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P030",
+      "factId": "F031",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P031",
+      "factId": "F032",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P032",
+      "factId": "F033",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P033",
+      "factId": "F034",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P034",
+      "factId": "F035",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P035",
+      "factId": "F036",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P036",
+      "factId": "F037",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P037",
+      "factId": "F038",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P038",
+      "factId": "F039",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P039",
+      "factId": "F040",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P040",
+      "factId": "F041",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P041",
+      "factId": "F042",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P042",
+      "factId": "F043",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P043",
+      "factId": "F044",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P044",
+      "factId": "F045",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P045",
+      "factId": "F046",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P046",
+      "factId": "F047",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P047",
+      "factId": "F048",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P048",
+      "factId": "F049",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P049",
+      "factId": "F050",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P050",
+      "factId": "F051",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P051",
+      "factId": "F052",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P052",
+      "factId": "F053",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P053",
+      "factId": "F054",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P054",
+      "factId": "F055",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P055",
+      "factId": "F056",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P056",
+      "factId": "F057",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P057",
+      "factId": "F058",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P058",
+      "factId": "F059",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P059",
+      "factId": "F060",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    }
+  ]
+}

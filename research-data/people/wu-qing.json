@@ -1,0 +1,4033 @@
+{
+  "schemaVersion": 1,
+  "personId": "wu-qing",
+  "evidence": [
+    {
+      "id": "S001",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "sufe-official-20240221",
+      "note": "上海财经大学校友会官方贺信，直接否定旧库“安徽财贸学院1989学士”说法",
+      "source": {
+        "id": "wu-qing-sufe-alumni-20240221",
+        "title": "祝贺！上财校友吴清任证监会党委书记、主席",
+        "publisher": "上海财经大学校友会",
+        "url": "https://xy.sufe.edu.cn/3d/7a/c11018a212346/page.htm",
+        "sourceType": "academic",
+        "publishedDate": "2024-02-21",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "1987年本科毕业于上海财经大学财政学专业"
+        ]
+      }
+    },
+    {
+      "id": "S002",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "ruc-sf-official",
+      "note": "人大财金学院官网杰出校友条目确认校友与现职身份",
+      "source": {
+        "id": "wu-qing-ruc-sf-alumni",
+        "title": "杰出校友：吴清",
+        "publisher": "中国人民大学财政金融学院",
+        "url": "http://mba.sf.ruc.edu.cn/jcxy/68de70e370aa42b6ba6cb895d1be770f.htm",
+        "sourceType": "academic",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "中国人民大学财政金融学院杰出校友（二十届中央候补委员、中国证监会党委书记、主席）"
+        ]
+      }
+    },
+    {
+      "id": "S003",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "bjnews-20240207",
+      "note": "新京报人事报道含完整五阶段公开简历",
+      "source": {
+        "id": "wu-qing-bjnews-20240207",
+        "title": "中国证监会换帅！吴清回归证监系统 自有一套风险处置逻辑",
+        "publisher": "新京报",
+        "url": "https://m.bjnews.com.cn/detail/1707308552129598.html",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2024-02-07",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "1991年中国人民大学财政学硕士",
+          "2002年中国人民大学金融学博士",
+          "2013年7月任虹口区委书记",
+          "2016年5月任上交所理事长、党委书记",
+          "2017年12月后上海市政府及市委任职节点"
+        ]
+      }
+    },
+    {
+      "id": "S004",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "eastday-official-bio-2012",
+      "note": "上海地方换届官方公开简历",
+      "source": {
+        "id": "wu-qing-ce-20120522",
+        "title": "资料：上海虹口区区长吴清简历(图)",
+        "publisher": "中国经济网（来源：东方网）",
+        "url": "http://district.ce.cn/zt/rwk/sf/sh/rs/201205/22/t20120522_1268386.shtml",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2012-05-22",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "安徽蒙城籍贯",
+          "1989年1月参加工作",
+          "证监会机构部、机构监管部、风险办、基金监管部任职顺序",
+          "2010年11月任虹口区委副书记、副区长、代区长",
+          "2011年1月当选虹口区区长"
+        ]
+      }
+    },
+    {
+      "id": "S005",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "jfdaily-cpcnews-20190905",
+      "note": "转引解放日报发布的中央批准任免消息及标准干部简历",
+      "source": {
+        "id": "wu-qing-12371-20190905",
+        "title": "上海｜吴清任上海市委常委",
+        "publisher": "七一网（来源：中国共产党新闻网／解放日报）",
+        "url": "https://www.12371.gov.cn/web/article/1438313076419854336/web/content_1438313076419854336.html",
+        "sourceType": "official_notice",
+        "publishedDate": "2019-09-05",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "安徽蒙城人",
+          "经济学博士",
+          "2018年1月任上海市副市长",
+          "2019年9月发布中共中央批准任上海市委委员、常委消息"
+        ]
+      }
+    },
+    {
+      "id": "S006",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "redstar-20240207",
+      "note": "交叉印证硕士、博士毕业年与专业及2021年12月任常务副市长月份",
+      "source": {
+        "id": "wu-qing-redstar-sina-20240207",
+        "title": "吴清出任第十任证监会主席，曾被称为“券商屠夫”，未来三个工作方向可期",
+        "publisher": "红星新闻（新浪科技转载）",
+        "url": "https://finance.sina.com.cn/tech/roll/2024-02-07/doc-inahfmfa7957193.shtml",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2024-02-07",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "1991年人大财政学硕士、2002年人大金融学博士",
+          "2016年5月任上交所理事长、党委书记（副部长级）",
+          "2021年12月任上海市常务副市长"
+        ]
+      }
+    },
+    {
+      "id": "S007",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "csrc-official-20240207",
+      "note": "证监会官网任免公告",
+      "source": {
+        "id": "wu-qing-csrc-chair-20240207",
+        "title": "中国证监会主要领导调整",
+        "publisher": "中国证券监督管理委员会",
+        "url": "https://www.csrc.gov.cn/csrc/c100028/c7462697/content.shtml",
+        "sourceType": "appointment",
+        "publishedDate": "2024-02-07",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2024年2月中共中央、国务院任命为中国证监会党委书记、主席（正部级）"
+        ]
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "revision": 1,
+      "target": {
+        "kind": "basic",
+        "field": "nativePlace"
+      },
+      "value": "安徽蒙城",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "吴清，男，1965年4月生，汉族，安徽蒙城人"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "吴清，男，1965年4月生，汉族，安徽蒙城人"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "官方简历一致确认籍贯安徽蒙城"
+    },
+    {
+      "id": "F002",
+      "revision": 1,
+      "target": {
+        "kind": "basic",
+        "field": "currentRank"
+      },
+      "value": "正部级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "中共中央决定，任命吴清同志为中国证券监督管理委员会党委书记……国务院决定，任命吴清同志为中国证券监督管理委员会主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "国务院直属正部级机构党委书记、主席"
+    },
+    {
+      "id": "F003",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ba",
+        "field": "school"
+      },
+      "value": "上海财经大学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "吴清校友1987年本科毕业于上海财经大学财政学专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "上财校友会官网确证1987年财政学本科毕业，纠正旧库“安徽财贸学院1989学士”错误；入学年不作学制反推"
+    },
+    {
+      "id": "F004",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ba",
+        "field": "degree"
+      },
+      "value": "学士",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "吴清校友1987年本科毕业于上海财经大学财政学专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "上财校友会官网确证1987年财政学本科毕业，纠正旧库“安徽财贸学院1989学士”错误；入学年不作学制反推"
+    },
+    {
+      "id": "F005",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ba",
+        "field": "degreeStatus"
+      },
+      "value": "awarded",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "吴清校友1987年本科毕业于上海财经大学财政学专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "上财校友会官网确证1987年财政学本科毕业，纠正旧库“安徽财贸学院1989学士”错误；入学年不作学制反推"
+    },
+    {
+      "id": "F006",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ba",
+        "field": "educationLevel"
+      },
+      "value": "本科",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "吴清校友1987年本科毕业于上海财经大学财政学专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "上财校友会官网确证1987年财政学本科毕业，纠正旧库“安徽财贸学院1989学士”错误；入学年不作学制反推"
+    },
+    {
+      "id": "F007",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ba",
+        "field": "studyStatus"
+      },
+      "value": "graduated",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "吴清校友1987年本科毕业于上海财经大学财政学专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "上财校友会官网确证1987年财政学本科毕业，纠正旧库“安徽财贸学院1989学士”错误；入学年不作学制反推"
+    },
+    {
+      "id": "F008",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ba",
+        "field": "major"
+      },
+      "value": "财政学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "吴清校友1987年本科毕业于上海财经大学财政学专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "上财校友会官网确证1987年财政学本科毕业，纠正旧库“安徽财贸学院1989学士”错误；入学年不作学制反推"
+    },
+    {
+      "id": "F009",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ba",
+        "field": "graduationYear"
+      },
+      "value": 1987,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "吴清校友1987年本科毕业于上海财经大学财政学专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "上财校友会官网确证1987年财政学本科毕业，纠正旧库“安徽财贸学院1989学士”错误；入学年不作学制反推"
+    },
+    {
+      "id": "F010",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ba",
+        "field": "endYear"
+      },
+      "value": 1987,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "吴清校友1987年本科毕业于上海财经大学财政学专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "上财校友会官网确证1987年财政学本科毕业，纠正旧库“安徽财贸学院1989学士”错误；入学年不作学制反推"
+    },
+    {
+      "id": "F011",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ma",
+        "field": "school"
+      },
+      "value": "中国人民大学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "1991年毕业于中国人民大学财政学专业，获硕士学位"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "吴清1991年毕业于中国人民大学财政学专业，获硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "纠正旧库“1992硕士”偏差；入学年未披露不推算"
+    },
+    {
+      "id": "F012",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ma",
+        "field": "degree"
+      },
+      "value": "硕士",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "1991年毕业于中国人民大学财政学专业，获硕士学位"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "吴清1991年毕业于中国人民大学财政学专业，获硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "纠正旧库“1992硕士”偏差；入学年未披露不推算"
+    },
+    {
+      "id": "F013",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ma",
+        "field": "degreeStatus"
+      },
+      "value": "awarded",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "1991年毕业于中国人民大学财政学专业，获硕士学位"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "吴清1991年毕业于中国人民大学财政学专业，获硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "纠正旧库“1992硕士”偏差；入学年未披露不推算"
+    },
+    {
+      "id": "F014",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ma",
+        "field": "educationLevel"
+      },
+      "value": "研究生",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "1991年毕业于中国人民大学财政学专业，获硕士学位"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "吴清1991年毕业于中国人民大学财政学专业，获硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "纠正旧库“1992硕士”偏差；入学年未披露不推算"
+    },
+    {
+      "id": "F015",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ma",
+        "field": "studyStatus"
+      },
+      "value": "graduated",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "1991年毕业于中国人民大学财政学专业，获硕士学位"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "吴清1991年毕业于中国人民大学财政学专业，获硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "纠正旧库“1992硕士”偏差；入学年未披露不推算"
+    },
+    {
+      "id": "F016",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ma",
+        "field": "major"
+      },
+      "value": "财政学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "1991年毕业于中国人民大学财政学专业，获硕士学位"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "吴清1991年毕业于中国人民大学财政学专业，获硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "纠正旧库“1992硕士”偏差；入学年未披露不推算"
+    },
+    {
+      "id": "F017",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ma",
+        "field": "graduationYear"
+      },
+      "value": 1991,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "1991年毕业于中国人民大学财政学专业，获硕士学位"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "吴清1991年毕业于中国人民大学财政学专业，获硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "纠正旧库“1992硕士”偏差；入学年未披露不推算"
+    },
+    {
+      "id": "F018",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-ma",
+        "field": "endYear"
+      },
+      "value": 1991,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "1991年毕业于中国人民大学财政学专业，获硕士学位"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "吴清1991年毕业于中国人民大学财政学专业，获硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "纠正旧库“1992硕士”偏差；入学年未披露不推算"
+    },
+    {
+      "id": "F019",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-phd",
+        "field": "school"
+      },
+      "value": "中国人民大学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2002年毕业于中国人民大学金融学专业，获博士学位"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "1989年1月参加工作，在职研究生，经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "绑定并升级基线博士记录，补齐院校、专业、2002毕业年与在职属性"
+    },
+    {
+      "id": "F020",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-phd",
+        "field": "degree"
+      },
+      "value": "博士",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2002年毕业于中国人民大学金融学专业，获博士学位"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "1989年1月参加工作，在职研究生，经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "绑定并升级基线博士记录，补齐院校、专业、2002毕业年与在职属性"
+    },
+    {
+      "id": "F021",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-phd",
+        "field": "degreeStatus"
+      },
+      "value": "awarded",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2002年毕业于中国人民大学金融学专业，获博士学位"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "1989年1月参加工作，在职研究生，经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "绑定并升级基线博士记录，补齐院校、专业、2002毕业年与在职属性"
+    },
+    {
+      "id": "F022",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-phd",
+        "field": "educationLevel"
+      },
+      "value": "研究生",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2002年毕业于中国人民大学金融学专业，获博士学位"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "1989年1月参加工作，在职研究生，经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "绑定并升级基线博士记录，补齐院校、专业、2002毕业年与在职属性"
+    },
+    {
+      "id": "F023",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-phd",
+        "field": "studyStatus"
+      },
+      "value": "graduated",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2002年毕业于中国人民大学金融学专业，获博士学位"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "1989年1月参加工作，在职研究生，经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "绑定并升级基线博士记录，补齐院校、专业、2002毕业年与在职属性"
+    },
+    {
+      "id": "F024",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-phd",
+        "field": "major"
+      },
+      "value": "金融学（经济学博士）",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2002年毕业于中国人民大学金融学专业，获博士学位"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "1989年1月参加工作，在职研究生，经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "绑定并升级基线博士记录，补齐院校、专业、2002毕业年与在职属性"
+    },
+    {
+      "id": "F025",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-phd",
+        "field": "graduationYear"
+      },
+      "value": 2002,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2002年毕业于中国人民大学金融学专业，获博士学位"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "1989年1月参加工作，在职研究生，经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "绑定并升级基线博士记录，补齐院校、专业、2002毕业年与在职属性"
+    },
+    {
+      "id": "F026",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-phd",
+        "field": "endYear"
+      },
+      "value": 2002,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2002年毕业于中国人民大学金融学专业，获博士学位"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "1989年1月参加工作，在职研究生，经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "绑定并升级基线博士记录，补齐院校、专业、2002毕业年与在职属性"
+    },
+    {
+      "id": "F027",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-phd",
+        "field": "isInService"
+      },
+      "value": true,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2002年毕业于中国人民大学金融学专业，获博士学位"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "1989年1月参加工作，在职研究生，经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "绑定并升级基线博士记录，补齐院校、专业、2002毕业年与在职属性"
+    },
+    {
+      "id": "F028",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "wu-qing-edu-phd",
+        "field": "educationMode"
+      },
+      "value": "在职",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "杰出校友页",
+          "statement": "中国人民大学财政金融学院杰出校友吴清"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2002年毕业于中国人民大学金融学专业，获博士学位"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "1989年1月参加工作，在职研究生，经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "绑定并升级基线博士记录，补齐院校、专业、2002毕业年与在职属性"
+    },
+    {
+      "id": "F029",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-jg-hist",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任中国证券监督管理委员会机构部综合处处长、副主任，中国证券监督管理委员会机构监管部副主任、主任"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "历任中国证券监督管理委员会机构部副处长、综合处处长、副主任（正处级）、机构监管部副主任（副厅级）、主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "历史任职确认，细分轮岗起止年月未公开故留空"
+    },
+    {
+      "id": "F030",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-jg-hist",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任中国证券监督管理委员会机构部综合处处长、副主任，中国证券监督管理委员会机构监管部副主任、主任"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "历任中国证券监督管理委员会机构部副处长、综合处处长、副主任（正处级）、机构监管部副主任（副厅级）、主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "历史任职确认，细分轮岗起止年月未公开故留空"
+    },
+    {
+      "id": "F031",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-jg-hist",
+        "field": "unitId"
+      },
+      "value": "csrc-jg",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任中国证券监督管理委员会机构部综合处处长、副主任，中国证券监督管理委员会机构监管部副主任、主任"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "历任中国证券监督管理委员会机构部副处长、综合处处长、副主任（正处级）、机构监管部副主任（副厅级）、主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "历史任职确认，细分轮岗起止年月未公开故留空"
+    },
+    {
+      "id": "F032",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-jg-hist",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任中国证券监督管理委员会机构部综合处处长、副主任，中国证券监督管理委员会机构监管部副主任、主任"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "历任中国证券监督管理委员会机构部副处长、综合处处长、副主任（正处级）、机构监管部副主任（副厅级）、主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "历史任职确认，细分轮岗起止年月未公开故留空"
+    },
+    {
+      "id": "F033",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-jg-hist",
+        "field": "department"
+      },
+      "value": "机构监管部（原机构部）",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任中国证券监督管理委员会机构部综合处处长、副主任，中国证券监督管理委员会机构监管部副主任、主任"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "历任中国证券监督管理委员会机构部副处长、综合处处长、副主任（正处级）、机构监管部副主任（副厅级）、主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "历史任职确认，细分轮岗起止年月未公开故留空"
+    },
+    {
+      "id": "F034",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-jg-hist",
+        "field": "position"
+      },
+      "value": "副处长、综合处处长、副主任、主任",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任中国证券监督管理委员会机构部综合处处长、副主任，中国证券监督管理委员会机构监管部副主任、主任"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "历任中国证券监督管理委员会机构部副处长、综合处处长、副主任（正处级）、机构监管部副主任（副厅级）、主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "历史任职确认，细分轮岗起止年月未公开故留空"
+    },
+    {
+      "id": "F035",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-jg-hist",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任中国证券监督管理委员会机构部综合处处长、副主任，中国证券监督管理委员会机构监管部副主任、主任"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "历任中国证券监督管理委员会机构部副处长、综合处处长、副主任（正处级）、机构监管部副主任（副厅级）、主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "历史任职确认，细分轮岗起止年月未公开故留空"
+    },
+    {
+      "id": "F036",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-risk-hist",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "非常设/历史专职机构用空unitId避免误归现设司局；起止年月留空"
+    },
+    {
+      "id": "F037",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-risk-hist",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "非常设/历史专职机构用空unitId避免误归现设司局；起止年月留空"
+    },
+    {
+      "id": "F038",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-risk-hist",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "非常设/历史专职机构用空unitId避免误归现设司局；起止年月留空"
+    },
+    {
+      "id": "F039",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-risk-hist",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会证券公司风险处置办公室",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "非常设/历史专职机构用空unitId避免误归现设司局；起止年月留空"
+    },
+    {
+      "id": "F040",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-risk-hist",
+        "field": "position"
+      },
+      "value": "主任",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "非常设/历史专职机构用空unitId避免误归现设司局；起止年月留空"
+    },
+    {
+      "id": "F041",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-risk-hist",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……证券公司风险处置办公室主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "非常设/历史专职机构用空unitId避免误归现设司局；起止年月留空"
+    },
+    {
+      "id": "F042",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-fund-hist",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……基金监管部主任。2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……基金监管部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "原基金监管部独立于现机构司；未见单独免职日原文故省略endYear"
+    },
+    {
+      "id": "F043",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-fund-hist",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……基金监管部主任。2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……基金监管部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "原基金监管部独立于现机构司；未见单独免职日原文故省略endYear"
+    },
+    {
+      "id": "F044",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-fund-hist",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……基金监管部主任。2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……基金监管部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "原基金监管部独立于现机构司；未见单独免职日原文故省略endYear"
+    },
+    {
+      "id": "F045",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-fund-hist",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会基金监管部",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……基金监管部主任。2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……基金监管部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "原基金监管部独立于现机构司；未见单独免职日原文故省略endYear"
+    },
+    {
+      "id": "F046",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-fund-hist",
+        "field": "position"
+      },
+      "value": "主任",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……基金监管部主任。2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……基金监管部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "原基金监管部独立于现机构司；未见单独免职日原文故省略endYear"
+    },
+    {
+      "id": "F047",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-csrc-fund-hist",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "曾任……基金监管部主任。2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "曾任……基金监管部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "原基金监管部独立于现机构司；未见单独免职日原文故省略endYear"
+    },
+    {
+      "id": "F048",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-mayor-2010-2013",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长。2011年1月当选为虹口区人民政府区长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2010年11月任代区长、2011年1月当选区长；区长免职精确月份未在已读原文单列故省略endYear"
+    },
+    {
+      "id": "F049",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-mayor-2010-2013",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长。2011年1月当选为虹口区人民政府区长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2010年11月任代区长、2011年1月当选区长；区长免职精确月份未在已读原文单列故省略endYear"
+    },
+    {
+      "id": "F050",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-mayor-2010-2013",
+        "field": "unitId"
+      },
+      "value": "gov-sh-dist",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长。2011年1月当选为虹口区人民政府区长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2010年11月任代区长、2011年1月当选区长；区长免职精确月份未在已读原文单列故省略endYear"
+    },
+    {
+      "id": "F051",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-mayor-2010-2013",
+        "field": "unitName"
+      },
+      "value": "上海市虹口区人民政府",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长。2011年1月当选为虹口区人民政府区长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2010年11月任代区长、2011年1月当选区长；区长免职精确月份未在已读原文单列故省略endYear"
+    },
+    {
+      "id": "F052",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-mayor-2010-2013",
+        "field": "position"
+      },
+      "value": "区委副书记、副区长、代理区长、区长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长。2011年1月当选为虹口区人民政府区长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2010年11月任代区长、2011年1月当选区长；区长免职精确月份未在已读原文单列故省略endYear"
+    },
+    {
+      "id": "F053",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-mayor-2010-2013",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长。2011年1月当选为虹口区人民政府区长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2010年11月任代区长、2011年1月当选区长；区长免职精确月份未在已读原文单列故省略endYear"
+    },
+    {
+      "id": "F054",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-mayor-2010-2013",
+        "field": "startYear"
+      },
+      "value": 2010,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长。2011年1月当选为虹口区人民政府区长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2010年11月任代区长、2011年1月当选区长；区长免职精确月份未在已读原文单列故省略endYear"
+    },
+    {
+      "id": "F055",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-mayor-2010-2013",
+        "field": "startMonth"
+      },
+      "value": 11,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2010年11月，任中共虹口区委委员、常委、副书记，副区长、代理区长。2011年1月当选为虹口区人民政府区长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2010年11月任代区长、2011年1月当选区长；区长免职精确月份未在已读原文单列故省略endYear"
+    },
+    {
+      "id": "F056",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-sec-2013-2016",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，接任虹口区委书记"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，吴清升任虹口区委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "确认2013年7月起任虹口区委书记"
+    },
+    {
+      "id": "F057",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-sec-2013-2016",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，接任虹口区委书记"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，吴清升任虹口区委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "确认2013年7月起任虹口区委书记"
+    },
+    {
+      "id": "F058",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-sec-2013-2016",
+        "field": "unitId"
+      },
+      "value": "gov-sh-dist",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，接任虹口区委书记"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，吴清升任虹口区委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "确认2013年7月起任虹口区委书记"
+    },
+    {
+      "id": "F059",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-sec-2013-2016",
+        "field": "unitName"
+      },
+      "value": "中共上海市虹口区委",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，接任虹口区委书记"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，吴清升任虹口区委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "确认2013年7月起任虹口区委书记"
+    },
+    {
+      "id": "F060",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-sec-2013-2016",
+        "field": "position"
+      },
+      "value": "区委书记",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，接任虹口区委书记"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，吴清升任虹口区委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "确认2013年7月起任虹口区委书记"
+    },
+    {
+      "id": "F061",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-sec-2013-2016",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，接任虹口区委书记"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，吴清升任虹口区委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "确认2013年7月起任虹口区委书记"
+    },
+    {
+      "id": "F062",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-sec-2013-2016",
+        "field": "startYear"
+      },
+      "value": 2013,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，接任虹口区委书记"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，吴清升任虹口区委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "确认2013年7月起任虹口区委书记"
+    },
+    {
+      "id": "F063",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-hongkou-sec-2013-2016",
+        "field": "startMonth"
+      },
+      "value": 7,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，接任虹口区委书记"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2013年7月，吴清升任虹口区委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "确认2013年7月起任虹口区委书记"
+    },
+    {
+      "id": "F064",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-sse-chair-2016-2017",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清任职上交所理事长、党委书记。2017年12月，吴清任上海市政府党组成员"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清回归了自己熟悉的证券领域，担任上海证券交易所理事会理事长、党委书记（副部长级）。到了2017年12月，吴清调职上海市政府，任党组成员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2016年5月至2017年12月任上交所党委书记、理事长（副部长级）"
+    },
+    {
+      "id": "F065",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-sse-chair-2016-2017",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清任职上交所理事长、党委书记。2017年12月，吴清任上海市政府党组成员"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清回归了自己熟悉的证券领域，担任上海证券交易所理事会理事长、党委书记（副部长级）。到了2017年12月，吴清调职上海市政府，任党组成员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2016年5月至2017年12月任上交所党委书记、理事长（副部长级）"
+    },
+    {
+      "id": "F066",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-sse-chair-2016-2017",
+        "field": "unitId"
+      },
+      "value": "csrc-sse",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清任职上交所理事长、党委书记。2017年12月，吴清任上海市政府党组成员"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清回归了自己熟悉的证券领域，担任上海证券交易所理事会理事长、党委书记（副部长级）。到了2017年12月，吴清调职上海市政府，任党组成员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2016年5月至2017年12月任上交所党委书记、理事长（副部长级）"
+    },
+    {
+      "id": "F067",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-sse-chair-2016-2017",
+        "field": "unitName"
+      },
+      "value": "上海证券交易所",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清任职上交所理事长、党委书记。2017年12月，吴清任上海市政府党组成员"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清回归了自己熟悉的证券领域，担任上海证券交易所理事会理事长、党委书记（副部长级）。到了2017年12月，吴清调职上海市政府，任党组成员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2016年5月至2017年12月任上交所党委书记、理事长（副部长级）"
+    },
+    {
+      "id": "F068",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-sse-chair-2016-2017",
+        "field": "position"
+      },
+      "value": "理事会理事长、党委书记",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清任职上交所理事长、党委书记。2017年12月，吴清任上海市政府党组成员"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清回归了自己熟悉的证券领域，担任上海证券交易所理事会理事长、党委书记（副部长级）。到了2017年12月，吴清调职上海市政府，任党组成员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2016年5月至2017年12月任上交所党委书记、理事长（副部长级）"
+    },
+    {
+      "id": "F069",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-sse-chair-2016-2017",
+        "field": "rank"
+      },
+      "value": "副部级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清任职上交所理事长、党委书记。2017年12月，吴清任上海市政府党组成员"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清回归了自己熟悉的证券领域，担任上海证券交易所理事会理事长、党委书记（副部长级）。到了2017年12月，吴清调职上海市政府，任党组成员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2016年5月至2017年12月任上交所党委书记、理事长（副部长级）"
+    },
+    {
+      "id": "F070",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-sse-chair-2016-2017",
+        "field": "startYear"
+      },
+      "value": 2016,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清任职上交所理事长、党委书记。2017年12月，吴清任上海市政府党组成员"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清回归了自己熟悉的证券领域，担任上海证券交易所理事会理事长、党委书记（副部长级）。到了2017年12月，吴清调职上海市政府，任党组成员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2016年5月至2017年12月任上交所党委书记、理事长（副部长级）"
+    },
+    {
+      "id": "F071",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-sse-chair-2016-2017",
+        "field": "startMonth"
+      },
+      "value": 5,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清任职上交所理事长、党委书记。2017年12月，吴清任上海市政府党组成员"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清回归了自己熟悉的证券领域，担任上海证券交易所理事会理事长、党委书记（副部长级）。到了2017年12月，吴清调职上海市政府，任党组成员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2016年5月至2017年12月任上交所党委书记、理事长（副部长级）"
+    },
+    {
+      "id": "F072",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-sse-chair-2016-2017",
+        "field": "endYear"
+      },
+      "value": 2017,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清任职上交所理事长、党委书记。2017年12月，吴清任上海市政府党组成员"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清回归了自己熟悉的证券领域，担任上海证券交易所理事会理事长、党委书记（副部长级）。到了2017年12月，吴清调职上海市政府，任党组成员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2016年5月至2017年12月任上交所党委书记、理事长（副部长级）"
+    },
+    {
+      "id": "F073",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-sse-chair-2016-2017",
+        "field": "endMonth"
+      },
+      "value": 12,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清任职上交所理事长、党委书记。2017年12月，吴清任上海市政府党组成员"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2016年5月，吴清回归了自己熟悉的证券领域，担任上海证券交易所理事会理事长、党委书记（副部长级）。到了2017年12月，吴清调职上海市政府，任党组成员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2016年5月至2017年12月任上交所党委书记、理事长（副部长级）"
+    },
+    {
+      "id": "F074",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-vm-2018",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "2018年1月任上海市副市长"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2018年1月获任上海市副市长……2021年12月，吴清任上海市常务副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2018年1月获任上海市副市长，2021年12月任常务副市长"
+    },
+    {
+      "id": "F075",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-vm-2018",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "2018年1月任上海市副市长"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2018年1月获任上海市副市长……2021年12月，吴清任上海市常务副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2018年1月获任上海市副市长，2021年12月任常务副市长"
+    },
+    {
+      "id": "F076",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-vm-2018",
+        "field": "unitId"
+      },
+      "value": "gov-sh-prov",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "2018年1月任上海市副市长"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2018年1月获任上海市副市长……2021年12月，吴清任上海市常务副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2018年1月获任上海市副市长，2021年12月任常务副市长"
+    },
+    {
+      "id": "F077",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-vm-2018",
+        "field": "unitName"
+      },
+      "value": "上海市人民政府",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "2018年1月任上海市副市长"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2018年1月获任上海市副市长……2021年12月，吴清任上海市常务副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2018年1月获任上海市副市长，2021年12月任常务副市长"
+    },
+    {
+      "id": "F078",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-vm-2018",
+        "field": "position"
+      },
+      "value": "副市长（2019年起任市委常委、副市长，2021年12月起任市委常委、常务副市长）",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "2018年1月任上海市副市长"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2018年1月获任上海市副市长……2021年12月，吴清任上海市常务副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2018年1月获任上海市副市长，2021年12月任常务副市长"
+    },
+    {
+      "id": "F079",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-vm-2018",
+        "field": "rank"
+      },
+      "value": "副部级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "2018年1月任上海市副市长"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2018年1月获任上海市副市长……2021年12月，吴清任上海市常务副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2018年1月获任上海市副市长，2021年12月任常务副市长"
+    },
+    {
+      "id": "F080",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-vm-2018",
+        "field": "startYear"
+      },
+      "value": 2018,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "2018年1月任上海市副市长"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2018年1月获任上海市副市长……2021年12月，吴清任上海市常务副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2018年1月获任上海市副市长，2021年12月任常务副市长"
+    },
+    {
+      "id": "F081",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-vm-2018",
+        "field": "startMonth"
+      },
+      "value": 1,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "吴清同志简历段",
+          "statement": "2018年1月任上海市副市长"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2018年1月获任上海市副市长……2021年12月，吴清任上海市常务副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2018年1月获任上海市副市长，2021年12月任常务副市长"
+    },
+    {
+      "id": "F082",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-standing-2019",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "据《解放日报》今日（2019-09-05）消息，中共中央批准：吴清同志任上海市委委员、常委"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2019年8月任上海市委常委、副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2019年任上海市委常委年份确证；8月批准与9月宣布的月份差异单独记入冲突事实"
+    },
+    {
+      "id": "F083",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-standing-2019",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "据《解放日报》今日（2019-09-05）消息，中共中央批准：吴清同志任上海市委委员、常委"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2019年8月任上海市委常委、副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2019年任上海市委常委年份确证；8月批准与9月宣布的月份差异单独记入冲突事实"
+    },
+    {
+      "id": "F084",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-standing-2019",
+        "field": "unitId"
+      },
+      "value": "gov-sh-prov",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "据《解放日报》今日（2019-09-05）消息，中共中央批准：吴清同志任上海市委委员、常委"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2019年8月任上海市委常委、副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2019年任上海市委常委年份确证；8月批准与9月宣布的月份差异单独记入冲突事实"
+    },
+    {
+      "id": "F085",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-standing-2019",
+        "field": "unitName"
+      },
+      "value": "中共上海市委",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "据《解放日报》今日（2019-09-05）消息，中共中央批准：吴清同志任上海市委委员、常委"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2019年8月任上海市委常委、副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2019年任上海市委常委年份确证；8月批准与9月宣布的月份差异单独记入冲突事实"
+    },
+    {
+      "id": "F086",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-standing-2019",
+        "field": "position"
+      },
+      "value": "市委常委",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "据《解放日报》今日（2019-09-05）消息，中共中央批准：吴清同志任上海市委委员、常委"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2019年8月任上海市委常委、副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2019年任上海市委常委年份确证；8月批准与9月宣布的月份差异单独记入冲突事实"
+    },
+    {
+      "id": "F087",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-standing-2019",
+        "field": "rank"
+      },
+      "value": "副部级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "据《解放日报》今日（2019-09-05）消息，中共中央批准：吴清同志任上海市委委员、常委"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2019年8月任上海市委常委、副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2019年任上海市委常委年份确证；8月批准与9月宣布的月份差异单独记入冲突事实"
+    },
+    {
+      "id": "F088",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-standing-2019",
+        "field": "startYear"
+      },
+      "value": 2019,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "据《解放日报》今日（2019-09-05）消息，中共中央批准：吴清同志任上海市委委员、常委"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2019年8月任上海市委常委、副市长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2019年任上海市委常委年份确证；8月批准与9月宣布的月份差异单独记入冲突事实"
+    },
+    {
+      "id": "F089",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-standing-2019",
+        "field": "startMonth"
+      },
+      "status": "conflicted",
+      "alternatives": [
+        {
+          "value": 9,
+          "citations": [
+            {
+              "id": "S005",
+              "revision": 1,
+              "locator": "正文第1段",
+              "statement": "2019年9月5日《解放日报》发布中共中央批准吴清任上海市委常委消息；红星新闻亦作2019年9月"
+            }
+          ],
+          "note": "按官方党报消息发布月记为9月"
+        },
+        {
+          "value": 8,
+          "citations": [
+            {
+              "id": "S003",
+              "revision": 1,
+              "locator": "公开简历段",
+              "statement": "新京报简历载“2019年8月任上海市委常委、副市长”"
+            }
+          ],
+          "note": "可能对应中央批准文件落款月8月"
+        }
+      ],
+      "citations": [],
+      "note": "中央批准月（8月）与地方党报宣布月（9月）口径待任免原件核准，暂不公开月份"
+    },
+    {
+      "id": "F090",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-depsec-2023-2024",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2023年7月，任上海市委副书记。第五个阶段将从2024年2月开始……任命吴清同志为中国证券监督管理委员会主席"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2024年2月7日任命为中国证监会党委书记、主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2023年7月至2024年2月任上海市委副书记"
+    },
+    {
+      "id": "F091",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-depsec-2023-2024",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2023年7月，任上海市委副书记。第五个阶段将从2024年2月开始……任命吴清同志为中国证券监督管理委员会主席"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2024年2月7日任命为中国证监会党委书记、主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2023年7月至2024年2月任上海市委副书记"
+    },
+    {
+      "id": "F092",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-depsec-2023-2024",
+        "field": "unitId"
+      },
+      "value": "gov-sh-prov",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2023年7月，任上海市委副书记。第五个阶段将从2024年2月开始……任命吴清同志为中国证券监督管理委员会主席"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2024年2月7日任命为中国证监会党委书记、主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2023年7月至2024年2月任上海市委副书记"
+    },
+    {
+      "id": "F093",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-depsec-2023-2024",
+        "field": "unitName"
+      },
+      "value": "中共上海市委",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2023年7月，任上海市委副书记。第五个阶段将从2024年2月开始……任命吴清同志为中国证券监督管理委员会主席"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2024年2月7日任命为中国证监会党委书记、主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2023年7月至2024年2月任上海市委副书记"
+    },
+    {
+      "id": "F094",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-depsec-2023-2024",
+        "field": "position"
+      },
+      "value": "市委副书记",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2023年7月，任上海市委副书记。第五个阶段将从2024年2月开始……任命吴清同志为中国证券监督管理委员会主席"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2024年2月7日任命为中国证监会党委书记、主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2023年7月至2024年2月任上海市委副书记"
+    },
+    {
+      "id": "F095",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-depsec-2023-2024",
+        "field": "rank"
+      },
+      "value": "副部级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2023年7月，任上海市委副书记。第五个阶段将从2024年2月开始……任命吴清同志为中国证券监督管理委员会主席"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2024年2月7日任命为中国证监会党委书记、主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2023年7月至2024年2月任上海市委副书记"
+    },
+    {
+      "id": "F096",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-depsec-2023-2024",
+        "field": "startYear"
+      },
+      "value": 2023,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2023年7月，任上海市委副书记。第五个阶段将从2024年2月开始……任命吴清同志为中国证券监督管理委员会主席"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2024年2月7日任命为中国证监会党委书记、主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2023年7月至2024年2月任上海市委副书记"
+    },
+    {
+      "id": "F097",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-depsec-2023-2024",
+        "field": "startMonth"
+      },
+      "value": 7,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2023年7月，任上海市委副书记。第五个阶段将从2024年2月开始……任命吴清同志为中国证券监督管理委员会主席"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2024年2月7日任命为中国证监会党委书记、主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2023年7月至2024年2月任上海市委副书记"
+    },
+    {
+      "id": "F098",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-depsec-2023-2024",
+        "field": "endYear"
+      },
+      "value": 2024,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2023年7月，任上海市委副书记。第五个阶段将从2024年2月开始……任命吴清同志为中国证券监督管理委员会主席"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2024年2月7日任命为中国证监会党委书记、主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2023年7月至2024年2月任上海市委副书记"
+    },
+    {
+      "id": "F099",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-shanghai-depsec-2023-2024",
+        "field": "endMonth"
+      },
+      "value": 2,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "公开简历段",
+          "statement": "2023年7月，任上海市委副书记。第五个阶段将从2024年2月开始……任命吴清同志为中国证券监督管理委员会主席"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2024年2月7日任命为中国证监会党委书记、主席"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1965年4月生、安徽蒙城籍、曾任证监会机构部/风险办/基金部主任、虹口区长及书记、上交所理事长、上海市委副书记，现中国证监会主席吴清，全链路履历闭环唯一对应",
+        "countercheck": "已核对上财校友网明确1987届财政学本科，排除旧库“安徽财贸学院1989学士”错配及高校同名教师干扰"
+      },
+      "note": "2023年7月至2024年2月任上海市委副书记"
+    },
+    {
+      "id": "F100",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-qing-spc-candidate",
+        "field": "unitName"
+      },
+      "value": "国家计划委员会综合司",
+      "status": "candidate",
+      "citations": [],
+      "note": "旧库legacyData.ts第1412行载1989—1993任国家计委综合司干部，本轮已读7篇原文均未直接写出“国家计划委员会”，保留为待核候选线索"
+    }
+  ],
+  "rules": [],
+  "publications": [
+    {
+      "id": "P001",
+      "factId": "F001",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P002",
+      "factId": "F002",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P003",
+      "factId": "F003",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P004",
+      "factId": "F004",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P005",
+      "factId": "F005",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P006",
+      "factId": "F006",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P007",
+      "factId": "F007",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P008",
+      "factId": "F008",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P009",
+      "factId": "F009",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P010",
+      "factId": "F010",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P011",
+      "factId": "F011",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P012",
+      "factId": "F012",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P013",
+      "factId": "F013",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P014",
+      "factId": "F014",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P015",
+      "factId": "F015",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P016",
+      "factId": "F016",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P017",
+      "factId": "F017",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P018",
+      "factId": "F018",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P019",
+      "factId": "F019",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P020",
+      "factId": "F020",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P021",
+      "factId": "F021",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P022",
+      "factId": "F022",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P023",
+      "factId": "F023",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P024",
+      "factId": "F024",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P025",
+      "factId": "F025",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P026",
+      "factId": "F026",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P027",
+      "factId": "F027",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P028",
+      "factId": "F028",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P029",
+      "factId": "F029",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P030",
+      "factId": "F030",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P031",
+      "factId": "F031",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P032",
+      "factId": "F032",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P033",
+      "factId": "F033",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P034",
+      "factId": "F034",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P035",
+      "factId": "F035",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P036",
+      "factId": "F036",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P037",
+      "factId": "F037",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P038",
+      "factId": "F038",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P039",
+      "factId": "F039",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P040",
+      "factId": "F040",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P041",
+      "factId": "F041",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P042",
+      "factId": "F042",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P043",
+      "factId": "F043",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P044",
+      "factId": "F044",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P045",
+      "factId": "F045",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P046",
+      "factId": "F046",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P047",
+      "factId": "F047",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P048",
+      "factId": "F048",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P049",
+      "factId": "F049",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P050",
+      "factId": "F050",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P051",
+      "factId": "F051",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P052",
+      "factId": "F052",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P053",
+      "factId": "F053",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P054",
+      "factId": "F054",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P055",
+      "factId": "F055",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P056",
+      "factId": "F056",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P057",
+      "factId": "F057",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P058",
+      "factId": "F058",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P059",
+      "factId": "F059",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P060",
+      "factId": "F060",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P061",
+      "factId": "F061",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P062",
+      "factId": "F062",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P063",
+      "factId": "F063",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P064",
+      "factId": "F064",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P065",
+      "factId": "F065",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P066",
+      "factId": "F066",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P067",
+      "factId": "F067",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P068",
+      "factId": "F068",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P069",
+      "factId": "F069",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P070",
+      "factId": "F070",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P071",
+      "factId": "F071",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P072",
+      "factId": "F072",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P073",
+      "factId": "F073",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P074",
+      "factId": "F074",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P075",
+      "factId": "F075",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P076",
+      "factId": "F076",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P077",
+      "factId": "F077",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P078",
+      "factId": "F078",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P079",
+      "factId": "F079",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P080",
+      "factId": "F080",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P081",
+      "factId": "F081",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P082",
+      "factId": "F082",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P083",
+      "factId": "F083",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P084",
+      "factId": "F084",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P085",
+      "factId": "F085",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P086",
+      "factId": "F086",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P087",
+      "factId": "F087",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P088",
+      "factId": "F088",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P089",
+      "factId": "F090",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P090",
+      "factId": "F091",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P091",
+      "factId": "F092",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P092",
+      "factId": "F093",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P093",
+      "factId": "F094",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P094",
+      "factId": "F095",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P095",
+      "factId": "F096",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P096",
+      "factId": "F097",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P097",
+      "factId": "F098",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P098",
+      "factId": "F099",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    }
+  ]
+}

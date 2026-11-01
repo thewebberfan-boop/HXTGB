@@ -149,16 +149,24 @@ test('audit rejects false precision, observation-tenure conflation, conflicting 
   assert.deepEqual(validateRecord(historical, [], 'career'), []);
 });
 
-test('four migrated production examples preserve record IDs and source links without upgrading verification', () => {
+test('migrated production examples preserve record IDs, unreviewed status and verified observation upgrades', () => {
   for (const [id, recordId] of [['yang-ke', 'yang-ke-shfe-joined-2002'], ['zhang-xiaogang', 'zhang-xiaogang-cffex-vgm-2015']]) {
     const p = OFFICIALS_DATA.find(o => o.id === id), r = p.careerHistory.find(r => r.id === recordId);
     assert.equal(r.tenureStatus, 'historical'); assert.equal(r.endYear, undefined); assert.ok(r.sourceIds.length);
     assert.equal(careerPlot(r), null);
   }
-  for (const id of ['guo-shuhua', 'wang-xiaoming-czce']) {
-    const p = OFFICIALS_DATA.find(o => o.id === id), r = p.careerHistory.find(r => r.id.endsWith('employed-2003'));
+  {
+    const p = OFFICIALS_DATA.find(o => o.id === 'wang-xiaoming-czce');
+    const r = p.careerHistory.find(r => r.id.endsWith('employed-2003'));
     assert.equal(r.recordKind, 'observation'); assert.deepEqual(r.observedAt, { year: 2003 });
     assert.equal(r.startYear, undefined); assert.equal(r.fieldEvidence.observedAt.status, 'needs_review');
+    assert.equal(isOfficialActiveInUnit(p, 'csrc-czce'), true);
+  }
+  {
+    const p = OFFICIALS_DATA.find(o => o.id === 'guo-shuhua');
+    const r = p.careerHistory.find(r => r.id === 'guo-shuhua-czce-employed-2003');
+    assert.equal(r.recordKind, 'observation'); assert.deepEqual(r.observedAt, { year: 2003, month: 6 });
+    assert.equal(r.startYear, undefined); assert.equal(r.fieldEvidence.observedAt.status, 'verified');
     assert.equal(isOfficialActiveInUnit(p, 'csrc-czce'), true); // 其他独立现职记录保留
   }
 });

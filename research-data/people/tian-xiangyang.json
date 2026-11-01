@@ -1,0 +1,1657 @@
+{
+  "schemaVersion": 1,
+  "personId": "tian-xiangyang",
+  "evidence": [
+    {
+      "id": "S001",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "stcn-20210628",
+      "note": "证券时报专访明确河南籍贯及宁波证监局党委书记、局长至浙江证监局党委书记、局长衔枚履历",
+      "source": {
+        "id": "tian-xiangyang-stcn-sina-20210628",
+        "title": "浙江证监局党委书记、局长田向阳：守初心担使命 为实体经济提供强大资本动能",
+        "publisher": "证券时报网（手机新浪网转载）",
+        "url": "https://finance.sina.cn/stock/ywgg/2021-06-28/detail-ikqcfnca3614482.d.html",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2021-06-28",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "来自河南",
+          "从宁波证监局党委书记、局长到浙江证监局党委书记、局长"
+        ]
+      }
+    },
+    {
+      "id": "S002",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "cyol-20071219",
+      "note": "中国青年报深度报道确认博士身份、2006年底渝中区副区长挂职及此前十年资本市场监管政策研究经历",
+      "source": {
+        "id": "tian-xiangyang-cyol-chinanews-20071219",
+        "title": "学而优则仕:从四名博士的官场人生管窥学者官员(2)",
+        "publisher": "中国青年报（中国新闻网转载）",
+        "url": "https://www.chinanews.com.cn/gn/news/2007/12-19/1108417.shtml",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2007-12-19",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "博士学位",
+          "2006年底任第七批“博士服务团”团长、挂职重庆市渝中区副区长",
+          "此前从事宏观经济、资本市场和证券市场监管政策研究工作十年"
+        ]
+      }
+    },
+    {
+      "id": "S003",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "caixin-20190104",
+      "note": "财新网确认2019年1月由宁波证监局局长升任浙江证监局局长精确月份",
+      "source": {
+        "id": "tian-xiangyang-caixin-20190104",
+        "title": "证监系统干部迎来密集调整 首席会计师易人|证监人事追踪之十",
+        "publisher": "财新网",
+        "url": "https://wenews.caixin.com/2019-01-04/102023368.html",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2019-01-04",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2019年1月由宁波证监局局长正式升任浙江证监局局长"
+        ]
+      }
+    },
+    {
+      "id": "S004",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "caixin-20220422",
+      "note": "财新网串联证监会研究中心—宁波局—浙江局—上期所理事长全链路",
+      "source": {
+        "id": "tian-xiangyang-caixin-20220422",
+        "title": "田向阳履新上期所理事长 曹勇升任浙江局局长",
+        "publisher": "财新网",
+        "url": "https://finance.caixin.com/m/2022-04-22/101874860.html",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2022-04-22",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "此前任职证监会研究中心，之后调任宁波证监局，2019年出任浙江证监局局长",
+          "2022年4月21日当选上期所第四届理事会理事长"
+        ]
+      }
+    },
+    {
+      "id": "S005",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "shfe-pay-20231229",
+      "note": "上期所法定薪酬披露确认2022年3月起任党委书记、理事长",
+      "source": {
+        "id": "tian-xiangyang-shfe-pay-20231229",
+        "title": "上海期货交易所负责人2022年度薪酬情况",
+        "publisher": "上海期货交易所",
+        "url": "https://www.shfe.com.cn/about/introduce/informaton/202312/t20231229_801196.html",
+        "sourceType": "institution_disclosure",
+        "publishedDate": "2023-12-29",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "田向阳任上期所党委书记、理事长起算月份为202203"
+        ]
+      }
+    },
+    {
+      "id": "S006",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "cnstock-20261015",
+      "note": "确认2026年10月仍在任上期所党委书记、理事长",
+      "source": {
+        "id": "tian-xiangyang-cnstock-eastmoney-20261015",
+        "title": "上期所理事长田向阳：不断提升“上海价格”辐射能力 助力深化上海“五个中心”联动发展",
+        "publisher": "上海证券报·中国证券网（东方财富网转载）",
+        "url": "https://finance.eastmoney.com/a/202610153896845326.html",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2026-10-15",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2026年10月15日以上海期货交易所党委书记、理事长身份出席2026上海衍生品市场论坛并致辞"
+        ]
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "revision": 1,
+      "target": {
+        "kind": "basic",
+        "field": "gender"
+      },
+      "value": "男",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "田向阳感悟段",
+          "statement": "半截墙壁就在他身后倒了下来……但在他们眼中，对田向阳最深的印象，还是他在投融资等方面展示出的水平"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "原文代词确认为男性"
+    },
+    {
+      "id": "F002",
+      "revision": 1,
+      "target": {
+        "kind": "basic",
+        "field": "nativePlace"
+      },
+      "value": "河南",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "多层次资本市场建设成效显著段第1段",
+          "statement": "从宁波证监局党委书记、局长到浙江证监局党委书记、局长，田向阳的履职经历，让这位来自河南的“外乡人”，对浙江资本市场的家底了然于心"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "证券时报专访确认河南籍"
+    },
+    {
+      "id": "F003",
+      "revision": 1,
+      "target": {
+        "kind": "basic",
+        "field": "currentRank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "宁波证监局局长田向阳已正式升任浙江证监局局长"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "薪酬表第1行",
+          "statement": "田向阳 党委书记，理事长 202203 至今"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "会管期货交易所党委书记、理事长为正厅局级"
+    },
+    {
+      "id": "F004",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "tian-xiangyang-edu-phd",
+        "field": "degree"
+      },
+      "value": "博士",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "小标题及正文",
+          "statement": "学而优则仕:从四名博士的官场人生管窥学者官员……田向阳和江滢的感悟：完成了第二篇博士论文……第七批“博士服务团”团长田向阳"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增已获博士学位记录（具体毕业院校尚未在已读权威源中披露故留空）"
+    },
+    {
+      "id": "F005",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "tian-xiangyang-edu-phd",
+        "field": "degreeStatus"
+      },
+      "value": "awarded",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "小标题及正文",
+          "statement": "学而优则仕:从四名博士的官场人生管窥学者官员……田向阳和江滢的感悟：完成了第二篇博士论文……第七批“博士服务团”团长田向阳"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增已获博士学位记录（具体毕业院校尚未在已读权威源中披露故留空）"
+    },
+    {
+      "id": "F006",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "tian-xiangyang-edu-phd",
+        "field": "educationLevel"
+      },
+      "value": "研究生",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "小标题及正文",
+          "statement": "学而优则仕:从四名博士的官场人生管窥学者官员……田向阳和江滢的感悟：完成了第二篇博士论文……第七批“博士服务团”团长田向阳"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增已获博士学位记录（具体毕业院校尚未在已读权威源中披露故留空）"
+    },
+    {
+      "id": "F007",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "tian-xiangyang-edu-phd",
+        "field": "studyStatus"
+      },
+      "value": "graduated",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "小标题及正文",
+          "statement": "学而优则仕:从四名博士的官场人生管窥学者官员……田向阳和江滢的感悟：完成了第二篇博士论文……第七批“博士服务团”团长田向阳"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增已获博士学位记录（具体毕业院校尚未在已读权威源中披露故留空）"
+    },
+    {
+      "id": "F008",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-csrc-res-early",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "导语",
+          "statement": "田向阳此前任职证监会研究中心，之后调任宁波证监局，2019年出任浙江证监局局长"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "末段",
+          "statement": "参加“博士服务团”之前，田向阳从事宏观经济、资本市场和证券市场监管政策方面的研究工作整整十年"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增证监会研究中心早期任职记录"
+    },
+    {
+      "id": "F009",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-csrc-res-early",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "导语",
+          "statement": "田向阳此前任职证监会研究中心，之后调任宁波证监局，2019年出任浙江证监局局长"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "末段",
+          "statement": "参加“博士服务团”之前，田向阳从事宏观经济、资本市场和证券市场监管政策方面的研究工作整整十年"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增证监会研究中心早期任职记录"
+    },
+    {
+      "id": "F010",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-csrc-res-early",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "导语",
+          "statement": "田向阳此前任职证监会研究中心，之后调任宁波证监局，2019年出任浙江证监局局长"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "末段",
+          "statement": "参加“博士服务团”之前，田向阳从事宏观经济、资本市场和证券市场监管政策方面的研究工作整整十年"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增证监会研究中心早期任职记录"
+    },
+    {
+      "id": "F011",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-csrc-res-early",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会研究中心",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "导语",
+          "statement": "田向阳此前任职证监会研究中心，之后调任宁波证监局，2019年出任浙江证监局局长"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "末段",
+          "statement": "参加“博士服务团”之前，田向阳从事宏观经济、资本市场和证券市场监管政策方面的研究工作整整十年"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增证监会研究中心早期任职记录"
+    },
+    {
+      "id": "F012",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-csrc-res-early",
+        "field": "position"
+      },
+      "value": "研究人员／干部",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "导语",
+          "statement": "田向阳此前任职证监会研究中心，之后调任宁波证监局，2019年出任浙江证监局局长"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "末段",
+          "statement": "参加“博士服务团”之前，田向阳从事宏观经济、资本市场和证券市场监管政策方面的研究工作整整十年"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增证监会研究中心早期任职记录"
+    },
+    {
+      "id": "F013",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-cq-obs-200612",
+        "field": "recordKind"
+      },
+      "value": "observation",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "田向阳感悟段",
+          "statement": "去年底（2006年底）……冲出火场的是急着指挥救火的第七批“博士服务团”团长田向阳。时至今日，渝中区干部群众提起当时的场面，依然会对副区长田向阳竖起大拇指"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增2006年12月挂职重庆市渝中区副区长观察点"
+    },
+    {
+      "id": "F014",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-cq-obs-200612",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "田向阳感悟段",
+          "statement": "去年底（2006年底）……冲出火场的是急着指挥救火的第七批“博士服务团”团长田向阳。时至今日，渝中区干部群众提起当时的场面，依然会对副区长田向阳竖起大拇指"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增2006年12月挂职重庆市渝中区副区长观察点"
+    },
+    {
+      "id": "F015",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-cq-obs-200612",
+        "field": "unitName"
+      },
+      "value": "重庆市渝中区人民政府",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "田向阳感悟段",
+          "statement": "去年底（2006年底）……冲出火场的是急着指挥救火的第七批“博士服务团”团长田向阳。时至今日，渝中区干部群众提起当时的场面，依然会对副区长田向阳竖起大拇指"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增2006年12月挂职重庆市渝中区副区长观察点"
+    },
+    {
+      "id": "F016",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-cq-obs-200612",
+        "field": "position"
+      },
+      "value": "副区长（中组部、团中央第七批博士服务团团长挂职）",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "田向阳感悟段",
+          "statement": "去年底（2006年底）……冲出火场的是急着指挥救火的第七批“博士服务团”团长田向阳。时至今日，渝中区干部群众提起当时的场面，依然会对副区长田向阳竖起大拇指"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增2006年12月挂职重庆市渝中区副区长观察点"
+    },
+    {
+      "id": "F017",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-cq-obs-200612",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2006,
+        "month": 12
+      },
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "田向阳感悟段",
+          "statement": "去年底（2006年底）……冲出火场的是急着指挥救火的第七批“博士服务团”团长田向阳。时至今日，渝中区干部群众提起当时的场面，依然会对副区长田向阳竖起大拇指"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增2006年12月挂职重庆市渝中区副区长观察点"
+    },
+    {
+      "id": "F018",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-ningbo-csrc-hist",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "从宁波证监局党委书记、局长到浙江证监局党委书记、局长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "宁波证监局局长田向阳已正式升任浙江证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增宁波证监局党委书记、局长历史任职（2019年1月卸任升浙江局局长）"
+    },
+    {
+      "id": "F019",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-ningbo-csrc-hist",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "从宁波证监局党委书记、局长到浙江证监局党委书记、局长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "宁波证监局局长田向阳已正式升任浙江证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增宁波证监局党委书记、局长历史任职（2019年1月卸任升浙江局局长）"
+    },
+    {
+      "id": "F020",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-ningbo-csrc-hist",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "从宁波证监局党委书记、局长到浙江证监局党委书记、局长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "宁波证监局局长田向阳已正式升任浙江证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增宁波证监局党委书记、局长历史任职（2019年1月卸任升浙江局局长）"
+    },
+    {
+      "id": "F021",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-ningbo-csrc-hist",
+        "field": "unitName"
+      },
+      "value": "中国证监会宁波监管局",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "从宁波证监局党委书记、局长到浙江证监局党委书记、局长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "宁波证监局局长田向阳已正式升任浙江证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增宁波证监局党委书记、局长历史任职（2019年1月卸任升浙江局局长）"
+    },
+    {
+      "id": "F022",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-ningbo-csrc-hist",
+        "field": "position"
+      },
+      "value": "党委书记、局长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "从宁波证监局党委书记、局长到浙江证监局党委书记、局长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "宁波证监局局长田向阳已正式升任浙江证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增宁波证监局党委书记、局长历史任职（2019年1月卸任升浙江局局长）"
+    },
+    {
+      "id": "F023",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-ningbo-csrc-hist",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "从宁波证监局党委书记、局长到浙江证监局党委书记、局长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "宁波证监局局长田向阳已正式升任浙江证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增宁波证监局党委书记、局长历史任职（2019年1月卸任升浙江局局长）"
+    },
+    {
+      "id": "F024",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-ningbo-csrc-hist",
+        "field": "endYear"
+      },
+      "value": 2019,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "从宁波证监局党委书记、局长到浙江证监局党委书记、局长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "宁波证监局局长田向阳已正式升任浙江证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增宁波证监局党委书记、局长历史任职（2019年1月卸任升浙江局局长）"
+    },
+    {
+      "id": "F025",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-ningbo-csrc-hist",
+        "field": "endMonth"
+      },
+      "value": 1,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "从宁波证监局党委书记、局长到浙江证监局党委书记、局长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "宁波证监局局长田向阳已正式升任浙江证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增宁波证监局党委书记、局长历史任职（2019年1月卸任升浙江局局长）"
+    },
+    {
+      "id": "F026",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-zhejiang-csrc-2019-2022",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2019-01-04……宁波证监局局长田向阳已正式升任浙江证监局局长"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "标题",
+          "statement": "浙江证监局党委书记、局长田向阳"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "薪酬表第1行",
+          "statement": "田向阳 党委书记，理事长 202203 至今"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "升级基线浙江证监局记录，补齐党委书记职衔与2019年1月起始月份"
+    },
+    {
+      "id": "F027",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-zhejiang-csrc-2019-2022",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2019-01-04……宁波证监局局长田向阳已正式升任浙江证监局局长"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "标题",
+          "statement": "浙江证监局党委书记、局长田向阳"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "薪酬表第1行",
+          "statement": "田向阳 党委书记，理事长 202203 至今"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "升级基线浙江证监局记录，补齐党委书记职衔与2019年1月起始月份"
+    },
+    {
+      "id": "F028",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-zhejiang-csrc-2019-2022",
+        "field": "unitId"
+      },
+      "value": "csrc-zj",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2019-01-04……宁波证监局局长田向阳已正式升任浙江证监局局长"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "标题",
+          "statement": "浙江证监局党委书记、局长田向阳"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "薪酬表第1行",
+          "statement": "田向阳 党委书记，理事长 202203 至今"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "升级基线浙江证监局记录，补齐党委书记职衔与2019年1月起始月份"
+    },
+    {
+      "id": "F029",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-zhejiang-csrc-2019-2022",
+        "field": "unitName"
+      },
+      "value": "中国证监会浙江监管局",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2019-01-04……宁波证监局局长田向阳已正式升任浙江证监局局长"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "标题",
+          "statement": "浙江证监局党委书记、局长田向阳"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "薪酬表第1行",
+          "statement": "田向阳 党委书记，理事长 202203 至今"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "升级基线浙江证监局记录，补齐党委书记职衔与2019年1月起始月份"
+    },
+    {
+      "id": "F030",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-zhejiang-csrc-2019-2022",
+        "field": "position"
+      },
+      "value": "党委书记、局长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2019-01-04……宁波证监局局长田向阳已正式升任浙江证监局局长"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "标题",
+          "statement": "浙江证监局党委书记、局长田向阳"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "薪酬表第1行",
+          "statement": "田向阳 党委书记，理事长 202203 至今"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "升级基线浙江证监局记录，补齐党委书记职衔与2019年1月起始月份"
+    },
+    {
+      "id": "F031",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-zhejiang-csrc-2019-2022",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2019-01-04……宁波证监局局长田向阳已正式升任浙江证监局局长"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "标题",
+          "statement": "浙江证监局党委书记、局长田向阳"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "薪酬表第1行",
+          "statement": "田向阳 党委书记，理事长 202203 至今"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "升级基线浙江证监局记录，补齐党委书记职衔与2019年1月起始月份"
+    },
+    {
+      "id": "F032",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-zhejiang-csrc-2019-2022",
+        "field": "startYear"
+      },
+      "value": 2019,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2019-01-04……宁波证监局局长田向阳已正式升任浙江证监局局长"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "标题",
+          "statement": "浙江证监局党委书记、局长田向阳"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "薪酬表第1行",
+          "statement": "田向阳 党委书记，理事长 202203 至今"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "升级基线浙江证监局记录，补齐党委书记职衔与2019年1月起始月份"
+    },
+    {
+      "id": "F033",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-zhejiang-csrc-2019-2022",
+        "field": "startMonth"
+      },
+      "value": 1,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2019-01-04……宁波证监局局长田向阳已正式升任浙江证监局局长"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "标题",
+          "statement": "浙江证监局党委书记、局长田向阳"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "薪酬表第1行",
+          "statement": "田向阳 党委书记，理事长 202203 至今"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "升级基线浙江证监局记录，补齐党委书记职衔与2019年1月起始月份"
+    },
+    {
+      "id": "F034",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-zhejiang-csrc-2019-2022",
+        "field": "endYear"
+      },
+      "value": 2022,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2019-01-04……宁波证监局局长田向阳已正式升任浙江证监局局长"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "标题",
+          "statement": "浙江证监局党委书记、局长田向阳"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "薪酬表第1行",
+          "statement": "田向阳 党委书记，理事长 202203 至今"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "升级基线浙江证监局记录，补齐党委书记职衔与2019年1月起始月份"
+    },
+    {
+      "id": "F035",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-zhejiang-csrc-2019-2022",
+        "field": "endMonth"
+      },
+      "value": 3,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2019-01-04……宁波证监局局长田向阳已正式升任浙江证监局局长"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "标题",
+          "statement": "浙江证监局党委书记、局长田向阳"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "薪酬表第1行",
+          "statement": "田向阳 党委书记，理事长 202203 至今"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "升级基线浙江证监局记录，补齐党委书记职衔与2019年1月起始月份"
+    },
+    {
+      "id": "F036",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-shfe-obs-202610",
+        "field": "recordKind"
+      },
+      "value": "observation",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "10月15日，上海期货交易所党委书记、理事长田向阳在2026上海衍生品市场论坛上表示"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增2026年10月15日在任观察点"
+    },
+    {
+      "id": "F037",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-shfe-obs-202610",
+        "field": "unitId"
+      },
+      "value": "csrc-shfe",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "10月15日，上海期货交易所党委书记、理事长田向阳在2026上海衍生品市场论坛上表示"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增2026年10月15日在任观察点"
+    },
+    {
+      "id": "F038",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-shfe-obs-202610",
+        "field": "unitName"
+      },
+      "value": "上海期货交易所",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "10月15日，上海期货交易所党委书记、理事长田向阳在2026上海衍生品市场论坛上表示"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增2026年10月15日在任观察点"
+    },
+    {
+      "id": "F039",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-shfe-obs-202610",
+        "field": "position"
+      },
+      "value": "党委书记、理事长",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "10月15日，上海期货交易所党委书记、理事长田向阳在2026上海衍生品市场论坛上表示"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增2026年10月15日在任观察点"
+    },
+    {
+      "id": "F040",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tian-xiangyang-shfe-obs-202610",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2026,
+        "month": 10,
+        "day": 15
+      },
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "10月15日，上海期货交易所党委书记、理事长田向阳在2026上海衍生品市场论坛上表示"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "河南籍、博士，曾长期在证监会研究中心从事监管政策研究，2006年底以中组部第七批博士服务团团长挂职重庆市渝中区副区长，后历任宁波证监局局长、浙江证监局局长（2019.01—2022.03），2022年3月起任上海期货交易所党委书记、理事长田向阳",
+        "countercheck": "排除医学界（中国健康教育中心主任医师田向阳）及高校同名学者；由证监会研究中心—重庆博士服务团—宁波局—浙江局—上期所完整闭环锁定"
+      },
+      "note": "新增2026年10月15日在任观察点"
+    }
+  ],
+  "rules": [],
+  "publications": [
+    {
+      "id": "P001",
+      "factId": "F001",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P002",
+      "factId": "F002",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P003",
+      "factId": "F003",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P004",
+      "factId": "F004",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P005",
+      "factId": "F005",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P006",
+      "factId": "F006",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P007",
+      "factId": "F007",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P008",
+      "factId": "F008",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P009",
+      "factId": "F009",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P010",
+      "factId": "F010",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P011",
+      "factId": "F011",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P012",
+      "factId": "F012",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P013",
+      "factId": "F013",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P014",
+      "factId": "F014",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P015",
+      "factId": "F015",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P016",
+      "factId": "F016",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P017",
+      "factId": "F017",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P018",
+      "factId": "F018",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P019",
+      "factId": "F019",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P020",
+      "factId": "F020",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P021",
+      "factId": "F021",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P022",
+      "factId": "F022",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P023",
+      "factId": "F023",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P024",
+      "factId": "F024",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P025",
+      "factId": "F025",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P026",
+      "factId": "F026",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P027",
+      "factId": "F027",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P028",
+      "factId": "F028",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P029",
+      "factId": "F029",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P030",
+      "factId": "F030",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P031",
+      "factId": "F031",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P032",
+      "factId": "F032",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P033",
+      "factId": "F033",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P034",
+      "factId": "F034",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P035",
+      "factId": "F035",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P036",
+      "factId": "F036",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P037",
+      "factId": "F037",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P038",
+      "factId": "F038",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P039",
+      "factId": "F039",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P040",
+      "factId": "F040",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    }
+  ]
+}

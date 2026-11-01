@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "personId": "leng-bing",
+  "evidence": [
+    {
+      "id": "S001",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "cfachina-20030605-list",
+      "note": "直读中期协2003-06-05公告正文，郑州商品交易所（59人）含冷冰、王晓明、郭淑华、王亚梅",
+      "source": {
+        "id": "leng-bing-cfachina-20030605",
+        "title": "第一批申请换领执业证书的人员名单",
+        "publisher": "中国期货业协会",
+        "url": "https://www.cfachina.org/aboutassociation/associationannouncement/200306/t20030605_11511.html",
+        "sourceType": "institution_disclosure",
+        "publishedDate": "2003-06-05",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2003年6月列入郑州商品交易所（59人）第一批申请换领执业证书人员名单"
+        ]
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "leng-bing-czce-employed-2003",
+        "field": "recordKind"
+      },
+      "value": "observation",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文·郑州商品交易所（59人）段",
+          "statement": "郑州商品交易所（59人）……冷冰……王晓明……郭淑华……王亚梅"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "早期在郑州商品交易所从业、现任广州期货交易所党委委员、副总经理冷冰",
+        "countercheck": "已严格排除财政部会计司／国际可持续准则理事会（ISSB）理事冷冰；中期协2003年郑商所59人名单与期货交易所从业脉络吻合，并纠正旧库“2000—2021一直在上期所”的编造记录"
+      },
+      "note": "确认2003年6月已在郑州商品交易所从业（观察点），纠正旧库“2000.05—2021.04一直在上海期货交易所任职”的无来源说法"
+    },
+    {
+      "id": "F002",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "leng-bing-czce-employed-2003",
+        "field": "unitId"
+      },
+      "value": "csrc-czce",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文·郑州商品交易所（59人）段",
+          "statement": "郑州商品交易所（59人）……冷冰……王晓明……郭淑华……王亚梅"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "早期在郑州商品交易所从业、现任广州期货交易所党委委员、副总经理冷冰",
+        "countercheck": "已严格排除财政部会计司／国际可持续准则理事会（ISSB）理事冷冰；中期协2003年郑商所59人名单与期货交易所从业脉络吻合，并纠正旧库“2000—2021一直在上期所”的编造记录"
+      },
+      "note": "确认2003年6月已在郑州商品交易所从业（观察点），纠正旧库“2000.05—2021.04一直在上海期货交易所任职”的无来源说法"
+    },
+    {
+      "id": "F003",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "leng-bing-czce-employed-2003",
+        "field": "unitName"
+      },
+      "value": "郑州商品交易所",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文·郑州商品交易所（59人）段",
+          "statement": "郑州商品交易所（59人）……冷冰……王晓明……郭淑华……王亚梅"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "早期在郑州商品交易所从业、现任广州期货交易所党委委员、副总经理冷冰",
+        "countercheck": "已严格排除财政部会计司／国际可持续准则理事会（ISSB）理事冷冰；中期协2003年郑商所59人名单与期货交易所从业脉络吻合，并纠正旧库“2000—2021一直在上期所”的编造记录"
+      },
+      "note": "确认2003年6月已在郑州商品交易所从业（观察点），纠正旧库“2000.05—2021.04一直在上海期货交易所任职”的无来源说法"
+    },
+    {
+      "id": "F004",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "leng-bing-czce-employed-2003",
+        "field": "position"
+      },
+      "value": "工作人员（执业证书换领名单在列，具体部门未公开）",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文·郑州商品交易所（59人）段",
+          "statement": "郑州商品交易所（59人）……冷冰……王晓明……郭淑华……王亚梅"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "早期在郑州商品交易所从业、现任广州期货交易所党委委员、副总经理冷冰",
+        "countercheck": "已严格排除财政部会计司／国际可持续准则理事会（ISSB）理事冷冰；中期协2003年郑商所59人名单与期货交易所从业脉络吻合，并纠正旧库“2000—2021一直在上期所”的编造记录"
+      },
+      "note": "确认2003年6月已在郑州商品交易所从业（观察点），纠正旧库“2000.05—2021.04一直在上海期货交易所任职”的无来源说法"
+    },
+    {
+      "id": "F005",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "leng-bing-czce-employed-2003",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2003,
+        "month": 6
+      },
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文·郑州商品交易所（59人）段",
+          "statement": "郑州商品交易所（59人）……冷冰……王晓明……郭淑华……王亚梅"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "早期在郑州商品交易所从业、现任广州期货交易所党委委员、副总经理冷冰",
+        "countercheck": "已严格排除财政部会计司／国际可持续准则理事会（ISSB）理事冷冰；中期协2003年郑商所59人名单与期货交易所从业脉络吻合，并纠正旧库“2000—2021一直在上期所”的编造记录"
+      },
+      "note": "确认2003年6月已在郑州商品交易所从业（观察点），纠正旧库“2000.05—2021.04一直在上海期货交易所任职”的无来源说法"
+    }
+  ],
+  "rules": [],
+  "publications": [
+    {
+      "id": "P001",
+      "factId": "F001",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P002",
+      "factId": "F002",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P003",
+      "factId": "F003",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P004",
+      "factId": "F004",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P005",
+      "factId": "F005",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    }
+  ]
+}

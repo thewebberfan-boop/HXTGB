@@ -1,18 +1,622 @@
 {
   "schemaVersion": 1,
   "personId": "guo-shuhua",
-  "evidence": [],
+  "evidence": [
+    {
+      "id": "S001",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "cfachina-20030605-list",
+      "note": "本轮直读中期协2003-06-05原始公告正文，核实“郑州商品交易所（59人）”名单含郭淑华",
+      "source": {
+        "id": "guo-shuhua-cfachina-20030605",
+        "title": "第一批申请换领执业证书的人员名单",
+        "publisher": "中国期货业协会",
+        "url": "https://www.cfachina.org/aboutassociation/associationannouncement/200306/t20030605_11511.html",
+        "sourceType": "institution_disclosure",
+        "publishedDate": "2003-06-05",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2003年6月列入郑州商品交易所（59人）第一批申请换领执业证书人员名单"
+        ]
+      }
+    },
+    {
+      "id": "S002",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "cnfin-shsec-20190809",
+      "note": "直读确认2019年8月9日仍任郑商所非农产品部总监（证伪旧库“2019年8月任交割部总监后即升副总经理”说法）",
+      "source": {
+        "id": "guo-shuhua-cnfin-20190809",
+        "title": "郭淑华：郑商所暂不开展尿素期货夜盘交易和国际化",
+        "publisher": "中国金融信息网（新华社／上海证券报）",
+        "url": "https://www.cnfin.com/futures-xh08/a/20190809/1880586.shtml",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2019-08-09",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2019年8月9日以郑商所非农产品部总监身份出席尿素期货上市新闻发布会"
+        ]
+      }
+    },
+    {
+      "id": "S003",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "qhrb-20261015",
+      "note": "近期行业权威报道确认2026年10月14日郑商所党委委员、副总经理在任履职观察",
+      "source": {
+        "id": "guo-shuhua-cfachina-20261015",
+        "title": "[期货日报]郑商所副总经理郭淑华：发挥期货市场功能 服务油脂油料产业高质量发展",
+        "publisher": "中国期货业协会（来源：期货日报）",
+        "url": "https://www.cfachina.org/industrydynamics/mediaviewoffuturesmarket/202610/t20261015_91223.html",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2026-10-15",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2026年10月14日以郑州商品交易所党委委员、副总经理身份出席第19届国际油脂油料大会并发言"
+        ]
+      }
+    }
+  ],
   "facts": [
     {
       "id": "F001",
       "revision": 1,
-      "target": { "kind": "career", "recordId": "guo-shuhua-czce-employed-2003", "field": "observedAt" },
-      "value": { "year": 2003 },
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-employed-2003",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2003
+      },
       "status": "candidate",
       "citations": [],
       "note": "从兼容基线迁入的待核线索，不是本轮新发现或已读证据。原记录sourceIds及人物底稿供后续追溯；复核原文后追加证据和事实版本。"
+    },
+    {
+      "id": "F001",
+      "revision": 2,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-employed-2003",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2003,
+        "month": 6
+      },
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文·郑州商品交易所（59人）段",
+          "statement": "郑州商品交易所（59人）……冷冰……王晓明……郭淑华……王亚梅"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所59人换证名单中的郭淑华与现任郑商所副总经理郭淑华同属郑商所连续从业人员",
+        "countercheck": "公告发布于2003-06-05，反映2003年6月在所状态，按年月{year:2003,month:6}记录，不将发文日当作入职日"
+      },
+      "note": "本轮直读中期协2003-06-05公告原文后由candidate升级为supported_observation"
+    },
+    {
+      "id": "F002",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-employed-2003",
+        "field": "recordKind"
+      },
+      "value": "observation",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文·郑州商品交易所（59人）段",
+          "statement": "名单仅证明2003年6月在郑商所从业，不披露入所时间"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "绑定2003年换证名单记录类型为observation"
+    },
+    {
+      "id": "F003",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-employed-2003",
+        "field": "unitId"
+      },
+      "value": "csrc-czce",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文·郑州商品交易所（59人）段",
+          "statement": "郑州商品交易所（59人）……郭淑华"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "确认所属机构为郑州商品交易所"
+    },
+    {
+      "id": "F004",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-employed-2003",
+        "field": "unitName"
+      },
+      "value": "郑州商品交易所",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文·郑州商品交易所（59人）段",
+          "statement": "郑州商品交易所（59人）……郭淑华"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "确认机构名称"
+    },
+    {
+      "id": "F005",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-employed-2003",
+        "field": "position"
+      },
+      "value": "工作人员（执业证书换领名单在列，具体部门未公开）",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文·郑州商品交易所（59人）段",
+          "statement": "郑州商品交易所（59人）……郭淑华"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "保留未知具体部门的克制表述"
+    },
+    {
+      "id": "F006",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-nonagri-201908",
+        "field": "recordKind"
+      },
+      "value": "observation",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "郑商所非农产品部总监郭淑华8月9日（2019-08-09）在尿素期货上市仪式之后的新闻发布会上表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "2019年8月9日明确为非农产品部总监观察点，同时否定旧库“1995.07—2019.08任交割管理部总监、2019.08即任副总经理”的编造时间线"
+    },
+    {
+      "id": "F007",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-nonagri-201908",
+        "field": "unitId"
+      },
+      "value": "csrc-czce",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "郑商所非农产品部总监郭淑华8月9日（2019-08-09）在尿素期货上市仪式之后的新闻发布会上表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "2019年8月9日明确为非农产品部总监观察点，同时否定旧库“1995.07—2019.08任交割管理部总监、2019.08即任副总经理”的编造时间线"
+    },
+    {
+      "id": "F008",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-nonagri-201908",
+        "field": "unitName"
+      },
+      "value": "郑州商品交易所",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "郑商所非农产品部总监郭淑华8月9日（2019-08-09）在尿素期货上市仪式之后的新闻发布会上表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "2019年8月9日明确为非农产品部总监观察点，同时否定旧库“1995.07—2019.08任交割管理部总监、2019.08即任副总经理”的编造时间线"
+    },
+    {
+      "id": "F009",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-nonagri-201908",
+        "field": "department"
+      },
+      "value": "非农产品部",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "郑商所非农产品部总监郭淑华8月9日（2019-08-09）在尿素期货上市仪式之后的新闻发布会上表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "2019年8月9日明确为非农产品部总监观察点，同时否定旧库“1995.07—2019.08任交割管理部总监、2019.08即任副总经理”的编造时间线"
+    },
+    {
+      "id": "F010",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-nonagri-201908",
+        "field": "position"
+      },
+      "value": "总监",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "郑商所非农产品部总监郭淑华8月9日（2019-08-09）在尿素期货上市仪式之后的新闻发布会上表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "2019年8月9日明确为非农产品部总监观察点，同时否定旧库“1995.07—2019.08任交割管理部总监、2019.08即任副总经理”的编造时间线"
+    },
+    {
+      "id": "F011",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-nonagri-201908",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2019,
+        "month": 8,
+        "day": 9
+      },
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "郑商所非农产品部总监郭淑华8月9日（2019-08-09）在尿素期货上市仪式之后的新闻发布会上表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "2019年8月9日明确为非农产品部总监观察点，同时否定旧库“1995.07—2019.08任交割管理部总监、2019.08即任副总经理”的编造时间线"
+    },
+    {
+      "id": "F012",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-vgm-202610",
+        "field": "recordKind"
+      },
+      "value": "observation",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "10月14日（2026-10-14），第19届国际油脂油料大会……郑州商品交易所党委委员、副总经理郭淑华在论坛上表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "补充2026年10月14日最新公开履职时间点观察（独立于基线现任壳，避免触发在职失效）"
+    },
+    {
+      "id": "F013",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-vgm-202610",
+        "field": "unitId"
+      },
+      "value": "csrc-czce",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "10月14日（2026-10-14），第19届国际油脂油料大会……郑州商品交易所党委委员、副总经理郭淑华在论坛上表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "补充2026年10月14日最新公开履职时间点观察（独立于基线现任壳，避免触发在职失效）"
+    },
+    {
+      "id": "F014",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-vgm-202610",
+        "field": "unitName"
+      },
+      "value": "郑州商品交易所",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "10月14日（2026-10-14），第19届国际油脂油料大会……郑州商品交易所党委委员、副总经理郭淑华在论坛上表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "补充2026年10月14日最新公开履职时间点观察（独立于基线现任壳，避免触发在职失效）"
+    },
+    {
+      "id": "F015",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-vgm-202610",
+        "field": "position"
+      },
+      "value": "党委委员、副总经理",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "10月14日（2026-10-14），第19届国际油脂油料大会……郑州商品交易所党委委员、副总经理郭淑华在论坛上表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "补充2026年10月14日最新公开履职时间点观察（独立于基线现任壳，避免触发在职失效）"
+    },
+    {
+      "id": "F016",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "guo-shuhua-czce-vgm-202610",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2026,
+        "month": 10,
+        "day": 14
+      },
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "10月14日（2026-10-14），第19届国际油脂油料大会……郑州商品交易所党委委员、副总经理郭淑华在论坛上表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "郑州商品交易所长期干部、曾任非农产品部总监，现任郑州商品交易所党委委员、副总经理郭淑华",
+        "countercheck": "2003年中期协执业证书名单明确归入“郑州商品交易所（59人）”条目下，排除其他单位同名人员"
+      },
+      "note": "补充2026年10月14日最新公开履职时间点观察（独立于基线现任壳，避免触发在职失效）"
     }
   ],
   "rules": [],
-  "publications": []
+  "publications": [
+    {
+      "id": "P001",
+      "factId": "F001",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P002",
+      "factId": "F002",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P003",
+      "factId": "F003",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P004",
+      "factId": "F004",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P005",
+      "factId": "F005",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P006",
+      "factId": "F006",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P007",
+      "factId": "F007",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P008",
+      "factId": "F008",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P009",
+      "factId": "F009",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P010",
+      "factId": "F010",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P011",
+      "factId": "F011",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P012",
+      "factId": "F012",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P013",
+      "factId": "F013",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P014",
+      "factId": "F014",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P015",
+      "factId": "F015",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P016",
+      "factId": "F016",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    }
+  ]
 }

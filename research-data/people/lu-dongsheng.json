@@ -1,0 +1,1928 @@
+{
+  "schemaVersion": 1,
+  "personId": "lu-dongsheng",
+  "evidence": [
+    {
+      "id": "S001",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "pbcsf-chronicle-1997",
+      "note": "清华五道口官方校史纪事确认1997年4月获中国人民银行研究生部经济学硕士学位",
+      "source": {
+        "id": "lu-dongsheng-pbcsf-chronicle-19970404",
+        "title": "五道口纪事（1981-2012）第10章：三、中国人民银行研究生部",
+        "publisher": "清华大学五道口金融学院校友发展研究中心（QQ阅读正版电子书）",
+        "url": "https://iweb.qq.com/read/1041787808/10",
+        "sourceType": "academic",
+        "publishedDate": "2021-12-09",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "1997年4月4日中国人民银行研究生部第17次学位评定委员会决议授予鲁东升等53人经济学硕士学位"
+        ]
+      }
+    },
+    {
+      "id": "S002",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "eeo-20111014",
+      "note": "2011年10月当期报道确认升任中金所副总经理起始年月",
+      "source": {
+        "id": "lu-dongsheng-eeo-20111014",
+        "title": "证监会人员调整 监管新思路值得期待",
+        "publisher": "经济观察报（经济观察网）",
+        "url": "https://www.eeo.com.cn/2011/1014/213462.shtml",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2011-10-14",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2011年10月证监系统干部调整中任中金所副总经理"
+        ]
+      }
+    },
+    {
+      "id": "S003",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "stcn-20140530",
+      "note": "交叉印证中金所副总经理在任活动",
+      "source": {
+        "id": "lu-dongsheng-ce-stcn-20140530",
+        "title": "中金所勾画金融衍生品创新蓝图",
+        "publisher": "中国经济网（来源：证券时报网）",
+        "url": "http://finance.ce.cn/rolling/201405/30/t20140530_2899613.shtml",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2014-05-30",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2014年5月以中金所副总经理身份出席上海衍生品市场论坛"
+        ]
+      }
+    },
+    {
+      "id": "S004",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "nanhua-forum-2018",
+      "note": "一手印证2018年任中国证监会期货监管部巡视员",
+      "source": {
+        "id": "lu-dongsheng-nanhua-2018",
+        "title": "2018中国期货分析师暨场外衍生品论坛嘉宾介绍",
+        "publisher": "南华期货论坛专题页",
+        "url": "https://www.nanhua.net/forum/2018/guest-intro.html",
+        "sourceType": "industry_report",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2018年论坛嘉宾职衔为中国证监会期货监管部巡视员鲁东升"
+        ]
+      }
+    },
+    {
+      "id": "S005",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "shfe-notice-20241212",
+      "note": "上期所官网任免公告",
+      "source": {
+        "id": "lu-dongsheng-shfe-notice-20241212",
+        "title": "鲁东升同志任上海期货交易所党委副书记、总经理",
+        "publisher": "上海期货交易所",
+        "url": "https://www.shfe.com.cn/publicnotice/notice/202412/t20241212_823658.html",
+        "sourceType": "appointment",
+        "publishedDate": "2024-12-12",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2024年12月12日上期所公告：证监会党委决定鲁东升任上海期货交易所党委副书记、总经理"
+        ]
+      }
+    },
+    {
+      "id": "S006",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "cyc-20241213",
+      "note": "完整串联中金所监察部处长—中金所副总—证监会期货部巡视员—郑商所总经理—上期所总经理全链条",
+      "source": {
+        "id": "lu-dongsheng-cyc-sina-20241213",
+        "title": "两大期交所同日换帅：鲁东升调任上期所总经理，贺军升任郑商所总经理",
+        "publisher": "中国青年网（新浪财经转载）",
+        "url": "https://finance.sina.com.cn/jjxw/2024-12-13/doc-incziqvp8941192.shtml",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2024-12-13",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "曾任中金所监察部处长，后升任中金所副总经理，2016年前后回归证监会期货部任巡视员，2019年12月开始担任郑商所党委副书记、总经理，2024年12月调任上期所党委副书记、总经理"
+        ]
+      }
+    },
+    {
+      "id": "S007",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "czce-notice-20241212",
+      "note": "郑商所任免消息确认2024年12月卸任郑商所总经理",
+      "source": {
+        "id": "lu-dongsheng-bjd-czce-20241212",
+        "title": "贺军任郑州商品交易所党委副书记、总经理",
+        "publisher": "北京日报客户端（来源：郑州商品交易所）",
+        "url": "https://xinwen.bjd.com.cn/content/s675acc7ce4b000299bad4c28.html",
+        "sourceType": "official_notice",
+        "publishedDate": "2024-12-12",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2024年12月12日鲁东升不再担任郑州商品交易所党委副书记、总经理"
+        ]
+      }
+    },
+    {
+      "id": "S004",
+      "revision": 2,
+      "reading": "read",
+      "originGroup": "nanhua-forum-2018",
+      "note": "一手印证2018年任中国证监会期货监管部巡视员（v2：规范化 sourceType industry_report -> other）",
+      "source": {
+        "id": "lu-dongsheng-nanhua-2018",
+        "title": "2018中国期货分析师暨场外衍生品论坛嘉宾介绍",
+        "publisher": "南华期货论坛专题页",
+        "url": "https://www.nanhua.net/forum/2018/guest-intro.html",
+        "sourceType": "other",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2018年论坛嘉宾职衔为中国证监会期货监管部巡视员鲁东升"
+        ]
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "revision": 1,
+      "target": {
+        "kind": "basic",
+        "field": "currentRank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "嘉宾列表第2位",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "中国证监会党委决定，鲁东升同志任上海期货交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "曾任会机关巡视员、郑商所总经理，现上期所总经理（正厅局级）"
+    },
+    {
+      "id": "F002",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-dongsheng-edu-ma",
+        "field": "school"
+      },
+      "value": "中国人民银行研究生部",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "1997年4月4日条",
+          "statement": "4月4日 研究生部第17次学位评定委员会决议……授予……鲁东升、单清勇等53人经济学硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "五道口校史纪事确证1997年获中国人民银行研究生部经济学硕士学位"
+    },
+    {
+      "id": "F003",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-dongsheng-edu-ma",
+        "field": "major"
+      },
+      "value": "经济学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "1997年4月4日条",
+          "statement": "4月4日 研究生部第17次学位评定委员会决议……授予……鲁东升、单清勇等53人经济学硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "五道口校史纪事确证1997年获中国人民银行研究生部经济学硕士学位"
+    },
+    {
+      "id": "F004",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-dongsheng-edu-ma",
+        "field": "degree"
+      },
+      "value": "硕士",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "1997年4月4日条",
+          "statement": "4月4日 研究生部第17次学位评定委员会决议……授予……鲁东升、单清勇等53人经济学硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "五道口校史纪事确证1997年获中国人民银行研究生部经济学硕士学位"
+    },
+    {
+      "id": "F005",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-dongsheng-edu-ma",
+        "field": "degreeStatus"
+      },
+      "value": "awarded",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "1997年4月4日条",
+          "statement": "4月4日 研究生部第17次学位评定委员会决议……授予……鲁东升、单清勇等53人经济学硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "五道口校史纪事确证1997年获中国人民银行研究生部经济学硕士学位"
+    },
+    {
+      "id": "F006",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-dongsheng-edu-ma",
+        "field": "educationLevel"
+      },
+      "value": "研究生",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "1997年4月4日条",
+          "statement": "4月4日 研究生部第17次学位评定委员会决议……授予……鲁东升、单清勇等53人经济学硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "五道口校史纪事确证1997年获中国人民银行研究生部经济学硕士学位"
+    },
+    {
+      "id": "F007",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-dongsheng-edu-ma",
+        "field": "studyStatus"
+      },
+      "value": "graduated",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "1997年4月4日条",
+          "statement": "4月4日 研究生部第17次学位评定委员会决议……授予……鲁东升、单清勇等53人经济学硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "五道口校史纪事确证1997年获中国人民银行研究生部经济学硕士学位"
+    },
+    {
+      "id": "F008",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-dongsheng-edu-ma",
+        "field": "endYear"
+      },
+      "value": 1997,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "1997年4月4日条",
+          "statement": "4月4日 研究生部第17次学位评定委员会决议……授予……鲁东升、单清勇等53人经济学硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "五道口校史纪事确证1997年获中国人民银行研究生部经济学硕士学位"
+    },
+    {
+      "id": "F009",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-dongsheng-edu-ma",
+        "field": "graduationYear"
+      },
+      "value": 1997,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "1997年4月4日条",
+          "statement": "4月4日 研究生部第17次学位评定委员会决议……授予……鲁东升、单清勇等53人经济学硕士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "五道口校史纪事确证1997年获中国人民银行研究生部经济学硕士学位"
+    },
+    {
+      "id": "F010",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-sup-hist",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "公开资料显示，鲁东升曾任中国金融期货交易所（简称“中金所”）监察部任处长，后升任中金所副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增中金所监察部处长历史任职"
+    },
+    {
+      "id": "F011",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-sup-hist",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "公开资料显示，鲁东升曾任中国金融期货交易所（简称“中金所”）监察部任处长，后升任中金所副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增中金所监察部处长历史任职"
+    },
+    {
+      "id": "F012",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-sup-hist",
+        "field": "unitId"
+      },
+      "value": "csrc-cffex",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "公开资料显示，鲁东升曾任中国金融期货交易所（简称“中金所”）监察部任处长，后升任中金所副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增中金所监察部处长历史任职"
+    },
+    {
+      "id": "F013",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-sup-hist",
+        "field": "unitName"
+      },
+      "value": "中国金融期货交易所",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "公开资料显示，鲁东升曾任中国金融期货交易所（简称“中金所”）监察部任处长，后升任中金所副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增中金所监察部处长历史任职"
+    },
+    {
+      "id": "F014",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-sup-hist",
+        "field": "department"
+      },
+      "value": "监察部",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "公开资料显示，鲁东升曾任中国金融期货交易所（简称“中金所”）监察部任处长，后升任中金所副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增中金所监察部处长历史任职"
+    },
+    {
+      "id": "F015",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-sup-hist",
+        "field": "position"
+      },
+      "value": "处长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "公开资料显示，鲁东升曾任中国金融期货交易所（简称“中金所”）监察部任处长，后升任中金所副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增中金所监察部处长历史任职"
+    },
+    {
+      "id": "F016",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-sup-hist",
+        "field": "rank"
+      },
+      "value": "正处级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "公开资料显示，鲁东升曾任中国金融期货交易所（简称“中金所”）监察部任处长，后升任中金所副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增中金所监察部处长历史任职"
+    },
+    {
+      "id": "F017",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-vgm-2011",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "鲁东升任中金所副总经理"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "后升任中金所副总经理，2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增2011年10月起任中金所副总经理记录（“2016年前后”系约数不作精确结束年）"
+    },
+    {
+      "id": "F018",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-vgm-2011",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "鲁东升任中金所副总经理"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "后升任中金所副总经理，2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增2011年10月起任中金所副总经理记录（“2016年前后”系约数不作精确结束年）"
+    },
+    {
+      "id": "F019",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-vgm-2011",
+        "field": "unitId"
+      },
+      "value": "csrc-cffex",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "鲁东升任中金所副总经理"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "后升任中金所副总经理，2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增2011年10月起任中金所副总经理记录（“2016年前后”系约数不作精确结束年）"
+    },
+    {
+      "id": "F020",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-vgm-2011",
+        "field": "unitName"
+      },
+      "value": "中国金融期货交易所",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "鲁东升任中金所副总经理"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "后升任中金所副总经理，2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增2011年10月起任中金所副总经理记录（“2016年前后”系约数不作精确结束年）"
+    },
+    {
+      "id": "F021",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-vgm-2011",
+        "field": "position"
+      },
+      "value": "副总经理",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "鲁东升任中金所副总经理"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "后升任中金所副总经理，2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增2011年10月起任中金所副总经理记录（“2016年前后”系约数不作精确结束年）"
+    },
+    {
+      "id": "F022",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-vgm-2011",
+        "field": "rank"
+      },
+      "value": "副厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "鲁东升任中金所副总经理"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "后升任中金所副总经理，2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增2011年10月起任中金所副总经理记录（“2016年前后”系约数不作精确结束年）"
+    },
+    {
+      "id": "F023",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-vgm-2011",
+        "field": "startYear"
+      },
+      "value": 2011,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "鲁东升任中金所副总经理"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "后升任中金所副总经理，2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增2011年10月起任中金所副总经理记录（“2016年前后”系约数不作精确结束年）"
+    },
+    {
+      "id": "F024",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-cffex-vgm-2011",
+        "field": "startMonth"
+      },
+      "value": 10,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "鲁东升任中金所副总经理"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "后升任中金所副总经理，2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "新增2011年10月起任中金所副总经理记录（“2016年前后”系约数不作精确结束年）"
+    },
+    {
+      "id": "F025",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "recordKind"
+      },
+      "value": "observation",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F026",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "unitId"
+      },
+      "value": "csrc-qh",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F027",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F028",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "department"
+      },
+      "value": "期货监管部",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F029",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "position"
+      },
+      "value": "巡视员",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F030",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F031",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2018
+      },
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F032",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-czce-verified-end",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2019年12月开始担任郑商所党委副书记、总经理"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "2024-12-12……鲁东升同志不再担任郑州商品交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "升级基线郑商所总经理记录，补齐2019年12月起始年月"
+    },
+    {
+      "id": "F033",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-czce-verified-end",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2019年12月开始担任郑商所党委副书记、总经理"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "2024-12-12……鲁东升同志不再担任郑州商品交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "升级基线郑商所总经理记录，补齐2019年12月起始年月"
+    },
+    {
+      "id": "F034",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-czce-verified-end",
+        "field": "unitId"
+      },
+      "value": "csrc-czce",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2019年12月开始担任郑商所党委副书记、总经理"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "2024-12-12……鲁东升同志不再担任郑州商品交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "升级基线郑商所总经理记录，补齐2019年12月起始年月"
+    },
+    {
+      "id": "F035",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-czce-verified-end",
+        "field": "unitName"
+      },
+      "value": "郑州商品交易所",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2019年12月开始担任郑商所党委副书记、总经理"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "2024-12-12……鲁东升同志不再担任郑州商品交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "升级基线郑商所总经理记录，补齐2019年12月起始年月"
+    },
+    {
+      "id": "F036",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-czce-verified-end",
+        "field": "position"
+      },
+      "value": "党委副书记、总经理",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2019年12月开始担任郑商所党委副书记、总经理"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "2024-12-12……鲁东升同志不再担任郑州商品交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "升级基线郑商所总经理记录，补齐2019年12月起始年月"
+    },
+    {
+      "id": "F037",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-czce-verified-end",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2019年12月开始担任郑商所党委副书记、总经理"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "2024-12-12……鲁东升同志不再担任郑州商品交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "升级基线郑商所总经理记录，补齐2019年12月起始年月"
+    },
+    {
+      "id": "F038",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-czce-verified-end",
+        "field": "startYear"
+      },
+      "value": 2019,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2019年12月开始担任郑商所党委副书记、总经理"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "2024-12-12……鲁东升同志不再担任郑州商品交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "升级基线郑商所总经理记录，补齐2019年12月起始年月"
+    },
+    {
+      "id": "F039",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-czce-verified-end",
+        "field": "startMonth"
+      },
+      "value": 12,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2019年12月开始担任郑商所党委副书记、总经理"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "2024-12-12……鲁东升同志不再担任郑州商品交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "升级基线郑商所总经理记录，补齐2019年12月起始年月"
+    },
+    {
+      "id": "F040",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-czce-verified-end",
+        "field": "endYear"
+      },
+      "value": 2024,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2019年12月开始担任郑商所党委副书记、总经理"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "2024-12-12……鲁东升同志不再担任郑州商品交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "升级基线郑商所总经理记录，补齐2019年12月起始年月"
+    },
+    {
+      "id": "F041",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-czce-verified-end",
+        "field": "endMonth"
+      },
+      "value": 12,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "于2019年12月开始担任郑商所党委副书记、总经理"
+        },
+        {
+          "id": "S007",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "2024-12-12……鲁东升同志不再担任郑州商品交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "升级基线郑商所总经理记录，补齐2019年12月起始年月"
+    },
+    {
+      "id": "F001",
+      "revision": 2,
+      "target": {
+        "kind": "basic",
+        "field": "currentRank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 2,
+          "locator": "嘉宾列表第2位",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S005",
+          "revision": 1,
+          "locator": "正文",
+          "statement": "中国证监会党委决定，鲁东升同志任上海期货交易所党委副书记、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "曾任会机关巡视员、郑商所总经理，现上期所总经理（正厅局级）"
+    },
+    {
+      "id": "F025",
+      "revision": 2,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "recordKind"
+      },
+      "value": "observation",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 2,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F026",
+      "revision": 2,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "unitId"
+      },
+      "value": "csrc-qh",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 2,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F027",
+      "revision": 2,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 2,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F028",
+      "revision": 2,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "department"
+      },
+      "value": "期货监管部",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 2,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F029",
+      "revision": 2,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "position"
+      },
+      "value": "巡视员",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 2,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F030",
+      "revision": 2,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 2,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    },
+    {
+      "id": "F031",
+      "revision": 2,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-dongsheng-csrc-qh-obs-2018",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2018
+      },
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 2,
+          "locator": "嘉宾介绍第2项",
+          "statement": "中国证监会期货监管部巡视员 鲁东升"
+        },
+        {
+          "id": "S006",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "2016年前后回归证监会期货部任巡视员一职"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1997年4月获中国人民银行研究生部（五道口）经济学硕士学位，历任中金所监察部处长、中金所副总经理（2011.10起）、证监会期货监管部巡视员、郑商所总经理（2019.12—2024.12），2024年12月任上海期货交易所党委副书记、总经理鲁东升",
+        "countercheck": "《五道口纪事（1981-2012）》学位评定委员会决议一手确证1997年经济学硕士；纠正旧库将2016—2019期货监管部巡视员漏写或拉通为中金所副总的问题"
+      },
+      "note": "以2018年实名嘉宾头衔记录证监会期货监管部巡视员观察点，避免将“2016年前后”固化为精确起始年"
+    }
+  ],
+  "rules": [],
+  "publications": [
+    {
+      "id": "P001",
+      "factId": "F001",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P002",
+      "factId": "F002",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P003",
+      "factId": "F003",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P004",
+      "factId": "F004",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P005",
+      "factId": "F005",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P006",
+      "factId": "F006",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P007",
+      "factId": "F007",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P008",
+      "factId": "F008",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P009",
+      "factId": "F009",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P010",
+      "factId": "F010",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P011",
+      "factId": "F011",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P012",
+      "factId": "F012",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P013",
+      "factId": "F013",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P014",
+      "factId": "F014",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P015",
+      "factId": "F015",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P016",
+      "factId": "F016",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P017",
+      "factId": "F017",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P018",
+      "factId": "F018",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P019",
+      "factId": "F019",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P020",
+      "factId": "F020",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P021",
+      "factId": "F021",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P022",
+      "factId": "F022",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P023",
+      "factId": "F023",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P024",
+      "factId": "F024",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P025",
+      "factId": "F025",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P026",
+      "factId": "F026",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P027",
+      "factId": "F027",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P028",
+      "factId": "F028",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P029",
+      "factId": "F029",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P030",
+      "factId": "F030",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P031",
+      "factId": "F031",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P032",
+      "factId": "F032",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P033",
+      "factId": "F033",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P034",
+      "factId": "F034",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P035",
+      "factId": "F035",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P036",
+      "factId": "F036",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P037",
+      "factId": "F037",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P038",
+      "factId": "F038",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P039",
+      "factId": "F039",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P040",
+      "factId": "F040",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P041",
+      "factId": "F041",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    }
+  ]
+}

@@ -1,0 +1,3586 @@
+{
+  "schemaVersion": 1,
+  "personId": "fan-dazhi",
+  "evidence": [
+    {
+      "id": "S001",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "people-cpc-20190426",
+      "note": "人民网组织人事栏目正式干部简历",
+      "source": {
+        "id": "fan-dazhi-people-20190426",
+        "title": "樊大志任中央纪委国家监委驻证监会纪检监察组组长",
+        "publisher": "人民网-中国共产党新闻网",
+        "url": "http://renshi.people.com.cn/n1/2019/0426/c139617-31051196.html",
+        "sourceType": "official_notice",
+        "publishedDate": "2019-04-26",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "1964年9月生",
+          "吉林人",
+          "1987年8月参加工作",
+          "历任机构顺序",
+          "2016年12月任中国银行纪委书记、党委委员",
+          "2019年1月任驻中国银行纪检监察组组长、党委委员",
+          "2019年4月任驻证监会纪检监察组组长、党委委员"
+        ]
+      }
+    },
+    {
+      "id": "S002",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "boc-601988-disclosure",
+      "note": "上市公司法定高管披露简历，精确给出1999—2016各段起止年月与两段学历",
+      "source": {
+        "id": "fan-dazhi-boc-601988-profile",
+        "title": "中国银行(601988)公司高管简历：樊大志",
+        "publisher": "新浪财经（转引中国银行股份有限公司法定披露高管资料）",
+        "url": "https://vip.stock.finance.sina.com.cn/corp/view/vCI_CorpManagerInfo.php?stockid=601988&Pcode=30040029&Name=%B7%AE%B4%F3%D6%BE",
+        "sourceType": "institution_disclosure",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "1987年毕业于东北财经大学",
+          "2012年获中国社会科学院研究生院经济学博士学位",
+          "1999年12月至2004年1月先后任北京市境外融投资管理中心副主任、北京国资公司董事副总经理",
+          "2004年1月至2007年8月任北京证券董事、总经理",
+          "2007年8月至2016年11月先后任华夏银行董事、副行长、行长",
+          "2016年11月任华夏银行董事长",
+          "2016年12月起任中国银行纪委书记"
+        ]
+      }
+    },
+    {
+      "id": "S003",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "china-com-huaxia-20170105",
+      "note": "华夏银行辞任公告报道，补齐吉林榆树籍贯及东财教师、北国投、首创集团、瑞银证券岗位细节",
+      "source": {
+        "id": "fan-dazhi-ifeng-huaxia-20170105",
+        "title": "华夏银行：樊大志辞去行长职务",
+        "publisher": "凤凰网财经（来源：中国网财经）",
+        "url": "https://finance.ifeng.com/c/7ZxxTa0skU5",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2017-01-05",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "吉林榆树人",
+          "曾任东北财经大学教师",
+          "北京国际信托投资公司财务部副经理、资金部副经理、投资银行部经理、投资银行总部经理",
+          "北京首都创业集团党组成员、董事、副总经理",
+          "瑞银证券有限责任公司监事长"
+        ]
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "revision": 1,
+      "target": {
+        "kind": "basic",
+        "field": "nativePlace"
+      },
+      "value": "吉林榆树",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "樊大志同志，1964年9月出生，汉族，吉林人"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "樊大志，1964年9月出生，吉林榆树人"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "纠正旧库legacyData.ts第4315行“北京”籍贯错误"
+    },
+    {
+      "id": "F002",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-ug",
+        "field": "school"
+      },
+      "value": "东北财经大学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1987年毕业于东北财经大学"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "原文明确1987年毕业于东北财经大学；未写明学士专业名称故不臆补"
+    },
+    {
+      "id": "F003",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-ug",
+        "field": "studyStatus"
+      },
+      "value": "graduated",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1987年毕业于东北财经大学"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "原文明确1987年毕业于东北财经大学；未写明学士专业名称故不臆补"
+    },
+    {
+      "id": "F004",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-ug",
+        "field": "graduationYear"
+      },
+      "value": 1987,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1987年毕业于东北财经大学"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "原文明确1987年毕业于东北财经大学；未写明学士专业名称故不臆补"
+    },
+    {
+      "id": "F005",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-ug",
+        "field": "endYear"
+      },
+      "value": 1987,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1987年毕业于东北财经大学"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "原文明确1987年毕业于东北财经大学；未写明学士专业名称故不臆补"
+    },
+    {
+      "id": "F006",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-phd",
+        "field": "school"
+      },
+      "value": "中国社会科学院研究生院",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2012年获中国社会科学院研究生院经济学博士学位"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作……经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2008年东北财经大学金融学博士”错误"
+    },
+    {
+      "id": "F007",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-phd",
+        "field": "degree"
+      },
+      "value": "博士",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2012年获中国社会科学院研究生院经济学博士学位"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作……经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2008年东北财经大学金融学博士”错误"
+    },
+    {
+      "id": "F008",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-phd",
+        "field": "degreeStatus"
+      },
+      "value": "awarded",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2012年获中国社会科学院研究生院经济学博士学位"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作……经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2008年东北财经大学金融学博士”错误"
+    },
+    {
+      "id": "F009",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-phd",
+        "field": "educationLevel"
+      },
+      "value": "研究生",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2012年获中国社会科学院研究生院经济学博士学位"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作……经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2008年东北财经大学金融学博士”错误"
+    },
+    {
+      "id": "F010",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-phd",
+        "field": "studyStatus"
+      },
+      "value": "graduated",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2012年获中国社会科学院研究生院经济学博士学位"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作……经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2008年东北财经大学金融学博士”错误"
+    },
+    {
+      "id": "F011",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-phd",
+        "field": "major"
+      },
+      "value": "经济学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2012年获中国社会科学院研究生院经济学博士学位"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作……经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2008年东北财经大学金融学博士”错误"
+    },
+    {
+      "id": "F012",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-phd",
+        "field": "graduationYear"
+      },
+      "value": 2012,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2012年获中国社会科学院研究生院经济学博士学位"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作……经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2008年东北财经大学金融学博士”错误"
+    },
+    {
+      "id": "F013",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-phd",
+        "field": "endYear"
+      },
+      "value": 2012,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2012年获中国社会科学院研究生院经济学博士学位"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作……经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2008年东北财经大学金融学博士”错误"
+    },
+    {
+      "id": "F014",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-phd",
+        "field": "isInService"
+      },
+      "value": true,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2012年获中国社会科学院研究生院经济学博士学位"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作……经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2008年东北财经大学金融学博士”错误"
+    },
+    {
+      "id": "F015",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "fan-dazhi-edu-phd",
+        "field": "educationMode"
+      },
+      "value": "在职",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2012年获中国社会科学院研究生院经济学博士学位"
+        },
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作……经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2008年东北财经大学金融学博士”错误"
+    },
+    {
+      "id": "F016",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-dufe-teacher",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作。先后在东北财经大学……工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "曾任东北财经大学教师"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "早期任东北财经大学教师，结束年月未公开故留空"
+    },
+    {
+      "id": "F017",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-dufe-teacher",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作。先后在东北财经大学……工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "曾任东北财经大学教师"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "早期任东北财经大学教师，结束年月未公开故留空"
+    },
+    {
+      "id": "F018",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-dufe-teacher",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作。先后在东北财经大学……工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "曾任东北财经大学教师"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "早期任东北财经大学教师，结束年月未公开故留空"
+    },
+    {
+      "id": "F019",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-dufe-teacher",
+        "field": "unitName"
+      },
+      "value": "东北财经大学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作。先后在东北财经大学……工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "曾任东北财经大学教师"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "早期任东北财经大学教师，结束年月未公开故留空"
+    },
+    {
+      "id": "F020",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-dufe-teacher",
+        "field": "position"
+      },
+      "value": "教师",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "1987年8月参加工作。先后在东北财经大学……工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "曾任东北财经大学教师"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "早期任东北财经大学教师，结束年月未公开故留空"
+    },
+    {
+      "id": "F021",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bitic",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "先后在东北财经大学、北京国际信托投资公司……工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京国际信托投资公司财务部副经理、资金部副经理；北京国际信托投资公司投资银行部经理、投资银行总部经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "北国投历任部门负责人，细分起止年月未公开"
+    },
+    {
+      "id": "F022",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bitic",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "先后在东北财经大学、北京国际信托投资公司……工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京国际信托投资公司财务部副经理、资金部副经理；北京国际信托投资公司投资银行部经理、投资银行总部经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "北国投历任部门负责人，细分起止年月未公开"
+    },
+    {
+      "id": "F023",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bitic",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "先后在东北财经大学、北京国际信托投资公司……工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京国际信托投资公司财务部副经理、资金部副经理；北京国际信托投资公司投资银行部经理、投资银行总部经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "北国投历任部门负责人，细分起止年月未公开"
+    },
+    {
+      "id": "F024",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bitic",
+        "field": "unitName"
+      },
+      "value": "北京国际信托投资公司",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "先后在东北财经大学、北京国际信托投资公司……工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京国际信托投资公司财务部副经理、资金部副经理；北京国际信托投资公司投资银行部经理、投资银行总部经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "北国投历任部门负责人，细分起止年月未公开"
+    },
+    {
+      "id": "F025",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bitic",
+        "field": "position"
+      },
+      "value": "财务部副经理、资金部副经理、投资银行部经理、投资银行总部经理",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "先后在东北财经大学、北京国际信托投资公司……工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京国际信托投资公司财务部副经理、资金部副经理；北京国际信托投资公司投资银行部经理、投资银行总部经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "北国投历任部门负责人，细分起止年月未公开"
+    },
+    {
+      "id": "F026",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-overseas-fin-1999",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市境外融投资管理中心党组成员、副主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知起点1999.12，省略中间转换终点"
+    },
+    {
+      "id": "F027",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-overseas-fin-1999",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市境外融投资管理中心党组成员、副主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知起点1999.12，省略中间转换终点"
+    },
+    {
+      "id": "F028",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-overseas-fin-1999",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市境外融投资管理中心党组成员、副主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知起点1999.12，省略中间转换终点"
+    },
+    {
+      "id": "F029",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-overseas-fin-1999",
+        "field": "unitName"
+      },
+      "value": "北京市境外融投资管理中心",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市境外融投资管理中心党组成员、副主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知起点1999.12，省略中间转换终点"
+    },
+    {
+      "id": "F030",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-overseas-fin-1999",
+        "field": "position"
+      },
+      "value": "党组成员、副主任",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市境外融投资管理中心党组成员、副主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知起点1999.12，省略中间转换终点"
+    },
+    {
+      "id": "F031",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-overseas-fin-1999",
+        "field": "startYear"
+      },
+      "value": 1999,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市境外融投资管理中心党组成员、副主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知起点1999.12，省略中间转换终点"
+    },
+    {
+      "id": "F032",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-overseas-fin-1999",
+        "field": "startMonth"
+      },
+      "value": 12,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市境外融投资管理中心党组成员、副主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知起点1999.12，省略中间转换终点"
+    },
+    {
+      "id": "F033",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-soamc-2004",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市国有资产经营有限责任公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知终点2004.01，省略中间转换起点"
+    },
+    {
+      "id": "F034",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-soamc-2004",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市国有资产经营有限责任公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知终点2004.01，省略中间转换起点"
+    },
+    {
+      "id": "F035",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-soamc-2004",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市国有资产经营有限责任公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知终点2004.01，省略中间转换起点"
+    },
+    {
+      "id": "F036",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-soamc-2004",
+        "field": "unitName"
+      },
+      "value": "北京市国有资产经营有限责任公司",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市国有资产经营有限责任公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知终点2004.01，省略中间转换起点"
+    },
+    {
+      "id": "F037",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-soamc-2004",
+        "field": "position"
+      },
+      "value": "党组成员、董事、副总经理",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市国有资产经营有限责任公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知终点2004.01，省略中间转换起点"
+    },
+    {
+      "id": "F038",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-soamc-2004",
+        "field": "endYear"
+      },
+      "value": 2004,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市国有资产经营有限责任公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知终点2004.01，省略中间转换起点"
+    },
+    {
+      "id": "F039",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bj-soamc-2004",
+        "field": "endMonth"
+      },
+      "value": 1,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "1999年12月至2004年1月先后担任北京市境外融投资管理中心副主任，北京市国有资产经营有限责任公司董事、副总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京市国有资产经营有限责任公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "两段“先后担任”共用1999.12—2004.01外包区间，本段只保留已知终点2004.01，省略中间转换起点"
+    },
+    {
+      "id": "F040",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bjsec-2004-2007",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2004年1月至2007年8月担任北京证券有限责任公司董事、总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京证券有限责任公司党委副书记、董事、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "直接证伪旧库“2004.04—2007.12任北京银行副行长”的虚构履历"
+    },
+    {
+      "id": "F041",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bjsec-2004-2007",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2004年1月至2007年8月担任北京证券有限责任公司董事、总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京证券有限责任公司党委副书记、董事、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "直接证伪旧库“2004.04—2007.12任北京银行副行长”的虚构履历"
+    },
+    {
+      "id": "F042",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bjsec-2004-2007",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2004年1月至2007年8月担任北京证券有限责任公司董事、总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京证券有限责任公司党委副书记、董事、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "直接证伪旧库“2004.04—2007.12任北京银行副行长”的虚构履历"
+    },
+    {
+      "id": "F043",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bjsec-2004-2007",
+        "field": "unitName"
+      },
+      "value": "北京证券有限责任公司",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2004年1月至2007年8月担任北京证券有限责任公司董事、总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京证券有限责任公司党委副书记、董事、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "直接证伪旧库“2004.04—2007.12任北京银行副行长”的虚构履历"
+    },
+    {
+      "id": "F044",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bjsec-2004-2007",
+        "field": "position"
+      },
+      "value": "党委副书记、董事、总经理",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2004年1月至2007年8月担任北京证券有限责任公司董事、总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京证券有限责任公司党委副书记、董事、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "直接证伪旧库“2004.04—2007.12任北京银行副行长”的虚构履历"
+    },
+    {
+      "id": "F045",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bjsec-2004-2007",
+        "field": "startYear"
+      },
+      "value": 2004,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2004年1月至2007年8月担任北京证券有限责任公司董事、总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京证券有限责任公司党委副书记、董事、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "直接证伪旧库“2004.04—2007.12任北京银行副行长”的虚构履历"
+    },
+    {
+      "id": "F046",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bjsec-2004-2007",
+        "field": "startMonth"
+      },
+      "value": 1,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2004年1月至2007年8月担任北京证券有限责任公司董事、总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京证券有限责任公司党委副书记、董事、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "直接证伪旧库“2004.04—2007.12任北京银行副行长”的虚构履历"
+    },
+    {
+      "id": "F047",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bjsec-2004-2007",
+        "field": "endYear"
+      },
+      "value": 2007,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2004年1月至2007年8月担任北京证券有限责任公司董事、总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京证券有限责任公司党委副书记、董事、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "直接证伪旧库“2004.04—2007.12任北京银行副行长”的虚构履历"
+    },
+    {
+      "id": "F048",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-bjsec-2004-2007",
+        "field": "endMonth"
+      },
+      "value": 8,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2004年1月至2007年8月担任北京证券有限责任公司董事、总经理"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京证券有限责任公司党委副书记、董事、总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "直接证伪旧库“2004.04—2007.12任北京银行副行长”的虚构履历"
+    },
+    {
+      "id": "F049",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-capital-group",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "先后在……北京证券有限责任公司、北京首都创业集团有限公司、华夏银行股份有限公司工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京首都创业集团有限公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "首创集团任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F050",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-capital-group",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "先后在……北京证券有限责任公司、北京首都创业集团有限公司、华夏银行股份有限公司工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京首都创业集团有限公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "首创集团任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F051",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-capital-group",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "先后在……北京证券有限责任公司、北京首都创业集团有限公司、华夏银行股份有限公司工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京首都创业集团有限公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "首创集团任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F052",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-capital-group",
+        "field": "unitName"
+      },
+      "value": "北京首都创业集团有限公司",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "先后在……北京证券有限责任公司、北京首都创业集团有限公司、华夏银行股份有限公司工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京首都创业集团有限公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "首创集团任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F053",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-capital-group",
+        "field": "position"
+      },
+      "value": "党组成员、董事、副总经理",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "先后在……北京证券有限责任公司、北京首都创业集团有限公司、华夏银行股份有限公司工作"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "北京首都创业集团有限公司党组成员、董事、副总经理"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "首创集团任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F054",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-ubs-sec",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "瑞银证券有限责任公司监事长。2007年自瑞银证券调入华夏银行"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "瑞银证券监事长经历确认，起止月份未公开"
+    },
+    {
+      "id": "F055",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-ubs-sec",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "瑞银证券有限责任公司监事长。2007年自瑞银证券调入华夏银行"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "瑞银证券监事长经历确认，起止月份未公开"
+    },
+    {
+      "id": "F056",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-ubs-sec",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "瑞银证券有限责任公司监事长。2007年自瑞银证券调入华夏银行"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "瑞银证券监事长经历确认，起止月份未公开"
+    },
+    {
+      "id": "F057",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-ubs-sec",
+        "field": "unitName"
+      },
+      "value": "瑞银证券有限责任公司",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "瑞银证券有限责任公司监事长。2007年自瑞银证券调入华夏银行"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "瑞银证券监事长经历确认，起止月份未公开"
+    },
+    {
+      "id": "F058",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-ubs-sec",
+        "field": "position"
+      },
+      "value": "监事长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "瑞银证券有限责任公司监事长。2007年自瑞银证券调入华夏银行"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "瑞银证券监事长经历确认，起止月份未公开"
+    },
+    {
+      "id": "F059",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-pres-2007-2016",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2007年8月至2016年11月先后担任华夏银行股份有限公司董事、副行长、行长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2007年自瑞银证券调入华夏银行，担任华夏银行董事、常务副行长、党委副书记；华夏银行董事、行长、党委副书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "华夏银行副行长、行长阶段（2007.08—2016.11）"
+    },
+    {
+      "id": "F060",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-pres-2007-2016",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2007年8月至2016年11月先后担任华夏银行股份有限公司董事、副行长、行长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2007年自瑞银证券调入华夏银行，担任华夏银行董事、常务副行长、党委副书记；华夏银行董事、行长、党委副书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "华夏银行副行长、行长阶段（2007.08—2016.11）"
+    },
+    {
+      "id": "F061",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-pres-2007-2016",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2007年8月至2016年11月先后担任华夏银行股份有限公司董事、副行长、行长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2007年自瑞银证券调入华夏银行，担任华夏银行董事、常务副行长、党委副书记；华夏银行董事、行长、党委副书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "华夏银行副行长、行长阶段（2007.08—2016.11）"
+    },
+    {
+      "id": "F062",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-pres-2007-2016",
+        "field": "unitName"
+      },
+      "value": "华夏银行股份有限公司",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2007年8月至2016年11月先后担任华夏银行股份有限公司董事、副行长、行长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2007年自瑞银证券调入华夏银行，担任华夏银行董事、常务副行长、党委副书记；华夏银行董事、行长、党委副书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "华夏银行副行长、行长阶段（2007.08—2016.11）"
+    },
+    {
+      "id": "F063",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-pres-2007-2016",
+        "field": "position"
+      },
+      "value": "董事、常务副行长、党委副书记、行长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2007年8月至2016年11月先后担任华夏银行股份有限公司董事、副行长、行长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2007年自瑞银证券调入华夏银行，担任华夏银行董事、常务副行长、党委副书记；华夏银行董事、行长、党委副书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "华夏银行副行长、行长阶段（2007.08—2016.11）"
+    },
+    {
+      "id": "F064",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-pres-2007-2016",
+        "field": "startYear"
+      },
+      "value": 2007,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2007年8月至2016年11月先后担任华夏银行股份有限公司董事、副行长、行长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2007年自瑞银证券调入华夏银行，担任华夏银行董事、常务副行长、党委副书记；华夏银行董事、行长、党委副书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "华夏银行副行长、行长阶段（2007.08—2016.11）"
+    },
+    {
+      "id": "F065",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-pres-2007-2016",
+        "field": "startMonth"
+      },
+      "value": 8,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2007年8月至2016年11月先后担任华夏银行股份有限公司董事、副行长、行长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2007年自瑞银证券调入华夏银行，担任华夏银行董事、常务副行长、党委副书记；华夏银行董事、行长、党委副书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "华夏银行副行长、行长阶段（2007.08—2016.11）"
+    },
+    {
+      "id": "F066",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-pres-2007-2016",
+        "field": "endYear"
+      },
+      "value": 2016,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2007年8月至2016年11月先后担任华夏银行股份有限公司董事、副行长、行长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2007年自瑞银证券调入华夏银行，担任华夏银行董事、常务副行长、党委副书记；华夏银行董事、行长、党委副书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "华夏银行副行长、行长阶段（2007.08—2016.11）"
+    },
+    {
+      "id": "F067",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-pres-2007-2016",
+        "field": "endMonth"
+      },
+      "value": 11,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2007年8月至2016年11月先后担任华夏银行股份有限公司董事、副行长、行长"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2007年自瑞银证券调入华夏银行，担任华夏银行董事、常务副行长、党委副书记；华夏银行董事、行长、党委副书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "华夏银行副行长、行长阶段（2007.08—2016.11）"
+    },
+    {
+      "id": "F068",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-chair-2016",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2016年11月担任华夏银行股份有限公司董事长……自2016年12月起任本行（中国银行）纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2016年11月至12月任华夏银行董事长"
+    },
+    {
+      "id": "F069",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-chair-2016",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2016年11月担任华夏银行股份有限公司董事长……自2016年12月起任本行（中国银行）纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2016年11月至12月任华夏银行董事长"
+    },
+    {
+      "id": "F070",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-chair-2016",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2016年11月担任华夏银行股份有限公司董事长……自2016年12月起任本行（中国银行）纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2016年11月至12月任华夏银行董事长"
+    },
+    {
+      "id": "F071",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-chair-2016",
+        "field": "unitName"
+      },
+      "value": "华夏银行股份有限公司",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2016年11月担任华夏银行股份有限公司董事长……自2016年12月起任本行（中国银行）纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2016年11月至12月任华夏银行董事长"
+    },
+    {
+      "id": "F072",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-chair-2016",
+        "field": "position"
+      },
+      "value": "董事长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2016年11月担任华夏银行股份有限公司董事长……自2016年12月起任本行（中国银行）纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2016年11月至12月任华夏银行董事长"
+    },
+    {
+      "id": "F073",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-chair-2016",
+        "field": "startYear"
+      },
+      "value": 2016,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2016年11月担任华夏银行股份有限公司董事长……自2016年12月起任本行（中国银行）纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2016年11月至12月任华夏银行董事长"
+    },
+    {
+      "id": "F074",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-chair-2016",
+        "field": "startMonth"
+      },
+      "value": 11,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2016年11月担任华夏银行股份有限公司董事长……自2016年12月起任本行（中国银行）纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2016年11月至12月任华夏银行董事长"
+    },
+    {
+      "id": "F075",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-chair-2016",
+        "field": "endYear"
+      },
+      "value": 2016,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2016年11月担任华夏银行股份有限公司董事长……自2016年12月起任本行（中国银行）纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2016年11月至12月任华夏银行董事长"
+    },
+    {
+      "id": "F076",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-huaxia-chair-2016",
+        "field": "endMonth"
+      },
+      "value": 12,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "2016年11月担任华夏银行股份有限公司董事长……自2016年12月起任本行（中国银行）纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2016年11月至12月任华夏银行董事长"
+    },
+    {
+      "id": "F077",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-disc-2016-2019",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2016年12月任中国银行纪委书记、党委委员；2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "自2016年12月起任本行纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "派驻纪检体制改革前任中行纪委书记、党委委员"
+    },
+    {
+      "id": "F078",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-disc-2016-2019",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2016年12月任中国银行纪委书记、党委委员；2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "自2016年12月起任本行纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "派驻纪检体制改革前任中行纪委书记、党委委员"
+    },
+    {
+      "id": "F079",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-disc-2016-2019",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2016年12月任中国银行纪委书记、党委委员；2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "自2016年12月起任本行纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "派驻纪检体制改革前任中行纪委书记、党委委员"
+    },
+    {
+      "id": "F080",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-disc-2016-2019",
+        "field": "unitName"
+      },
+      "value": "中国银行股份有限公司",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2016年12月任中国银行纪委书记、党委委员；2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "自2016年12月起任本行纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "派驻纪检体制改革前任中行纪委书记、党委委员"
+    },
+    {
+      "id": "F081",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-disc-2016-2019",
+        "field": "position"
+      },
+      "value": "纪委书记、党委委员",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2016年12月任中国银行纪委书记、党委委员；2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "自2016年12月起任本行纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "派驻纪检体制改革前任中行纪委书记、党委委员"
+    },
+    {
+      "id": "F082",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-disc-2016-2019",
+        "field": "startYear"
+      },
+      "value": 2016,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2016年12月任中国银行纪委书记、党委委员；2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "自2016年12月起任本行纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "派驻纪检体制改革前任中行纪委书记、党委委员"
+    },
+    {
+      "id": "F083",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-disc-2016-2019",
+        "field": "startMonth"
+      },
+      "value": 12,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2016年12月任中国银行纪委书记、党委委员；2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "自2016年12月起任本行纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "派驻纪检体制改革前任中行纪委书记、党委委员"
+    },
+    {
+      "id": "F084",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-disc-2016-2019",
+        "field": "endYear"
+      },
+      "value": 2019,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2016年12月任中国银行纪委书记、党委委员；2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "自2016年12月起任本行纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "派驻纪检体制改革前任中行纪委书记、党委委员"
+    },
+    {
+      "id": "F085",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-disc-2016-2019",
+        "field": "endMonth"
+      },
+      "value": 1,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2016年12月任中国银行纪委书记、党委委员；2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "个人简介栏",
+          "statement": "自2016年12月起任本行纪委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "派驻纪检体制改革前任中行纪委书记、党委委员"
+    },
+    {
+      "id": "F086",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-ccdi-2019",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员。2019年4月任中央纪委国家监委驻中国证券监督管理委员会纪检监察组组长，中国证监会党委委员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2019年1月至4月任驻中行纪检监察组组长、中行党委委员"
+    },
+    {
+      "id": "F087",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-ccdi-2019",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员。2019年4月任中央纪委国家监委驻中国证券监督管理委员会纪检监察组组长，中国证监会党委委员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2019年1月至4月任驻中行纪检监察组组长、中行党委委员"
+    },
+    {
+      "id": "F088",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-ccdi-2019",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员。2019年4月任中央纪委国家监委驻中国证券监督管理委员会纪检监察组组长，中国证监会党委委员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2019年1月至4月任驻中行纪检监察组组长、中行党委委员"
+    },
+    {
+      "id": "F089",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-ccdi-2019",
+        "field": "unitName"
+      },
+      "value": "中央纪委国家监委驻中国银行纪检监察组／中国银行股份有限公司",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员。2019年4月任中央纪委国家监委驻中国证券监督管理委员会纪检监察组组长，中国证监会党委委员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2019年1月至4月任驻中行纪检监察组组长、中行党委委员"
+    },
+    {
+      "id": "F090",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-ccdi-2019",
+        "field": "position"
+      },
+      "value": "纪检监察组组长、中国银行党委委员",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员。2019年4月任中央纪委国家监委驻中国证券监督管理委员会纪检监察组组长，中国证监会党委委员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2019年1月至4月任驻中行纪检监察组组长、中行党委委员"
+    },
+    {
+      "id": "F091",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-ccdi-2019",
+        "field": "startYear"
+      },
+      "value": 2019,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员。2019年4月任中央纪委国家监委驻中国证券监督管理委员会纪检监察组组长，中国证监会党委委员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2019年1月至4月任驻中行纪检监察组组长、中行党委委员"
+    },
+    {
+      "id": "F092",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-ccdi-2019",
+        "field": "startMonth"
+      },
+      "value": 1,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员。2019年4月任中央纪委国家监委驻中国证券监督管理委员会纪检监察组组长，中国证监会党委委员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2019年1月至4月任驻中行纪检监察组组长、中行党委委员"
+    },
+    {
+      "id": "F093",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-ccdi-2019",
+        "field": "endYear"
+      },
+      "value": 2019,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员。2019年4月任中央纪委国家监委驻中国证券监督管理委员会纪检监察组组长，中国证监会党委委员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2019年1月至4月任驻中行纪检监察组组长、中行党委委员"
+    },
+    {
+      "id": "F094",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "fan-dazhi-boc-ccdi-2019",
+        "field": "endMonth"
+      },
+      "value": 4,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "樊大志同志简历段",
+          "statement": "2019年1月任中央纪委国家监委驻中国银行纪检监察组组长，中国银行党委委员。2019年4月任中央纪委国家监委驻中国证券监督管理委员会纪检监察组组长，中国证监会党委委员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1964年9月生、吉林榆树人、曾任北京证券总经理、华夏银行行长及董事长、中国银行纪委书记、驻中行纪检监察组组长，现任驻证监会纪检监察组组长樊大志",
+        "countercheck": "核对中行601988法定披露与人民网简历，确认2004.01—2007.08任北京证券总经理而非旧库伪造的“北京银行副行长”，博士为2012年社科院而非“2008年东北财大”"
+      },
+      "note": "2019年1月至4月任驻中行纪检监察组组长、中行党委委员"
+    }
+  ],
+  "rules": [],
+  "publications": [
+    {
+      "id": "P001",
+      "factId": "F001",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P002",
+      "factId": "F002",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P003",
+      "factId": "F003",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P004",
+      "factId": "F004",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P005",
+      "factId": "F005",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P006",
+      "factId": "F006",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P007",
+      "factId": "F007",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P008",
+      "factId": "F008",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P009",
+      "factId": "F009",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P010",
+      "factId": "F010",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P011",
+      "factId": "F011",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P012",
+      "factId": "F012",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P013",
+      "factId": "F013",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P014",
+      "factId": "F014",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P015",
+      "factId": "F015",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P016",
+      "factId": "F016",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P017",
+      "factId": "F017",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P018",
+      "factId": "F018",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P019",
+      "factId": "F019",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P020",
+      "factId": "F020",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P021",
+      "factId": "F021",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P022",
+      "factId": "F022",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P023",
+      "factId": "F023",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P024",
+      "factId": "F024",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P025",
+      "factId": "F025",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P026",
+      "factId": "F026",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P027",
+      "factId": "F027",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P028",
+      "factId": "F028",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P029",
+      "factId": "F029",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P030",
+      "factId": "F030",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P031",
+      "factId": "F031",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P032",
+      "factId": "F032",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P033",
+      "factId": "F033",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P034",
+      "factId": "F034",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P035",
+      "factId": "F035",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P036",
+      "factId": "F036",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P037",
+      "factId": "F037",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P038",
+      "factId": "F038",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P039",
+      "factId": "F039",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P040",
+      "factId": "F040",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P041",
+      "factId": "F041",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P042",
+      "factId": "F042",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P043",
+      "factId": "F043",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P044",
+      "factId": "F044",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P045",
+      "factId": "F045",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P046",
+      "factId": "F046",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P047",
+      "factId": "F047",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P048",
+      "factId": "F048",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P049",
+      "factId": "F049",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P050",
+      "factId": "F050",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P051",
+      "factId": "F051",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P052",
+      "factId": "F052",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P053",
+      "factId": "F053",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P054",
+      "factId": "F054",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P055",
+      "factId": "F055",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P056",
+      "factId": "F056",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P057",
+      "factId": "F057",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P058",
+      "factId": "F058",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P059",
+      "factId": "F059",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P060",
+      "factId": "F060",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P061",
+      "factId": "F061",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P062",
+      "factId": "F062",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P063",
+      "factId": "F063",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P064",
+      "factId": "F064",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P065",
+      "factId": "F065",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P066",
+      "factId": "F066",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P067",
+      "factId": "F067",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P068",
+      "factId": "F068",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P069",
+      "factId": "F069",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P070",
+      "factId": "F070",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P071",
+      "factId": "F071",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P072",
+      "factId": "F072",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P073",
+      "factId": "F073",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P074",
+      "factId": "F074",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P075",
+      "factId": "F075",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P076",
+      "factId": "F076",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P077",
+      "factId": "F077",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P078",
+      "factId": "F078",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P079",
+      "factId": "F079",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P080",
+      "factId": "F080",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P081",
+      "factId": "F081",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P082",
+      "factId": "F082",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P083",
+      "factId": "F083",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P084",
+      "factId": "F084",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P085",
+      "factId": "F085",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P086",
+      "factId": "F086",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P087",
+      "factId": "F087",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P088",
+      "factId": "F088",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P089",
+      "factId": "F089",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P090",
+      "factId": "F090",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P091",
+      "factId": "F091",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P092",
+      "factId": "F092",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P093",
+      "factId": "F093",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P094",
+      "factId": "F094",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    }
+  ]
+}

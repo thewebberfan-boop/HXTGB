@@ -1,0 +1,1717 @@
+{
+  "schemaVersion": 1,
+  "personId": "lu-songbin",
+  "evidence": [
+    {
+      "id": "S001",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "xhby-people-20200807",
+      "note": "人民网江苏频道报道江苏局官网更新及完整既往履历",
+      "source": {
+        "id": "lu-songbin-people-js-20200807",
+        "title": "鲁颂宾任江苏证监局局长 曾撰文：道阻且长 行则将至",
+        "publisher": "人民网江苏频道（来源：新华报业网）",
+        "url": "http://js.people.com.cn/n2/2020/0807/c360300-34212195.html",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2020-08-07",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "北京大学经济学博士",
+          "历任证监会办公厅新闻处、综合处处长，证监会副局级研究员",
+          "2015年4月出任证监会办公厅副主任",
+          "2017年调任福建证监局党委书记、局长",
+          "2020年8月任江苏证监局党委书记、局长"
+        ]
+      }
+    },
+    {
+      "id": "S002",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "21jingji-20200614",
+      "note": "明确性别男及北大经济学博士、办公厅与福建局履历",
+      "source": {
+        "id": "lu-songbin-21jingji-sina-20200614",
+        "title": "证监体系多局换“帅” 消息人士称人事调整未结束",
+        "publisher": "21金融圈（新浪财经转载）",
+        "url": "https://finance.sina.com.cn/stock/t/2020-06-14/doc-iircuyvi8464671.shtml",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2020-06-14",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "男",
+          "北京大学经济学博士",
+          "历任办公厅新闻处、综合处处长，副局级研究员，2015年4月任办公厅副主任，2017年调任福建证监局局长"
+        ]
+      }
+    },
+    {
+      "id": "S003",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "zgjssw-20220217",
+      "note": "江苏省委新闻网确认2022年2月16日仍在江苏证监局局长任上",
+      "source": {
+        "id": "lu-songbin-zgjssw-20220217",
+        "title": "徐曙海会见江苏证监局局长鲁颂宾",
+        "publisher": "中共江苏省委新闻网（来源：镇江日报）",
+        "url": "http://www.zgjssw.gov.cn/shixianchuanzhen/zhenjiang/202202/t20220217_7423604.shtml",
+        "sourceType": "official_notice",
+        "publishedDate": "2022-02-17",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2022年2月16日任江苏证监局党委书记、局长"
+        ]
+      }
+    },
+    {
+      "id": "S004",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "cnstock-20230519",
+      "note": "上证报现场图文报道确认2023年5月19日任非上市公众公司监管部主任",
+      "source": {
+        "id": "lu-songbin-cnstock-20230519",
+        "title": "证监会公众公司部主任鲁颂宾：常态化推进北交所市场高质量扩容 持续丰富北交所产品体系",
+        "publisher": "上海证券报·中国证券网",
+        "url": "https://news.cnstock.com/news,bwkx-202305-5063455.htm",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2023-05-19",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2023年5月19日以中国证监会非上市公众公司监管部主任身份出席活动并致辞"
+        ]
+      }
+    },
+    {
+      "id": "S005",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "bjjrj-20251029",
+      "note": "北京市地方金融管理局官网归档确认北交所董事长公开履职观察点",
+      "source": {
+        "id": "lu-songbin-bj-jrj-20251029",
+        "title": "北交所董事长鲁颂宾：加强对重大战略、重点领域和薄弱环节的服务力度",
+        "publisher": "北京市地方金融管理局（来源：上海证券报）",
+        "url": "https://jrj.beijing.gov.cn/ztzl/2025ltnh/zjgd/202510/t20251030_4247166.html",
+        "sourceType": "official_notice",
+        "publishedDate": "2025-10-29",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2025年10月29日以北京证券交易所董事长身份出席2025金融街论坛年会并发言"
+        ]
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "revision": 1,
+      "target": {
+        "kind": "basic",
+        "field": "gender"
+      },
+      "value": "男",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "鲁颂宾段",
+          "statement": "鲁颂宾，男，北京大学经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补充基线留空的性别字段"
+    },
+    {
+      "id": "F002",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-songbin-edu-phd",
+        "field": "school"
+      },
+      "value": "北京大学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "公开资料显示，其为北京大学经济学博士"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "鲁颂宾段",
+          "statement": "鲁颂宾，男，北京大学经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "确证北京大学经济学博士学位；入学及毕业年份未披露不推算"
+    },
+    {
+      "id": "F003",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-songbin-edu-phd",
+        "field": "degree"
+      },
+      "value": "博士",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "公开资料显示，其为北京大学经济学博士"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "鲁颂宾段",
+          "statement": "鲁颂宾，男，北京大学经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "确证北京大学经济学博士学位；入学及毕业年份未披露不推算"
+    },
+    {
+      "id": "F004",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-songbin-edu-phd",
+        "field": "degreeStatus"
+      },
+      "value": "awarded",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "公开资料显示，其为北京大学经济学博士"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "鲁颂宾段",
+          "statement": "鲁颂宾，男，北京大学经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "确证北京大学经济学博士学位；入学及毕业年份未披露不推算"
+    },
+    {
+      "id": "F005",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-songbin-edu-phd",
+        "field": "educationLevel"
+      },
+      "value": "研究生",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "公开资料显示，其为北京大学经济学博士"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "鲁颂宾段",
+          "statement": "鲁颂宾，男，北京大学经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "确证北京大学经济学博士学位；入学及毕业年份未披露不推算"
+    },
+    {
+      "id": "F006",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-songbin-edu-phd",
+        "field": "studyStatus"
+      },
+      "value": "graduated",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "公开资料显示，其为北京大学经济学博士"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "鲁颂宾段",
+          "statement": "鲁颂宾，男，北京大学经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "确证北京大学经济学博士学位；入学及毕业年份未披露不推算"
+    },
+    {
+      "id": "F007",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "lu-songbin-edu-phd",
+        "field": "major"
+      },
+      "value": "经济学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "公开资料显示，其为北京大学经济学博士"
+        },
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "鲁颂宾段",
+          "statement": "鲁颂宾，男，北京大学经济学博士"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "确证北京大学经济学博士学位；入学及毕业年份未披露不推算"
+    },
+    {
+      "id": "F008",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-div-hist",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "历任办公厅新闻处、综合处处长，证监会副局级研究员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "办公厅两处长历史任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F009",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-div-hist",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "历任办公厅新闻处、综合处处长，证监会副局级研究员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "办公厅两处长历史任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F010",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-div-hist",
+        "field": "unitId"
+      },
+      "value": "csrc-bgt",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "历任办公厅新闻处、综合处处长，证监会副局级研究员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "办公厅两处长历史任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F011",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-div-hist",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "历任办公厅新闻处、综合处处长，证监会副局级研究员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "办公厅两处长历史任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F012",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-div-hist",
+        "field": "department"
+      },
+      "value": "办公厅",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "历任办公厅新闻处、综合处处长，证监会副局级研究员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "办公厅两处长历史任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F013",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-div-hist",
+        "field": "position"
+      },
+      "value": "新闻处处长、综合处处长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "历任办公厅新闻处、综合处处长，证监会副局级研究员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "办公厅两处长历史任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F014",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-div-hist",
+        "field": "rank"
+      },
+      "value": "正处级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "历任办公厅新闻处、综合处处长，证监会副局级研究员"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "办公厅两处长历史任职确认，起止年月未公开故留空"
+    },
+    {
+      "id": "F015",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-deputy-2015",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2015年4月出任证监会办公厅副主任，2017年调任福建证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "2015年4月任证监会办公厅副主任；2017年调任月份未披露故省略endYear或仅保留已知起点"
+    },
+    {
+      "id": "F016",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-deputy-2015",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2015年4月出任证监会办公厅副主任，2017年调任福建证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "2015年4月任证监会办公厅副主任；2017年调任月份未披露故省略endYear或仅保留已知起点"
+    },
+    {
+      "id": "F017",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-deputy-2015",
+        "field": "unitId"
+      },
+      "value": "csrc-bgt",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2015年4月出任证监会办公厅副主任，2017年调任福建证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "2015年4月任证监会办公厅副主任；2017年调任月份未披露故省略endYear或仅保留已知起点"
+    },
+    {
+      "id": "F018",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-deputy-2015",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2015年4月出任证监会办公厅副主任，2017年调任福建证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "2015年4月任证监会办公厅副主任；2017年调任月份未披露故省略endYear或仅保留已知起点"
+    },
+    {
+      "id": "F019",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-deputy-2015",
+        "field": "department"
+      },
+      "value": "办公厅",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2015年4月出任证监会办公厅副主任，2017年调任福建证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "2015年4月任证监会办公厅副主任；2017年调任月份未披露故省略endYear或仅保留已知起点"
+    },
+    {
+      "id": "F020",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-deputy-2015",
+        "field": "position"
+      },
+      "value": "副主任",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2015年4月出任证监会办公厅副主任，2017年调任福建证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "2015年4月任证监会办公厅副主任；2017年调任月份未披露故省略endYear或仅保留已知起点"
+    },
+    {
+      "id": "F021",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-deputy-2015",
+        "field": "rank"
+      },
+      "value": "副厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2015年4月出任证监会办公厅副主任，2017年调任福建证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "2015年4月任证监会办公厅副主任；2017年调任月份未披露故省略endYear或仅保留已知起点"
+    },
+    {
+      "id": "F022",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-deputy-2015",
+        "field": "startYear"
+      },
+      "value": 2015,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2015年4月出任证监会办公厅副主任，2017年调任福建证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "2015年4月任证监会办公厅副主任；2017年调任月份未披露故省略endYear或仅保留已知起点"
+    },
+    {
+      "id": "F023",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-bgt-deputy-2015",
+        "field": "startMonth"
+      },
+      "value": 4,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "2015年4月出任证监会办公厅副主任，2017年调任福建证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "2015年4月任证监会办公厅副主任；2017年调任月份未披露故省略endYear或仅保留已知起点"
+    },
+    {
+      "id": "F024",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-fj-csrc-2017-2020",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-4段",
+          "statement": "8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾……2017年调任福建证监局局长。2019年5月，时任福建证监局党委书记、局长的鲁颂宾……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2017—2020.08福建证监局党委书记、局长任期"
+    },
+    {
+      "id": "F025",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-fj-csrc-2017-2020",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-4段",
+          "statement": "8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾……2017年调任福建证监局局长。2019年5月，时任福建证监局党委书记、局长的鲁颂宾……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2017—2020.08福建证监局党委书记、局长任期"
+    },
+    {
+      "id": "F026",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-fj-csrc-2017-2020",
+        "field": "unitId"
+      },
+      "value": "csrc-fj",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-4段",
+          "statement": "8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾……2017年调任福建证监局局长。2019年5月，时任福建证监局党委书记、局长的鲁颂宾……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2017—2020.08福建证监局党委书记、局长任期"
+    },
+    {
+      "id": "F027",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-fj-csrc-2017-2020",
+        "field": "unitName"
+      },
+      "value": "中国证监会福建监管局",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-4段",
+          "statement": "8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾……2017年调任福建证监局局长。2019年5月，时任福建证监局党委书记、局长的鲁颂宾……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2017—2020.08福建证监局党委书记、局长任期"
+    },
+    {
+      "id": "F028",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-fj-csrc-2017-2020",
+        "field": "position"
+      },
+      "value": "党委书记、局长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-4段",
+          "statement": "8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾……2017年调任福建证监局局长。2019年5月，时任福建证监局党委书记、局长的鲁颂宾……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2017—2020.08福建证监局党委书记、局长任期"
+    },
+    {
+      "id": "F029",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-fj-csrc-2017-2020",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-4段",
+          "statement": "8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾……2017年调任福建证监局局长。2019年5月，时任福建证监局党委书记、局长的鲁颂宾……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2017—2020.08福建证监局党委书记、局长任期"
+    },
+    {
+      "id": "F030",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-fj-csrc-2017-2020",
+        "field": "startYear"
+      },
+      "value": 2017,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-4段",
+          "statement": "8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾……2017年调任福建证监局局长。2019年5月，时任福建证监局党委书记、局长的鲁颂宾……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2017—2020.08福建证监局党委书记、局长任期"
+    },
+    {
+      "id": "F031",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-fj-csrc-2017-2020",
+        "field": "endYear"
+      },
+      "value": 2020,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-4段",
+          "statement": "8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾……2017年调任福建证监局局长。2019年5月，时任福建证监局党委书记、局长的鲁颂宾……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2017—2020.08福建证监局党委书记、局长任期"
+    },
+    {
+      "id": "F032",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-fj-csrc-2017-2020",
+        "field": "endMonth"
+      },
+      "value": 8,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-4段",
+          "statement": "8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾……2017年调任福建证监局局长。2019年5月，时任福建证监局党委书记、局长的鲁颂宾……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2017—2020.08福建证监局党委书记、局长任期"
+    },
+    {
+      "id": "F033",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-js-csrc-2020",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2020年8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2022年2月16日，市委副书记、市长徐曙海会见了江苏证监局党委书记、局长鲁颂宾"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2020年8月起江苏证监局党委书记、局长任期；离任精确年月待核故省略endYear"
+    },
+    {
+      "id": "F034",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-js-csrc-2020",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2020年8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2022年2月16日，市委副书记、市长徐曙海会见了江苏证监局党委书记、局长鲁颂宾"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2020年8月起江苏证监局党委书记、局长任期；离任精确年月待核故省略endYear"
+    },
+    {
+      "id": "F035",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-js-csrc-2020",
+        "field": "unitId"
+      },
+      "value": "csrc-js",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2020年8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2022年2月16日，市委副书记、市长徐曙海会见了江苏证监局党委书记、局长鲁颂宾"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2020年8月起江苏证监局党委书记、局长任期；离任精确年月待核故省略endYear"
+    },
+    {
+      "id": "F036",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-js-csrc-2020",
+        "field": "unitName"
+      },
+      "value": "中国证监会江苏监管局",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2020年8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2022年2月16日，市委副书记、市长徐曙海会见了江苏证监局党委书记、局长鲁颂宾"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2020年8月起江苏证监局党委书记、局长任期；离任精确年月待核故省略endYear"
+    },
+    {
+      "id": "F037",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-js-csrc-2020",
+        "field": "position"
+      },
+      "value": "党委书记、局长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2020年8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2022年2月16日，市委副书记、市长徐曙海会见了江苏证监局党委书记、局长鲁颂宾"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2020年8月起江苏证监局党委书记、局长任期；离任精确年月待核故省略endYear"
+    },
+    {
+      "id": "F038",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-js-csrc-2020",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2020年8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2022年2月16日，市委副书记、市长徐曙海会见了江苏证监局党委书记、局长鲁颂宾"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2020年8月起江苏证监局党委书记、局长任期；离任精确年月待核故省略endYear"
+    },
+    {
+      "id": "F039",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-js-csrc-2020",
+        "field": "startYear"
+      },
+      "value": 2020,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2020年8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2022年2月16日，市委副书记、市长徐曙海会见了江苏证监局党委书记、局长鲁颂宾"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2020年8月起江苏证监局党委书记、局长任期；离任精确年月待核故省略endYear"
+    },
+    {
+      "id": "F040",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-js-csrc-2020",
+        "field": "startMonth"
+      },
+      "value": 8,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2020年8月7日，江苏证监局网站显示，“证监局领导”一栏中的党委书记、局长为鲁颂宾"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "2022年2月16日，市委副书记、市长徐曙海会见了江苏证监局党委书记、局长鲁颂宾"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "补回旧库完全漏记的2020年8月起江苏证监局党委书记、局长任期；离任精确年月待核故省略endYear"
+    },
+    {
+      "id": "F041",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-csrc-nplc-202305",
+        "field": "recordKind"
+      },
+      "value": "observation",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "证监会非上市公众公司监管部主任鲁颂宾19日（2023-05-19）在“第五届上市西城区企业上市主题交流活动”中表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "活动报道仅支持2023-05-19时点任非上市公众公司监管部主任，按observation记录，不伪造任期起止；机构改革前原非公部不等同现市场二司，用空unitId"
+    },
+    {
+      "id": "F042",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-csrc-nplc-202305",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "证监会非上市公众公司监管部主任鲁颂宾19日（2023-05-19）在“第五届上市西城区企业上市主题交流活动”中表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "活动报道仅支持2023-05-19时点任非上市公众公司监管部主任，按observation记录，不伪造任期起止；机构改革前原非公部不等同现市场二司，用空unitId"
+    },
+    {
+      "id": "F043",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-csrc-nplc-202305",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会非上市公众公司监管部",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "证监会非上市公众公司监管部主任鲁颂宾19日（2023-05-19）在“第五届上市西城区企业上市主题交流活动”中表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "活动报道仅支持2023-05-19时点任非上市公众公司监管部主任，按observation记录，不伪造任期起止；机构改革前原非公部不等同现市场二司，用空unitId"
+    },
+    {
+      "id": "F044",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-csrc-nplc-202305",
+        "field": "position"
+      },
+      "value": "主任",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "证监会非上市公众公司监管部主任鲁颂宾19日（2023-05-19）在“第五届上市西城区企业上市主题交流活动”中表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "活动报道仅支持2023-05-19时点任非上市公众公司监管部主任，按observation记录，不伪造任期起止；机构改革前原非公部不等同现市场二司，用空unitId"
+    },
+    {
+      "id": "F045",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-csrc-nplc-202305",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "证监会非上市公众公司监管部主任鲁颂宾19日（2023-05-19）在“第五届上市西城区企业上市主题交流活动”中表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "活动报道仅支持2023-05-19时点任非上市公众公司监管部主任，按observation记录，不伪造任期起止；机构改革前原非公部不等同现市场二司，用空unitId"
+    },
+    {
+      "id": "F046",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "lu-songbin-csrc-nplc-202305",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2023,
+        "month": 5,
+        "day": 19
+      },
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "证监会非上市公众公司监管部主任鲁颂宾19日（2023-05-19）在“第五届上市西城区企业上市主题交流活动”中表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "北京大学经济学博士、曾任证监会办公厅副主任、福建证监局局长、江苏证监局局长、证监会非上市公众公司监管部主任，现任北交所董事长鲁颂宾",
+        "countercheck": "全网核查无同名金融监管干部干扰；纠正旧库伪造的“山东大学本科/人大硕士”及“2011—2024一直任非公部副司长”错误"
+      },
+      "note": "活动报道仅支持2023-05-19时点任非上市公众公司监管部主任，按observation记录，不伪造任期起止；机构改革前原非公部不等同现市场二司，用空unitId"
+    }
+  ],
+  "rules": [],
+  "publications": [
+    {
+      "id": "P001",
+      "factId": "F001",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P002",
+      "factId": "F002",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P003",
+      "factId": "F003",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P004",
+      "factId": "F004",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P005",
+      "factId": "F005",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P006",
+      "factId": "F006",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P007",
+      "factId": "F007",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P008",
+      "factId": "F008",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P009",
+      "factId": "F009",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P010",
+      "factId": "F010",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P011",
+      "factId": "F011",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P012",
+      "factId": "F012",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P013",
+      "factId": "F013",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P014",
+      "factId": "F014",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P015",
+      "factId": "F015",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P016",
+      "factId": "F016",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P017",
+      "factId": "F017",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P018",
+      "factId": "F018",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P019",
+      "factId": "F019",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P020",
+      "factId": "F020",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P021",
+      "factId": "F021",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P022",
+      "factId": "F022",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P023",
+      "factId": "F023",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P024",
+      "factId": "F024",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P025",
+      "factId": "F025",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P026",
+      "factId": "F026",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P027",
+      "factId": "F027",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P028",
+      "factId": "F028",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P029",
+      "factId": "F029",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P030",
+      "factId": "F030",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P031",
+      "factId": "F031",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P032",
+      "factId": "F032",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P033",
+      "factId": "F033",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P034",
+      "factId": "F034",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P035",
+      "factId": "F035",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P036",
+      "factId": "F036",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P037",
+      "factId": "F037",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P038",
+      "factId": "F038",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P039",
+      "factId": "F039",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P040",
+      "factId": "F040",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P041",
+      "factId": "F041",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P042",
+      "factId": "F042",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P043",
+      "factId": "F043",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P044",
+      "factId": "F044",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P045",
+      "factId": "F045",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P046",
+      "factId": "F046",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    }
+  ]
+}

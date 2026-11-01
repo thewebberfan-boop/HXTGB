@@ -1,0 +1,2551 @@
+{
+  "schemaVersion": 1,
+  "personId": "qiu-yong",
+  "evidence": [
+    {
+      "id": "S001",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "sysu-bus-20220923",
+      "note": "中山大学管理学院官网校友动态，精准披露两段学历及留校工作9年经历",
+      "source": {
+        "id": "qiu-yong-sysu-20220923",
+        "title": "我院邱勇校友任上海证券交易所党委书记",
+        "publisher": "中山大学管理学院",
+        "url": "https://bus.sysu.edu.cn/article/9587",
+        "sourceType": "academic",
+        "publishedDate": "2022-09-23",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "1988年本科毕业于中山大学管理学院工商管理专业",
+          "1988年7月—1997年7月在中山大学管理学院工作",
+          "2006年12月获得中山大学管理学博士学位",
+          "2022年9月22日任上海证券交易所党委书记"
+        ]
+      }
+    },
+    {
+      "id": "S002",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "sse-official-20221026",
+      "note": "上交所官网公告明确“理事长（副部长级）”职级及当选日期",
+      "source": {
+        "id": "qiu-yong-sse-chair-20221026",
+        "title": "邱勇任上海证券交易所理事长",
+        "publisher": "上海证券交易所",
+        "url": "http://www.sse.com.cn/aboutus/mediacenter/hotandd/c/c_20221026_5710674.shtml",
+        "sourceType": "appointment",
+        "publishedDate": "2022-10-26",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "国务院决定和证监会提名为上交所理事长（副部长级）人选",
+          "2022年10月26日当选上海证券交易所理事会理事长"
+        ]
+      }
+    },
+    {
+      "id": "S003",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "jiemian-20221026",
+      "note": "梳理证监系统地方局及会机关完整岗位链条",
+      "source": {
+        "id": "qiu-yong-jiemian-20221026",
+        "title": "邱勇任上海证券交易所理事长，一个月前已被任命为党委书记",
+        "publisher": "界面新闻",
+        "url": "https://www.jiemian.com/article/8273104.html",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2022-10-26",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "曾在广东证监局工作多年",
+          "历任厦门证监局局长、湖南证监局局长",
+          "2018年出任广东证监局局长兼广东稽查局负责人",
+          "2020年6月任证监会机构部主任"
+        ]
+      }
+    },
+    {
+      "id": "S004",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "21jingji-20200614",
+      "note": "补充2010年任厦门局局长、2018年11月任广东局局长的年份与月份",
+      "source": {
+        "id": "qiu-yong-21jingji-sina-20200614",
+        "title": "证监体系多局换“帅” 消息人士称人事调整未结束",
+        "publisher": "21金融圈（新浪财经转载）",
+        "url": "https://finance.sina.com.cn/stock/t/2020-06-14/doc-iircuyvi8464671.shtml",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2020-06-14",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2010年调任厦门证监局局长",
+          "2018年11月出任广东证监局局长兼广东稽查局负责人"
+        ]
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "revision": 1,
+      "target": {
+        "kind": "basic",
+        "field": "currentRank"
+      },
+      "value": "副部级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S002",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "根据国务院决定和证监会关于邱勇为上海证券交易所理事会理事长（副部长级）人选的提名……选举邱勇为上海证券交易所理事会理事长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "上交所官方公告明确“副部长级”"
+    },
+    {
+      "id": "F002",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-ba",
+        "field": "school"
+      },
+      "value": "中山大学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年本科毕业于中山大学管理学院工商管理专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库“经济学专业”偏差；入学年未披露不反推"
+    },
+    {
+      "id": "F003",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-ba",
+        "field": "degree"
+      },
+      "value": "学士",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年本科毕业于中山大学管理学院工商管理专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库“经济学专业”偏差；入学年未披露不反推"
+    },
+    {
+      "id": "F004",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-ba",
+        "field": "degreeStatus"
+      },
+      "value": "awarded",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年本科毕业于中山大学管理学院工商管理专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库“经济学专业”偏差；入学年未披露不反推"
+    },
+    {
+      "id": "F005",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-ba",
+        "field": "educationLevel"
+      },
+      "value": "本科",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年本科毕业于中山大学管理学院工商管理专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库“经济学专业”偏差；入学年未披露不反推"
+    },
+    {
+      "id": "F006",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-ba",
+        "field": "studyStatus"
+      },
+      "value": "graduated",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年本科毕业于中山大学管理学院工商管理专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库“经济学专业”偏差；入学年未披露不反推"
+    },
+    {
+      "id": "F007",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-ba",
+        "field": "major"
+      },
+      "value": "工商管理",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年本科毕业于中山大学管理学院工商管理专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库“经济学专业”偏差；入学年未披露不反推"
+    },
+    {
+      "id": "F008",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-ba",
+        "field": "graduationYear"
+      },
+      "value": 1988,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年本科毕业于中山大学管理学院工商管理专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库“经济学专业”偏差；入学年未披露不反推"
+    },
+    {
+      "id": "F009",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-ba",
+        "field": "endYear"
+      },
+      "value": 1988,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年本科毕业于中山大学管理学院工商管理专业"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库“经济学专业”偏差；入学年未披露不反推"
+    },
+    {
+      "id": "F010",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-primary",
+        "field": "school"
+      },
+      "value": "中山大学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2006年12月，获得中山大学管理学博士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2003年中山大学岭南学院”错误"
+    },
+    {
+      "id": "F011",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-primary",
+        "field": "degree"
+      },
+      "value": "博士",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2006年12月，获得中山大学管理学博士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2003年中山大学岭南学院”错误"
+    },
+    {
+      "id": "F012",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-primary",
+        "field": "degreeStatus"
+      },
+      "value": "awarded",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2006年12月，获得中山大学管理学博士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2003年中山大学岭南学院”错误"
+    },
+    {
+      "id": "F013",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-primary",
+        "field": "educationLevel"
+      },
+      "value": "研究生",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2006年12月，获得中山大学管理学博士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2003年中山大学岭南学院”错误"
+    },
+    {
+      "id": "F014",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-primary",
+        "field": "studyStatus"
+      },
+      "value": "graduated",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2006年12月，获得中山大学管理学博士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2003年中山大学岭南学院”错误"
+    },
+    {
+      "id": "F015",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-primary",
+        "field": "major"
+      },
+      "value": "管理学",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2006年12月，获得中山大学管理学博士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2003年中山大学岭南学院”错误"
+    },
+    {
+      "id": "F016",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-primary",
+        "field": "graduationYear"
+      },
+      "value": 2006,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2006年12月，获得中山大学管理学博士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2003年中山大学岭南学院”错误"
+    },
+    {
+      "id": "F017",
+      "revision": 1,
+      "target": {
+        "kind": "education",
+        "recordId": "qiu-yong-edu-primary",
+        "field": "endYear"
+      },
+      "value": 2006,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2006年12月，获得中山大学管理学博士学位"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "绑定并升级基线博士记录，纠正旧库“2003年中山大学岭南学院”错误"
+    },
+    {
+      "id": "F018",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-sysu-staff-1988-1997",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年7月-1997年7月在中山大学管理学院工作"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "中大管院官网披露精确起止年月"
+    },
+    {
+      "id": "F019",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-sysu-staff-1988-1997",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年7月-1997年7月在中山大学管理学院工作"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "中大管院官网披露精确起止年月"
+    },
+    {
+      "id": "F020",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-sysu-staff-1988-1997",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年7月-1997年7月在中山大学管理学院工作"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "中大管院官网披露精确起止年月"
+    },
+    {
+      "id": "F021",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-sysu-staff-1988-1997",
+        "field": "unitName"
+      },
+      "value": "中山大学管理学院",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年7月-1997年7月在中山大学管理学院工作"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "中大管院官网披露精确起止年月"
+    },
+    {
+      "id": "F022",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-sysu-staff-1988-1997",
+        "field": "position"
+      },
+      "value": "工作人员",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年7月-1997年7月在中山大学管理学院工作"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "中大管院官网披露精确起止年月"
+    },
+    {
+      "id": "F023",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-sysu-staff-1988-1997",
+        "field": "startYear"
+      },
+      "value": 1988,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年7月-1997年7月在中山大学管理学院工作"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "中大管院官网披露精确起止年月"
+    },
+    {
+      "id": "F024",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-sysu-staff-1988-1997",
+        "field": "startMonth"
+      },
+      "value": 7,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年7月-1997年7月在中山大学管理学院工作"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "中大管院官网披露精确起止年月"
+    },
+    {
+      "id": "F025",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-sysu-staff-1988-1997",
+        "field": "endYear"
+      },
+      "value": 1997,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年7月-1997年7月在中山大学管理学院工作"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "中大管院官网披露精确起止年月"
+    },
+    {
+      "id": "F026",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-sysu-staff-1988-1997",
+        "field": "endMonth"
+      },
+      "value": 7,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "1988年7月-1997年7月在中山大学管理学院工作"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "中大管院官网披露精确起止年月"
+    },
+    {
+      "id": "F027",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-early",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "他曾在广东证监局工作多年，后出任厦门证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "邱勇，曾在广东证监局工作多年，2010年调任厦门证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "确认早期广东证监局经历；不沿用旧库未经证实的“2000.02—2010.06”起止月"
+    },
+    {
+      "id": "F028",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-early",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "他曾在广东证监局工作多年，后出任厦门证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "邱勇，曾在广东证监局工作多年，2010年调任厦门证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "确认早期广东证监局经历；不沿用旧库未经证实的“2000.02—2010.06”起止月"
+    },
+    {
+      "id": "F029",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-early",
+        "field": "unitId"
+      },
+      "value": "csrc-gd",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "他曾在广东证监局工作多年，后出任厦门证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "邱勇，曾在广东证监局工作多年，2010年调任厦门证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "确认早期广东证监局经历；不沿用旧库未经证实的“2000.02—2010.06”起止月"
+    },
+    {
+      "id": "F030",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-early",
+        "field": "unitName"
+      },
+      "value": "中国证监会广东监管局",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "他曾在广东证监局工作多年，后出任厦门证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "邱勇，曾在广东证监局工作多年，2010年调任厦门证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "确认早期广东证监局经历；不沿用旧库未经证实的“2000.02—2010.06”起止月"
+    },
+    {
+      "id": "F031",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-early",
+        "field": "position"
+      },
+      "value": "工作人员（早期历任职务待核）",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "他曾在广东证监局工作多年，后出任厦门证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "邱勇，曾在广东证监局工作多年，2010年调任厦门证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "确认早期广东证监局经历；不沿用旧库未经证实的“2000.02—2010.06”起止月"
+    },
+    {
+      "id": "F032",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-xiamen-csrc-2010",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "后出任厦门证监局局长、湖南证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2010年调任厦门证监局局长，后转任湖南证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库遗漏的厦门证监局局长经历；转任湖南局精确年份待核故省略endYear"
+    },
+    {
+      "id": "F033",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-xiamen-csrc-2010",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "后出任厦门证监局局长、湖南证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2010年调任厦门证监局局长，后转任湖南证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库遗漏的厦门证监局局长经历；转任湖南局精确年份待核故省略endYear"
+    },
+    {
+      "id": "F034",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-xiamen-csrc-2010",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "后出任厦门证监局局长、湖南证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2010年调任厦门证监局局长，后转任湖南证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库遗漏的厦门证监局局长经历；转任湖南局精确年份待核故省略endYear"
+    },
+    {
+      "id": "F035",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-xiamen-csrc-2010",
+        "field": "unitName"
+      },
+      "value": "中国证监会厦门监管局",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "后出任厦门证监局局长、湖南证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2010年调任厦门证监局局长，后转任湖南证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库遗漏的厦门证监局局长经历；转任湖南局精确年份待核故省略endYear"
+    },
+    {
+      "id": "F036",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-xiamen-csrc-2010",
+        "field": "position"
+      },
+      "value": "局长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "后出任厦门证监局局长、湖南证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2010年调任厦门证监局局长，后转任湖南证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库遗漏的厦门证监局局长经历；转任湖南局精确年份待核故省略endYear"
+    },
+    {
+      "id": "F037",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-xiamen-csrc-2010",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "后出任厦门证监局局长、湖南证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2010年调任厦门证监局局长，后转任湖南证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库遗漏的厦门证监局局长经历；转任湖南局精确年份待核故省略endYear"
+    },
+    {
+      "id": "F038",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-xiamen-csrc-2010",
+        "field": "startYear"
+      },
+      "value": 2010,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "后出任厦门证监局局长、湖南证监局局长"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2010年调任厦门证监局局长，后转任湖南证监局局长"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库遗漏的厦门证监局局长经历；转任湖南局精确年份待核故省略endYear"
+    },
+    {
+      "id": "F039",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-hunan-csrc-hist",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "邱勇曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "后转任湖南证监局局长，2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库将湖南证监局误绑csrc-main且错写为2010.06—2020.06的严重失真"
+    },
+    {
+      "id": "F040",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-hunan-csrc-hist",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "邱勇曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "后转任湖南证监局局长，2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库将湖南证监局误绑csrc-main且错写为2010.06—2020.06的严重失真"
+    },
+    {
+      "id": "F041",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-hunan-csrc-hist",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "邱勇曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "后转任湖南证监局局长，2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库将湖南证监局误绑csrc-main且错写为2010.06—2020.06的严重失真"
+    },
+    {
+      "id": "F042",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-hunan-csrc-hist",
+        "field": "unitName"
+      },
+      "value": "中国证监会湖南监管局",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "邱勇曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "后转任湖南证监局局长，2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库将湖南证监局误绑csrc-main且错写为2010.06—2020.06的严重失真"
+    },
+    {
+      "id": "F043",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-hunan-csrc-hist",
+        "field": "position"
+      },
+      "value": "局长",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "邱勇曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "后转任湖南证监局局长，2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库将湖南证监局误绑csrc-main且错写为2010.06—2020.06的严重失真"
+    },
+    {
+      "id": "F044",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-hunan-csrc-hist",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "邱勇曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "后转任湖南证监局局长，2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库将湖南证监局误绑csrc-main且错写为2010.06—2020.06的严重失真"
+    },
+    {
+      "id": "F045",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-hunan-csrc-hist",
+        "field": "endYear"
+      },
+      "value": 2018,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "邱勇曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "后转任湖南证监局局长，2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库将湖南证监局误绑csrc-main且错写为2010.06—2020.06的严重失真"
+    },
+    {
+      "id": "F046",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-hunan-csrc-hist",
+        "field": "endMonth"
+      },
+      "value": 11,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第3段",
+          "statement": "邱勇曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "后转任湖南证监局局长，2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库将湖南证监局误绑csrc-main且错写为2010.06—2020.06的严重失真"
+    },
+    {
+      "id": "F047",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-2018-2020",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2018年，邱勇出任广东证监局局长兼广东稽查局负责人；2020年6月，任证监会机构部主任"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人。2020年6月，拟任证监会机构部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库错写成“2020.06—2022.09任广东局局长”的时间错位"
+    },
+    {
+      "id": "F048",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-2018-2020",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2018年，邱勇出任广东证监局局长兼广东稽查局负责人；2020年6月，任证监会机构部主任"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人。2020年6月，拟任证监会机构部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库错写成“2020.06—2022.09任广东局局长”的时间错位"
+    },
+    {
+      "id": "F049",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-2018-2020",
+        "field": "unitId"
+      },
+      "value": "csrc-gd",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2018年，邱勇出任广东证监局局长兼广东稽查局负责人；2020年6月，任证监会机构部主任"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人。2020年6月，拟任证监会机构部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库错写成“2020.06—2022.09任广东局局长”的时间错位"
+    },
+    {
+      "id": "F050",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-2018-2020",
+        "field": "unitName"
+      },
+      "value": "中国证监会广东监管局",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2018年，邱勇出任广东证监局局长兼广东稽查局负责人；2020年6月，任证监会机构部主任"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人。2020年6月，拟任证监会机构部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库错写成“2020.06—2022.09任广东局局长”的时间错位"
+    },
+    {
+      "id": "F051",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-2018-2020",
+        "field": "position"
+      },
+      "value": "局长兼广东稽查局负责人",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2018年，邱勇出任广东证监局局长兼广东稽查局负责人；2020年6月，任证监会机构部主任"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人。2020年6月，拟任证监会机构部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库错写成“2020.06—2022.09任广东局局长”的时间错位"
+    },
+    {
+      "id": "F052",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-2018-2020",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2018年，邱勇出任广东证监局局长兼广东稽查局负责人；2020年6月，任证监会机构部主任"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人。2020年6月，拟任证监会机构部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库错写成“2020.06—2022.09任广东局局长”的时间错位"
+    },
+    {
+      "id": "F053",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-2018-2020",
+        "field": "startYear"
+      },
+      "value": 2018,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2018年，邱勇出任广东证监局局长兼广东稽查局负责人；2020年6月，任证监会机构部主任"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人。2020年6月，拟任证监会机构部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库错写成“2020.06—2022.09任广东局局长”的时间错位"
+    },
+    {
+      "id": "F054",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-2018-2020",
+        "field": "startMonth"
+      },
+      "value": 11,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2018年，邱勇出任广东证监局局长兼广东稽查局负责人；2020年6月，任证监会机构部主任"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人。2020年6月，拟任证监会机构部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库错写成“2020.06—2022.09任广东局局长”的时间错位"
+    },
+    {
+      "id": "F055",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-2018-2020",
+        "field": "endYear"
+      },
+      "value": 2020,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2018年，邱勇出任广东证监局局长兼广东稽查局负责人；2020年6月，任证监会机构部主任"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人。2020年6月，拟任证监会机构部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库错写成“2020.06—2022.09任广东局局长”的时间错位"
+    },
+    {
+      "id": "F056",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-gd-csrc-2018-2020",
+        "field": "endMonth"
+      },
+      "value": 6,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2段",
+          "statement": "2018年，邱勇出任广东证监局局长兼广东稽查局负责人；2020年6月，任证监会机构部主任"
+        },
+        {
+          "id": "S004",
+          "revision": 1,
+          "locator": "邱勇段",
+          "statement": "2018年11月又回到广东出任广东证监局局长兼广东稽查局负责人。2020年6月，拟任证监会机构部主任"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "纠正旧库错写成“2020.06—2022.09任广东局局长”的时间错位"
+    },
+    {
+      "id": "F057",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-csrc-jg-2020-2022",
+        "field": "recordKind"
+      },
+      "value": "tenure",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-3段",
+          "statement": "9月22日下午……宣布中央决定：邱勇同志任上海证券交易所党委书记……曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2-4段",
+          "statement": "2020年6月，任证监会机构部主任……2022年9月22日下午……任上海证券交易所党委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库完全漏记的2020年6月至2022年9月证监会机构部主任关键履历"
+    },
+    {
+      "id": "F058",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-csrc-jg-2020-2022",
+        "field": "tenureStatus"
+      },
+      "value": "historical",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-3段",
+          "statement": "9月22日下午……宣布中央决定：邱勇同志任上海证券交易所党委书记……曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2-4段",
+          "statement": "2020年6月，任证监会机构部主任……2022年9月22日下午……任上海证券交易所党委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库完全漏记的2020年6月至2022年9月证监会机构部主任关键履历"
+    },
+    {
+      "id": "F059",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-csrc-jg-2020-2022",
+        "field": "unitId"
+      },
+      "value": "csrc-jg",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-3段",
+          "statement": "9月22日下午……宣布中央决定：邱勇同志任上海证券交易所党委书记……曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2-4段",
+          "statement": "2020年6月，任证监会机构部主任……2022年9月22日下午……任上海证券交易所党委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库完全漏记的2020年6月至2022年9月证监会机构部主任关键履历"
+    },
+    {
+      "id": "F060",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-csrc-jg-2020-2022",
+        "field": "unitName"
+      },
+      "value": "中国证券监督管理委员会",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-3段",
+          "statement": "9月22日下午……宣布中央决定：邱勇同志任上海证券交易所党委书记……曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2-4段",
+          "statement": "2020年6月，任证监会机构部主任……2022年9月22日下午……任上海证券交易所党委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库完全漏记的2020年6月至2022年9月证监会机构部主任关键履历"
+    },
+    {
+      "id": "F061",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-csrc-jg-2020-2022",
+        "field": "department"
+      },
+      "value": "证券基金机构监管部",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-3段",
+          "statement": "9月22日下午……宣布中央决定：邱勇同志任上海证券交易所党委书记……曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2-4段",
+          "statement": "2020年6月，任证监会机构部主任……2022年9月22日下午……任上海证券交易所党委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库完全漏记的2020年6月至2022年9月证监会机构部主任关键履历"
+    },
+    {
+      "id": "F062",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-csrc-jg-2020-2022",
+        "field": "position"
+      },
+      "value": "主任",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-3段",
+          "statement": "9月22日下午……宣布中央决定：邱勇同志任上海证券交易所党委书记……曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2-4段",
+          "statement": "2020年6月，任证监会机构部主任……2022年9月22日下午……任上海证券交易所党委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库完全漏记的2020年6月至2022年9月证监会机构部主任关键履历"
+    },
+    {
+      "id": "F063",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-csrc-jg-2020-2022",
+        "field": "rank"
+      },
+      "value": "正厅局级",
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-3段",
+          "statement": "9月22日下午……宣布中央决定：邱勇同志任上海证券交易所党委书记……曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2-4段",
+          "statement": "2020年6月，任证监会机构部主任……2022年9月22日下午……任上海证券交易所党委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库完全漏记的2020年6月至2022年9月证监会机构部主任关键履历"
+    },
+    {
+      "id": "F064",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-csrc-jg-2020-2022",
+        "field": "startYear"
+      },
+      "value": 2020,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-3段",
+          "statement": "9月22日下午……宣布中央决定：邱勇同志任上海证券交易所党委书记……曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2-4段",
+          "statement": "2020年6月，任证监会机构部主任……2022年9月22日下午……任上海证券交易所党委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库完全漏记的2020年6月至2022年9月证监会机构部主任关键履历"
+    },
+    {
+      "id": "F065",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-csrc-jg-2020-2022",
+        "field": "startMonth"
+      },
+      "value": 6,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-3段",
+          "statement": "9月22日下午……宣布中央决定：邱勇同志任上海证券交易所党委书记……曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2-4段",
+          "statement": "2020年6月，任证监会机构部主任……2022年9月22日下午……任上海证券交易所党委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库完全漏记的2020年6月至2022年9月证监会机构部主任关键履历"
+    },
+    {
+      "id": "F066",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-csrc-jg-2020-2022",
+        "field": "endYear"
+      },
+      "value": 2022,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-3段",
+          "statement": "9月22日下午……宣布中央决定：邱勇同志任上海证券交易所党委书记……曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2-4段",
+          "statement": "2020年6月，任证监会机构部主任……2022年9月22日下午……任上海证券交易所党委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库完全漏记的2020年6月至2022年9月证监会机构部主任关键履历"
+    },
+    {
+      "id": "F067",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "qiu-yong-csrc-jg-2020-2022",
+        "field": "endMonth"
+      },
+      "value": 9,
+      "status": "supported_direct",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1-3段",
+          "statement": "9月22日下午……宣布中央决定：邱勇同志任上海证券交易所党委书记……曾任湖南证监局局长、广东证监局局长、中国证监会机构部主任等职"
+        },
+        {
+          "id": "S003",
+          "revision": 1,
+          "locator": "正文第2-4段",
+          "statement": "2020年6月，任证监会机构部主任……2022年9月22日下午……任上海证券交易所党委书记"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "1966年7月生、中山大学管理学院1988届本科及2006届博士、历任厦门/湖南/广东证监局局长及证监会机构部主任，现任上交所党委书记、理事长邱勇",
+        "countercheck": "已严格区分清华大学原校长邱勇（1964年生、院士）等同名人物；纠正旧库“2003岭南学院博士”及漏记厦门局、机构部经历的错误"
+      },
+      "note": "补回旧库完全漏记的2020年6月至2022年9月证监会机构部主任关键履历"
+    }
+  ],
+  "rules": [],
+  "publications": [
+    {
+      "id": "P001",
+      "factId": "F001",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P002",
+      "factId": "F002",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P003",
+      "factId": "F003",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P004",
+      "factId": "F004",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P005",
+      "factId": "F005",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P006",
+      "factId": "F006",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P007",
+      "factId": "F007",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P008",
+      "factId": "F008",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P009",
+      "factId": "F009",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P010",
+      "factId": "F010",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P011",
+      "factId": "F011",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P012",
+      "factId": "F012",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P013",
+      "factId": "F013",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P014",
+      "factId": "F014",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P015",
+      "factId": "F015",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P016",
+      "factId": "F016",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P017",
+      "factId": "F017",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P018",
+      "factId": "F018",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P019",
+      "factId": "F019",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P020",
+      "factId": "F020",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P021",
+      "factId": "F021",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P022",
+      "factId": "F022",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P023",
+      "factId": "F023",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P024",
+      "factId": "F024",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P025",
+      "factId": "F025",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P026",
+      "factId": "F026",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P027",
+      "factId": "F027",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P028",
+      "factId": "F028",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P029",
+      "factId": "F029",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P030",
+      "factId": "F030",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P031",
+      "factId": "F031",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P032",
+      "factId": "F032",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P033",
+      "factId": "F033",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P034",
+      "factId": "F034",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P035",
+      "factId": "F035",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P036",
+      "factId": "F036",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P037",
+      "factId": "F037",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P038",
+      "factId": "F038",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P039",
+      "factId": "F039",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P040",
+      "factId": "F040",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P041",
+      "factId": "F041",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P042",
+      "factId": "F042",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P043",
+      "factId": "F043",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P044",
+      "factId": "F044",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P045",
+      "factId": "F045",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P046",
+      "factId": "F046",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P047",
+      "factId": "F047",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P048",
+      "factId": "F048",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P049",
+      "factId": "F049",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P050",
+      "factId": "F050",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P051",
+      "factId": "F051",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P052",
+      "factId": "F052",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P053",
+      "factId": "F053",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P054",
+      "factId": "F054",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P055",
+      "factId": "F055",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P056",
+      "factId": "F056",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P057",
+      "factId": "F057",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P058",
+      "factId": "F058",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P059",
+      "factId": "F059",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P060",
+      "factId": "F060",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P061",
+      "factId": "F061",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P062",
+      "factId": "F062",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P063",
+      "factId": "F063",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P064",
+      "factId": "F064",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P065",
+      "factId": "F065",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P066",
+      "factId": "F066",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P067",
+      "factId": "F067",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    }
+  ]
+}

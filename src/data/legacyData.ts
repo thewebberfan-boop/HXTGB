@@ -296,13 +296,27 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "qiu-yong",
       "huo-ruirong",
-      "wang-huaizhang",
       "yuan-duoran",
       "lv-hao",
+      "wang-huaizhang",
       "wang-bo",
       "fu-hao",
       "zhang-xiaoyi"
     ],
+    "rosterReview": {
+      "status": "complete",
+      "asOf": { "year": 2026, "month": 11, "day": 1 },
+      "scope": "上海证券交易所官网“领导班子”8人名单",
+      "sources": [{
+        "id": "sse-official-roster-20261101",
+        "title": "领导班子｜上海证券交易所",
+        "publisher": "上海证券交易所",
+        "url": "https://www.sse.com.cn/aboutus/sseintroduction/manager/",
+        "sourceType": "official_profile",
+        "accessedDate": "2026-11-01",
+        "supports": ["上交所领导班子8人名单及现任职务"]
+      }]
+    },
     "tagColor": "red",
     "topCategory": "csrc",
     "subCategory": "证券交易所"
@@ -394,9 +408,23 @@ export const UNITS_DATA: Unit[] = [
       "li-xian",
       "li-hui-shfe",
       "lu-feng",
-      "yang-ke",
-      "zhang-ming"
+      "zhang-ming",
+      "yang-ke"
     ],
+    "rosterReview": {
+      "status": "complete",
+      "asOf": { "year": 2026, "month": 11, "day": 1 },
+      "scope": "上海期货交易所官网“组织架构—领导成员”8人名单及理事会非会员理事",
+      "sources": [{
+        "id": "shfe-official-roster-20261101",
+        "title": "组织架构｜上海期货交易所",
+        "publisher": "上海期货交易所",
+        "url": "https://www.shfe.com.cn/about/introduce/organization/",
+        "sourceType": "official_profile",
+        "accessedDate": "2026-11-01",
+        "supports": ["上期所领导成员8人名单", "理事会理事长及非会员理事名单"]
+      }]
+    },
     "tagColor": "amber",
     "topCategory": "csrc",
     "subCategory": "期货交易所"
@@ -482,14 +510,28 @@ export const UNITS_DATA: Unit[] = [
     "currentLeaderIds": [
       "he-qingwen",
       "zhang-xiaogang",
-      "tang-xian",
       "liu-shaotong",
       "cao-yue",
       "sheng-chunhong",
       "cai-xianghui",
-      "you-hang",
-      "cai-jianchun"
+      "tang-xian",
+      "you-hang"
     ],
+    "rosterReview": {
+      "status": "complete",
+      "asOf": { "year": 2026, "month": 11, "day": 1 },
+      "scope": "中国金融期货交易所官网“组织结构—领导成员”8人名单及董事会、监事会成员",
+      "sources": [{
+        "id": "cffex-official-roster-20261101",
+        "title": "组织结构｜中国金融期货交易所",
+        "publisher": "中国金融期货交易所",
+        "url": "http://www.cffex.com.cn/cn/zzjg.html",
+        "sourceType": "official_profile",
+        "accessedDate": "2026-11-01",
+        "supports": ["中金所领导成员8人名单（含党委委员、纪委书记唐宪）", "董事会成员名单（蔡建春列为董事，未列入领导成员）", "监事会成员名单"]
+      }],
+      "note": "官网“领导成员”列何庆文、张晓刚、刘绍统、曹越、盛春红、蔡向辉、唐宪、游航8人；蔡建春列于“董事会”董事名单，不混同为领导成员班子。"
+    },
     "tagColor": "amber",
     "topCategory": "csrc",
     "subCategory": "期货交易所"
@@ -515,11 +557,25 @@ export const UNITS_DATA: Unit[] = [
       "gao-weibing",
       "xing-xiangfei",
       "cao-zihai",
+      "li-zhen",
       "leng-bing",
       "li-muchun",
-      "li-zhen",
       "wu-taiming"
     ],
+    "rosterReview": {
+      "status": "complete",
+      "asOf": { "year": 2026, "month": 11, "day": 1 },
+      "scope": "广州期货交易所官网“组织架构—领导成员”7人名单",
+      "sources": [{
+        "id": "gfex-official-roster-20261101",
+        "title": "组织架构｜广州期货交易所",
+        "publisher": "广州期货交易所",
+        "url": "http://www.gfex.com.cn/gfex/zzjg/list_tt.shtml",
+        "sourceType": "official_profile",
+        "accessedDate": "2026-11-01",
+        "supports": ["广期所领导成员7人名单（含总经理邢向飞、纪委书记吴太明）"]
+      }]
+    },
     "tagColor": "amber",
     "topCategory": "csrc",
     "subCategory": "期货交易所"
@@ -16666,6 +16722,7 @@ const VERIFIED_CSRC_LEADERS: Array<{
     portraitUrl: 'https://www.csrc.gov.cn/csrc/c106422/c7462793/7462793/images/35b2020612144de9b38c09351f1bcda8.jpg',
     profileUrl: 'https://www.csrc.gov.cn/csrc/c106421/ldjj.shtml',
     education: [{
+      id: 'wu-qing-edu-phd',
       degree: '博士',
       school: '院校未公开',
       major: '经济学',
@@ -16696,7 +16753,7 @@ const VERIFIED_CSRC_LEADERS: Array<{
     currentPosition: '中国证券监督管理委员会党委委员、副主席',
     portraitUrl: 'https://www.csrc.gov.cn/csrc/c100011/c1000661/1000661/images/b655f7303d144089be85083a21ddb1a7.jpg',
     profileUrl: 'https://www.csrc.gov.cn/csrc/c100010/ldjj.shtml',
-    education: [{ degree: '博士', school: '院校未公开', major: '管理学' }],
+    education: [{ id: 'li-chao-edu-phd', degree: '博士', school: '院校未公开', major: '管理学' }],
     appointmentTitle: '国务院任免证监会有关负责人',
     appointmentUrl: 'https://www.csrc.gov.cn/csrc/c100028/c1001863/content.shtml',
     appointmentDate: '2015-09-18',
@@ -16713,7 +16770,7 @@ const VERIFIED_CSRC_LEADERS: Array<{
     currentPosition: '中央纪委国家监委驻中国证券监督管理委员会纪检监察组组长、中国证监会党委委员',
     portraitUrl: 'https://www.csrc.gov.cn/csrc/c100020/c1000664/1000664/images/53eba7884f6b45cdb81d1e1897f98f22.jpg',
     profileUrl: 'https://www.csrc.gov.cn/csrc/c100019/ldjj.shtml',
-    education: [{ degree: '博士', school: '院校未公开', major: '经济学' }],
+    education: [{ id: 'fan-dazhi-edu-phd', degree: '博士', school: '院校未公开', major: '经济学' }],
     appointmentTitle: '中央任命驻证监会纪检监察组负责人',
     appointmentUrl: 'https://www.csrc.gov.cn/csrc/c100028/c1001024/content.shtml',
     appointmentDate: '2019-04-25',
@@ -16730,7 +16787,7 @@ const VERIFIED_CSRC_LEADERS: Array<{
     currentPosition: '中国证券监督管理委员会党委委员、副主席',
     portraitUrl: 'https://www.csrc.gov.cn/csrc/c106405/c7434764/7434764/images/3ee53a09e1e14cf6a9d0b74a4333a3fe.jpg',
     profileUrl: 'https://www.csrc.gov.cn/csrc/c106404/ldjj.shtml',
-    education: [{ degree: '学士', school: '院校未公开', major: '法学' }],
+    education: [{ id: 'chen-huaping-edu-ba', degree: '学士', school: '院校未公开', major: '法学' }],
     appointmentTitle: '国务院任命证监会有关负责人',
     appointmentUrl: 'https://www.csrc.gov.cn/csrc/c100028/c7434719/content.shtml',
     appointmentDate: '2023-09-27',
@@ -16747,7 +16804,7 @@ const VERIFIED_CSRC_LEADERS: Array<{
     currentPosition: '中国证券监督管理委员会党委委员、副主席',
     portraitUrl: 'https://www.csrc.gov.cn/csrc/c106427/c7496973/7496973/images/0b459597d06945acadbb608f08f12b39.jpg',
     profileUrl: 'https://www.csrc.gov.cn/csrc/c106426/ldjj.shtml',
-    education: [{ degree: '博士', school: '院校未公开', major: '法学' }],
+    education: [{ id: 'li-ming-edu-phd', degree: '博士', school: '院校未公开', major: '法学' }],
     appointmentTitle: '国务院任免证监会有关负责人',
     appointmentUrl: 'https://www.csrc.gov.cn/csrc/c100028/c7496995/content.shtml',
     appointmentDate: '2024-07-30',
@@ -16912,7 +16969,7 @@ if (liChaoDeep) {
     { id: 'li-chao-pbc-beijing', unitId: '', unitName: '中国人民银行营业管理部／国家外汇管理局北京外汇管理部', position: '营业管理部主任、党委书记，北京外汇管理部主任（兼任）', startYear: 2011, startMonth: 9, endYear: 2015, endMonth: 9, notes: '与外汇局副局长岗位兼任；结束月份按2015年9月调任节点记录，单独免职文件待核。' },
   ];
   liChaoDeep.careerHistory = [...priorCareers.map(record => ({ ...record, isDerived: true, sourceNote: `${resumeTitle}所载简历明确任职起始月；历史段结束月按下一任职节点衔接，单独免职日未核验。` })), ...liChaoDeep.careerHistory];
-  liChaoDeep.education = [{ degree: '博士', school: '清华大学', major: '管理学', confidence: { level: 'medium', score: 88, label: '财新报道', source: '李超任证监会副主席 庄心一退休（更新）' } }];
+  liChaoDeep.education = [{ id: 'li-chao-edu-phd', degree: '博士', school: '清华大学', major: '管理学', confidence: { level: 'medium', score: 88, label: '财新报道', source: '李超任证监会副主席 庄心一退休（更新）' } }];
   liChaoDeep.bioSummary = '1987年7月在中国建设银行参加工作，1997年7月起先后任机关干部管理处处长、办公室副主任；此后任证监会办公厅副主任、人民银行办公厅副主任及主任。2008年12月任国家外汇管理局副局长、党组成员，2011年9月起兼任人民银行营业管理部及北京外汇管理部负责人。2015年9月任证监会副主席、党委委员。管理学博士；清华大学院校信息由财新报道支持，教育年份与培养方式待核。';
   liChaoDeep.sources = [...(liChaoDeep.sources || []),
     { id: 'li-chao-chinanews-resume-2015', title: resumeTitle, publisher: '中国新闻网', url: 'https://www.chinanews.com.cn/m/cj/2015/09-18/7532186.shtml', sourceType: 'authoritative_media', publishedDate: '2015-09-18', accessedDate: '2026-09-06', supports: ['1987年7月参加工作', '1997—2015年岗位顺序及起始年月', '2011年起兼任北京金融管理岗位'], note: '报道注明据证监会官方微博消息。任职起点与推定衔接终点在履历中分别说明。' },
@@ -17315,6 +17372,7 @@ VERIFIED_SSE_LEADERS.forEach((verified) => {
   official.currentUnitId = 'csrc-sse';
   official.currentPosition = `上海证券交易所${verified.position}`;
   official.education = [{
+    id: `${verified.id}-edu-primary`,
     degree: verified.degree,
     school: '院校未公开',
     major: verified.major,
@@ -17418,6 +17476,7 @@ VERIFIED_SZSE_LEADERS.forEach((verified) => {
   official.currentUnitId = 'csrc-szse';
   official.currentPosition = `深圳证券交易所${verified.position}`;
   official.education = [{
+    id: `${verified.id}-edu-primary`,
     degree: verified.degree,
     school: '院校未公开',
     major: verified.educationLabel,
@@ -17684,32 +17743,122 @@ for (const entry of additionalFuturesProfiles) {
   official.profileReview = { status: 'partially_verified', reviewedAt: '2026-09-06', note: '已补充逐项可定位的任职证据；未知早期任期、学历及最新完整名录仍待核验。' };
 }
 
-// 旧名录中的两项身份未能匹配到交易所任职证据，不能继续标成官方确证。
-// 保留档案及旧归属用于待核工作，不据“未检出”推断离任、退休或违纪。
-for (const id of ['tang-xian', 'wu-taiming']) {
-  const official = OFFICIALS_DATA.find(item => item.id === id);
-  if (!official) continue;
-  official.education = [];
-  official.careerHistory = [];
-  official.gender = '未公开';
-  official.avatarVerified = false;
-  delete official.avatarUrl;
-  delete official.birthYear;
-  delete official.birthMonth;
-  delete official.nativePlace;
-  delete official.currentRank;
-  delete official.basicInfoConfidence;
-  // 不能只从机构名册删除：页面的兜底规则会按 currentUnitId 再次判定为在职。
-  // 此处明确撤销“当前在职”与当前机构归属，保留待核人物条目而不制造在任事实。
-  official.isCurrentServing = false;
-  official.currentUnitId = '';
-  delete official.servingStatus;
-  official.servingStatusLabel = '身份待核验';
-  official.servingStatusNote = '旧库交易所归属待核验，不代表已确认在任；本次未检索到相匹配的任职证据。';
-  official.statusBadgeColor = 'amber';
-  official.currentPosition = '交易所职务待核验（旧名录条目）';
-  official.bioSummary = '旧库中的交易所职务、学历和精确任期尚无可定位来源支持，已撤下未经核验的履历。姓名相同但工作机构不同的检索结果未合并入档案。此条保留供名录复核，不构成在任确认。';
-  official.profileReview = { status: 'needs_review', reviewedAt: '2026-09-06', note: '需核对交易所完整领导名录、任免公告和人物身份；检索未命中不等于不存在或已经离任。' };
+// 2026-11-01 官网名册直读核验恢复唐宪（中金所党委委员、纪委书记）、吴太明（广期所党委委员、纪委书记）现职最小档案；
+// 旧库中未经证实的学历、出生信息与早期假精确任期继续清空，历史岗位观察点由研究库管理。
+{
+  const tangXian = OFFICIALS_DATA.find(item => item.id === 'tang-xian');
+  if (tangXian) {
+    tangXian.education = [];
+    tangXian.gender = '未公开';
+    tangXian.avatarVerified = false;
+    delete tangXian.avatarUrl;
+    delete tangXian.birthYear;
+    delete tangXian.birthMonth;
+    delete tangXian.nativePlace;
+    delete tangXian.currentRank;
+    delete tangXian.basicInfoConfidence;
+    tangXian.isCurrentServing = true;
+    tangXian.servingStatus = 'serving';
+    tangXian.servingStatusLabel = '现任在职（官网确认）';
+    tangXian.servingStatusNote = '截至2026年11月1日，中国金融期货交易所官网“组织结构—领导成员”列示其担任党委委员、纪委书记。';
+    tangXian.statusBadgeColor = 'emerald';
+    tangXian.currentUnitId = 'csrc-cffex';
+    tangXian.currentPosition = '中国金融期货交易所党委委员、纪委书记';
+    tangXian.sources = [{
+      id: 'tang-xian-cffex-roster-20261101',
+      title: '组织结构｜中国金融期货交易所',
+      publisher: '中国金融期货交易所',
+      url: 'http://www.cffex.com.cn/cn/zzjg.html',
+      sourceType: 'official_profile',
+      accessedDate: '2026-11-01',
+      supports: ['现任中国金融期货交易所党委委员、纪委书记', '列入中金所官网领导成员8人名单'],
+    }];
+    tangXian.careerHistory = [{
+      id: 'tang-xian-cffex-current-verified',
+      unitId: 'csrc-cffex',
+      unitName: '中国金融期货交易所',
+      position: '党委委员、纪委书记',
+      recordKind: 'tenure',
+      tenureStatus: 'current',
+      confirmedAsOf: { year: 2026, month: 11, day: 1 },
+      sourceIds: ['tang-xian-cffex-roster-20261101'],
+      fieldEvidence: {
+        unitId: { status: 'verified', basis: 'direct', sourceIds: ['tang-xian-cffex-roster-20261101'], reviewedAt: '2026-11-01' },
+        unitName: { status: 'verified', basis: 'direct', sourceIds: ['tang-xian-cffex-roster-20261101'], reviewedAt: '2026-11-01' },
+        position: { status: 'verified', basis: 'direct', sourceIds: ['tang-xian-cffex-roster-20261101'], reviewedAt: '2026-11-01' },
+        tenureStatus: { status: 'verified', basis: 'direct', sourceIds: ['tang-xian-cffex-roster-20261101'], reviewedAt: '2026-11-01' },
+        confirmedAsOf: { status: 'verified', basis: 'direct', sourceIds: ['tang-xian-cffex-roster-20261101'], reviewedAt: '2026-11-01' },
+      },
+      notes: '中金所官网组织结构页面确认现职；就任起始时间待任免文件补充（2025年8月仍在重庆证监局履职）。',
+    }];
+    tangXian.bioSummary = '现任中国金融期货交易所党委委员、纪委书记（中金所官网组织结构页面2026年11月1日确认）；2025年8月曾以重庆证监局党委委员、纪委书记身份公开活动。';
+    tangXian.profileReview = { status: 'partially_verified', reviewedAt: '2026-11-01', note: '已由中金所官网组织结构页面核实现职；早期履历与教育信息待补充。' };
+  }
+
+  const wuTaiming = OFFICIALS_DATA.find(item => item.id === 'wu-taiming');
+  if (wuTaiming) {
+    wuTaiming.education = [];
+    wuTaiming.gender = '未公开';
+    wuTaiming.avatarVerified = false;
+    delete wuTaiming.avatarUrl;
+    delete wuTaiming.birthYear;
+    delete wuTaiming.birthMonth;
+    delete wuTaiming.nativePlace;
+    delete wuTaiming.currentRank;
+    delete wuTaiming.basicInfoConfidence;
+    wuTaiming.isCurrentServing = true;
+    wuTaiming.servingStatus = 'serving';
+    wuTaiming.servingStatusLabel = '现任在职（官网确认）';
+    wuTaiming.servingStatusNote = '2025年1月10日广期所干部大会宣布任命；截至2026年11月1日，广期所官网“组织架构—领导成员”仍列示其担任党委委员、纪委书记。';
+    wuTaiming.statusBadgeColor = 'emerald';
+    wuTaiming.currentUnitId = 'csrc-gfex';
+    wuTaiming.currentPosition = '广州期货交易所党委委员、纪委书记';
+    wuTaiming.sources = [
+      {
+        id: 'wu-taiming-gfex-roster-20261101',
+        title: '组织架构｜广州期货交易所',
+        publisher: '广州期货交易所',
+        url: 'http://www.gfex.com.cn/gfex/zzjg/list_tt.shtml',
+        sourceType: 'official_profile',
+        accessedDate: '2026-11-01',
+        supports: ['现任广州期货交易所党委委员、纪委书记', '列入广期所官网领导成员7人名单'],
+      },
+      {
+        id: 'wu-taiming-gfex-dsj-20250110',
+        title: '大事记｜广州期货交易所',
+        publisher: '广州期货交易所',
+        url: 'http://www.gfex.com.cn/gfex/dsj/list_dsj.shtml',
+        sourceType: 'official_notice',
+        accessedDate: '2026-11-01',
+        supports: ['2025年1月10日广期所召开干部大会宣布中国证监会党委任命决定：任广期所党委委员、纪委书记'],
+        note: '大事记记载2025年1月10日召开干部大会宣布决定；按月记录任职起点为2025年1月。',
+      },
+    ];
+    wuTaiming.careerHistory = [{
+      id: 'wu-taiming-gfex-current-verified',
+      unitId: 'csrc-gfex',
+      unitName: '广州期货交易所',
+      position: '党委委员、纪委书记',
+      recordKind: 'tenure',
+      tenureStatus: 'current',
+      startYear: 2025,
+      startMonth: 1,
+      confirmedAsOf: { year: 2026, month: 11, day: 1 },
+      sourceIds: ['wu-taiming-gfex-roster-20261101', 'wu-taiming-gfex-dsj-20250110'],
+      fieldEvidence: {
+        unitId: { status: 'verified', basis: 'direct', sourceIds: ['wu-taiming-gfex-roster-20261101'], reviewedAt: '2026-11-01' },
+        unitName: { status: 'verified', basis: 'direct', sourceIds: ['wu-taiming-gfex-roster-20261101'], reviewedAt: '2026-11-01' },
+        position: { status: 'verified', basis: 'direct', sourceIds: ['wu-taiming-gfex-roster-20261101', 'wu-taiming-gfex-dsj-20250110'], reviewedAt: '2026-11-01' },
+        startYear: { status: 'verified', basis: 'direct', sourceIds: ['wu-taiming-gfex-dsj-20250110'], reviewedAt: '2026-11-01' },
+        startMonth: { status: 'verified', basis: 'direct', sourceIds: ['wu-taiming-gfex-dsj-20250110'], reviewedAt: '2026-11-01' },
+        tenureStatus: { status: 'verified', basis: 'direct', sourceIds: ['wu-taiming-gfex-roster-20261101'], reviewedAt: '2026-11-01' },
+        confirmedAsOf: { status: 'verified', basis: 'direct', sourceIds: ['wu-taiming-gfex-roster-20261101'], reviewedAt: '2026-11-01' },
+      },
+      notes: '广期所官网大事记记载2025年1月10日召开干部大会宣布中国证监会党委任命决定；纠正旧库“2021年4月起任职”的错误。',
+    }];
+    wuTaiming.bioSummary = '现任广州期货交易所党委委员、纪委书记（2025年1月10日广期所干部大会宣布任命，2026年11月1日官网组织架构确认在任）；2021年9月曾以广西证监局党委委员、纪委书记身份公开活动。';
+    wuTaiming.profileReview = { status: 'partially_verified', reviewedAt: '2026-11-01', note: '已由广期所官网组织架构及大事记核实现职与2025年1月任职起点；早期履历与教育信息待补充。' };
+  }
 }
 
 const futuresPointSupplements: Array<[string, string, string, string, string, string]> = [
@@ -17755,7 +17904,7 @@ if (youHang) {
 // 这层只做两件事：把“现任班子”与已证实人员对齐，并把每条可展示的
 // 时间线记录绑定到具体来源。它不把没有机构材料支持的旧名录成员当作在任。
 const futuresUnits = new Set(['csrc-shfe', 'csrc-dce', 'csrc-czce', 'csrc-cffex', 'csrc-gfex']);
-const unresolvedFuturesRosterIds = new Set(['tang-xian', 'wu-taiming']);
+const unresolvedFuturesRosterIds = new Set<string>([]);
 
 for (const unit of UNITS_DATA) {
   if (futuresUnits.has(unit.id)) {
@@ -17854,7 +18003,7 @@ const futuresDeepProfilesRoundOne: Array<{
       { id: 'tian-xiangyang-caixin-2022-history', title: '田向阳履新上期所理事长 曹勇升任浙江局局长', publisher: '财新网', url: 'https://finance.caixin.com/m/2022-04-22/101874860.html', sourceType: 'authoritative_media', publishedDate: '2022-04-22', accessedDate: '2026-09-08', supports: ['曾任证监会研究中心、宁波证监局', '2019年出任浙江证监局局长', '2022年获任上期所党委书记、非会员理事并当选理事长'], note: '“2019年出任”仅支持年份，未据此填写月份。' },
       { id: 'tian-xiangyang-zhejiang-csrc-2020', title: '搭建平台促自律 凝聚共识谋发展', publisher: '中国证监会浙江监管局', url: 'https://www.csrc.gov.cn/zhejiang/c100657/c1284933/content.shtml', sourceType: 'official_notice', publishedDate: '2020-04-30', accessedDate: '2026-09-08', supports: ['2020年4月任浙江证监局局长'], note: '公开活动的在任时间点，不替代任命日期。' },
     ],
-    records: [{ id: 'tian-xiangyang-zhejiang-csrc-2019-2022', unitId: '', unitName: '中国证监会浙江监管局', position: '局长', startYear: 2019, endYear: 2022, endMonth: 3, isDerived: true, sourceIds: ['tian-xiangyang-caixin-2022-history', 'tian-xiangyang-zhejiang-csrc-2020'], sourceNote: '财新报道载明2019年出任、2022年4月履新上期所；以已公开年份和后续任职月作为区间边界，起始月份未声称已知。' }],
+    records: [{ id: 'tian-xiangyang-zhejiang-csrc-2019-2022', unitId: 'csrc-zj', unitName: '中国证监会浙江监管局', position: '局长', startYear: 2019, endYear: 2022, endMonth: 3, isDerived: true, sourceIds: ['tian-xiangyang-caixin-2022-history', 'tian-xiangyang-zhejiang-csrc-2020'], sourceNote: '财新报道载明2019年出任、2022年4月履新上期所；以已公开年份和后续任职月作为区间边界，起始月份未声称已知。' }],
   },
   {
     id: 'lu-dongsheng',

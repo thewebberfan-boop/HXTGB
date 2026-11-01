@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "personId": "wu-taiming",
+  "evidence": [
+    {
+      "id": "S001",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "gxnews-20210907",
+      "note": "省级官媒明确2021年9月7日吴太明任广西证监局党委委员、纪委书记",
+      "source": {
+        "id": "wu-taiming-gxnews-20210907",
+        "title": "广西召开2021年金融联合宣传教育活动电视电话推进会",
+        "publisher": "广西新闻网",
+        "url": "http://m.tv.gxnews.com.cn/article.php?id=20439001",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2021-09-07",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2021年9月7日以广西证监局党委委员、纪委书记身份出席推进会并发言"
+        ]
+      }
+    },
+    {
+      "id": "S002",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "gfex-dsj-20250110",
+      "note": "广期所官网大事记直读确认2025年1月10日干部大会宣布任命决定",
+      "source": {
+        "id": "wu-taiming-gfex-dsj-20261101",
+        "title": "大事记｜广州期货交易所",
+        "publisher": "广州期货交易所",
+        "url": "http://www.gfex.com.cn/gfex/dsj/list_dsj.shtml",
+        "sourceType": "official_notice",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2025年1月10日广期所召开干部大会，宣布证监会党委任命决定：吴太明同志任广州期货交易所党委委员、纪委书记"
+        ]
+      }
+    },
+    {
+      "id": "S003",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "gfex-zzjg-20261101",
+      "note": "广期所官网组织架构直读确认现职",
+      "source": {
+        "id": "wu-taiming-gfex-zzjg-20261101",
+        "title": "组织架构｜广州期货交易所",
+        "publisher": "广州期货交易所",
+        "url": "http://www.gfex.com.cn/gfex/zzjg/list_tt.shtml",
+        "sourceType": "official_profile",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "截至2026年11月1日列于广期所官网“领导成员”：党委委员、纪委书记吴太明"
+        ]
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-taiming-gxcsrc-202109",
+        "field": "recordKind"
+      },
+      "value": "observation",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "9月7日（2021-09-07）……广西证监局党委委员、纪委书记吴太明表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "曾任广西证监局党委委员、纪委书记，2025年1月任广州期货交易所党委委员、纪委书记吴太明",
+        "countercheck": "广期所官网大事记与广西新闻网政务报道相互印证证监系统纪检领导身份；纠正旧库“2021年4月起任广期所纪委书记”的时间错误"
+      },
+      "note": "2021年9月7日任广西证监局党委委员、纪委书记观察点，同时证伪旧库“1995.07—2021.04任广东局副巡视员、2021.04起任广期所纪委书记”说法"
+    },
+    {
+      "id": "F002",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-taiming-gxcsrc-202109",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "9月7日（2021-09-07）……广西证监局党委委员、纪委书记吴太明表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "曾任广西证监局党委委员、纪委书记，2025年1月任广州期货交易所党委委员、纪委书记吴太明",
+        "countercheck": "广期所官网大事记与广西新闻网政务报道相互印证证监系统纪检领导身份；纠正旧库“2021年4月起任广期所纪委书记”的时间错误"
+      },
+      "note": "2021年9月7日任广西证监局党委委员、纪委书记观察点，同时证伪旧库“1995.07—2021.04任广东局副巡视员、2021.04起任广期所纪委书记”说法"
+    },
+    {
+      "id": "F003",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-taiming-gxcsrc-202109",
+        "field": "unitName"
+      },
+      "value": "中国证监会广西监管局",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "9月7日（2021-09-07）……广西证监局党委委员、纪委书记吴太明表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "曾任广西证监局党委委员、纪委书记，2025年1月任广州期货交易所党委委员、纪委书记吴太明",
+        "countercheck": "广期所官网大事记与广西新闻网政务报道相互印证证监系统纪检领导身份；纠正旧库“2021年4月起任广期所纪委书记”的时间错误"
+      },
+      "note": "2021年9月7日任广西证监局党委委员、纪委书记观察点，同时证伪旧库“1995.07—2021.04任广东局副巡视员、2021.04起任广期所纪委书记”说法"
+    },
+    {
+      "id": "F004",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-taiming-gxcsrc-202109",
+        "field": "position"
+      },
+      "value": "党委委员、纪委书记",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "9月7日（2021-09-07）……广西证监局党委委员、纪委书记吴太明表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "曾任广西证监局党委委员、纪委书记，2025年1月任广州期货交易所党委委员、纪委书记吴太明",
+        "countercheck": "广期所官网大事记与广西新闻网政务报道相互印证证监系统纪检领导身份；纠正旧库“2021年4月起任广期所纪委书记”的时间错误"
+      },
+      "note": "2021年9月7日任广西证监局党委委员、纪委书记观察点，同时证伪旧库“1995.07—2021.04任广东局副巡视员、2021.04起任广期所纪委书记”说法"
+    },
+    {
+      "id": "F005",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "wu-taiming-gxcsrc-202109",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2021,
+        "month": 9,
+        "day": 7
+      },
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第4段",
+          "statement": "9月7日（2021-09-07）……广西证监局党委委员、纪委书记吴太明表示……"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "曾任广西证监局党委委员、纪委书记，2025年1月任广州期货交易所党委委员、纪委书记吴太明",
+        "countercheck": "广期所官网大事记与广西新闻网政务报道相互印证证监系统纪检领导身份；纠正旧库“2021年4月起任广期所纪委书记”的时间错误"
+      },
+      "note": "2021年9月7日任广西证监局党委委员、纪委书记观察点，同时证伪旧库“1995.07—2021.04任广东局副巡视员、2021.04起任广期所纪委书记”说法"
+    }
+  ],
+  "rules": [],
+  "publications": [
+    {
+      "id": "P001",
+      "factId": "F001",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P002",
+      "factId": "F002",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P003",
+      "factId": "F003",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P004",
+      "factId": "F004",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P005",
+      "factId": "F005",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    }
+  ]
+}

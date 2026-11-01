@@ -120,11 +120,22 @@ test('partial education remains visible while revoked school cannot generate alu
   assert.equal(p.education[0].degree, '博士'); assert.equal(p.education[0].school, undefined);
   assert.deepEqual(educationRelations(p, p.education[0], []), []);
 });
-test('real candidate migration does not change any of the 135 public biographies', () => {
-  assert.deepEqual(actual, baseline);
+test('real research store projects only published verified facts while keeping untouched biographies and candidates isolated', () => {
   const store = loadResearchStore();
   assert.deepEqual(validateResearchStore(store), []);
-  assert.ok(researchReport(store)[0].facts.some(f => f.status === 'candidate' && f.publication === 'not_published'));
+  const patches = compileResearchPatches(store);
+  assert.deepEqual(actual, applyResearchPatches(baseline, patches));
+  const patchedIds = new Set(patches.map(p => p.personId));
+  assert.ok(patchedIds.size > 0);
+  for (const basePerson of baseline) {
+    if (!patchedIds.has(basePerson.id)) {
+      assert.deepEqual(actual.find(p => p.id === basePerson.id), basePerson);
+    }
+  }
+  const report = researchReport(store);
+  assert.ok(report.some(r => r.facts.some(f => f.status === 'candidate' && f.publication === 'not_published')));
+  assert.ok(report.some(r => r.facts.some(f => f.status === 'conflicted' && f.publication === 'not_published')));
+  assert.doesNotMatch(projectionText(store), /国家计划委员会综合司|黑龙江齐齐哈尔/);
 });
 test('workbench dry-run, persistence, stale projection check and failed import are safe', () => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'hxtgb-research-test-'));

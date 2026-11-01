@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "personId": "tang-xian",
+  "evidence": [
+    {
+      "id": "S001",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "weiyuzhong-20250809",
+      "note": "渝中区官方政务报道明确2025年8月8日唐宪任重庆证监局党委委员、纪委书记",
+      "source": {
+        "id": "tang-xian-cq-yuzhong-20250809",
+        "title": "渝中区领导黄茂军谢东会见重庆证监局党委书记、局长邹新京一行",
+        "publisher": "微渝中（中共重庆市渝中区委宣传部官方账号，搜狐政务转载）",
+        "url": "https://m.sohu.com/a/922355612_121106884",
+        "sourceType": "authoritative_media",
+        "publishedDate": "2025-08-09",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "2025年8月8日以中国证监会重庆监管局党委委员、纪委书记身份参加公务会见"
+        ]
+      }
+    },
+    {
+      "id": "S002",
+      "revision": 1,
+      "reading": "read",
+      "originGroup": "cffex-zzjg-20261101",
+      "note": "中金所官网组织结构直读确认现任党委委员、纪委书记",
+      "source": {
+        "id": "tang-xian-cffex-zzjg-20261101",
+        "title": "组织结构｜中国金融期货交易所",
+        "publisher": "中国金融期货交易所",
+        "url": "http://www.cffex.com.cn/cn/zzjg.html",
+        "sourceType": "official_profile",
+        "accessedDate": "2026-11-01",
+        "supports": [
+          "截至2026年11月1日列于中金所官网“领导成员”：党委委员、纪委书记唐宪"
+        ]
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tang-xian-cqcsrc-202508",
+        "field": "recordKind"
+      },
+      "value": "observation",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "8月8日上午（2025-08-08），渝中区委书记黄茂军……会见中国证监会重庆监管局党委书记、局长邹新京一行。重庆证监局党委委员、纪委书记唐宪……参加"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "曾任重庆证监局党委委员、纪委书记，现任中国金融期货交易所党委委员、纪委书记唐宪",
+        "countercheck": "证监系统纪检干部交流至会管交易所任纪委书记符合标准干部交流路径；排除地方同名医务/教职人员，纠正旧库“2018年4月起任中金所纪委书记”错误"
+      },
+      "note": "2025年8月8日仍在重庆证监局任党委委员、纪委书记，直接证伪旧库“2018年4月起任中金所纪委书记”的编造时间线"
+    },
+    {
+      "id": "F002",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tang-xian-cqcsrc-202508",
+        "field": "unitId"
+      },
+      "value": "",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "8月8日上午（2025-08-08），渝中区委书记黄茂军……会见中国证监会重庆监管局党委书记、局长邹新京一行。重庆证监局党委委员、纪委书记唐宪……参加"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "曾任重庆证监局党委委员、纪委书记，现任中国金融期货交易所党委委员、纪委书记唐宪",
+        "countercheck": "证监系统纪检干部交流至会管交易所任纪委书记符合标准干部交流路径；排除地方同名医务/教职人员，纠正旧库“2018年4月起任中金所纪委书记”错误"
+      },
+      "note": "2025年8月8日仍在重庆证监局任党委委员、纪委书记，直接证伪旧库“2018年4月起任中金所纪委书记”的编造时间线"
+    },
+    {
+      "id": "F003",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tang-xian-cqcsrc-202508",
+        "field": "unitName"
+      },
+      "value": "中国证监会重庆监管局",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "8月8日上午（2025-08-08），渝中区委书记黄茂军……会见中国证监会重庆监管局党委书记、局长邹新京一行。重庆证监局党委委员、纪委书记唐宪……参加"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "曾任重庆证监局党委委员、纪委书记，现任中国金融期货交易所党委委员、纪委书记唐宪",
+        "countercheck": "证监系统纪检干部交流至会管交易所任纪委书记符合标准干部交流路径；排除地方同名医务/教职人员，纠正旧库“2018年4月起任中金所纪委书记”错误"
+      },
+      "note": "2025年8月8日仍在重庆证监局任党委委员、纪委书记，直接证伪旧库“2018年4月起任中金所纪委书记”的编造时间线"
+    },
+    {
+      "id": "F004",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tang-xian-cqcsrc-202508",
+        "field": "position"
+      },
+      "value": "党委委员、纪委书记",
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "8月8日上午（2025-08-08），渝中区委书记黄茂军……会见中国证监会重庆监管局党委书记、局长邹新京一行。重庆证监局党委委员、纪委书记唐宪……参加"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "曾任重庆证监局党委委员、纪委书记，现任中国金融期货交易所党委委员、纪委书记唐宪",
+        "countercheck": "证监系统纪检干部交流至会管交易所任纪委书记符合标准干部交流路径；排除地方同名医务/教职人员，纠正旧库“2018年4月起任中金所纪委书记”错误"
+      },
+      "note": "2025年8月8日仍在重庆证监局任党委委员、纪委书记，直接证伪旧库“2018年4月起任中金所纪委书记”的编造时间线"
+    },
+    {
+      "id": "F005",
+      "revision": 1,
+      "target": {
+        "kind": "career",
+        "recordId": "tang-xian-cqcsrc-202508",
+        "field": "observedAt"
+      },
+      "value": {
+        "year": 2025,
+        "month": 8,
+        "day": 8
+      },
+      "status": "supported_observation",
+      "citations": [
+        {
+          "id": "S001",
+          "revision": 1,
+          "locator": "正文第1段",
+          "statement": "8月8日上午（2025-08-08），渝中区委书记黄茂军……会见中国证监会重庆监管局党委书记、局长邹新京一行。重庆证监局党委委员、纪委书记唐宪……参加"
+        }
+      ],
+      "review": {
+        "at": "2026-11-01",
+        "by": "agent-batch-20261101",
+        "identity": "曾任重庆证监局党委委员、纪委书记，现任中国金融期货交易所党委委员、纪委书记唐宪",
+        "countercheck": "证监系统纪检干部交流至会管交易所任纪委书记符合标准干部交流路径；排除地方同名医务/教职人员，纠正旧库“2018年4月起任中金所纪委书记”错误"
+      },
+      "note": "2025年8月8日仍在重庆证监局任党委委员、纪委书记，直接证伪旧库“2018年4月起任中金所纪委书记”的编造时间线"
+    }
+  ],
+  "rules": [],
+  "publications": [
+    {
+      "id": "P001",
+      "factId": "F001",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P002",
+      "factId": "F002",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P003",
+      "factId": "F003",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P004",
+      "factId": "F004",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    },
+    {
+      "id": "P005",
+      "factId": "F005",
+      "action": "publish",
+      "at": "2026-11-01",
+      "reason": "已完成一手／权威原文直读与身份反例复核，符合公开投影条件"
+    }
+  ]
+}
