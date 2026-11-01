@@ -33,4 +33,4 @@
   1. 执行搜索：`"刘浩凌" "中国证监会" OR "中投公司" 简历`、`"蔡建春" "上海证券交易所" 简历`；
   2. 按 `batch2.md` 第三批队列推进上交所副总（`wang-bo`, `lv-hao`, `yuan-duoran`, `fu-hao` 等）、深交所副总（`li-mingzhong`, `tang-rui`, `wang-hong-szse`, `li-hui-szse` 等）及五家期交所其余副职（`lu-feng`, `zhang-ming`, `yang-ke`, `liu-shaotong`, `cai-xianghui`, `li-muchun` 等）；
   3. 建立 Batch 3 人物草稿并通过工作台预览码机制导入。
-- 验证结果与未完成检查：`npm run research:check`、`npm run audit:data`（57机构、135人、302来源、0结构错误）、`npx tsc --noEmit`、全套单元测试及 `npm run build` 均执行验证；本地预览服务运行于 `http://localhost:4000/`；未执行 Git 提交／推送。
+- 验证结果与未完成检查：`npm run research:check`、`npm run audit:data`（57机构、135人、302来源、0结构错误）、`npx tsc --noEmit`、全套 71 项单元测试及 `npm run build` 均全部通过；本地预览服务运行于 `http://localhost:4000/`；第一、二批全部成果与进度文档已按用户指令提交并推送至远端 `origin/main`（`https://github.com/thewebberfan-boop/HXTGB.git`）。
